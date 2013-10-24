@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DACD1E6-18DB-4B62-9375-5B71E3886AB8}</ProjectGuid>
+    <ProjectTypeGuids>{69878862-DA7D-4DC6-B0A1-50D8FAB4242F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Sce.PlayStation.Core" />
+    <Reference Include="Sce.PlayStation.HighLevel.GameEngine2D" />
+    <Reference Include="Sce.PlayStation.HighLevel.Physics2D" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Managers\EntityManager.cs" />
+    <Compile Include="Components\Entity.cs" />
+    <Compile Include="Components\Component.cs" />
+    <Compile Include="Systems\System.cs" />
+    <Compile Include="Systems\GraphicsSystem.cs" />
+    <Compile Include="Components\RectComponent.cs" />
+    <Compile Include="Utils\Transform.cs" />
+    <Compile Include="Components\IComponent.cs" />
+    <Compile Include="Systems\ControllerSystem.cs" />
+    <Compile Include="Components\Controller.cs" />
+    <Compile Include="Components\Sprite2d.cs" />
+    <Compile Include="Components\GrpahicsComponent.cs" />
+    <Compile Include="Systems\PhysicsSystem.cs" />
+    <Compile Include="Components\RigidBody.cs" />
+    <Compile Include="Components\Camera.cs" />
+    <Compile Include="Components\TriggerComponent.cs" />
+    <Compile Include="Components\SuicideController.cs" />
+    <Compile Include="Utils\TouchController.cs" />
+    <Compile Include="Components\ResetController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Systems\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+</Project>
