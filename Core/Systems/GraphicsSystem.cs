@@ -50,7 +50,8 @@ namespace Core
 		public override void Update()
 		{
 			updateSprites();
-			this.camera.Update();
+			if(this.camera != null)
+				this.camera.Update();
 			Sce.PlayStation.Core.Environment.SystemEvents.CheckEvents();				 
 				Director.Instance.Update ();
     			Director.Instance.Render();
