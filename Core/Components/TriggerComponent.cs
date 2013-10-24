@@ -18,9 +18,9 @@ namespace Core
 		
 		public override void Update()
 		{
-			var physics = (PhysicsSystem)EntityManager.Instance.getSystem(typeof(PhysicsSystem));
+			var physics = (PhysicsSystem)SceneManager.Instance.getSystem(typeof(PhysicsSystem));
 			foreach(var target in this.targets){
-			if (physics.isColliding(this.require<RigidBody>(), EntityManager.Instance.GetComponent<RigidBody>(target)))
+			if (physics.isColliding(this.require<RigidBody>(), SceneManager.Instance.GetComponent<RigidBody>(target)))
 			{
 				this.onCollide(target);
 			}

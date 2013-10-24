@@ -39,7 +39,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="Managers\EntityManager.cs" />
     <Compile Include="Components\Entity.cs" />
     <Compile Include="Components\Component.cs" />
     <Compile Include="Systems\System.cs" />
@@ -58,6 +57,7 @@
     <Compile Include="Components\SuicideController.cs" />
     <Compile Include="Utils\TouchController.cs" />
     <Compile Include="Components\ResetController.cs" />
+    <Compile Include="Managers\SceneManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

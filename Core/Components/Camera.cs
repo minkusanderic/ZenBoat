@@ -10,12 +10,12 @@ namespace Core
 		public Entity target = null;
 		public Camera ()
 		{
-			this.cam = ((GraphicsSystem)EntityManager.Instance.getSystem(typeof(GraphicsSystem))).scene.Camera2D;
+			this.cam = ((GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem))).scene.Camera2D;
 		}
 		
 		public Camera(Entity target)
 		{
-			this.cam = ((GraphicsSystem)EntityManager.Instance.getSystem(typeof(GraphicsSystem))).scene.Camera2D;
+			this.cam = ((GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem))).scene.Camera2D;
 			this.target = target;
 		}
 		

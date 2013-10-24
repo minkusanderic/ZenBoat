@@ -9,7 +9,7 @@ namespace Core
 
 		public Component ()
 		{
-			this.system = (T)EntityManager.Instance.getSystem(typeof(T));
+			this.system = (T)SceneManager.Instance.getSystem(typeof(T));
 		}
 		
 		[XmlIgnore]
@@ -22,9 +22,14 @@ namespace Core
 			this.system.attachComponent(this);
 		}
 		
+		public override void destroy()
+		{
+			this.system.destroyComponent(this);
+		}
+		
 		public U require<U>()
 		{
-			return EntityManager.Instance.GetComponent<U>(this.parent);
+			return SceneManager.Instance.GetComponent<U>(this.parent);
 		}
 	}
 }

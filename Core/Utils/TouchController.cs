@@ -21,7 +21,7 @@ namespace Core
 			foreach(	TouchData td in Touch.GetData(	0	)	)
 			{
 				Vector2 vec = new Vector2( td.X , td.Y );
-				GraphicsSystem gs = ( GraphicsSystem) EntityManager.Instance.getSystem( typeof( GraphicsSystem ) );
+				GraphicsSystem gs = ( GraphicsSystem) SceneManager.Instance.getSystem( typeof( GraphicsSystem ) );
 				Vector2	startPos = gs.GetWorldToPoint( 2*vec );
 				startPos = new Vector2( startPos.X , 544f-startPos.Y );
 				//Console.WriteLine( "StartPos: " + startPos + "\t\tPos: " + this.parent.Transform.Position );

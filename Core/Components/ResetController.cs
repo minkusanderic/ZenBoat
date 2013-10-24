@@ -22,7 +22,7 @@ namespace Main
 	        {
 				this.parent.Transform.Position = new Vector2(0.0f, 544/2);
 				//EntityManager.Instance.GetComponent<RigidBody>(this.parent).body.Position = this.parent.Transform.Position;
-				EntityManager.Instance.GetComponent<RigidBody>(this.parent).updateTransformData();
+				SceneManager.Instance.GetComponent<RigidBody>(this.parent).updateTransformData();
         	}
 		}
 	}

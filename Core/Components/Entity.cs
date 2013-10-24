@@ -30,7 +30,7 @@ namespace Core
 		
 		public IComponent attachComponent(IComponent comp)
 		{
-			EntityManager.Instance.attachComponent(this, comp);
+			SceneManager.Instance.attachComponent(this, comp);
 			return comp;
 		}
 		
@@ -39,7 +39,7 @@ namespace Core
 		{
 			this.Transform.Position = new Sce.PlayStation.Core.Vector2(-10000, 10000);
 			try{
-				var body = (RigidBody)EntityManager.Instance.GetComponent<RigidBody>(this);
+				var body = (RigidBody)SceneManager.Instance.GetComponent<RigidBody>(this);
 				body.body.Position = new Sce.PlayStation.Core.Vector2(-10000, 10000);
 			}
 			catch{}
