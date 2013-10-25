@@ -37,6 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppMain.cs" />
+    <Compile Include="LevelLoader.cs" />
+    <Compile Include="PreFabs\Rock.cs" />
+    <Compile Include="PreFabs\Boat.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -51,5 +54,13 @@
       <Project>{1DACD1E6-18DB-4B62-9375-5B71E3886AB8}</Project>
       <Name>Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PreFabs\" />
+    <Folder Include="Levels\" />
+    <Folder Include="resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Levels\Test.oel" />
   </ItemGroup>
 </Project>

@@ -36,11 +36,13 @@ namespace Core
 				entity_comp[comp.parent].Remove(comp);
 				comp.destroy();				
 			}
+			to_be_destroyed.Clear();
 			foreach(var comp in to_be_attached)
 			{
 				comp.attach(comp.parent);
 				entity_comp[comp.parent].Add(comp);
 			}
+			to_be_attached.Clear();
 			
 			systems[typeof(ControllerSystem)].Update();
 			systems[typeof(PhysicsSystem)].Update();
