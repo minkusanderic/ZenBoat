@@ -26,7 +26,7 @@ namespace Main
 					{
 						case "level":
 							break;
-						case "EntityLayer":
+						case "Entities":
 							using (var r = reader.ReadSubtree()){
 								parseEntities(r);
 							}
@@ -45,7 +45,7 @@ namespace Main
 				if(reader.IsStartElement()){
 					switch(reader.Name)
 					{
-						case "EntityLayer":
+						case "Entities":
 							break;
 						default:
 							String name = reader.Name;

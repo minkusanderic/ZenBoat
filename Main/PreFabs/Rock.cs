@@ -17,8 +17,8 @@ namespace Main
 			int x = Convert.ToInt32(options["x"]);
 			int y = Convert.ToInt32(options["y"]);
 			
-			int width = Convert.ToInt32(options["width"]);
-			int height = Convert.ToInt32(options["height"]);
+			int width = 75;
+			int height = 75;
 			
 			var ent = SceneManager.Instance.createEntity(name);
 			ent.Transform.Position = new Sce.PlayStation.Core.Vector2(x,y);
