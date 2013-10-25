@@ -6,6 +6,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
+using Core;
+
+
 namespace Main
 {
 	public class LevelLoader
@@ -55,9 +58,25 @@ namespace Main
 								reader.MoveToAttribute(i);
 								options[reader.Name] = reader.Value;
 							}
+							int x = Convert.ToInt32(options["x"]);
+							int y = Convert.ToInt32(options["y"]);
+							var ent = SceneManager.Instance.createEntity(reader["id"]);
+							ent.Transform.Position = new Sce.PlayStation.Core.Vector2(x,y);
+							if(options.ContainsKey("angle"))
+								ent.Transform.SetAngle(Convert.ToSingle(options["angle"]));
+							
+							
 							var t = Type.GetType("Main." + name);
+							if(t == null){
+								Console.WriteLine("ERROR: Could not find Prefab '" + name + "'");
+								break;
+							}
 							MethodInfo method = t.GetMethod("create", BindingFlags.Static | BindingFlags.Public);
-							method.Invoke(null, new object[]{reader["id"], options});
+							if(method == null){
+								Console.WriteLine("ERROR: '" + name + "' does not have a valid create function\n Expected: public static void create(Entity, Dictionary<String,String>)");
+								break;
+							}
+							method.Invoke(null, new object[]{ent, options});
 							break;
 					}
 				}

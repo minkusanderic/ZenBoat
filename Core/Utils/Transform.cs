@@ -13,6 +13,11 @@ namespace Core
 			
 		}
 		
+		public void SetAngle(float angle)
+		{
+			this.Rotation = Vector2.UnitX.Rotate(angle);
+		}
+		
 		public Vector2 Position;
 		public Vector2 Rotation;
 	}

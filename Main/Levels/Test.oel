@@ -1,7 +1,6 @@
 <level width="960" height="544">
   <camera x="0" y="0" />
   <Entities>
-    <Boat id="0" x="188" y="248" angle="0" />
     <Rock id="1" x="388" y="500" angle="0" />
     <Rock id="2" x="560" y="40" angle="0" />
     <Rock id="3" x="864" y="220" angle="0" />
@@ -9,5 +8,6 @@
     <Rock id="5" x="52" y="28" angle="0" />
     <Rock id="6" x="52" y="512" angle="0" />
     <Rock id="7" x="700" y="512" angle="0" />
+    <Boat id="0" x="460" y="268" angle="0" />
   </Entities>
 </level>
