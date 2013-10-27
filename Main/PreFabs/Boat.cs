@@ -18,7 +18,7 @@ namespace Main
 			int height = 100;
 		
 		    ent.attachComponent(new RectComponent(width, height));
-			ent.attachComponent(new Camera(ent));
+			
 		}
 	}
 }

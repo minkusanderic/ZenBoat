@@ -34,6 +34,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Sce.PlayStation.Core" />
+    <Reference Include="Sce.PlayStation.HighLevel.Model" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppMain.cs" />
@@ -62,5 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Levels\Test.oel" />
+    <Content Include="resources\Desk.mdx" />
   </ItemGroup>
 </Project>

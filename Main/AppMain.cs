@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-
+using Sce.PlayStation;
+using Sce.PlayStation.HighLevel.Model;
 using Core;
 
 namespace Main
@@ -14,7 +15,6 @@ namespace Main
 			var ent = SceneManager.Instance.createEntity("Hello");
 			ent.attachComponent(new SuicideController(2000));
 			SceneManager.Instance.Update();
-			
 			LevelLoader.Load("/Application/Levels/Test.oel");
 			
 			while(true)

@@ -14,7 +14,7 @@ namespace Core
 			systems[typeof(PhysicsSystem)] = new PhysicsSystem();
 			entity_comp = new Dictionary<Entity, List<IComponent>>();
 		}
-	
+
 	public static SceneManager _instance;
 		
 	public static SceneManager Instance
@@ -49,7 +49,7 @@ namespace Core
 			systems[typeof(GraphicsSystem)].Update();
 		}
 		
-	private Dictionary<Type, System> systems;
+	public Dictionary<Type, System> systems;
 	public System getSystem(Type comp_type)
 		{
 			return systems[comp_type];

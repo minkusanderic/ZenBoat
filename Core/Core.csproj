@@ -36,6 +36,7 @@
     <Reference Include="Sce.PlayStation.Core" />
     <Reference Include="Sce.PlayStation.HighLevel.GameEngine2D" />
     <Reference Include="Sce.PlayStation.HighLevel.Physics2D" />
+    <Reference Include="Sce.PlayStation.HighLevel.Model" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
   <ItemGroup>
@@ -48,16 +49,14 @@
     <Compile Include="Components\IComponent.cs" />
     <Compile Include="Systems\ControllerSystem.cs" />
     <Compile Include="Components\Controller.cs" />
-    <Compile Include="Components\Sprite2d.cs" />
-    <Compile Include="Components\GrpahicsComponent.cs" />
     <Compile Include="Systems\PhysicsSystem.cs" />
     <Compile Include="Components\RigidBody.cs" />
-    <Compile Include="Components\Camera.cs" />
     <Compile Include="Components\TriggerComponent.cs" />
     <Compile Include="Components\SuicideController.cs" />
     <Compile Include="Utils\TouchController.cs" />
     <Compile Include="Components\ResetController.cs" />
     <Compile Include="Managers\SceneManager.cs" />
+    <Compile Include="Components\GraphicsComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

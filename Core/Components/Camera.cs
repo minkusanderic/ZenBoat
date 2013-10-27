@@ -1,11 +1,11 @@
 using System;
 using Sce.PlayStation.Core;
-using Sce.PlayStation.HighLevel.GameEngine2D.Base;
 
 namespace Core
 {
 	public class Camera : Component<GraphicsSystem>
 	{
+		/*
 		public Camera2D cam;
 		public Entity target = null;
 		public Camera ()
@@ -29,7 +29,7 @@ namespace Core
 			{
 				this.cam.Center = new Vector2(target.Transform.Position.X, this.parent.Transform.Position.Y);
 			}
-		}
+		}*/
 	}
 }
 
