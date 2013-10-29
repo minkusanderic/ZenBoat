@@ -60,6 +60,7 @@
     <Folder Include="PreFabs\" />
     <Folder Include="Levels\" />
     <Folder Include="resources\" />
+    <Folder Include="Assets\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Levels\Test.oel" />
