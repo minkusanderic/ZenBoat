@@ -25,13 +25,13 @@ namespace Core
 		{
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
-			model = new BasicModel(	"/Application/resources/Desk.mdx" , 0	); 
+			model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
 		
 		public override void Update() // Render here
 		{
 			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
-			Matrix4 view = Matrix4.LookAt( new Vector3( 0.0f, 0.0f, 30.0f ),
+			Matrix4 view = Matrix4.LookAt( new Vector3( 0.0f, 0.0f, 944.0f/ (2.0f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
 											new Vector3( 0.0f, 0.0f, 0.0f ),
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
 			Vector3 litDirection = new Vector3( 1.0f, -1.0f, -1.0f ).Normalize() ;
@@ -43,7 +43,7 @@ namespace Core
 	
 			BasicParameters parameters = program.Parameters ;
 			parameters.Enable( BasicEnableMode.Lighting, true ) ;
-			parameters.Enable( BasicEnableMode.Fog, true ) ;
+			//parameters.Enable( BasicEnableMode.Fog, true ) ;
 	
 			parameters.SetProjectionMatrix( ref proj ) ;
 			parameters.SetViewMatrix( ref view ) ;
@@ -75,7 +75,7 @@ namespace Core
 			//  adjust position
 			
 			if ( model.BoundingSphere.W != 0.0f ) {
-				float scale = 10.0f / model.BoundingSphere.W ;
+				float scale = 1;
 				world *= Matrix4.Scale( scale, scale, scale ) ;
 				world *= Matrix4.Translation( -model.BoundingSphere.Xyz ) ;
 			}
@@ -94,7 +94,7 @@ namespace Core
 			model.SetWorldMatrix( ref world ) ;
 			//model.Animate( SampleTimer.DeltaTime ) ;
 			model.Update() ;
-			model.Draw( graphics, program ) ;
+			model.Draw( graphics, program) ;
 			
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;

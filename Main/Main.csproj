@@ -65,6 +65,7 @@
   <ItemGroup>
     <Content Include="Levels\Test.oel" />
     <Content Include="resources\Desk.mdx" />
-    <Content Include="Assets\Untitled.png" />
+    <Content Include="resources\Cube.mdx" />
+	<Content Include="Assets\Untitled.png" />
   </ItemGroup>
 </Project>
