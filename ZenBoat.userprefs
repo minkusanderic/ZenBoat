@@ -6,7 +6,7 @@
       <File FileName="Main\PreFabs\Rock.cs" Line="1" Column="1" />
       <File FileName="Main\AppMain.cs" Line="18" Column="6" />
       <File FileName="Core\Managers\SceneManager.cs" Line="39" Column="21" />
-      <File FileName="Core\Systems\GraphicsSystem.cs" Line="24" Column="3" />
+      <File FileName="Core\Systems\GraphicsSystem.cs" Line="80" Column="64" />
       <File FileName="Core\Systems\System.cs" Line="1" Column="1" />
       <File FileName="Core\Systems\PhysicsSystem.cs" Line="1" Column="1" />
     </Files>

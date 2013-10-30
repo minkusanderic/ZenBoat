@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+using Sce.PlayStation.Core;
+using Sce.PlayStation.Core.Environment;
+
 namespace Core
 {
 	public class SceneManager
@@ -31,6 +34,7 @@ namespace Core
 		
 	public void Update()
 		{
+			SystemEvents.CheckEvents();
 			foreach(var comp in to_be_destroyed)
 			{
 				entity_comp[comp.parent].Remove(comp);
