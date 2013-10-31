@@ -8,6 +8,10 @@
     <Rock id="5" x="52" y="28" angle="0" />
     <Rock id="6" x="52" y="512" angle="0" />
     <Rock id="7" x="700" y="512" angle="0" />
-    <Boat id="0" x="460" y="268" angle="0.5235988" />
+    <Boat id="0" x="460" y="256" angle="0.5235988" />
+    <Rock id="8" x="92" y="196" angle="0" />
+    <Rock id="9" x="52" y="208" angle="0" />
+    <Rock id="10" x="216" y="448" angle="0" />
+    <Rock id="11" x="308" y="100" angle="0" />
   </Entities>
 </level>

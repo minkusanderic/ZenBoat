@@ -18,6 +18,7 @@ namespace Main
 			int height = 75;
 		
 			ent.attachComponent(new RectComponent(width, height));
+			ent.attachComponent(new ModelComponent("/Application/resources/Cube.mdx"));
 		}
 	}
 }

@@ -13,26 +13,26 @@ namespace Core
 	public class GraphicsSystem : Core.System
 	{
 		
-		private List<GraphicsComponent> sprites;
+		private List<ModelComponent> models = new List<ModelComponent>();
 
 		public GraphicsContext graphics;
 		public BasicProgram program;
 		
 		
 		//private Dictionary<String, Texture2D> textures = new Dictionary<String, Texture2D>();
-		BasicModel model;
+		//BasicModel model;
 		public GraphicsSystem ()
 		{
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
-			model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
+			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
 		
 		public override void Update() // Render here
 		{
 			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
-			Matrix4 view = Matrix4.LookAt( new Vector3( 0.0f, 0.0f, 944.0f/ (2.0f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
-											new Vector3( 0.0f, 0.0f, 0.0f ),
+			Matrix4 view = Matrix4.LookAt( new Vector3( 960.0f/2.0f, 544.0f/2.0f, 944.0f/ (2.0f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
+											new Vector3( 960.0f/2.0f, 544.0f/2.0f, 0.0f ),
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
 			Vector3 litDirection = new Vector3( 1.0f, -1.0f, -1.0f ).Normalize() ;
 			Vector3 litDirection2 = new Vector3( 0.0f, 1.0f, 0.0f ).Normalize() ;
@@ -70,15 +70,28 @@ namespace Core
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			
-			Matrix4 world = Matrix4.RotationY( FMath.Radians( 0 ) ) ;
-
 			//  adjust position
 			
-			if ( model.BoundingSphere.W != 0.0f ) {
-				float scale = 1;
-				world *= Matrix4.Scale( scale, scale, scale ) ;
-				world *= Matrix4.Translation( -model.BoundingSphere.Xyz ) ;
+			foreach(var model in models)
+			{
+				Matrix4 world = Matrix4.RotationY( FMath.Radians( 0 ) ) ;
+				
+				if ( model.model.BoundingSphere.W != 0.0f ) {
+					float scale = 100;
+					
+					Vector3 pos = new Vector3(model.parent.Transform.Position.X, model.parent.Transform.Position.Y, 0);
+					
+					world *= Matrix4.Translation(pos) ;
+					world *= Matrix4.Scale( scale, scale, scale ) ;
+				}
+				
+				model.model.SetWorldMatrix( ref world ) ;
+				//model.Animate( SampleTimer.DeltaTime ) ;
+				model.model.Update() ;
+				model.model.Draw(graphics, program) ;
 			}
+			
+			
 			
 			//  select motion
 			/*
@@ -91,10 +104,7 @@ namespace Core
 			*/
 			//  draw model
 	
-			model.SetWorldMatrix( ref world ) ;
-			//model.Animate( SampleTimer.DeltaTime ) ;
-			model.Update() ;
-			model.Draw( graphics, program) ;
+			
 			
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;
@@ -105,7 +115,10 @@ namespace Core
 		
 		public override void attachComponent(IComponent comp)
 		{
-		
+			if(comp is ModelComponent)
+			{
+				models.Add((ModelComponent)comp);
+			}
 		}
 		
 	}
