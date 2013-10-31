@@ -31,7 +31,7 @@ namespace Core
 		public override void Update() // Render here
 		{
 			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
-			Matrix4 view = Matrix4.LookAt( new Vector3( 960.0f/2.0f, 544.0f/2.0f, (960.0f/2.0f)/ (2.0f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
+			Matrix4 view = Matrix4.LookAt( new Vector3( 960.0f/2.0f, 544.0f/2.0f, (960.0f/2.0f)/ (1.77f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
 											new Vector3( 960.0f/2.0f, 544.0f/2.0f, 0.0f ),
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
 			Vector3 litDirection = new Vector3( 1.0f, -1.0f, -1.0f ).Normalize() ;
