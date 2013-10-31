@@ -13,5 +13,6 @@
     <Rock id="9" x="52" y="208" angle="0" />
     <Rock id="10" x="216" y="448" angle="0" />
     <Rock id="11" x="308" y="100" angle="0" />
+    <RockSpawner id="12" x="308" y="100" angle="0" />
   </Entities>
 </level>
