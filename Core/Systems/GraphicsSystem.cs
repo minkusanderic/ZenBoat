@@ -77,7 +77,7 @@ namespace Core
 				Matrix4 world = Matrix4.RotationY( FMath.Radians( 0 ) ) ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
-					float scale = 1;
+					float scale = model.scale;
 					
 					Vector3 pos = new Vector3(model.parent.Transform.Position.X, model.parent.Transform.Position.Y, 0);
 					

@@ -68,5 +68,6 @@
     <Content Include="resources\Desk.mdx" />
     <Content Include="resources\Cube.mdx" />
     <Content Include="Assets\Untitled.png" />
+    <Content Include="resources\Rock.mdx" />
   </ItemGroup>
 </Project>

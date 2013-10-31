@@ -18,8 +18,8 @@ namespace Main
 			int height = 100;
 		
 		    //ent.attachComponent(new RectComponent(width, height));
-			ent.attachComponent(new ModelComponent("/Application/resources/Desk.mdx"));
-			
+			var m = ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
+			Console.WriteLine(((ModelComponent)m).model.BoundingSphere.W.ToString());
 		}
 	}
 }
