@@ -57,6 +57,7 @@
     <Compile Include="Components\ResetController.cs" />
     <Compile Include="Managers\SceneManager.cs" />
     <Compile Include="Components\GraphicsComponent.cs" />
+    <Compile Include="Components\ModelComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
