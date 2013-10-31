@@ -34,7 +34,7 @@ namespace Main
 							Console.WriteLine("x: " + (interp_x * width) + "\t\ty: " + interp_y * height );
 							Entity rock = SceneManager.Instance.createEntity("Rock");
 							rock.attachComponent( new ModelComponent("\\Application\\resources\\Cube.mdx") );
-							rock.Transform.Position = 2 * new Vector2( (interp_x * width)  , interp_y * height );
+							rock.Transform.Position = new Vector2( (interp_x * width)  , interp_y * height );
 							break;
 						}
 					}
