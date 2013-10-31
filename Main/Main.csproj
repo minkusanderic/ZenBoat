@@ -41,6 +41,7 @@
     <Compile Include="LevelLoader.cs" />
     <Compile Include="PreFabs\Rock.cs" />
     <Compile Include="PreFabs\Boat.cs" />
+    <Compile Include="PreFabs\RockSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -66,6 +67,6 @@
     <Content Include="Levels\Test.oel" />
     <Content Include="resources\Desk.mdx" />
     <Content Include="resources\Cube.mdx" />
-	<Content Include="Assets\Untitled.png" />
+    <Content Include="Assets\Untitled.png" />
   </ItemGroup>
 </Project>

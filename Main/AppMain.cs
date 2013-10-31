@@ -12,7 +12,6 @@ namespace Main
 		public static void Main (string[] args)
 		{
 			LevelLoader.Load("/Application/Levels/Test.oel");
-			
 			while(true)
 			{
 				SceneManager.Instance.Update();

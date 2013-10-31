@@ -9,7 +9,6 @@ namespace Core
 		{
 			model = new BasicModel( file_name , 0 ); // use index here
 		}
-
 	}
 }
 
