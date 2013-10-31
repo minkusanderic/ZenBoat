@@ -31,7 +31,7 @@ namespace Core
 		public override void Update() // Render here
 		{
 			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
-			Matrix4 view = Matrix4.LookAt( new Vector3( 960.0f/2.0f, 544.0f/2.0f, 944.0f/ (2.0f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
+			Matrix4 view = Matrix4.LookAt( new Vector3( 960.0f/2.0f, 544.0f/2.0f, (960.0f/2.0f)/ (2.0f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
 											new Vector3( 960.0f/2.0f, 544.0f/2.0f, 0.0f ),
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
 			Vector3 litDirection = new Vector3( 1.0f, -1.0f, -1.0f ).Normalize() ;
@@ -43,7 +43,7 @@ namespace Core
 	
 			BasicParameters parameters = program.Parameters ;
 			parameters.Enable( BasicEnableMode.Lighting, true ) ;
-			//parameters.Enable( BasicEnableMode.Fog, true ) ;
+			parameters.Enable( BasicEnableMode.Fog, true ) ;
 	
 			parameters.SetProjectionMatrix( ref proj ) ;
 			parameters.SetViewMatrix( ref view ) ;
@@ -55,7 +55,7 @@ namespace Core
 			parameters.SetLightDiffuse( 1, ref litColor2 ) ;
 			parameters.SetLightSpecular( 1, ref litColor2 ) ;
 			parameters.SetLightAmbient( ref litAmbient ) ;
-			parameters.SetFogRange( 10.0f, 50.0f ) ;
+			parameters.SetFogRange( 10.0f, 5000.0f ) ;
 			parameters.SetFogColor( ref fogColor ) ;
 	
 			graphics.SetViewport( 0, 0, graphics.Screen.Width, graphics.Screen.Height ) ;
@@ -77,7 +77,7 @@ namespace Core
 				Matrix4 world = Matrix4.RotationY( FMath.Radians( 0 ) ) ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
-					float scale = 100;
+					float scale = 1;
 					
 					Vector3 pos = new Vector3(model.parent.Transform.Position.X, model.parent.Transform.Position.Y, 0);
 					

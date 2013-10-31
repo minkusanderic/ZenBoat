@@ -59,7 +59,7 @@ namespace Main
 								options[reader.Name] = reader.Value;
 							}
 							int x = Convert.ToInt32(options["x"]);
-							int y = Convert.ToInt32(options["y"]);
+							int y = 544 - Convert.ToInt32(options["y"]);
 							var ent = SceneManager.Instance.createEntity(reader["id"]);
 							ent.Transform.Position = new Sce.PlayStation.Core.Vector2(x,y);
 							if(options.ContainsKey("angle"))
