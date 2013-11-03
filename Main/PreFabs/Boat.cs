@@ -16,10 +16,13 @@ namespace Main
 			
 			int width = 200;
 			int height = 100;
-		
-		    //ent.attachComponent(new RectComponent(width, height));
-			var m = ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
+			
+		    
+			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
 			Console.WriteLine(((ModelComponent)m).model.BoundingSphere.W.ToString());
+			m.scale = 50;
+			ent.attachComponent( new RigidBody(m.scale) );
+			ent.attachComponent( new FrictionController(.25f) );
 		}
 	}
 }

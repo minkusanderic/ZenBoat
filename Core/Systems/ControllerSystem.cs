@@ -33,6 +33,10 @@ namespace Core
 			}
 			this.to_be_attached.Clear();
 		}
+		public override void destroyComponent (IComponent comp)
+		{
+			base.destroyComponent (comp);
+		}
 	}
 }
 

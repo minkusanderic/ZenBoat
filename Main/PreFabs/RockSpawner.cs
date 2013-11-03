@@ -10,8 +10,10 @@ namespace Main
 {
 	public class RockSpawner 
 	{
+		
 		class RockSpawnerLogic : Core.Controller
 		{
+			float force = 100f;
 			bool touchDown = false;
 			TouchController touchController;
 			public RockSpawnerLogic( TouchController tc )
@@ -19,6 +21,7 @@ namespace Main
 				Console.WriteLine("Making RockSpawner");
 				touchController = tc;
 			}
+			bool b = true;
 			public override void Update ()
 			{
 				if ( touchController.getTouchData().Count > 0 )
@@ -31,10 +34,33 @@ namespace Main
 							float interp_x =  td.X + .5f;
 							float interp_y = -td.Y + .5f;
 							
-							Console.WriteLine("x: " + (interp_x * width) + "\t\ty: " + interp_y * height );
+							//Console.WriteLine("x: " + (interp_x * width) + "\t\ty: " + interp_y * height );
 							Entity rock = SceneManager.Instance.createEntity("Rock");
 							rock.attachComponent( new ModelComponent("\\Application\\resources\\Cube.mdx") );
 							rock.Transform.Position = new Vector2( (interp_x * width)  , interp_y * height );
+							rock.attachComponent( new SuicideController( 50 ) );
+							
+							if ( b )
+							{
+								if ( Vector2.Distance(
+									rock.Transform.Position , SceneManager.Instance.GetEntity("0").Transform.Position	)
+									< 100f )
+								{
+									RigidBody rb = (RigidBody)SceneManager.Instance.GetComponent<RigidBody>(SceneManager.Instance.GetEntity("0"));
+									rb.applyForce( force*new Vector2(	
+									               rb.parent.Transform.Position.X - rock.Transform.Position.X , 
+									               rb.parent.Transform.Position.Y - rock.Transform.Position.Y) );
+								}
+							} 
+							int num_particles = 20;
+							for ( int i = 0 ; i < 360; i += num_particles )
+							{
+								Entity particle = SceneManager.Instance.createEntity( "particle" + i );
+								particle.attachComponent( new RippleParticlePusher( i , rock.Transform.Position.X , rock.Transform.Position.Y		) );
+								particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
+								particle.attachComponent( new SuicideController( 50 ) );
+							}
+							
 							break;
 						}
 					}

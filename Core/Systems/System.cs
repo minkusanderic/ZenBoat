@@ -17,7 +17,7 @@ namespace Core
 		
 		public virtual void destroyComponent(IComponent comp)
 		{
-			throw new InvalidOperationException("Cannot destroy base System");
+			//throw new InvalidOperationException("Cannot destroy base System");
 		}
 	}
 }

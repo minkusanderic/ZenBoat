@@ -17,7 +17,7 @@ namespace Main
 			int width = 75;
 			int height = 75;
 		
-			ent.attachComponent(new RectComponent(width, height));
+			//ent.attachComponent(new RectComponent(width, height));
 			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
 			m.scale = 100;
 		}

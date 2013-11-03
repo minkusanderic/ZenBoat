@@ -37,12 +37,17 @@ namespace Core
 		
 		public void Destroy()
 		{
+			
+			SceneManager.Instance.DestroyEntity( this );
+			/*
 			this.Transform.Position = new Sce.PlayStation.Core.Vector2(-10000, 10000);
 			try{
 				var body = (RigidBody)SceneManager.Instance.GetComponent<RigidBody>(this);
 				body.body.Position = new Sce.PlayStation.Core.Vector2(-10000, 10000);
+				
 			}
 			catch{}
+			*/
 		}
 		
 		public Transform Transform

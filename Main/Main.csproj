@@ -35,6 +35,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Sce.PlayStation.Core" />
     <Reference Include="Sce.PlayStation.HighLevel.Model" />
+    <Reference Include="Sce.PlayStation.HighLevel.Physics2D" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppMain.cs" />
@@ -42,6 +43,7 @@
     <Compile Include="PreFabs\Rock.cs" />
     <Compile Include="PreFabs\Boat.cs" />
     <Compile Include="PreFabs\RockSpawner.cs" />
+    <Compile Include="PreFabs\Whirlpool.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -69,5 +71,6 @@
     <Content Include="resources\Cube.mdx" />
     <Content Include="Assets\Untitled.png" />
     <Content Include="resources\Rock.mdx" />
+    <Content Include="Levels\Test %28copy%29.oel" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,12 @@
+<level width="960" height="544">
+  <camera x="0" y="0" />
+  <Entities>
+    <Rock id="5" x="52" y="28" angle="0" />
+    <Boat id="0" x="460" y="256" angle="0.5235988" />
+    <Rock id="8" x="92" y="196" angle="0" />
+    <Rock id="9" x="52" y="208" angle="0" />
+    <Rock id="10" x="216" y="448" angle="0" />
+    <Rock id="11" x="308" y="100" angle="0" />
+    <RockSpawner id="12" x="308" y="100" angle="0" />
+  </Entities>
+</level>

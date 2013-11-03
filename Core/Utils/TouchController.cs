@@ -34,6 +34,10 @@ namespace Core
 		{
 			return Touch.GetData(	0	);
 		}
+		public override void destroy ()
+		{
+			base.destroy ();
+		}
 	}
 }
 

@@ -58,6 +58,10 @@
     <Compile Include="Managers\SceneManager.cs" />
     <Compile Include="Components\GraphicsComponent.cs" />
     <Compile Include="Components\ModelComponent.cs" />
+    <Compile Include="Components\RippleController.cs" />
+    <Compile Include="Components\WhirlpoolTrigger.cs" />
+    <Compile Include="Components\RippleParticlePusher.cs" />
+    <Compile Include="Components\FrictionController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

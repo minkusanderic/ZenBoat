@@ -82,7 +82,10 @@ namespace Core
 		{
 			return physics.QueryContact(body1.body, body2.body);
 		}
-		
+		public override void destroyComponent (IComponent comp)
+		{
+			base.destroyComponent (comp);
+		}
 	}
 }
 

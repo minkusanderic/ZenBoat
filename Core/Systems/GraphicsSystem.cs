@@ -81,6 +81,7 @@ namespace Core
 					
 					Vector3 pos = new Vector3(model.parent.Transform.Position.X, model.parent.Transform.Position.Y, 0);
 					
+					//Console.WriteLine( model.parent.Name+"--" + pos );
 					world *= Matrix4.Translation(pos) ;
 					world *= Matrix4.Scale( scale, scale, scale ) ;
 				}
@@ -119,6 +120,15 @@ namespace Core
 			{
 				models.Add((ModelComponent)comp);
 			}
+		}
+		
+		public override void destroyComponent (IComponent comp)
+		{
+			if ( comp is ModelComponent)
+			{
+				models.Remove( (ModelComponent) comp);	
+			}
+			//base.destroyComponent (comp);
 		}
 		
 	}

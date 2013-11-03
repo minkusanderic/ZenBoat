@@ -25,6 +25,10 @@ namespace Core
 			}
 			
 		}
+		public override void destroy ()
+		{
+			base.destroy ();
+		}
 	}
 }
 
