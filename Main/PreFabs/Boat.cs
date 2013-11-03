@@ -2,6 +2,7 @@ using System;
 
 using System.Collections;
 using System.Collections.Generic;
+using Sce.PlayStation.Core;
 
 using Core;
 namespace Main
@@ -18,10 +19,10 @@ namespace Main
 			int height = 100;
 			
 		    
-			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
+			var m = (ModelComponent)ent.attachComponent(new CubeComponent(100,50, new Vector3(1.0f, 0.0f,0.0f)));
 			Console.WriteLine(((ModelComponent)m).model.BoundingSphere.W.ToString());
-			m.scale = 50;
-			ent.attachComponent( new RigidBody(m.scale) );
+			//m.scale = new Vector3(50, 50, 50);
+			ent.attachComponent( new RigidBody(m.scale.X) );
 			ent.attachComponent( new FrictionController(.25f) );
 		}
 	}

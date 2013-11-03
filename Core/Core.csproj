@@ -62,6 +62,7 @@
     <Compile Include="Components\WhirlpoolTrigger.cs" />
     <Compile Include="Components\RippleParticlePusher.cs" />
     <Compile Include="Components\FrictionController.cs" />
+    <Compile Include="Components\CubeComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

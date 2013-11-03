@@ -77,14 +77,15 @@ namespace Core
 				Matrix4 world = Matrix4.RotationY( FMath.Radians( 0 ) ) ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
-					float scale = model.scale;
+					Vector3 scale = model.scale;
 					
 					Vector3 pos = new Vector3(model.parent.Transform.Position.X, model.parent.Transform.Position.Y, 0);
 					
 					//Console.WriteLine( model.parent.Name+"--" + pos );
 					world *= Matrix4.Translation(pos) ;
-					world *= Matrix4.Scale( scale, scale, scale ) ;
+					world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 				}
+				
 				
 				model.model.SetWorldMatrix( ref world ) ;
 				//model.Animate( SampleTimer.DeltaTime ) ;

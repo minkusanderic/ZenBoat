@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+using Sce.PlayStation.Core;
 using Core;
 
 namespace Main
@@ -19,7 +20,7 @@ namespace Main
 		
 			//ent.attachComponent(new RectComponent(width, height));
 			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
-			m.scale = 100;
+			m.scale = new Vector3(100, 100, 100);
 		}
 	}
 }
