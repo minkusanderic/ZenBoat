@@ -16,7 +16,7 @@ namespace Core
 		
 		public override void attachComponent(IComponent comp)
 		{
-				if(comp is Controller){
+			if(comp is Controller){
 				to_be_attached.Add((Controller)comp);
 			}
 		}
@@ -32,10 +32,6 @@ namespace Core
 				this.controllers.Add(cont);
 			}
 			this.to_be_attached.Clear();
-		}
-		public override void destroyComponent (IComponent comp)
-		{
-			base.destroyComponent (comp);
 		}
 	}
 }
