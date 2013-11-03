@@ -71,5 +71,7 @@
     <Content Include="Assets\Untitled.png" />
     <Content Include="resources\Rock.mdx" />
     <Content Include="Levels\Test %28copy%29.oel" />
+    <Content Include="resources\WhirlCube2.mdx" />
+    <Content Include="resources\boat2.mdx" />
   </ItemGroup>
 </Project>

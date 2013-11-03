@@ -18,7 +18,7 @@ namespace Main
 			int height = 75;
 		
 			//ent.attachComponent(new RectComponent(width, height));
-			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
+			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/WhirlCube2.mdx"));
 			m.scale = new Vector3(100, 100, 100);
 			RigidBody rb = new RigidBody( m.scale.X / 5f );
 			rb.body = new PhysicsBody();

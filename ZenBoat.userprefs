@@ -1,13 +1,21 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Main\PreFabs\Boat.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\Program Files (x86)\MSBuild\Sce\Sce.Psm.Common.targets">
     <Files>
-      <File FileName="Core\Systems\GraphicsSystem.cs" Line="120" Column="38" />
-      <File FileName="Core\Systems\PhysicsSystem.cs" Line="66" Column="24" />
-      <File FileName="Core\Systems\System.cs" Line="20" Column="70" />
-      <File FileName="Core\Systems\ControllerSystem.cs" Line="19" Column="27" />
-      <File FileName="Core\Managers\SceneManager.cs" Line="97" Column="41" />
-      <File FileName="Main\PreFabs\Boat.cs" Line="25" Column="29" />
+      <File FileName="Main\PreFabs\Boat.cs" Line="23" Column="1" />
+      <File FileName="Main\PreFabs\Rock.cs" Line="21" Column="28" />
+      <File FileName="Core\Managers\SceneManager.cs" Line="11" Column="3" />
+      <File FileName="Core\Systems\GraphicsSystem.cs" Line="50" Column="19" />
+      <File FileName="Core\Systems\PhysicsSystem.cs" Line="1" Column="1" />
+      <File FileName="Core\Components\Controller.cs" Line="15" Column="6" />
+      <File FileName="Main\Levels\Test.oel" Line="5" Column="5" />
+      <File FileName="Main\Levels\Test (copy).oel" Line="1" Column="1" />
+      <File FileName="Main\PreFabs\RockSpawner.cs" Line="38" Column="8" />
+      <File FileName="Core\Components\PushComponent.cs" Line="11" Column="3" />
+      <File FileName="Core\Components\RippleController.cs" Line="17" Column="4" />
+      <File FileName="Core\Components\Component.cs" Line="20" Column="38" />
+      <File FileName="Main\PreFabs\Whirlpool.cs" Line="21" Column="101" />
+      <File FileName="..\..\..\..\Program Files (x86)\MSBuild\Sce\Sce.Psm.Common.targets" Line="193" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -19,9 +19,9 @@ namespace Main
 			int height = 100;
 			
 		    
-			var m = (ModelComponent)ent.attachComponent(new CubeComponent(100,50, new Vector3(1.0f, 0.0f,0.0f)));
+			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/boat2.mdx"));
 			Console.WriteLine(((ModelComponent)m).model.BoundingSphere.W.ToString());
-			//m.scale = new Vector3(50, 50, 50);
+			m.scale = new Vector3(50, 50, 50);
 			ent.attachComponent( new RigidBody(m.scale.X) );
 			ent.attachComponent( new FrictionController(.25f) );
 		}
