@@ -10,15 +10,19 @@ namespace Core
 	[Serializable]
 	public class Entity
 	{
-		public String Name;
+		public String Name
+		{get;set;}
 		
-		public List<IComponent> components;
+		
+		private HashSet<String> tags = new HashSet<String>();
+		
+		private List<IComponent> components;
 		
 		public Entity()
 		{
 			this.components = new List<IComponent>();
 			this.Transform = new Transform();
-			this.Name = "";
+			this.Name = "<unknown>";
 		}
 		
 		public Entity (String Name)
@@ -28,16 +32,51 @@ namespace Core
 			this.Name = Name;
 		}
 		
-		public IComponent attachComponent(IComponent comp)
+		public T FindComponent<T>() 
 		{
-			SceneManager.Instance.attachComponent(this, comp);
+			foreach(var comp in this.components)
+			{
+				if(comp is T)
+				{
+					return (T)Convert.ChangeType(comp, typeof(T));
+				}
+			}
+			throw new Exception("Component Not Found!!");
+			
+		}
+				
+		public IEnumerable<IComponent> GetComponents()
+		{
+			foreach(var comp in components)
+			{
+				yield return comp;
+			}
+		}
+		
+		public Entity tag(params String[] tags)
+		{
+			foreach(var tag in tags)
+			{
+				this.tags.Add(tag);
+			}
+			return this;
+		}
+		
+		public bool HasTag(String tag)
+		{
+			return tags.Contains(tag);
+		}
+		
+		public T attachComponent<T>(T comp) where T:IComponent
+		{
+			SceneManager.Instance.attachComponent(this, (IComponent)comp);
+			this.components.Add(comp);
 			return comp;
 		}
 		
 		
 		public void Destroy()
 		{
-			
 			SceneManager.Instance.DestroyEntity( this );
 			/*
 			this.Transform.Position = new Sce.PlayStation.Core.Vector2(-10000, 10000);
@@ -49,6 +88,7 @@ namespace Core
 			catch{}
 			*/
 		}
+	
 		
 		public Transform Transform
 		{get;set;}

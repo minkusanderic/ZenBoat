@@ -20,7 +20,7 @@ namespace Core
 		{
 			var physics = (PhysicsSystem)SceneManager.Instance.getSystem(typeof(PhysicsSystem));
 			foreach(var target in this.targets){
-			if (physics.isColliding(this.require<RigidBody>(), SceneManager.Instance.GetComponent<RigidBody>(target)))
+			if (physics.isColliding(this.require<RigidBody>(), target.FindComponent<RigidBody>()))
 			{
 				this.onCollide(target);
 			}

@@ -24,6 +24,7 @@ namespace Main
 			bool b = true;
 			public override void Update ()
 			{
+				var boat = SceneManager.Instance.FindEntity("Boat");
 				if ( touchController.getTouchData().Count > 0 )
 				{
 					foreach( TouchData td in touchController.getTouchData() )
@@ -43,10 +44,10 @@ namespace Main
 							if ( b )
 							{
 								if ( Vector2.Distance(
-									rock.Transform.Position , SceneManager.Instance.GetEntity("0").Transform.Position	)
+									rock.Transform.Position , boat.Transform.Position	)
 									< 100f )
 								{
-									RigidBody rb = (RigidBody)SceneManager.Instance.GetComponent<RigidBody>(SceneManager.Instance.GetEntity("0"));
+									RigidBody rb = boat.FindComponent<RigidBody>();
 									rb.applyForce( force*new Vector2(	
 									               rb.parent.Transform.Position.X - rock.Transform.Position.X , 
 									               rb.parent.Transform.Position.Y - rock.Transform.Position.Y) );
@@ -82,7 +83,7 @@ namespace Main
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			touchController = (TouchController)ent.attachComponent(	new TouchController()	);
+			touchController = ent.attachComponent(	new TouchController()	);
 			
 			ent.attachComponent( new RockSpawnerLogic( touchController ) );
 		}

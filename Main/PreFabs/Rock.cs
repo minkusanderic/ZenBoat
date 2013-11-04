@@ -15,10 +15,8 @@ namespace Main
 		
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			int width = 75;
-			int height = 75;
+			ent.tag("rock");
 		
-			//ent.attachComponent(new RectComponent(width, height));
 			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
 			m.scale = new Vector3(100, 100, 100);
 		}

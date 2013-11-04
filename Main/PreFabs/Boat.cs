@@ -14,13 +14,10 @@ namespace Main
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			
-			int width = 200;
-			int height = 100;
-			
-		    
-			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/boat2.mdx"));
-			Console.WriteLine(((ModelComponent)m).model.BoundingSphere.W.ToString());
+			ent.Name = "Boat";
+			ent.tag("boat", "pushable");
+						    
+			var m = ent.attachComponent(new ModelComponent("/Application/resources/boat2.mdx"));
 			m.scale = new Vector3(50, 50, 50);
 			ent.attachComponent( new RigidBody(m.scale.X) );
 			ent.attachComponent( new FrictionController(.25f) );

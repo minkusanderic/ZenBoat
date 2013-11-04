@@ -1,6 +1,6 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\Program Files (x86)\MSBuild\Sce\Sce.Psm.Common.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main\PreFabs\Boat.cs">
     <Files>
       <File FileName="Main\PreFabs\Boat.cs" Line="23" Column="1" />
       <File FileName="Main\PreFabs\Rock.cs" Line="21" Column="28" />
@@ -15,7 +15,6 @@
       <File FileName="Core\Components\RippleController.cs" Line="17" Column="4" />
       <File FileName="Core\Components\Component.cs" Line="20" Column="38" />
       <File FileName="Main\PreFabs\Whirlpool.cs" Line="21" Column="101" />
-      <File FileName="..\..\..\..\Program Files (x86)\MSBuild\Sce\Sce.Psm.Common.targets" Line="193" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

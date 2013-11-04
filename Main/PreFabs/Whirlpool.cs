@@ -3,6 +3,8 @@ using Core;
 using System.Collections.Generic;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.HighLevel.Physics2D;
+
+using System.Linq;
 namespace Main
 {
 	public class Whirlpool
@@ -14,11 +16,10 @@ namespace Main
 		
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			int width = 75;
-			int height = 75;
+			ent.tag("whirlpool", "cube");
 		
 			//ent.attachComponent(new RectComponent(width, height));
-			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/WhirlCube2.mdx"));
+			var m = ent.attachComponent(new ModelComponent("/Application/resources/WhirlCube2.mdx"));
 			m.scale = new Vector3(100, 100, 100);
 			RigidBody rb = new RigidBody( m.scale.X / 5f );
 			rb.body = new PhysicsBody();
@@ -31,8 +32,7 @@ namespace Main
 			//rb.makeTrigger();
 			
 			
-			List<Entity> targets = new List<Entity>();
-			targets.Add( SceneManager.Instance.GetEntity("0") );
+			List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("pushable").ToList();
 			ent.attachComponent( new WhirlpoolTrigger( targets ) );
 		}
 	}

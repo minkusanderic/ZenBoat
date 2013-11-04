@@ -9,13 +9,15 @@ namespace Core
 {
 	public class SceneManager
 	{
+		
+		public List<Entity> entities = new List<Entity>();
+		
 		private SceneManager ()
 		{
 			systems = new Dictionary<Type, System>();
 			systems[typeof(GraphicsSystem)] = new GraphicsSystem();
 			systems[typeof(ControllerSystem)] = new ControllerSystem();
 			systems[typeof(PhysicsSystem)] = new PhysicsSystem();
-			entity_comp = new Dictionary<Entity, List<IComponent>>();
 		}
 
 	public static SceneManager _instance;
@@ -27,6 +29,7 @@ namespace Core
         	 if (_instance == null)
          	{
            	 _instance = new SceneManager();
+					
          	}
          	return _instance;
       	}
@@ -37,14 +40,14 @@ namespace Core
 			SystemEvents.CheckEvents();
 			foreach(var comp in to_be_destroyed)
 			{
-				entity_comp[comp.parent].Remove(comp);
+				//entity_comp[comp.parent].Remove(comp);
 				comp.destroy();				
 			}
 			to_be_destroyed.Clear();
 			foreach(var comp in to_be_attached)
 			{
 				comp.attach(comp.parent);
-				entity_comp[comp.parent].Add(comp);
+				//entity_comp[comp.parent].Add(comp);
 			}
 			to_be_attached.Clear();
 			
@@ -60,13 +63,12 @@ namespace Core
 		}
 		
 		
-	private Dictionary<Entity, List<IComponent> > entity_comp;
-	private Dictionary<String, Entity> entities = new Dictionary<String, Entity>();
+	//private Dictionary<Entity, List<IComponent> > entity_comp;
+	//private Dictionary<String, Entity> entities = new Dictionary<String, Entity>();
 	public Entity createEntity(String name)
 		{
 			Entity ent = new Entity(name);
-			entities[name] = ent;
-			entity_comp[ent] = new List<IComponent>();
+			entities.Add(ent);
 			return ent;
 		}
 		
@@ -77,33 +79,49 @@ namespace Core
 			to_be_attached.Add(comp);
 		}
 		
-		
-		
-	public T GetComponent<T>(Entity parent) 
-		{
-			foreach(var comp in this.entity_comp[parent])
-			{
-				if(comp is T)
-				{
-					return (T)Convert.ChangeType(comp, typeof(T));
-				}
-			}
-			throw new Exception("Component Not Found!!");
-			
-		}
 	private List<IComponent> to_be_destroyed = new List<IComponent>();
 	public void DestroyEntity(Entity ent)
 		{
-			foreach(var comp in entity_comp[ent])
+			foreach(var comp in ent.GetComponents())
 			{
 				to_be_destroyed.Add(comp);
 			}
 		}
 		
-	public Entity GetEntity(String name)
+	public Entity FindEntity(String name)
 		{
-			return entities[name];          
+			foreach(var ent in entities)
+			{
+				if(ent.Name == name)
+				{
+					return ent;
+				}
+			}
+			throw new InvalidOperationException("Unable to find entity '" + name + "'");
 		}
+	public Entity FindEntityByTag(String tag)
+		{
+			foreach(var ent in entities)
+			{
+				if(ent.HasTag(tag))
+				{
+					return ent;
+				}
+			}
+			throw new InvalidOperationException("Unable to find entity with tag '" + tag + "'");
+		}
+		
+	public IEnumerable<Entity> FindEntitiesByTag(String tag)
+		{
+			foreach(var ent in entities)
+			{
+				if(ent.HasTag(tag))
+				{
+					yield return ent;
+				}
+			}
+		}
+		
 }
 }
 

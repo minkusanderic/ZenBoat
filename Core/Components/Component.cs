@@ -29,7 +29,7 @@ namespace Core
 		
 		public U require<U>()
 		{
-			return SceneManager.Instance.GetComponent<U>(this.parent);
+			return this.parent.FindComponent<U>();
 		}
 	}
 }
