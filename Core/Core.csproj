@@ -63,6 +63,7 @@
     <Compile Include="Components\RippleParticlePusher.cs" />
     <Compile Include="Components\FrictionController.cs" />
     <Compile Include="Components\CubeComponent.cs" />
+    <Compile Include="Components\SimpleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
