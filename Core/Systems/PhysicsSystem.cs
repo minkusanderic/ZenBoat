@@ -84,6 +84,14 @@ namespace Core
 		}
 		public override void destroyComponent (IComponent comp)
 		{
+			if(comp is RigidBody)
+			{
+				physics.DeleteBody(((RigidBody)comp).body);
+			}
+			if(comp is TriggerComponent)
+			{
+				triggers.Remove((TriggerComponent)comp);
+			}
 			base.destroyComponent (comp);
 		}
 	}

@@ -86,6 +86,7 @@ namespace Core
 			{
 				to_be_destroyed.Add(comp);
 			}
+			entities.Remove(ent);
 		}
 		
 	public Entity FindEntity(String name)

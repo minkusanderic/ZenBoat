@@ -14,7 +14,7 @@ namespace Core
 	{
 		
 		private List<ModelComponent> models = new List<ModelComponent>();
-		private List<SpriteComponent> cubes = new List<SpriteComponent>();
+		private List<SpriteComponent> sprites = new List<SpriteComponent>();
 		public GraphicsContext graphics;
 		public BasicProgram program;
 		
@@ -92,7 +92,7 @@ namespace Core
 				model.model.Draw(graphics, program) ;
 			}
 			
-			foreach(var cube in cubes)
+			foreach(var sprite in sprites)
 			{
 							
 				Matrix4 world = Matrix4.Identity ;
@@ -100,19 +100,19 @@ namespace Core
 				
 			    Vector3 scale = new Vector3(1,1,1);
 					
-				Vector3 pos = new Vector3(cube.parent.Transform.Position.X, cube.parent.Transform.Position.Y, 0);
+				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X, sprite.parent.Transform.Position.Y, 0);
 								
 				world *= Matrix4.Translation(pos) ;
 				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 				
-				graphics.SetVertexBuffer(0, cube.vb);
-				graphics.SetShaderProgram(cube.shaderProgram);
-				graphics.SetTexture(0, cube.texture);
+				graphics.SetVertexBuffer(0, sprite.vb);
+				graphics.SetShaderProgram(sprite.shaderProgram);
+				graphics.SetTexture(0, sprite.texture);
 				
 
 				var world_view_proj = proj * view * world;
 				program.Parameters.SetWorldMatrix(0, ref world);
-				cube.shaderProgram.SetUniformValue(0, ref world_view_proj);	
+				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
 				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 			}
@@ -146,7 +146,7 @@ namespace Core
 			
 			if(comp is SpriteComponent)
 			{
-				cubes.Add((SpriteComponent)comp);
+				sprites.Add((SpriteComponent)comp);
 			}
 		}
 		
@@ -155,6 +155,10 @@ namespace Core
 			if ( comp is ModelComponent)
 			{
 				models.Remove( (ModelComponent) comp);	
+			}
+			if ( comp is SpriteComponent )
+			{
+				sprites.Remove((SpriteComponent)comp);
 			}
 			
 			//base.destroyComponent (comp);

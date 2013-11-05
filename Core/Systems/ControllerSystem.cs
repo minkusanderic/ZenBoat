@@ -6,18 +6,16 @@ namespace Core
 {
 	public class ControllerSystem : Core.System
 	{
-		private List<Controller> controllers;
-		private List<Controller> to_be_attached = new List<Controller>();
+		private List<Controller> controllers = new List<Controller>();
 		
 		public ControllerSystem ()
 		{
-			controllers = new List<Controller>();
 		}
 		
 		public override void attachComponent(IComponent comp)
 		{
 			if(comp is Controller){
-				to_be_attached.Add((Controller)comp);
+				controllers.Add((Controller)comp);
 			}
 		}
 		
@@ -27,11 +25,14 @@ namespace Core
 			{
 				cont.Update();
 			}
-			foreach(var cont in this.to_be_attached)
+		}
+		
+		public override void destroyComponent(IComponent comp)
+		{
+			if(comp is Controller)
 			{
-				this.controllers.Add(cont);
+				controllers.Remove((Controller)comp);
 			}
-			this.to_be_attached.Clear();
 		}
 	}
 }
