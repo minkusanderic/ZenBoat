@@ -4,20 +4,20 @@ using Sce.PlayStation.Core.Graphics;
 
 namespace Core
 {
-	public class CubeComponent : GraphicsComponent
+	public class SpriteComponent : GraphicsComponent
 	{
 		
 		public VertexBuffer vb;
 		public Texture2D texture;
 		public ShaderProgram shaderProgram;
 		
-		public CubeComponent (int width, int height, Vector3 color)
+		public SpriteComponent (int width, int height, Vector3 color)
 		{
 		
 			
 		}
 		
-		public CubeComponent(String filename)
+		public SpriteComponent(String filename)
 		{
 			texture = new Texture2D(filename, false);
 			shaderProgram = new ShaderProgram("/Application/shaders/sprite.cgx");

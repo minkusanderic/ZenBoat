@@ -14,7 +14,7 @@ namespace Core
 	{
 		
 		private List<ModelComponent> models = new List<ModelComponent>();
-		private List<CubeComponent> cubes = new List<CubeComponent>();
+		private List<SpriteComponent> cubes = new List<SpriteComponent>();
 		public GraphicsContext graphics;
 		public BasicProgram program;
 		
@@ -144,9 +144,9 @@ namespace Core
 				models.Add((ModelComponent)comp);
 			}
 			
-			if(comp is CubeComponent)
+			if(comp is SpriteComponent)
 			{
-				cubes.Add((CubeComponent)comp);
+				cubes.Add((SpriteComponent)comp);
 			}
 		}
 		
