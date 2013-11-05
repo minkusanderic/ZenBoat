@@ -10,13 +10,9 @@ namespace Core
 			
 		}
 		
-		public virtual void Update()
+		public override void Update()
 		{ 
 					
-		}
-		public override void destroy ()
-		{
-			base.destroy ();
 		}
 	}
 }

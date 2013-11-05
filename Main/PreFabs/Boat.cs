@@ -21,7 +21,21 @@ namespace Main
 			m.scale = new Vector3(50, 50, 50);
 			ent.attachComponent( new RigidBody(m.scale.X) );
 			ent.attachComponent( new FrictionController(.25f) );
+			ent.attachComponent(new Core.SimpleAction(get_done));
+		}
+		
+		
+		private static IEnumerable<bool> get_done()
+		{
+			for(var i = 0; i < 5; i++)
+			{
+				Console.WriteLine("Hello");
+				yield return true;
+			}
+		
 		}
 	}
+	
+	
 }
 

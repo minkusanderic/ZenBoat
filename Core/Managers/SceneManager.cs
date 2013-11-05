@@ -14,7 +14,7 @@ namespace Core
 		
 		private SceneManager ()
 		{
-			systems = new Dictionary<Type, System>();
+			systems = new Dictionary<Type, CoreSystem>();
 			systems[typeof(GraphicsSystem)] = new GraphicsSystem();
 			systems[typeof(ControllerSystem)] = new ControllerSystem();
 			systems[typeof(PhysicsSystem)] = new PhysicsSystem();
@@ -41,7 +41,7 @@ namespace Core
 			foreach(var comp in to_be_destroyed)
 			{
 				//entity_comp[comp.parent].Remove(comp);
-				comp.destroy();				
+				comp.Destroy();				
 			}
 			to_be_destroyed.Clear();
 			foreach(var comp in to_be_attached)
@@ -56,8 +56,8 @@ namespace Core
 			systems[typeof(GraphicsSystem)].Update();
 		}
 		
-	public Dictionary<Type, System> systems;
-	public System getSystem(Type comp_type)
+	public Dictionary<Type, CoreSystem> systems;
+	public CoreSystem getSystem(Type comp_type)
 		{
 			return systems[comp_type];
 		}

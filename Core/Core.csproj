@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Components\Entity.cs" />
     <Compile Include="Components\Component.cs" />
-    <Compile Include="Systems\System.cs" />
     <Compile Include="Systems\GraphicsSystem.cs" />
     <Compile Include="Components\RectComponent.cs" />
     <Compile Include="Utils\Transform.cs" />
@@ -64,6 +63,9 @@
     <Compile Include="Components\FrictionController.cs" />
     <Compile Include="Components\SimpleController.cs" />
     <Compile Include="Components\SpriteComponent.cs" />
+    <Compile Include="Components\Action.cs" />
+    <Compile Include="Systems\CoreSystem.cs" />
+    <Compile Include="Components\SimpleAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

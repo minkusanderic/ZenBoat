@@ -23,6 +23,7 @@ namespace Core
 			shaderProgram = new ShaderProgram("/Application/shaders/sprite.cgx");
 			
 			 shaderProgram.SetUniformBinding(0, "u_ScreenMatrix");
+			 
 			 float[] vertices = new float[12];
 			
 			

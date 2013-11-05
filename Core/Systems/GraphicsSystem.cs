@@ -10,7 +10,7 @@ using System.Threading ;
 using System.Diagnostics ;
 namespace Core
 {
-	public class GraphicsSystem : Core.System
+	public class GraphicsSystem : Core.CoreSystem
 	{
 		
 		private List<ModelComponent> models = new List<ModelComponent>();

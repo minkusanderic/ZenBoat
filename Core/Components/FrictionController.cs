@@ -17,10 +17,7 @@ namespace Core
 			var body = this.require<RigidBody>();
 			body.applyForce(-body.Velocity * coefficent);
 		}
-		public override void destroy ()
-		{
-			base.destroy ();
-		}
+
 	}
 }
 

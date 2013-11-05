@@ -2,9 +2,9 @@ using System;
 
 namespace Core
 {
-	public class System
+	public class CoreSystem
 	{
-		public System ()
+		public CoreSystem ()
 		{
 		}
 		

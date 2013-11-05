@@ -15,7 +15,7 @@ using Sce.PlayStation.HighLevel.Physics2D;
 
 namespace Core
 {
-	public class PhysicsSystem : Core.System
+	public class PhysicsSystem : Core.CoreSystem
 	{
 		public PhysicsScene physics;
 		private List<RigidBody> bodies;

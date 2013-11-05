@@ -11,7 +11,7 @@ namespace Core
 		public virtual void attach(Entity ent)
 		{
 		}
-		public virtual void destroy()
+		public virtual void Destroy()
 		{
 		}
 	}

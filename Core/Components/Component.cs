@@ -3,7 +3,7 @@ using System.Xml.Serialization;
 
 namespace Core
 {
-	public class Component<T> : IComponent where T:Core.System
+	public class Component<T> : IComponent where T:Core.CoreSystem
 	{
 		
 
@@ -22,7 +22,7 @@ namespace Core
 			this.system.attachComponent(this);
 		}
 		
-		public override void destroy()
+		public override void Destroy()
 		{
 			this.system.destroyComponent(this);
 		}

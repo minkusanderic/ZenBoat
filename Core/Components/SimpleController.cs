@@ -4,15 +4,15 @@ namespace Core
 {
 	public class SimpleController : Core.Controller
 	{
-		private Action controller;
-		public SimpleController (Action controller)
+		private System.Action controller;
+		public SimpleController (System.Action controller)
 		{
 			this.controller = controller;
 		}
 		
 		public override void Update()
 		{
-			controller();
+			this.controller();
 		}
 	}
 }
