@@ -6,8 +6,11 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Environment ;
 using Sce.PlayStation.HighLevel.Model ;
+using Sce.PlayStation.HighLevel.UI;
 using System.Threading ;
 using System.Diagnostics ;
+
+using Sce.PlayStation.Core.Input;
 namespace Core
 {
 	public class GraphicsSystem : Core.System
@@ -25,7 +28,28 @@ namespace Core
 		{
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
+			
+			UISystem.Initialize(graphics);
+			
+			Scene scene = new Sce.PlayStation.HighLevel.UI.Scene();
+			 Label label = new Label();
+            label.X = 10.0f;
+            label.Y = 50.0f;
+            label.Text = "Hello World!";
+            scene.RootWidget.AddChildLast(label);
+			
+			Button textButton = new Button();
+			textButton.Text = "OK";
+			textButton.ButtonAction += HandleButtonAction;
+			scene.RootWidget.AddChildLast(textButton);
+            // Set scene
+            UISystem.SetScene(scene, null);
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
+		}
+		
+		private void HandleButtonAction(object sender, TouchEventArgs e)
+		{
+			Console.WriteLine("Shiver Me Timbers...");	
 		}
 		
 		public override void Update() // Render here
@@ -133,7 +157,8 @@ namespace Core
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
-	
+			UISystem.Update(Touch.GetData(0));
+			UISystem.Render();
 			graphics.SwapBuffers() ;
 		}
 		
