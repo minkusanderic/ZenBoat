@@ -48,6 +48,8 @@
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
     <ShaderProgram Include="shaders\Simple.vcg" />
+    <ShaderProgram Include="shaders\Sprite.fcg" />
+    <ShaderProgram Include="shaders\Sprite.vcg" />
   </ItemGroup>
   <ItemGroup>
     <PsmMetadata Include="app.xml" />
@@ -73,5 +75,6 @@
     <Content Include="Levels\Test %28copy%29.oel" />
     <Content Include="resources\WhirlCube2.mdx" />
     <Content Include="resources\boat2.mdx" />
+    <Content Include="Assets\Boat.png" />
   </ItemGroup>
 </Project>

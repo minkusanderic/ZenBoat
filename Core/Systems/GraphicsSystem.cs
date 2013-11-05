@@ -14,7 +14,7 @@ namespace Core
 	{
 		
 		private List<ModelComponent> models = new List<ModelComponent>();
-
+		private List<CubeComponent> cubes = new List<CubeComponent>();
 		public GraphicsContext graphics;
 		public BasicProgram program;
 		
@@ -74,7 +74,7 @@ namespace Core
 			
 			foreach(var model in models)
 			{
-				Matrix4 world = Matrix4.RotationY( FMath.Radians( 0 ) ) ;
+				Matrix4 world = Matrix4.Identity ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
 					Vector3 scale = model.scale;
@@ -86,14 +86,36 @@ namespace Core
 					world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 				}
 				
-				
 				model.model.SetWorldMatrix( ref world ) ;
 				//model.Animate( SampleTimer.DeltaTime ) ;
 				model.model.Update() ;
 				model.model.Draw(graphics, program) ;
 			}
 			
+			foreach(var cube in cubes)
+			{
+							
+				Matrix4 world = Matrix4.Identity ;
+				
+				
+			    Vector3 scale = new Vector3(1,1,1);
+					
+				Vector3 pos = new Vector3(cube.parent.Transform.Position.X, cube.parent.Transform.Position.Y, 0);
+								
+				world *= Matrix4.Translation(pos) ;
+				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
+				
+				graphics.SetVertexBuffer(0, cube.vb);
+				graphics.SetShaderProgram(cube.shaderProgram);
+				graphics.SetTexture(0, cube.texture);
+				
+
+				var world_view_proj = proj * view * world;
+				program.Parameters.SetWorldMatrix(0, ref world);
+				cube.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
+				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
+			}
 			
 			//  select motion
 			/*
@@ -121,6 +143,11 @@ namespace Core
 			{
 				models.Add((ModelComponent)comp);
 			}
+			
+			if(comp is CubeComponent)
+			{
+				cubes.Add((CubeComponent)comp);
+			}
 		}
 		
 		public override void destroyComponent (IComponent comp)
@@ -129,6 +156,7 @@ namespace Core
 			{
 				models.Remove( (ModelComponent) comp);	
 			}
+			
 			//base.destroyComponent (comp);
 		}
 		

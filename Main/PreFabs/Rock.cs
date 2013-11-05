@@ -17,8 +17,8 @@ namespace Main
 		{
 			ent.tag("rock");
 		
-			var m = (ModelComponent)ent.attachComponent(new ModelComponent("/Application/resources/Rock.mdx"));
-			m.scale = new Vector3(100, 100, 100);
+			var m = ent.attachComponent(new CubeComponent("/Application/Assets/Boat.png"));
+			//m.scale = new Vector3(100, 100, 100);
 		}
 	}
 }
