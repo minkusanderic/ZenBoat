@@ -15,6 +15,14 @@ namespace Core
 		
 		public bool is_static {get;set;}
 		
+		public static RigidBody CreateFromModel(ModelComponent m)
+		{
+			var local_center = m.model.BoundingSphere.Xyz;
+			var radius = m.model.BoundingSphere.W;
+			
+			return new RigidBody(local_center.Length() + radius);
+		}
+		
 		public Vector2 Velocity
 		{
 			get { return this.body.Velocity;}
