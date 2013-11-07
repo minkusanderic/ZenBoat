@@ -34,6 +34,12 @@ namespace Main
 								parseEntities(r);
 							}
 							break;
+						case "BankGrid":
+							using (var r = reader.ReadSubtree())
+							{
+								parseEntities(r);
+							}
+							break;
 					}
 				}
 				}
@@ -49,6 +55,8 @@ namespace Main
 					switch(reader.Name)
 					{
 						case "Entities":
+							break;
+					case "BankGrid":
 							break;
 						default:
 							String name = reader.Name;

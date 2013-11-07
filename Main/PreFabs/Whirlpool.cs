@@ -18,10 +18,10 @@ namespace Main
 		{
 			ent.tag("whirlpool", "cube");
 		
-			//ent.attachComponent(new RectComponent(width, height));
-			var m = ent.attachComponent(new ModelComponent("/Application/resources/WhirlCube2.mdx"));
-			m.scale = new Vector3(100, 100, 100);
-			RigidBody rb = new RigidBody( m.scale.X / 5f );
+			
+			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/Whirpoolsmall.png"));
+			//m.scale = new Vector3(100, 100, 100);
+			RigidBody rb = new RigidBody( 10 );
 			rb.body = new PhysicsBody();
 			rb.is_static = true;
 			

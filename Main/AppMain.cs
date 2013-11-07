@@ -11,7 +11,11 @@ namespace Main
 	
 		public static void Main (string[] args)
 		{
-			LevelLoader.Load("/Application/Levels/Test.oel");
+			LevelLoader.Load("/Application/Levels/Level1.oel");
+			
+			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
+			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
+			
 			while(true)
 			{
 				SceneManager.Instance.Update();

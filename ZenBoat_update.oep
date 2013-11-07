@@ -16,7 +16,7 @@
     <Width>960</Width>
     <Height>544</Height>
   </LevelMaximumSize>
-  <Filename>D:\Users\Matt\Projects\ZenBoat\ZenBoat_update.oep</Filename>
+  <Filename>C:\Users\ehurst\Documents\TestZenBoat1\ZenBoat_update.oep</Filename>
   <AngleMode>Radians</AngleMode>
   <CameraEnabled>true</CameraEnabled>
   <CameraSize>
@@ -48,6 +48,19 @@
         <Y>1</Y>
       </ScrollFactor>
       <ExportMode>XMLCoords</ExportMode>
+    </LayerDefinition>
+    <LayerDefinition xsi:type="GridLayerDefinition">
+      <Name>BankGrid</Name>
+      <Grid>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Grid>
+      <ScrollFactor>
+        <X>1</X>
+        <Y>1</Y>
+      </ScrollFactor>
+      <Color A="255" R="0" G="255" B="64" />
+      <ExportMode>Rectangles</ExportMode>
     </LayerDefinition>
   </LayerDefinitions>
   <Tilesets>
@@ -98,8 +111,8 @@
         <Height>100</Height>
       </Size>
       <Origin>
-        <X>0</X>
-        <Y>0</Y>
+        <X>50</X>
+        <Y>50</Y>
       </Origin>
       <ImageDefinition DrawMode="Image" ImagePath="whirlpool01_icon.PNG" Tiled="false">
         <RectColor A="255" R="255" G="0" B="0" />

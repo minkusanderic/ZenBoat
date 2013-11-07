@@ -84,6 +84,7 @@ namespace Core
 					//Console.WriteLine( model.parent.Name+"--" + pos );
 					world *= Matrix4.Translation(pos) ;
 					world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
+					world *= Matrix4.RotationX(FMath.Radians(90.0f));
 				}
 				
 				model.model.SetWorldMatrix( ref world ) ;

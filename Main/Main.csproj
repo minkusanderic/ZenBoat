@@ -44,6 +44,7 @@
     <Compile Include="PreFabs\Boat.cs" />
     <Compile Include="PreFabs\RockSpawner.cs" />
     <Compile Include="PreFabs\Whirlpool.cs" />
+    <Compile Include="PreFabs\rect.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -78,8 +79,11 @@
     <Content Include="Assets\Boat.png" />
     <Content Include="resources\bank1.5.mdx" />
     <Content Include="resources\bank1.mdx" />
-    <Content Include="resources\Rock2.mdx" />
     <Content Include="resources\rock_dae.mdx" />
     <Content Include="resources\Water.mdx" />
+    <Content Include="Assets\BoatFBX.mdx" />
+    <Content Include="Assets\RockFBX.mdx" />
+    <Content Include="Levels\Level1.oel" />
+    <Content Include="Assets\Whirpoolsmall.png" />
   </ItemGroup>
 </Project>
