@@ -34,11 +34,11 @@ namespace Core
 			Matrix4 view = Matrix4.LookAt( new Vector3( 960.0f/2.0f, 544.0f/2.0f, (960.0f/2.0f)/ (1.77f * FMath.Tan(FMath.Radians(45.0f/2.0f)) )),
 											new Vector3( 960.0f/2.0f, 544.0f/2.0f, 0.0f ),
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
-			Vector3 litDirection = new Vector3( 1.0f, -1.0f, -1.0f ).Normalize() ;
+			Vector3 litDirection = new Vector3( 0.0f, 0.0f, -1.0f ).Normalize() ;
 			Vector3 litDirection2 = new Vector3( 0.0f, 1.0f, 0.0f ).Normalize() ;
 			Vector3 litColor = new Vector3( 1.0f, 1.0f, 1.0f ) ;
-			Vector3 litColor2 = new Vector3( 1.0f, 0.0f, 0.0f ) ;
-			Vector3 litAmbient = new Vector3( 0.3f, 0.3f, 0.3f ) ;
+			Vector3 litColor2 = new Vector3( 0.0f, 0.0f, 0.0f ) ;
+			Vector3 litAmbient = new Vector3( 0.1f, 0.1f, 0.1f ) ;
 			Vector3 fogColor = new Vector3( 0.0f, 0.5f, 1.0f ) ;
 	
 			BasicParameters parameters = program.Parameters ;
@@ -55,7 +55,7 @@ namespace Core
 			parameters.SetLightDiffuse( 1, ref litColor2 ) ;
 			parameters.SetLightSpecular( 1, ref litColor2 ) ;
 			parameters.SetLightAmbient( ref litAmbient ) ;
-			parameters.SetFogRange( 10.0f, 5000.0f ) ;
+			parameters.SetFogRange( -1.0f, 5000.0f ) ;
 			parameters.SetFogColor( ref fogColor ) ;
 	
 			graphics.SetViewport( 0, 0, graphics.Screen.Width, graphics.Screen.Height ) ;

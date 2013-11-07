@@ -12,6 +12,7 @@ namespace Main
 		public Boat ()
 		{
 		}
+		
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			ent.Name = "Boat";

@@ -66,6 +66,7 @@
     <Compile Include="Components\Action.cs" />
     <Compile Include="Systems\CoreSystem.cs" />
     <Compile Include="Components\SimpleAction.cs" />
+    <Compile Include="Components\Particle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
