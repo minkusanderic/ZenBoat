@@ -76,5 +76,10 @@
     <Content Include="resources\WhirlCube2.mdx" />
     <Content Include="resources\boat2.mdx" />
     <Content Include="Assets\Boat.png" />
+    <Content Include="resources\bank1.5.mdx" />
+    <Content Include="resources\bank1.mdx" />
+    <Content Include="resources\Rock2.mdx" />
+    <Content Include="resources\rock_dae.mdx" />
+    <Content Include="resources\Water.mdx" />
   </ItemGroup>
 </Project>

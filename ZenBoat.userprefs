@@ -1,13 +1,13 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core\Systems\GraphicsSystem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main\PreFabs\Boat.cs">
     <Files>
       <File FileName="Core\Managers\SceneManager.cs" Line="13" Column="52" />
       <File FileName="Core\Components\Entity.cs" Line="73" Column="30" />
       <File FileName="Main\LevelLoader.cs" Line="36" Column="14" />
-      <File FileName="Main\PreFabs\Boat.cs" Line="23" Column="56" />
+      <File FileName="Main\PreFabs\Boat.cs" Line="14" Column="4" />
       <File FileName="Main\PreFabs\Rock.cs" Line="20" Column="87" />
-      <File FileName="Main\PreFabs\RockSpawner.cs" Line="86" Column="22" />
+      <File FileName="Main\PreFabs\RockSpawner.cs" Line="43" Column="8" />
       <File FileName="Main\PreFabs\Whirlpool.cs" Line="30" Column="30" />
       <File FileName="Core\Components\Component.cs" Line="32" Column="40" />
       <File FileName="Core\Components\TriggerComponent.cs" Line="26" Column="5" />
@@ -16,8 +16,9 @@
       <File FileName="Core\Components\SuicideController.cs" Line="1" Column="1" />
       <File FileName="Core\Components\RippleController.cs" Line="11" Column="27" />
       <File FileName="Core\Components\SimpleController.cs" Line="15" Column="17" />
-      <File FileName="Core\Components\CubeComponent.cs" Line="55" Column="48" />
       <File FileName="Core\Systems\GraphicsSystem.cs" Line="67" Column="6" />
+      <File FileName="Main\Levels\Test.oel" Line="7" Column="14" />
+      <File FileName="Core\Components\RippleParticlePusher.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

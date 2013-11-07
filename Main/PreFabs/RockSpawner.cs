@@ -43,6 +43,8 @@ namespace Main
 							
 							if ( b )
 							{
+								Console.WriteLine( "dist: " + Vector2.Distance(
+									rock.Transform.Position , boat.Transform.Position	) );
 								if ( Vector2.Distance(
 									rock.Transform.Position , boat.Transform.Position	)
 									< 100f )

@@ -2,7 +2,6 @@
   <camera x="0" y="0" />
   <Entities>
     <Boat id="0" x="500" y="250" angle="0.5235988" />
-    <Rock id="3" x="500" y="300" />
     <RockSpawner id="12" x="308" y="100" angle="0" />
     <Whirlpool id="1" x="700" y="250" angle="0" />
   </Entities>
