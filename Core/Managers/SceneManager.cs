@@ -18,6 +18,7 @@ namespace Core
 			systems[typeof(GraphicsSystem)] = new GraphicsSystem();
 			systems[typeof(ControllerSystem)] = new ControllerSystem();
 			systems[typeof(PhysicsSystem)] = new PhysicsSystem();
+			systems[typeof(AudioSystem)] = new AudioSystem();
 		}
 
 	public static SceneManager _instance;

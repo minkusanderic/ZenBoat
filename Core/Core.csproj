@@ -67,6 +67,10 @@
     <Compile Include="Systems\CoreSystem.cs" />
     <Compile Include="Components\SimpleAction.cs" />
     <Compile Include="Components\Particle.cs" />
+    <Compile Include="Systems\AudioSystem.cs" />
+    <Compile Include="Components\SoundComponent.cs" />
+    <Compile Include="Components\SFXComponent.cs" />
+    <Compile Include="Components\BackgroundMusicComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
