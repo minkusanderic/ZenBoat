@@ -25,6 +25,11 @@ namespace Core
 			soundPlayer = sound.CreatePlayer();
 			soundPlayer.Play();
 		}
+		
+		public void PlaySound()
+		{
+			soundPlayer.Play();
+		}
 	}
 }
 

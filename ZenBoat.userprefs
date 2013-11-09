@@ -1,14 +1,13 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core\Managers\SceneManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main\AppMain.cs">
     <Files>
-      <File FileName="Main\AppMain.cs" Line="18" Column="4" />
-      <File FileName="Core\Components\SoundComponent.cs" Line="5" Column="26" />
-      <File FileName="Core\Components\SFXComponent.cs" Line="2" Column="1" />
-      <File FileName="Core\Components\BackgroundMusicComponent.cs" Line="10" Column="56" />
+      <File FileName="Main\AppMain.cs" Line="21" Column="6" />
+      <File FileName="Core\Components\SFXComponent.cs" Line="26" Column="23" />
+      <File FileName="Core\Components\BackgroundMusicComponent.cs" Line="13" Column="3" />
       <File FileName="Core\Systems\AudioSystem.cs" Line="18" Column="45" />
       <File FileName="Core\Systems\GraphicsSystem.cs" Line="24" Column="24" />
-      <File FileName="Core\Managers\SceneManager.cs" Line="24" Column="39" />
+      <File FileName="Core\Managers\SceneManager.cs" Line="23" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
