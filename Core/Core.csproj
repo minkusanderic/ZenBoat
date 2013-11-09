@@ -71,6 +71,9 @@
     <Compile Include="Components\SoundComponent.cs" />
     <Compile Include="Components\SFXComponent.cs" />
     <Compile Include="Components\BackgroundMusicComponent.cs" />
+    <Compile Include="Utils\TouchResponder.cs" />
+    <Compile Include="Components\RockFollowTouchController.cs" />
+    <Compile Include="Components\Ripple.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

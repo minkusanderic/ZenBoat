@@ -23,7 +23,7 @@ namespace Core
 				throw new Exception( "No Audiopath Specified :(" );
 			
 			soundPlayer = sound.CreatePlayer();
-			soundPlayer.Play();
+			//soundPlayer.Play();
 		}
 		
 		public void PlaySound()

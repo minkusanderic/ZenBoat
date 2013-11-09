@@ -43,8 +43,8 @@ namespace Main
 							
 							if ( b )
 							{
-								Console.WriteLine( "dist: " + Vector2.Distance(
-									rock.Transform.Position , boat.Transform.Position	) );
+								//Console.WriteLine( "dist: " + Vector2.Distance(
+								//	rock.Transform.Position , boat.Transform.Position	) );
 								if ( Vector2.Distance(
 									rock.Transform.Position , boat.Transform.Position	)
 									< 100f )
@@ -58,6 +58,7 @@ namespace Main
 							int num_particles = 20;
 							for ( int i = 0 ; i < 360; i += num_particles )
 							{
+								
 								Entity particle = SceneManager.Instance.createEntity( "particle" + i );
 								particle.attachComponent( new RippleParticlePusher( i , rock.Transform.Position.X , rock.Transform.Position.Y		) );
 								particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );

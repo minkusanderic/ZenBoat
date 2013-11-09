@@ -30,6 +30,7 @@ namespace Core
 			*/
 			base.Update ();
 		}
+		
 		public List<TouchData> getTouchData()
 		{
 			return Touch.GetData(	0	);

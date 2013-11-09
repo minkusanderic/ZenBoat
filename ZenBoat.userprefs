@@ -1,13 +1,17 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Main\AppMain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main\PreFabs\Rock.cs">
     <Files>
-      <File FileName="Main\AppMain.cs" Line="21" Column="6" />
-      <File FileName="Core\Components\SFXComponent.cs" Line="26" Column="23" />
+      <File FileName="Main\AppMain.cs" Line="17" Column="15" />
+      <File FileName="Core\Components\SFXComponent.cs" Line="15" Column="3" />
       <File FileName="Core\Components\BackgroundMusicComponent.cs" Line="13" Column="3" />
       <File FileName="Core\Systems\AudioSystem.cs" Line="18" Column="45" />
-      <File FileName="Core\Systems\GraphicsSystem.cs" Line="24" Column="24" />
-      <File FileName="Core\Managers\SceneManager.cs" Line="23" Column="1" />
+      <File FileName="Core\Systems\GraphicsSystem.cs" Line="75" Column="32" />
+      <File FileName="Main\PreFabs\RockSpawner.cs" Line="28" Column="5" />
+      <File FileName="Main\PreFabs\Rock.cs" Line="15" Column="13" />
+      <File FileName="Core\Utils\TouchResponder.cs" Line="43" Column="38" />
+      <File FileName="Main\Levels\Level1.oel" Line="8" Column="49" />
+      <File FileName="Core\Systems\ControllerSystem.cs" Line="12" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

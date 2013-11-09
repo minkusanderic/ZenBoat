@@ -18,6 +18,7 @@ namespace Core
 			this.Rotation = Vector2.UnitX.Rotate(-angle);
 		}
 		
+		public float   Z = 0f;
 		public Vector2 Position;
 		public Vector2 Rotation;
 	}

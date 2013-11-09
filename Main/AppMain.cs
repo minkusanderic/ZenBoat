@@ -14,7 +14,7 @@ namespace Main
 			LevelLoader.Load("/Application/Levels/Level1.oel");
 			
 			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
-			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
+			//RockSpawner.create(rockSpawner, new Dictionary<String,String>());
 			
 			
 			var background_music = SceneManager.Instance.createEntity("BG_Music");
