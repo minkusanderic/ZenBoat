@@ -16,7 +16,7 @@
     <Width>960</Width>
     <Height>544</Height>
   </LevelMaximumSize>
-  <Filename>C:\Users\ehurst\Documents\TestZenBoat1\ZenBoat_update.oep</Filename>
+  <Filename>D:\Users\Matt\Projects\ZenBoat\ZenBoat_update.oep</Filename>
   <AngleMode>Radians</AngleMode>
   <CameraEnabled>true</CameraEnabled>
   <CameraSize>
@@ -26,19 +26,8 @@
   <ExportCameraPosition>true</ExportCameraPosition>
   <LevelValueDefinitions />
   <LayerDefinitions>
-    <LayerDefinition xsi:type="EntityLayerDefinition">
-      <Name>Entities</Name>
-      <Grid>
-        <Width>4</Width>
-        <Height>4</Height>
-      </Grid>
-      <ScrollFactor>
-        <X>1</X>
-        <Y>1</Y>
-      </ScrollFactor>
-    </LayerDefinition>
-    <LayerDefinition xsi:type="TileLayerDefinition">
-      <Name>Bank</Name>
+    <LayerDefinition xsi:type="GridLayerDefinition">
+      <Name>Down</Name>
       <Grid>
         <Width>16</Width>
         <Height>16</Height>
@@ -47,7 +36,47 @@
         <X>1</X>
         <Y>1</Y>
       </ScrollFactor>
-      <ExportMode>XMLCoords</ExportMode>
+      <Color A="255" R="64" G="0" B="128" />
+      <ExportMode>Bitstring</ExportMode>
+    </LayerDefinition>
+    <LayerDefinition xsi:type="GridLayerDefinition">
+      <Name>Up</Name>
+      <Grid>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Grid>
+      <ScrollFactor>
+        <X>1</X>
+        <Y>1</Y>
+      </ScrollFactor>
+      <Color A="255" R="255" G="255" B="0" />
+      <ExportMode>Bitstring</ExportMode>
+    </LayerDefinition>
+    <LayerDefinition xsi:type="GridLayerDefinition">
+      <Name>Back</Name>
+      <Grid>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Grid>
+      <ScrollFactor>
+        <X>1</X>
+        <Y>1</Y>
+      </ScrollFactor>
+      <Color A="255" R="255" G="0" B="0" />
+      <ExportMode>Bitstring</ExportMode>
+    </LayerDefinition>
+    <LayerDefinition xsi:type="GridLayerDefinition">
+      <Name>Forward</Name>
+      <Grid>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Grid>
+      <ScrollFactor>
+        <X>1</X>
+        <Y>1</Y>
+      </ScrollFactor>
+      <Color A="255" R="255" G="255" B="0" />
+      <ExportMode>Bitstring</ExportMode>
     </LayerDefinition>
     <LayerDefinition xsi:type="GridLayerDefinition">
       <Name>BankGrid</Name>
@@ -61,6 +90,17 @@
       </ScrollFactor>
       <Color A="255" R="0" G="255" B="64" />
       <ExportMode>Rectangles</ExportMode>
+    </LayerDefinition>
+    <LayerDefinition xsi:type="EntityLayerDefinition">
+      <Name>Entities</Name>
+      <Grid>
+        <Width>4</Width>
+        <Height>4</Height>
+      </Grid>
+      <ScrollFactor>
+        <X>1</X>
+        <Y>1</Y>
+      </ScrollFactor>
     </LayerDefinition>
   </LayerDefinitions>
   <Tilesets>
@@ -115,6 +155,21 @@
         <Y>50</Y>
       </Origin>
       <ImageDefinition DrawMode="Image" ImagePath="whirlpool01_icon.PNG" Tiled="false">
+        <RectColor A="255" R="255" G="0" B="0" />
+      </ImageDefinition>
+      <ValueDefinitions />
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="Current" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>16</Width>
+        <Height>16</Height>
+      </Size>
+      <Origin>
+        <X>0</X>
+        <Y>0</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
         <RectColor A="255" R="255" G="0" B="0" />
       </ImageDefinition>
       <ValueDefinitions />
