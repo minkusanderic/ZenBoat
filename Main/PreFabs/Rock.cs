@@ -39,11 +39,10 @@ namespace Main
 		bool RockBeingHeld = false;
 		static void RockBeenTouched()
 		{
-			
+			Console.WriteLine(entity.Name);
 			entity.attachComponent( new RockFollowTouchController() );
 			entity.Transform.Z = 100f;
 			entity.FindComponent<RigidBody>().Destroy();
-			
 		}
 		/*
 		 * //Entity rock = SceneManager.Instance.createEntity("Rock");

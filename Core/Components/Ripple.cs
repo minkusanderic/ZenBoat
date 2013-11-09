@@ -4,7 +4,7 @@ namespace Core
 {
 	public class Ripple 	: Controller
 	{
-		float force = 140.0f;
+		float force = 250.0f;
 		public Ripple ()
 		{
 						
