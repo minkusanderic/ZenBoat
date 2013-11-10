@@ -52,6 +52,8 @@
     <ShaderProgram Include="shaders\Simple.vcg" />
     <ShaderProgram Include="shaders\Sprite.fcg" />
     <ShaderProgram Include="shaders\Sprite.vcg" />
+    <ShaderProgram Include="shaders\Water.fcg" />
+    <ShaderProgram Include="shaders\Water.vcg" />
   </ItemGroup>
   <ItemGroup>
     <PsmMetadata Include="app.xml" />

@@ -22,7 +22,9 @@ namespace Main
 			
 			var soundeffect_music = SceneManager.Instance.createEntity("SFX_Music");
 			soundeffect_music.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
-
+			
+			var water = SceneManager.Instance.createEntity("Water");
+			water.attachComponent(new WaterComponent());
 			
 			while(true)
 			{

@@ -15,6 +15,7 @@ namespace Core
 		
 		private List<ModelComponent> models = new List<ModelComponent>();
 		private List<SpriteComponent> sprites = new List<SpriteComponent>();
+		private List<WaterComponent> waters = new List<WaterComponent>();
 		public GraphicsContext graphics;
 		public BasicProgram program;
 		
@@ -69,6 +70,32 @@ namespace Core
 			graphics.Enable( EnableMode.DepthTest ) ;
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
+			
+			foreach(var water in waters)
+			{
+							
+				Matrix4 world = Matrix4.Identity ;
+				
+				
+			    Vector3 scale = new Vector3(1,1,1);
+					
+				Vector3 pos = new Vector3(water.parent.Transform.Position.X, water.parent.Transform.Position.Y, 0);
+								
+				world *= Matrix4.Translation(pos) ;
+				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
+				
+				graphics.SetVertexBuffer(0, water.vb);
+				graphics.SetShaderProgram(water.shaderProgram);
+				//graphics.SetTexture(0, sprite.texture);
+				
+
+				var world_view_proj = proj * view * world;
+				//program.Parameters.SetWorldMatrix(0, ref world);
+				water.shaderProgram.SetUniformValue(0, ref world_view_proj);	
+			
+				graphics.DrawArrays(DrawMode.Triangles, 0, 486);
+			}
+
 			
 			//  adjust position
 			
@@ -148,6 +175,10 @@ namespace Core
 			if(comp is SpriteComponent)
 			{
 				sprites.Add((SpriteComponent)comp);
+			}
+			if(comp is WaterComponent)
+			{
+				waters.Add((WaterComponent)comp);
 			}
 		}
 		
