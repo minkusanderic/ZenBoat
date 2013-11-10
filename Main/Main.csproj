@@ -45,6 +45,7 @@
     <Compile Include="PreFabs\RockSpawner.cs" />
     <Compile Include="PreFabs\Whirlpool.cs" />
     <Compile Include="PreFabs\rect.cs" />
+    <Compile Include="PreFabs\Current.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -86,5 +87,6 @@
     <Content Include="Levels\Level1.oel" />
     <Content Include="Assets\Whirpoolsmall.png" />
     <Content Include="Assets\WaterDrop.wav" />
+    <Content Include="Levels\CurrentTest.oel" />
   </ItemGroup>
 </Project>
