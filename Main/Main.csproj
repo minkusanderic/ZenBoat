@@ -46,6 +46,7 @@
     <Compile Include="PreFabs\Whirlpool.cs" />
     <Compile Include="PreFabs\rect.cs" />
     <Compile Include="PreFabs\Current.cs" />
+    <Compile Include="PreFabs\Crane.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

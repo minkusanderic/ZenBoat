@@ -28,7 +28,6 @@ namespace Core
 			}
 							
 			int num_particles = 20;
-			Console.WriteLine("HEHREKRKJEH");
 			for ( int i = 0 ; i < 360; i += num_particles )
 			{
 				Entity particle = SceneManager.Instance.createEntity( "particle" + i );

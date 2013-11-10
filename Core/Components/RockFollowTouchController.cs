@@ -16,7 +16,6 @@ namespace Core
 		{
 			if ( Touch.GetData(0).Count == 0 ) 
 			{
-				Console.WriteLine("Here");
 			 	Entity ent	=	SceneManager.Instance.createEntity("Ripple");
 				Ripple ripple = ent.attachComponent( new Ripple() ); 
 				ent.Transform.Position = new Sce.PlayStation.Core.Vector2(lastVec.X , lastVec.Y);

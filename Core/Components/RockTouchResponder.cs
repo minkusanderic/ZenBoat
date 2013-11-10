@@ -4,7 +4,7 @@ namespace Core
 {
 	public class RockTouchResponder : TouchResponder
 	{
-		public RockTouchResponder ()
+		public RockTouchResponder()
 		{
 			function = RockTouchHandler;
 		}
@@ -12,7 +12,6 @@ namespace Core
 		void RockTouchHandler()
 		{
 			Entity entity = this.parent;
-			Console.WriteLine(entity.Name);
 			entity.attachComponent( new RockFollowTouchController() );
 			entity.Transform.Z = 100f;
 			entity.FindComponent<RigidBody>().Destroy();	

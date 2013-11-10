@@ -18,14 +18,13 @@ namespace Main
 			ent.Name = "Boat";
 			ent.tag("boat", "pushable");
 						    
-			var m = ent.attachComponent(new ModelComponent("/Application/Assets/BoatFBX.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/BoatFBX.mdx"));
 			
 			//m.scale = new Vector3(50, 50, 50);
 			//m.scale = new Vector3(5, 5, 5);
 			
 			ent.attachComponent( RigidBody.CreateFromModel(m) );
-			ent.attachComponent( new FrictionController(.25f) );
-			//ent.attachComponent( new Core.SimpleAction(get_done));
+			ent.attachComponent( new FrictionController(.05f) );
 		}
 		
 		
@@ -33,7 +32,6 @@ namespace Main
 		{
 			for(var i = 0; i < 5; i++)
 			{
-				Console.WriteLine("Hello");
 				yield return true;
 			}
 		
