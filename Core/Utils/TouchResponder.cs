@@ -14,7 +14,7 @@ namespace Core
 	public class TouchResponder : Core.Controller
 	{
 		Vector3 scale;
-		TouchResponderDelegate function;
+		public TouchResponderDelegate function;
 		static float width	= 960; 
 		static float height = 544;
 		bool touchDown = false;
