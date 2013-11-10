@@ -19,6 +19,7 @@ namespace Core
 		public GraphicsContext graphics;
 		public BasicProgram program;
 		
+		private float time = 0.0f;
 		
 		//private Dictionary<String, Texture2D> textures = new Dictionary<String, Texture2D>();
 		//BasicModel model;
@@ -90,9 +91,11 @@ namespace Core
 				
 
 				var world_view_proj = proj * view * world;
+				
 				//program.Parameters.SetWorldMatrix(0, ref world);
-				water.shaderProgram.SetUniformValue(0, ref world_view_proj);	
-			
+				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
+				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
+				time += .1f;
 				graphics.DrawArrays(DrawMode.Triangles, 0, 486);
 			}
 

@@ -1,8 +1,13 @@
 
 void main( float4 in a_Position  : POSITION,
 		   float4 out v_Position : POSITION,
-		   uniform float4x4 WorldViewProj
+		   float4 out v_Color : COLOR0,
+		   uniform float4x4 WorldViewProj,
+		   uniform float time
            )
 {
-	v_Position = mul( a_Position, WorldViewProj );
+	a_Position.z = sin(a_Position.y + time)/2 + sin(a_Position.x + time)/2;
+	v_Color = float4(0,0,(a_Position.z +1)/2,1);
+	v_Position = mul( a_Position, WorldViewProj ); 
+	
 }
