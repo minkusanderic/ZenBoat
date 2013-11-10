@@ -25,9 +25,8 @@ namespace Main
 			ent.attachComponent(RigidBody.CreateFromModel(m));
 			RigidBody rb = ent.FindComponent<RigidBody>();
 			rb.body = new Sce.PlayStation.HighLevel.Physics2D.PhysicsBody();
-			rb.makeTrigger();
-			List<Entity> targets = new List<Entity>();
-			//targets.Add( SceneManager.Instance.FindEntity("Boat") );
+			rb.Mass = 0.001f;
+			rb.body.SetBodyTrigger();
 			ent.attachComponent(new CollectibleTrigger(SceneManager.Instance.FindEntity("Boat")));
 		}
 	}
