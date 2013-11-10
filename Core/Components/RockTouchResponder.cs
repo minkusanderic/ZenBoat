@@ -11,14 +11,11 @@ namespace Core
 		
 		void RockTouchHandler()
 		{
-			Console.WriteLine("HERE");
-			
 			Entity entity = this.parent;
 			Console.WriteLine(entity.Name);
 			entity.attachComponent( new RockFollowTouchController() );
 			entity.Transform.Z = 100f;
-			entity.FindComponent<RigidBody>().Destroy();
-				
+			entity.FindComponent<RigidBody>().Destroy();	
 		}
 	}
 }
