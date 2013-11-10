@@ -85,8 +85,6 @@
     <Content Include="Assets\RockFBX.mdx" />
     <Content Include="Levels\Level1.oel" />
     <Content Include="Assets\Whirpoolsmall.png" />
-    <Content Include="Assets\Rings.mp3" />
-    <Content Include="Assets\Particles.mp3" />
     <Content Include="Assets\WaterDrop.wav" />
   </ItemGroup>
 </Project>
