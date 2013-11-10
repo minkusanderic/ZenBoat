@@ -14,7 +14,7 @@ namespace Core
 		
 		public override void onCollide(Entity target)
 		{
-			Console.WriteLine("collided");
+			CollectibleManager.CollectItem( this.parent.Name );
 			this.parent.Destroy();
 		}
 	}

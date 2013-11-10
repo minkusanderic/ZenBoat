@@ -36,10 +36,8 @@ namespace Main
 			//m.scale = new Vector3(100, 100, 100);
 		}
 		
-		bool RockBeingHeld = false;
 		static void RockBeenTouched()
 		{
-			Console.WriteLine(entity.Name);
 			entity.attachComponent( new RockFollowTouchController() );
 			entity.Transform.Z = 100f;
 			entity.FindComponent<RigidBody>().Destroy();

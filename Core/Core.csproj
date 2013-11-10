@@ -76,6 +76,7 @@
     <Compile Include="Components\Ripple.cs" />
     <Compile Include="Components\RockTouchResponder.cs" />
     <Compile Include="Components\CollectibleTrigger.cs" />
+    <Compile Include="Managers\CollectibleManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
