@@ -89,5 +89,6 @@
     <Content Include="Assets\Whirpoolsmall.png" />
     <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Levels\CurrentTest.oel" />
+    <Content Include="Assets\Rings.mp3" />
   </ItemGroup>
 </Project>

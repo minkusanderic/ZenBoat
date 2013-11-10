@@ -4,7 +4,7 @@ namespace Core
 {
 	public class RockTouchResponder : TouchResponder
 	{
-		public RockTouchResponder ()
+		public RockTouchResponder()
 		{
 			function = RockTouchHandler;
 		}

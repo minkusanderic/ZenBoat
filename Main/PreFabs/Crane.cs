@@ -27,7 +27,7 @@ namespace Main
 			rb.makeTrigger();
 			List<Entity> targets = new List<Entity>();
 			//targets.Add( SceneManager.Instance.FindEntity("Boat") );
-			ent.attachComponent(new CollectableTrigger(SceneManager.Instance.FindEntity("Boat")));
+			ent.attachComponent(new CollectibleTrigger(SceneManager.Instance.FindEntity("Boat")));
 		}
 	}
 }

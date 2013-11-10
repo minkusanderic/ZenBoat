@@ -10,26 +10,33 @@ namespace Core
 {
 	public class SFXComponent : SoundComponent
 	{
-		private Sound sound;
-        private SoundPlayer soundPlayer;
+		private Sound 			sound;
+        private SoundPlayer 	soundPlayer;
 		
-		public SFXComponent (){}
-		public SFXComponent (string file_path)
+		public SFXComponent ()	{}
+		public SFXComponent (	string file_path	)
 		{
-			Console.WriteLine("Initing SFX music component");
-			if ( file_path != null && file_path != "" )
-				sound = new Sound( file_path );
-			else
-				throw new Exception( "No Audiopath Specified :(" );
-			
+			SetSoundFromFile(file_path);
 			soundPlayer = sound.CreatePlayer();
-			//soundPlayer.Play();
 		}
 		
 		public void PlaySound()
 		{
 			soundPlayer.Play();
 		}
+		
+		public void SetSoundFromFile(	string file_name	)
+		{
+			Console.WriteLine("Initing SFX music component");
+			if ( file_name != null && file_name != "" )
+				sound = new Sound( file_name );
+			else
+				throw new Exception( "No Audiopath Specified :(" );
+			
+			
+			
+		}
+		
 	}
 }
 

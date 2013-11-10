@@ -18,7 +18,7 @@ namespace Main
 			ent.Name = "Boat";
 			ent.tag("boat", "pushable");
 						    
-			var m = ent.attachComponent(new ModelComponent("/Application/Assets/BoatFBX.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/BoatFBX.mdx"));
 			
 			//m.scale = new Vector3(50, 50, 50);
 			//m.scale = new Vector3(5, 5, 5);

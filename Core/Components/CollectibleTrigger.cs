@@ -6,9 +6,9 @@ using System.Collections.Generic;
 
 namespace Core
 {
-	public class CollectableTrigger : TriggerComponent
+	public class CollectibleTrigger : TriggerComponent
 	{
-		public CollectableTrigger (Entity ent) : base(new List<Entity>(){ent})
+		public CollectibleTrigger (Entity ent) : base(new List<Entity>(){ent})
 		{
 		}
 		
