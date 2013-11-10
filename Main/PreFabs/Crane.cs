@@ -18,6 +18,7 @@ namespace Main
 			ent.Name = "Crane";
 			ent.tag("crane", "collectable");
 			
+			
 			var m = ent.attachComponent(new ModelComponent("/Application/resources/Cube.mdx"));
 			m.scale = new Vector3(20f, 20f, 20f);
 			
