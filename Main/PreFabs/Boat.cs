@@ -19,11 +19,12 @@ namespace Main
 			ent.tag("boat", "pushable");
 						    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/BoatFBX.mdx"));
+			m.scale = new Vector3(.5f, .5f, .5f);
 			
 			//m.scale = new Vector3(50, 50, 50);
 			//m.scale = new Vector3(5, 5, 5);
 			
-			ent.attachComponent( RigidBody.CreateFromModel(m) );
+			ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.5f) );
 			ent.attachComponent( new FrictionController(.05f) );
 		}
 		
