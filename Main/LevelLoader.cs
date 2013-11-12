@@ -9,6 +9,7 @@ using System.Reflection;
 using Sce.PlayStation.Core.Graphics;
 using Sce.PlayStation.HighLevel.UI;
 using Sce.PlayStation.Core.Input;
+using Sce.PlayStation.Core.Environment;
 
 using Core;
 
@@ -70,6 +71,8 @@ namespace Main
 				graphics.Clear();
 				UISystem.Render();
 				graphics.SwapBuffers();
+				SystemEvents.CheckEvents();
+			
 			}
 			graphics.Dispose();
 			
