@@ -3,5 +3,17 @@ void main(
 			float4 in  v_Color	: COLOR0,
 			float4 out Color	: COLOR)
 {
-	Color = v_Color;
+	if(v_Color.z < .3f)
+	{
+		Color = float4(0, .5, .6f, .5f);
+	}
+	else if(v_Color.z < .9f)
+	{
+		Color = float4(.1f, .8f, .9f, .5f);
+	}
+	else
+	{
+		Color = float4(.8,.8,.8,1);
+	}
+	//Color = v_Color;
 }
