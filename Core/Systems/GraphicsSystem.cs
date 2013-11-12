@@ -68,7 +68,7 @@ namespace Core
 			graphics.SetBlendFunc( BlendFuncMode.Add, BlendFuncFactor.SrcAlpha, BlendFuncFactor.OneMinusSrcAlpha ) ;
 			graphics.Enable( EnableMode.CullFace ) ;
 			graphics.SetCullFace( CullFaceMode.Back, CullFaceDirection.Ccw ) ;
-			graphics.Enable( EnableMode.DepthTest ) ;
+			//graphics.Enable( EnableMode.DepthTest ) ;
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			
@@ -96,7 +96,8 @@ namespace Core
 				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
 				time += .1f;
-				graphics.DrawArrays(DrawMode.Triangles, 0, 486);
+				
+				graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
 			}
 
 			
