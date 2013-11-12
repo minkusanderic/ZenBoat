@@ -39,7 +39,7 @@ namespace Main
 			
 			// Create scene
 			Scene scene = new Sce.PlayStation.HighLevel.UI.Scene();
-			float pos_y = 5.0f;
+			float pos_y = 30.0f;
 			float pos_x = 10.0f;
 			foreach(var file in Directory.EnumerateFiles(searchPath))
 			{
@@ -50,7 +50,7 @@ namespace Main
 				
 				if(pos_y > 480.0f)
 				{
-					pos_y = 5.0f;
+					pos_y = 30.0f;
 					pos_x += 250.0f;
 				}
 				button.X = pos_x;
@@ -60,7 +60,12 @@ namespace Main
 				scene.RootWidget.AddChildLast(button);
 			}
 			
-			
+			Label version = new Label();
+			version.Text = "Project ZenBoat Version: 0.2.0";
+			version.X = 1.0f;
+			version.Y = 1.0f;
+			version.Width = 900;
+			scene.RootWidget.AddChildLast(version);
 			// Set scene
 			UISystem.SetScene(scene, null);
 			
