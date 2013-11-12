@@ -39,15 +39,23 @@ namespace Main
 			// Create scene
 			Scene scene = new Sce.PlayStation.HighLevel.UI.Scene();
 			float pos_y = 5.0f;
+			float pos_x = 10.0f;
 			foreach(var file in Directory.EnumerateFiles(searchPath))
 			{
 				var short_file = file.Split('/')[file.Split('/').Length -1];
 				Button button = new Button();
 				button.Text = short_file;
 				button.ButtonAction += HandleButton;
-				button.X = 10.0f;
+				
+				if(pos_y > 480.0f)
+				{
+					pos_y = 5.0f;
+					pos_x += 250.0f;
+				}
+				button.X = pos_x;
 				button.Y = pos_y;
 				pos_y += 70.0f;
+				
 				scene.RootWidget.AddChildLast(button);
 			}
 			
