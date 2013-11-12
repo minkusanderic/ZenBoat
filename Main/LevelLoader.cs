@@ -6,6 +6,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
+using Sce.PlayStation.Core.Graphics;
+using Sce.PlayStation.HighLevel.UI;
+using Sce.PlayStation.Core.Input;
+
 using Core;
 
 
@@ -17,9 +21,55 @@ namespace Main
 		{
 		}
 		
+		public static bool isLevelSelected = false;
+		public static String selected_filename = "";
+		public static String searchPath = "/Application/Levels/";
+		public static void HandleButton(object sender, TouchEventArgs e)
+			{
+				isLevelSelected = true;
+				Console.WriteLine(((Button)sender).Text);
+				selected_filename = searchPath + ((Button)sender).Text;
+			}
+		
+		public static void BootStrap()
+		{
+			var graphics = new GraphicsContext();
+			UISystem.Initialize(graphics);
+			
+			// Create scene
+			Scene scene = new Sce.PlayStation.HighLevel.UI.Scene();
+			float pos_y = 5.0f;
+			foreach(var file in Directory.EnumerateFiles(searchPath))
+			{
+				var short_file = file.Split('/')[file.Split('/').Length -1];
+				Button button = new Button();
+				button.Text = short_file;
+				button.ButtonAction += HandleButton;
+				button.X = 10.0f;
+				button.Y = pos_y;
+				pos_y += 70.0f;
+				scene.RootWidget.AddChildLast(button);
+			}
+			
+			
+			// Set scene
+			UISystem.SetScene(scene, null);
+			
+			while(!isLevelSelected)
+			{
+				UISystem.Update(Touch.GetData(0));
+				graphics.SetClearColor(new Sce.PlayStation.Core.Vector4(0.0f, 0.0f, 0.0f, 1.0f));
+				graphics.Clear();
+				UISystem.Render();
+				graphics.SwapBuffers();
+			}
+			graphics.Dispose();
+			
+			Load (selected_filename);
+		}
+		
 		public static void Load(String filename)
 		{
-			
 			
 			using (XmlReader reader = XmlReader.Create(filename))
 			{

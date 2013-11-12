@@ -11,9 +11,10 @@ namespace Main
 	
 		public static void Main (string[] args)
 		{
-			CollectibleManager.Init();
-			LevelLoader.Load("/Application/Levels/Level1.oel");
+			LevelLoader.BootStrap();
 			
+			
+			CollectibleManager.Init();
 			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
 			//RockSpawner.create(rockSpawner, new Dictionary<String,String>());
 			
