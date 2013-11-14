@@ -50,6 +50,7 @@
     <Compile Include="PreFabs\Crane.cs" />
     <Compile Include="PreFabs\Lillypad.cs" />
     <Compile Include="PreFabs\Lotus.cs" />
+    <Compile Include="PreFabs\Torii.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -101,5 +102,6 @@
     <Content Include="Levels\R Level 001.oel" />
     <Content Include="Levels\R Level 002.oel" />
     <Content Include="Levels\R Level 003.oel" />
+    <Content Include="Assets\Torii Gate ph.png" />
   </ItemGroup>
 </Project>
