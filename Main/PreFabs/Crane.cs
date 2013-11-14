@@ -1,10 +1,8 @@
 using System;
-
-using System.Collections;
+using Core;
 using System.Collections.Generic;
 using Sce.PlayStation.Core;
-
-using Core;
+using Sce.PlayStation.HighLevel.Physics2D;
 
 namespace Main
 {
@@ -19,14 +17,14 @@ namespace Main
 			ent.tag("crane", "collectable");
 			
 			
-			var m = ent.attachComponent(new ModelComponent("/Application/resources/Cube.mdx"));
-			m.scale = new Vector3(20f, 20f, 20f);
+			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/crane.png"));
+			m.scale = new Vector2(.25f, .25f);
 			
-			ent.attachComponent(RigidBody.CreateFromModel(m));
-			RigidBody rb = ent.FindComponent<RigidBody>();
-			rb.body = new Sce.PlayStation.HighLevel.Physics2D.PhysicsBody();
-			rb.Mass = 0.001f;
+			RigidBody rb = new RigidBody(10);
+			rb.body = new PhysicsBody();
 			rb.body.SetBodyTrigger();
+			ent.attachComponent(rb);
+			
 			ent.attachComponent(new CollectibleTrigger(SceneManager.Instance.FindEntity("Boat")));
 		}
 	}
