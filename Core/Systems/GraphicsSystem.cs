@@ -130,7 +130,7 @@ namespace Core
 				Matrix4 world = Matrix4.Identity ;
 				
 				
-			    Vector3 scale = new Vector3(1,1,1);
+			    Vector3 scale = new Vector3(sprite.scale.X, sprite.scale.Y, 1f);
 					
 				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X, sprite.parent.Transform.Position.Y, 0);
 								

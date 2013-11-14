@@ -97,5 +97,6 @@
     <Content Include="Assets\lilypad.mdx" />
     <Content Include="Levels\TysTest.oel" />
     <Content Include="Assets\Lotus.mdx" />
+    <Content Include="Assets\crane.png" />
   </ItemGroup>
 </Project>
