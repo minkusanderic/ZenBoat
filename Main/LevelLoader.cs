@@ -146,7 +146,7 @@ namespace Main
 					{
 						case "Entities":
 							break;
-					case "BankGrid":
+						case "BankGrid":
 							break;
 						default:
 							String name = reader.Name;
