@@ -92,5 +92,7 @@
     <Content Include="Assets\Whirpoolsmall.png" />
     <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Levels\CurrentTest.oel" />
+    <Content Include="Assets\crane.png" />
+    <Content Include="Assets\torii_gate.png" />
   </ItemGroup>
 </Project>
