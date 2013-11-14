@@ -106,6 +106,30 @@ namespace Main
 								parseEntities(r);
 							}
 							break;
+						case "Down":
+							using (var r = reader.ReadSubtree())
+							{
+								parseBitstring(r);
+							}
+							break;
+						case "Up":
+							using (var r = reader.ReadSubtree())
+							{
+								parseBitstring(r);
+							}
+							break;
+						case "Back":
+							using (var r = reader.ReadSubtree())
+							{
+								parseBitstring(r);
+							}
+							break;
+						case "Forward":
+							using (var r = reader.ReadSubtree())
+							{
+								parseBitstring(r);
+							}
+							break;
 					}
 				}
 				}
@@ -156,6 +180,23 @@ namespace Main
 				}
 			}
 		}
+		
+		private static void parseBitstring(XmlReader reader)
+		{
+			int[,] bitArray = new int[,] {};
+
+			while(reader.Read())
+			{
+				for(int y = 0; y <= 59; y++)
+				{
+					for(int x = 0 ; x <= 33; x++)
+					{
+						bitArray[x, y] = 0;	
+					}
+				}
+			}
+		}
+		
 	}
 }
 
