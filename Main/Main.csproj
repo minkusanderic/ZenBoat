@@ -98,5 +98,8 @@
     <Content Include="Levels\TysTest.oel" />
     <Content Include="Assets\Lotus.mdx" />
     <Content Include="Assets\crane.png" />
+    <Content Include="Levels\R Level 001.oel" />
+    <Content Include="Levels\R Level 002.oel" />
+    <Content Include="Levels\R Level 003.oel" />
   </ItemGroup>
 </Project>
