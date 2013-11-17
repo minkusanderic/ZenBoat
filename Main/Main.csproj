@@ -93,7 +93,6 @@
     <Content Include="Assets\RockFBX.mdx" />
     <Content Include="Levels\Level1.oel" />
     <Content Include="Assets\Whirpoolsmall.png" />
-    <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Levels\CurrentTest.oel" />
     <Content Include="Assets\lilypad.mdx" />
     <Content Include="Levels\TysTest.oel" />
@@ -104,5 +103,8 @@
     <Content Include="Levels\R Level 003.oel" />
     <Content Include="Assets\Torii Gate ph.png" />
     <Content Include="Levels\EricWhirlpoolTest.oel" />
+    <Content Include="Assets\WaterDrop2.wav" />
+    <Content Include="Assets\WaterDrop.wav" />
+    <Content Include="Assets\LondonsSong.mp3" />
   </ItemGroup>
 </Project>

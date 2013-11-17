@@ -25,6 +25,17 @@ namespace Core
 			background_music_player = background_music.CreatePlayer();
 			background_music_player.Play();
 		}
+		
+		public void setVolume(int volume) 
+		{
+			background_music_player.Volume = 0.1f;
+		}
+		
+		public void loop() 
+		{
+			background_music_player.Loop = true; 
+		}
+		
 	}
 }
 
