@@ -20,7 +20,9 @@ namespace Main
 			
 			
 			var background_music = SceneManager.Instance.createEntity("BG_Music");
-			//background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/Rings.mp3") );
+			BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/LondonsSong.mp3") );
+			bgmc.setVolume(1);
+			bgmc.loop();
 			
 			var soundeffect_music = SceneManager.Instance.createEntity("SFX_Music");
 			soundeffect_music.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );

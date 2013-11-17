@@ -10,6 +10,7 @@ namespace Core
 		public VertexBuffer vb;
 		public Texture2D texture;
 		public ShaderProgram shaderProgram;
+		public Vector2 scale = new Vector2(1.0f, 1.0f);
 		
 		public SpriteComponent (int width, int height, Vector3 color)
 		{
