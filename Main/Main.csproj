@@ -50,11 +50,7 @@
     <Compile Include="PreFabs\Crane.cs" />
     <Compile Include="PreFabs\Lillypad.cs" />
     <Compile Include="PreFabs\Lotus.cs" />
-
     <Compile Include="PreFabs\Torii.cs" />
-
-    <Compile Include="PreFabs\Koi.cs" />
-
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -103,13 +99,10 @@
     <Content Include="Levels\TysTest.oel" />
     <Content Include="Assets\Lotus.mdx" />
     <Content Include="Assets\crane.png" />
-
     <Content Include="Levels\R Level 001.oel" />
     <Content Include="Levels\R Level 002.oel" />
     <Content Include="Levels\R Level 003.oel" />
     <Content Include="Assets\Torii Gate ph.png" />
-
-    <Content Include="Assets\Koifish.mdx" />
-
+    <Content Include="Levels\EricWhirlpoolTest.oel" />
   </ItemGroup>
 </Project>
