@@ -51,6 +51,7 @@
     <Compile Include="PreFabs\Lillypad.cs" />
     <Compile Include="PreFabs\Lotus.cs" />
     <Compile Include="PreFabs\Torii.cs" />
+    <Compile Include="PreFabs\Koi.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -102,9 +103,14 @@
     <Content Include="Levels\R Level 002.oel" />
     <Content Include="Levels\R Level 003.oel" />
     <Content Include="Assets\Torii Gate ph.png" />
+
     <Content Include="Levels\EricWhirlpoolTest.oel" />
     <Content Include="Assets\WaterDrop2.wav" />
     <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Assets\LondonsSong.mp3" />
+
+    <Content Include="Assets\Koifish.mdx" />
+    <Content Include="Levels\Dores Test Level.oel" />
+
   </ItemGroup>
 </Project>

@@ -79,6 +79,7 @@
     <Compile Include="Components\CollectibleTrigger.cs" />
     <Compile Include="Managers\CollectibleManager.cs" />
     <Compile Include="Components\SimpleTrigger.cs" />
+    <Compile Include="Components\ToriiGateTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

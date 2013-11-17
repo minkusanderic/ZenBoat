@@ -16,7 +16,6 @@ namespace Main
 			ent.Name = "Crane";
 			ent.tag("crane", "collectable");
 			
-			
 			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/crane.png"));
 			m.scale = new Vector2(.25f, .25f);
 			
