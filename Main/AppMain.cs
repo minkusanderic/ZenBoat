@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Sce.PlayStation;
+using Sce.PlayStation.Core;
 using Sce.PlayStation.HighLevel.Model;
 using Core;
 
@@ -16,7 +17,7 @@ namespace Main
 			
 			CollectibleManager.Init();
 			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
-			//RockSpawner.create(rockSpawner, new Dictionary<String,String>());
+			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
 			
 			
 			var background_music = SceneManager.Instance.createEntity("BG_Music");
@@ -29,6 +30,8 @@ namespace Main
 			
 			var water = SceneManager.Instance.createEntity("Water");
 			water.attachComponent(new WaterComponent());
+			
+			
 			
 			while(true)
 			{

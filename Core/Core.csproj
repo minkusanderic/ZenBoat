@@ -80,6 +80,7 @@
     <Compile Include="Managers\CollectibleManager.cs" />
     <Compile Include="Components\SimpleTrigger.cs" />
     <Compile Include="Components\ToriiGateTrigger.cs" />
+    <Compile Include="Systems\TouchSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

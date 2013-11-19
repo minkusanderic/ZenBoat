@@ -96,23 +96,18 @@
     <Content Include="Assets\Whirpoolsmall.png" />
     <Content Include="Levels\CurrentTest.oel" />
     <Content Include="Assets\crane.png" />
-    <Content Include="Assets\torii_gate.png" />
     <Content Include="Assets\lilypad.mdx" />
     <Content Include="Levels\TysTest.oel" />
     <Content Include="Assets\Lotus.mdx" />
-    <Content Include="Assets\crane.png" />
     <Content Include="Levels\R Level 001.oel" />
     <Content Include="Levels\R Level 002.oel" />
     <Content Include="Levels\R Level 003.oel" />
     <Content Include="Assets\Torii Gate ph.png" />
-
     <Content Include="Levels\EricWhirlpoolTest.oel" />
     <Content Include="Assets\WaterDrop2.wav" />
     <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Assets\LondonsSong.mp3" />
-
     <Content Include="Assets\Koifish.mdx" />
     <Content Include="Levels\Dores Test Level.oel" />
-
   </ItemGroup>
 </Project>
