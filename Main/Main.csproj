@@ -109,5 +109,8 @@
     <Content Include="Assets\LondonsSong.mp3" />
     <Content Include="Assets\Koifish.mdx" />
     <Content Include="Levels\Dores Test Level.oel" />
+    <Content Include="Assets\Crane01.mdx" />
+    <Content Include="Assets\FloatingLantern01.mdx" />
+    <Content Include="Assets\SimpleBank01.mdx" />
   </ItemGroup>
 </Project>
