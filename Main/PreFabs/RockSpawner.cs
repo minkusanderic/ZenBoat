@@ -53,6 +53,7 @@ namespace Main
 							
 							rock.Transform.Position = TouchSystem.RayCastOntoPlane(pos, dir + rel_right + rel_up).Xy;
 							rock.attachComponent( new SuicideController( 50 ) );
+							rock.attachComponent(new RadialSplash());
 							
 							if ( b )
 							{

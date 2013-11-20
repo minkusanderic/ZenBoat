@@ -9,6 +9,8 @@ namespace Core
 	public class WaterSystem : CoreSystem
 	{
 		private List<WaterComponent> waters = new List<WaterComponent>();
+		private List<RadialSplash> radials = new List<RadialSplash>();
+		
 		
 		public WaterSystem ()
 		{
@@ -47,6 +49,14 @@ namespace Core
 				//program.Parameters.SetWorldMatrix(0, ref world);
 				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
+				
+				foreach(var rad in this.radials)
+				{
+					Vector3 radial_vec = new Vector3(rad.parent.Transform.Position.X, rad.parent.Transform.Position.Y, rad.time);
+					water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Radial"),
+					                                    ref radial_vec);
+					rad.time += .01f;
+				}
 
 				time += .1f;
 				
@@ -59,6 +69,10 @@ namespace Core
 			if(comp is WaterComponent)
 			{
 				waters.Add((WaterComponent)comp);
+			}
+			if(comp is RadialSplash)
+			{
+				radials.Add((RadialSplash)comp);
 			}
 		}
 	}
