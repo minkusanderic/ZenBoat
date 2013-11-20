@@ -20,8 +20,8 @@ namespace Main
 			ent.Name = "Torii";
 			ent.tag("torii");
 			
-			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/Torii Gate ph.png"));
-			m.scale = new Vector2(.5f, .5f);
+			var m = ent.attachComponent(new ModelComponent("/Application/Assets/Torii2.mdx"));
+			m.scale = new Vector3(5.0f, 5.0f, 5.0f);
 			
 			RigidBody rb = new RigidBody( 10 );
 			rb.body = new PhysicsBody();

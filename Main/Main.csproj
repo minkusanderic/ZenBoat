@@ -112,5 +112,9 @@
     <Content Include="Assets\Crane01.mdx" />
     <Content Include="Assets\FloatingLantern01.mdx" />
     <Content Include="Assets\SimpleBank01.mdx" />
+    <Content Include="Assets\Torii.mdx" />
+    <Content Include="Assets\Torii2.mdx" />
+    <Content Include="Levels\EricMidLevel.oel" />
+    <Content Include="Levels\R Level midgame part 1.oel" />
   </ItemGroup>
 </Project>

@@ -81,6 +81,7 @@
     <Compile Include="Components\SimpleTrigger.cs" />
     <Compile Include="Components\ToriiGateTrigger.cs" />
     <Compile Include="Systems\TouchSystem.cs" />
+    <Compile Include="Systems\WaterSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
