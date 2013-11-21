@@ -141,7 +141,7 @@
     <rect x="0" y="528" w="960" h="16" />
   </BankGrid>
   <Entities>
-    <Boat id="0" x="96" y="444" angle="0" />
+    <Boat id="0" x="92" y="392" angle="0" />
     <Rock id="1" x="208" y="376" width="50" height="50" angle="0" />
     <Torii id="2" x="896" y="284" />
     <Crane id="6" x="276" y="104" />
@@ -153,5 +153,6 @@
     <Crane id="13" x="704" y="420" />
     <Whirlpool id="11" x="560" y="336" width="80" height="80" strength="100" />
     <Lillypad id="5" x="728" y="204" width="50" height="40" angle="0" />
+    <Rock id="3" x="244" y="460" width="50" height="50" angle="0" />
   </Entities>
 </level>
