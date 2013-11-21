@@ -185,12 +185,6 @@ namespace Main
 		private static int[,] parseBitstring(XmlReader reader)
 		{
 			int[,] bitArray = new int[,] {};
-			
-			//Read in each line of bits
-			//Store each line in an array element
-			//Determine the length of each element to determine max x
-			//Determine the length of the array to determine max y
-			//Loop through all the values and place them into bitArray
 
 			while(reader.Read())
 			{
