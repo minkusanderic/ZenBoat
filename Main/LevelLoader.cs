@@ -141,7 +141,8 @@ namespace Main
 		{
 			while(reader.Read())
 			{
-				if(reader.IsStartElement()){
+				if(reader.IsStartElement())
+				{
 					switch(reader.Name)
 					{
 						case "Entities":
@@ -181,7 +182,7 @@ namespace Main
 			}
 		}
 		
-		private static void parseBitstring(XmlReader reader)
+		private static int[,] parseBitstring(XmlReader reader)
 		{
 			int[,] bitArray = new int[,] {};
 			
@@ -193,15 +194,35 @@ namespace Main
 
 			while(reader.Read())
 			{
-				
-				for(int y = 0; y <= 59; y++)
+				if(reader.IsStartElement())
 				{
-					for(int x = 0 ; x <= 33; x++)
+					switch(reader.Name)
 					{
-						bitArray[x, y] = 0;	
+					case "Down":
+						break;
+					case "Up":
+						break;
+					case "Back":
+						break;
+					case "Forward":
+						break;
+					default:
+						String raw = reader.Value;
+						string[] lines = raw.Split(new char[] { '\n' });
+						for(int y = 0; y < lines.Length; y++)
+						{
+							for(int x = 0; x < lines[y].Length; x++)
+							{
+								bitArray[x,y] = lines[y][x];
+							}
+						}
+						
 					}
 				}
+						
 			}
+			
+			return bitArray;
 		}
 		
 	}
