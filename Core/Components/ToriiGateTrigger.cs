@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Sce.PlayStation.Core;
 namespace Core
 
 {
@@ -12,6 +13,14 @@ namespace Core
 		public override void onCollide (Entity target)
 		{
 			Console.WriteLine( "You've reached the Torii Gate - Level Over!" );
+			Respawner r = target.FindComponent<Respawner>();
+			if ( r != null )
+			{
+			RigidBody rib = target.FindComponent<RigidBody>();
+			r.ResetPosition();
+			rib.updateTransformData();	
+			rib.Velocity = new Vector2( 0f , 0f );
+			}
 			base.onCollide (target);
 		}
 	}
