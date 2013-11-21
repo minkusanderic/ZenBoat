@@ -14,14 +14,14 @@ namespace Core
 		private Vector2[,] force_vects;
 		public WaterSystem ()
 		{
-			force_vects = new Vector2[34,60];
+			force_vects = new Vector2[60,34];
 		}
 		
 		public void SetCurrentData(int[,] down, int[,] up, int[,] left, int[,] right)
 		{
-			for (int i = 0; i < 34; i++)
+			for (int i = 0; i < 60; i++)
 			{
-				for (int j = 0; j < 60; j++)
+				for (int j = 0; j < 34; j++)
 				{
 					Vector2 down_vect = new Vector2(0, -down[i,j]);
 					Vector2 up_vect = new Vector2(0, down[i,j]);
