@@ -86,6 +86,10 @@ namespace Main
 		
 		public static void Load(String filename)
 		{
+			int[,] down = new int[60,34];
+			int[,] up = new int[60,34];
+			int[,] right = new int[60,34];
+			int[,] left = new int[60,34];
 			
 			using (XmlReader reader = XmlReader.Create(filename))
 			{
@@ -109,31 +113,31 @@ namespace Main
 						case "Down":
 							using (var r = reader.ReadSubtree())
 							{
-								parseBitstring(r);
+								down = parseBitstring(r);
 							}
 							break;
 						case "Up":
 							using (var r = reader.ReadSubtree())
 							{
-								parseBitstring(r);
+								up = parseBitstring(r);
 							}
 							break;
 						case "Back":
 							using (var r = reader.ReadSubtree())
 							{
-								parseBitstring(r);
+								left = parseBitstring(r);
 							}
 							break;
 						case "Forward":
 							using (var r = reader.ReadSubtree())
 							{
-								parseBitstring(r);
+								right = parseBitstring(r);
 							}
 							break;
 					}
 				}
 				}
-			
+				((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).SetCurrentData(down, up, left, right);
 			}
 		} 
 		

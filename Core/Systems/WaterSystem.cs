@@ -24,12 +24,13 @@ namespace Core
 				for (int j = 0; j < 34; j++)
 				{
 					Vector2 down_vect = new Vector2(0, -down[i,j]);
-					Vector2 up_vect = new Vector2(0, down[i,j]);
-					Vector2 right_vect = new Vector2(down[i,j], 0);
-					Vector2 left_vect = new Vector2(-down[i,j], 0);
+					Vector2 up_vect = new Vector2(0, up[i,j]);
+					Vector2 right_vect = new Vector2(right[i,j], 0);
+					Vector2 left_vect = new Vector2(-left[i,j], 0);
 					force_vects[i,j] = down_vect + up_vect + right_vect + left_vect;
 					force_vects[i,j].Normalize();
-					                               
+					
+					
 				}
 			}
 		}
@@ -42,10 +43,14 @@ namespace Core
 				{
 					for(var j = 0; j < force_vects.GetLength(1); j++)
 					{
-						Vector2 pos = new Vector2(i * 16,j * 16);
+						Vector2 pos = new Vector2(i * 16,544 - j * 16);
 						if((pos - push.Transform.Position).Length() < 50.0f)
 						{
-							push.FindComponent<RigidBody>().applyForce(force_vects[i,j]);
+							Vector2 a = 100 * force_vects[i,j];
+							if(a.Length() > 0.0f)
+							{
+								push.FindComponent<RigidBody>().applyForce(5 * force_vects[i,j]);
+							}
 						}
 					}
 				}
