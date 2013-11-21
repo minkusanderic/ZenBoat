@@ -11,16 +11,48 @@ namespace Core
 		private List<WaterComponent> waters = new List<WaterComponent>();
 		private List<RadialSplash> radials = new List<RadialSplash>();
 		
-		
+		private Vector2[,] force_vects;
 		public WaterSystem ()
 		{
+			force_vects = new Vector2[34,60];
+		}
+		
+		public void SetCurrentData(int[,] down, int[,] up, int[,] left, int[,] right)
+		{
+			for (int i = 0; i < 34; i++)
+			{
+				for (int j = 0; j < 60; j++)
+				{
+					Vector2 down_vect = new Vector2(0, -down[i,j]);
+					Vector2 up_vect = new Vector2(0, down[i,j]);
+					Vector2 right_vect = new Vector2(down[i,j], 0);
+					Vector2 left_vect = new Vector2(-down[i,j], 0);
+					force_vects[i,j] = down_vect + up_vect + right_vect + left_vect;
+					force_vects[i,j].Normalize();
+					                               
+				}
+			}
 		}
 		
 		public override void Update()
 		{
-			
-			
+			foreach(var push in SceneManager.Instance.FindEntitiesByTag("pushable"))
+			{
+				for(var i = 0; i < force_vects.GetLength(0); i++)
+				{
+					for(var j = 0; j < force_vects.GetLength(1); j++)
+					{
+						Vector2 pos = new Vector2(i * 16,j * 16);
+						if((pos - push.Transform.Position).Length() < 50.0f)
+						{
+							push.FindComponent<RigidBody>().applyForce(force_vects[i,j]);
+						}
+					}
+				}
+			}
 		}
+		
+		
 		private float time = 0.0f;
 		
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view)
