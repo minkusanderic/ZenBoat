@@ -16,9 +16,8 @@ namespace Main
 			ent.Name = "Crane";
 			ent.tag("crane", "collectable");
 			
-			
-			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/crane.png"));
-			m.scale = new Vector2(.25f, .25f);
+			var m = ent.attachComponent(new ModelComponent("/Application/Assets/Crane01.mdx"));
+			//m.scale = new Vector2(.25f, .25f);
 			
 			RigidBody rb = new RigidBody(10);
 			rb.body = new PhysicsBody();

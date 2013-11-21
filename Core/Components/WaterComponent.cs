@@ -3,7 +3,7 @@ using Sce.PlayStation.Core.Graphics;
 
 namespace Core
 {
-	public class WaterComponent : GraphicsComponent
+	public class WaterComponent : Component<WaterSystem>
 	{
 		
 		public VertexBuffer vb;

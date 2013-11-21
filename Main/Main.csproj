@@ -48,6 +48,10 @@
     <Compile Include="PreFabs\rect.cs" />
     <Compile Include="PreFabs\Current.cs" />
     <Compile Include="PreFabs\Crane.cs" />
+    <Compile Include="PreFabs\Lillypad.cs" />
+    <Compile Include="PreFabs\Lotus.cs" />
+    <Compile Include="PreFabs\Torii.cs" />
+    <Compile Include="PreFabs\Koi.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -90,8 +94,27 @@
     <Content Include="Assets\RockFBX.mdx" />
     <Content Include="Levels\Level1.oel" />
     <Content Include="Assets\Whirpoolsmall.png" />
-    <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Levels\CurrentTest.oel" />
     <Content Include="Assets\crane.png" />
+    <Content Include="Assets\lilypad.mdx" />
+    <Content Include="Levels\TysTest.oel" />
+    <Content Include="Assets\Lotus.mdx" />
+    <Content Include="Levels\R Level 001.oel" />
+    <Content Include="Levels\R Level 002.oel" />
+    <Content Include="Levels\R Level 003.oel" />
+    <Content Include="Assets\Torii Gate ph.png" />
+    <Content Include="Levels\EricWhirlpoolTest.oel" />
+    <Content Include="Assets\WaterDrop2.wav" />
+    <Content Include="Assets\WaterDrop.wav" />
+    <Content Include="Assets\LondonsSong.mp3" />
+    <Content Include="Assets\Koifish.mdx" />
+    <Content Include="Levels\Dores Test Level.oel" />
+    <Content Include="Assets\Crane01.mdx" />
+    <Content Include="Assets\FloatingLantern01.mdx" />
+    <Content Include="Assets\SimpleBank01.mdx" />
+    <Content Include="Assets\Torii.mdx" />
+    <Content Include="Assets\Torii2.mdx" />
+    <Content Include="Levels\EricMidLevel.oel" />
+    <Content Include="Levels\R Level midgame part 1.oel" />
   </ItemGroup>
 </Project>

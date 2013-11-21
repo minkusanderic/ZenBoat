@@ -19,6 +19,7 @@ namespace Core
 			systems[typeof(ControllerSystem)] = new ControllerSystem();
 			systems[typeof(PhysicsSystem)] = new PhysicsSystem();
 			systems[typeof(AudioSystem)] = new AudioSystem();
+			systems[typeof(WaterSystem)] = new WaterSystem();
 		}
 
 	public static SceneManager _instance;
@@ -54,6 +55,7 @@ namespace Core
 			
 			systems[typeof(ControllerSystem)].Update();
 			systems[typeof(PhysicsSystem)].Update();
+			systems[typeof(WaterSystem)].Update();
 			systems[typeof(GraphicsSystem)].Update();
 		}
 		

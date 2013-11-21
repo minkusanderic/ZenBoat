@@ -37,9 +37,23 @@ namespace Main
 							
 							//Console.WriteLine("x: " + (interp_x * width) + "\t\ty: " + interp_y * height );
 							Entity rock = SceneManager.Instance.createEntity("Rock");
-							rock.attachComponent( new ModelComponent("\\Application\\resources\\Cube.mdx") );
-							rock.Transform.Position = new Vector2( (interp_x * width)  , interp_y * height );
+							//rock.attachComponent( new ModelComponent("\\Application\\resources\\Cube.mdx") );
+							
+							var graphics = (GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem));
+							Vector3 pos = graphics.camera_pos;
+							Vector3 dir = (graphics.camera_eye - pos).Normalize();
+							
+							Vector3 right = dir.Cross(Vector3.UnitY).Normalize();
+							Vector3 up = right.Cross(dir).Normalize();
+							
+							float ratio = (float)width/(float)height;
+							
+							Vector3 rel_right = td.X * (float)Math.Tan(FMath.Radians(45.0f/2.0f)) * 2 * 1.77f * right;
+							Vector3 rel_up = -td.Y * (float)Math.Tan(FMath.Radians(45.0f/2.0f)) * 2 * 1.77f * (1/ratio) * up;
+							
+							rock.Transform.Position = TouchSystem.RayCastOntoPlane(pos, dir + rel_right + rel_up).Xy;
 							rock.attachComponent( new SuicideController( 50 ) );
+							rock.attachComponent(new RadialSplash());
 							
 							if ( b )
 							{
@@ -61,7 +75,7 @@ namespace Main
 								
 								Entity particle = SceneManager.Instance.createEntity( "particle" + i );
 								particle.attachComponent( new RippleParticlePusher( i , rock.Transform.Position.X , rock.Transform.Position.Y		) );
-								particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
+								//particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
 								particle.attachComponent( new SuicideController( 50 ) );
 							}
 							

@@ -31,8 +31,8 @@ namespace Core
 			for ( int i = 0 ; i < 360; i += num_particles )
 			{
 				Entity particle = SceneManager.Instance.createEntity( "particle" + i );
-				particle.attachComponent( new RippleParticlePusher( i , parent.Transform.Position.X , parent.Transform.Position.Y		) );
-				particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
+				//particle.attachComponent( new RippleParticlePusher( i , parent.Transform.Position.X , parent.Transform.Position.Y		) );
+				//particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
 				particle.attachComponent( new SuicideController( 50 ) );
 			}	
 			Entity sfx = SceneManager.Instance.FindEntity("SFX_Music");
