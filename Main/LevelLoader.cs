@@ -184,38 +184,36 @@ namespace Main
 		
 		private static int[,] parseBitstring(XmlReader reader)
 		{
-			int[,] bitArray = new int[,] {};
+			int[,] bitArray = new int[60,34];
 
 			while(reader.Read())
 			{
-				if(reader.IsStartElement())
+				switch(reader.Name)
 				{
-					switch(reader.Name)
+				case "Down":
+					break;
+				case "Up":
+					break;
+				case "Back":
+					break;
+				case "Forward":
+					break;
+				default:
+					String raw = reader.Value;
+					string[] lines = raw.Split(new char[] { '\n' });
+					for(int y = 0; y < lines.Length; y++)
 					{
-					case "Down":
-						break;
-					case "Up":
-						break;
-					case "Back":
-						break;
-					case "Forward":
-						break;
-					default:
-						String raw = reader.Value;
-						string[] lines = raw.Split(new char[] { '\n' });
-						for(int y = 0; y < lines.Length; y++)
+						for(int x = 0; x < lines[y].Length; x++)
 						{
-							for(int x = 0; x < lines[y].Length; x++)
-							{
-								bitArray[x,y] = lines[y][x];
-							}
+							bitArray[x,y] = lines[y][x] - 48;
 						}
-						
 					}
+					break;
 				}
 						
 			}
 			
+			Console.WriteLine(bitArray);
 			return bitArray;
 		}
 		
