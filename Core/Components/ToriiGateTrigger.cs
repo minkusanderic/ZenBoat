@@ -16,10 +16,10 @@ namespace Core
 			Respawner r = target.FindComponent<Respawner>();
 			if ( r != null )
 			{
-			RigidBody rib = target.FindComponent<RigidBody>();
-			r.ResetPosition();
-			rib.updateTransformData();	
-			rib.Velocity = new Vector2( 0f , 0f );
+				RigidBody rib = target.FindComponent<RigidBody>();
+				r.ResetPosition();
+				rib.updateTransformData();	
+				rib.Velocity = new Vector2( 0f , 0f );
 			}
 			base.onCollide (target);
 		}
