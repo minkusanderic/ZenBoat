@@ -32,9 +32,10 @@ namespace Main
 			water.attachComponent(new WaterComponent());
 			
 			var bank = SceneManager.Instance.createEntity("Bank");
-			bank.Transform.Position = new Vector2(960/2, 544/2 + 60);
+			bank.Transform.Position = new Vector2(960/2, 544/2 + 100);
 			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank01.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
-			
+			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
+			bank_model.scale.Y *= 1.2f;
 			
 			
 			while(true)

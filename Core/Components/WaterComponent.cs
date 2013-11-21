@@ -27,8 +27,8 @@ namespace Core
 				for(var j = 0;j < H; j++)
 				{
 					int offset = 3*((i * W) + j);
-					vertices[offset + 0] = i * 10.0f - 10.0f;   // x0
-   			  		vertices[offset + 1] = j * 10.0f - 10.0f;   // y0
+					vertices[offset + 0] = i * 15.0f - 300.0f;   // x0
+   			  		vertices[offset + 1] = j * 5.2f + 30f;   // y0
               		vertices[offset + 2] = 0.0f;   // z0
 				}
 			}
