@@ -83,6 +83,7 @@
     <Compile Include="Systems\TouchSystem.cs" />
     <Compile Include="Systems\WaterSystem.cs" />
     <Compile Include="Components\RadialSplash.cs" />
+    <Compile Include="Components\Respawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

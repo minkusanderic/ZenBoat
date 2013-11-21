@@ -12,7 +12,7 @@ namespace Main
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			ent.tag("pushable");
+			//ent.tag("pushable");
 						    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Koifish.mdx"));
 			

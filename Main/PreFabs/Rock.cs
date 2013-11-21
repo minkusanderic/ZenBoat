@@ -30,7 +30,7 @@ namespace Main
 			
 			var body = ent.attachComponent(new RigidBody(Math.Max(width,height)/2));
 			body.is_static = true;
-			ent.attachComponent( new RockTouchResponder( ) );
+			//ent.attachComponent( new RockTouchResponder( ) );
 			//body.is_static = true;
 			//body.makeStatic();
 			//m.scale = new Vector3(100, 100, 100);

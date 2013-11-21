@@ -28,6 +28,8 @@ namespace Main
 			ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.5f) );
 			ent.attachComponent( new FrictionController(.05f) );
 			ent.attachComponent( new RadialSplash());
+			
+			ent.attachComponent( new Respawner( ent.Transform.Position ) );
 			//ent.attachComponent( new SimpleAction(move_initial));
 		}
 		
