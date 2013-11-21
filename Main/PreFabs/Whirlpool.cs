@@ -22,7 +22,7 @@ namespace Main
 			int height = Convert.ToInt32(options["height"]);
 			int strength = Convert.ToInt32(options["strength"]);
 			
-			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/Whirpoolsmall.png"));
+			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/whirlpool.png"));
 			//m.scale = new Vector2(.5f, .5f);
 			RigidBody rb = new RigidBody( Math.Min(width, height)/2 );
 			ent.attachComponent(rb);
