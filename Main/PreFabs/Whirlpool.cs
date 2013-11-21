@@ -47,14 +47,14 @@ namespace Main
 														Respawner r = t.FindComponent<Respawner>();
 														if ( r != null )
 														{
+															Console.WriteLine("Here");
 															RigidBody rib = t.FindComponent<RigidBody>();
 															
 															rib.is_static = true;
+															
 															rib.body.SetBodyTrigger();
 															r.ResetPosition();
-															//t.Transform.Position = new Vector2( 0f , 0f );
-															//t.attachComponent( new RigidBody(t.FindComponent<ModelComponent>().model.BoundingSphere.W *.5f) );
-															//rb.body.position = t.Transform.Position;
+															
 														}
 														//t.Destroy();
 													}));

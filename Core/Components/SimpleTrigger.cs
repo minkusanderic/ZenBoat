@@ -14,7 +14,16 @@ namespace Core
 		
 		public override void onCollide (Entity target)
 		{
+			Console.WriteLine("And here");
 			this.on_collide(target);
+		}
+		
+		void Remove( Entity target )
+		{
+			if ( targets.Contains( target ) )
+			{
+				targets.Remove( target );	
+			}
 		}
 	}
 }

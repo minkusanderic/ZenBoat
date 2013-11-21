@@ -13,7 +13,7 @@ namespace Main
 		
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			ent.tag( "pushable");
+			//ent.tag( "pushable");
 			int width = Convert.ToInt32(options["width"]);
 			int height = Convert.ToInt32(options["height"]);
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/lilypad.mdx"));
