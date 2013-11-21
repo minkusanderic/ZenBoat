@@ -116,5 +116,6 @@
     <Content Include="Assets\Torii2.mdx" />
     <Content Include="Levels\EricMidLevel.oel" />
     <Content Include="Levels\R Level midgame part 1.oel" />
+    <Content Include="Levels\Midgame1.oel" />
   </ItemGroup>
 </Project>
