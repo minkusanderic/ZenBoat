@@ -47,18 +47,10 @@ namespace Main
 														Respawner r = t.FindComponent<Respawner>();
 														if ( r != null )
 														{
-															Console.WriteLine( r.originalPosition );
 															RigidBody rib = t.FindComponent<RigidBody>();
-															Console.WriteLine(r.parent.Transform.Position );
-															//rib.is_static = true;
 															r.ResetPosition();
-															Console.WriteLine( r.originalPosition );
-															Console.WriteLine( r.parent.Transform.Position );
-															//rib.body.Position = new Vector2( 0f , 0f );
-															
-															rib.updateTransformData();
-															r.ResetPosition();
-															
+															rib.updateTransformData();	
+															rib.Velocity = new Vector2( 0f , 0f );
 														}
 													}));
 		}
