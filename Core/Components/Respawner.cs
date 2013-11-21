@@ -5,7 +5,7 @@ namespace Core
 	public class Respawner : IComponent
 		
 	{
-		private Vector2 originalPosition;
+		public Vector2 originalPosition;
 		public Respawner ()
 		{
 		}
