@@ -37,7 +37,7 @@ namespace Main
 							
 							//Console.WriteLine("x: " + (interp_x * width) + "\t\ty: " + interp_y * height );
 							Entity rock = SceneManager.Instance.createEntity("Rock");
-							rock.attachComponent( new ModelComponent("\\Application\\resources\\Cube.mdx") );
+							//rock.attachComponent( new ModelComponent("\\Application\\resources\\Cube.mdx") );
 							
 							var graphics = (GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem));
 							Vector3 pos = graphics.camera_pos;
@@ -75,7 +75,7 @@ namespace Main
 								
 								Entity particle = SceneManager.Instance.createEntity( "particle" + i );
 								particle.attachComponent( new RippleParticlePusher( i , rock.Transform.Position.X , rock.Transform.Position.Y		) );
-								particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
+								//particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
 								particle.attachComponent( new SuicideController( 50 ) );
 							}
 							
