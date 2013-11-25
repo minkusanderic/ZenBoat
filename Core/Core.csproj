@@ -85,6 +85,7 @@
     <Compile Include="Components\RadialSplash.cs" />
     <Compile Include="Components\Respawner.cs" />
     <Compile Include="Managers\SaveGameManager.cs" />
+    <Compile Include="Utils\Selector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

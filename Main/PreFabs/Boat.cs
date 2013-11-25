@@ -31,6 +31,20 @@ namespace Main
 			
 			ent.attachComponent( new Respawner( ent.Transform.Position ) );
 			//ent.attachComponent( new SimpleAction(move_initial));
+			
+			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
+			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
+			
+			
+			
+			var water = SceneManager.Instance.createEntity("Water");
+			water.attachComponent(new WaterComponent());
+			
+			var bank = SceneManager.Instance.createEntity("Bank");
+			bank.Transform.Position = new Vector2(960/2, 544/2 + 100);
+			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank01.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
+			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
+			bank_model.scale.Y *= 1.2f;
 		}
 		
 		

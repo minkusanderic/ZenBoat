@@ -42,7 +42,7 @@ namespace Main
 				}
 			}));
 			
-			ent.attachComponent(new SimpleTrigger(SceneManager.Instance.FindEntitiesByTag("pushable").ToList(), 
+			ent.attachComponent(new SimpleTrigger(SceneManager.Instance.Select("pushable"), 
 			                                      (t) => {
 														Respawner r = t.FindComponent<Respawner>();
 														if ( r != null )

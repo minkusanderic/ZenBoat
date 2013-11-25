@@ -38,22 +38,32 @@ namespace Core
 		{
 			if(comp is RigidBody)
 			{
+				
 				var rigid_body = (RigidBody)comp;
+				PhysicsShape shape;
+				if(rigid_body.dimentions.Y == 0.0f)
+				{
+					shape = physics.AddSphereShape(rigid_body.dimentions.X);
+				}
+				else
+				{
+					shape = physics.AddBoxShape(rigid_body.dimentions);
+					//shape = physics.AddSphereShape(rigid_body.dimentions.X);
+				}
 				bodies.Add(rigid_body);
-				rigid_body.id = next_id;
-				physics.sceneShapes[next_id] = rigid_body.shape;
-				rigid_body.shape = physics.sceneShapes[next_id];
-				physics.sceneBodies[next_id] = new PhysicsBody(rigid_body.shape, rigid_body.Mass);
-				rigid_body.body = physics.sceneBodies[next_id];
-				rigid_body.body.ShapeIndex = (uint)next_id;
+				
+				rigid_body.body = physics.AddBody(shape, rigid_body.Mass);
+		
+				//rigid_body.body = physics.sceneBodies[next_id];
 				rigid_body.body.position = rigid_body.parent.Transform.Position;
 				rigid_body.body.Rotation = Vector2.Angle(Vector2.UnitX, rigid_body.parent.Transform.Rotation);
+				
 				if(rigid_body.is_static)
 				{
 					rigid_body.body.SetBodyStatic();
 				}
-				physics.numShape++;
-				physics.numBody++;
+				//physics.numShape++;
+				//physics.numBody++;
 				next_id++;
 			}
 			if(comp is TriggerComponent)

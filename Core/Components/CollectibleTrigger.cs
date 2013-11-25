@@ -8,7 +8,7 @@ namespace Core
 {
 	public class CollectibleTrigger : TriggerComponent
 	{
-		public CollectibleTrigger (Entity ent) : base(new List<Entity>(){ent})
+		public CollectibleTrigger () : base(SceneManager.Instance.Select("boat"))
 		{
 		}
 		

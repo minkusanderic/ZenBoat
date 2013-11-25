@@ -24,7 +24,7 @@ namespace Main
 			rb.body.SetBodyTrigger();
 			ent.attachComponent(rb);
 			
-			ent.attachComponent(new CollectibleTrigger(SceneManager.Instance.FindEntity("Boat")));
+			ent.attachComponent(new CollectibleTrigger());
 		}
 	}
 }

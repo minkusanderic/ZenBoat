@@ -4,10 +4,9 @@ namespace Core
 {
 	public class WhirlpoolTrigger : TriggerComponent
 	{
-		public WhirlpoolTrigger (List<Entity> target_list ) : base(target_list)
+		public WhirlpoolTrigger (Selector target_list ) : base(target_list)
 		{
 			Console.WriteLine( "making Whirpooltrigger" );
-			base.targets = target_list;
 		}
 		public override void onCollide (Entity target)
 		{

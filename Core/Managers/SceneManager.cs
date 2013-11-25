@@ -134,6 +134,11 @@ namespace Core
 			}
 		}
 		
+	public Selector Select(String tag)
+		{
+			return new Selector(tag);
+		}
+		
 	public void DestroyAll()
 		{
 			foreach(var ent in entities.ToArray())

@@ -9,9 +9,9 @@ namespace Core
 {
 	public class TriggerComponent : Component<PhysicsSystem>
 	{
-		public List<Entity> targets;
+		public Selector targets;
 		
-		public TriggerComponent (List<Entity> targets)
+		public TriggerComponent (Selector targets)
 		{
 			this.targets = targets;
 		}
@@ -19,15 +19,13 @@ namespace Core
 		public override void Update()
 		{
 			var physics = (PhysicsSystem)SceneManager.Instance.getSystem(typeof(PhysicsSystem));
-			foreach(var target in this.targets){
+			foreach(var target in this.targets.get()){
 			if (physics.isColliding(this.require<RigidBody>(), target.FindComponent<RigidBody>()))
 			{
 				this.onCollide(target);
 			}
 			}
 		}
-		
-		public void addTarget(Entity target){this.targets.Add(target);}
 		
 		public virtual void onCollide(Entity target) {}
 		

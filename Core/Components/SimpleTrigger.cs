@@ -7,7 +7,7 @@ namespace Core
 	public class SimpleTrigger : TriggerComponent
 	{
 		private Action<Entity> on_collide;
-		public SimpleTrigger (List<Entity> ents, Action<Entity> on_collide) : base(ents)
+		public SimpleTrigger (Selector ents, Action<Entity> on_collide) : base(ents)
 		{
 			this.on_collide = on_collide;
 		}
@@ -18,13 +18,6 @@ namespace Core
 			this.on_collide(target);
 		}
 		
-		void Remove( Entity target )
-		{
-			if ( targets.Contains( target ) )
-			{
-				targets.Remove( target );	
-			}
-		}
 	}
 }
 

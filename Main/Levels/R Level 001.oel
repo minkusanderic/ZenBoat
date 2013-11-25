@@ -142,6 +142,6 @@
   </BankGrid>
   <Entities>
     <Boat id="0" x="80" y="296" angle="0" />
-    <Torii id="1" x="896" y="272" />
+    <Torii id="1" x="896" y="272" NextLevel="R Level 002.oel" />
   </Entities>
 </level>

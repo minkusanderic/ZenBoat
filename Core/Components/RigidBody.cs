@@ -13,6 +13,8 @@ namespace Core
 		public int id;
 		public float Mass = 1.0f;
 		
+		public Vector2 dimentions = new Vector2();
+		
 		public bool is_static {get;set;}
 		
 		public static RigidBody CreateFromModel(ModelComponent m)
@@ -38,11 +40,12 @@ namespace Core
 		
 		public RigidBody (float radius)
 		{
-			this.shape = new PhysicsShape(radius);
+			this.dimentions.X = radius;
 		}
 		
 		public RigidBody (float width, float height)
 		{
+			this.dimentions = new Vector2(width, height);
 			this.shape = PhysicsShape.CreateConvexHull(new Vector2[] {new Vector2(-width/2, height/2),
 																	  new Vector2(width/2, height/2),
 																	  new Vector2(width/2, -height/2),

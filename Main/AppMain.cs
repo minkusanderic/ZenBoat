@@ -16,8 +16,7 @@ namespace Main
 			
 			LevelLoader.BootStrap();
 			CollectibleManager.Init();
-			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
-			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
+			
 			
 			
 			var background_music = SceneManager.Instance.createEntity("BG_Music");
@@ -27,15 +26,6 @@ namespace Main
 			
 			var soundeffect_music = SceneManager.Instance.createEntity("SFX_Music");
 			soundeffect_music.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
-			
-			var water = SceneManager.Instance.createEntity("Water");
-			water.attachComponent(new WaterComponent());
-			
-			var bank = SceneManager.Instance.createEntity("Bank");
-			bank.Transform.Position = new Vector2(960/2, 544/2 + 100);
-			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank01.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
-			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
-			bank_model.scale.Y *= 1.2f;
 			
 			
 			while(true)

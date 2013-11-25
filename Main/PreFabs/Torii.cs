@@ -27,8 +27,8 @@ namespace Main
 			rb.is_static = true;
 			
 			ent.attachComponent (rb);
-			List<Entity> targets = SceneManager.Instance.FindEntitiesByTag ("pushable").ToList ();
-			ent.attachComponent (new ToriiGateTrigger (targets));
+			var targets = SceneManager.Instance.Select("pushable");
+			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
 														Console.WriteLine ("You've reached the Torii Gate - Level Over!");		
@@ -39,8 +39,11 @@ namespace Main
 															rib.updateTransformData ();	
 															rib.Velocity = new Vector2 (0f, 0f);
 														}
-														SceneManager.Instance.DestroyAll ();
-													
+														if(options.ContainsKey("NextLevel") && (options["NextLevel"] != ""))
+														{
+															SceneManager.Instance.DestroyAll ();
+															LevelLoader.Load("/Application/Levels/" + options["NextLevel"]);
+														}
 														}
 													)	
 			                    );

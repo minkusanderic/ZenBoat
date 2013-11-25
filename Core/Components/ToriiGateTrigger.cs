@@ -6,9 +6,8 @@ namespace Core
 {
 	public class ToriiGateTrigger : TriggerComponent
 	{
-		public ToriiGateTrigger (List<Entity> target_list ) : base(target_list)
+		public ToriiGateTrigger (Selector target_list ) : base(target_list)
 		{
-			base.targets = target_list;
 		}
 		public override void onCollide (Entity target)
 		{
