@@ -112,6 +112,19 @@ namespace Core
 				radials.Add((RadialSplash)comp);
 			}
 		}
+		
+		public override void destroyComponent (IComponent comp)
+		{
+			if(comp is WaterComponent)
+			{
+				waters.Remove((WaterComponent)comp);
+			}
+			if(comp is RadialSplash)
+			{
+				radials.Remove((RadialSplash)comp);
+			}
+			//base.destroyComponent (comp);
+		}
 	}
 }
 

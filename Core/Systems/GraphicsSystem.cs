@@ -172,8 +172,7 @@ namespace Core
 			if ( comp is SpriteComponent )
 			{
 				sprites.Remove((SpriteComponent)comp);
-			}
-			
+			}			
 			//base.destroyComponent (comp);
 		}
 		

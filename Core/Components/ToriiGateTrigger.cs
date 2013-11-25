@@ -21,6 +21,7 @@ namespace Core
 				rib.updateTransformData();	
 				rib.Velocity = new Vector2( 0f , 0f );
 			}
+			SceneManager.Instance.DestroyAll();
 			base.onCollide (target);
 		}
 	}

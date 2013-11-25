@@ -43,9 +43,16 @@ namespace Core
 			foreach(var comp in to_be_destroyed)
 			{
 				//entity_comp[comp.parent].Remove(comp);
-				comp.Destroy();				
+				comp.Destroy();
 			}
 			to_be_destroyed.Clear();
+			
+			foreach(var ent in ents_to_be_destroyed)
+			{
+				entities.Remove(ent);
+			}
+			ents_to_be_destroyed.Clear();
+			
 			foreach(var comp in to_be_attached)
 			{
 				comp.attach(comp.parent);
@@ -83,13 +90,14 @@ namespace Core
 		}
 		
 	private List<IComponent> to_be_destroyed = new List<IComponent>();
+	private List<Entity> ents_to_be_destroyed = new List<Entity>();
 	public void DestroyEntity(Entity ent)
 		{
 			foreach(var comp in ent.GetComponents())
 			{
 				to_be_destroyed.Add(comp);
 			}
-			entities.Remove(ent);
+			ents_to_be_destroyed.Add(ent);
 		}
 		
 	public Entity FindEntity(String name)
@@ -123,6 +131,14 @@ namespace Core
 				{
 					yield return ent;
 				}
+			}
+		}
+		
+	public void DestroyAll()
+		{
+			foreach(var ent in entities.ToArray())
+			{
+				ent.Destroy();
 			}
 		}
 		

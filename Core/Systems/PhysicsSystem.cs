@@ -87,6 +87,7 @@ namespace Core
 			if(comp is RigidBody)
 			{
 				physics.DeleteBody(((RigidBody)comp).body);
+				bodies.Remove((RigidBody)comp);
 			}
 			if(comp is TriggerComponent)
 			{

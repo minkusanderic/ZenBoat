@@ -52,7 +52,7 @@ namespace Main
 							Vector3 rel_up = -td.Y * (float)Math.Tan(FMath.Radians(45.0f/2.0f)) * 2 * 1.77f * (1/ratio) * up;
 							
 							rock.Transform.Position = TouchSystem.RayCastOntoPlane(pos, dir + rel_right + rel_up).Xy;
-							rock.attachComponent( new SuicideController( 50 ) );
+							//rock.attachComponent( new SuicideController( 50 ) );
 							rock.attachComponent(new RadialSplash());
 							
 							if ( b )
