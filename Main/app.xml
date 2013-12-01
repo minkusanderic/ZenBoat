@@ -7,4 +7,14 @@
 		<feature value="GamePad" />
 		<feature value="Touch" />
 	</feature_list>
+	<purchase>
+	    <product_list>
+	    	<product label="SWD001" type="normal">
+	        	<name>
+	          	<localized_item locale="en-US" value="Broken Sword" />
+	          	<localized_item locale="ja-JP" value="こわれたつるぎ" />
+	        	</name>
+	      	</product>
+		</product_list>
+	</purchase>
 </application>
