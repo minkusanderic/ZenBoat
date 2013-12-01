@@ -12,9 +12,9 @@ namespace Main
 	
 		public static void Main (string[] args)
 		{
+			SaveGameManager.init();
+			
 			LevelLoader.BootStrap();
-			
-			
 			CollectibleManager.Init();
 			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
 			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
@@ -42,6 +42,7 @@ namespace Main
 			{
 				SceneManager.Instance.Update();
 			}
+			
 		}
 
 	}
