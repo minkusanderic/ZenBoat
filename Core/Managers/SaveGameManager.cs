@@ -14,7 +14,7 @@ using System.Xml.Serialization;
 namespace Core
 {
 	
-	/*
+	/*		<!--	PROPOSED XML PROFILE LAYOUT	-->
 	 * 		<SaveGame>
 	 * 			<CurrentLevel>
 	 * 			</CurrentLevel>
@@ -42,14 +42,13 @@ namespace Core
 		
 		private static string save_game_file_path = @"/Documents/saveGame.xml";
 		private static Dictionary<string , string> strings;
-		//---------------------//
-		private static string currentLevel;
-		private static string lastTimePlayed;
-		//private static List<string> strings = new List<string>();
-		
-		//private static List<Level> levels = new List<Level>();
-		//---------------------//
-		
+
+		/// <summary>
+		/// Gets the init.
+		/// </summary>
+		/// <returns>
+		/// The init.
+		/// </returns>
 		public static bool getInit()
 		{
 			return _init;
@@ -71,7 +70,6 @@ namespace Core
 			
 			FileStream fs = File.Open(save_game_file_path	,FileMode.OpenOrCreate);
 			xml_doc = new XmlDocument();
-			//xml_doc.Load( fs );
 			bool fileExists  = fs.Length != 0;
 			if ( !fileExists )
 			{
@@ -85,43 +83,51 @@ namespace Core
 				{
 					foreach( XmlNode str in xml_doc.FirstChild.FirstChild.ChildNodes )
 					{
-						Console.WriteLine( str.Name );
-						string key,val;
-						key = val = "";
+						string key,val;	key = val = "";
 						foreach( XmlNode node in str.ChildNodes )
 						{
 							if ( node.Name == "Key" )
 								key = node.InnerText;
 							else 
-							{
 								val = node.InnerText;
-							}
 						}
 						//Console.WriteLine("K:" + key + "\tV:" + val);
 						if ( key != "" && val != "" )
-						{
 							strings.Add(key , val);	
-						}
 					}
 				}	
 			}
 			fs.Close();	 
-			//SetString( "Poop" , "Pants" );
-			//xml_doc.Save( save_game_file_path );
 			return _init;
 		}
 		
+		/// <summary>
+		/// Contains the save string.
+		/// </summary>
+		/// <returns>
+		/// The save string.
+		/// </returns>
+		/// <param name='key'>
+		/// If set to <c>true</c> key.
+		/// </param>
 		public static bool ContainsSaveString( string key )
 		{
 			return strings.ContainsKey(key);	
 		}
 		
+		/// <summary>
+		/// Sets the string. Checks if the Key Exists, if it does, it overrides the old value of the key
+		/// </summary>
+		/// <param name='key'>
+		/// Key.
+		/// </param>
+		/// <param name='val'>
+		/// Value.
+		/// </param>
 		public static void SetString( string key , string val )
 		{
-			if ( !strings.ContainsKey( key ) )
-			{
-				strings[key] = val;
-			}
+			strings[key] = val;	// ok to override
+			
 			XmlNode new_string = xml_doc.CreateNode( XmlNodeType.Element , "String" , "" );
 			XmlNode new_key = xml_doc.CreateNode( XmlNodeType.Element , "Key" , "" );
 			XmlNode new_val = xml_doc.CreateNode( XmlNodeType.Element , "Value" , "" );
@@ -133,16 +139,13 @@ namespace Core
 			
 			xml_doc.FirstChild.FirstChild.AppendChild( new_string );
 		}
-		
-		public static bool loadGame()
-		{
-			if ( _init )
-			{
-				return true;
-			}	
-			return false;
-		}
-		
+
+		/// <summary>
+		/// Saves the game.
+		/// </summary>
+		/// <returns>
+		/// The game.
+		/// </returns>
 		public static bool saveGame()
 		{
 			if ( _init )
