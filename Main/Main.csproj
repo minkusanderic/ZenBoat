@@ -118,5 +118,6 @@
     <Content Include="Levels\R Level midgame part 1.oel" />
     <Content Include="Levels\Midgame1.oel" />
     <Content Include="Assets\whirlpool.png" />
+    <Content Include="Levels\Scene.oel" />
   </ItemGroup>
 </Project>

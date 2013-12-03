@@ -25,7 +25,7 @@ namespace Main
 			//m.scale = new Vector3(50, 50, 50);
 			//m.scale = new Vector3(5, 5, 5);
 			
-			ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.5f) );
+			ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.25f) );
 			ent.attachComponent( new FrictionController(.05f) );
 			ent.attachComponent( new RadialSplash());
 			

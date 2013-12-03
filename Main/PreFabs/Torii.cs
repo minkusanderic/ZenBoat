@@ -22,7 +22,7 @@ namespace Main
 			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Torii2.mdx"));
 			m.scale = new Vector3 (5.0f, 5.0f, 5.0f);
 			
-			RigidBody rb = new RigidBody (10);
+			RigidBody rb = new RigidBody (60);
 			rb.body = new PhysicsBody ();
 			rb.is_static = true;
 			

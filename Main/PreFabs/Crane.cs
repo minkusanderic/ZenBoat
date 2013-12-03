@@ -19,7 +19,7 @@ namespace Main
 			var m = ent.attachComponent(new ModelComponent("/Application/Assets/Crane01.mdx"));
 			//m.scale = new Vector2(.25f, .25f);
 			
-			RigidBody rb = new RigidBody(10);
+			RigidBody rb = new RigidBody(75);
 			rb.body = new PhysicsBody();
 			rb.body.SetBodyTrigger();
 			ent.attachComponent(rb);
