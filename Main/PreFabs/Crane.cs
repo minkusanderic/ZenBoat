@@ -20,9 +20,10 @@ namespace Main
 			//m.scale = new Vector2(.25f, .25f);
 			
 			RigidBody rb = new RigidBody(75);
-			rb.body = new PhysicsBody();
-			rb.body.SetBodyTrigger();
+			//rb.body = new PhysicsBody();
+			
 			ent.attachComponent(rb);
+			//rb.body.SetBodyTrigger();
 			
 			ent.attachComponent(new CollectibleTrigger());
 		}

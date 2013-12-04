@@ -68,6 +68,7 @@ namespace Core
 			}
 			if(comp is TriggerComponent)
 			{
+				((TriggerComponent)comp).require<RigidBody>().body.SetBodyTrigger();
 				triggers.Add((TriggerComponent)comp);
 			}
 			
