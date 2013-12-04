@@ -25,7 +25,7 @@ namespace Main
 			public override void Update ()
 			{
 				var boat = SceneManager.Instance.FindEntity("Boat");
-				if ( touchController.getTouchData().Count > 0 )
+				if ( ((TouchSystem)SceneManager.Instance.getSystem(typeof(TouchSystem))).getTouchData().Count > 0 )
 				{
 					foreach( TouchData td in touchController.getTouchData() )
 					{

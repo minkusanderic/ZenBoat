@@ -15,6 +15,7 @@ namespace Core
 		private SceneManager ()
 		{
 			systems = new Dictionary<Type, CoreSystem>();
+			systems[typeof(TouchSystem)] = new TouchSystem();
 			systems[typeof(GraphicsSystem)] = new GraphicsSystem();
 			systems[typeof(ControllerSystem)] = new ControllerSystem();
 			systems[typeof(PhysicsSystem)] = new PhysicsSystem();
@@ -59,7 +60,7 @@ namespace Core
 				//entity_comp[comp.parent].Add(comp);
 			}
 			to_be_attached.Clear();
-			
+			systems[typeof(TouchSystem)].Update();
 			systems[typeof(ControllerSystem)].Update();
 			systems[typeof(PhysicsSystem)].Update();
 			systems[typeof(WaterSystem)].Update();
