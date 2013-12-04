@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Sce.PlayStation;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.HighLevel.Model;
+using Sce.PlayStation.Core.Input;
 using Core;
 
 namespace Main
@@ -30,7 +31,10 @@ namespace Main
 			
 			while(true)
 			{
-				SceneManager.Instance.Update();
+				if(!SceneManager.Instance.Update())
+				{
+					LevelLoader.BootStrap();	
+				}
 			}
 			
 		}

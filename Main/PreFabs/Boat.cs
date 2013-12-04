@@ -4,6 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Sce.PlayStation.Core;
 
+using Sce.PlayStation.Core.Input;
+
 using Core;
 namespace Main
 {
@@ -45,6 +47,16 @@ namespace Main
 			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank01.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
 			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
 			bank_model.scale.Y *= 1.2f;
+			
+			SceneManager.Instance.createEntity("ReturnToBoot")
+				.attachComponent(new SimpleController(
+					() => {
+						if ((GamePad.GetData(0).Buttons & GamePadButtons.Start) != 0)
+					{
+							SceneManager.Instance.DestroyAll();
+							//LevelLoader.BootStrap()
+					}
+				}));
 		}
 		
 		

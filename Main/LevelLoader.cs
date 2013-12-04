@@ -34,7 +34,8 @@ namespace Main
 		
 		public static void BootStrap()
 		{
-			var graphics = new GraphicsContext();
+			var graphics = ((GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem))).graphics;
+			
 			UISystem.Initialize(graphics);
 			
 			// Create scene
@@ -79,9 +80,10 @@ namespace Main
 				SystemEvents.CheckEvents();
 			
 			}
-			graphics.Dispose();
+			//graphics.Dispose();
 			
 			Load (selected_filename);
+			isLevelSelected = false;
 		}
 		
 		public static void Load(String filename)

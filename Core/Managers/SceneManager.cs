@@ -38,7 +38,7 @@ namespace Core
       	}
    	}
 		
-	public void Update()
+	public bool Update()
 		{
 			SystemEvents.CheckEvents();
 			foreach(var comp in to_be_destroyed)
@@ -60,11 +60,19 @@ namespace Core
 				//entity_comp[comp.parent].Add(comp);
 			}
 			to_be_attached.Clear();
+			
+			if(entities.Count == 0)
+			{
+				//THere are no entities, kick back to main loop
+				return false;
+			}
+			
 			systems[typeof(TouchSystem)].Update();
 			systems[typeof(ControllerSystem)].Update();
 			systems[typeof(PhysicsSystem)].Update();
 			systems[typeof(WaterSystem)].Update();
 			systems[typeof(GraphicsSystem)].Update();
+			return true;
 		}
 		
 	public Dictionary<Type, CoreSystem> systems;
