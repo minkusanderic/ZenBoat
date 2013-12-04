@@ -75,6 +75,11 @@ namespace Core
 		
 		public override void Update()
 		{
+			foreach(var body in this.bodies)
+			{
+				body.body.position = body.parent.Transform.Position;
+				body.body.Rotation = Vector2.Angle(Vector2.UnitX, body.parent.Transform.Rotation);
+			}
 			physics.Simulate();
 			foreach(var body in this.bodies)
 			{

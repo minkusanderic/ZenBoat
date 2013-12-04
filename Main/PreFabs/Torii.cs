@@ -36,7 +36,7 @@ namespace Main
 														if (r != null) {
 															RigidBody rib = t.FindComponent<RigidBody> ();
 															r.ResetPosition ();	
-															rib.updateTransformData ();	
+															//rib.updateTransformData ();	
 															rib.Velocity = new Vector2 (0f, 0f);
 														}
 														if(options.ContainsKey("NextLevel") && (options["NextLevel"] != ""))

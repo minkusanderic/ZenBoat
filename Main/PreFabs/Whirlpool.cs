@@ -49,7 +49,7 @@ namespace Main
 														{
 															RigidBody rib = t.FindComponent<RigidBody>();
 															r.ResetPosition();
-															rib.updateTransformData();	
+															//rib.updateTransformData();	
 															rib.Velocity = new Vector2( 0f , 0f );
 														}
 													}));
