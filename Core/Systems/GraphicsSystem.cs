@@ -95,6 +95,7 @@ namespace Core
 					world *= Matrix4.Translation(pos) ;
 					world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 					world *= Matrix4.RotationX(FMath.Radians(90.0f));
+					world *= Matrix4.RotationY (model.parent.Transform.Rotation.Angle(Vector2.UnitX));
 					
 				}
 				
