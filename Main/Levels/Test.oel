@@ -1,8 +1,0 @@
-<level width="960" height="544">
-  <camera x="0" y="0" />
-  <Entities>
-    <Boat id="0" x="500" y="250" angle="0.5235988" />
-    <RockSpawner id="12" x="308" y="100" angle="0" />
-    <Whirlpool id="1" x="700" y="250" angle="0" />
-  </Entities>
-</level>

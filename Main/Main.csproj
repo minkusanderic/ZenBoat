@@ -80,11 +80,9 @@
     <Folder Include="Assets\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Levels\Test.oel" />
     <Content Include="resources\Cube.mdx" />
     <Content Include="Assets\Untitled.png" />
     <Content Include="resources\Rock.mdx" />
-    <Content Include="Levels\Test %28copy%29.oel" />
     <Content Include="resources\WhirlCube2.mdx" />
     <Content Include="resources\boat2.mdx" />
     <Content Include="Assets\Boat.png" />
@@ -94,7 +92,6 @@
     <Content Include="resources\Water.mdx" />
     <Content Include="Assets\BoatFBX.mdx" />
     <Content Include="Assets\RockFBX.mdx" />
-    <Content Include="Levels\Level1.oel" />
     <Content Include="Assets\Whirpoolsmall.png" />
     <Content Include="Levels\CurrentTest.oel" />
     <Content Include="Assets\crane.png" />
@@ -120,7 +117,6 @@
     <Content Include="Levels\R Level midgame part 1.oel" />
     <Content Include="Levels\Midgame1.oel" />
     <Content Include="Assets\whirlpool.png" />
-    <Content Include="Levels\Scene.oel" />
     <Content Include="Assets\Log.mdx" />
     <Content Include="Levels\e1.01.01.oel" />
     <Content Include="resources\test.png" />
