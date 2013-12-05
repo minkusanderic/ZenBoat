@@ -62,11 +62,21 @@ namespace Main
 			}
 			
 			Label version = new Label();
-			version.Text = "Project ZenBoat Version: 0.3.0 (ALPHA)";
+			version.Text = "Project Origami Kami Version: 0.3.0 (ALPHA)";
 			version.X = 1.0f;
 			version.Y = 1.0f;
 			version.Width = 900;
 			scene.RootWidget.AddChildLast(version);
+			
+			ImageBox background = new ImageBox();
+			background.Image = new ImageAsset("/Application/resources/Origami Kami.png", false);
+			background.ImageScaleType = ImageScaleType.AspectInside;
+			background.X = 0.0f;
+			background.Y = 0.0f;
+			background.Width = 960.0f;
+			background.Height = 544.0f;
+			scene.RootWidget.AddChildFirst(background);
+			
 			// Set scene
 			UISystem.SetScene(scene, null);
 			
