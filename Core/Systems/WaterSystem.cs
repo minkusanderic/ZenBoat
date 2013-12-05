@@ -4,7 +4,6 @@ using Sce.PlayStation.Core.Graphics;
 using System.Collections;
 using System.Collections.Generic;
 
-using Sample;
 
 namespace Core
 {
