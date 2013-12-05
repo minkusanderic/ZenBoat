@@ -52,6 +52,8 @@
     <Compile Include="PreFabs\Lotus.cs" />
     <Compile Include="PreFabs\Torii.cs" />
     <Compile Include="PreFabs\Koi.cs" />
+    <Compile Include="PreFabs\Driftwood.cs" />
+    <Compile Include="PreFabs\Geyser.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -119,5 +121,7 @@
     <Content Include="Levels\Midgame1.oel" />
     <Content Include="Assets\whirlpool.png" />
     <Content Include="Levels\Scene.oel" />
+    <Content Include="Assets\Log.mdx" />
+    <Content Include="Levels\e1.01.01.oel" />
   </ItemGroup>
 </Project>
