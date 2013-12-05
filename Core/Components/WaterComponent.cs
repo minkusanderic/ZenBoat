@@ -56,11 +56,25 @@ namespace Core
 
      		
 			
-			 vb = new VertexBuffer(W * H, (W-1) * (H-1) * 6, VertexFormat.Float3);
+			 vb = new VertexBuffer(W * H, (W-1) * (H-1) * 6, VertexFormat.Float3, VertexFormat.Float2);
 			 
  
  	   		vb.SetVertices(0, vertices);
-    		//vb.SetVertices(1, texcoords);
+			
+			float[] texcoords = new float[W * H * 2];
+			for(int i = 0; i < W; i++)
+			{
+				for(int j = 0; j < H; j++)
+				{
+					int offset = 2*((i * W) + j);
+					float y = ((float)j)/((float)H);
+					float x = ((float)i)/((float)W);
+					vertices[offset + 0] = ((float)i)/((float)W);   // x0
+   			  		vertices[offset + 1] = ((float)j)/((float)H);   // y0
+              		
+				}
+			}
+    		vb.SetVertices(1, texcoords);
   	  		//vb.SetVertices(2, colors);
 
   	  		vb.SetIndices(indices);

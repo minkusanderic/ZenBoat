@@ -4,6 +4,8 @@ using Sce.PlayStation.Core.Graphics;
 using System.Collections;
 using System.Collections.Generic;
 
+using Sample;
+
 namespace Core
 {
 	public class WaterSystem : CoreSystem
@@ -68,6 +70,26 @@ namespace Core
 							
 				Matrix4 world = Matrix4.Identity ;
 				
+								FrameBuffer off_screen = new FrameBuffer();
+				Texture2D height_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
+				off_screen.SetColorTarget(height_map, 0);
+				
+				off_screen.SetDepthTarget(null);
+				
+				g.graphics.SetFrameBuffer(off_screen);
+				g.graphics.SetClearColor( 1.0f, 0.5f, 0.0f, 1.0f ) ;
+				g.graphics.Clear() ;
+				//g.graphics.SetViewport(0,0,1000,1000);
+				Sample.SampleDraw.Init(g.graphics);
+///
+				Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
+				SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
+				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
+				
+///				
+				
+				g.graphics.SetFrameBuffer(null);
+				
 				
 			    Vector3 scale = new Vector3(1,1,1);
 					
@@ -83,6 +105,7 @@ namespace Core
 
 				var world_view_proj = proj * view * world;
 				
+
 				//program.Parameters.SetWorldMatrix(0, ref world);
 				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
@@ -96,6 +119,7 @@ namespace Core
 				}
 
 				time += .1f;
+				g.graphics.SetTexture(0, height_map);
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
 			}
@@ -124,6 +148,56 @@ namespace Core
 				radials.Remove((RadialSplash)comp);
 			}
 			//base.destroyComponent (comp);
+		}
+		
+		private void drawCircle(GraphicsContext graphics, float positionX, float positionY, float scaleX, float scaleY)
+		{
+			
+			//Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
+			//Matrix4 view = Matrix4.LookAt(  camera_pos,
+			//								camera_eye,
+			//								new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
+			
+			var screenMatrix = new Matrix4(
+         2.0f/100.0f, 0.0f,       0.0f, 0.0f,
+         0.0f,   -2.0f/100.0f,   0.0f, 0.0f,
+         0.0f,   0.0f, 1.0f, 0.0f,
+         -1.0f,  1.0f, 0.0f, 1.0f
+    );
+			var projectionMatrix = Matrix4.Ortho(0, 100,
+                                         0, 100,
+                                         0.0f, 32768.0f);
+
+        var viewMatrix = Matrix4.LookAt(new Vector3(0, 100, 0),
+                                    new Vector3(0, 100, 1),
+                                    new Vector3(0, -1, 0));
+			
+				var circleVertices =  new VertexBuffer(36, VertexFormat.Float3);
+       			 float[] circleVertex = new float[3 * 36];
+       			 for (int i = 0; i < 36; i++) {
+       			     float radian = ((i * 10) / 180.0f * FMath.PI);
+        		    circleVertex[3 * i + 0] = FMath.Cos(radian);
+        		    circleVertex[3 * i + 1] = FMath.Sin(radian);
+        		    circleVertex[3 * i + 2] = 0.0f;
+       			 }
+       			 circleVertices.SetVertices(0, circleVertex);
+				
+				 var transMatrix = Matrix4.Translation(new Vector3(positionX, positionY, 0.0f));
+        var scaleMatrix = Matrix4.Scale(new Vector3(scaleX, scaleY, 1.0f));
+        var modelMatrix = transMatrix * scaleMatrix;
+
+        var worldViewProj = projectionMatrix * viewMatrix * modelMatrix;
+		ShaderProgram colorShaderProgram = new ShaderProgram("/Application/shaders/simple.cgx");
+        colorShaderProgram.SetUniformValue(0, ref worldViewProj);
+
+        Vector4 color = new Vector4(0.0f, 1.0f, 0.0f, .5f);
+        colorShaderProgram.SetUniformValue(colorShaderProgram.FindUniform("MaterialColor"), ref color);
+
+        graphics.SetShaderProgram(colorShaderProgram);
+        graphics.SetVertexBuffer(0, circleVertices);
+
+        graphics.DrawArrays(DrawMode.TriangleFan, 0, circleVertices.VertexCount);
+
 		}
 	}
 }

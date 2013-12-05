@@ -1,19 +1,23 @@
 
 void main( 
 			float4 in  v_Color	: COLOR0,
-			float4 out Color	: COLOR)
+			float2 in v_TexCoord  : TEXCOORD0,
+			float4 out Color	: COLOR,
+			uniform sampler2D s_Texture : TEXUNIT0)
 {
 	if(v_Color.z < .3f)
 	{
-		Color = float4(0, .5, .6f, .5f);
+		Color = float4(0, .5, .6f, .3f);
 	}
 	else if(v_Color.z < .9f)
 	{
-		Color = float4(.1f, .8f, .9f, .5f);
+		Color = float4(.1f, .8f, .9f, .4f);
 	}
 	else
 	{
 		Color = float4(.8,.8,.8,1);
 	}
+	float4 tmpColor = tex2D( s_Texture, v_TexCoord );
+	Color = tmpColor;
 	//Color = v_Color;
 }

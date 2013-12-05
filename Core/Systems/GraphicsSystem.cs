@@ -68,7 +68,7 @@ namespace Core
 			graphics.SetViewport( 0, 0, graphics.Screen.Width, graphics.Screen.Height ) ;
 			graphics.SetClearColor( 0.0f, 0.5f, 1.0f, 0.0f ) ;
 			graphics.Clear() ;
-	
+			
 			graphics.Enable( EnableMode.Blend ) ;
 			graphics.SetBlendFunc( BlendFuncMode.Add, BlendFuncFactor.SrcAlpha, BlendFuncFactor.OneMinusSrcAlpha ) ;
 			graphics.Enable( EnableMode.CullFace ) ;
@@ -77,7 +77,7 @@ namespace Core
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			
-			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view);
+			
 
 			
 			//  adjust position
@@ -95,7 +95,7 @@ namespace Core
 					world *= Matrix4.Translation(pos) ;
 					world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 					world *= Matrix4.RotationX(FMath.Radians(90.0f));
-					world *= Matrix4.RotationY (model.parent.Transform.Rotation.Angle(Vector2.UnitX));
+					world *= Matrix4.RotationY (-model.parent.Transform.Rotation.Angle(Vector2.UnitX));
 					
 				}
 				
@@ -141,7 +141,7 @@ namespace Core
 			*/
 			//  draw model
 	
-			
+			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view);
 			
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;

@@ -1,7 +1,9 @@
 
 void main( float4 in a_Position  : POSITION,
+		   float2 in a_TexCoord    : TEXCOORD0,	
 		   float4 out v_Position : POSITION,
 		   float4 out v_Color : COLOR0,
+		   float2 out v_TexCoord   : TEXCOORD0,
 		   uniform float4x4 WorldViewProj,
 		   uniform float time,
 		   uniform float3 Radial
@@ -64,5 +66,6 @@ void main( float4 in a_Position  : POSITION,
 	v_Color = float4(0,0,.5+(a_Position.z +total_amp/2)/(2*total_amp),1);
 	v_Color.z = v_Color.z * v_Color.z;
 	v_Position = mul( a_Position, WorldViewProj ); 
+	v_TexCoord = a_TexCoord;
 	
 }
