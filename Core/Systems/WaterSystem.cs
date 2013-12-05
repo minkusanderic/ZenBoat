@@ -61,7 +61,7 @@ namespace Core
 		
 		
 		private float time = 0.0f;
-		
+		private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view)
 		{
 			
@@ -70,25 +70,38 @@ namespace Core
 							
 				Matrix4 world = Matrix4.Identity ;
 				
-								FrameBuffer off_screen = new FrameBuffer();
-				Texture2D height_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
-				off_screen.SetColorTarget(height_map, 0);
+				//				FrameBuffer off_screen = new FrameBuffer();
+				height_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
+//				off_screen.SetColorTarget(height_map, 0);
+//				
+				uint[,] p = new uint[100,100];
+				for(int i = 0; i < 100; i++)
+				{
+					for(int j = 0; j < 100; j++)
+					{
+						p[i,j] = 0x77770000 + 5 *(uint)i;
+					}
+				}
 				
-				off_screen.SetDepthTarget(null);
+				height_map.SetPixels(0, p, PixelFormat.Rgba);
 				
-				g.graphics.SetFrameBuffer(off_screen);
-				g.graphics.SetClearColor( 1.0f, 0.5f, 0.0f, 1.0f ) ;
-				g.graphics.Clear() ;
+				//var cel_shading = new Texture2D(new byte[] {}, false);
+				
+				//off_screen.SetDepthTarget(null);
+				
+			//	g.graphics.SetFrameBuffer(off_screen);
+				//g.graphics.SetClearColor( 1.0f, 0.5f, 0.0f, 1.0f ) ;
+				//g.graphics.Clear() ;
 				//g.graphics.SetViewport(0,0,1000,1000);
-				Sample.SampleDraw.Init(g.graphics);
+				//Sample.SampleDraw.Init(g.graphics);
 ///
-				Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
-				SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
+				//Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
+				//SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
 				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
 				
 ///				
 				
-				g.graphics.SetFrameBuffer(null);
+			//	g.graphics.SetFrameBuffer(null);
 				
 				
 			    Vector3 scale = new Vector3(1,1,1);

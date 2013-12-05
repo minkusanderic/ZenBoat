@@ -121,7 +121,7 @@ namespace Core
 				graphics.SetVertexBuffer(0, sprite.vb);
 				graphics.SetShaderProgram(sprite.shaderProgram);
 				graphics.SetTexture(0, sprite.texture);
-				
+							
 
 				var world_view_proj = proj * view * world;
 				program.Parameters.SetWorldMatrix(0, ref world);

@@ -123,5 +123,6 @@
     <Content Include="Levels\Scene.oel" />
     <Content Include="Assets\Log.mdx" />
     <Content Include="Levels\e1.01.01.oel" />
+    <Content Include="resources\test.png" />
   </ItemGroup>
 </Project>

@@ -17,7 +17,7 @@ void main(
 	{
 		Color = float4(.8,.8,.8,1);
 	}
-	float4 tmpColor = tex2D( s_Texture, v_TexCoord );
-	Color = tmpColor;
+	//float4 tmpColor = tex2D( s_Texture, v_TexCoord );
+	//Color = tmpColor;
 	//Color = v_Color;
 }
