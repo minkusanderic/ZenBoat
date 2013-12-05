@@ -62,7 +62,7 @@ namespace Main
 			}
 			
 			Label version = new Label();
-			version.Text = "Project ZenBoat Version: 0.2.0";
+			version.Text = "Project ZenBoat Version: 0.3.0 (ALPHA)";
 			version.X = 1.0f;
 			version.Y = 1.0f;
 			version.Width = 900;
