@@ -27,7 +27,7 @@ namespace Main
 			rb.is_static = true;
 			
 			ent.attachComponent (rb);
-			var targets = SceneManager.Instance.Select("pushable");
+			var targets = SceneManager.Instance.Select("boat");
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {

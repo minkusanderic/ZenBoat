@@ -187,7 +187,7 @@ namespace Main
 							if(options.ContainsKey("angle"))
 								ent.Transform.SetAngle(Convert.ToSingle(options["angle"]));
 							
-							
+							Console.WriteLine(name);
 							var t = Type.GetType("Main." + name);
 							if(t == null){
 								Console.WriteLine("ERROR: Could not find Prefab '" + name + "'");
