@@ -53,7 +53,9 @@ namespace Main
 															//rib.updateTransformData();	
 															rib.Velocity = new Vector2( 0f , 0f );
 														}
-												} catch(Exception e) {}
+												} catch(Exception e) {
+														t.Destroy();
+												}
 													}));
 		}
 	}
