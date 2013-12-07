@@ -19,7 +19,7 @@ namespace Main
 			var m = ent.attachComponent(new ModelComponent("/Application/Assets/Log.mdx"));
 			m.scale = new Vector3(7f, 7f, 7f);
 			
-			RigidBody rb = new RigidBody(75);
+			RigidBody rb = new RigidBody(50, 15);
 			ent.attachComponent(rb);
 			
 		}

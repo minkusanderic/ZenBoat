@@ -119,6 +119,8 @@ namespace Core
 								
 				world *= Matrix4.Translation(pos) ;
 				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
+				world *= Matrix4.RotationZ (-sprite.parent.Transform.Rotation.Angle(Vector2.UnitX));
+				
 				
 				graphics.SetVertexBuffer(0, sprite.vb);
 				graphics.SetShaderProgram(sprite.shaderProgram);
