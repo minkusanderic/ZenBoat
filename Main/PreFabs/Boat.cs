@@ -48,6 +48,22 @@ namespace Main
 			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
 			bank_model.scale.Y *= 1.2f;
 			
+			var b1 = SceneManager.Instance.createEntity("b1");
+			b1.Transform.Position = new Vector2(960/2, 50 + -544/2);
+			b1.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			
+			var b2 = SceneManager.Instance.createEntity("b2");
+			b2.Transform.Position = new Vector2(-960/2,544/2);
+			b2.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			
+			var b3 = SceneManager.Instance.createEntity("b3");
+			b3.Transform.Position = new Vector2(960/2,3 * 544/2 - 30);
+			b3.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			
+			var b4 = SceneManager.Instance.createEntity("b4");
+			b4.Transform.Position = new Vector2(3 * 960/2,544/2);
+			b4.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			
 			SceneManager.Instance.createEntity("ReturnToBoot")
 				.attachComponent(new SimpleController(
 					() => {
