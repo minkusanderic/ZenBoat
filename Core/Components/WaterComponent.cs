@@ -13,7 +13,7 @@ namespace Core
 		public WaterComponent ()
 		{
 			//texture = new Texture2D(filename, false);
-			shaderProgram = new ShaderProgram("/Application/shaders/water.cgx");
+			shaderProgram = new ShaderProgram("/Application/shaders/Water.cgx");
 			
 			 shaderProgram.SetUniformBinding(0, "WorldViewProj");
 			

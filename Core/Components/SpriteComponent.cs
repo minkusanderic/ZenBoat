@@ -21,7 +21,7 @@ namespace Core
 		public SpriteComponent(String filename)
 		{
 			texture = new Texture2D(filename, false);
-			shaderProgram = new ShaderProgram("/Application/shaders/sprite.cgx");
+			shaderProgram = new ShaderProgram("/Application/shaders/Sprite.cgx");
 			
 			 shaderProgram.SetUniformBinding(0, "u_ScreenMatrix");
 			 

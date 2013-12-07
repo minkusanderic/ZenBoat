@@ -16,6 +16,7 @@ namespace Main
 			ent.Name = "Crane";
 			ent.tag("crane", "collectable");
 			
+			ent.Transform.Rotation = new Vector2(0.0f, 1.0f);
 			var m = ent.attachComponent(new ModelComponent("/Application/Assets/Crane01.mdx"));
 			//m.scale = new Vector2(.25f, .25f);
 			
