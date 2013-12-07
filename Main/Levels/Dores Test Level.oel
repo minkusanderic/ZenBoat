@@ -149,7 +149,7 @@
     <Crane id="4" x="300" y="328" />
     <Crane id="5" x="352" y="246" />
     <Crane id="6" x="420" y="200" />
-    <Torii id="1" x="904" y="244" />
+    <Torii id="1" x="904" y="244" NextLevel="" />
     <Crane id="7" x="540" y="228" />
     <Crane id="8" x="660" y="296" />
     <Crane id="9" x="768" y="272" />
@@ -158,5 +158,8 @@
     <Koi id="12" x="548" y="124" angle="0" />
     <Rock id="13" x="428" y="436" width="50" height="50" angle="0" />
     <Koi id="14" x="824" y="412" angle="0" />
+    <ball id="15" x="580" y="184" />
+    <walker id="16" x="260" y="140" />
   </Entities>
+  <Art />
 </level>

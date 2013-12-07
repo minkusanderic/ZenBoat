@@ -30,11 +30,14 @@ namespace Core
 		{
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
+			Timer.Init();
+		
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
 		
 		public override void Update() // Render here
 		{
+			Timer.StartFrame();
 			this.camera_pos = new Vector3( 960.0f/2.0f, 0f, (960.0f/2.0f)/ (1.77f * FMath.Tan(FMath.Radians(45.0f/2.0f)) ));
 			this.camera_eye = new Vector3( 960.0f/2.0f, 544.0f/2.0f, 0.0f );
 			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
@@ -77,9 +80,6 @@ namespace Core
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			
-			
-
-			
 			//  adjust position
 			
 			foreach(var model in models)
@@ -98,9 +98,11 @@ namespace Core
 					world *= Matrix4.RotationY (-model.parent.Transform.Rotation.Angle(Vector2.UnitX));
 					
 				}
-				
+					
+		
+			    //  draw model, animate model
 				model.model.SetWorldMatrix( ref world ) ;
-				//model.Animate( SampleTimer.DeltaTime ) ;
+				model.model.Animate( .01f ) ;
 				model.model.Update() ;
 				model.model.Draw(graphics, program) ;
 			}
@@ -130,16 +132,7 @@ namespace Core
 				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 			}
 			
-			//  select motion
-			/*
-			if ( model.Motions.Length > 1 ) {
-				if ( SampleTimer.FrameCount % 120 == 0 ) {
-					int next = ( model.CurrentMotion + 1 ) % model.Motions.Length ;
-					model.SetCurrentMotion( next, 0.1f ) ;
-				}
-			}
-			*/
-			//  draw model
+			
 	
 			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view);
 			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
@@ -148,6 +141,7 @@ namespace Core
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
 	
 			graphics.SwapBuffers() ;
+			Timer.EndFrame();
 		}
 		
 		public override void attachComponent(IComponent comp)
