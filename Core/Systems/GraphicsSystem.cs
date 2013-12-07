@@ -77,7 +77,7 @@ namespace Core
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			
-
+			
 
 			
 			//  adjust position
@@ -140,11 +140,9 @@ namespace Core
 			}
 			*/
 			//  draw model
-
-			((WaterSystem)	 SceneManager.Instance.getSystem(typeof(WaterSystem		))).Render(this, proj, view);
-			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem	))).Render( this , proj , view );
 	
-			
+			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view);
+			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
