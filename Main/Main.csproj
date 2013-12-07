@@ -59,8 +59,6 @@
     <Compile Include="PreFabs\Endstage.cs" />
     <Compile Include="PreFabs\ball.cs" />
     <Compile Include="PreFabs\walker.cs" />
-    <Compile Include="PreFabs\Arrow.cs" />
-    <Compile Include="PreFabs\Endstage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

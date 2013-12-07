@@ -82,6 +82,10 @@ namespace Main
 			
 			while(!isLevelSelected)
 			{
+				if ((GamePad.GetData(0).Buttons & GamePadButtons.Triangle) != 0)
+					{
+							Environment.Exit(0);
+					}
 				UISystem.Update(Touch.GetData(0));
 				graphics.SetClearColor(new Sce.PlayStation.Core.Vector4(0.0f, 0.0f, 0.0f, 1.0f));
 				graphics.Clear();
