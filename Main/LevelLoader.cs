@@ -146,6 +146,11 @@ namespace Main
 								right = parseBitstring(r);
 							}
 							break;
+						case "Art":
+							using (var r = reader.ReadSubtree()){
+								parseEntities(r);
+							}
+							break;
 					}
 				}
 				}
@@ -164,6 +169,8 @@ namespace Main
 						case "Entities":
 							break;
 						case "BankGrid":
+							break;
+						case "Art":
 							break;
 						default:
 							String name = reader.Name;

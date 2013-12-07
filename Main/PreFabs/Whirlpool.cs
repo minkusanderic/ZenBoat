@@ -11,7 +11,6 @@ namespace Main
 	{
 		public Whirlpool (  )
 		{
-			
 		}
 		
 		public static void create(Entity ent, Dictionary<String, String> options)

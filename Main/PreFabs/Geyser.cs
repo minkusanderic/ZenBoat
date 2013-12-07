@@ -41,17 +41,6 @@ namespace Main
 				}
 			}));
 			
-			ent.attachComponent(new SimpleTrigger(SceneManager.Instance.Select("pushable"), 
-			                                      (t) => {
-														Respawner r = t.FindComponent<Respawner>();
-														if ( r != null )
-														{
-															RigidBody rib = t.FindComponent<RigidBody>();
-															r.ResetPosition();
-															//rib.updateTransformData();	
-															rib.Velocity = new Vector2( 0f , 0f );
-														}
-													}));
 		}
 		
 	}
