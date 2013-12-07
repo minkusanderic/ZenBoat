@@ -13,6 +13,7 @@ namespace Core
 		private List<RadialSplash> radials = new List<RadialSplash>();
 		
 		private Vector2[,] force_vects;
+		
 		public WaterSystem ()
 		{
 			force_vects = new Vector2[60,34];

@@ -14,7 +14,7 @@ namespace Main
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			ent.Name = "Driftwood";
-			ent.tag("driftwood");
+			ent.tag("driftwood", "pushable");
 			
 			var m = ent.attachComponent(new ModelComponent("/Application/Assets/log.mdx"));
 			m.scale = new Vector3(7f, 7f, 7f);

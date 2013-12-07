@@ -16,12 +16,16 @@ namespace Main
 			float force = 100f;
 			bool touchDown = false;
 			TouchController touchController;
+			
 			public RockSpawnerLogic( TouchController tc )
 			{
 				Console.WriteLine("Making RockSpawner");
 				touchController = tc;
 			}
 			bool b = true;
+			
+			private Selector pushables = new Selector("pushable");
+			
 			public override void Update ()
 			{
 				var boat = SceneManager.Instance.FindEntity("Boat");
@@ -59,14 +63,17 @@ namespace Main
 							{
 								//Console.WriteLine( "dist: " + Vector2.Distance(
 								//	rock.Transform.Position , boat.Transform.Position	) );
-								if ( Vector2.Distance(
-									rock.Transform.Position , boat.Transform.Position	)
-									< 100f )
+								foreach( var pushable in pushables.get())
 								{
-									RigidBody rb = boat.FindComponent<RigidBody>();
-									rb.applyForce( force*new Vector2(	
-									               rb.parent.Transform.Position.X - rock.Transform.Position.X , 
-									               rb.parent.Transform.Position.Y - rock.Transform.Position.Y) );
+									if ( Vector2.Distance(
+										rock.Transform.Position , pushable.Transform.Position	)
+										< 100f )
+									{
+										RigidBody rb = pushable.FindComponent<RigidBody>();
+										rb.applyForce( force*new Vector2(	
+										               rb.parent.Transform.Position.X - rock.Transform.Position.X , 
+										               rb.parent.Transform.Position.Y - rock.Transform.Position.Y) );
+									}
 								}
 							} 
 							int num_particles = 20;

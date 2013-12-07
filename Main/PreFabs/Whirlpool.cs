@@ -44,6 +44,7 @@ namespace Main
 			
 			ent.attachComponent(new SimpleTrigger(SceneManager.Instance.Select("pushable"), 
 			                                      (t) => {
+													try{
 														Respawner r = t.FindComponent<Respawner>();
 														if ( r != null )
 														{
@@ -52,6 +53,7 @@ namespace Main
 															//rib.updateTransformData();	
 															rib.Velocity = new Vector2( 0f , 0f );
 														}
+												} catch(Exception e) {}
 													}));
 		}
 	}
