@@ -54,6 +54,7 @@
     <Compile Include="PreFabs\Koi.cs" />
     <Compile Include="PreFabs\Driftwood.cs" />
     <Compile Include="PreFabs\Geyser.cs" />
+    <Compile Include="BasicEmitter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -124,5 +125,6 @@
     <Content Include="Levels\bounceback.oel" />
     <Content Include="Levels\ClearIt.oel" />
     <Content Include="Levels\gateway.oel" />
+	<Content Include="Assets\smoke.png" />
   </ItemGroup>
 </Project>

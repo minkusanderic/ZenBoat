@@ -21,6 +21,7 @@ namespace Core
 			systems[typeof(PhysicsSystem)] = new PhysicsSystem();
 			systems[typeof(AudioSystem)] = new AudioSystem();
 			systems[typeof(WaterSystem)] = new WaterSystem();
+			systems[typeof(ParticleSystem)] = new ParticleSystem();
 		}
 
 	public static SceneManager _instance;
@@ -72,6 +73,7 @@ namespace Core
 			systems[typeof(PhysicsSystem)].Update();
 			systems[typeof(WaterSystem)].Update();
 			systems[typeof(GraphicsSystem)].Update();
+			systems[typeof(ParticleSystem)].Update();
 			return true;
 		}
 		

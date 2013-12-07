@@ -15,6 +15,7 @@ namespace Main
 		{
 			SaveGameManager.init();
 			
+			
 			LevelLoader.BootStrap();
 			CollectibleManager.Init();
 			
@@ -29,9 +30,10 @@ namespace Main
 			var soundeffect_music = SceneManager.Instance.createEntity("SFX_Music");
 			soundeffect_music.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
 			
-			
+			//BasicEmitter be = new BasicEmitter();
 			while(true)
 			{
+				//be.Update();
 				if(!SceneManager.Instance.Update())
 				{
 					//if the level is over, then load the bootstrapper again
