@@ -59,6 +59,16 @@
     <Compile Include="PreFabs\Endstage.cs" />
     <Compile Include="PreFabs\ball.cs" />
     <Compile Include="PreFabs\walker.cs" />
+    <Compile Include="..\..\BoatMenu\StartMenu.composer.cs">
+      <Link>Menus\StartMenu.composer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BoatMenu\StartMenu.cs">
+      <Link>Menus\StartMenu.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BoatMenu\UIStringTable.cs">
+      <Link>Menus\UIStringTable.cs</Link>
+    </Compile>
+    <Compile Include="Menus\MenuLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -83,6 +93,7 @@
     <Folder Include="Levels\" />
     <Folder Include="resources\" />
     <Folder Include="Assets\" />
+    <Folder Include="Menus\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Cube.mdx" />
