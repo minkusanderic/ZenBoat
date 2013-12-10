@@ -136,23 +136,21 @@
 000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000</Forward>
-  <BankGrid exportMode="Rectangles">
-    <rect x="0" y="0" w="960" h="64" />
-    <rect x="0" y="528" w="960" h="16" />
-  </BankGrid>
+  <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="0" x="92" y="392" angle="0" />
-    <Rock id="1" x="208" y="376" width="50" height="50" angle="0" />
-    <Torii id="2" x="896" y="284" />
-    <Crane id="6" x="276" y="104" />
-    <Whirlpool id="4" x="276" y="220" width="80" height="80" strength="100" />
-    <Crane id="7" x="372" y="392" />
-    <Crane id="9" x="408" y="216" />
-    <Crane id="10" x="152" y="220" />
-    <Crane id="12" x="540" y="472" />
-    <Crane id="13" x="704" y="420" />
-    <Whirlpool id="11" x="560" y="336" width="80" height="80" strength="100" />
-    <Lillypad id="5" x="728" y="204" width="50" height="40" angle="0" />
-    <Rock id="3" x="244" y="460" width="50" height="50" angle="0" />
+    <Geyser id="0" x="472" y="72" width="80" height="80" strength="100" />
+    <Rock id="1" x="404" y="244" width="122" height="154" angle="0" />
+    <Rock id="2" x="336" y="376" width="118" height="126" angle="0" />
+    <Rock id="3" x="456" y="416" width="126" height="138" angle="0" />
+    <Boat id="4" x="84" y="468" angle="0" />
+    <Torii id="5" x="868" y="424" NextLevel="1.07.01.oel" />
+    <Lillypad id="6" x="904" y="40" width="50" height="40" angle="0" />
+    <Lillypad id="7" x="944" y="140" width="50" height="40" angle="0" />
+    <Lillypad id="8" x="828" y="64" width="50" height="40" angle="0" />
+    <Lillypad id="9" x="100" y="36" width="50" height="40" angle="0" />
+    <Lillypad id="10" x="16" y="132" width="50" height="40" angle="0" />
+    <Lillypad id="11" x="120" y="232" width="50" height="40" angle="0" />
+    <Lillypad id="13" x="232" y="128" width="50" height="40" angle="0" />
   </Entities>
+  <Art />
 </level>

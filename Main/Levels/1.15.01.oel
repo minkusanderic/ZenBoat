@@ -136,26 +136,38 @@
 000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000</Forward>
-  <BankGrid exportMode="Rectangles" />
+  <BankGrid exportMode="Rectangles">
+    <rect x="0" y="0" w="960" h="80" />
+    <rect x="0" y="464" w="960" h="80" />
+  </BankGrid>
   <Entities>
-    <Boat id="0" x="140" y="100" angle="0" />
-    <Torii id="1" x="880" y="448" NextLevel="" />
-    <Whirlpool id="2" x="300" y="416" width="80" height="80" strength="100" />
-    <Whirlpool id="3" x="584" y="176" width="80" height="80" strength="100" />
-    <Crane id="4" x="452" y="300" />
-    <Crane id="5" x="284" y="192" />
-    <Crane id="6" x="672" y="404" />
-    <Lillypad id="7" x="36" y="492" width="50" height="40" angle="0" />
-    <Lillypad id="8" x="56" y="356" width="50" height="40" angle="0" />
-    <Lillypad id="9" x="152" y="476" width="50" height="40" angle="0" />
-    <Lillypad id="10" x="856" y="32" width="50" height="40" angle="0" />
-    <Lillypad id="11" x="760" y="56" width="50" height="40" angle="0" />
-    <Lillypad id="12" x="856" y="172" width="50" height="40" angle="0" />
-    <Lillypad id="13" x="920" y="144" width="50" height="40" angle="0" />
-    <Rock id="14" x="256" y="484" width="90" height="94" angle="0" />
-    <Rock id="15" x="156" y="456" width="102" height="90" angle="0" />
-    <Rock id="16" x="480" y="-12" width="114" height="94" angle="0" />
-    <Rock id="17" x="472" y="60" width="94" height="82" angle="0" />
-    <Whirlpool id="18" x="516" y="504" width="80" height="80" strength="100" />
+    <Torii id="0" x="892" y="248" NextLevel="1.16.01.oel" />
+    <Boat id="1" x="76" y="276" angle="0" />
+    <Driftwood id="2" x="224" y="100" width="100" height="30" angle="0" />
+    <Driftwood id="3" x="224" y="152" width="100" height="30" angle="0" />
+    <Driftwood id="4" x="224" y="204" width="100" height="30" angle="0" />
+    <Driftwood id="5" x="224" y="256" width="100" height="30" angle="0" />
+    <Driftwood id="6" x="224" y="312" width="100" height="30" angle="0" />
+    <Driftwood id="7" x="224" y="364" width="100" height="30" angle="0" />
+    <Driftwood id="8" x="220" y="416" width="100" height="30" angle="0" />
+    <Driftwood id="9" x="684" y="436" width="100" height="30" angle="0" />
+    <Driftwood id="10" x="684" y="388" width="100" height="30" angle="0" />
+    <Driftwood id="11" x="684" y="332" width="100" height="30" angle="0" />
+    <Driftwood id="12" x="680" y="272" width="100" height="30" angle="0" />
+    <Driftwood id="13" x="676" y="212" width="100" height="30" angle="0" />
+    <Driftwood id="14" x="676" y="160" width="100" height="30" angle="0" />
+    <Driftwood id="15" x="676" y="108" width="100" height="30" angle="0" />
+    <Whirlpool id="16" x="428" y="284" width="80" height="80" strength="100" />
+    <Crane id="17" x="424" y="160" />
+    <Crane id="18" x="428" y="404" />
+    <Lillypad id="19" x="28" y="112" width="50" height="40" angle="0" />
+    <Lillypad id="20" x="32" y="428" width="50" height="40" angle="0" />
+    <Lillypad id="21" x="72" y="428" width="50" height="40" angle="0" />
+    <Lillypad id="22" x="916" y="104" width="50" height="40" angle="0" />
+    <Lillypad id="23" x="916" y="424" width="50" height="40" angle="0" />
+    <Lillypad id="24" x="864" y="428" width="50" height="40" angle="0" />
+    <Lillypad id="25" x="868" y="100" width="50" height="40" angle="0" />
+    <Lillypad id="26" x="896" y="128" width="50" height="40" angle="0" />
   </Entities>
+  <Art />
 </level>

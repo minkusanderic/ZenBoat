@@ -138,13 +138,9 @@
 000000000000000000000000000000000000000000000000000000000000</Forward>
   <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="0" x="84" y="256" angle="0" />
-    <Torii id="1" x="872" y="260" NextLevel="" />
-    <Geyser id="2" x="444" y="72" width="80" height="80" strength="100" />
-    <Geyser id="3" x="440" y="452" width="80" height="80" strength="100" />
-    <Whirlpool id="4" x="436" y="252" width="80" height="80" strength="100" />
-    <Rock id="5" x="484" y="124" width="50" height="50" angle="0" />
-    <Rock id="6" x="484" y="336" width="50" height="50" angle="0" />
+    <Boat id="0" x="120" y="260" angle="0" />
+    <Whirlpool id="1" x="472" y="256" width="80" height="80" strength="100" />
+    <Torii id="2" x="872" y="244" NextLevel="1.05.01.oel" />
   </Entities>
   <Art />
 </level>

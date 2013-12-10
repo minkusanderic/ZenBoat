@@ -141,7 +141,49 @@
     <rect x="0" y="464" w="960" h="80" />
   </BankGrid>
   <Entities>
-    <Boat id="0" x="80" y="296" angle="0" />
-    <Torii id="1" x="896" y="272" NextLevel="R Level 002.oel" />
+    <Boat id="0" x="64" y="424" angle="0" />
+    <Torii id="1" x="904" y="144" NextLevel="1.15.01.oel" />
+    <Rock id="2" x="-4" y="332" width="50" height="50" angle="0" />
+    <Rock id="3" x="48" y="328" width="50" height="50" angle="0" />
+    <Rock id="4" x="104" y="340" width="50" height="50" angle="0" />
+    <Rock id="5" x="164" y="328" width="50" height="50" angle="0" />
+    <Rock id="6" x="236" y="340" width="50" height="50" angle="0" />
+    <Rock id="7" x="292" y="328" width="50" height="50" angle="0" />
+    <Rock id="8" x="360" y="332" width="50" height="50" angle="0" />
+    <Rock id="9" x="428" y="344" width="50" height="50" angle="0" />
+    <Rock id="10" x="480" y="328" width="50" height="50" angle="0" />
+    <Rock id="11" x="536" y="336" width="50" height="50" angle="0" />
+    <Rock id="12" x="912" y="208" width="50" height="50" angle="0" />
+    <Rock id="13" x="856" y="208" width="50" height="50" angle="0" />
+    <Rock id="14" x="820" y="204" width="50" height="50" angle="0" />
+    <Rock id="15" x="768" y="216" width="50" height="50" angle="0" />
+    <Rock id="16" x="708" y="208" width="50" height="50" angle="0" />
+    <Rock id="17" x="660" y="204" width="50" height="50" angle="0" />
+    <Rock id="18" x="604" y="200" width="50" height="50" angle="0" />
+    <Rock id="19" x="556" y="196" width="50" height="50" angle="0" />
+    <Rock id="20" x="488" y="196" width="50" height="50" angle="0" />
+    <Rock id="21" x="440" y="192" width="50" height="50" angle="0" />
+    <Rock id="22" x="388" y="196" width="50" height="50" angle="0" />
+    <Rock id="23" x="332" y="192" width="50" height="50" angle="0" />
+    <Rock id="24" x="284" y="196" width="50" height="50" angle="0" />
+    <Rock id="25" x="228" y="188" width="50" height="50" angle="0" />
+    <Rock id="26" x="168" y="196" width="50" height="50" angle="0" />
+    <Rock id="27" x="128" y="184" width="50" height="50" angle="0" />
+    <Rock id="28" x="588" y="328" width="50" height="50" angle="0" />
+    <Rock id="29" x="648" y="320" width="50" height="50" angle="0" />
+    <Rock id="30" x="700" y="336" width="50" height="50" angle="0" />
+    <Rock id="31" x="756" y="332" width="50" height="50" angle="0" />
+    <Rock id="32" x="88" y="192" width="50" height="50" angle="0" />
+    <Driftwood id="34" x="40" y="212" width="100" height="30" angle="0" />
+    <Driftwood id="33" x="796" y="416" width="100" height="30" angle="0" />
+    <Crane id="35" x="248" y="424" />
+    <Crane id="36" x="536" y="424" />
+    <Crane id="37" x="880" y="300" />
+    <Crane id="38" x="584" y="280" />
+    <Crane id="39" x="304" y="284" />
+    <Crane id="40" x="88" y="116" />
+    <Crane id="41" x="320" y="136" />
+    <Crane id="42" x="656" y="140" />
   </Entities>
+  <Art />
 </level>
