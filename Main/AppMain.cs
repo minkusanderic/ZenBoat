@@ -15,8 +15,9 @@ namespace Main
 		{
 			SaveGameManager.init();
 			
+			MenuLoader.Load();
 			
-			LevelLoader.BootStrap();
+			//LevelLoader.BootStrap();
 			CollectibleManager.Init();
 			
 			

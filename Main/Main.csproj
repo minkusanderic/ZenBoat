@@ -59,16 +59,10 @@
     <Compile Include="PreFabs\Endstage.cs" />
     <Compile Include="PreFabs\ball.cs" />
     <Compile Include="PreFabs\walker.cs" />
-    <Compile Include="..\..\BoatMenu\StartMenu.composer.cs">
-      <Link>Menus\StartMenu.composer.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BoatMenu\StartMenu.cs">
-      <Link>Menus\StartMenu.cs</Link>
-    </Compile>
-    <Compile Include="..\..\BoatMenu\UIStringTable.cs">
-      <Link>Menus\UIStringTable.cs</Link>
-    </Compile>
+    <Compile Include="Menus\StartMenu.cs" />
     <Compile Include="Menus\MenuLoader.cs" />
+    <Compile Include="Menus\StartMenu.composer.cs" />
+    <Compile Include="Menus\UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -149,5 +143,6 @@
     <Content Include="Assets\ball_animated.mdx" />
     <Content Include="Assets\walker.mdx" />
     <Content Include="Levels\SpinMeRound.oel" />
+    <Content Include="Assets\title.png" />
   </ItemGroup>
 </Project>
