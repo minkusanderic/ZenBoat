@@ -74,6 +74,16 @@ namespace Main
 					}
 				}));
 			
+			SceneManager.Instance.createEntity("Reset")
+				.attachComponent(new SimpleController(
+					() => {
+						if ((GamePad.GetData(0).Buttons & GamePadButtons.Cross) != 0)
+					{
+							SceneManager.Instance.DestroyAll();
+							LevelLoader.Load(LevelLoader.selected_filename);
+					}
+				}));
+			
 			
 		}
 		
