@@ -139,7 +139,7 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="84" y="200" angle="0" />
-    <Torii id="33" x="888" y="260" NextLevel="" />
+    <Torii id="33" x="888" y="260" NextLevel="1.01.01.oel" />
     <Crane id="1" x="180" y="80" />
     <Crane id="2" x="216" y="124" />
     <Crane id="3" x="256" y="164" />
