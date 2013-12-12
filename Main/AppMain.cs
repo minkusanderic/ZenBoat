@@ -13,6 +13,7 @@ namespace Main
 {
 	public class AppMain
 	{
+		public static bool isStart = false;
 	
 		public static void Main (string[] args)
 		{
@@ -20,7 +21,7 @@ namespace Main
 			
 			MenuLoader.Load();
 			
-			//LevelLoader.BootStrap();
+			LevelLoader.BootStrap();
 			CollectibleManager.Init();
 			
 			

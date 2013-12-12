@@ -13,20 +13,19 @@ namespace Menu
         public StartMenu()
         {
             InitializeWidget();
-			Action();
+			startButton.ButtonAction += HandleStartButtonButtonAction;
+			quitButton.ButtonAction += HandleQuitButtonButtonAction;
+        }
+
+        void HandleQuitButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	Environment.Exit(0);
+        }
+
+        void HandleStartButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	MenuLoader.isPlay = false;
         }
 		
-		private void Action()
-		{
-			bool quit = false;
-			
-			while (!quit)
-			{
-				if ((quitButton.ButtonAction) != 0)
-					quit = true;
-				if ((startButton.ButtonAction) != 0)
-					LevelLoader.BootStrap();
-			}
-		}
     }
 }
