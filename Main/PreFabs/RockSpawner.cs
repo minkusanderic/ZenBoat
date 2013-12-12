@@ -67,7 +67,7 @@ namespace Main
 								{
 									if ( Vector2.Distance(
 										rock.Transform.Position , pushable.Transform.Position	)
-										< 100f )
+										< 150f )
 									{
 										RigidBody rb = pushable.FindComponent<RigidBody>();
 										rb.applyForce( force*new Vector2(	
