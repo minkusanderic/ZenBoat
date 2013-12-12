@@ -141,6 +141,7 @@
     <Boat id="0" x="96" y="260" angle="0" />
     <Geyser id="1" x="476" y="260" width="80" height="80" strength="100" />
     <Torii id="2" x="876" y="252" NextLevel="1.06.01.oel" />
+    <Lilly id="3" x="480" y="452" angle="0" />
   </Entities>
   <Art />
 </level>
