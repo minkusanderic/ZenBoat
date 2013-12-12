@@ -1,20 +1,25 @@
 using System;
 using System.Collections.Generic;
+
 using Sce.PlayStation;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.HighLevel.Model;
+using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.Core.Input;
+
 using Core;
 
 namespace Main
 {
 	public class AppMain
 	{
+		public static bool isStart = false;
 	
 		public static void Main (string[] args)
 		{
 			SaveGameManager.init();
 			
+			MenuLoader.Load();
 			
 			LevelLoader.BootStrap();
 			CollectibleManager.Init();

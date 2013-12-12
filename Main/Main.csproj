@@ -59,6 +59,10 @@
     <Compile Include="PreFabs\Endstage.cs" />
     <Compile Include="PreFabs\ball.cs" />
     <Compile Include="PreFabs\walker.cs" />
+    <Compile Include="Menus\StartMenu.cs" />
+    <Compile Include="Menus\MenuLoader.cs" />
+    <Compile Include="Menus\StartMenu.composer.cs" />
+    <Compile Include="Menus\UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -83,6 +87,7 @@
     <Folder Include="Levels\" />
     <Folder Include="resources\" />
     <Folder Include="Assets\" />
+    <Folder Include="Menus\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Cube.mdx" />
@@ -142,5 +147,7 @@
     <Content Include="Levels\1.19.02.oel" />
     <Content Include="Assets\Geyser.png" />
     <Content Include="Assets\driftwood.mdx" />
+    <Content Include="Levels\SpinMeRound.oel" />
+    <Content Include="Assets\title.png" />
   </ItemGroup>
 </Project>

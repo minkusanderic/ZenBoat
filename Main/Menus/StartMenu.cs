@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using Sce.PlayStation.Core;
+using Sce.PlayStation.Core.Imaging;
+using Sce.PlayStation.Core.Environment;
+using Sce.PlayStation.HighLevel.UI;
+using Main;
+
+namespace Menu
+{
+    public partial class StartMenu : Scene
+    {
+        public StartMenu()
+        {
+            InitializeWidget();
+			startButton.ButtonAction += HandleStartButtonButtonAction;
+			quitButton.ButtonAction += HandleQuitButtonButtonAction;
+        }
+
+        void HandleQuitButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	Environment.Exit(0);
+        }
+
+        void HandleStartButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	MenuLoader.isPlay = false;
+        }
+		
+    }
+}
