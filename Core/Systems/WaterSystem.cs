@@ -135,6 +135,7 @@ namespace Core
 				g.graphics.SetTexture(0, height_map);
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
+				height_map.Dispose();
 			}
 		}
 		
