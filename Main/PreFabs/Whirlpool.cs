@@ -56,6 +56,10 @@ namespace Main
 														t.Destroy();
 												}
 													}));
+			
+			ent.attachComponent(new SimpleController(() => {
+				ent.Transform.Rotation = ent.Transform.Rotation.Rotate(-0.1f);
+			}));
 		}
 	}
 }
