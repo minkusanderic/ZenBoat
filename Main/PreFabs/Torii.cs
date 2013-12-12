@@ -19,8 +19,9 @@ namespace Main
 			ent.Name = "Torii";
 			ent.tag ("torii");
 			
-			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Torii2.mdx"));
+			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Torii.mdx"));
 			m.scale = new Vector3 (5.0f, 5.0f, 5.0f);
+			ent.Transform.Rotation = new Vector2(0, -1);
 			
 			RigidBody rb = new RigidBody (60);
 			rb.body = new PhysicsBody ();
