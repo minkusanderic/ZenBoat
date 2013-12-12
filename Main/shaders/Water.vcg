@@ -51,7 +51,7 @@ void main( float4 in a_Position  : POSITION,
     total_amp += amplitude;
     }
     
-    float wavelength = 100.0f;
+    float wavelength = 200.0f;
 	float amplitude = max(100 - distance(distance(Radial.xy, a_Position.xy), Radial.z), 0) * (1/(3 * Radial.z * Radial.z + 1));
 	float speed = 16;
 	
