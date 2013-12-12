@@ -1,9 +1,9 @@
 using System;
 
-using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Graphics;
-using Sce.PlayStation.Core.Input;
 using Sce.PlayStation.HighLevel.UI;
+using Sce.PlayStation.Core.Input;
+using Sce.PlayStation.Core.Environment;
 
 using Core;
 
@@ -35,7 +35,9 @@ namespace Main
 				UISystem.Update(Touch.GetData(0));
 				UISystem.Render();
 				graphics.SwapBuffers();
+				SystemEvents.CheckEvents();
 			}
+			UISystem.Terminate();
 		}
 	}
 }
