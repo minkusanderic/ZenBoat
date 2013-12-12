@@ -140,17 +140,17 @@
   <Entities>
     <Boat id="0" x="108" y="468" angle="0" />
     <Torii id="1" x="872" y="96" NextLevel="1.08.01.oel" />
-    <Driftwood id="2" x="348" y="180" width="100" height="30" angle="0" />
-    <Driftwood id="3" x="376" y="328" width="100" height="30" angle="0" />
-    <Driftwood id="4" x="592" y="260" width="100" height="30" angle="0" />
-    <Driftwood id="5" x="604" y="128" width="100" height="30" angle="0" />
-    <Driftwood id="6" x="628" y="404" width="100" height="30" angle="0" />
-    <Driftwood id="7" x="168" y="284" width="100" height="30" angle="0" />
-    <Whirlpool id="8" x="108" y="64" width="80" height="80" strength="100" />
-    <Whirlpool id="9" x="864" y="460" width="80" height="80" strength="100" />
-    <Whirlpool id="10" x="704" y="516" width="80" height="80" strength="100" />
-    <Whirlpool id="11" x="336" y="48" width="80" height="80" strength="100" />
-    <Driftwood id="12" x="400" y="484" width="100" height="30" angle="0" />
+    <Driftwood id="2" x="360" y="204" width="100" height="30" angle="0" />
+    <Driftwood id="3" x="376" y="308" width="100" height="30" angle="0" />
+    <Driftwood id="4" x="608" y="236" width="100" height="30" angle="0" />
+    <Driftwood id="5" x="600" y="140" width="100" height="30" angle="0" />
+    <Driftwood id="6" x="620" y="332" width="100" height="30" angle="0" />
+    <Driftwood id="7" x="156" y="264" width="100" height="30" angle="0" />
+    <Whirlpool id="8" x="112" y="100" width="80" height="80" strength="100" />
+    <Whirlpool id="9" x="864" y="440" width="80" height="80" strength="100" />
+    <Whirlpool id="10" x="680" y="440" width="80" height="80" strength="100" />
+    <Whirlpool id="11" x="332" y="100" width="80" height="80" strength="100" />
+    <Driftwood id="12" x="392" y="408" width="100" height="30" angle="0" />
   </Entities>
   <Art />
 </level>

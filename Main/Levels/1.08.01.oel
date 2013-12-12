@@ -141,22 +141,22 @@
     <Boat id="0" x="140" y="100" angle="0" />
     <Torii id="1" x="880" y="448" NextLevel="1.09.01.oel" />
     <Whirlpool id="2" x="300" y="416" width="80" height="80" strength="100" />
-    <Whirlpool id="3" x="584" y="176" width="80" height="80" strength="100" />
+    <Whirlpool id="3" x="660" y="200" width="80" height="80" strength="100" />
     <Crane id="4" x="452" y="300" />
     <Crane id="5" x="284" y="192" />
     <Crane id="6" x="672" y="404" />
     <Lillypad id="7" x="36" y="492" width="50" height="40" angle="0" />
     <Lillypad id="8" x="56" y="356" width="50" height="40" angle="0" />
-    <Lillypad id="9" x="152" y="476" width="50" height="40" angle="0" />
+    <Lillypad id="9" x="132" y="416" width="50" height="40" angle="0" />
     <Lillypad id="10" x="856" y="32" width="50" height="40" angle="0" />
     <Lillypad id="11" x="760" y="56" width="50" height="40" angle="0" />
-    <Lillypad id="12" x="856" y="172" width="50" height="40" angle="0" />
+    <Lillypad id="12" x="820" y="156" width="50" height="40" angle="0" />
     <Lillypad id="13" x="920" y="144" width="50" height="40" angle="0" />
-    <Rock id="14" x="256" y="484" width="90" height="94" angle="0" />
-    <Rock id="15" x="156" y="456" width="102" height="90" angle="0" />
-    <Rock id="16" x="480" y="-12" width="114" height="94" angle="0" />
-    <Rock id="17" x="472" y="60" width="94" height="82" angle="0" />
-    <Whirlpool id="18" x="516" y="504" width="80" height="80" strength="100" />
+    <Rock id="14" x="348" y="448" width="90" height="94" angle="0" />
+    <Rock id="16" x="476" y="-4" width="114" height="94" angle="0" />
+    <Rock id="17" x="468" y="72" width="94" height="82" angle="0" />
+    <Whirlpool id="18" x="520" y="464" width="80" height="80" strength="100" />
+    <Rock id="15" x="136" y="440" width="102" height="90" angle="0" />
   </Entities>
   <Art />
 </level>
