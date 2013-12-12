@@ -95,19 +95,14 @@
     <Content Include="resources\Rock.mdx" />
     <Content Include="resources\WhirlCube2.mdx" />
     <Content Include="resources\boat2.mdx" />
-    <Content Include="Assets\Boat.png" />
     <Content Include="resources\bank1.5.mdx" />
     <Content Include="resources\bank1.mdx" />
     <Content Include="resources\rock_dae.mdx" />
     <Content Include="resources\Water.mdx" />
     <Content Include="Assets\BoatFBX.mdx" />
     <Content Include="Assets\RockFBX.mdx" />
-    <Content Include="Assets\Whirpoolsmall.png" />
-    <Content Include="Assets\crane.png" />
     <Content Include="Assets\lilypad.mdx" />
     <Content Include="Assets\Lotus.mdx" />
-    <Content Include="Assets\Torii Gate ph.png" />
-    <Content Include="Assets\WaterDrop2.wav" />
     <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Assets\LondonsSong.mp3" />
     <Content Include="Assets\Koifish.mdx" />
@@ -121,7 +116,6 @@
     <Content Include="resources\test.png" />
     <Content Include="resources\Origami Kami.png" />
     <Content Include="Assets\smoke.png" />
-    <Content Include="Assets\Cherry1.png" />
     <Content Include="Assets\Arrow.png" />
     <Content Include="Assets\ball_animated.mdx" />
     <Content Include="Assets\walker.mdx" />
