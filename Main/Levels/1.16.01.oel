@@ -173,7 +173,7 @@
     <Crane id="30" x="500" y="220" />
     <Crane id="31" x="552" y="220" />
     <Crane id="32" x="608" y="220" />
-    <Torii id="33" x="908" y="472" NextLevel="1.17.01.oel" />
+    <Torii id="33" x="856" y="456" NextLevel="1.17.01.oel" />
     <Whirlpool id="34" x="908" y="128" width="80" height="80" strength="100" />
     <Lillypad id="35" x="28" y="512" width="50" height="40" angle="0" />
     <Lillypad id="36" x="20" y="472" width="50" height="40" angle="0" />
