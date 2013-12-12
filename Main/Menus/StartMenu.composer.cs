@@ -34,23 +34,23 @@ namespace Menu
 
             // StartMenu
             this.RootWidget.AddChildLast(Panel_1);
-            this.RootWidget.AddChildLast(quitButton);
 
             // Panel_1
-            Panel_1.BackgroundColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Panel_1.Clip = true;
             Panel_1.AddChildLast(titleImage);
             Panel_1.AddChildLast(startButton);
+            Panel_1.AddChildLast(quitButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/assets/title.png");
+            titleImage.Image = new ImageAsset("/Application/Assets/title.png");
 
             // startButton
-            startButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            startButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             startButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             // quitButton
-            quitButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            quitButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             quitButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
