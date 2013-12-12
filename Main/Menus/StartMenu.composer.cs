@@ -43,7 +43,7 @@ namespace Menu
             Panel_1.AddChildLast(quitButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/Assets/title.png");
+            titleImage.Image = new ImageAsset("/Application/assets/title.png");
 
             // startButton
             startButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
