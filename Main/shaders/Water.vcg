@@ -1,7 +1,6 @@
 
 void main( float4 in a_Position  : POSITION,
 		   float2 in a_TexCoord    : TEXCOORD0,	
-		   uniform sampler2D a_Texture : TEXUNIT0,
 		   float4 out v_Position : POSITION,
 		   float4 out v_Color : COLOR0,
 		   float2 out v_TexCoord   : TEXCOORD0,
@@ -23,7 +22,7 @@ void main( float4 in a_Position  : POSITION,
 	waves[0][0] = 400.0f;
 	waves[0][1] = 2.0f;
 	waves[0][2] = 20.0f;
-	waves[0][3] = 0.4f;
+	waves[0][3] = 0.0f;
 	
 	waves[1][0] = 87.0f;
 	waves[1][1] = 1.0f;
@@ -66,7 +65,6 @@ void main( float4 in a_Position  : POSITION,
 	//a_Position.z = sin(a_Position.y + time);
 	v_Color = float4(0,0,.5+(a_Position.z +total_amp/2)/(2*total_amp),1);
 	v_Color.z = v_Color.z * v_Color.z;
-	v_Position = tex2D(a_Texture, v_Position.xy);
 	v_Position = mul( a_Position, WorldViewProj ); 
 	v_TexCoord = a_TexCoord;
 	
