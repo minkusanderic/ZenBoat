@@ -65,7 +65,10 @@ namespace Core
 		
 		public void applyForce(Vector2 vect)
 		{
+			if (this.body != null)
+			{
 			this.body.ApplyForce(this.body.Force + vect);
+			}
 		}
 		
 		public void applyTorque(float power)

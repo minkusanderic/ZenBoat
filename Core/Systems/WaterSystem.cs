@@ -51,7 +51,11 @@ namespace Core
 							Vector2 a = 100 * force_vects[i,j];
 							if(a.Length() > 0.0f)
 							{
-								push.FindComponent<RigidBody>().applyForce(5 * force_vects[i,j]);
+								var r = push.FindComponent<RigidBody>();
+								if(r != null)
+								{
+									r.applyForce(5 * force_vects[i,j]);
+								}
 							}
 						}
 					}
