@@ -34,12 +34,43 @@ namespace Core
 		
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
+		float cameraOffset = 0f;
+		float eps = 400f;
+		Vector3 cameraLastPosition;
+		Vector3 UpdateCameraPosition()
+		{
+			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
+			Console.WriteLine( boatPosition );
+			// HAndle first-left edge
+			if ( boatPosition.X > 960.0f/2.0f )
+			{
+				// camera pos + half screen width
+				
+				if ( eps + cameraOffset < boatPosition.X - eps )
+					cameraOffset = boatPosition.X - 2*eps ;
+				if ( cameraOffset  > boatPosition.X - eps/2 )
+					cameraOffset = boatPosition.X - eps/2;
+				//if ( (this.camera_pos.X- 480f ) > boatPosition.X )
+				//	cameraOffset = boatPosition.X - 960.0f/2.0f;
+			}
+			else
+			{
+				if ( cameraOffset  > boatPosition.X - eps/2  )
+					cameraOffset = boatPosition.X - eps/2  ;
+				if ( cameraOffset <= 0f ) cameraOffset = 0f;
+			}
+			
+			//cameraOffset += 1f;
+			return new Vector3(960.0f/2.0f + cameraOffset, 0f , (960.0f/2.0f)/ (1.77f * FMath.Tan(FMath.Radians(45.0f/2.0f)) ));
+		}
+		
 		
 		public override void Update() // Render here
 		{
 			Timer.StartFrame();
-			this.camera_pos = new Vector3( 960.0f/2.0f, 0f, (960.0f/2.0f)/ (1.77f * FMath.Tan(FMath.Radians(45.0f/2.0f)) ));
-			this.camera_eye = new Vector3( 960.0f/2.0f, 544.0f/2.0f, 0.0f );
+			this.camera_pos = UpdateCameraPosition();
+			cameraLastPosition = this.camera_pos;
+			this.camera_eye = new Vector3( 960f/2f + cameraOffset , 544f/2f  , 0f  );//new Vector3( 960.0f/2.0f, 544.0f/2.0f , 0.0f + 100f );
 			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
 			Matrix4 view = Matrix4.LookAt(  camera_pos,
 											camera_eye,

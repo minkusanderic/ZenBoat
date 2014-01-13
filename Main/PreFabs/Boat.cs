@@ -56,13 +56,14 @@ namespace Main
 			b2.Transform.Position = new Vector2(-960/2,544/2);
 			b2.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
 			
+			//top
 			var b3 = SceneManager.Instance.createEntity("b3");
 			b3.Transform.Position = new Vector2(960/2,3 * 544/2 - 30);
 			b3.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
 			
 			var b4 = SceneManager.Instance.createEntity("b4");
-			b4.Transform.Position = new Vector2(3 * 960/2,544/2);
-			b4.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			b4.Transform.Position = new Vector2(3 * 960/2 + 1000,544/2);
+			//b4.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
 			
 			SceneManager.Instance.createEntity("ReturnToBoot")
 				.attachComponent(new SimpleController(
