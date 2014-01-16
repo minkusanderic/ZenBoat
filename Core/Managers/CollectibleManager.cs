@@ -46,6 +46,8 @@ namespace Core
 			m_iScore ++;
 			Console.WriteLine("Crane Score: " + m_iScore);
 		}
+		
+		//Here is a comment
 	}
 }
 
