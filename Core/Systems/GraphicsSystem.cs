@@ -15,6 +15,7 @@ namespace Core
 		
 		private List<ModelComponent> models = new List<ModelComponent>();
 		private List<SpriteComponent> sprites = new List<SpriteComponent>();
+		private List<LabelComponent> labels = new List<LabelComponent>();
 		
 		public GraphicsContext graphics;
 		public BasicProgram program;
@@ -165,7 +166,10 @@ namespace Core
 				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 			}
 			
-			
+			foreach(var label in labels)
+			{
+				// Update all of the text components
+			}
 	
 			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view);
 			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
@@ -189,6 +193,11 @@ namespace Core
 				sprites.Add((SpriteComponent)comp);
 			}
 			
+			if(comp is LabelComponent)
+			{
+				labels.Add((LabelComponent)comp);
+			}
+			
 		}
 		
 		public override void destroyComponent (IComponent comp)
@@ -197,10 +206,16 @@ namespace Core
 			{
 				models.Remove( (ModelComponent) comp);	
 			}
+			
 			if ( comp is SpriteComponent )
 			{
 				sprites.Remove((SpriteComponent)comp);
-			}			
+			}
+			
+			if ( comp is LabelComponent )
+			{
+				labels.Remove((LabelComponent)comp);
+			}
 			//base.destroyComponent (comp);
 		}
 		
