@@ -63,6 +63,7 @@
     <Compile Include="Menus\MenuLoader.cs" />
     <Compile Include="Menus\StartMenu.composer.cs" />
     <Compile Include="Menus\UIStringTable.cs" />
+    <Compile Include="PreFabs\Drag.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

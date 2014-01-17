@@ -28,7 +28,7 @@ namespace Main
 		public static void HandleButton(object sender, TouchEventArgs e)
 			{
 				isLevelSelected = true;
-				Console.WriteLine(((Button)sender).Text);
+				//Console.WriteLine(((Button)sender).Text);
 				selected_filename = searchPath + ((Button)sender).Text;
 			}
 		
@@ -191,7 +191,7 @@ namespace Main
 							if(options.ContainsKey("angle"))
 								ent.Transform.SetAngle(Convert.ToSingle(options["angle"]));
 							
-							Console.WriteLine(name);
+							//Console.WriteLine(name);
 							var t = Type.GetType("Main." + name);
 							if(t == null){
 								Console.WriteLine("ERROR: Could not find Prefab '" + name + "'");
@@ -240,7 +240,7 @@ namespace Main
 						
 			}
 			
-			Console.WriteLine(bitArray);
+			//Console.WriteLine(bitArray);
 			return bitArray;
 		}
 		

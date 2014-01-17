@@ -40,7 +40,7 @@ namespace Core
 		Vector3 UpdateCameraPosition()
 		{
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
-			Console.WriteLine( boatPosition );
+			//Console.WriteLine( boatPosition );
 			// HAndle first-left edge
 			if ( boatPosition.X > 960.0f/2.0f )
 			{

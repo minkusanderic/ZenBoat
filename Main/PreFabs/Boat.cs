@@ -37,7 +37,8 @@ namespace Main
 			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
 			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
 			
-			
+			var drag = SceneManager.Instance.createEntity("Drag");
+			Drag.create(drag, new Dictionary<String,String>());
 			
 			var water = SceneManager.Instance.createEntity("Water");
 			water.attachComponent(new WaterComponent());

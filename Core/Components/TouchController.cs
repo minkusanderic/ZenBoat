@@ -22,7 +22,7 @@ namespace Core
 				Vector2 vec = new Vector2( td.X , td.Y );
 				GraphicsSystem gs = ( GraphicsSystem) EntityManager.Instance.getSystem( typeof( GraphicsSystem ) );
 				Vector2	startPos = gs.GetWorldToPoint( 2*vec );
-				Console.WriteLine( "StartPos: " + startPos + "\t\tPos: " + this.parent.Transform.Position );
+				//Console.WriteLine( "StartPos: " + startPos + "\t\tPos: " + this.parent.Transform.Position );
 				if ( Vector2.Distance( this.parent.Transform.Position , startPos ) > 20f )
 				{
 					this.parent.Destroy();	
