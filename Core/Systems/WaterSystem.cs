@@ -127,20 +127,21 @@ namespace Core
 				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("EyePosition"), ref Eye);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
-				Vector3[] v = new Vector3[30];
-				v[0]= new Vector3(500, 250, 100);
-				v[1]= new Vector3(200, 300, 200);
-				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Splashes"), v, 0, 0, v.Length);
-
 				
+
+				Vector3[] v = new Vector3[30];
 				foreach(var rad in this.radials)
 				{
 					Vector3 radial_vec = new Vector3(rad.parent.Transform.Position.X, rad.parent.Transform.Position.Y, rad.time);
 					water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Radial"),
 					                                    ref radial_vec);
 					rad.time += .01f;
+					v[0] = radial_vec;
+					v[0].Z = 100.0f;
 				}
-
+				
+				
+				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Splashes"), v, 0, 0, v.Length);
 				time += .1f;
 				g.graphics.SetTexture(0, height_map);
 				g.graphics.SetTexture(0, stars);
