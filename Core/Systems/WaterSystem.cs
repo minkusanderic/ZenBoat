@@ -63,10 +63,10 @@ namespace Core
 			}
 		}
 		
-		
+		private Texture2D stars = new Texture2D("/Application/Assets/Stars.jpg", true);
 		private float time = 0.0f;
 		private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
-		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view)
+		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
 		{
 			
 			foreach(var water in waters)
@@ -125,7 +125,13 @@ namespace Core
 
 				//program.Parameters.SetWorldMatrix(0, ref world);
 				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
+				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("EyePosition"), ref Eye);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
+				Vector3[] v = new Vector3[30];
+				v[0]= new Vector3(500, 250, 100);
+				v[1]= new Vector3(200, 300, 200);
+				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Splashes"), v, 0, 0, v.Length);
+
 				
 				foreach(var rad in this.radials)
 				{
@@ -137,6 +143,7 @@ namespace Core
 
 				time += .1f;
 				g.graphics.SetTexture(0, height_map);
+				g.graphics.SetTexture(0, stars);
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
 				height_map.Dispose();

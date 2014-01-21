@@ -144,5 +144,6 @@
     <Content Include="Assets\driftwood.mdx" />
     <Content Include="Assets\title.png" />
     <Content Include="Levels\1.20.01.oel" />
+    <Content Include="Assets\Stars.jpg" />
   </ItemGroup>
 </Project>

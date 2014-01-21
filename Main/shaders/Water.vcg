@@ -1,71 +1,40 @@
+#define NUM_OF_SPLASHES 30
 
 void main( float4 in a_Position  : POSITION,
 		   float2 in a_TexCoord    : TEXCOORD0,	
+		   float3 in a_Normal : NORMAL,
 		   float4 out v_Position : POSITION,
 		   float4 out v_Color : COLOR0,
 		   float2 out v_TexCoord   : TEXCOORD0,
+		   float3 out v_Normal : TEXCOORD1,
+		   float3 out v_Eye : TEXCOORD2,
+		   uniform float3 EyePosition,
 		   uniform float4x4 WorldViewProj,
 		   uniform float time,
-		   uniform float3 Radial
+		   uniform float3 Radial,
+		   uniform float3 Splashes[NUM_OF_SPLASHES]
            )
 {
-	
-	float pi = 3.145f;
-	
-	#define num_of_waves 3
-	float4 waves[num_of_waves];
-	
-	//float wavelength = 100.0f;
-	//float amplitude = 10.0f;
-	//float speed = 20.0f;
-	//float angle = 0.0f;
-	waves[0][0] = 400.0f;
-	waves[0][1] = 2.0f;
-	waves[0][2] = 20.0f;
-	waves[0][3] = 0.0f;
-	
-	waves[1][0] = 87.0f;
-	waves[1][1] = 1.0f;
-	waves[1][2] = 2.0f;
-	waves[1][3] = .8f;
-	
-	waves[2][0] = 57.0f;
-	waves[2][1] = 1.0f;
-	waves[2][2] = 2.0f;
-	waves[2][3] = -1.2f ;
-	
-	float total_amp = 0.0f;
-	
-	for(int i = 0; i < num_of_waves; i++)
+	float z_pos = 0.0f;
+	for(int i = 0; i < NUM_OF_SPLASHES; i++)
 	{
-	float wavelength = waves[i][0];
-	float amplitude = waves[i][1];
-	float speed = waves[i][2];
-	float angle = waves[i][3];
+		float dist = length(a_Position.xy - Splashes[i].xy);
+		float2 dir = normalize(a_Position.xy - Splashes[i].xy);
+		//dir.y = -dir.y;
+		float wavelength = Splashes[i].z;
+		//dir = dir / wavelength;
+		if(wavelength != 0.0f && dist < wavelength)
+		{ 
+			z_pos += 5000 * (cos(2 * 3.14 * .25 * (dist/wavelength))/wavelength) + 1;
+			a_TexCoord.xy += a_Normal.xy + (1.0f - dist/wavelength) * dir;
+			//a_Normal.xy += float2(.5f, .5f);
+		}
+	}
 	
-	
-	float frequency = 2*pi/wavelength;
-    float phase = speed * frequency;
-    float theta = dot(float2(-cos(angle),-sin(angle)), float2(a_Position.x, a_Position.y));
-    a_Position.z += amplitude * sin(theta * frequency + time * phase);
-    total_amp += amplitude;
-    }
-    
-    float wavelength = 200.0f;
-	float amplitude = max(100 - distance(distance(Radial.xy, a_Position.xy), Radial.z), 0) * (1/(3 * Radial.z * Radial.z + 1));
-	float speed = 16;
-	
-	
-	float frequency = 2*pi/wavelength;
-    float phase = speed * frequency;
-    float theta = -distance(Radial.xy, a_Position.xy);
-    a_Position.z += amplitude * sin(theta * frequency + time * phase);
-    total_amp += amplitude;
-    
-	//a_Position.z = sin(a_Position.y + time);
-	v_Color = float4(0,0,.5+(a_Position.z +total_amp/2)/(2*total_amp),1);
-	v_Color.z = v_Color.z * v_Color.z;
-	v_Position = mul( a_Position, WorldViewProj ); 
-	v_TexCoord = a_TexCoord;
+	a_Position.z = z_pos;
+	v_Position	= mul( a_Position, WorldViewProj );
+	v_Normal	= normalize(a_Normal);
+	v_Eye		= EyePosition - a_Position.xyz;
+	v_TexCoord  = a_TexCoord;
 	
 }

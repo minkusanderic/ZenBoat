@@ -56,8 +56,7 @@ namespace Core
 
      		
 			
-			 vb = new VertexBuffer(W * H, (W-1) * (H-1) * 6, VertexFormat.Float3, VertexFormat.Float2);
-			 
+			 vb = new VertexBuffer(W * H, (W-1) * (H-1) * 6, VertexFormat.Float3, VertexFormat.Float2, VertexFormat.Float3);
  
  	   		vb.SetVertices(0, vertices);
 			
@@ -74,6 +73,21 @@ namespace Core
 			}
     		vb.SetVertices(1, texcoords);
   	  		//vb.SetVertices(2, colors);
+			
+			float[] normals = new float[W * H * 3];
+			
+			for(var i = 0; i < W; i++)
+			{
+				for(var j = 0;j < H; j++)
+				{
+					int offset = 3*((i * W) + j);
+					normals[offset + 0] = 0.0f; //z0
+   			  		normals[offset + 1] = 0.0f; //y0
+              		normals[offset + 2] = 1.0f;   // z0
+				}
+			}
+			
+			vb.SetVertices(2, normals);
 
   	  		vb.SetIndices(indices);
 

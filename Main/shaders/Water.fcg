@@ -1,23 +1,16 @@
 
 void main( 
-			float4 in  v_Color	: COLOR0,
+			float3 in  v_Normal	: TEXCOORD1,
 			float2 in v_TexCoord  : TEXCOORD0,
+			float3 in v_Eye : TEXCOORD2,
+			float3 in v_Position : POSITION,
 			float4 out Color	: COLOR,
 			uniform sampler2D s_Texture : TEXUNIT0)
 {
-	if(v_Color.z < .3f)
-	{
-		Color = float4(0, .5, .6f, .3f);
-	}
-	else if(v_Color.z < .9f)
-	{
-		Color = float4(.1f, .8f, .9f, .4f);
-	}
-	else
-	{
-		Color = float4(.8,.8,.8,1);
-	}
-	//float4 tmpColor = tex2D( s_Texture, v_TexCoord );
-	//Color = tmpColor;
+	//v_Normal.y = -v_Normal.y;
+	float4 tmpColor = tex2D( s_Texture,v_TexCoord + v_Normal.xy/20);
+	tmpColor.w = .5f;
+	Color = tmpColor;
+	//Color = float4(v_Normal.x/2 + .5, v_Normal.y/2 + .5, 0, 1.0f);
 	//Color = v_Color;
 }
