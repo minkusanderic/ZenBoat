@@ -66,8 +66,8 @@ namespace Core
 				for(int j = 0; j < H; j++)
 				{
 					int offset = 2*((i * W) + j);
-					texcoords[offset + 0] = ((float)j)/((float)H);   // x0
-   			  		texcoords[offset + 1] = ((float)i)/((float)W);   // y0
+					texcoords[offset + 0] = 1.0f - ((float)i)/((float)W);   // x0
+   			  		texcoords[offset + 1] = 1.0f - ((float)j)/((float)H);   // y0
               		
 				}
 			}
