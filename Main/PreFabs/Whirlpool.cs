@@ -54,6 +54,10 @@ namespace Main
 														}
 												} catch(Exception e) {
 														t.Destroy();
+														if(t.HasTag("driftwood"))
+					{
+						ent.Destroy();
+					}
 												}
 													}));
 			
