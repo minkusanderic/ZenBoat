@@ -22,11 +22,12 @@ namespace Main
 			{
 				Console.WriteLine("Making RockSpawner");
 				touchController = tc;
+				rock.attachComponent(new RadialSplash());
 			}
 			bool b = true;
 			
 			private Selector pushables = new Selector("pushable");
-			
+			private Entity rock = SceneManager.Instance.createEntity("Rock");
 			public override void Update ()
 			{
 				var boat = SceneManager.Instance.FindEntity("Boat");
@@ -39,7 +40,7 @@ namespace Main
 						float interp_y = -td.Y + .5f;
 						
 						//Console.WriteLine("x: " + (interp_x * width) + "\t\ty: " + interp_y * height );
-						Entity rock = SceneManager.Instance.createEntity("Rock");
+						
 						//rock.attachComponent( new ModelComponent("\\Application\\resources\\Cube.mdx") );
 						
 						var graphics = (GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem));
@@ -56,7 +57,7 @@ namespace Main
 						
 						rock.Transform.Position = TouchSystem.RayCastOntoPlane(pos, dir + rel_right + rel_up).Xy;
 						//rock.attachComponent( new SuicideController( 50 ) );
-						rock.attachComponent(new RadialSplash());
+						
 						
 						count ++;
 						if ( true )

@@ -29,7 +29,7 @@ namespace Core
 					int offset = 3*((i * W) + j);
 					vertices[offset + 0] = i * 15.6f - 300.0f;   // x0
    			  		vertices[offset + 1] = j * 8.815f - 168.75f;   // y0
-              		vertices[offset + 2] = 0.0f;   // z0
+              		vertices[offset + 2] = -0.1f;   // z0
 				}
 			}
 			

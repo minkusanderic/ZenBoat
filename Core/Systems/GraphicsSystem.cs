@@ -77,7 +77,7 @@ namespace Core
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
 			Vector3 litDirection = new Vector3( 0.0f, 0.0f, -1.0f ).Normalize() ;
 			Vector3 litDirection2 = new Vector3( 0.0f, 1.0f, 0.0f ).Normalize() ;
-			Vector3 litColor = new Vector3( 1.0f, 1.0f, 1.0f ) ;
+			Vector3 litColor = new Vector3( 1.0f, 1.0f, .8f ) ;
 			Vector3 litColor2 = new Vector3( 0.0f, 0.0f, 0.0f ) ;
 			Vector3 litAmbient = new Vector3( 0.1f, 0.1f, 0.1f ) ;
 			Vector3 fogColor = new Vector3( 0.0f, 0.5f, 1.0f ) ;

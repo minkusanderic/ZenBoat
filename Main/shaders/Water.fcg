@@ -10,8 +10,8 @@ void main(
 	//v_Normal.y = -v_Normal.y;
 	float3 blue = float3(0.0f, 0.0f, 1.0f);
 	float4 tmpColor = tex2D( s_Texture,v_TexCoord + v_Normal.xy/20);
-	tmpColor.xy *= float2(.7f, .7f);
-	tmpColor.w = .3f;
+	//tmpColor.xy *= float2(.7f, .7f);
+	tmpColor.w = .5f;
 	Color = tmpColor;
 	//Color = float4(v_Normal.x/2 + .5, v_Normal.y/2 + .5, 0, 1.0f);
 	//Color = v_Color;

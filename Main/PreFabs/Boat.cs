@@ -29,13 +29,13 @@ namespace Main
 			
 			ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.25f) );
 			ent.attachComponent( new FrictionController(.05f) );
-			ent.attachComponent( new RadialSplash());
+			//ent.attachComponent( new RadialSplash());
 			
 			ent.attachComponent( new Respawner( ent.Transform.Position ) );
 			//ent.attachComponent( new SimpleAction(move_initial));
 			
-			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
-			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
+			//var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
+			//RockSpawner.create(rockSpawner, new Dictionary<String,String>());
 			
 			var drag = SceneManager.Instance.createEntity("Drag");
 			Drag.create(drag, new Dictionary<String,String>());

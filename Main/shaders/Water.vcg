@@ -15,18 +15,21 @@ void main( float4 in a_Position  : POSITION,
 		   uniform float3 Splashes[NUM_OF_SPLASHES]
            )
 {
-	float z_pos = 0.0f;
+	float z_pos = -0.1f;
 	for(int i = 0; i < NUM_OF_SPLASHES; i++)
 	{
 		float dist = length(a_Position.xy - Splashes[i].xy);
 		float2 dir = normalize(a_Position.xy - Splashes[i].xy);
 		//dir.y = -dir.y;
-		float wavelength = Splashes[i].z;
+		//float wavelength = Splashes[i].z;
+		float wavelength = 100.0f;
 		//dir = dir / wavelength;
 		if(wavelength != 0.0f && dist < wavelength)
 		{ 
-			z_pos += 5000 * (cos(2 * 3.14 * .25 * (dist/wavelength))/wavelength) + 1;
+			if( Splashes[i].z > 0.1f){
+			z_pos += Splashes[i].z * (cos(2 * 3.14 * .25 * (dist/wavelength))/wavelength) + 1;
 			a_TexCoord.xy += a_Normal.xy + (1.0f - dist/wavelength) * dir;
+			}
 			//a_Normal.xy += float2(.5f, .5f);
 		}
 	}

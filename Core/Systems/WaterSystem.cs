@@ -63,9 +63,11 @@ namespace Core
 			}
 		}
 		
-		private Texture2D stars = new Texture2D("/Application/Assets/Stars.jpg", true);
+		private Texture2D stars = new Texture2D("/Application/Assets/Skymidday.png", true);
 		private float time = 0.0f;
 		private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
+		private Vector3[] v = new Vector3[30];
+		private int circular_buffer_index = 0;
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
 		{
 			
@@ -129,16 +131,29 @@ namespace Core
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
 				
 
-				Vector3[] v = new Vector3[30];
+				
 				foreach(var rad in this.radials)
 				{
 					Vector3 radial_vec = new Vector3(rad.parent.Transform.Position.X, rad.parent.Transform.Position.Y, rad.time);
 					water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Radial"),
 					                                    ref radial_vec);
 					rad.time += .01f;
-					v[0] = radial_vec;
-					v[0].Z = 100.0f;
+					v[circular_buffer_index] = radial_vec;
+					v[circular_buffer_index].Z = 500.0f;
+					circular_buffer_index++;
+					if(circular_buffer_index >= v.Length)
+					{
+						circular_buffer_index = 0;
+					}
+					
 				}
+				for(int i = 0; i < v.Length; i++)
+					{
+						if(v[i].Z < 20.0f){
+							v[i].Z = 0.0f;}
+						else{
+							v[i].Z -= 20.0f;}
+					}
 				
 				
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Splashes"), v, 0, 0, v.Length);
