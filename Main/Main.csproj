@@ -147,5 +147,15 @@
     <Content Include="Assets\Stars.jpg" />
     <Content Include="Assets\Skymidday.png" />
     <Content Include="Assets\stone.mdx" />
+    <Content Include="Levels\1.21.01.oel" />
+    <Content Include="Levels\1.22.01.oel" />
+    <Content Include="Levels\1.23.01.oel" />
+    <Content Include="Levels\1.24.01.oel" />
+    <Content Include="Levels\1.25.01.oel" />
+    <Content Include="Levels\1.26.01.oel" />
+    <Content Include="Levels\1.27.01.oel" />
+    <Content Include="Levels\1.28.01.oel" />
+    <Content Include="Levels\1.29.01.oel" />
+    <Content Include="Levels\1.30.01.oel" />
   </ItemGroup>
 </Project>
