@@ -72,6 +72,8 @@
     <ShaderProgram Include="shaders\Sprite.vcg" />
     <ShaderProgram Include="shaders\Water.fcg" />
     <ShaderProgram Include="shaders\Water.vcg" />
+    <ShaderProgram Include="shaders\Basic.fcg" />
+    <ShaderProgram Include="shaders\Basic.vcg" />
   </ItemGroup>
   <ItemGroup>
     <PsmMetadata Include="app.xml" />
@@ -147,5 +149,6 @@
     <Content Include="Assets\Stars.jpg" />
     <Content Include="Assets\Skymidday.png" />
     <Content Include="Assets\stone.mdx" />
+    <Content Include="Assets\toon.png" />
   </ItemGroup>
 </Project>
