@@ -5,11 +5,19 @@ void main(
 			float3 in v_Eye : TEXCOORD2,
 			float3 in v_Position : POSITION,
 			float4 out Color	: COLOR,
-			uniform sampler2D s_Texture : TEXUNIT0)
+			uniform sampler2D s_Texture : TEXUNIT0,
+			uniform sampler2D n_Texture : TEXUNIT1,
+			uniform float time)
 {
 	//v_Normal.y = -v_Normal.y;
 	float3 blue = float3(0.0f, 0.0f, 1.0f);
-	float4 tmpColor = tex2D( s_Texture,v_TexCoord + v_Normal.xy/20);
+	float2 sampleNorm = v_TexCoord.xy + float2(1.0f, 0.0f) * time;
+	if(sampleNorm.x > 1.0f){
+		sampleNorm.x = sampleNorm.x - 1.0f;}
+	if(sampleNorm.y > 1.0f){
+		sampleNorm.y = sampleNorm.y - 1.0f;}
+	float4 normColor = tex2D( n_Texture, sampleNorm);
+	float4 tmpColor = tex2D( s_Texture,v_TexCoord + v_Normal.xy/5 + normColor.xy/50);
 	//tmpColor.xy *= float2(.7f, .7f);
 	tmpColor.w = .5f;
 	Color = tmpColor;

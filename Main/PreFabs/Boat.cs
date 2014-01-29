@@ -29,6 +29,9 @@ namespace Main
 			
 			ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.25f) );
 			ent.attachComponent( new FrictionController(.05f) );
+			ent.attachComponent( new SimpleController(() => {
+				ent.FindComponent<RigidBody>().applyForce(new Vector2(10.0f, 0.0f));
+			}));
 			//ent.attachComponent( new RadialSplash());
 			
 			ent.attachComponent( new Respawner( ent.Transform.Position ) );

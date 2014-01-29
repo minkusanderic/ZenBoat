@@ -157,5 +157,6 @@
     <Content Include="Levels\1.28.01.oel" />
     <Content Include="Levels\1.29.01.oel" />
     <Content Include="Levels\1.30.01.oel" />
+    <Content Include="Assets\water_normal.png" />
   </ItemGroup>
 </Project>

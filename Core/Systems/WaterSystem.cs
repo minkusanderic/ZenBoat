@@ -66,6 +66,7 @@ namespace Core
 		private Texture2D stars = new Texture2D("/Application/Assets/Skymidday.png", true);
 		private float time = 0.0f;
 		private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
+		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
 		private Vector3[] v = new Vector3[30];
 		private int circular_buffer_index = 0;
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
@@ -139,7 +140,7 @@ namespace Core
 					                                    ref radial_vec);
 					rad.time += .01f;
 					v[circular_buffer_index] = radial_vec;
-					v[circular_buffer_index].Z = 500.0f;
+					v[circular_buffer_index].Z = 20.0f;
 					circular_buffer_index++;
 					if(circular_buffer_index >= v.Length)
 					{
@@ -149,17 +150,20 @@ namespace Core
 				}
 				for(int i = 0; i < v.Length; i++)
 					{
-						if(v[i].Z < 20.0f){
+						if(v[i].Z < 2.0f){
 							v[i].Z = 0.0f;}
 						else{
-							v[i].Z -= 20.0f;}
+							v[i].Z -= 2.0f;}
 					}
 				
 				
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Splashes"), v, 0, 0, v.Length);
-				time += .1f;
+				time += .001f;
+				if(time > 1.0f)
+					time = 0.0f;
 				g.graphics.SetTexture(0, height_map);
 				g.graphics.SetTexture(0, stars);
+				g.graphics.SetTexture(1, normal_map);
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
 				height_map.Dispose();
