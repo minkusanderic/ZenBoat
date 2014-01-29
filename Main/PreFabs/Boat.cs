@@ -52,22 +52,30 @@ namespace Main
 			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
 			bank_model.scale.Y *= 1.2f;
 			
+			int size_of_level = 3000;
+			// bottom
 			var b1 = SceneManager.Instance.createEntity("b1");
-			b1.Transform.Position = new Vector2(960/2, 50 + -544/2);
-			b1.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
-			
+			b1.Transform.Position = new Vector2(size_of_level/2 , 50 + -544/2 ); 
+			b1.attachComponent(new RigidBody(size_of_level, 544/2)).is_static = true;
+
+			// left
 			var b2 = SceneManager.Instance.createEntity("b2");
-			b2.Transform.Position = new Vector2(-960/2,544/2);
+			//b2.Transform.Position = new Vector2( size_of_level/2 , 544/2 );
+			b2.Transform.Position = new Vector2( -960/2 , 544/2 );
+			//b2.attachComponent(new RigidBody( size_of_level , 10 ) ).is_static = true;                             //
 			b2.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
 			
 			//top
 			var b3 = SceneManager.Instance.createEntity("b3");
-			b3.Transform.Position = new Vector2(960/2,3 * 544/2 - 30);
-			b3.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			b3.Transform.Position = new Vector2(size_of_level/2, 3 * 544/2 - 30);
+			b3.attachComponent(new RigidBody(size_of_level, 544/2)).is_static = true;
 			
+			// right
 			var b4 = SceneManager.Instance.createEntity("b4");
-			b4.Transform.Position = new Vector2(3 * 960/2 ,544/2);
-			b4.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			b4.Transform.Position = new Vector2( size_of_level , 544/2 );
+			//b4.Transform.Position = new Vector2(3 * 960/2  ,  544/2);
+			b4.attachComponent(new RigidBody(100 , 544)).is_static = true;
+			//b4.attachComponent(new RigidBody(960/2  , 544/2)).is_static = true;
 			
 			SceneManager.Instance.createEntity("ReturnToBoot")
 				.attachComponent(new SimpleController(
