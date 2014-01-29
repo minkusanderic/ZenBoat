@@ -17,6 +17,7 @@ namespace Core
 		public WaterSystem ()
 		{
 			force_vects = new Vector2[60,34];
+			
 		}
 		
 		public void SetCurrentData(int[,] down, int[,] up, int[,] left, int[,] right)
@@ -39,6 +40,7 @@ namespace Core
 		
 		public override void Update()
 		{
+			
 			foreach(var push in SceneManager.Instance.FindEntitiesByTag("pushable"))
 			{
 				for(var i = 0; i < force_vects.GetLength(0); i++)

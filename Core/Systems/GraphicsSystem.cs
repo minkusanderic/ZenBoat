@@ -42,22 +42,22 @@ namespace Core
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
 			//Console.WriteLine( boatPosition );
 			// HAndle first-left edge
-			if ( boatPosition.X > 960.0f/2.0f )
+			if ( boatPosition.X > 960.0f/2.0f + 20f)
 			{
 				// camera pos + half screen width
 				
-				if ( eps + cameraOffset < boatPosition.X - eps )
-					cameraOffset = boatPosition.X - 2*eps ;
-				if ( cameraOffset  > boatPosition.X - eps/2 )
+				if ( eps + cameraOffset < boatPosition.X - eps)
+					cameraOffset = boatPosition.X - 2*eps;
+				if ( cameraOffset  > boatPosition.X - eps/2)
 					cameraOffset = boatPosition.X - eps/2;
 				//if ( (this.camera_pos.X- 480f ) > boatPosition.X )
 				//	cameraOffset = boatPosition.X - 960.0f/2.0f;
 			}
 			else
 			{
-				if ( cameraOffset  > boatPosition.X - eps/2  )
-					cameraOffset = boatPosition.X - eps/2  ;
-				if ( cameraOffset <= 0f ) cameraOffset = 0f;
+				if ( cameraOffset  > boatPosition.X - eps/2)
+					cameraOffset = boatPosition.X - eps/2;
+				if ( cameraOffset <= 0f ) cameraOffset = 0f; // remove this to get a nice buffer on the left most edge of the level
 			}
 			
 			//cameraOffset += 1f;

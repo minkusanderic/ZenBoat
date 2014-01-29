@@ -43,9 +43,9 @@ namespace Main
 			var drag = SceneManager.Instance.createEntity("Drag");
 			Drag.create(drag, new Dictionary<String,String>());
 			
-			var water = SceneManager.Instance.createEntity("Water");
+			var water = SceneManager.Instance.createEntity("Water");	// add script to follow camera
 			water.attachComponent(new WaterComponent());
-			
+			water.attachComponent(new FollowCameraComponent() );
 			var bank = SceneManager.Instance.createEntity("Bank");
 			bank.Transform.Position = new Vector2(960/2, 544/2 + 100);
 			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank01.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);

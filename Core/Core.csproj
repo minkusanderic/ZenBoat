@@ -86,11 +86,9 @@
     <Compile Include="Components\Respawner.cs" />
     <Compile Include="Managers\SaveGameManager.cs" />
     <Compile Include="Utils\Selector.cs" />
-
     <Compile Include="Systems\ParticleSystem.cs" />
-
     <Compile Include="Utils\Timer.cs" />
-
+    <Compile Include="Components\FollowCameraComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
