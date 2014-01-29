@@ -45,6 +45,7 @@ namespace Main
 						
 						var graphics = (GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem));
 						Vector3 pos = graphics.camera_pos;
+						//pos = new Vector3( 0 , pos.Y , pos.X );
 						Vector3 dir = (graphics.camera_eye - pos).Normalize();
 						
 						Vector3 right = dir.Cross(Vector3.UnitY).Normalize();
@@ -55,7 +56,8 @@ namespace Main
 						Vector3 rel_right = td.X * (float)Math.Tan(FMath.Radians(45.0f/2.0f)) * 2 * 1.77f * right;
 						Vector3 rel_up = -td.Y * (float)Math.Tan(FMath.Radians(45.0f/2.0f)) * 2 * 1.77f * (1/ratio) * up;
 						
-						rock.Transform.Position = TouchSystem.RayCastOntoPlane(pos, dir + rel_right + rel_up).Xy;
+						Vector3 v = new Vector3( 350f , pos.Y , pos.Z );
+						rock.Transform.Position = TouchSystem.RayCastOntoPlane(v/*pos*/, dir + rel_right + rel_up).Xy;
 						//rock.attachComponent( new SuicideController( 50 ) );
 						
 						
@@ -66,8 +68,9 @@ namespace Main
 							//	rock.Transform.Position , boat.Transform.Position	) );
 							foreach( var pushable in pushables.get())
 							{
+								//Vector2 vec = new Vector2 ( rock.Transform.Position.X , rock.Transform.Position.Y );
 								if ( Vector2.Distance(
-									rock.Transform.Position , pushable.Transform.Position	)
+									 rock.Transform.Position, pushable.Transform.Position	)
 									< 150f )
 								{
 									RigidBody rb = pushable.FindComponent<RigidBody>();
@@ -84,7 +87,7 @@ namespace Main
 						{
 							
 							Entity particle = SceneManager.Instance.createEntity( "particle" + i );
-							particle.attachComponent( new RippleParticlePusher( i , rock.Transform.Position.X , rock.Transform.Position.Y		) );
+							particle.attachComponent( new RippleParticlePusher( i , rock.Transform.Position.X  , rock.Transform.Position.Y		) );
 							//particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
 							particle.attachComponent( new SuicideController( 50 ) );
 						}

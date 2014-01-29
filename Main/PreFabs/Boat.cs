@@ -37,11 +37,11 @@ namespace Main
 			ent.attachComponent( new Respawner( ent.Transform.Position ) );
 			//ent.attachComponent( new SimpleAction(move_initial));
 			
-			//var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
-			//RockSpawner.create(rockSpawner, new Dictionary<String,String>());
+			var rockSpawner = SceneManager.Instance.createEntity("RockSpawner");
+			RockSpawner.create(rockSpawner, new Dictionary<String,String>());
 			
-			var drag = SceneManager.Instance.createEntity("Drag");
-			Drag.create(drag, new Dictionary<String,String>());
+			//var drag = SceneManager.Instance.createEntity("Drag");
+			//Drag.create(drag, new Dictionary<String,String>());
 			
 			var water = SceneManager.Instance.createEntity("Water");	// add script to follow camera
 			water.attachComponent(new WaterComponent());

@@ -133,7 +133,7 @@ namespace Core
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("EyePosition"), ref Eye);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
 				
-
+				water.shaderProgram.SetUniformValue( water.shaderProgram.FindUniform("World") , ref world );
 				
 				foreach(var rad in this.radials)
 				{

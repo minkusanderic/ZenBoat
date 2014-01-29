@@ -55,6 +55,7 @@ namespace Main
 							Vector3 rel_right = td.X * (float)Math.Tan(FMath.Radians(45.0f/2.0f)) * 2 * 1.77f * right;
 							Vector3 rel_up = -td.Y * (float)Math.Tan(FMath.Radians(45.0f/2.0f)) * 2 * 1.77f * (1/ratio) * up;
 							
+							
 							rock.Transform.Position = TouchSystem.RayCastOntoPlane(pos, dir + rel_right + rel_up).Xy;
 							//rock.attachComponent( new SuicideController( 50 ) );
 							rock.attachComponent(new RadialSplash());
@@ -76,6 +77,8 @@ namespace Main
 									}
 								}
 							} 
+							rock.attachComponent( new SuicideController( 20 ) );
+							/*
 							int num_particles = 20;
 							for ( int i = 0 ; i < 360; i += num_particles )
 							{
@@ -85,7 +88,7 @@ namespace Main
 								//particle.attachComponent( new ModelComponent(	"\\Application\\resources\\Cube.mdx" ) );
 								particle.attachComponent( new SuicideController( 50 ) );
 							}
-							
+							*/			
 							break;
 						}
 					}
