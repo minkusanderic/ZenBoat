@@ -12,10 +12,10 @@ namespace Menu
     {
         public Instructions()
         {
-            backButton += HandleBackButtonAction();
+           // backButton += HandleBackButtonAction;
         }
 		
-		void HandleBackButtonButtonAction (object sender, TouchEventArgs e)
+		void HandleBackButtonAction (object sender, TouchEventArgs e)
         {
         	
         }
