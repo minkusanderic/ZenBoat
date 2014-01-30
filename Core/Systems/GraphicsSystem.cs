@@ -35,7 +35,7 @@ namespace Core
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
 		float cameraOffset = 0f;
-		float eps = 400f;
+		float eps = 300f;
 		Vector3 cameraLastPosition;
 		Vector3 UpdateCameraPosition()
 		{

@@ -232,7 +232,7 @@ namespace Main
 					{
 						for(int x = 0; x < lines[y].Length; x++)
 						{
-							bitArray[x,y] = lines[y][x] - 48;
+							//bitArray[x,y] = lines[y][x] - 48;
 						}
 					}
 					break;

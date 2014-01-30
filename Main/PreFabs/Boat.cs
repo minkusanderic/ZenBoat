@@ -51,8 +51,9 @@ namespace Main
 			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank01.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
 			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
 			bank_model.scale.Y *= 1.2f;
+			bank_model.scale.X *= 10f;
 			
-			int size_of_level = 3000;
+			int size_of_level = 10000;
 			// bottom
 			var b1 = SceneManager.Instance.createEntity("b1");
 			b1.Transform.Position = new Vector2(size_of_level/2 , 50 + -544/2 ); 
