@@ -69,6 +69,7 @@ namespace Core
 		private float time = 0.0f;
 		private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
+		private Texture2D swirl_map = new Texture2D("/Application/Assets/vectorswirl.png", false);
 		private Vector3[] v = new Vector3[30];
 		private int circular_buffer_index = 0;
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
@@ -140,9 +141,9 @@ namespace Core
 					Vector3 radial_vec = new Vector3(rad.parent.Transform.Position.X, rad.parent.Transform.Position.Y, rad.time);
 					water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Radial"),
 					                                    ref radial_vec);
-					rad.time += .01f;
+					rad.time += 30.0f;
 					v[circular_buffer_index] = radial_vec;
-					v[circular_buffer_index].Z = 20.0f;
+					v[circular_buffer_index].Z = 1000.0f;
 					circular_buffer_index++;
 					if(circular_buffer_index >= v.Length)
 					{
@@ -155,7 +156,7 @@ namespace Core
 						if(v[i].Z < 2.0f){
 							v[i].Z = 0.0f;}
 						else{
-							v[i].Z -= 2.0f;}
+							v[i].Z -= 6.0f;}
 					}
 				
 				
@@ -166,6 +167,8 @@ namespace Core
 				g.graphics.SetTexture(0, height_map);
 				g.graphics.SetTexture(0, stars);
 				g.graphics.SetTexture(1, normal_map);
+				g.graphics.SetTexture(2, swirl_map);
+				
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
 				height_map.Dispose();
