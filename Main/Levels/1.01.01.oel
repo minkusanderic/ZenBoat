@@ -257,6 +257,13 @@
     <Rock id="55" x="1092" y="68" width="50" height="50" angle="0" />
     <Rock id="61" x="1192" y="432" width="50" height="50" angle="0" />
     <Rock id="99" x="2252" y="432" width="50" height="50" angle="0" />
+    <Windmill id="100" x="1272" y="16" />
+    <Lantern id="106" x="756" y="472" />
+    <Lantern id="108" x="808" y="40" />
+    <Lantern id="109" x="1020" y="88" />
+    <Lilly id="110" x="732" y="40" angle="0" />
+    <Lilly id="114" x="876" y="112" angle="0" />
+    <Lilly id="118" x="936" y="100" angle="0" />
   </Entities>
   <Art />
 </level>

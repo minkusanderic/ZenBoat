@@ -13,7 +13,7 @@ namespace Main
 		
 		class RockSpawnerLogic : Core.Controller
 		{
-			float force = 100f;
+			float force = 50f;
 			bool touchDown = false;
 			TouchController touchController;
 			
@@ -71,6 +71,16 @@ namespace Main
 										< 150f )
 									{
 										RigidBody rb = pushable.FindComponent<RigidBody>();
+										/*
+										if ( rb.Velocity.Length() >= force*5 ) 
+										{
+											// this is terminal velocity
+											rb.applyForce ( -1*(force * new Vector2(	
+										               rb.parent.Transform.Position.X - rock.Transform.Position.X , 
+										               rb.parent.Transform.Position.Y - rock.Transform.Position.Y) ));
+										}
+										*/
+										//else
 										rb.applyForce( force*new Vector2(	
 										               rb.parent.Transform.Position.X - rock.Transform.Position.X , 
 										               rb.parent.Transform.Position.Y - rock.Transform.Position.Y) );
