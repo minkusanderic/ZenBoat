@@ -26,7 +26,6 @@ namespace Main
 			RigidBody rb = new RigidBody( Math.Min(width, height)/2 );
 			ent.attachComponent(rb);
 			rb.is_static = true;
-			ent.attachComponent(new RadialSplash());
 			
 			ent.attachComponent(new Core.SimpleController(() => {
 				List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("pushable").ToList();
