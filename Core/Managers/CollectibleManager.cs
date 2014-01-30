@@ -5,6 +5,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
+using Sce.PlayStation.HighLevel.GameEngine2D;
 
 namespace Core
 {
@@ -45,6 +46,7 @@ namespace Core
 		{
 			m_iScore ++;
 			Console.WriteLine("Crane Score: " + m_iScore);
+			
 		}
 	}
 }
