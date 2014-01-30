@@ -14,7 +14,13 @@ namespace Menu
         {
             InitializeWidget();
 			startButton.ButtonAction += HandleStartButtonButtonAction;
+			instrButton.ButtonAction += HandleInstrButtonButtonAction;
 			quitButton.ButtonAction += HandleQuitButtonButtonAction;
+        }
+
+        void HandleInstrButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	
         }
 
         void HandleQuitButtonButtonAction (object sender, TouchEventArgs e)

@@ -15,6 +15,7 @@ namespace Menu
         ImageBox titleImage;
         Button startButton;
         Button quitButton;
+        Button instrButton;
 
         private void InitializeWidget()
         {
@@ -31,6 +32,8 @@ namespace Menu
             startButton.Name = "startButton";
             quitButton = new Button();
             quitButton.Name = "quitButton";
+            instrButton = new Button();
+            instrButton.Name = "instrButton";
 
             // StartMenu
             this.RootWidget.AddChildLast(Panel_1);
@@ -41,17 +44,22 @@ namespace Menu
             Panel_1.AddChildLast(titleImage);
             Panel_1.AddChildLast(startButton);
             Panel_1.AddChildLast(quitButton);
+            Panel_1.AddChildLast(instrButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/Assets/title.png");
+            titleImage.Image = new ImageAsset("/Application/assets/title.png");
 
             // startButton
-            startButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            startButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             startButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             // quitButton
-            quitButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            quitButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             quitButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+
+            // instrButton
+            instrButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            instrButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
 
@@ -87,6 +95,11 @@ namespace Menu
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
 
+                    instrButton.SetPosition(495, 365);
+                    instrButton.SetSize(214, 56);
+                    instrButton.Anchors = Anchors.None;
+                    instrButton.Visible = true;
+
                     break;
 
                 default:
@@ -103,15 +116,20 @@ namespace Menu
                     titleImage.Anchors = Anchors.None;
                     titleImage.Visible = true;
 
-                    startButton.SetPosition(373, 299);
+                    startButton.SetPosition(373, 283);
                     startButton.SetSize(214, 56);
                     startButton.Anchors = Anchors.None;
                     startButton.Visible = true;
 
-                    quitButton.SetPosition(373, 421);
+                    quitButton.SetPosition(373, 459);
                     quitButton.SetSize(214, 56);
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
+
+                    instrButton.SetPosition(373, 369);
+                    instrButton.SetSize(214, 56);
+                    instrButton.Anchors = Anchors.None;
+                    instrButton.Visible = true;
 
                     break;
             }
@@ -123,6 +141,8 @@ namespace Menu
             startButton.Text = "Start";
 
             quitButton.Text = "Quit";
+
+            instrButton.Text = "Instructions";
         }
 
         private void onShowing(object sender, EventArgs e)

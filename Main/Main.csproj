@@ -60,10 +60,12 @@
     <Compile Include="PreFabs\ball.cs" />
     <Compile Include="PreFabs\walker.cs" />
     <Compile Include="Menus\StartMenu.cs" />
+    <Compile Include="PreFabs\Drag.cs" />
+    <Compile Include="Menus\Instructions.composer.cs" />
+    <Compile Include="Menus\Instructions.cs" />
+    <Compile Include="Menus\UIStringTable.cs" />
     <Compile Include="Menus\MenuLoader.cs" />
     <Compile Include="Menus\StartMenu.composer.cs" />
-    <Compile Include="Menus\UIStringTable.cs" />
-    <Compile Include="PreFabs\Drag.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
