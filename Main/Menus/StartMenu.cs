@@ -20,7 +20,7 @@ namespace Menu
 
         void HandleInstrButtonButtonAction (object sender, TouchEventArgs e)
         {
-        	
+        	MenuLoader.loadInstr = true;
         }
 
         void HandleQuitButtonButtonAction (object sender, TouchEventArgs e)

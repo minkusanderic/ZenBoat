@@ -126,7 +126,7 @@ namespace Menu
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
 
-                    instrButton.SetPosition(373, 369);
+                    instrButton.SetPosition(373, 371);
                     instrButton.SetSize(214, 56);
                     instrButton.Anchors = Anchors.None;
                     instrButton.Visible = true;

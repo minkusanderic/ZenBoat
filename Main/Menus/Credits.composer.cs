@@ -9,11 +9,10 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Menu
 {
-    partial class Instructions
+    partial class Credits
     {
         Panel Panel_1;
-        Button backButton;
-        Label Label_1;
+        Button continueButton;
 
         private void InitializeWidget()
         {
@@ -24,29 +23,20 @@ namespace Menu
         {
             Panel_1 = new Panel();
             Panel_1.Name = "Panel_1";
-            backButton = new Button();
-            backButton.Name = "backButton";
-            Label_1 = new Label();
-            Label_1.Name = "Label_1";
+            continueButton = new Button();
+            continueButton.Name = "continueButton";
 
-            // Instructions
+            // Credits
             this.RootWidget.AddChildLast(Panel_1);
 
             // Panel_1
             Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Panel_1.Clip = true;
-            Panel_1.AddChildLast(backButton);
-            Panel_1.AddChildLast(Label_1);
+            Panel_1.AddChildLast(continueButton);
 
-            // backButton
-            backButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            backButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-
-            // Label_1
-            Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
-            Label_1.Font = new UIFont(FontAlias.System, 44, FontStyle.Regular);
-            Label_1.LineBreak = LineBreak.Character;
-            Label_1.HorizontalAlignment = HorizontalAlignment.Center;
+            // continueButton
+            continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
 
@@ -62,20 +52,15 @@ namespace Menu
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    Panel_1.SetPosition(337, 159);
+                    Panel_1.SetPosition(683, 163);
                     Panel_1.SetSize(100, 100);
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    backButton.SetPosition(687, 421);
-                    backButton.SetSize(214, 56);
-                    backButton.Anchors = Anchors.None;
-                    backButton.Visible = true;
-
-                    Label_1.SetPosition(-19, 43);
-                    Label_1.SetSize(214, 36);
-                    Label_1.Anchors = Anchors.None;
-                    Label_1.Visible = true;
+                    continueButton.SetPosition(696, 425);
+                    continueButton.SetSize(214, 56);
+                    continueButton.Anchors = Anchors.None;
+                    continueButton.Visible = true;
 
                     break;
 
@@ -84,19 +69,14 @@ namespace Menu
                     this.DesignHeight = 544;
 
                     Panel_1.SetPosition(0, 0);
-                    Panel_1.SetSize(959, 543);
+                    Panel_1.SetSize(960, 544);
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    backButton.SetPosition(372, 455);
-                    backButton.SetSize(214, 56);
-                    backButton.Anchors = Anchors.None;
-                    backButton.Visible = true;
-
-                    Label_1.SetPosition(66, 25);
-                    Label_1.SetSize(827, 396);
-                    Label_1.Anchors = Anchors.None;
-                    Label_1.Visible = true;
+                    continueButton.SetPosition(716, 463);
+                    continueButton.SetSize(214, 56);
+                    continueButton.Anchors = Anchors.None;
+                    continueButton.Visible = true;
 
                     break;
             }
@@ -105,9 +85,7 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            backButton.Text = "Back";
-
-            Label_1.Text = "Click the water to move.\r\n\r\nCollect the cranes.\r\n\r\nAvoid the whirlpools.\r\n\r\nRelax and have fun.";
+            continueButton.Text = "Continue";
         }
 
         private void onShowing(object sender, EventArgs e)

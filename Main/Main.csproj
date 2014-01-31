@@ -66,6 +66,8 @@
     <Compile Include="Menus\UIStringTable.cs" />
     <Compile Include="Menus\MenuLoader.cs" />
     <Compile Include="Menus\StartMenu.composer.cs" />
+    <Compile Include="Menus\Credits.composer.cs" />
+    <Compile Include="Menus\Credits.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

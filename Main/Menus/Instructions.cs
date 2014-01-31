@@ -12,12 +12,13 @@ namespace Menu
     {
         public Instructions()
         {
-           // backButton += HandleBackButtonAction;
+			InitializeWidget();
+			backButton.ButtonAction += HandleBackButtonAction;
         }
 		
 		void HandleBackButtonAction (object sender, TouchEventArgs e)
         {
-        	
+        	MenuLoader.loadStart = true;
         }
     }
 }

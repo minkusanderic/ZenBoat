@@ -1,0 +1,14 @@
+﻿
+Unhandled Exception: System.ArgumentException: texture size is 0
+Parameter name: texture
+  at Sce.PlayStation.HighLevel.UI.ImageAsset..ctor (Sce.PlayStation.Core.Graphics.Texture2D texture) [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.ImageAsset..ctor (Sce.PlayStation.Core.Graphics.Texture2D texture, Boolean scaledPixelDensity) [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.LiveScrollPanel.setTexture () [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.LiveScrollPanel.internalUpdate (Single elapsedTime) [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.LiveScrollPanel.OnUpdate (Single elapsedTime) [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.Widget.updateForEachDescendant (Single elapsedTime) [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.Scene.Update (Single elapsedTime) [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.UISystem.UpdateFrame () [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.UISystem.UpdateSystem () [0x00000] in <filename unknown>:0 
+  at Sce.PlayStation.HighLevel.UI.UISystem.Update (System.Collections.Generic.List`1 touchDataList, Sce.PlayStation.Core.Input.GamePadData& gamePadData) [0x00000] in <filename unknown>:0 
+  at Preview.__DummyProgram.Main (System.String[] args) [0x00000] in <filename unknown>:0 
