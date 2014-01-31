@@ -16,6 +16,8 @@ namespace Core
 		{
 			l = new Label();
 			l.Text = "Hello";
+			l.X = 0;
+			l.Y = 0;
 		}
 	}
 }

@@ -6,8 +6,10 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Environment ;
 using Sce.PlayStation.HighLevel.Model ;
+using Sce.PlayStation.HighLevel.UI ;
 using System.Threading ;
 using System.Diagnostics ;
+
 namespace Core
 {
 	public class GraphicsSystem : Core.CoreSystem
@@ -19,6 +21,7 @@ namespace Core
 		
 		public GraphicsContext graphics;
 		public BasicProgram program;
+		public Scene scene;
 		
 		public Vector3 camera_pos = new Vector3();
 		public Vector3 camera_eye = new Vector3();
@@ -31,6 +34,7 @@ namespace Core
 		{
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
+			scene = new Scene();
 			Timer.Init();
 		
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
@@ -68,6 +72,8 @@ namespace Core
 		
 		public override void Update() // Render here
 		{
+			UISystem.Initialize(graphics);
+			
 			Timer.StartFrame();
 			this.camera_pos = UpdateCameraPosition();
 			cameraLastPosition = this.camera_pos;
@@ -166,17 +172,26 @@ namespace Core
 				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 			}
 			
-			foreach(var label in labels)
-			{
-				// Update all of the text components
-			}
+//			foreach(var label in labels)
+//			{
+//				scene.RootWidget.AddChildLast(label);
+//			}
+			Label count = new Label();
+			count.Text = "Count: " + CollectibleManager.m_iScore;
+			count.X = 1.0f;
+			count.Y = 1.0f;
+			count.Width = 100.0f;
+			scene.RootWidget.AddChildFirst(count);
+			UISystem.SetScene(scene, null);
 	
 			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view);
 			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
-	
+			
+			graphics.Clear();
+			UISystem.Render();
 			graphics.SwapBuffers() ;
 			Timer.EndFrame();
 		}

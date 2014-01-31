@@ -13,7 +13,7 @@ namespace Core
 		static bool 		m_bInitialized 		= false;
 		static string 		m_sFilPath 			= "SavedGame";
 		static string 		m_sCurrentLevel		= ""; // main menu?
-		static int 			m_iScore 			= 0;
+		public static int 			m_iScore 			= 0;
 		
 		
 		static Dictionary<string /*Entity*/, string/*Saved Info*/> m_dDictionary;
