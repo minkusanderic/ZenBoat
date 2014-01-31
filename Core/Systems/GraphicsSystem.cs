@@ -190,7 +190,6 @@ namespace Core
 			graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
 			
-			graphics.Clear();
 			UISystem.Render();
 			graphics.SwapBuffers() ;
 			Timer.EndFrame();
