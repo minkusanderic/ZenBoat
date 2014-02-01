@@ -8,13 +8,15 @@ namespace Core
 {
 	public class CollectibleTrigger : TriggerComponent
 	{
-		public CollectibleTrigger () : base(SceneManager.Instance.Select("boat"))
+		int collectibleScore;
+		public CollectibleTrigger (int worth) : base(SceneManager.Instance.Select("boat"))
 		{
+			collectibleScore = worth;
 		}
 		
 		public override void onCollide(Entity target)
 		{
-			CollectibleManager.CollectItem( this.parent.Name );
+			CollectibleManager.CollectItem( this.parent.Name , collectibleScore );
 			this.parent.Destroy();
 		}
 	}
