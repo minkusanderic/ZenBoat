@@ -14,7 +14,7 @@ namespace Main
 		{
 		}
 		
-		static bool beenBumped;
+		
 		
 		public static void create (Entity ent, Dictionary<String, String> options)
 		{
@@ -26,14 +26,14 @@ namespace Main
 			
 			RigidBody rb = new RigidBody (1f, 272f);
 
-			
+			bool beenBumped = false;
 			ent.attachComponent (rb);
 			var targets = SceneManager.Instance.Select("boat");
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
 														if ( !beenBumped )
-														{
+				{
 															beenBumped = true;
 															Console.WriteLine ("You've reached a checkpoint!");
 															SaveGameManager.toRespawn.Clear(); 
@@ -51,7 +51,7 @@ namespace Main
 															}
 															// clears the list of things that need to be respawned
 															// this also leaves the entites "UnEnabled"
-														}
+				}
 														}
 													)	
 			                    );
