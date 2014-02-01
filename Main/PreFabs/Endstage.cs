@@ -14,6 +14,8 @@ namespace Main
 		{
 		}
 		
+		static bool beenBumped;
+		
 		public static void create (Entity ent, Dictionary<String, String> options)
 		{
 			ent.Name = "EndStage";
@@ -23,34 +25,33 @@ namespace Main
 			//m.scale = new Vector2 (5.0f, 5.0f);
 			
 			RigidBody rb = new RigidBody (1f, 272f);
-			//rb.body = new PhysicsBody ();
-			rb.is_static = true;
+
 			
 			ent.attachComponent (rb);
 			var targets = SceneManager.Instance.Select("boat");
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
-														Console.WriteLine ("You've reached a checkpoint!");
-														SaveGameManager.toRespawn.Clear(); // clears the list of things that need to be respawned
-														Respawner r = t.FindComponent<Respawner>();
-														r.SetOriginalPosition( ent.Transform.Position );
-														/*
-														Respawner r = t.FindComponent<Respawner> ();
-														if (r != null) {
-															RigidBody rib = t.FindComponent<RigidBody> ();
-															r.ResetPosition ();	
-															//rib.updateTransformData ();	
-															rib.Velocity = new Vector2 (0f, 0f);
-														}
-														*/
-														/*
-														if(options.ContainsKey("NextLevel") && (options["NextLevel"] != ""))
+														if ( !beenBumped )
 														{
-															SceneManager.Instance.DestroyAll ();
-															LevelLoader.Load("/Application/Levels/" + options["NextLevel"]);
+															beenBumped = true;
+															Console.WriteLine ("You've reached a checkpoint!");
+															SaveGameManager.toRespawn.Clear(); 
+															CollectibleManager.SetLevelScore();
+															if ( t.HasTag("boat" ) )
+															{
+																Respawner r = (Respawner)t.FindComponent<Respawner>();
+																Vector2 v = new Vector2( ent.Transform.Position.X + 20f , ent.Transform.Position.Y );
+																r.SetOriginalPosition( v );
+																
+																ent.Transform.Position = new Vector2( ent.Transform.Position.X - 60f , ent.Transform.Position.Y );
+																rb = new RigidBody( 1f , 272f );
+																rb.is_static = true;
+																ent.attachComponent( rb );
+															}
+															// clears the list of things that need to be respawned
+															// this also leaves the entites "UnEnabled"
 														}
-														*/
 														}
 													)	
 			                    );

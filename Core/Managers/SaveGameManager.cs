@@ -168,6 +168,7 @@ namespace Core
 				}
 				e.Enabled = true; // wake them back up
 			}
+			CollectibleManager.ClearStageScore();
 		}
 	}
 }

@@ -54,6 +54,7 @@ namespace Main
 																r.ResetPosition();
 																// reload all the saved Entities that were hidden
 																SaveGameManager.RespawnEntities();
+																CollectibleManager.PrintScore();
 															}
 															RigidBody rib = t.FindComponent<RigidBody>();
 															r.ResetPosition();
@@ -64,10 +65,10 @@ namespace Main
 														SaveGameManager.toRespawn.Add( t );
 														t.Enabled = false; // t is any "pushable"
 														if(t.HasTag("driftwood"))
-					{
-						SaveGameManager.toRespawn.Add( ent ); // adds the Whirlpool to the respawn list
-						ent.Enabled = false;	// hides the Whirlpool
-					}
+														{
+															SaveGameManager.toRespawn.Add( ent ); // adds the Whirlpool to the respawn list
+															ent.Enabled = false;	// hides the Whirlpool
+														}
 												}
 													}));
 			

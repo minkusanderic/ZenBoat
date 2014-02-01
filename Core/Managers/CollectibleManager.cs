@@ -14,7 +14,8 @@ namespace Core
 		static bool 		initialized 		= false;
 		static string 		filePath 			= "SavedGame";
 		static string 		currentLevel		= ""; 	// main menu?
-		static int 			score 				= 0;	// Running total for the crane score
+		static int 			levelScore 			= 0;	
+		static int 			stageScore 			= 0;	// Running total for the crane score, level total?
 		static int 			multiplier 			= 1;
 		static bool 		touched 			= false;
 		static int 			maxMultiplier 		= 5;
@@ -58,12 +59,30 @@ namespace Core
 				touched = false;
 				multiplier = 1;
 			}
-			score += (worth * multiplier++);	// take the crane value
-			Console.WriteLine("Crane Score: " + score + "\t" + multiplier  );
+			stageScore += (worth * multiplier++ );	// take the crane value
+			PrintScore();
+			
 			if ( multiplier > maxMultiplier )
 				multiplier = maxMultiplier;
 			SaveGameManager.toRespawn.Add( ent );
 		
+		}
+		
+		public static void SetLevelScore()
+		{
+			levelScore += stageScore;
+			stageScore = 0;
+		}
+		/// <summary>
+		/// Clears the stage score which is inbetween each checkpoint
+		/// </summary>
+		public static void ClearStageScore()
+		{
+			stageScore = 0; // because you died and need to respawn the cranes
+		}
+		public static void PrintScore()
+		{
+			Console.WriteLine("Level Score: " + levelScore + "\tStage Score: " + stageScore);	
 		}
 	}
 }
