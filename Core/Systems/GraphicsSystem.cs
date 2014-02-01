@@ -27,6 +27,8 @@ namespace Core
 		public Vector3 camera_pos = new Vector3();
 		public Vector3 camera_eye = new Vector3();
 		
+		private Texture2D toon;
+		
 		private float time = 0.0f;
 		
 		//private Dictionary<String, Texture2D> textures = new Dictionary<String, Texture2D>();
@@ -49,18 +51,9 @@ namespace Core
 		Vector3 UpdateCameraPosition()
 		{
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
-<<<<<<< HEAD
 			//Console.WriteLine( boatPosition );
 			// HAndle first-left edge
 			if ( boatPosition.X > 960.0f/2.0f + 20f)
-=======
-			//Console.WriteLine( boatPosition );
-
-			// HAndle first-left edge
->>>>>>> cf82ff612e3b508e7df59e36420d00cc2f8c0ddf
-			// Handle first-left edge
-			if ( boatPosition.X > 960.0f/2.0f )
-			{
 				// camera pos + half screen width
 				
 				if ( eps + cameraOffset < boatPosition.X - eps)
@@ -129,7 +122,14 @@ namespace Core
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			
-			//  adjust position
+			//adjust position
+			
+			//Setup Model Shader
+			//var basic_parameters = new BasicParameters();
+			var basic_program = new BasicProgram("/Application/shaders/Basic.cgx" , null , parameters );
+			//var basic_program_container = new BasicProgramContainer( basic_parameters );
+			//basic_program_container.Add("SIMPLE", basic_program);
+			
 			
 			foreach(var model in models)
 			{
@@ -148,12 +148,13 @@ namespace Core
 					world *= Matrix4.RotationY (-model.parent.Transform.Rotation.Angle(Vector2.UnitX));
 					
 				}
-					
+				//model.model.BindPrograms( basic_program_container );
 			    //  draw model, animate model
 				model.model.SetWorldMatrix( ref world ) ;
 				model.model.Animate( .01f ) ;
 				model.model.Update() ;
-				model.model.Draw(graphics, program) ;
+				graphics.SetTexture(1, toon);
+				model.model.Draw(graphics, basic_program) ;
 			}
 			
 			foreach(var sprite in sprites)

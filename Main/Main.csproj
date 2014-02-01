@@ -66,8 +66,6 @@
     <Compile Include="Menus\UIStringTable.cs" />
     <Compile Include="Menus\MenuLoader.cs" />
     <Compile Include="Menus\StartMenu.composer.cs" />
-    <Compile Include="Menus\Credits.composer.cs" />
-    <Compile Include="Menus\Credits.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -76,6 +74,10 @@
     <ShaderProgram Include="shaders\Sprite.vcg" />
     <ShaderProgram Include="shaders\Water.fcg" />
     <ShaderProgram Include="shaders\Water.vcg" />
+    <ShaderProgram Include="shaders\Basic.fcg" />
+    <ShaderProgram Include="shaders\Basic.vcg" />
+    <ShaderProgram Include="shaders\Toon.fcg" />
+    <ShaderProgram Include="shaders\Toon.vcg" />
   </ItemGroup>
   <ItemGroup>
     <PsmMetadata Include="app.xml" />
@@ -164,5 +166,6 @@
     <Content Include="Assets\vectorswirl.png" />
     <Content Include="Assets\OrigamiBoat.mdx" />
     <Content Include="Assets\lilypad.mdx" />
+    <Content Include="Assets\toon.png" />
   </ItemGroup>
 </Project>

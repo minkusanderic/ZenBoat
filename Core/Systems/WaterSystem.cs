@@ -65,9 +65,9 @@ namespace Core
 			}
 		}
 		
-		private Texture2D stars = new Texture2D("/Application/Assets/Skymidday.png", true);
+		private Texture2D stars = new Texture2D("/Application/Assets/Skymidday.png", false);
 		private float time = 0.0f;
-		private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
+		//private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
 		private Texture2D swirl_map = new Texture2D("/Application/Assets/vectorswirl.png", false);
 		private Vector3[] v = new Vector3[30];
@@ -81,19 +81,19 @@ namespace Core
 				Matrix4 world = Matrix4.Identity ;
 				
 				//				FrameBuffer off_screen = new FrameBuffer();
-				height_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
+				//height_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
 //				off_screen.SetColorTarget(height_map, 0);
 //				
-				uint[,] p = new uint[100,100];
-				for(int i = 0; i < 100; i++)
-				{
-					for(int j = 0; j < 100; j++)
-					{
-						p[i,j] = 0x77770000 + 5 *(uint)i;
-					}
-				}
+				//uint[,] p = new uint[100,100];
+				//for(int i = 0; i < 100; i++)
+				//{
+				//	for(int j = 0; j < 100; j++)
+				//	{
+				//		p[i,j] = 0x77770000 + 5 *(uint)i;
+				//	}
+				//}
 				
-				height_map.SetPixels(0, p, PixelFormat.Rgba);
+				//height_map.SetPixels(0, p, PixelFormat.Rgba);
 				
 				//var cel_shading = new Texture2D(new byte[] {}, false);
 				
@@ -130,7 +130,7 @@ namespace Core
 				
 
 				//program.Parameters.SetWorldMatrix(0, ref world);
-				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
+				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("WorldViewProj"), ref world_view_proj);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("EyePosition"), ref Eye);
 				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
 				
@@ -164,14 +164,14 @@ namespace Core
 				time += .001f;
 				if(time > 1.0f)
 					time = 0.0f;
-				g.graphics.SetTexture(0, height_map);
+				//g.graphics.SetTexture(0, height_map);
 				g.graphics.SetTexture(0, stars);
 				g.graphics.SetTexture(1, normal_map);
 				g.graphics.SetTexture(2, swirl_map);
 				
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
-				height_map.Dispose();
+				//height_map.Dispose();
 			}
 		}
 		
