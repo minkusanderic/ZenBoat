@@ -9,15 +9,12 @@ namespace Core
 {
 	public class LabelComponent : GraphicsComponent
 	{
-		private GraphicsContext graphics = new GraphicsContext();
-		private Label l;
+		public Label label;
 		
-		public LabelComponent ()
+		public LabelComponent (string title)
 		{
-			l = new Label();
-			l.Text = "Hello";
-			l.X = 0;
-			l.Y = 0;
+			label = new Label();
+			label.Text = title;
 		}
 	}
 }

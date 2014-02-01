@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Sce.PlayStation.Core;
-
+using Sce.PlayStation.HighLevel.UI;
 using Sce.PlayStation.Core.Input;
 
 using Core;
@@ -64,6 +64,19 @@ namespace Main
 			var b4 = SceneManager.Instance.createEntity("b4");
 			b4.Transform.Position = new Vector2(3 * 960/2 ,544/2);
 			b4.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
+			
+			// Crane Counter
+			//var counter = ent.attachComponent(new LabelComponent("Count: "));
+			var counter = SceneManager.Instance.createEntity("counter");
+			var label = counter.attachComponent(new LabelComponent("Count: "));
+			counter.Transform.Position.X = 1.0f;
+			counter.Transform.Position.Y = 1.0f;
+			label.label.Text += CollectibleManager.m_iScore;
+			
+			counter.attachComponent(new SimpleController(
+					() => {
+						label.label.Text = "Count: " + CollectibleManager.m_iScore;
+			}));
 			
 			SceneManager.Instance.createEntity("ReturnToBoot")
 				.attachComponent(new SimpleController(

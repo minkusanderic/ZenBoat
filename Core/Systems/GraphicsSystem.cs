@@ -22,6 +22,7 @@ namespace Core
 		public GraphicsContext graphics;
 		public BasicProgram program;
 		public Scene scene;
+		public Label count;
 		
 		public Vector3 camera_pos = new Vector3();
 		public Vector3 camera_eye = new Vector3();
@@ -35,7 +36,10 @@ namespace Core
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
 			scene = new Scene();
+			count = new Label();
 			Timer.Init();
+			
+			UISystem.Initialize(graphics);
 		
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
@@ -45,8 +49,8 @@ namespace Core
 		Vector3 UpdateCameraPosition()
 		{
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
-			Console.WriteLine( boatPosition );
-			// HAndle first-left edge
+			//Console.WriteLine( boatPosition );
+			// Handle first-left edge
 			if ( boatPosition.X > 960.0f/2.0f )
 			{
 				// camera pos + half screen width
@@ -71,9 +75,8 @@ namespace Core
 		
 		
 		public override void Update() // Render here
-		{
-			UISystem.Initialize(graphics);
-			
+		{	
+			UISystem.SetScene(scene, null);
 			Timer.StartFrame();
 			this.camera_pos = UpdateCameraPosition();
 			cameraLastPosition = this.camera_pos;
@@ -172,17 +175,11 @@ namespace Core
 				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 			}
 			
-//			foreach(var label in labels)
+//			foreach(var l in labels)
 //			{
-//				scene.RootWidget.AddChildLast(label);
+//				l.label.Text = l.title + l.number;
 //			}
-			Label count = new Label();
-			count.Text = "Count: " + CollectibleManager.m_iScore;
-			count.X = 1.0f;
-			count.Y = 1.0f;
-			count.Width = 100.0f;
-			scene.RootWidget.AddChildFirst(count);
-			UISystem.SetScene(scene, null);
+			
 	
 			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view);
 			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
@@ -210,6 +207,9 @@ namespace Core
 			if(comp is LabelComponent)
 			{
 				labels.Add((LabelComponent)comp);
+				scene.RootWidget.AddChildFirst(((LabelComponent)comp).label);
+				((LabelComponent)comp).label.X = comp.parent.Transform.Position.X;
+				((LabelComponent)comp).label.Y = comp.parent.Transform.Position.Y;
 			}
 			
 		}
