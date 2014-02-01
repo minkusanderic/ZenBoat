@@ -11,18 +11,18 @@ namespace Core
 {
 	public static class CollectibleManager
 	{
-		static bool 		m_bInitialized 		= false;
-		static string 		m_sFilPath 			= "SavedGame";
-		static string 		m_sCurrentLevel		= ""; // main menu?
-		static int 			m_iScore 			= 0;
-		
+		static bool 		initialized 		= false;
+		static string 		filePath 			= "SavedGame";
+		static string 		currentLevel		= ""; // main menu?
+		static int 			score 				= 0;
+		static float 		multiplier 			= 1f;
 		
 		static Dictionary<string /*Entity*/, string/*Saved Info*/> m_dDictionary;
 		
 		
 		public static void Init()
 		{
-			m_bInitialized 	= true;
+			initialized 	= true;
 			m_dDictionary 	= new Dictionary<string, string>();
 
 			// Readin saved game data.
@@ -44,8 +44,8 @@ namespace Core
 		
 		public static void CollectItem(	string id )
 		{
-			m_iScore ++;
-			Console.WriteLine("Crane Score: " + m_iScore);
+			score ++;
+			Console.WriteLine("Crane Score: " + score);
 			
 		}
 	}
