@@ -16,6 +16,8 @@ namespace Core
 		static string 		currentLevel		= ""; 	// main menu?
 		static int 			score 				= 0;	// Running total for the crane score
 		static int 			multiplier 			= 1;
+		static bool 		touched 			= false;
+		static int 			maxMultiplier 		= 5;
 		
 		static Dictionary<string /*Entity*/, string/*Saved Info*/> dictionary;	// load this from the SaveGame Manager
 		
@@ -31,6 +33,12 @@ namespace Core
 			// Modify the Level ( Check the ID's of the Entities )
 		}
 		
+		public static bool Touched
+		{
+			get{ return touched;}
+			set{ touched = value;}
+		}
+		
 		public static bool SaveGame()
 		{
 			return false;
@@ -41,11 +49,20 @@ namespace Core
 			return false;
 		}
 		
+		
 		public static void CollectItem(	string id , int worth)
 		{
-			score += (worth * multiplier);	// take the crane value
-			Console.WriteLine("Crane Score: " + score);
-			
+			// check if the screen has been touched.
+			if ( touched )
+			{
+				touched = false;
+				multiplier = 1;
+			}
+			score += (worth * multiplier++);	// take the crane value
+			Console.WriteLine("Crane Score: " + score /*+ "\t" + multiplier */ );
+			if ( multiplier > maxMultiplier )
+				multiplier = maxMultiplier;
+		
 		}
 	}
 }

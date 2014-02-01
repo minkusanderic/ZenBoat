@@ -27,6 +27,8 @@ namespace Core
 		public override void Update()
 		{
 			touch_data = Touch.GetData(0);
+			if ( touch_data.Capacity != 0)
+				CollectibleManager.Touched = true;
 		}
 		public List<TouchData> getTouchData()
 		{
