@@ -80,13 +80,14 @@ namespace Main
 			
 			// Crane Counter
 			var counter = SceneManager.Instance.createEntity("counter");
-			var label = counter.attachComponent(new LabelComponent("Count: "));
+			var label = counter.attachComponent(new LabelComponent("Score: "));
 			counter.Transform.Position.X = 1.0f;
 			counter.Transform.Position.Y = 1.0f;
 			
 			counter.attachComponent(new SimpleController(
 					() => {
-						label.label.Text = "Count: " + CollectibleManager.m_iScore;
+						int sum = CollectibleManager.levelScore + CollectibleManager.stageScore;
+						label.label.Text = "Score: " + sum;
 			}));
 			
 			SceneManager.Instance.createEntity("ReturnToBoot")

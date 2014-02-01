@@ -14,15 +14,14 @@ namespace Core
 		static bool 		initialized 		= false;
 		static string 		filePath 			= "SavedGame";
 		static string 		currentLevel		= ""; 	// main menu?
-		static int 			levelScore 			= 0;	
-		static int 			stageScore 			= 0;	// Running total for the crane score, level total?
+		public static int 			levelScore 			= 0;	
+		public static int 			stageScore 			= 0;	// Running total for the crane score, level total?
 		static int 			multiplier 			= 1;
 		static bool 		touched 			= false;
 		static int 			maxMultiplier 		= 5;
 		static bool 		m_bInitialized 		= false;
 		static string 		m_sFilPath 			= "SavedGame";
 		static string 		m_sCurrentLevel		= ""; // main menu?
-		public static int 			m_iScore 			= 0;
 		
 		static Dictionary<string /*Entity*/, string/*Saved Info*/> dictionary;	// load this from the SaveGame Manager
 		
