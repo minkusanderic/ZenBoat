@@ -36,10 +36,10 @@ namespace Core
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
 			scene = new Scene();
-			count = new Label();
 			Timer.Init();
 			
 			UISystem.Initialize(graphics);
+			UISystem.SetScene(scene, null);
 		
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
@@ -186,7 +186,6 @@ namespace Core
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
-			
 			UISystem.Render();
 			graphics.SwapBuffers() ;
 			Timer.EndFrame();
@@ -229,6 +228,7 @@ namespace Core
 			if ( comp is LabelComponent )
 			{
 				labels.Remove((LabelComponent)comp);
+				scene.RootWidget.RemoveChild(((LabelComponent)comp).label);
 			}
 			//base.destroyComponent (comp);
 		}

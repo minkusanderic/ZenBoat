@@ -66,12 +66,10 @@ namespace Main
 			b4.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
 			
 			// Crane Counter
-			//var counter = ent.attachComponent(new LabelComponent("Count: "));
 			var counter = SceneManager.Instance.createEntity("counter");
 			var label = counter.attachComponent(new LabelComponent("Count: "));
 			counter.Transform.Position.X = 1.0f;
 			counter.Transform.Position.Y = 1.0f;
-			label.label.Text += CollectibleManager.m_iScore;
 			
 			counter.attachComponent(new SimpleController(
 					() => {
