@@ -29,6 +29,7 @@ namespace Main
 			//rb.body.SetBodyTrigger();
 			
 			ent.attachComponent(new CollectibleTrigger(craneScore));
+			ent.attachComponent(new Respawner( ent.Transform.Position ) );
 		}
 	}
 }

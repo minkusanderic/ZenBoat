@@ -50,7 +50,7 @@ namespace Core
 		}
 		
 		
-		public static void CollectItem(	string id , int worth)
+		public static void CollectItem( Entity ent,	string id , int worth )
 		{
 			// check if the screen has been touched.
 			if ( touched )
@@ -62,6 +62,7 @@ namespace Core
 			Console.WriteLine("Crane Score: " + score + "\t" + multiplier  );
 			if ( multiplier > maxMultiplier )
 				multiplier = maxMultiplier;
+			SaveGameManager.toRespawn.Add( ent );
 		
 		}
 	}

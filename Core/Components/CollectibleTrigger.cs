@@ -16,8 +16,8 @@ namespace Core
 		
 		public override void onCollide(Entity target)
 		{
-			CollectibleManager.CollectItem( this.parent.Name , collectibleScore );
-			this.parent.Destroy();
+			CollectibleManager.CollectItem(this.parent,  this.parent.Name , collectibleScore );
+			this.parent.Enabled = false;
 		}
 	}
 }

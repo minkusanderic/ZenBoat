@@ -31,7 +31,11 @@ namespace Main
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
-														Console.WriteLine ("You've reached the end of the stage!");		
+														Console.WriteLine ("You've reached a checkpoint!");
+														SaveGameManager.toRespawn.Clear(); // clears the list of things that need to be respawned
+														Respawner r = t.FindComponent<Respawner>();
+														r.SetOriginalPosition( ent.Transform.Position );
+														/*
 														Respawner r = t.FindComponent<Respawner> ();
 														if (r != null) {
 															RigidBody rib = t.FindComponent<RigidBody> ();
@@ -39,11 +43,14 @@ namespace Main
 															//rib.updateTransformData ();	
 															rib.Velocity = new Vector2 (0f, 0f);
 														}
+														*/
+														/*
 														if(options.ContainsKey("NextLevel") && (options["NextLevel"] != ""))
 														{
 															SceneManager.Instance.DestroyAll ();
 															LevelLoader.Load("/Application/Levels/" + options["NextLevel"]);
 														}
+														*/
 														}
 													)	
 			                    );

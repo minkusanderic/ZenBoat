@@ -28,6 +28,7 @@ namespace Core
 		{
 			foreach(var cont in this.controllers)
 			{
+				if ( !cont.parent.Enabled ) continue;
 				cont.Update();
 			}
 			

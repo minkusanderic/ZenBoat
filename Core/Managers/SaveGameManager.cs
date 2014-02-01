@@ -42,7 +42,8 @@ namespace Core
 		
 		private static string save_game_file_path = @"/Documents/saveGame.xml";
 		private static Dictionary<string , string> strings;
-
+		public 	static List<Entity> toRespawn;
+		
 		/// <summary>
 		/// Gets the init.
 		/// </summary>
@@ -61,7 +62,7 @@ namespace Core
 		{
 			_init = true;
 			strings = new Dictionary<string, string>();
-			
+			toRespawn = new List<Entity>();
 			const string DATA = 
 				"<SaveGame>" +
 				"\n\r\t<Strings>" +
@@ -156,7 +157,18 @@ namespace Core
 			return false;
 		}
 
-		
+		public static void RespawnEntities()
+		{
+			foreach( Entity e in toRespawn )
+			{
+				Respawner r = (Respawner)e.FindComponent<Respawner>();
+				if ( r != null ) 
+				{
+					r.ResetPosition();
+				}
+				e.Enabled = true; // wake them back up
+			}
+		}
 	}
 }
 

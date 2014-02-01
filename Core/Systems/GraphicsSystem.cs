@@ -115,6 +115,7 @@ namespace Core
 			
 			foreach(var model in models)
 			{
+				if ( !model.parent.Enabled ) continue;
 				Matrix4 world = Matrix4.Identity ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {

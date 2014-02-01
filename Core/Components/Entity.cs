@@ -13,6 +13,7 @@ namespace Core
 		public String Name
 		{get;set;}
 		
+		public bool Enabled = true;	// by default an Entity is Enabled
 		
 		private HashSet<String> tags = new HashSet<String>();
 		

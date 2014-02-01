@@ -21,7 +21,7 @@ namespace Main
 			
 			RigidBody rb = new RigidBody(50, 15);
 			ent.attachComponent(rb);
-			
+			ent.attachComponent( new Respawner( ent.Transform.Position ) );
 		}
 	}
 }

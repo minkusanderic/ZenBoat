@@ -78,17 +78,29 @@ namespace Core
 		{
 			foreach(var body in this.bodies)
 			{
+				if ( !body.parent.Enabled ) 
+				{
+					body.body.Sleep = true;
+					continue;
+				}
+				else
+				{
+					body.body.Sleep = false;
+				}
 				body.body.position = body.parent.Transform.Position;
 				body.body.Rotation = Vector2.Angle(Vector2.UnitX, body.parent.Transform.Rotation);
 			}
 			physics.Simulate();
 			foreach(var body in this.bodies)
 			{
+				if ( !body.parent.Enabled ) continue;
+				
 				body.parent.Transform.Position = body.body.position;
 				body.parent.Transform.Rotation = Vector2.UnitX.Rotate(body.body.Rotation);
 			}
 			foreach(var trigger in this.triggers)
 			{
+				if ( !trigger.parent.Enabled ) continue;
 				trigger.Update();
 			}
 			

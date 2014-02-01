@@ -224,7 +224,7 @@
     <Crane id="86" x="7240" y="268" />
     <Crane id="87" x="7340" y="264" />
     <Crane id="88" x="7412" y="280" />
-    <Torii id="89" x="9872" y="244" NextLevel="" />
+    <Torii id="89" x="1872" y="244" NextLevel="" />
     <Lillypad id="90" x="576" y="36" width="50" height="40" angle="0" />
     <Lillypad id="91" x="732" y="52" width="50" height="40" angle="0" />
     <Lillypad id="92" x="676" y="512" width="50" height="40" angle="0" />
@@ -264,6 +264,14 @@
     <Lilly id="110" x="732" y="40" angle="0" />
     <Lilly id="114" x="876" y="112" angle="0" />
     <Lilly id="118" x="936" y="100" angle="0" />
+    <Endstage id="120" x="3064" y="272" NextLevel="" />
+    <Endstage id="119" x="1304" y="248" NextLevel="" />
+    <Crane id="121" x="1164" y="184" />
+    <Crane id="122" x="1168" y="248" />
+    <Crane id="123" x="1172" y="320" />
+    <Crane id="124" x="1104" y="328" />
+    <Crane id="125" x="1096" y="252" />
+    <Crane id="126" x="1088" y="184" />
   </Entities>
   <Art />
 </level>

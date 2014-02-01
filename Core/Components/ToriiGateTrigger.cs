@@ -10,8 +10,9 @@ namespace Core
 		{
 		}
 		public override void onCollide (Entity target)
-		{
+		{	
 			Console.WriteLine( "You've reached the Torii Gate - Level Over!" );
+			
 			Respawner r = target.FindComponent<Respawner>();
 			if ( r != null )
 			{

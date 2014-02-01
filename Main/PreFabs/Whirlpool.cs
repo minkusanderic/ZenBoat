@@ -43,20 +43,30 @@ namespace Main
 			
 			ent.attachComponent(new SimpleTrigger(SceneManager.Instance.Select("pushable"), 
 			                                      (t) => {
-													try{
+													try {
 														Respawner r = t.FindComponent<Respawner>();
+														// Logs now have Respawner components
 														if ( r != null )
 														{
+															if ( r.parent.HasTag("boat") )
+															{
+																// set boat last checkpoint position
+																r.ResetPosition();
+																// reload all the saved Entities that were hidden
+																SaveGameManager.RespawnEntities();
+															}
 															RigidBody rib = t.FindComponent<RigidBody>();
 															r.ResetPosition();
 															//rib.updateTransformData();	
 															rib.Velocity = new Vector2( 0f , 0f );
 														}
 												} catch(Exception e) {
-														t.Destroy();
+														SaveGameManager.toRespawn.Add( t );
+														t.Enabled = false; // t is any "pushable"
 														if(t.HasTag("driftwood"))
 					{
-						ent.Destroy();
+						SaveGameManager.toRespawn.Add( ent ); // adds the Whirlpool to the respawn list
+						ent.Enabled = false;	// hides the Whirlpool
 					}
 												}
 													}));
@@ -64,7 +74,9 @@ namespace Main
 			ent.attachComponent(new SimpleController(() => {
 				ent.Transform.Rotation = ent.Transform.Rotation.Rotate(-0.1f);
 			}));
+			respawner = (Respawner)	ent.attachComponent( new Respawner( ent.Transform.Position ) ); // adds a respawer component to the whirlpool entity
 		}
+		static Respawner respawner;
 	}
 }
 
