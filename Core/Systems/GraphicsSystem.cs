@@ -6,8 +6,10 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Environment ;
 using Sce.PlayStation.HighLevel.Model ;
+using Sce.PlayStation.HighLevel.UI ;
 using System.Threading ;
 using System.Diagnostics ;
+
 namespace Core
 {
 	public class GraphicsSystem : Core.CoreSystem
@@ -15,9 +17,12 @@ namespace Core
 		
 		private List<ModelComponent> models = new List<ModelComponent>();
 		private List<SpriteComponent> sprites = new List<SpriteComponent>();
+		private List<LabelComponent> labels = new List<LabelComponent>();
 		
 		public GraphicsContext graphics;
 		public BasicProgram program;
+		public Scene scene;
+		public Label count;
 		
 		public Vector3 camera_pos = new Vector3();
 		public Vector3 camera_eye = new Vector3();
@@ -30,7 +35,11 @@ namespace Core
 		{
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
+			scene = new Scene();
 			Timer.Init();
+			
+			UISystem.Initialize(graphics);
+			UISystem.SetScene(scene, null);
 		
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
@@ -41,8 +50,13 @@ namespace Core
 		{
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
 			//Console.WriteLine( boatPosition );
+<<<<<<< HEAD
 			// HAndle first-left edge
 			if ( boatPosition.X > 960.0f/2.0f + 20f)
+=======
+			// Handle first-left edge
+			if ( boatPosition.X > 960.0f/2.0f )
+>>>>>>> origin/Counter
 			{
 				// camera pos + half screen width
 				
@@ -66,7 +80,8 @@ namespace Core
 		
 		
 		public override void Update() // Render here
-		{
+		{	
+			UISystem.SetScene(scene, null);
 			Timer.StartFrame();
 			this.camera_pos = UpdateCameraPosition();
 			cameraLastPosition = this.camera_pos;
@@ -165,6 +180,10 @@ namespace Core
 				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 			}
 			
+//			foreach(var l in labels)
+//			{
+//				l.label.Text = l.title + l.number;
+//			}
 			
 	
 			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view, this.camera_eye);
@@ -172,7 +191,7 @@ namespace Core
 			graphics.Disable( EnableMode.CullFace ) ;
 			graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
-	
+			UISystem.Render();
 			graphics.SwapBuffers() ;
 			Timer.EndFrame();
 		}
@@ -189,6 +208,14 @@ namespace Core
 				sprites.Add((SpriteComponent)comp);
 			}
 			
+			if(comp is LabelComponent)
+			{
+				labels.Add((LabelComponent)comp);
+				scene.RootWidget.AddChildFirst(((LabelComponent)comp).label);
+				((LabelComponent)comp).label.X = comp.parent.Transform.Position.X;
+				((LabelComponent)comp).label.Y = comp.parent.Transform.Position.Y;
+			}
+			
 		}
 		
 		public override void destroyComponent (IComponent comp)
@@ -197,10 +224,17 @@ namespace Core
 			{
 				models.Remove( (ModelComponent) comp);	
 			}
+			
 			if ( comp is SpriteComponent )
 			{
 				sprites.Remove((SpriteComponent)comp);
-			}			
+			}
+			
+			if ( comp is LabelComponent )
+			{
+				labels.Remove((LabelComponent)comp);
+				scene.RootWidget.RemoveChild(((LabelComponent)comp).label);
+			}
 			//base.destroyComponent (comp);
 		}
 		

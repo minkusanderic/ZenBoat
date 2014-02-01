@@ -37,6 +37,7 @@
     <Reference Include="Sce.PlayStation.HighLevel.GameEngine2D" />
     <Reference Include="Sce.PlayStation.HighLevel.Physics2D" />
     <Reference Include="Sce.PlayStation.HighLevel.Model" />
+    <Reference Include="Sce.PlayStation.HighLevel.UI" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
   <ItemGroup>
@@ -89,6 +90,7 @@
     <Compile Include="Systems\ParticleSystem.cs" />
     <Compile Include="Utils\Timer.cs" />
     <Compile Include="Components\FollowCameraComponent.cs" />
+    <Compile Include="Components\LabelComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
