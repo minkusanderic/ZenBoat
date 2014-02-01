@@ -59,7 +59,7 @@ namespace Core
 				multiplier = 1;
 			}
 			score += (worth * multiplier++);	// take the crane value
-			Console.WriteLine("Crane Score: " + score /*+ "\t" + multiplier */ );
+			Console.WriteLine("Crane Score: " + score + "\t" + multiplier  );
 			if ( multiplier > maxMultiplier )
 				multiplier = maxMultiplier;
 		
