@@ -46,6 +46,7 @@ namespace Main
 			var water = SceneManager.Instance.createEntity("Water");	// add script to follow camera
 			water.attachComponent(new WaterComponent());
 			water.attachComponent(new FollowCameraComponent() );
+			
 			var bank = SceneManager.Instance.createEntity("Bank");
 			bank.Transform.Position = new Vector2(1610, 544/2 + 100);
 			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank02.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
@@ -72,7 +73,7 @@ namespace Main
 			var b2 = SceneManager.Instance.createEntity("b2");
 			//b2.Transform.Position = new Vector2( size_of_level/2 , 544/2 );
 			b2.Transform.Position = new Vector2( -960/2 , 544/2 );
-			//b2.attachComponent(new RigidBody( size_of_level , 10 ) ).is_static = true;                             //
+			//b2.attachComponent(new RigidBody( size_of_level , 10 ) ).is_static = true;
 			b2.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
 			
 			//top
