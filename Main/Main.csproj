@@ -167,5 +167,10 @@
     <Content Include="Assets\OrigamiBoat.mdx" />
     <Content Include="Assets\lilypad.mdx" />
     <Content Include="Assets\toon.png" />
+    <Content Include="Levels\1.00.01.oel" />
+    <Content Include="Levels\1.00.02.oel" />
+    <Content Include="Levels\1.00.03.oel" />
+    <Content Include="Levels\1.00.04.oel" />
+    <Content Include="Levels\1.00.05.oel" />
   </ItemGroup>
 </Project>
