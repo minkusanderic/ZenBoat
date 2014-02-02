@@ -54,7 +54,7 @@ namespace Core
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
 			//Console.WriteLine( boatPosition );
 			// HAndle first-left edge
-			if ( boatPosition.X > 960.0f/2.0f + 20f)
+			if ( boatPosition.X > 960.0f/2.0f + 20f){
 				// camera pos + half screen width
 				
 				if ( eps + cameraOffset < boatPosition.X - eps)
