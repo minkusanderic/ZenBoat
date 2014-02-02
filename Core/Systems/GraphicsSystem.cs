@@ -181,7 +181,7 @@ namespace Core
 					
 				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X, sprite.parent.Transform.Position.Y, 0);
 								
-				world *= Matrix4.Translation(pos) ;
+				world *= Matrix4.Translation(pos);
 				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 				world *= Matrix4.RotationZ (-sprite.parent.Transform.Rotation.Angle(Vector2.UnitX));
 				

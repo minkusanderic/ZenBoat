@@ -18,7 +18,7 @@ namespace Core
 	public class PhysicsSystem : Core.CoreSystem
 	{
 		public PhysicsScene physics;
-		private List<RigidBody> bodies;
+		public List<RigidBody> bodies;
 		private List<TriggerComponent> triggers = new List<TriggerComponent>();
 		
 		public PhysicsSystem ()
@@ -38,7 +38,6 @@ namespace Core
 		{
 			if(comp is RigidBody)
 			{
-				
 				var rigid_body = (RigidBody)comp;
 				PhysicsShape shape;
 				if(rigid_body.dimentions.Y == 0.0f)

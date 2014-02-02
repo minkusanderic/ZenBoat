@@ -1,4 +1,5 @@
 using Sce;
+using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Environment;
 using System;
 using System.Collections;
@@ -8,8 +9,8 @@ using System.Text;
 using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
-
-
+using Sce.PlayStation.HighLevel.Physics2D;
+using Core;
 
 namespace Core
 {
@@ -161,6 +162,33 @@ namespace Core
 		{
 			foreach( Entity e in toRespawn )
 			{
+				/*
+				
+				RigidBody rigid_body = (RigidBody)e.FindComponent<RigidBody>();
+				PhysicsSystem ps = (PhysicsSystem)SceneManager.Instance.getSystem(typeof(PhysicsSystem));
+				PhysicsShape shape;
+				if(rigid_body.dimentions.Y == 0.0f)
+				{
+					shape = ps.physics.AddSphereShape(rigid_body.dimentions.X);
+				}
+				else
+				{
+					shape = ps.physics.AddBoxShape(rigid_body.dimentions);
+					//shape = physics.AddSphereShape(rigid_body.dimentions.X);
+				}
+				ps.bodies.Add(rigid_body);
+				
+				rigid_body.body = ps.physics.AddBody(shape, rigid_body.Mass);
+		
+				//rigid_body.body = physics.sceneBodies[next_id];
+				rigid_body.body.position = rigid_body.parent.Transform.Position;
+				rigid_body.body.Rotation = Vector2.Angle(Vector2.UnitX, rigid_body.parent.Transform.Rotation);
+				
+				if(rigid_body.is_static)
+				{
+					rigid_body.body.SetBodyStatic();
+				}
+				*/
 				Respawner r = (Respawner)e.FindComponent<Respawner>();
 				if ( r != null ) 
 				{
@@ -168,6 +196,7 @@ namespace Core
 				}
 				e.Enabled = true; // wake them back up
 			}
+			toRespawn.Clear();
 			CollectibleManager.ClearStageScore();
 		}
 	}
