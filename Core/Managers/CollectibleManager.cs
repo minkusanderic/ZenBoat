@@ -16,7 +16,7 @@ namespace Core
 		static string 		currentLevel		= ""; 	// main menu?
 		public static int 			levelScore 			= 0;	
 		public static int 			stageScore 			= 0;	// Running total for the crane score, level total?
-		static int 			multiplier 			= 1;
+		public static int 			multiplier 			= 1;
 		static bool 		touched 			= false;
 		static int 			maxMultiplier 		= 5;
 		static bool 		m_bInitialized 		= false;
