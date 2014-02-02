@@ -81,6 +81,7 @@ namespace Core
 				if ( !body.parent.Enabled ) 
 				{
 					body.body.Sleep = true;
+					
 					continue;
 				}
 				else

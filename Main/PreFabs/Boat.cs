@@ -86,7 +86,7 @@ namespace Main
 			
 			counter.attachComponent(new SimpleController(
 					() => {
-						label.label.Text = "Count: " + CollectibleManager.m_iScore;
+						//label.label.Text = "Count: " + CollectibleManager.m_iScore;
 			}));
 			
 			SceneManager.Instance.createEntity("ReturnToBoot")

@@ -224,7 +224,6 @@
     <Crane id="86" x="7240" y="268" />
     <Crane id="87" x="7340" y="264" />
     <Crane id="88" x="7412" y="280" />
-    <Torii id="89" x="1872" y="244" NextLevel="" />
     <Lillypad id="90" x="576" y="36" width="50" height="40" angle="0" />
     <Lillypad id="91" x="732" y="52" width="50" height="40" angle="0" />
     <Lillypad id="92" x="676" y="512" width="50" height="40" angle="0" />
@@ -272,6 +271,7 @@
     <Crane id="124" x="1104" y="328" />
     <Crane id="125" x="1096" y="252" />
     <Crane id="126" x="1088" y="184" />
+    <Driftwood id="127" x="1484" y="424" width="100" height="30" angle="0" />
   </Entities>
   <Art />
 </level>
