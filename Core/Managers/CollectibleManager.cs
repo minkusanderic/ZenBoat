@@ -9,13 +9,9 @@ using Sce.PlayStation.HighLevel.GameEngine2D;
 
 namespace Core
 {
-<<<<<<< HEAD
+
 	public static class CollectibleManager
 	{
-=======
-	public static class CollectibleManager
-	{
->>>>>>> Added new bank
 		static bool 		initialized 		= false;
 		static string 		filePath 			= "SavedGame";
 		static string 		currentLevel		= ""; 	// main menu?
@@ -28,12 +24,7 @@ namespace Core
 		static string 		m_sFilPath 			= "SavedGame";
 		static string 		m_sCurrentLevel		= ""; // main menu?
 		
-<<<<<<< HEAD
 		static Dictionary<string /*Entity*/, string/*Saved Info*/> dictionary;	// load this from the SaveGame Manager
-		
-=======
-		static Dictionary<string /*Entity*/, string/*Saved Info*/> dictionary;	// load this from the SaveGame Manager
->>>>>>> Added new bank
 		
 		public static void Init()
 		{

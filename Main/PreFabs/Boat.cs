@@ -89,15 +89,11 @@ namespace Main
 			
 			// Crane Counter
 			var counter = SceneManager.Instance.createEntity("counter");
-			var label = counter.attachComponent(new LabelComponent("Count: "));
+			var counterLabel = counter.attachComponent(new LabelComponent("Count: "));
 			counter.Transform.Position.X = 1.0f;
 			counter.Transform.Position.Y = 1.0f;
 			
 			counter.attachComponent(new SimpleController(
-<<<<<<< HEAD
-					() => {
-						//label.label.Text = "Count: " + CollectibleManager.m_iScore;
-=======
 					() => {
 						int sum = CollectibleManager.levelScore + CollectibleManager.stageScore;
 						counterLabel.label.Text = "Score: " + sum;
@@ -113,7 +109,6 @@ namespace Main
 					() => {
 						multiLabel.label.Text = "Muliplyer: x" + CollectibleManager.multiplier;
 						//label.label.Text = "Count: " + CollectibleManager.m_iScore;
->>>>>>> Added new bank
 			}));
 			
 			SceneManager.Instance.createEntity("ReturnToBoot")

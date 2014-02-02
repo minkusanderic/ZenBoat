@@ -51,23 +51,13 @@ namespace Core
 		Vector3 cameraLastPosition;
 		Vector3 UpdateCameraPosition()
 		{
-<<<<<<< HEAD
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
-			//Console.WriteLine( boatPosition );
-			// HAndle first-left edge
-			if ( boatPosition.X > 960.0f/2.0f + 20f){
-=======
-			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
-			//Console.WriteLine( boatPosition );
-			// HAndle first-left edge
-			if ( boatPosition.X > 960.0f/2.0f + 20f)
 			//Console.WriteLine( boatPosition );
 
 			// HAndle first-left edgef
 			// Handle first-left edge
 			if ( boatPosition.X > 960.0f/2.0f )
 			{
->>>>>>> Added new bank
 				// camera pos + half screen width
 				
 				if ( eps + cameraOffset < boatPosition.X - eps)
