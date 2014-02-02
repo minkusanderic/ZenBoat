@@ -43,6 +43,7 @@ namespace Core
 			UISystem.Initialize(graphics);
 			UISystem.SetScene(scene, null);
 		
+			toon = new Texture2D("/Application/Assets/toon.png", false);
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
 		float cameraOffset = 0f;
