@@ -56,12 +56,23 @@ namespace Main
 																SaveGameManager.RespawnEntities();
 																CollectibleManager.PrintScore();
 															}
+															if ( r.parent.HasTag("driftwood") )
+															{
+																//ent.Enabled = false;
+																SaveGameManager.toRespawn.Add( ent );
+																//r.parent.Enabled = false;
+																
+																//r.parent.Destroy();
+																SaveGameManager.toRespawn.Add( r.parent );
+							
+															}
 															RigidBody rib = t.FindComponent<RigidBody>();
-															r.ResetPosition();
+															//r.ResetPosition();
 															//rib.updateTransformData();	
 															rib.Velocity = new Vector2( 0f , 0f );
 														}
-												} catch(Exception e) {
+												} catch(Exception e) 
+												{
 														SaveGameManager.toRespawn.Add( t );
 														t.Enabled = false; // t is any "pushable"
 														if(t.HasTag("driftwood"))

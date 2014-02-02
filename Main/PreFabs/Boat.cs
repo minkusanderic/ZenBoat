@@ -86,6 +86,7 @@ namespace Main
 			
 			counter.attachComponent(new SimpleController(
 					() => {
+<<<<<<< HEAD
 						int sum = CollectibleManager.levelScore + CollectibleManager.stageScore;
 						counterLabel.label.Text = "Score: " + sum;
 			}));
@@ -99,6 +100,9 @@ namespace Main
 			multi.attachComponent(new SimpleController(
 					() => {
 						multiLabel.label.Text = "Muliplyer: x" + CollectibleManager.multiplier;
+=======
+						//label.label.Text = "Count: " + CollectibleManager.m_iScore;
+>>>>>>> cf82ff612e3b508e7df59e36420d00cc2f8c0ddf
 			}));
 			
 			SceneManager.Instance.createEntity("ReturnToBoot")

@@ -49,9 +49,15 @@ namespace Core
 		Vector3 UpdateCameraPosition()
 		{
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
+<<<<<<< HEAD
 			//Console.WriteLine( boatPosition );
 			// HAndle first-left edge
 			if ( boatPosition.X > 960.0f/2.0f + 20f)
+=======
+			//Console.WriteLine( boatPosition );
+
+			// HAndle first-left edge
+>>>>>>> cf82ff612e3b508e7df59e36420d00cc2f8c0ddf
 			// Handle first-left edge
 			if ( boatPosition.X > 960.0f/2.0f )
 			{
@@ -152,7 +158,7 @@ namespace Core
 			
 			foreach(var sprite in sprites)
 			{
-							
+				if ( !sprite.parent.Enabled ) continue;
 				Matrix4 world = Matrix4.Identity ;
 				
 				

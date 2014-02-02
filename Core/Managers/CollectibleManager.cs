@@ -10,6 +10,7 @@ using Sce.PlayStation.HighLevel.GameEngine2D;
 namespace Core
 {
 	public static class CollectibleManager
+<<<<<<< HEAD
 	{
 		static bool 		initialized 		= false;
 		static string 		filePath 			= "SavedGame";
@@ -25,6 +26,18 @@ namespace Core
 		
 		static Dictionary<string /*Entity*/, string/*Saved Info*/> dictionary;	// load this from the SaveGame Manager
 		
+=======
+	{
+		static bool 		initialized 		= false;
+		static string 		filePath 			= "SavedGame";
+		static string 		currentLevel		= ""; 	// main menu?
+		static int 			levelScore 			= 0;	
+		static int 			stageScore 			= 0;	// Running total for the crane score, level total?
+		public static int 	multiplier 			= 1;
+		static bool 		touched 			= false;
+		static int 			maxMultiplier 		= 5;
+		static Dictionary<string , string> 		dictionary;
+>>>>>>> cf82ff612e3b508e7df59e36420d00cc2f8c0ddf
 		
 		public static void Init()
 		{
@@ -60,9 +73,9 @@ namespace Core
 			if ( touched )
 			{
 				touched = false;
-				multiplier = 1;
+				//multiplier = 1;
 			}
-			stageScore += (worth * multiplier++ );	// take the crane value
+			stageScore += ( worth * multiplier++ );	// take the crane value
 			PrintScore();
 			
 			if ( multiplier > maxMultiplier )
