@@ -80,38 +80,8 @@ namespace Core
 							
 				Matrix4 world = Matrix4.Identity ;
 				
-				//				FrameBuffer off_screen = new FrameBuffer();
-				//height_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
-//				off_screen.SetColorTarget(height_map, 0);
-//				
-				//uint[,] p = new uint[100,100];
-				//for(int i = 0; i < 100; i++)
-				//{
-				//	for(int j = 0; j < 100; j++)
-				//	{
-				//		p[i,j] = 0x77770000 + 5 *(uint)i;
-				//	}
-				//}
+				var flow_map = RenderFlowMap(g);
 				
-				//height_map.SetPixels(0, p, PixelFormat.Rgba);
-				
-				//var cel_shading = new Texture2D(new byte[] {}, false);
-				
-				//off_screen.SetDepthTarget(null);
-				
-			//	g.graphics.SetFrameBuffer(off_screen);
-				//g.graphics.SetClearColor( 1.0f, 0.5f, 0.0f, 1.0f ) ;
-				//g.graphics.Clear() ;
-				//g.graphics.SetViewport(0,0,1000,1000);
-				//Sample.SampleDraw.Init(g.graphics);
-///
-				//Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
-				//SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
-				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
-				
-///				
-				
-			//	g.graphics.SetFrameBuffer(null);
 				
 				
 			    Vector3 scale = new Vector3(1,1,1);
@@ -173,6 +143,43 @@ namespace Core
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
 				//height_map.Dispose();
 			}
+		}
+		
+		private Texture2D RenderFlowMap(GraphicsSystem g)
+		{
+			FrameBuffer off_screen = new FrameBuffer();
+				var flow_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
+				off_screen.SetColorTarget(flow_map, 0);
+//				
+				//uint[,] p = new uint[100,100];
+				//for(int i = 0; i < 100; i++)
+				//{
+				//	for(int j = 0; j < 100; j++)
+				//	{
+				//		p[i,j] = 0x77770000 + 5 *(uint)i;
+				//	}
+				//}
+				
+				//height_map.SetPixels(0, p, PixelFormat.Rgba);
+				
+				//var cel_shading = new Texture2D(new byte[] {}, false);
+				
+				off_screen.SetDepthTarget(null);
+				
+				g.graphics.SetFrameBuffer(off_screen);
+				g.graphics.SetClearColor( 1.0f, 0.5f, 0.0f, 1.0f ) ;
+				g.graphics.Clear() ;
+				//g.graphics.SetViewport(0,0,1000,1000);
+				//Sample.SampleDraw.Init(g.graphics);
+///
+				//Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
+				//SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
+				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
+				
+///				
+				
+				g.graphics.SetFrameBuffer(null);
+			return flow_map;
 		}
 		
 		public override void attachComponent(IComponent comp)
