@@ -114,7 +114,6 @@
     <Content Include="Assets\Koifish.mdx" />
     <Content Include="Assets\Crane01.mdx" />
     <Content Include="Assets\FloatingLantern01.mdx" />
-    <Content Include="Assets\SimpleBank01.mdx" />
     <Content Include="Assets\Torii.mdx" />
     <Content Include="Assets\Torii2.mdx" />
     <Content Include="Assets\whirlpool.png" />
@@ -172,5 +171,6 @@
     <Content Include="Levels\1.00.03.oel" />
     <Content Include="Levels\1.00.04.oel" />
     <Content Include="Levels\1.00.05.oel" />
+    <Content Include="Assets\SimpleBank02.mdx" />
   </ItemGroup>
 </Project>
