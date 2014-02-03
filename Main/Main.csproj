@@ -189,5 +189,9 @@
     <Content Include="Assets\CranePurple.mdx" />
     <Content Include="Assets\CraneTeal.mdx" />
     <Content Include="Assets\CraneYellow.mdx" />
+    <Content Include="Assets\MapleNa.mdx" />
+    <Content Include="Assets\MapleNb.mdx" />
+    <Content Include="Assets\MapleSa.mdx" />
+    <Content Include="Assets\MapleSb.mdx" />
   </ItemGroup>
 </Project>

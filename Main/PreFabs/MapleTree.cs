@@ -13,8 +13,8 @@ namespace Main
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			//ent.tag("pushable");
-						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTree.mdx"));
+			//use MapleSb for colored leaves or MapleSa for sticklike tree			    
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/MapleSb.mdx"));
 			
 			m.scale = new Vector3(8 , 8, 8);
 			
