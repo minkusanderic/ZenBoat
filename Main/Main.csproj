@@ -66,6 +66,11 @@
     <Compile Include="Menus\UIStringTable.cs" />
     <Compile Include="Menus\MenuLoader.cs" />
     <Compile Include="Menus\StartMenu.composer.cs" />
+    <Compile Include="PreFabs\Bamboo.cs" />
+    <Compile Include="PreFabs\Bridge.cs" />
+    <Compile Include="PreFabs\Lantern.cs" />
+    <Compile Include="PreFabs\Windmill.cs" />
+    <Compile Include="PreFabs\MapleTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -172,5 +177,17 @@
     <Content Include="Levels\1.00.04.oel" />
     <Content Include="Levels\1.00.05.oel" />
     <Content Include="Assets\SimpleBank02.mdx" />
+    <Content Include="Assets\Bridge.mdx" />
+    <Content Include="Assets\MapleTree.mdx" />
+    <Content Include="Assets\Bamboo.mdx" />
+    <Content Include="Assets\Windmill.mdx" />
+    <Content Include="Assets\Lantern.mdx" />
+    <Content Include="Assets\CraneOrange.mdx" />
+    <Content Include="Assets\CraneBlue.mdx" />
+    <Content Include="Assets\CraneGreen.mdx" />
+    <Content Include="Assets\CranePink.mdx" />
+    <Content Include="Assets\CranePurple.mdx" />
+    <Content Include="Assets\CraneTeal.mdx" />
+    <Content Include="Assets\CraneYellow.mdx" />
   </ItemGroup>
 </Project>
