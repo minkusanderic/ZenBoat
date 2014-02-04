@@ -9,6 +9,7 @@ using Sce.PlayStation.HighLevel.GameEngine2D;
 
 namespace Core
 {
+
 	public static class CollectibleManager
 	{
 		static bool 		initialized 		= false;
@@ -24,7 +25,6 @@ namespace Core
 		static string 		m_sCurrentLevel		= ""; // main menu?
 		
 		static Dictionary<string /*Entity*/, string/*Saved Info*/> dictionary;	// load this from the SaveGame Manager
-		
 		
 		public static void Init()
 		{

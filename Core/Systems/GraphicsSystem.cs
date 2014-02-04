@@ -53,8 +53,11 @@ namespace Core
 		{
 			Vector2 boatPosition = SceneManager.Instance.FindEntity("Boat").Transform.Position;
 			//Console.WriteLine( boatPosition );
-			// HAndle first-left edge
-			if ( boatPosition.X > 960.0f/2.0f + 20f){
+
+			// HAndle first-left edgef
+			// Handle first-left edge
+			if ( boatPosition.X > 960.0f/2.0f )
+			{
 				// camera pos + half screen width
 				
 				if ( eps + cameraOffset < boatPosition.X - eps)
@@ -168,7 +171,7 @@ namespace Core
 					
 				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X, sprite.parent.Transform.Position.Y, 0);
 								
-				world *= Matrix4.Translation(pos) ;
+				world *= Matrix4.Translation(pos);
 				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 				world *= Matrix4.RotationZ (-sprite.parent.Transform.Rotation.Angle(Vector2.UnitX));
 				

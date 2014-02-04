@@ -58,18 +58,45 @@ namespace Main
 															}
 															if ( r.parent.HasTag("driftwood") )
 															{
-																//ent.Enabled = false;
+																/*
+																RigidBody rib = ent.FindComponent<RigidBody>();
+																rib.body.Type = BodyType.Trigger;
+																PhysicsSystem ps = (PhysicsSystem) SceneManager.Instance.getSystem(typeof(PhysicsSystem));
+																ps.physics.DeleteBody( rib.body );
+																ps.bodies.Remove( rib );
 																SaveGameManager.toRespawn.Add( ent );
-																//r.parent.Enabled = false;
+																*/
+																//ent.Enabled = false;
+																Random rand = new Random();
+																ent.Transform.Position = new Vector2( -100f * rand.Next(500)  , 600f * rand.Next(500) );
+																SaveGameManager.toRespawn.Add( ent );
+																//rib.is_static = false;
+																//rib.makeTrigger();
+																//ent.Destroy();
+																//RigidBody wood_body = t.FindComponent<RigidBody>();
+																//wood_body.body.Type = BodyType.Trigger;
 																
+																//ps.physics.DeleteBody( wood_body.body );
+																//ps.bodies.Remove( wood_body );
+																t.Transform.Position = new Vector2( -100f * rand.Next(500) , -600f * rand.Next(500) );
+																SaveGameManager.toRespawn.Add( t );
+																//t.Enabled = false;
+							/*
+																ent.Enabled = false;
+																
+																r.parent.Enabled = false;
+																RigidBody rib = t.FindComponent<RigidBody>();
+																
+																RigidBody rig = r.parent.FindComponent<RigidBody>();
+																rig.Destroy();
 																//r.parent.Destroy();
 																SaveGameManager.toRespawn.Add( r.parent );
-							
+							*/
 															}
-															RigidBody rib = t.FindComponent<RigidBody>();
+															//RigidBody rib = t.FindComponent<RigidBody>();
 															//r.ResetPosition();
 															//rib.updateTransformData();	
-															rib.Velocity = new Vector2( 0f , 0f );
+															//rib.Velocity = new Vector2( 0f , 0f );
 														}
 												} catch(Exception e) 
 												{

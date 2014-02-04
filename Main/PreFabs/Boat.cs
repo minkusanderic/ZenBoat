@@ -46,13 +46,23 @@ namespace Main
 			var water = SceneManager.Instance.createEntity("Water");	// add script to follow camera
 			water.attachComponent(new WaterComponent());
 			water.attachComponent(new FollowCameraComponent() );
+			
 			var bank = SceneManager.Instance.createEntity("Bank");
-			bank.Transform.Position = new Vector2(960/2, 544/2 + 100);
-			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank01.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
+			bank.Transform.Position = new Vector2(1610, 544/2 + 100);
+			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank02.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
 			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
 			bank_model.scale.Y *= 1.2f;
-			bank_model.scale.X *= 10f;
+			bank_model.scale.X *= 1.2f;
 			
+			//Tiling the bank
+//			var bank1 = SceneManager.Instance.createEntity("Bank1");
+//			bank1.Transform.Position = new Vector2(7953/2, 544/2 + 100);
+////			bank1.Transform.Position = new Vector2(x,y);
+//			bank1.attachComponent(new ModelComponent("/Application/Assets/SimpleBank02.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
+//			ModelComponent bank1_model = bank1.FindComponent<ModelComponent>();
+//			bank1_model.scale.Y *= 1.2f;
+//			bank1_model.scale.X *= 1.2f;
+		
 			int size_of_level = 10000;
 			// bottom
 			var b1 = SceneManager.Instance.createEntity("b1");
@@ -63,7 +73,7 @@ namespace Main
 			var b2 = SceneManager.Instance.createEntity("b2");
 			//b2.Transform.Position = new Vector2( size_of_level/2 , 544/2 );
 			b2.Transform.Position = new Vector2( -960/2 , 544/2 );
-			//b2.attachComponent(new RigidBody( size_of_level , 10 ) ).is_static = true;                             //
+			//b2.attachComponent(new RigidBody( size_of_level , 10 ) ).is_static = true;
 			b2.attachComponent(new RigidBody(960/2, 544/2)).is_static = true;
 			
 			//top
@@ -80,12 +90,25 @@ namespace Main
 			
 			// Crane Counter
 			var counter = SceneManager.Instance.createEntity("counter");
-			var label = counter.attachComponent(new LabelComponent("Count: "));
+			var counterLabel = counter.attachComponent(new LabelComponent("Count: "));
 			counter.Transform.Position.X = 1.0f;
 			counter.Transform.Position.Y = 1.0f;
 			
 			counter.attachComponent(new SimpleController(
 					() => {
+						int sum = CollectibleManager.levelScore + CollectibleManager.stageScore;
+						counterLabel.label.Text = "Score: " + sum;
+			}));
+			
+			// Multiplier
+			var multi = SceneManager.Instance.createEntity("multi");
+			multi.Transform.Position.X = 832.0f;
+			multi.Transform.Position.Y = 1.0f;
+			var multiLabel = multi.attachComponent(new LabelComponent("Muliplyer: x"));
+			
+			multi.attachComponent(new SimpleController(
+					() => {
+						multiLabel.label.Text = "Muliplyer: x" + CollectibleManager.multiplier;
 						//label.label.Text = "Count: " + CollectibleManager.m_iScore;
 			}));
 			
