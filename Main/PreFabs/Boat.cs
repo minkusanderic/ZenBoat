@@ -109,7 +109,7 @@ namespace Main
 					}
 				}));
 			
-			
+			SceneManager.Instance.createEntity("asdflaksdjf").attachComponent(new CurrentModifier("/Application/Assets/vectorswirl.png"));
 		}
 		
 		

@@ -91,6 +91,7 @@
     <Compile Include="Utils\Timer.cs" />
     <Compile Include="Components\FollowCameraComponent.cs" />
     <Compile Include="Components\LabelComponent.cs" />
+    <Compile Include="Components\CurrentModifier.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

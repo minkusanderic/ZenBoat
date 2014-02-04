@@ -11,6 +11,7 @@ namespace Core
 	{
 		private List<WaterComponent> waters = new List<WaterComponent>();
 		private List<RadialSplash> radials = new List<RadialSplash>();
+		private List<CurrentModifier> modifiers = new List<CurrentModifier>();
 		
 		private Vector2[,] force_vects;
 		
@@ -135,12 +136,13 @@ namespace Core
 				if(time > 1.0f)
 					time = 0.0f;
 				//g.graphics.SetTexture(0, height_map);
-				g.graphics.SetTexture(0, stars);
+				g.graphics.SetTexture(0, flow_map);
 				g.graphics.SetTexture(1, normal_map);
 				g.graphics.SetTexture(2, swirl_map);
 				
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
+				flow_map.Dispose();
 				//height_map.Dispose();
 			}
 		}
@@ -163,22 +165,56 @@ namespace Core
 				//height_map.SetPixels(0, p, PixelFormat.Rgba);
 				
 				//var cel_shading = new Texture2D(new byte[] {}, false);
-				
+				Matrix4 proj = Matrix4.Ortho(-960/2, 960/2, -544/2, 544/2, 1, 100);
+			//Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
+			 Matrix4 view = Matrix4.LookAt(new Vector3(0.0f, 0.0f, 3.0f), Vector3.Zero, Vector3.UnitY);
+			
 				off_screen.SetDepthTarget(null);
 				
 				g.graphics.SetFrameBuffer(off_screen);
 				g.graphics.SetClearColor( 1.0f, 0.5f, 0.0f, 1.0f ) ;
 				g.graphics.Clear() ;
-				//g.graphics.SetViewport(0,0,1000,1000);
+				g.graphics.SetViewport(0,0,100, 100);
 				//Sample.SampleDraw.Init(g.graphics);
 ///
 				//Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
 				//SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
 				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
 				
+			foreach(var sprite in modifiers)
+			{
+				if ( !sprite.parent.Enabled ) continue;
+				Matrix4 world = Matrix4.Identity ;
+				
+				
+			    Vector3 scale = new Vector3(sprite.scale.X, sprite.scale.Y, 1f);
+					
+				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X, sprite.parent.Transform.Position.Y, 0);
+								
+				world *= Matrix4.Translation(pos) ;
+				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
+				world *= Matrix4.RotationZ (-sprite.parent.Transform.Rotation.Angle(Vector2.UnitX));
+				
+				
+				g.graphics.SetVertexBuffer(0, sprite.vb);
+				g.graphics.SetShaderProgram(sprite.shaderProgram);
+				g.graphics.SetTexture(0, sprite.texture);
+							
+
+				var world_view_proj = proj * view * world;
+				//program.Parameters.SetWorldMatrix(0, ref world);
+				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
+			
+				g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
+			}
+			
+
+			
 ///				
 				
 				g.graphics.SetFrameBuffer(null);
+			
+			g.graphics.SetViewport( 0, 0, g.graphics.Screen.Width, g.graphics.Screen.Height ) ;
 			return flow_map;
 		}
 		
@@ -192,6 +228,10 @@ namespace Core
 			{
 				radials.Add((RadialSplash)comp);
 			}
+			if(comp is CurrentModifier)
+			{
+				modifiers.Add((CurrentModifier)comp);
+			}
 		}
 		
 		public override void destroyComponent (IComponent comp)
@@ -203,6 +243,10 @@ namespace Core
 			if(comp is RadialSplash)
 			{
 				radials.Remove((RadialSplash)comp);
+			}
+			if(comp is CurrentModifier)
+			{
+				modifiers.Remove((CurrentModifier)comp);
 			}
 			//base.destroyComponent (comp);
 		}
