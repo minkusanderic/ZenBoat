@@ -7,15 +7,13 @@ void main(
 			float4 out Color	: COLOR,
 			uniform sampler2D s_Texture : TEXUNIT0,
 			uniform sampler2D n_Texture : TEXUNIT1,
-			uniform sampler2D swirl_Texture : TEXUNIT2,
+			uniform sampler2D flow_Texture : TEXUNIT2,
 			uniform float time)
 {
 	//v_Normal.y = -v_Normal.y;
 	float3 blue = float3(0.0f, 0.0f, 1.0f);
 	
-	float2 swirl = tex2D(swirl_Texture, v_TexCoord.xy).xy;
-	swirl = (1.0f - length(swirl)) * normalize(swirl);
-	swirl = float2(1.0f, 0.0f);
+	float2 swirl = tex2D(flow_Texture, float2(1.0f,1.0f) - v_TexCoord.xy).xy;
 	float2 sampleNorm = v_TexCoord.xy + swirl * time;
 	sampleNorm.x = fmod(sampleNorm.x, 1.0f);
 	sampleNorm.y = fmod(sampleNorm.y, 1.0f);

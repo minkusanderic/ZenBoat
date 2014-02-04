@@ -27,6 +27,7 @@ namespace Main
 			ent.attachComponent(rb);
 			rb.is_static = true;
 			
+			ent.attachComponent(new CurrentModifier("/Application/Assets/vectorswirl.png")).scale = new Vector2(1f, 1f);
 			
 			ent.attachComponent(new Core.SimpleController(() => {
 				List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("pushable").ToList();
