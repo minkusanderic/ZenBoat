@@ -198,13 +198,5 @@
     <Content Include="Assets\MapleSb.mdx" />
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\CherryBlossomS.mdx" />
-    <Content Include="Assets\gameBackground.mp3" />
-    <Content Include="Assets\cranecollect.mp3" />
-    <Content Include="Assets\cranecollectalternate.mp3" />
-    <Content Include="Assets\Yang80-D07-gameendlevel.mp3" />
-    <Content Include="Assets\Yang120-SingleD-menuSelect.wav" />
-    <Content Include="Assets\menuUp.wav" />
-    <Content Include="Assets\gamecheckpoint.mp3" />
-    <Content Include="Assets\menuDown.wav" />
   </ItemGroup>
 </Project>
