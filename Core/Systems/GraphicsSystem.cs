@@ -138,6 +138,7 @@ namespace Core
 			foreach(var model in models)
 			{
 				if ( !model.parent.Enabled ) continue;
+				//if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (544 + 1000)) continue; // do not render if off screen
 				Matrix4 world = Matrix4.Identity ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
@@ -164,6 +165,7 @@ namespace Core
 			foreach(var sprite in sprites)
 			{
 				if ( !sprite.parent.Enabled ) continue;
+				if ( Math.Abs(sprite.parent.Transform.Position.X - camera_pos.X) > (544 + 300)) continue; // do not render if off screen
 				Matrix4 world = Matrix4.Identity ;
 				
 				

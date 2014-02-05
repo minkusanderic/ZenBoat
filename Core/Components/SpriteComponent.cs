@@ -15,7 +15,7 @@ namespace Core
 		public ShaderProgram shaderProgram;
 		public Vector2 scale = new Vector2(1.0f, 1.0f);
 		
-		private Dictionary<String, Texture2D> texture_cache = new Dictionary<String, Texture2D>();
+		private static Dictionary<String, Texture2D> texture_cache = new Dictionary<String, Texture2D>();
 		
 		public SpriteComponent (int width, int height, Vector3 color)
 		{

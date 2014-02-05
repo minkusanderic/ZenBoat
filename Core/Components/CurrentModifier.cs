@@ -1,6 +1,8 @@
 using System;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Graphics;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Core
 {
@@ -12,6 +14,8 @@ namespace Core
 		public ShaderProgram shaderProgram;
 		public Vector2 scale = new Vector2(1.0f, 1.0f);
 		
+		private static Dictionary<String, Texture2D> texture_cache = new Dictionary<String, Texture2D>();
+		
 		public CurrentModifier (int width, int height, Vector3 color)
 		{
 		
@@ -20,7 +24,14 @@ namespace Core
 		
 		public CurrentModifier (String filename)
 		{
-			texture = new Texture2D(filename, false);
+			if(texture_cache.ContainsKey(filename))
+			{
+				texture = texture_cache[filename];
+			}
+			else{
+				texture_cache[filename] = new Texture2D(filename, false); // use index here
+				texture = texture_cache[filename];
+			}
 			shaderProgram = new ShaderProgram("/Application/shaders/Sprite.cgx");
 			
 			 shaderProgram.SetUniformBinding(0, "u_ScreenMatrix");

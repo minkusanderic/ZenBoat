@@ -74,7 +74,7 @@ namespace Core
 		private float time = 0.0f;
 		//private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
-		private Texture2D swirl_map = new Texture2D("/Application/Assets/vectorswirl.png", false);
+		//private Texture2D swirl_map = new Texture2D("/Application/Assets/vectorswirl.png", false);
 		private Vector3[] v = new Vector3[30];
 		private int circular_buffer_index = 0;
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
@@ -114,8 +114,8 @@ namespace Core
 				foreach(var rad in this.radials)
 				{
 					Vector3 radial_vec = new Vector3(rad.parent.Transform.Position.X, rad.parent.Transform.Position.Y, rad.time);
-					water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Radial"),
-					                                    ref radial_vec);
+					//water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Radial"),
+					//                                    ref radial_vec);
 					rad.time += 30.0f;
 					v[circular_buffer_index] = radial_vec;
 					v[circular_buffer_index].Z = 1000.0f;
@@ -151,7 +151,7 @@ namespace Core
 			}
 		}
 		
-		//private Texture2D flow_map; 
+		//private Texture2D flow_map = null; 
 		private Texture2D RenderFlowMap(GraphicsSystem g)
 		{
 			    FrameBuffer off_screen = new FrameBuffer();
