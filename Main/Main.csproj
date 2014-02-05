@@ -72,6 +72,8 @@
     <Compile Include="PreFabs\Windmill.cs" />
     <Compile Include="PreFabs\MapleTreeNorth.cs" />
     <Compile Include="PreFabs\MapleTreeSouth.cs" />
+    <Compile Include="PreFabs\CherryBlossomNorth.cs" />
+    <Compile Include="PreFabs\CherryBlossomSouth.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -194,5 +196,7 @@
     <Content Include="Assets\MapleNb.mdx" />
     <Content Include="Assets\MapleSa.mdx" />
     <Content Include="Assets\MapleSb.mdx" />
+    <Content Include="Assets\CherryBlossomN.mdx" />
+    <Content Include="Assets\CherryBlossomS.mdx" />
   </ItemGroup>
 </Project>
