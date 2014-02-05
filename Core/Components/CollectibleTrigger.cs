@@ -20,7 +20,7 @@ namespace Core
 			CollectibleManager.CollectItem(this.parent,  this.parent.Name , collectibleScore );
 			this.parent.Enabled = false;
 			if ( sound == null )
-				sound = this.parent.attachComponent( new SFXComponent("/Application/Assets/menuUp.wav" ) );
+				sound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav" ) );
 			sound.PlaySound();
 		}
 	}
