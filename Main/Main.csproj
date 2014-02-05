@@ -203,5 +203,6 @@
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\MapleNaFall.mdx" />
     <Content Include="Assets\MapleSaFall.mdx" />
+    <Content Include="Assets\RockFBX2.mdx" />
   </ItemGroup>
 </Project>

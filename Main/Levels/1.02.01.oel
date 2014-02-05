@@ -143,10 +143,8 @@
   <Entities>
     <Boat id="0" x="80" y="296" angle="0" />
     <Torii id="1" x="896" y="272" NextLevel="1.03.01.oel" />
-    <MapleTreeSouth id="2" x="12" y="540" width="70" height="70" />
-    <MapleTreeSouth id="3" x="80" y="536" width="70" height="70" />
-    <CherryBlossomSouth id="4" x="660" y="568" />
-    <CherryBlossomSouth id="5" x="556" y="572" />
+    <Crane id="2" x="296" y="288" />
+    <Crane id="3" x="584" y="288" />
   </Entities>
   <Art />
 </level>
