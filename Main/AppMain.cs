@@ -29,7 +29,7 @@ namespace Main
 			/// NOTE: any entites created here will not be created again when a new level is loaded after the first level, but they will be destroy!
 			/// For any entities that need to be created each level, make them in the Boat prefab, since every level is gaurenteed to have a boat
 			var background_music = SceneManager.Instance.createEntity("BG_Music");
-			BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/gameBackground.mp3") );
+			BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/LondonsSong.mp3") );
 			bgmc.setVolume(1f);
 			bgmc.loop(true);
 			
