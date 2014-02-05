@@ -22,6 +22,7 @@ namespace Core
 		
 		public void PlaySound()
 		{
+			soundPlayer.Stop();
 			soundPlayer.Play();
 		}
 		
@@ -35,6 +36,18 @@ namespace Core
 			
 			
 			
+		}
+		
+		/// <summary>
+		/// Determines whether this sound instance is playing.
+		/// </summary>
+		/// <returns>
+		/// <c>true</c> if this instance is playing; otherwise, <c>false</c>.
+		/// </returns>
+		public bool IsPlaying()
+		{
+			return false;
+			//return soundPlayer.
 		}
 		
 	}

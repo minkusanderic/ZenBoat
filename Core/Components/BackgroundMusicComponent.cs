@@ -26,14 +26,14 @@ namespace Core
 			background_music_player.Play();
 		}
 		
-		public void setVolume(int volume) 
+		public void setVolume(float volume) 
 		{
-			background_music_player.Volume = 0.1f;
+			background_music_player.Volume = volume;
 		}
 		
-		public void loop() 
+		public void loop(bool isLooping) 
 		{
-			background_music_player.Loop = true; 
+			background_music_player.Loop = isLooping; 
 		}
 		
 	}

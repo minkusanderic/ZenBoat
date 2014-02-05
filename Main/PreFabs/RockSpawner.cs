@@ -16,11 +16,13 @@ namespace Main
 			float force = 50f;
 			bool touchDown = false;
 			TouchController touchController;
-			
+			SFXComponent splashSound;
 			public RockSpawnerLogic( TouchController tc )
 			{
 				Console.WriteLine("Making RockSpawner");
 				touchController = tc;
+				//splashSound = new SFXComponent("/Application/Assets/WaterDrop.wav");
+				//this.parent.attachComponent( splashSound );
 			}
 			bool b = true;
 			
@@ -88,6 +90,11 @@ namespace Main
 								}
 							} 
 							rock.attachComponent( new SuicideController( 20 ) );
+							if ( splashSound == null )
+								splashSound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
+							//if ( !splashSound.IsPlaying() )
+							splashSound.PlaySound();
+							// sounds 
 							/*
 							int num_particles = 20;
 							for ( int i = 0 ; i < 360; i += num_particles )

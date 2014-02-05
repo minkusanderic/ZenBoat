@@ -9,6 +9,7 @@ namespace Core
 	public class CollectibleTrigger : TriggerComponent
 	{
 		int collectibleScore;
+		SFXComponent sound;
 		public CollectibleTrigger (int worth) : base(SceneManager.Instance.Select("boat"))
 		{
 			collectibleScore = worth;
@@ -18,6 +19,9 @@ namespace Core
 		{
 			CollectibleManager.CollectItem(this.parent,  this.parent.Name , collectibleScore );
 			this.parent.Enabled = false;
+			if ( sound == null )
+				sound = this.parent.attachComponent( new SFXComponent("/Application/Assets/menuUp.wav" ) );
+			sound.PlaySound();
 		}
 	}
 }
