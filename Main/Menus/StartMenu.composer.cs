@@ -47,19 +47,43 @@ namespace Menu
             Panel_1.AddChildLast(instrButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/assets/title.png");
+            titleImage.Image = new ImageAsset("/Application/assets/titleC.png");
 
             // startButton
             startButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             startButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            startButton.Style = ButtonStyle.Custom;
+            startButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             // quitButton
             quitButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             quitButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            quitButton.Style = ButtonStyle.Custom;
+            quitButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             // instrButton
             instrButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             instrButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            instrButton.Style = ButtonStyle.Custom;
+            instrButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             SetWidgetLayout(orientation);
 
@@ -111,22 +135,22 @@ namespace Menu
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    titleImage.SetPosition(112, 0);
-                    titleImage.SetSize(735, 333);
+                    titleImage.SetPosition(0, 0);
+                    titleImage.SetSize(959, 544);
                     titleImage.Anchors = Anchors.None;
                     titleImage.Visible = true;
 
-                    startButton.SetPosition(373, 283);
+                    startButton.SetPosition(109, 278);
                     startButton.SetSize(214, 56);
                     startButton.Anchors = Anchors.None;
                     startButton.Visible = true;
 
-                    quitButton.SetPosition(373, 459);
+                    quitButton.SetPosition(109, 407);
                     quitButton.SetSize(214, 56);
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
 
-                    instrButton.SetPosition(373, 371);
+                    instrButton.SetPosition(109, 345);
                     instrButton.SetSize(214, 56);
                     instrButton.Anchors = Anchors.None;
                     instrButton.Visible = true;
@@ -138,11 +162,6 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            startButton.Text = "Start";
-
-            quitButton.Text = "Quit";
-
-            instrButton.Text = "Instructions";
         }
 
         private void onShowing(object sender, EventArgs e)
