@@ -75,7 +75,7 @@ namespace Core
 		//private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
 		//private Texture2D swirl_map = new Texture2D("/Application/Assets/vectorswirl.png", false);
-		private Vector3[] v = new Vector3[2];
+		private Vector3[] v = new Vector3[30];
 		private int circular_buffer_index = 0;
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
 		{
