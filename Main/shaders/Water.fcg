@@ -20,7 +20,7 @@ void main(
 	sampleNorm.x = fmod(sampleNorm.x, 1.0f);
 	sampleNorm.y = fmod(sampleNorm.y, 1.0f);
 	float4 normColor = tex2D( n_Texture, sampleNorm);
-	float4 tmpColor = tex2D( s_Texture,v_TexCoord + v_Normal.xy/7 + normColor.xy/7);
+	float4 tmpColor = tex2D( s_Texture,v_TexCoord + v_Normal.xy + normColor.xy/7);
 	//tmpColor.xy *= float2(.7f, .7f);
 	tmpColor.w = .7f;
 	Color = tmpColor;

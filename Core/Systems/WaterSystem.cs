@@ -180,7 +180,7 @@ namespace Core
 				//var cel_shading = new Texture2D(new byte[] {}, false);
 				float water_width = 960f + 300f * 2;
 				float water_height = 544f + 168.75f * 2;
-				Matrix4 proj = Matrix4.Ortho(-water_width * .5f ,water_width * .5f, -water_height/2,water_height/2, 1, 100);
+				Matrix4 proj = Matrix4.Ortho(-water_width/2 + 100 ,water_width/2 +100, -water_height/2, water_height/2, 1, 100);
 			//Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
 			 //Matrix4 view = Matrix4.LookAt(new Vector3(0.0f, 0.0f, 3.0f), Vector3.Zero, Vector3.UnitY);
 			Matrix4 view = Matrix4.LookAt(  new Vector3(g.camera_pos.X, 544/2, 3.0f),
@@ -223,7 +223,7 @@ namespace Core
 				//program.Parameters.SetWorldMatrix(0, ref world);
 				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
-				//g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
+				g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 				
 			}
 			
