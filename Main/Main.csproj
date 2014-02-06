@@ -213,8 +213,6 @@
     <Content Include="Assets\Sound\SFX\Crane3.wav" />
     <Content Include="Assets\Sound\SFX\Crane4.wav" />
     <Content Include="Assets\Sound\SFX\Crane5.wav" />
-    <Content Include="Assets\Sound\Background\LondonsSongRift-TitleMusic.wav" />
-    <Content Include="Assets\Sound\Background\Ishikari Lore-gameBackground.mp3" />
     <Content Include="Assets\Sound\SFX\BoatDeath.wav" />
     <Content Include="Assets\Sound\SFX\LevelCheckpoint.wav" />
     <Content Include="Assets\Sound\SFX\LevelEnd.wav" />
