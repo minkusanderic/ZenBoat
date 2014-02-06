@@ -203,5 +203,7 @@
     <Content Include="Assets\MapleNaFall.mdx" />
     <Content Include="Assets\MapleSaFall.mdx" />
     <Content Include="Assets\RockFBX2.mdx" />
+    <Content Include="Assets\instructionsB.png" />
+    <Content Include="Assets\titleC.png" />
   </ItemGroup>
 </Project>
