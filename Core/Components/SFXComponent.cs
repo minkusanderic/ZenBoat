@@ -28,14 +28,12 @@ namespace Core
 		
 		public void SetSoundFromFile(	string file_name	)
 		{
-			Console.WriteLine("Initing SFX music component");
+			//Console.WriteLine("Initing SFX music component");
 			if ( file_name != null && file_name != "" )
 				sound = new Sound( file_name );
 			else
 				throw new Exception( "No Audiopath Specified :(" );
-			
-			
-			
+			soundPlayer = sound.CreatePlayer();
 		}
 		
 		/// <summary>

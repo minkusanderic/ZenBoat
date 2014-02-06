@@ -48,6 +48,9 @@ namespace Main
 																rb = new RigidBody( 1f , 272f );
 																rb.is_static = true;
 																ent.attachComponent( rb );
+																SFXComponent sound = ent.attachComponent( 
+						                                         new SFXComponent("/Application/Assets/Sound/SFX/LevelCheckpoint.wav") );
+																sound.PlaySound();
 															}
 															// clears the list of things that need to be respawned
 															// this also leaves the entites "UnEnabled"

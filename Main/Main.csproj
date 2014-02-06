@@ -103,6 +103,9 @@
     <Folder Include="resources\" />
     <Folder Include="Assets\" />
     <Folder Include="Menus\" />
+    <Folder Include="Assets\Sound\" />
+    <Folder Include="Assets\Sound\SFX\" />
+    <Folder Include="Assets\Sound\Background\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Cube.mdx" />
@@ -205,5 +208,15 @@
     <Content Include="Assets\RockFBX2.mdx" />
     <Content Include="Assets\instructionsB.png" />
     <Content Include="Assets\titleC.png" />
+    <Content Include="Assets\Sound\SFX\Crane1.wav" />
+    <Content Include="Assets\Sound\SFX\Crane2.wav" />
+    <Content Include="Assets\Sound\SFX\Crane3.wav" />
+    <Content Include="Assets\Sound\SFX\Crane4.wav" />
+    <Content Include="Assets\Sound\SFX\Crane5.wav" />
+    <Content Include="Assets\Sound\Background\LondonsSongRift-TitleMusic.wav" />
+    <Content Include="Assets\Sound\Background\Ishikari Lore-gameBackground.mp3" />
+    <Content Include="Assets\Sound\SFX\BoatDeath.wav" />
+    <Content Include="Assets\Sound\SFX\LevelCheckpoint.wav" />
+    <Content Include="Assets\Sound\SFX\LevelEnd.wav" />
   </ItemGroup>
 </Project>

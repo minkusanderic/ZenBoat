@@ -56,6 +56,10 @@ namespace Main
 																// reload all the saved Entities that were hidden
 																SaveGameManager.RespawnEntities();
 																CollectibleManager.PrintScore();
+																SFXComponent sound = ent.attachComponent( 
+							                                           new SFXComponent("/Application/Assets/Sound/SFX/BoatDeath.wav") );
+																sound.PlaySound();
+								
 															}
 															if ( r.parent.HasTag("driftwood") )
 															{
