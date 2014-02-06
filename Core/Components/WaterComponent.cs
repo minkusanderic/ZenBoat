@@ -17,8 +17,8 @@ namespace Core
 			
 			 shaderProgram.SetUniformBinding(0, "WorldViewProj");
 			
-			 int W = 100;
-			 int H = 100;
+			 int W = 25;
+			 int H = 25;
 			 
 			 float[] vertices = new float[W * H * 3];
 			
@@ -27,8 +27,8 @@ namespace Core
 				for(var j = 0;j < H; j++)
 				{
 					int offset = 3*((i * W) + j);
-					vertices[offset + 0] = i * 15.6f - 300.0f;   // x0
-   			  		vertices[offset + 1] = j * 8.815f - 168.75f;   // y0
+					vertices[offset + 0] = i * (1560f/(float)W) - 300.0f;   // x0
+   			  		vertices[offset + 1] = j * (881.5f/(float)H) - 168.75f;   // y0
               		vertices[offset + 2] = -0.1f;   // z0
 				}
 			}
