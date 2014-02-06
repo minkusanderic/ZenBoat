@@ -105,7 +105,6 @@
     <Folder Include="Menus\" />
     <Folder Include="Assets\Sound\" />
     <Folder Include="Assets\Sound\SFX\" />
-    <Folder Include="Assets\Sound\Background\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Cube.mdx" />
