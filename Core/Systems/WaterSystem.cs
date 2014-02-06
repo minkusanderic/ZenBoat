@@ -75,7 +75,7 @@ namespace Core
 		//private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
 		//private Texture2D swirl_map = new Texture2D("/Application/Assets/vectorswirl.png", false);
-		private Vector3[] v = new Vector3[30];
+		private Vector3[] v = new Vector3[2];
 		private int circular_buffer_index = 0;
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
 		{
@@ -96,8 +96,7 @@ namespace Core
 				world *= Matrix4.Translation(pos) ;
 				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 				
-				g.graphics.SetVertexBuffer(0, water.vb);
-				g.graphics.SetShaderProgram(water.shaderProgram);
+				
 				//graphics.SetTexture(0, sprite.texture);
 				
 
@@ -105,11 +104,7 @@ namespace Core
 				
 
 				//program.Parameters.SetWorldMatrix(0, ref world);
-				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("WorldViewProj"), ref world_view_proj);
-				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("EyePosition"), ref Eye);
-				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("time"), time);
-				
-				water.shaderProgram.SetUniformValue( water.shaderProgram.FindUniform("World") , ref world );
+			
 				
 				foreach(var rad in this.radials)
 				{
@@ -133,9 +128,30 @@ namespace Core
 						else{
 							v[i].Z -= 6.0f;}
 					}
+
+				water.shaderProgram.SetAttributeBinding(0, "a_Position");
+				water.shaderProgram.SetAttributeBinding(1, "a_TexCoord");
+				water.shaderProgram.SetAttributeBinding(2, "a_Normal");
 				
+				//water.shaderProgram.SetAttributeBinding(3, "v_Position");
+				//water.shaderProgram.SetAttributeBinding(4, "v_Color");
+				//water.shaderProgram.SetAttributeBinding(5, "v_TexCoord");
+				//water.shaderProgram.SetAttributeBinding(6, "v_Normal");
+				//water.shaderProgram.SetAttributeBinding(7, "v_Eye");
 				
-				water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Splashes"), v, 0, 0, v.Length);
+				water.shaderProgram.SetUniformBinding(0, "WorldViewProj");
+				water.shaderProgram.SetUniformBinding(1, "EyePosition");
+				water.shaderProgram.SetUniformBinding(2, "time");
+				water.shaderProgram.SetUniformBinding(3, "World");
+				water.shaderProgram.SetUniformBinding(4, "Splashes");
+				
+				water.shaderProgram.SetUniformValue(0, ref world_view_proj);
+				water.shaderProgram.SetUniformValue(1, ref Eye);
+				water.shaderProgram.SetUniformValue(2, time);
+				
+				water.shaderProgram.SetUniformValue(3, ref world );
+				
+				water.shaderProgram.SetUniformValue(4, v, 0, 0, v.Length);
 				time += .001f;
 				if(time > 1.0f)
 					time = 0.0f;
@@ -144,6 +160,8 @@ namespace Core
 				g.graphics.SetTexture(1, normal_map);
 				g.graphics.SetTexture(2, flow_map);
 				
+				g.graphics.SetVertexBuffer(0, water.vb);
+				g.graphics.SetShaderProgram(water.shaderProgram);
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
 				flow_map.Dispose();
@@ -206,6 +224,7 @@ namespace Core
 				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
 				g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
+				
 			}
 			
 

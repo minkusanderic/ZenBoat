@@ -6,9 +6,10 @@ void main(
 	float2 in v_TexCoord	: TEXCOORD0,
 	float4 in v_Color		: TEXCOORD1,
 	float3 in v_Color2		: TEXCOORD2,
-	float3 in  v_Normal	  : TEXCOORD4,
     float3 in  v_Eye      : TEXCOORD3,
+	float3 in  v_Normal	  : TEXCOORD4,
 	float in v_FogCoord		: FOGC,
+	
 	float4 out color		: COLOR
 )
 {

@@ -1,19 +1,20 @@
-#define NUM_OF_SPLASHES 30
+#define NUM_OF_SPLASHES 2
+
+uniform float3 EyePosition;
+uniform float4x4 WorldViewProj;
+uniform float time;
+uniform float3 Splashes[NUM_OF_SPLASHES];
+uniform float4x4 World;
 
 void main( float4 in a_Position  : POSITION,
 		   float2 in a_TexCoord    : TEXCOORD0,	
 		   float3 in a_Normal : NORMAL,
-		   float4 out v_Position : POSITION,
-		   float4 out v_Color : COLOR0,
+		   
 		   float2 out v_TexCoord   : TEXCOORD0,
 		   float3 out v_Normal : TEXCOORD1,
 		   float3 out v_Eye : TEXCOORD2,
-		   uniform float3 EyePosition,
-		   uniform float4x4 WorldViewProj,
-		   uniform float time,
-		   uniform float3 Radial,
-		   uniform float3 Splashes[NUM_OF_SPLASHES],
-		   uniform float4x4 World
+		   
+		   float4 out v_Position : POSITION	   
            )
 {
 	float4 w_Position = mul( a_Position , World ); // a_Pos is rel to Model Space
@@ -47,6 +48,7 @@ void main( float4 in a_Position  : POSITION,
 	a_Position.z = z_pos;
 	v_Position	= mul( a_Position, WorldViewProj );
 	v_Normal	= normalize(a_Normal);
+	//v_Normal = float3(0.0f, 1.0f, 1.0f);
 	v_Eye		= EyePosition - a_Position.xyz;
 	v_TexCoord  = a_TexCoord;
 	
