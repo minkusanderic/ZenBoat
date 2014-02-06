@@ -47,21 +47,16 @@ namespace Main
 			water.attachComponent(new WaterComponent());
 			water.attachComponent(new FollowCameraComponent() );
 			
-			var bank = SceneManager.Instance.createEntity("Bank");
-			bank.Transform.Position = new Vector2(1610, 544/2 + 100);
-			bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank02.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
-			ModelComponent bank_model = bank.FindComponent<ModelComponent>();
-			bank_model.scale.Y *= 1.2f;
-			bank_model.scale.X *= 1.2f;
-			
-			//Tiling the bank
-//			var bank1 = SceneManager.Instance.createEntity("Bank1");
-//			bank1.Transform.Position = new Vector2(7953/2, 544/2 + 100);
-////			bank1.Transform.Position = new Vector2(x,y);
-//			bank1.attachComponent(new ModelComponent("/Application/Assets/SimpleBank02.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
-//			ModelComponent bank1_model = bank1.FindComponent<ModelComponent>();
-//			bank1_model.scale.Y *= 1.2f;
-//			bank1_model.scale.X *= 1.2f;
+			// Tiling the bank
+			for (int i=0; i<4; i++)
+			{
+				var bank+i.ToString() = SceneManager.Instance.createEntity("Bank");
+				bank.Transform.Position = new Vector2(((3220*i)+1610), 544/2 + 100);
+				bank.attachComponent(new ModelComponent("/Application/Assets/SimpleBank02.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
+				ModelComponent bank_model = bank.FindComponent<ModelComponent>();
+				bank_model.scale.Y *= 1.2f;
+				bank_model.scale.X *= 1.2f;
+			}
 		
 			int size_of_level = 10000;
 			// bottom
