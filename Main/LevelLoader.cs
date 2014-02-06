@@ -102,6 +102,7 @@ namespace Main
 		
 		public static void Load(String filename)
 		{
+			CollectibleManager.ClearStageScore();
 			int[,] down = new int[60,34];
 			int[,] up = new int[60,34];
 			int[,] right = new int[60,34];

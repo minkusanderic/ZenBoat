@@ -215,5 +215,8 @@
     <Content Include="Assets\Sound\SFX\BoatDeath.wav" />
     <Content Include="Assets\Sound\SFX\LevelCheckpoint.wav" />
     <Content Include="Assets\Sound\SFX\LevelEnd.wav" />
+    <Content Include="Assets\Sound\gameBackground1.wav" />
+    <Content Include="Assets\Sound\gameBackground.wav" />
+    <Content Include="Assets\Sound\gameBackground.mp3" />
   </ItemGroup>
 </Project>
