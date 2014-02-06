@@ -21,6 +21,7 @@ namespace Core
 		
 		public GraphicsContext graphics;
 		public BasicProgram program;
+		private BasicParameters parameters;
 		public Scene scene;
 		public Label count;
 		
@@ -37,6 +38,8 @@ namespace Core
 		{
 			graphics = new GraphicsContext();
 			program = new BasicProgram();
+			parameters = program.Parameters;
+		 	program = new BasicProgram("/Application/shaders/Basic.cgx" , null , parameters );
 			scene = new Scene();
 			Timer.Init();
 			
@@ -97,7 +100,6 @@ namespace Core
 			Vector3 litAmbient = new Vector3( 0.1f, 0.1f, 0.1f ) ;
 			Vector3 fogColor = new Vector3( 0.0f, 0.5f, 1.0f ) ;
 	
-			BasicParameters parameters = program.Parameters ;
 			parameters.Enable( BasicEnableMode.Lighting, true ) ;
 			parameters.Enable( BasicEnableMode.Fog, true ) ;
 	
@@ -130,7 +132,7 @@ namespace Core
 			
 			//Setup Model Shader
 			//var basic_parameters = new BasicParameters();
-			var basic_program = new BasicProgram("/Application/shaders/Basic.cgx" , null , parameters );
+			//var basic_program = new BasicProgram("/Application/shaders/Basic.cgx" , null , parameters );
 			//var basic_program_container = new BasicProgramContainer( basic_parameters );
 			//basic_program_container.Add("SIMPLE", basic_program);
 			
@@ -153,13 +155,14 @@ namespace Core
 					world *= Matrix4.RotationY (-model.parent.Transform.Rotation.Angle(Vector2.UnitX));
 					
 				}
+				
 				//model.model.BindPrograms( basic_program_container );
 			    //  draw model, animate model
 				model.model.SetWorldMatrix( ref world ) ;
 				model.model.Animate( .01f ) ;
 				model.model.Update() ;
 				graphics.SetTexture(1, toon);
-				model.model.Draw(graphics, basic_program) ;
+				model.model.Draw(graphics, program) ;
 			}
 			
 			foreach(var sprite in sprites)

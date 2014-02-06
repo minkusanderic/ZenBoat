@@ -197,7 +197,6 @@
     <Content Include="Assets\MapleSa.mdx" />
     <Content Include="Assets\MapleSb.mdx" />
     <Content Include="Assets\lilypad2.mdx" />
-    <Content Include="Assets\chime.wav" />
     <Content Include="Assets\chime.mp3" />
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\CherryBlossomS.mdx" />
