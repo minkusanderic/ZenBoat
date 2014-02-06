@@ -223,7 +223,7 @@ namespace Core
 				//program.Parameters.SetWorldMatrix(0, ref world);
 				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
-				g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
+				//g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
 				
 			}
 			
