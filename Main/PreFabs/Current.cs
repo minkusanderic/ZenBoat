@@ -15,8 +15,7 @@ namespace Main
 		
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			Console.WriteLine("CURRENT CREATE FUNCTION CALLED");
-			
+			Console.WriteLine("CURRENT CREATE FUNCTION CALLED");	
 			ent.tag("current");
 			//SpriteComponent sprite = new SpriteComponent("/Application/Assets/whirlpool.png");
 			//sprite.scale.X = width/50;
@@ -36,7 +35,6 @@ namespace Main
 			//m.scale = new Vector2(.5f, .5f);
 			RigidBody rb = new RigidBody( width/2 , height/2 );
 			ent.attachComponent(rb);
-
 			/*
 			Core.SimpleController controller = new Core.SimpleController(() => {
 				List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("pushable").ToList();
@@ -57,7 +55,6 @@ namespace Main
 				pushable.FindComponent<RigidBody>().applyForce(200*new Vector2((float)Math.Cos(angle),-(float)Math.Sin(angle)));
 				
 			});
-			
 			ent.attachComponent( trigger );
 		}
 	}
