@@ -33,9 +33,9 @@ namespace Main
 				{
 					Vector2 dir = ent.Transform.Position - obj.Transform.Position;
 					float magnitude = ((float)strength)/dir.Length();
-					if(dir.Length() < (Math.Min(width, height) * 2.5f))
+					if(dir.Length() < (Math.Min(width, height) * 2.5)) // orig:*2.5 elli5:*2.5
 					{
-						obj.FindComponent<RigidBody>().applyForce(dir * -magnitude);
+						obj.FindComponent<RigidBody>().applyForce(dir * -magnitude); // orig:*1 elli5:*4
 					}
 				}
 			}));
