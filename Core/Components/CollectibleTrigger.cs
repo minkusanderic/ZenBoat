@@ -10,16 +10,20 @@ namespace Core
 	{
 		int collectibleScore;
 		SFXComponent 	sound;
-		SFXComponent[] 	sounds = new SFXComponent[5];
+		static SFXComponent[] 	sounds = null; //= new SFXComponent[5];
 		
 		public CollectibleTrigger (int worth) : base(SceneManager.Instance.Select("boat"))
 		{
 			collectibleScore = worth;
-			sounds[0] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 1 + ".wav");
-			sounds[1] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 2 + ".wav");
-			sounds[2] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 3 + ".wav");
-			sounds[3] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 4 + ".wav");
-			sounds[4] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 5 + ".wav");
+			if ( sounds == null )
+			{
+				sounds = new SFXComponent[5];
+				sounds[0] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 1 + ".wav");
+				sounds[1] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 2 + ".wav");
+				sounds[2] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 3 + ".wav");
+				sounds[3] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 4 + ".wav");
+				sounds[4] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 5 + ".wav");
+			}
 			//= sound.SetSoundFromFile("/Application/Assets/Sound/SFX/Crane" + i + ".wav");
 			
 		}
