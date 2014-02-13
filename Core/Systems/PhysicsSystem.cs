@@ -91,6 +91,7 @@ namespace Core
 				body.body.Rotation = Vector2.Angle(Vector2.UnitX, body.parent.Transform.Rotation);
 			}
 			physics.Simulate();
+			physics.Simulate();
 			foreach(var body in this.bodies)
 			{
 				if ( !body.parent.Enabled ) continue;

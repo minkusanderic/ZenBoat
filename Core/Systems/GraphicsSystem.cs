@@ -30,6 +30,8 @@ namespace Core
 		
 		private Texture2D toon;
 		
+		private List<Texture2D> tex_list = new List<Texture2D>();
+		
 		private float time = 0.0f;
 		
 		//private Dictionary<String, Texture2D> textures = new Dictionary<String, Texture2D>();
@@ -41,12 +43,13 @@ namespace Core
 			parameters = program.Parameters;
 		 	program = new BasicProgram("/Application/shaders/Basic.cgx" , null , parameters );
 			scene = new Scene();
-			Timer.Init();
+			//Timer.Init();
 			
 			UISystem.Initialize(graphics);
 			UISystem.SetScene(scene, null);
 		
 			toon = new Texture2D("/Application/Assets/toon.png", false);
+			
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
 		float cameraOffset = 0f;
@@ -85,7 +88,7 @@ namespace Core
 		public override void Update() // Render here
 		{	
 			UISystem.SetScene(scene, null);
-			Timer.StartFrame();
+			//Timer.StartFrame();
 			this.camera_pos = UpdateCameraPosition();
 			cameraLastPosition = this.camera_pos;
 			this.camera_eye = new Vector3( 960f/2f + cameraOffset , 544f/2f  , 0f  );//new Vector3( 960.0f/2.0f, 544.0f/2.0f , 0.0f + 100f );
@@ -140,7 +143,7 @@ namespace Core
 			foreach(var model in models)
 			{
 				if ( !model.parent.Enabled ) continue;
-				//if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (544 + 1000)) continue; // do not render if off screen
+				if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (960 + model.model.BoundingSphere.W)) continue; // do not render if off screen
 				Matrix4 world = Matrix4.Identity ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
@@ -206,7 +209,7 @@ namespace Core
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
 			UISystem.Render();
 			graphics.SwapBuffers() ;
-			Timer.EndFrame();
+			//Timer.EndFrame();
 		}
 		
 		public override void attachComponent(IComponent comp)

@@ -17,6 +17,7 @@ namespace Main
 	
 		public static void Main (string[] args)
 		{
+			Timer.Init();
 			SaveGameManager.init();
 			
 			MenuLoader.Load();
@@ -36,11 +37,19 @@ namespace Main
 			var soundeffect_music = SceneManager.Instance.createEntity("SFX_Music");
 			//soundeffect_music.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
 			
+			
+			
+			
+			
 			//BasicEmitter be = new BasicEmitter();
 			while(true)
 			{
+				Timer.StartFrame();
+				bool game_end = SceneManager.Instance.Update();
+				Timer.EndFrame();
+				Console.WriteLine("FPS: " + Timer.AverageFrameRate);
 				//be.Update();
-				if(!SceneManager.Instance.Update())
+				if(!game_end)
 				{
 					//if the level is over, then load the bootstrapper again
 					LevelLoader.BootStrap();	

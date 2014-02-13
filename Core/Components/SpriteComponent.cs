@@ -32,6 +32,7 @@ namespace Core
 			else{
 				texture_cache[filename] = new Texture2D(filename, false); // use index here
 				texture = texture_cache[filename];
+				Console.WriteLine("Loading Texture: " + filename + " (" + texture.Height * texture.Width * 4 + " bytes)");
 			}
 			shaderProgram = new ShaderProgram("/Application/shaders/Sprite.cgx");
 			
