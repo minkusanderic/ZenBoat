@@ -23,7 +23,7 @@ namespace Main
 			
 			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/whirlpool.png"));
 			//m.scale = new Vector2(.5f, .5f);
-			RigidBody rb = new RigidBody( Math.Min(width, height) /2f ); // orig:/2f elli5:/4f
+			RigidBody rb = new RigidBody( Math.Min(width, height) /10f ); // orig:/2f elli5:/4f
 			ent.attachComponent(rb);
 			rb.is_static = true;
 			
@@ -35,10 +35,10 @@ namespace Main
 				{
 					Vector2 dir = ent.Transform.Position - obj.Transform.Position;
 					float magnitude = ((float)strength)/dir.Length();
-					if(dir.Length() < (Math.Min(width, height) * 2.5f))  // orig:*2.5f elli5:*3.5f
+					if(dir.Length() < (Math.Min(width, height) * 3.5f))  // orig:*2.5f elli5:*3.5f
 					{
 						//obj.FindComponent<RigidBody>().applyForce(dir * magnitude); // ellis removed
-						obj.FindComponent<RigidBody>().applyForce((dir * magnitude)); // orig:*1 elli5:*2
+						obj.FindComponent<RigidBody>().applyForce((dir * magnitude * .8f)); // orig:*1 elli5:*2
 					}
 				}
 			}));
