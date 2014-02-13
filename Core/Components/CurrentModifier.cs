@@ -14,12 +14,17 @@ namespace Core
 		public ShaderProgram shaderProgram;
 		public Vector2 scale = new Vector2(1.0f, 1.0f);
 		
+		
 		private static Dictionary<String, Texture2D> texture_cache = new Dictionary<String, Texture2D>();
 		
 		public CurrentModifier (int width, int height, Vector3 color)
 		{
 		
 			
+		}
+		public void SetTextureScale(string file_name, Vector2 _scale)
+		{
+			//texture_cache[file_name]
 		}
 		
 		public CurrentModifier (String filename)
@@ -35,7 +40,8 @@ namespace Core
 			shaderProgram = new ShaderProgram("/Application/shaders/Sprite.cgx");
 			
 			 shaderProgram.SetUniformBinding(0, "u_ScreenMatrix");
-			 
+			 //shaderProgram.SetUniformBinding(1, "u_Rotation");
+				
 			 float[] vertices = new float[12];
 			
 			
@@ -78,14 +84,18 @@ namespace Core
               vertices[11]=0.0f;  // z3
 			
 			 vb = new VertexBuffer(4, indexSize, VertexFormat.Float3, VertexFormat.Float2, VertexFormat.Float4);
- 
+ 			
  	   		vb.SetVertices(0, vertices);
     		vb.SetVertices(1, texcoords);
   	  		vb.SetVertices(2, colors);
 
   	  		vb.SetIndices(indices);
 
-			}
+		}
+		public void GetValue(Vector2 position)
+		{
+			
+		}
 	}
 }
 

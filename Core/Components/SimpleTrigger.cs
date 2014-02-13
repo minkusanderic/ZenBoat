@@ -14,7 +14,6 @@ namespace Core
 		
 		public override void onCollide (Entity target)
 		{
-			Console.WriteLine("And here");
 			this.on_collide(target);
 		}
 		

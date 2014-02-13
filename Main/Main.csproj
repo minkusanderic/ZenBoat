@@ -12,9 +12,8 @@
     <AssemblyName>Main</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -216,5 +215,6 @@
     <Content Include="Assets\Sound\SFX\LevelCheckpoint.wav" />
     <Content Include="Assets\Sound\SFX\LevelEnd.wav" />
     <Content Include="Assets\Sound\gameBackground.mp3" />
+    <Content Include="Assets\Current.png" />
   </ItemGroup>
 </Project>
