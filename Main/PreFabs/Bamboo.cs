@@ -16,7 +16,7 @@ namespace Main
 						    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Bamboo.mdx"));
 			
-			m.scale = new Vector3(3	, 3, 3);
+			m.scale = new Vector3(1	, 1, 1);
 			
 		}
 	}

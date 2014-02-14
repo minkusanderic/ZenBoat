@@ -145,7 +145,6 @@
     <Torii id="1" x="896" y="272" NextLevel="1.03.01.oel" />
     <Crane id="2" x="296" y="288" />
     <Crane id="3" x="584" y="288" />
-    <CherryBlossomFlatS id="4" x="228" y="516" />
   </Entities>
   <Art />
 </level>

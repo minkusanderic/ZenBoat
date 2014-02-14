@@ -65,7 +65,6 @@
     <Compile Include="Menus\UIStringTable.cs" />
     <Compile Include="Menus\MenuLoader.cs" />
     <Compile Include="Menus\StartMenu.composer.cs" />
-    <Compile Include="PreFabs\Bamboo.cs" />
     <Compile Include="PreFabs\Bridge.cs" />
     <Compile Include="PreFabs\Lantern.cs" />
     <Compile Include="PreFabs\Windmill.cs" />
@@ -184,7 +183,6 @@
     <Content Include="Assets\SimpleBank02.mdx" />
     <Content Include="Assets\Bridge.mdx" />
     <Content Include="Assets\MapleTree.mdx" />
-    <Content Include="Assets\Bamboo.mdx" />
     <Content Include="Assets\Windmill.mdx" />
     <Content Include="Assets\Lantern.mdx" />
     <Content Include="Assets\CraneOrange.mdx" />
@@ -215,11 +213,8 @@
     <Content Include="Assets\Sound\SFX\LevelCheckpoint.wav" />
     <Content Include="Assets\Sound\SFX\LevelEnd.wav" />
     <Content Include="Assets\Sound\gameBackground.mp3" />
-<<<<<<< HEAD
     <Content Include="Assets\Current.png" />
-=======
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\CherryBlossomFlatS.mdx" />
->>>>>>> Stash
   </ItemGroup>
 </Project>
