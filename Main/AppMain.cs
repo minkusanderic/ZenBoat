@@ -46,6 +46,7 @@ namespace Main
 			{
 				Timer.StartFrame();
 				bool game_end = SceneManager.Instance.Update();
+				//while(Timer.ElapsedMilliseconds < (1/30.0f)*100.0f){}
 				Timer.EndFrame();
 				Console.WriteLine("FPS: " + Timer.AverageFrameRate);
 				//be.Update();

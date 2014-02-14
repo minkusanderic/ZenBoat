@@ -91,7 +91,9 @@ namespace Core
 				body.body.Rotation = Vector2.Angle(Vector2.UnitX, body.parent.Transform.Rotation);
 			}
 			physics.Simulate();
-			physics.Simulate();
+#if !DEBUG
+			physics.Simulate(); //Uncomment if running on PS Vita
+#endif
 			foreach(var body in this.bodies)
 			{
 				if ( !body.parent.Enabled ) continue;

@@ -143,7 +143,7 @@ namespace Core
 			foreach(var model in models)
 			{
 				if ( !model.parent.Enabled ) continue;
-				if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (960 + model.model.BoundingSphere.W)) continue; // do not render if off screen
+				if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (960 + Math.Max(model.scale.X, model.scale.Y) * model.model.BoundingSphere.W)) continue; // do not render if off screen
 				Matrix4 world = Matrix4.Identity ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
