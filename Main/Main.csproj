@@ -73,6 +73,8 @@
     <Compile Include="PreFabs\CherryBlossomNorth.cs" />
     <Compile Include="PreFabs\CherryBlossomSouth.cs" />
     <Compile Include="PreFabs\CherryBlossomFlatS.cs" />
+    <Compile Include="PreFabs\Iris.cs" />
+    <Compile Include="PreFabs\Tulip.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -196,7 +198,6 @@
     <Content Include="Assets\MapleNb.mdx" />
     <Content Include="Assets\MapleSa.mdx" />
     <Content Include="Assets\MapleSb.mdx" />
-    <Content Include="Assets\lilypad2.mdx" />
     <Content Include="Assets\chime.mp3" />
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\MapleNaFall.mdx" />
@@ -217,5 +218,11 @@
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\CherryBlossomFlatS.mdx" />
     <Content Include="Assets\day_flat.png" />
+    <Content Include="Assets\lilypad2.mdx" />
+    <Content Include="Assets\Log2.mdx" />
+    <Content Include="Assets\Rock.mdx" />
+    <Content Include="Assets\Iris.mdx" />
+    <Content Include="Assets\Tulip.mdx" />
+
   </ItemGroup>
 </Project>

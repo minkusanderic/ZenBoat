@@ -19,7 +19,8 @@ namespace Main
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/lilypad2.mdx"));
 			var scale_x = width / m.model.BoundingSphere.W;
 			var scale_y = height / m.model.BoundingSphere.W;
-			m.scale = new Vector3(scale_x, scale_y, scale_x);
+			//m.scale = new Vector3(scale_x, scale_y, scale_x);
+			m.scale = new Vector3(4, 4, 4);
 		}
 	}
 }

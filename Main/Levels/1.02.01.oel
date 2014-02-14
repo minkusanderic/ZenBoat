@@ -145,6 +145,29 @@
     <Torii id="1" x="896" y="272" NextLevel="1.03.01.oel" />
     <Crane id="2" x="296" y="288" />
     <Crane id="3" x="584" y="288" />
+    <Lillypad id="4" x="344" y="408" width="50" height="40" angle="0" />
+    <Lillypad id="5" x="628" y="160" width="50" height="40" angle="0" />
+    <Lillypad id="6" x="708" y="344" width="50" height="40" angle="0" />
+    <Iris id="7" x="284" y="-8" />
+    <Iris id="8" x="184" y="-12" />
+    <Iris id="9" x="344" y="-12" />
+    <Iris id="10" x="512" y="516" />
+    <Iris id="11" x="452" y="508" />
+    <Iris id="12" x="344" y="508" />
+    <Tulip id="13" x="312" y="-20" />
+    <Tulip id="14" x="368" y="-4" />
+    <Tulip id="15" x="240" y="-12" />
+    <Tulip id="16" x="396" y="492" />
+    <Tulip id="17" x="472" y="492" />
+    <Tulip id="18" x="316" y="516" />
+    <MapleTreeSouth id="19" x="172" y="524" width="70" height="70" />
+    <Rock id="20" x="460" y="40" width="50" height="50" angle="0" />
+    <Rock id="21" x="504" y="64" width="50" height="50" angle="0" />
+    <Rock id="22" x="428" y="88" width="86" height="90" angle="0" />
+    <Crane id="23" x="460" y="364" />
+    <Crane id="24" x="744" y="232" />
+    <CherryBlossomNorth id="25" x="628" y="-88" />
+    <CherryBlossomSouth id="26" x="704" y="596" />
   </Entities>
   <Art />
 </level>
