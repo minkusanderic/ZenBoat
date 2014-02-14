@@ -196,7 +196,6 @@
     <Content Include="Assets\MapleNb.mdx" />
     <Content Include="Assets\MapleSa.mdx" />
     <Content Include="Assets\MapleSb.mdx" />
-    <Content Include="Assets\lilypad2.mdx" />
     <Content Include="Assets\chime.mp3" />
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\MapleNaFall.mdx" />
@@ -216,9 +215,6 @@
     <Content Include="Assets\Current.png" />
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\CherryBlossomFlatS.mdx" />
-<<<<<<< OURS
+    <Content Include="Assets\lilypad2.mdx" />
   </ItemGroup>
-=======
-</ItemGroup>
->>>>>>> THEIRS
 </Project>

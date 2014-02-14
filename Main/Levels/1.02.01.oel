@@ -145,6 +145,9 @@
     <Torii id="1" x="896" y="272" NextLevel="1.03.01.oel" />
     <Crane id="2" x="296" y="288" />
     <Crane id="3" x="584" y="288" />
+    <Lillypad id="4" x="344" y="408" width="50" height="40" angle="0" />
+    <Lillypad id="5" x="512" y="188" width="50" height="40" angle="0" />
+    <Lillypad id="6" x="708" y="344" width="50" height="40" angle="0" />
   </Entities>
   <Art />
 </level>
