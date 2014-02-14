@@ -216,5 +216,6 @@
     <Content Include="Assets\Current.png" />
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\CherryBlossomFlatS.mdx" />
+    <Content Include="Assets\day_flat.png" />
   </ItemGroup>
 </Project>

@@ -70,7 +70,7 @@ namespace Core
 			}
 		}
 		
-		private Texture2D stars = new Texture2D("/Application/Assets/Skymidday.png", false);
+		private Texture2D stars = new Texture2D("/Application/Assets/day_flat.png", false);
 		private float time = 0.0f;
 		//private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
@@ -152,7 +152,7 @@ namespace Core
 				water.shaderProgram.SetUniformValue(3, ref world );
 				
 				water.shaderProgram.SetUniformValue(4, v, 0, 0, v.Length);
-				time += .001f;
+				time += .01f;
 				if(time > 1.0f)
 					time = 0.0f;
 				//g.graphics.SetTexture(0, height_map);
@@ -175,7 +175,7 @@ namespace Core
 			    float water_width = 960f + 300f * 2;
 				float water_height = 544f + 168.75f * 2;
 			    FrameBuffer off_screen = new FrameBuffer();
-				var flow_map = new Texture2D(100, 100, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
+				var flow_map = new Texture2D(512, 512, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
 				off_screen.SetColorTarget(flow_map, 0);
 				//height_map.SetPixels(0, p, PixelFormat.Rgba);
 				
@@ -191,9 +191,9 @@ namespace Core
 				off_screen.SetDepthTarget(null);
 				
 				g.graphics.SetFrameBuffer(off_screen);
-				g.graphics.SetClearColor( 1.0f, 0.5f, 0.0f, 1.0f ) ;
+				g.graphics.SetClearColor( .55f, 0.5f, 0.0f, 1.0f ) ;
 				g.graphics.Clear() ;
-				g.graphics.SetViewport(0,0,100, 100);
+				g.graphics.SetViewport(0,0,512,512);
 				//Sample.SampleDraw.Init(g.graphics);
 ///
 				//Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
@@ -208,7 +208,7 @@ namespace Core
 				
 			    Vector3 scale = new Vector3(sprite.scale.X, sprite.scale.Y, 1f);
 					
-				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X, sprite.parent.Transform.Position.Y, 0);
+				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X - sprite.texture.Width/2, sprite.parent.Transform.Position.Y, 0);
 								
 				world *= Matrix4.Translation(pos) ;
 				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;

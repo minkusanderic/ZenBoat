@@ -15,15 +15,26 @@ void main(
 	//v_Normal.y = -v_Normal.y;
 	float3 blue = float3(0.0f, 0.0f, 1.0f);
 	
-	float2 swirl = tex2D(flow_Texture, float2(1.0f,1.0f) - v_TexCoord.xy).xy;
-	float2 sampleNorm = v_TexCoord.xy + swirl * time;
-	sampleNorm.x = fmod(sampleNorm.x, 1.0f);
-	sampleNorm.y = fmod(sampleNorm.y, 1.0f);
-	float4 normColor = tex2D( n_Texture, sampleNorm);
-	float4 tmpColor = tex2D( s_Texture,v_TexCoord + v_Normal.xy + normColor.xy/7);
+	float2 swirl = tex2D(flow_Texture, float2(1.0f,1.0f) - v_TexCoord).xy * 2.0f - 1.0f;
+	
+	float2 sampleNorm1 = v_TexCoord.xy + swirl * time;
+	float2 sampleNorm2 = v_TexCoord.xy + swirl * fmod(time + .5f, 1.0f);
+	sampleNorm1.x = fmod(sampleNorm1.x, 1.0f);
+	sampleNorm1.y = fmod(sampleNorm1.y, 1.0f);
+	sampleNorm2.x = fmod(sampleNorm2.x, 1.0f);
+	sampleNorm2.y = fmod(sampleNorm2.y, 1.0f);
+	
+	
+	float3 normColor1 = tex2D( n_Texture, sampleNorm1).xyz;
+	float3 normColor2 = tex2D( n_Texture, sampleNorm2).xyz;
+	
+	float3 finalNorm = normalize(v_Normal + lerp(normColor1, normColor2, (abs(.5f - time)/.5f)));
+	float4 tmpColor = tex2D( s_Texture,v_TexCoord + finalNorm.xy);
 	//tmpColor.xy *= float2(.7f, .7f);
 	tmpColor.w = .7f;
 	Color = tmpColor;
+	
+	//Color.xyz = Color.xyz * pow(max(0, dot(v_Normal, normalize(-v_Eye + float3(0.0f, 0.0f, 1.0f)))), 10.0f);
 	//Color = float4(0,0,0,1);
 	//Color.xyz = v_Color.xyz;
 	//Color = float4(v_Normal.x/2 + .5, v_Normal.y/2 + .5, 0, 1.0f);

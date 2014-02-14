@@ -117,7 +117,7 @@ namespace Main
 													}));
 			
 			ent.attachComponent(new SimpleController(() => {
-				ent.Transform.Rotation = ent.Transform.Rotation.Rotate(-0.1f);
+				//ent.Transform.Rotation = ent.Transform.Rotation.Rotate(-0.1f);
 			}));
 			respawner = (Respawner)	ent.attachComponent( new Respawner( ent.Transform.Position ) ); // adds a respawer component to the whirlpool entity
 		}
