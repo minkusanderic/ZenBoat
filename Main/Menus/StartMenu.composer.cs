@@ -13,9 +13,9 @@ namespace Menu
     {
         Panel Panel_1;
         ImageBox titleImage;
-        Button startButton;
+        Button playButton;
         Button quitButton;
-        Button instrButton;
+        Button levelButton;
 
         private void InitializeWidget()
         {
@@ -28,12 +28,12 @@ namespace Menu
             Panel_1.Name = "Panel_1";
             titleImage = new ImageBox();
             titleImage.Name = "titleImage";
-            startButton = new Button();
-            startButton.Name = "startButton";
+            playButton = new Button();
+            playButton.Name = "playButton";
             quitButton = new Button();
             quitButton.Name = "quitButton";
-            instrButton = new Button();
-            instrButton.Name = "instrButton";
+            levelButton = new Button();
+            levelButton.Name = "levelButton";
 
             // StartMenu
             this.RootWidget.AddChildLast(Panel_1);
@@ -42,18 +42,18 @@ namespace Menu
             Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Panel_1.Clip = true;
             Panel_1.AddChildLast(titleImage);
-            Panel_1.AddChildLast(startButton);
+            Panel_1.AddChildLast(playButton);
             Panel_1.AddChildLast(quitButton);
-            Panel_1.AddChildLast(instrButton);
+            Panel_1.AddChildLast(levelButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/Assets/titleC.png");
+            titleImage.Image = new ImageAsset("/Application/assets/title.png");
 
-            // startButton
-            startButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            startButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            startButton.Style = ButtonStyle.Custom;
-            startButton.CustomImage = new CustomButtonImageSettings()
+            // playButton
+            playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            playButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            playButton.Style = ButtonStyle.Custom;
+            playButton.CustomImage = new CustomButtonImageSettings()
             {
                 BackgroundNormalImage = null,
                 BackgroundPressedImage = null,
@@ -73,11 +73,11 @@ namespace Menu
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
             };
 
-            // instrButton
-            instrButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            instrButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            instrButton.Style = ButtonStyle.Custom;
-            instrButton.CustomImage = new CustomButtonImageSettings()
+            // levelButton
+            levelButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            levelButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            levelButton.Style = ButtonStyle.Custom;
+            levelButton.CustomImage = new CustomButtonImageSettings()
             {
                 BackgroundNormalImage = null,
                 BackgroundPressedImage = null,
@@ -109,20 +109,20 @@ namespace Menu
                     titleImage.Anchors = Anchors.None;
                     titleImage.Visible = true;
 
-                    startButton.SetPosition(361, 277);
-                    startButton.SetSize(214, 56);
-                    startButton.Anchors = Anchors.None;
-                    startButton.Visible = true;
+                    playButton.SetPosition(361, 277);
+                    playButton.SetSize(214, 56);
+                    playButton.Anchors = Anchors.None;
+                    playButton.Visible = true;
 
                     quitButton.SetPosition(373, 421);
                     quitButton.SetSize(214, 56);
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
 
-                    instrButton.SetPosition(495, 365);
-                    instrButton.SetSize(214, 56);
-                    instrButton.Anchors = Anchors.None;
-                    instrButton.Visible = true;
+                    levelButton.SetPosition(495, 365);
+                    levelButton.SetSize(214, 56);
+                    levelButton.Anchors = Anchors.None;
+                    levelButton.Visible = true;
 
                     break;
 
@@ -140,20 +140,20 @@ namespace Menu
                     titleImage.Anchors = Anchors.None;
                     titleImage.Visible = true;
 
-                    startButton.SetPosition(109, 278);
-                    startButton.SetSize(214, 56);
-                    startButton.Anchors = Anchors.None;
-                    startButton.Visible = true;
+                    playButton.SetPosition(109, 278);
+                    playButton.SetSize(214, 56);
+                    playButton.Anchors = Anchors.None;
+                    playButton.Visible = true;
 
                     quitButton.SetPosition(109, 407);
                     quitButton.SetSize(214, 56);
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
 
-                    instrButton.SetPosition(109, 345);
-                    instrButton.SetSize(214, 56);
-                    instrButton.Anchors = Anchors.None;
-                    instrButton.Visible = true;
+                    levelButton.SetPosition(109, 345);
+                    levelButton.SetSize(214, 56);
+                    levelButton.Anchors = Anchors.None;
+                    levelButton.Visible = true;
 
                     break;
             }

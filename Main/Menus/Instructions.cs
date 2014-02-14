@@ -14,6 +14,12 @@ namespace Menu
         {
 			InitializeWidget();
 			backButton.ButtonAction += HandleBackButtonAction;
+			playButton.ButtonAction += HandlePlayButtonButtonAction;
+        }
+
+        void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	MenuLoader.isPlay = false;
         }
 		
 		void HandleBackButtonAction (object sender, TouchEventArgs e)

@@ -15,13 +15,13 @@ namespace Menu
         public StartMenu()
         {
             InitializeWidget();
-			startButton.ButtonAction += HandleStartButtonButtonAction;
-			instrButton.ButtonAction += HandleInstrButtonButtonAction;
+			playButton.ButtonAction += HandlePlayButtonButtonAction;
+			levelButton.ButtonAction += HandleLevelButtonButtonAction;
 			quitButton.ButtonAction += HandleQuitButtonButtonAction;
 			
         }
 
-        void HandleInstrButtonButtonAction (object sender, TouchEventArgs e)
+        void HandleLevelButtonButtonAction (object sender, TouchEventArgs e)
         {
         	MenuLoader.loadInstr = true;
         }
@@ -31,9 +31,9 @@ namespace Menu
         	Environment.Exit(0);
         }
 
-        void HandleStartButtonButtonAction (object sender, TouchEventArgs e)
+        void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
         {
-        	MenuLoader.isPlay = false;
+        	MenuLoader.loadInstr = true;
         }
 		
     }
