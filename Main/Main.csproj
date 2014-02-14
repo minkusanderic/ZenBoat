@@ -216,5 +216,6 @@
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\CherryBlossomFlatS.mdx" />
     <Content Include="Assets\lilypad2.mdx" />
+    <Content Include="Assets\Log2.mdx" />
   </ItemGroup>
 </Project>
