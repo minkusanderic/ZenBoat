@@ -92,7 +92,7 @@ namespace Core
 			this.camera_pos = UpdateCameraPosition();
 			cameraLastPosition = this.camera_pos;
 			this.camera_eye = new Vector3( 960f/2f + cameraOffset , 544f/2f  , 0f  );//new Vector3( 960.0f/2.0f, 544.0f/2.0f , 0.0f + 100f );
-			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
+			Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000000.0f ) ;
 			Matrix4 view = Matrix4.LookAt(  camera_pos,
 											camera_eye,
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
@@ -104,20 +104,22 @@ namespace Core
 			Vector3 fogColor = new Vector3( 0.0f, 0.5f, 1.0f ) ;
 	
 			parameters.Enable( BasicEnableMode.Lighting, true ) ;
-			parameters.Enable( BasicEnableMode.Fog, true ) ;
+			parameters.Enable( BasicEnableMode.Fog, false ) ;
 	
 			parameters.SetProjectionMatrix( ref proj ) ;
 			parameters.SetViewMatrix( ref view ) ;
-			parameters.SetLightCount( 2 ) ;
+			parameters.SetLightCount( 1 ) ;
 			parameters.SetLightDirection( 0, ref litDirection ) ;
 			parameters.SetLightDiffuse( 0, ref litColor ) ;
 			parameters.SetLightSpecular( 0, ref litColor ) ;
+			/*
 			parameters.SetLightDirection( 1, ref litDirection2 ) ;
 			parameters.SetLightDiffuse( 1, ref litColor2 ) ;
 			parameters.SetLightSpecular( 1, ref litColor2 ) ;
-			parameters.SetLightAmbient( ref litAmbient ) ;
-			parameters.SetFogRange( -1.0f, 5000.0f ) ;
-			parameters.SetFogColor( ref fogColor ) ;
+			*/
+			parameters.SetLightAmbient( ref litAmbient );
+			parameters.SetFogRange( -1.0f, 10000.0f );
+			parameters.SetFogColor( ref fogColor );
 	
 			graphics.SetViewport( 0, 0, graphics.Screen.Width, graphics.Screen.Height ) ;
 			graphics.SetClearColor( 0.0f, 0.5f, 1.0f, 0.0f ) ;
@@ -158,13 +160,20 @@ namespace Core
 					world *= Matrix4.RotationY (-model.parent.Transform.Rotation.Angle(Vector2.UnitX));
 					
 				}
-				
+				Vector3 vecDirection = new Vector3( 0f , 0f , -1.5f );
+				Vector3 vecAmbient = new Vector3( .7f , 0.5f , .5f );
+				Vector3 vecSpecular = new Vector3( 0f , 0f , 0f );
+				model.model.SetWorldMatrix( ref world ) ;
+				program.SetUniformValue( program.FindUniform("LightDirection") , ref vecDirection );
+				program.SetUniformValue( program.FindUniform("LightAmbient") , ref vecAmbient );
+				program.SetUniformValue( program.FindUniform("LightSpecular") , ref vecSpecular );
 				//model.model.BindPrograms( basic_program_container );
 			    //  draw model, animate model
-				model.model.SetWorldMatrix( ref world ) ;
+				
 				model.model.Animate( .01f ) ;
 				model.model.Update() ;
 				graphics.SetTexture(1, toon);
+
 				model.model.Draw(graphics, program) ;
 			}
 			

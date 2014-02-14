@@ -22,9 +22,9 @@ void main(
 
 	texcoord.x = v_Color.x;
     texcoord.y = max(0, dot(N, normalize(v_Eye)));
-	if(texcoord.y > .05f)
+	if(texcoord.y > .1f)
 	{
-		color.xyz = floor( 5* color.xyz)/5;
+		color.xyz = floor( 5 * color.xyz)/5;
 	}
 	else
 	{

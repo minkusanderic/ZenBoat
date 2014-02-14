@@ -23,7 +23,12 @@ namespace Main
 						    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/OrigamiBoat.mdx"));
 			m.scale = new Vector3(.5f, .5f, .5f);
+			m.model.Materials[0].Emission = new Vector3( 0f , 0f , 0f);
+			//m.model.Materials[0].Ambient = new Vector3( 1f , .5f , 5f );
+			//m.model.Materials[0].Shininess = 1f;
+			//m.model.Materials[0].Diffuse = new Vector3( 1f , 1f , 1f );
 			
+			//m.model.Materials[0].Specular = new Vector3( .1f , .1f , 1f );//
 			//m.scale = new Vector3(50, 50, 50);
 			//m.scale = new Vector3(5, 5, 5);
 			

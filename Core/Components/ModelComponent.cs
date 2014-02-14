@@ -28,6 +28,7 @@ namespace Core
 				}
 				Console.WriteLine("Total Memory: " + GC.GetTotalMemory(false));
 			}
+			
 		}
 
 	}
