@@ -139,7 +139,6 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="136" y="268" angle="0" />
-    <Whirlpool id="1" x="1084" y="388" width="80" height="80" strength="100" />
     <Whirlpool id="2" x="1088" y="148" width="80" height="80" strength="100" />
     <Torii id="3" x="2692" y="256" NextLevel="1.00.04.oel" />
     <Whirlpool id="4" x="1472" y="252" width="80" height="80" strength="100" />
@@ -149,6 +148,20 @@
     <Crane id="8" x="1064" y="264" />
     <Crane id="9" x="2272" y="348" />
     <Whirlpool id="10" x="2268" y="208" width="80" height="80" strength="100" />
+    <Rock id="1" x="1264" y="136" width="50" height="50" angle="0" />
+    <Rock id="11" x="2012" y="268" width="50" height="50" angle="0" />
+    <Crane id="12" x="844" y="488" />
   </Entities>
-  <Art />
+  <Art>
+    <Iris id="0" x="220" y="528" />
+    <Iris id="1" x="308" y="528" />
+    <Iris id="2" x="392" y="528" />
+    <Tulip id="3" x="412" y="-44" />
+    <Tulip id="4" x="492" y="-44" />
+    <MapleTreeSouth id="5" x="832" y="520" width="70" height="70" />
+    <Tulip id="7" x="564" y="-44" />
+    <Tulip id="8" x="1416" y="528" />
+    <Iris id="9" x="2284" y="532" />
+    <CherryBlossomNorth id="6" x="1948" y="-56" />
+  </Art>
 </level>

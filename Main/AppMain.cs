@@ -23,7 +23,7 @@ namespace Main
 			MenuLoader.Load();
 			
 			//LevelLoader.BootStrap();
-			LevelLoader.Load("/Application/Levels/1.02.01.oel");
+			LevelLoader.Load("/Application/Levels/1.00.07.oel");
 			CollectibleManager.Init();
 			
 			

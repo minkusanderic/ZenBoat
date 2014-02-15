@@ -13,7 +13,7 @@ namespace Main
 		
 		class RockSpawnerLogic : Core.Controller
 		{
-			float force = 50f; // orig:50f elli5:200f
+			float force = 75f; // orig:50f elli5:200f
 			bool touchDown = false;
 			TouchController touchController;
 			SFXComponent splashSound;

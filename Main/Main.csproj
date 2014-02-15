@@ -222,5 +222,7 @@
     <Content Include="Assets\Tulip.mdx" />
     <Content Include="Assets\instructions.png" />
     <Content Include="Assets\title.png" />
+    <Content Include="Levels\1.00.06.oel" />
+    <Content Include="Levels\1.00.07.oel" />
   </ItemGroup>
 </Project>

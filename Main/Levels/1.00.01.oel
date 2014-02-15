@@ -140,7 +140,7 @@
   <Entities>
     <Boat id="0" x="164" y="288" angle="0" />
     <Torii id="1" x="812" y="284" NextLevel="1.00.02.oel" />
-    <Current id="2" x="492" y="280" width="216" height="68" angle="0.7853982" />
+    <Crane id="2" x="612" y="512" />
   </Entities>
   <Art>
     <MapleTreeSouth id="0" x="604" y="544" width="30" height="40" />
