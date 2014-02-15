@@ -29,13 +29,14 @@ namespace Main
 			
 			ent.attachComponent (rb);
 			var targets = SceneManager.Instance.Select("boat");
+			//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/Assets/Sound/SFX/LevelEnd.wav" ) );
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
 														Console.WriteLine ("You've reached the Torii Gate - Level Over!");		
-														SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/Assets/Sound/SFX/LevelEnd.wav" ) );
-														sound.PlaySound();
-						
+														//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/Assets/Sound/SFX/LevelEnd.wav" ) );
+														//sound.PlaySound();
+														((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/Sound/SFX/LevelEnd.wav");	
 														Respawner r = t.FindComponent<Respawner> ();
 														if (r != null) {
 															RigidBody rib = t.FindComponent<RigidBody> ();

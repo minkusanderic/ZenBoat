@@ -13,8 +13,25 @@ namespace Core
 		List<BackgroundMusicComponent> bmgs = new List<BackgroundMusicComponent>();
 		public AudioSystem ()
 		{
+			
 		}
-		
+		static SoundPlayer player;
+		static Sound sound;
+		enum SoundEnum
+		{
+			Torii,
+			Crane,
+			Whirlpool,
+			WaterDrop
+		};
+		public void PlaySound(string file_name)
+		{
+			sound = null;
+			if ( player != null ) player.Stop();
+			sound = new Sound(file_name);
+			player = sound.CreatePlayer();
+			player.Play();
+		}
 		public override void attachComponent (IComponent comp)
 		{
 			if(comp is BackgroundMusicComponent)

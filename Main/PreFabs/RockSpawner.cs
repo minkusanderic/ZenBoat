@@ -16,7 +16,7 @@ namespace Main
 			float force = 75f; // orig:50f elli5:200f
 			bool touchDown = false;
 			TouchController touchController;
-			SFXComponent splashSound;
+			//SFXComponent splashSound;
 			public RockSpawnerLogic( TouchController tc )
 			{
 				Console.WriteLine("Making RockSpawner");
@@ -90,10 +90,11 @@ namespace Main
 								}
 							} 
 							rock.attachComponent( new SuicideController( 20 ) );
-							if ( splashSound == null )
-								splashSound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
+							//((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/WaterDrop.wav");	
+							//if ( splashSound == null )//
+								//splashSound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
 							//if ( !splashSound.IsPlaying() )
-							splashSound.PlaySound();
+							//splashSound.PlaySound();
 							// sounds 
 							/*
 							int num_particles = 20;

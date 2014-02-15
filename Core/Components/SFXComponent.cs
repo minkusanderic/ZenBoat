@@ -10,8 +10,8 @@ namespace Core
 {
 	public class SFXComponent : SoundComponent
 	{
-		private Sound 			sound;
-        private SoundPlayer 	soundPlayer;
+		private Sound 			sound = null;
+        private SoundPlayer 	soundPlayer = null;
 		
 		public SFXComponent ()	{}
 		public SFXComponent (	string file_path	)
@@ -33,7 +33,8 @@ namespace Core
 				sound = new Sound( file_name );
 			else
 				throw new Exception( "No Audiopath Specified :(" );
-			soundPlayer = sound.CreatePlayer();
+			if ( soundPlayer == null )
+				soundPlayer = sound.CreatePlayer();
 		}
 		
 		/// <summary>

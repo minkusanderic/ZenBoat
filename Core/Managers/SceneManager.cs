@@ -25,7 +25,7 @@ namespace Core
 		}
 
 	public static SceneManager _instance;
-		
+	
 	public static SceneManager Instance
 	   {
     	  get 
