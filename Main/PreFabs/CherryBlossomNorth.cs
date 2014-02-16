@@ -16,8 +16,10 @@ namespace Main
 			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/CherryBlossomN.mdx"));
 			
-			m.scale = new Vector3(10 , 10, 10);
+			m.scale = new Vector3(8f, 8f, 8f);
 			
 		}
 	}
 }
+
+

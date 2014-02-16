@@ -68,13 +68,13 @@
     <Compile Include="PreFabs\Bridge.cs" />
     <Compile Include="PreFabs\Lantern.cs" />
     <Compile Include="PreFabs\Windmill.cs" />
+    <Compile Include="PreFabs\Iris.cs" />
+    <Compile Include="PreFabs\Tulip.cs" />
+    <Compile Include="PreFabs\Bamboo.cs" />
     <Compile Include="PreFabs\MapleTreeNorth.cs" />
     <Compile Include="PreFabs\MapleTreeSouth.cs" />
     <Compile Include="PreFabs\CherryBlossomNorth.cs" />
     <Compile Include="PreFabs\CherryBlossomSouth.cs" />
-    <Compile Include="PreFabs\CherryBlossomFlatS.cs" />
-    <Compile Include="PreFabs\Iris.cs" />
-    <Compile Include="PreFabs\Tulip.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -152,7 +152,6 @@
     <Content Include="Levels\1.00.05.oel" />
     <Content Include="Assets\SimpleBank02.mdx" />
     <Content Include="Assets\Bridge.mdx" />
-    <Content Include="Assets\MapleTree.mdx" />
     <Content Include="Assets\Windmill.mdx" />
     <Content Include="Assets\Lantern.mdx" />
     <Content Include="Assets\CraneOrange.mdx" />
@@ -162,14 +161,7 @@
     <Content Include="Assets\CranePurple.mdx" />
     <Content Include="Assets\CraneTeal.mdx" />
     <Content Include="Assets\CraneYellow.mdx" />
-    <Content Include="Assets\MapleNa.mdx" />
-    <Content Include="Assets\MapleNb.mdx" />
-    <Content Include="Assets\MapleSa.mdx" />
-    <Content Include="Assets\MapleSb.mdx" />
     <Content Include="Assets\chime.mp3" />
-    <Content Include="Assets\CherryBlossomN.mdx" />
-    <Content Include="Assets\MapleNaFall.mdx" />
-    <Content Include="Assets\MapleSaFall.mdx" />
     <Content Include="Assets\RockFBX2.mdx" />
     <Content Include="Assets\Sound\SFX\Crane1.wav" />
     <Content Include="Assets\Sound\SFX\Crane2.wav" />
@@ -181,8 +173,6 @@
     <Content Include="Assets\Sound\SFX\LevelEnd.wav" />
     <Content Include="Assets\Sound\gameBackground.mp3" />
     <Content Include="Assets\Current.png" />
-    <Content Include="Assets\CherryBlossomS.mdx" />
-    <Content Include="Assets\CherryBlossomFlatS.mdx" />
     <Content Include="Assets\day_flat.png" />
     <Content Include="Assets\lilypad2.mdx" />
     <Content Include="Assets\Log2.mdx" />
@@ -190,14 +180,14 @@
     <Content Include="Assets\Iris.mdx" />
     <Content Include="Assets\Tulip.mdx" />
     <Content Include="Assets\instructions.png" />
-<<<<<<< HEAD
     <Content Include="Assets\title.png" />
     <Content Include="Levels\1.00.06.oel" />
     <Content Include="Levels\1.00.07.oel" />
-    <Content Include="Levels\1.02.00.oel" />
-=======
-    <Content Include="Assets\title.png" />
     <Content Include="Assets\TempRock.mdx" />
->>>>>>> Stash
+    <Content Include="Assets\Bamboo3.mdx" />
+    <Content Include="Assets\CherryBlossomN.mdx" />
+    <Content Include="Assets\CherryBlossomS.mdx" />
+    <Content Include="Assets\MapleTreeNorth.mdx" />
+    <Content Include="Assets\MapleTreeSouth.mdx" />
   </ItemGroup>
 </Project>

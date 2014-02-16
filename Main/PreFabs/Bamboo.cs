@@ -13,13 +13,12 @@ namespace Main
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			//ent.tag("pushable");
-						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Bamboo.mdx"));
+			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Bamboo3.mdx"));
 			
-			m.scale = new Vector3(1	, 1, 1);
+			m.scale = new Vector3(8f , 8f, 8f);
 			
 		}
 	}
 }
-
 
