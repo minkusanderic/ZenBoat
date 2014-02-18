@@ -34,6 +34,7 @@ void main(
 	tmpColor.w = .7f;
 	Color = tmpColor;
 	
+	Color.xyz = floor( 10 * Color.xyz + length(swirl))/10;
 	//Color.xyz = Color.xyz * pow(max(0, dot(v_Normal, normalize(-v_Eye + float3(0.0f, 0.0f, 1.0f)))), 10.0f);
 	//Color = float4(0,0,0,1);
 	//Color.xyz = v_Color.xyz;
