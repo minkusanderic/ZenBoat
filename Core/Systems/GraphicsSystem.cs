@@ -15,7 +15,7 @@ namespace Core
 	public class GraphicsSystem : Core.CoreSystem
 	{
 		
-		private List<ModelComponent> models = new List<ModelComponent>();
+		private Dictionary<String, List<ModelComponent>> model_layers = new Dictionary<String, List<ModelComponent>>();
 		private List<SpriteComponent> sprites = new List<SpriteComponent>();
 		private List<LabelComponent> labels = new List<LabelComponent>();
 		
@@ -141,11 +141,47 @@ namespace Core
 			//var basic_program_container = new BasicProgramContainer( basic_parameters );
 			//basic_program_container.Add("SIMPLE", basic_program);
 			
-			
-			foreach(var model in models)
+			if(model_layers.ContainsKey("under_water"))
 			{
-				if ( !model.parent.Enabled ) continue;
-				if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (960 + Math.Max(model.scale.X, model.scale.Y) * model.model.BoundingSphere.W)) continue; // do not render if off screen
+				foreach(var model in model_layers["under_water"])
+				{
+					Draw_Model(model);
+				}
+			}
+			
+			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view, this.camera_pos);
+			
+			if(model_layers.ContainsKey("front"))
+			{
+				foreach(var model in model_layers["front"])
+				{
+					Draw_Model(model);
+				}
+			}
+			
+			foreach(var sprite in sprites)
+			{
+				Draw_Sprite(sprite, proj, view);
+			}
+			
+//			foreach(var l in labels)
+//			{
+//				l.label.Text = l.title + l.number;
+//			
+			
+			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
+			graphics.Disable( EnableMode.CullFace ) ;
+			graphics.Disable( EnableMode.DepthTest ) ;
+			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
+			UISystem.Render();
+			graphics.SwapBuffers() ;
+			//Timer.EndFrame();
+		}
+		
+		private void Draw_Model(ModelComponent model)
+		{
+			if ( !model.parent.Enabled ) return;
+				if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (960 + Math.Max(model.scale.X, model.scale.Y) * model.model.BoundingSphere.W)) return; // do not render if off screen
 				Matrix4 world = Matrix4.Identity ;
 				
 				if ( model.model.BoundingSphere.W != 0.0f ) {
@@ -175,12 +211,13 @@ namespace Core
 				graphics.SetTexture(1, toon);
 
 				model.model.Draw(graphics, program) ;
-			}
-			
-			foreach(var sprite in sprites)
-			{
-				if ( !sprite.parent.Enabled ) continue;
-				if ( Math.Abs(sprite.parent.Transform.Position.X - camera_pos.X) > (544 + 300)) continue; // do not render if off screen
+
+		}
+		
+		private void Draw_Sprite(SpriteComponent sprite, Matrix4 proj, Matrix4 view)
+		{
+			if ( !sprite.parent.Enabled ) return;
+				if ( Math.Abs(sprite.parent.Transform.Position.X - camera_pos.X) > (544 + 300)) return; // do not render if off screen
 				Matrix4 world = Matrix4.Identity ;
 				
 				
@@ -203,29 +240,17 @@ namespace Core
 				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
 				graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
-			}
-			
-//			foreach(var l in labels)
-//			{
-//				l.label.Text = l.title + l.number;
-//			}
-			
-	
-			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view, this.camera_pos);
-			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
-			graphics.Disable( EnableMode.CullFace ) ;
-			graphics.Disable( EnableMode.DepthTest ) ;
-			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
-			UISystem.Render();
-			graphics.SwapBuffers() ;
-			//Timer.EndFrame();
+
 		}
 		
 		public override void attachComponent(IComponent comp)
 		{
 			if(comp is ModelComponent)
 			{
-				models.Add((ModelComponent)comp);
+				var model = (ModelComponent)comp;
+				if (!model_layers.ContainsKey(model.layer)) 
+					model_layers[model.layer] = new List<ModelComponent>();
+				model_layers[((ModelComponent)comp).layer].Add((ModelComponent)comp);
 			}
 			
 			if(comp is SpriteComponent)
@@ -247,7 +272,7 @@ namespace Core
 		{
 			if ( comp is ModelComponent)
 			{
-				models.Remove( (ModelComponent) comp);	
+				model_layers[((ModelComponent)comp).layer].Remove((ModelComponent)comp);
 			}
 			
 			if ( comp is SpriteComponent )

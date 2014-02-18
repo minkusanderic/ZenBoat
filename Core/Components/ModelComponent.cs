@@ -12,6 +12,8 @@ namespace Core
 		public BasicModel model;
 		public Vector3 scale = new Vector3(1.0f, 1.0f, 1.0f);
 		
+		public String layer = "front";
+		
 		public static Dictionary<String, BasicModel> model_cache = new Dictionary<String, BasicModel>();
 		
 		public ModelComponent (	string file_name	/* , int index */	)

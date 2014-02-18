@@ -61,6 +61,7 @@ namespace Main
 				ModelComponent bank_model = bank.FindComponent<ModelComponent>();
 				bank_model.scale.Y *= 1.2f;
 				bank_model.scale.X *= 1.2f;
+				bank_model.layer = "under_water";
 			}
 		
 			int size_of_level = 10000;
