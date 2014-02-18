@@ -196,7 +196,7 @@ namespace Core
 					world *= Matrix4.RotationY (-model.parent.Transform.Rotation.Angle(Vector2.UnitX));
 					
 				}
-				Vector3 vecDirection = new Vector3( 0f , 0f , -1.5f );
+				Vector3 vecDirection = new Vector3( 0f , -1.5f , -1.5f );
 				Vector3 vecAmbient = new Vector3( .7f , 0.5f , .5f );
 				Vector3 vecSpecular = new Vector3( 0f , 0f , 0f );
 				model.model.SetWorldMatrix( ref world ) ;
