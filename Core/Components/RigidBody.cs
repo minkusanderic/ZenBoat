@@ -67,7 +67,9 @@ namespace Core
 		{
 			if (this.body != null)
 			{
-			this.body.ApplyForce(this.body.Force + vect);
+				this.body.WakeUpDynamic();
+				
+				this.body.ApplyForce(this.body.Force + vect);
 			}
 		}
 		
