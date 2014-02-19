@@ -19,7 +19,7 @@ namespace Menu
 
         void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
         {
-        	MenuLoader.isPlay = false;
+        	MenuLoader.loadStory1 = true;
         }
 		
 		void HandleBackButtonAction (object sender, TouchEventArgs e)

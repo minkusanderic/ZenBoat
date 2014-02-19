@@ -9,10 +9,9 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Preview
 {
-    partial class Credits
+    partial class AllStory
     {
-        Panel Panel_1;
-        Button continueButton;
+        PagePanel PagePanel_1;
 
         private void InitializeWidget()
         {
@@ -21,22 +20,11 @@ namespace Preview
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            Panel_1 = new Panel();
-            Panel_1.Name = "Panel_1";
-            continueButton = new Button();
-            continueButton.Name = "continueButton";
+            PagePanel_1 = new PagePanel();
+            PagePanel_1.Name = "PagePanel_1";
 
-            // Credits
-            this.RootWidget.AddChildLast(Panel_1);
-
-            // Panel_1
-            Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Panel_1.Clip = true;
-            Panel_1.AddChildLast(continueButton);
-
-            // continueButton
-            continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // AllStory
+            this.RootWidget.AddChildLast(PagePanel_1);
 
             SetWidgetLayout(orientation);
 
@@ -52,15 +40,10 @@ namespace Preview
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    Panel_1.SetPosition(683, 163);
-                    Panel_1.SetSize(100, 100);
-                    Panel_1.Anchors = Anchors.None;
-                    Panel_1.Visible = true;
-
-                    continueButton.SetPosition(696, 425);
-                    continueButton.SetSize(214, 56);
-                    continueButton.Anchors = Anchors.None;
-                    continueButton.Visible = true;
+                    PagePanel_1.SetPosition(319, 194);
+                    PagePanel_1.SetSize(100, 50);
+                    PagePanel_1.Anchors = Anchors.None;
+                    PagePanel_1.Visible = true;
 
                     break;
 
@@ -68,15 +51,10 @@ namespace Preview
                     this.DesignWidth = 960;
                     this.DesignHeight = 544;
 
-                    Panel_1.SetPosition(0, 0);
-                    Panel_1.SetSize(960, 544);
-                    Panel_1.Anchors = Anchors.None;
-                    Panel_1.Visible = true;
-
-                    continueButton.SetPosition(716, 463);
-                    continueButton.SetSize(214, 56);
-                    continueButton.Anchors = Anchors.None;
-                    continueButton.Visible = true;
+                    PagePanel_1.SetPosition(0, 0);
+                    PagePanel_1.SetSize(960, 544);
+                    PagePanel_1.Anchors = Anchors.None;
+                    PagePanel_1.Visible = true;
 
                     break;
             }
@@ -85,7 +63,6 @@ namespace Preview
 
         public void UpdateLanguage()
         {
-            continueButton.Text = "Continue";
         }
 
         private void onShowing(object sender, EventArgs e)

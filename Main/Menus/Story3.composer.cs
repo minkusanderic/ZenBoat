@@ -9,12 +9,11 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Menu
 {
-    partial class Instructions
+    partial class Story3
     {
         Panel Panel_1;
         ImageBox ImageBox_1;
-        Button backButton;
-        Button playButton;
+        Button continueButton;
 
         private void InitializeWidget()
         {
@@ -27,41 +26,26 @@ namespace Menu
             Panel_1.Name = "Panel_1";
             ImageBox_1 = new ImageBox();
             ImageBox_1.Name = "ImageBox_1";
-            backButton = new Button();
-            backButton.Name = "backButton";
-            playButton = new Button();
-            playButton.Name = "playButton";
+            continueButton = new Button();
+            continueButton.Name = "continueButton";
 
-            // Instructions
+            // Story3
             this.RootWidget.AddChildLast(Panel_1);
 
             // Panel_1
             Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Panel_1.Clip = true;
             Panel_1.AddChildLast(ImageBox_1);
-            Panel_1.AddChildLast(backButton);
-            Panel_1.AddChildLast(playButton);
+            Panel_1.AddChildLast(continueButton);
 
             // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/instructions.png");
+            ImageBox_1.Image = new ImageAsset("/Application/Assets/story_pg3.png");
 
-            // backButton
-            backButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            backButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            backButton.Style = ButtonStyle.Custom;
-            backButton.CustomImage = new CustomButtonImageSettings()
-            {
-                BackgroundNormalImage = null,
-                BackgroundPressedImage = null,
-                BackgroundDisabledImage = null,
-                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
-            };
-
-            // playButton
-            playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            playButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            playButton.Style = ButtonStyle.Custom;
-            playButton.CustomImage = new CustomButtonImageSettings()
+            // continueButton
+            continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            continueButton.Style = ButtonStyle.Custom;
+            continueButton.CustomImage = new CustomButtonImageSettings()
             {
                 BackgroundNormalImage = null,
                 BackgroundPressedImage = null,
@@ -83,25 +67,20 @@ namespace Menu
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    Panel_1.SetPosition(337, 159);
+                    Panel_1.SetPosition(88, 76);
                     Panel_1.SetSize(100, 100);
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    ImageBox_1.SetPosition(449, 97);
+                    ImageBox_1.SetPosition(85, 14);
                     ImageBox_1.SetSize(200, 200);
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
 
-                    backButton.SetPosition(687, 421);
-                    backButton.SetSize(214, 56);
-                    backButton.Anchors = Anchors.None;
-                    backButton.Visible = true;
-
-                    playButton.SetPosition(687, 421);
-                    playButton.SetSize(214, 56);
-                    playButton.Anchors = Anchors.None;
-                    playButton.Visible = true;
+                    continueButton.SetPosition(713, 139);
+                    continueButton.SetSize(214, 56);
+                    continueButton.Anchors = Anchors.None;
+                    continueButton.Visible = true;
 
                     break;
 
@@ -110,24 +89,19 @@ namespace Menu
                     this.DesignHeight = 544;
 
                     Panel_1.SetPosition(0, 0);
-                    Panel_1.SetSize(959, 543);
+                    Panel_1.SetSize(960, 544);
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    ImageBox_1.SetPosition(0, 1);
-                    ImageBox_1.SetSize(959, 543);
+                    ImageBox_1.SetPosition(0, 0);
+                    ImageBox_1.SetSize(960, 544);
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
 
-                    backButton.SetPosition(169, 414);
-                    backButton.SetSize(128, 56);
-                    backButton.Anchors = Anchors.None;
-                    backButton.Visible = true;
-
-                    playButton.SetPosition(662, 414);
-                    playButton.SetSize(128, 56);
-                    playButton.Anchors = Anchors.None;
-                    playButton.Visible = true;
+                    continueButton.SetPosition(788, 149);
+                    continueButton.SetSize(158, 56);
+                    continueButton.Anchors = Anchors.None;
+                    continueButton.Visible = true;
 
                     break;
             }

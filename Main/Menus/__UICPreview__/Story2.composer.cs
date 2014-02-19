@@ -9,10 +9,11 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Preview
 {
-    partial class Credits
+    partial class Story2
     {
         Panel Panel_1;
-        Button continueButton;
+        ImageBox ImageBox_1;
+        Button nextButton;
 
         private void InitializeWidget()
         {
@@ -23,20 +24,26 @@ namespace Preview
         {
             Panel_1 = new Panel();
             Panel_1.Name = "Panel_1";
-            continueButton = new Button();
-            continueButton.Name = "continueButton";
+            ImageBox_1 = new ImageBox();
+            ImageBox_1.Name = "ImageBox_1";
+            nextButton = new Button();
+            nextButton.Name = "nextButton";
 
-            // Credits
+            // Story2
             this.RootWidget.AddChildLast(Panel_1);
 
             // Panel_1
             Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Panel_1.Clip = true;
-            Panel_1.AddChildLast(continueButton);
+            Panel_1.AddChildLast(ImageBox_1);
+            Panel_1.AddChildLast(nextButton);
 
-            // continueButton
-            continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // ImageBox_1
+            ImageBox_1.Image = new ImageAsset("/Application/assets/story_pg2.png");
+
+            // nextButton
+            nextButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            nextButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
 
@@ -52,15 +59,20 @@ namespace Preview
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    Panel_1.SetPosition(683, 163);
+                    Panel_1.SetPosition(332, 179);
                     Panel_1.SetSize(100, 100);
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    continueButton.SetPosition(696, 425);
-                    continueButton.SetSize(214, 56);
-                    continueButton.Anchors = Anchors.None;
-                    continueButton.Visible = true;
+                    ImageBox_1.SetPosition(333, 51);
+                    ImageBox_1.SetSize(200, 200);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    nextButton.SetPosition(387, 469);
+                    nextButton.SetSize(214, 56);
+                    nextButton.Anchors = Anchors.None;
+                    nextButton.Visible = true;
 
                     break;
 
@@ -73,10 +85,15 @@ namespace Preview
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    continueButton.SetPosition(716, 463);
-                    continueButton.SetSize(214, 56);
-                    continueButton.Anchors = Anchors.None;
-                    continueButton.Visible = true;
+                    ImageBox_1.SetPosition(0, 0);
+                    ImageBox_1.SetSize(960, 544);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    nextButton.SetPosition(99, 463);
+                    nextButton.SetSize(214, 56);
+                    nextButton.Anchors = Anchors.None;
+                    nextButton.Visible = true;
 
                     break;
             }
@@ -85,7 +102,7 @@ namespace Preview
 
         public void UpdateLanguage()
         {
-            continueButton.Text = "Continue";
+            nextButton.Text = "Next";
         }
 
         private void onShowing(object sender, EventArgs e)
@@ -93,9 +110,11 @@ namespace Preview
             switch (_currentLayoutOrientation)
             {
                 case LayoutOrientation.Vertical:
+                    nextButton.Visible = false;
                     break;
 
                 default:
+                    nextButton.Visible = false;
                     break;
             }
         }
@@ -105,9 +124,17 @@ namespace Preview
             switch (_currentLayoutOrientation)
             {
                 case LayoutOrientation.Vertical:
+                    new FadeInEffect()
+                    {
+                        Widget = nextButton,
+                    }.Start();
                     break;
 
                 default:
+                    new FadeInEffect()
+                    {
+                        Widget = nextButton,
+                    }.Start();
                     break;
             }
         }

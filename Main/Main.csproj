@@ -75,6 +75,12 @@
     <Compile Include="PreFabs\MapleTreeSouth.cs" />
     <Compile Include="PreFabs\CherryBlossomNorth.cs" />
     <Compile Include="PreFabs\CherryBlossomSouth.cs" />
+    <Compile Include="Menus\Story1.composer.cs" />
+    <Compile Include="Menus\Story1.cs" />
+    <Compile Include="Menus\Story2.composer.cs" />
+    <Compile Include="Menus\Story2.cs" />
+    <Compile Include="Menus\Story3.composer.cs" />
+    <Compile Include="Menus\Story3.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -189,5 +195,8 @@
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\MapleTreeNorth.mdx" />
     <Content Include="Assets\MapleTreeSouth.mdx" />
+    <Content Include="Assets\story_pg1.png" />
+    <Content Include="Assets\story_pg2.png" />
+    <Content Include="Assets\story_pg3.png" />
   </ItemGroup>
 </Project>

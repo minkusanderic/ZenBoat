@@ -9,9 +9,10 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Preview
 {
-    partial class Credits
+    partial class Story3
     {
         Panel Panel_1;
+        ImageBox ImageBox_1;
         Button continueButton;
 
         private void InitializeWidget()
@@ -23,20 +24,34 @@ namespace Preview
         {
             Panel_1 = new Panel();
             Panel_1.Name = "Panel_1";
+            ImageBox_1 = new ImageBox();
+            ImageBox_1.Name = "ImageBox_1";
             continueButton = new Button();
             continueButton.Name = "continueButton";
 
-            // Credits
+            // Story3
             this.RootWidget.AddChildLast(Panel_1);
 
             // Panel_1
             Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Panel_1.Clip = true;
+            Panel_1.AddChildLast(ImageBox_1);
             Panel_1.AddChildLast(continueButton);
+
+            // ImageBox_1
+            ImageBox_1.Image = new ImageAsset("/Application/assets/story_pg3.png");
 
             // continueButton
             continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            continueButton.Style = ButtonStyle.Custom;
+            continueButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             SetWidgetLayout(orientation);
 
@@ -52,12 +67,17 @@ namespace Preview
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    Panel_1.SetPosition(683, 163);
+                    Panel_1.SetPosition(88, 76);
                     Panel_1.SetSize(100, 100);
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    continueButton.SetPosition(696, 425);
+                    ImageBox_1.SetPosition(85, 14);
+                    ImageBox_1.SetSize(200, 200);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    continueButton.SetPosition(713, 139);
                     continueButton.SetSize(214, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
@@ -73,8 +93,13 @@ namespace Preview
                     Panel_1.Anchors = Anchors.None;
                     Panel_1.Visible = true;
 
-                    continueButton.SetPosition(716, 463);
-                    continueButton.SetSize(214, 56);
+                    ImageBox_1.SetPosition(0, 0);
+                    ImageBox_1.SetSize(960, 544);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    continueButton.SetPosition(788, 149);
+                    continueButton.SetSize(158, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
 
@@ -85,7 +110,6 @@ namespace Preview
 
         public void UpdateLanguage()
         {
-            continueButton.Text = "Continue";
         }
 
         private void onShowing(object sender, EventArgs e)
