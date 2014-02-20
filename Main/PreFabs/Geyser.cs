@@ -27,6 +27,8 @@ namespace Main
 			ent.attachComponent(rb);
 			rb.is_static = true;
 			
+			ent.attachComponent(new CurrentModifier("/Application/Assets/geyser_water.png")).scale = new Vector2(2f, 2f);
+			
 			ent.attachComponent(new Core.SimpleController(() => {
 				List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("pushable").ToList();
 				foreach(var obj in targets)

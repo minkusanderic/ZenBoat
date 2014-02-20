@@ -28,13 +28,15 @@ void main(
 	float3 normColor1 = tex2D( n_Texture, sampleNorm1).xyz;
 	float3 normColor2 = tex2D( n_Texture, sampleNorm2).xyz;
 	
-	float3 finalNorm = normalize(v_Normal + lerp(normColor1, normColor2, (abs(.5f - time)/.5f)));
+	float3 lerpNorm = lerp(normColor1, normColor2, (abs(.5f - time)/.5f));
+	
+	float3 finalNorm = normalize(v_Normal + lerpNorm);
 	float4 tmpColor = tex2D( s_Texture,v_TexCoord + finalNorm.xy);
 	//tmpColor.xy *= float2(.7f, .7f);
 	tmpColor.w = .7f;
 	Color = tmpColor;
 	
-	Color.xyz = floor( 10 * Color.xyz + length(swirl))/10;
+	Color.xyz = floor( 10 * (pow(Color.xyz, 1+length(swirl.xy))))/10;
 	//Color.xyz = Color.xyz * pow(max(0, dot(v_Normal, normalize(-v_Eye + float3(0.0f, 0.0f, 1.0f)))), 10.0f);
 	//Color = float4(0,0,0,1);
 	//Color.xyz = v_Color.xyz;

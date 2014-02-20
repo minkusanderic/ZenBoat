@@ -70,7 +70,7 @@ namespace Core
 			}
 		}
 		
-		private Texture2D stars = new Texture2D("/Application/Assets/day_flat.png", false);
+		private Texture2D stars = new Texture2D("/Application/Assets/Skymidday.png", false);
 		private float time = 0.0f;
 		//private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
