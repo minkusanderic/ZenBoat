@@ -18,8 +18,10 @@ namespace Main
 			ent.Name = "Crane";
 			ent.tag("crane", "collectable");
 			
-			ent.Transform.Rotation = new Vector2(0.0f, 1.0f);
-			var m = ent.attachComponent(new ModelComponent("/Application/Assets/CranePurple.mdx"));
+			ent.Transform.Rotation = new Vector2(0.5f, 1f);
+			var m = ent.attachComponent(new ModelComponent("/Application/Assets/Crane02.mdx"));
+			
+			m.scale = new Vector3(2f, 2f, 2f);
 			
 			
 			RigidBody rb = new RigidBody(75);

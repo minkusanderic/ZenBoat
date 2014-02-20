@@ -195,8 +195,13 @@
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\MapleTreeNorth.mdx" />
     <Content Include="Assets\MapleTreeSouth.mdx" />
+<<<<<<< OURS
     <Content Include="Assets\story_pg1.png" />
     <Content Include="Assets\story_pg2.png" />
     <Content Include="Assets\story_pg3.png" />
+=======
+    <Content Include="Assets\OrigamiBoat2.mdx" />
+    <Content Include="Assets\Crane02.mdx" />
+>>>>>>> THEIRS
   </ItemGroup>
 </Project>

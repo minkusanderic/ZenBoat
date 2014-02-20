@@ -21,7 +21,7 @@ namespace Main
 			ent.tag("boat", "pushable");
 			entity = ent;
 						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/OrigamiBoat.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/OrigamiBoat2.mdx"));
 			m.scale = new Vector3(.5f, .5f, .5f);
 			m.model.Materials[0].Emission = new Vector3( 0f , 0f , 0f);
 			//m.model.Materials[0].Ambient = new Vector3( 1f , .5f , 5f );
