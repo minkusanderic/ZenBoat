@@ -172,8 +172,8 @@ namespace Core
 		//private Texture2D flow_map = null; 
 		private Texture2D RenderFlowMap(GraphicsSystem g)
 		{
-			    float water_width = 960f + 300f * 2;
-				float water_height = 544f + 168.75f * 2;
+			    float water_width = 960f + (300f * 2);
+				float water_height = 544f + (168.75f * 2);
 			    FrameBuffer off_screen = new FrameBuffer();
 				var flow_map = new Texture2D(512, 512, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
 				off_screen.SetColorTarget(flow_map, 0);
@@ -181,7 +181,7 @@ namespace Core
 				
 				//var cel_shading = new Texture2D(new byte[] {}, false);
 				
-				Matrix4 proj = Matrix4.Ortho(-water_width/2 ,water_width/2, -water_height/2, water_height/2, 1, 100);
+				Matrix4 proj = Matrix4.Ortho(-water_width/2 ,water_width/2, -water_height/2, water_height/2, 1, 1000);
 			//Matrix4 proj = Matrix4.Perspective( FMath.Radians( 45.0f ), graphics.Screen.AspectRatio, 1.0f, 1000000.0f ) ;
 			 //Matrix4 view = Matrix4.LookAt(new Vector3(0.0f, 0.0f, 3.0f), Vector3.Zero, Vector3.UnitY);
 			Matrix4 view = Matrix4.LookAt(  new Vector3(g.camera_pos.X, 544/2, 3.0f),
@@ -208,7 +208,8 @@ namespace Core
 				
 			    Vector3 scale = new Vector3(sprite.scale.X, sprite.scale.Y, 1f);
 					
-				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X - sprite.texture.Width/2, sprite.parent.Transform.Position.Y, 0);
+				Vector3 pos = new Vector3(sprite.parent.Transform.Position.X -128, // I don't know why I subtract 128, but it just works! ARGGGGHH
+				                          sprite.parent.Transform.Position.Y, 0);
 								
 				world *= Matrix4.Translation(pos) ;
 				world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;

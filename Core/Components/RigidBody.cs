@@ -46,11 +46,6 @@ namespace Core
 		public RigidBody (float width, float height)
 		{
 			this.dimentions = new Vector2(width, height);
-			this.shape = PhysicsShape.CreateConvexHull(new Vector2[] {new Vector2(-width/2, height/2),
-																	  new Vector2(width/2, height/2),
-																	  new Vector2(width/2, -height/2),
-																	  new Vector2(-width/2, -height/2)}, 4);
-			//this.shape = new PhysicsShape(new Vector2(width, height));
 		}
 		
 		public void makeStatic()

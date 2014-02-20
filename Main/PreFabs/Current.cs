@@ -20,10 +20,18 @@ namespace Main
 			//SpriteComponent sprite = new SpriteComponent("/Application/Assets/whirlpool.png");
 			//sprite.scale.X = width/50;
 			//sprite.scale.Y = height/50;
+			int x = Convert.ToInt32(options["x"]);
+			int y = Convert.ToInt32(options["y"]);
+			
+			
+			
 			int width = Convert.ToInt32(options["width"]);
 			int height = Convert.ToInt32(options["height"]);
 			double angle =Convert.ToDouble(options["angle"]);
-			ent.Transform.Rotation = new Vector2( (float)Math.Cos(angle) , -(float)Math.Sin( angle ) );
+			Console.WriteLine("Current w:" + width + " h:" + height);
+			ent.Transform.Position += new Vector2(width/2, -height/2);
+			//ent.Transform.Position = new Vector2(x,544-y) + Vector2.Rotate(new Vector2(width/2, 0), (float)-angle) - Vector2.Rotate(new Vector2(0, height/2), (float)-angle);
+			//ent.Transform.Rotation = new Vector2( (float)Math.Cos(angle) , -(float)Math.Sin( angle ) );
 			SpriteComponent sc = new SpriteComponent("/Application/Assets/Arrow.png");
 			sc.scale.X = width/250f;
 			sc.scale.Y = height/250f;
@@ -36,7 +44,7 @@ namespace Main
 			
 			//var n = ent.attachComponent(new CurrentModifier("/Application/Assets/Current.png")).scale = new Vector2(2f, 2f);
 			//m.scale = new Vector2(.5f, .5f);
-			RigidBody rb = new RigidBody( width/2 , height/2 );
+			RigidBody rb = new RigidBody(width/2, height/2);
 			ent.attachComponent(rb);
 			/*
 			Core.SimpleController controller = new Core.SimpleController(() => {
