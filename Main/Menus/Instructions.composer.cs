@@ -43,7 +43,7 @@ namespace Menu
             Panel_1.AddChildLast(playButton);
 
             // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/instructions.png");
+            ImageBox_1.Image = new ImageAsset("/Application/Assets/instructions.png");
 
             // backButton
             backButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
