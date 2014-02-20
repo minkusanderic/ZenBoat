@@ -42,4 +42,5 @@ void main(
 	//Color.xyz = v_Color.xyz;
 	//Color = float4(v_Normal.x/2 + .5, v_Normal.y/2 + .5, 0, 1.0f);
 	//Color = v_Color;
+	//Color = tex2D(flow_Texture, float2(1,1) - v_TexCoord);
 }

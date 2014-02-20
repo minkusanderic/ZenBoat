@@ -30,7 +30,10 @@ namespace Main
 			//CurrentModifier current_mod = new CurrentModifier("/Application/Assets/Current.png");
 			//current_mod.scale.X = width/50;//Math.Cos(width)*;
 			//current_mod.scale.Y = height/50;
-			var m = ent.attachComponent(sc);
+			//var m = ent.attachComponent(sc);
+			
+			var modifier = ent.attachComponent(new CurrentModifier(width, height, -(float)angle));
+			
 			//var n = ent.attachComponent(new CurrentModifier("/Application/Assets/Current.png")).scale = new Vector2(2f, 2f);
 			//m.scale = new Vector2(.5f, .5f);
 			RigidBody rb = new RigidBody( width/2 , height/2 );
