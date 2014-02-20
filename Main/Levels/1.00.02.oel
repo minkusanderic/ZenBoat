@@ -153,14 +153,7 @@
     <Rock id="12" x="1084" y="336" width="50" height="50" angle="0" />
     <Crane id="13" x="356" y="492" />
     <Crane id="14" x="1332" y="24" />
-    <Bamboo id="21" x="524" y="564" />
-    <Bamboo id="22" x="496" y="524" />
-    <Bamboo id="24" x="492" y="588" />
-    <Bamboo id="15" x="592" y="572" />
-    <Bamboo id="16" x="600" y="520" />
-    <Bamboo id="17" x="572" y="516" />
-    <Bamboo id="18" x="552" y="508" />
-    <Bamboo id="19" x="644" y="504" />
+    <MapleTreeNorth id="20" x="700" y="12" width="70" height="70" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="1328" y="-52" />
@@ -168,5 +161,10 @@
     <Lillypad id="2" x="1216" y="436" width="50" height="40" angle="0" />
     <Tulip id="3" x="808" y="500" />
     <Tulip id="4" x="872" y="500" />
+    <Bamboo id="5" x="640" y="516" />
+    <Bamboo id="6" x="616" y="540" />
+    <Bamboo id="7" x="660" y="556" />
+    <Bamboo id="8" x="672" y="536" />
+    <Bamboo id="9" x="624" y="520" />
   </Art>
 </level>

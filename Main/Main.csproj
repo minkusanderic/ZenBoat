@@ -194,7 +194,6 @@
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\MapleTreeNorth.mdx" />
-    <Content Include="Assets\MapleTreeSouth.mdx" />
     <Content Include="Assets\story_pg1.png" />
     <Content Include="Assets\story_pg2.png" />
     <Content Include="Assets\story_pg3.png" />
@@ -202,5 +201,7 @@
     <Content Include="Assets\Crane02.mdx" />
     <Content Include="Assets\MapleTreeSouthLeaves.mdx" />
     <Content Include="Assets\MapleTreeSouthBranches.mdx" />
+    <Content Include="Assets\MapleTreeNorthBranches.mdx" />
+    <Content Include="Assets\MapleTreeNorthLeaves.mdx" />
   </ItemGroup>
 </Project>
