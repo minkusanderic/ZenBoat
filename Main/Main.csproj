@@ -124,7 +124,6 @@
     <Content Include="resources\rock_dae.mdx" />
     <Content Include="resources\Water.mdx" />
     <Content Include="Assets\BoatFBX.mdx" />
-    <Content Include="Assets\RockFBX.mdx" />
     <Content Include="Assets\Lotus.mdx" />
     <Content Include="Assets\WaterDrop.wav" />
     <Content Include="Assets\LondonsSong.mp3" />
@@ -136,7 +135,6 @@
     <Content Include="Assets\whirlpool.png" />
     <Content Include="Assets\Log.mdx" />
     <Content Include="resources\test.png" />
-    <Content Include="resources\Origami Kami.png" />
     <Content Include="Assets\smoke.png" />
     <Content Include="Assets\Arrow.png" />
     <Content Include="Assets\ball_animated.mdx" />
@@ -168,7 +166,6 @@
     <Content Include="Assets\CraneTeal.mdx" />
     <Content Include="Assets\CraneYellow.mdx" />
     <Content Include="Assets\chime.mp3" />
-    <Content Include="Assets\RockFBX2.mdx" />
     <Content Include="Assets\Sound\SFX\Crane1.wav" />
     <Content Include="Assets\Sound\SFX\Crane2.wav" />
     <Content Include="Assets\Sound\SFX\Crane3.wav" />
@@ -182,14 +179,12 @@
     <Content Include="Assets\day_flat.png" />
     <Content Include="Assets\lilypad2.mdx" />
     <Content Include="Assets\Log2.mdx" />
-    <Content Include="Assets\Rock.mdx" />
     <Content Include="Assets\Iris.mdx" />
     <Content Include="Assets\Tulip.mdx" />
     <Content Include="Assets\instructions.png" />
     <Content Include="Assets\title.png" />
     <Content Include="Levels\1.00.06.oel" />
     <Content Include="Levels\1.00.07.oel" />
-    <Content Include="Assets\TempRock.mdx" />
     <Content Include="Assets\Bamboo3.mdx" />
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\CherryBlossomS.mdx" />
@@ -203,5 +198,9 @@
     <Content Include="Assets\MapleTreeSouthBranches.mdx" />
     <Content Include="Assets\MapleTreeNorthBranches.mdx" />
     <Content Include="Assets\MapleTreeNorthLeaves.mdx" />
+    <Content Include="Assets\Rock.mdx" />
+    <Content Include="Assets\RedRock.mdx" />
+    <Content Include="Assets\GreyRock.mdx" />
+    <Content Include="resources\Origami Kami.png" />
   </ItemGroup>
 </Project>
