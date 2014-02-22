@@ -8,6 +8,8 @@ void main(
 		   	float2 in v_TexCoord  : TEXCOORD0,	
 			float3 in v_Normal	: TEXCOORD1,		
 			float3 in v_Eye : TEXCOORD2,
+			
+			float3 in v_Position_Tex : TEXCOORD3,
 		   	
 			float4 out Color	: COLOR	
 			)
@@ -37,6 +39,8 @@ void main(
 	Color = tmpColor;
 	
 	Color.xyz = floor( 10 * (pow(Color.xyz, 1+length(swirl.xy))))/10;
+	
+	Color.xyz += v_Position_Tex.z/20;
 	//Color.xyz = Color.xyz * pow(max(0, dot(v_Normal, normalize(-v_Eye + float3(0.0f, 0.0f, 1.0f)))), 10.0f);
 	//Color = float4(0,0,0,1);
 	//Color.xyz = v_Color.xyz;

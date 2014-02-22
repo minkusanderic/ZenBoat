@@ -13,6 +13,7 @@ void main( float4 in a_Position  : POSITION,
 		   float2 out v_TexCoord   : TEXCOORD0,
 		   float3 out v_Normal : TEXCOORD1,
 		   float3 out v_Eye : TEXCOORD2,
+		   float3 out v_Position_Tex : TEXCOORD3,
 		   
 		   float4 out v_Position : POSITION	   
            )
@@ -47,6 +48,7 @@ void main( float4 in a_Position  : POSITION,
 	
 	a_Position.z = z_pos;
 	v_Position	= mul( a_Position, WorldViewProj );
+	v_Position_Tex = a_Position;
 	v_Normal	= normalize(a_Normal);
 	//v_Normal = float3(0.0f, 1.0f, 1.0f);
 	v_Eye		= normalize(mul(a_Position, World).xyz - EyePosition) ;
