@@ -197,14 +197,35 @@
     <Content Include="Assets\MapleTreeSouthLeaves.mdx" />
     <Content Include="Assets\MapleTreeSouthBranches.mdx" />
     <Content Include="Assets\MapleTreeNorthBranches.mdx" />
-    
     <Content Include="Assets\MapleTreeNorthLeaves.mdx" />
     <Content Include="Assets\Rock.mdx" />
     <Content Include="Assets\RedRock.mdx" />
     <Content Include="Assets\GreyRock.mdx" />
     <Content Include="resources\Origami Kami.png" />
-   
     <Content Include="Assets\geyser_water.png" />
-      
+    <Content Include="Levels\2.00.01 RL.oel" />
+    <Content Include="Levels\2.00.02 RL.oel" />
+    <Content Include="Levels\2.00.03 RL.oel" />
+    <Content Include="Levels\2.00.04 RL.oel" />
+    <Content Include="Levels\3.00.00 EH.oel" />
+    <Content Include="Levels\3.00.01 EH.oel" />
+    <Content Include="Levels\3.00.02 EG.oel" />
+    <Content Include="Levels\3.00.03 EH.oel" />
+    <Content Include="Levels\3.00.04 EH.oel" />
+    <Content Include="Levels\3.00.05 EH.oel" />
+    <Content Include="Levels\4.00.00 TR.oel" />
+    <Content Include="Levels\4.00.01 TR.oel" />
+    <Content Include="Levels\4.00.02 TR.oel" />
+    <Content Include="Levels\4.00.03.oel" />
+    <Content Include="Levels\4.00.04 TR.oel" />
+    <Content Include="Levels\5.00.00 RM.oel" />
+    <Content Include="Levels\5.00.01 RM.oel" />
+    <Content Include="Levels\6.00.00.oel" />
+    <Content Include="Levels\6.00.01 DW.oel" />
+    <Content Include="Levels\6.00.02 DW.oel" />
+    <Content Include="Levels\7.00.00 BR.oel" />
+    <Content Include="Levels\7.00.01 BR.oel" />
+    <Content Include="Levels\7.00.02 BR.oel" />
+    <Content Include="Levels\8.00.01 CC.oel" />
   </ItemGroup>
 </Project>
