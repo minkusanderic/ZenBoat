@@ -16,7 +16,7 @@ namespace Main
 			ent.Name = "Driftwood";
 			ent.tag("driftwood", "pushable");
 			
-			var m = ent.attachComponent(new ModelComponent("/Application/Assets/Log2.mdx"));
+			var m = ent.attachComponent(new ModelComponent("/Application/Assets/TestLog.mdx"));
 			m.scale = new Vector3(7f, 7f, 7f);
 			
 			RigidBody rb = new RigidBody(50, 15);

@@ -149,11 +149,12 @@
     <Crane id="8" x="1296" y="240" />
     <Rock id="9" x="684" y="152" width="74" height="82" angle="0" />
     <Rock id="10" x="1052" y="416" width="50" height="50" angle="0" />
-    <Rock id="11" x="1000" y="340" width="66" height="62" angle="0" />
+    <Rock id="11" x="1000" y="340" width="66" height="62" angle="0.2617994" />
     <Rock id="12" x="1084" y="336" width="50" height="50" angle="0" />
     <Crane id="13" x="356" y="492" />
     <Crane id="14" x="1332" y="24" />
     <MapleTreeNorth id="20" x="700" y="12" width="70" height="70" />
+    <Koi id="15" x="1220" y="356" angle="0" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="1328" y="-52" />

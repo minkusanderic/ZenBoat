@@ -22,10 +22,12 @@ namespace Main
 			int width = Convert.ToInt32(options["width"]);
 			int height = Convert.ToInt32(options["height"]);
 			ent.Transform.Position += new Vector2(width/2, -height/2);
-			var m = ent.attachComponent(new ModelComponent("/Application/Assets/GreyRock.mdx"));
-			
-			var scale_x = width * .01f;
-			var scale_y = height * .01f;
+			var m = ent.attachComponent(new ModelComponent("/Application/Assets/GreyRockA.mdx"));
+			m.layer = "under_water";
+			//var scale_x = width * .01f;
+			//var scale_y = height * .01f;
+			var scale_x = width * .04f;
+			var scale_y = height * .04f;
 			m.scale = new Vector3(scale_x, scale_y, Math.Min(scale_x, scale_y));
 			
 			var body = ent.attachComponent(new RigidBody(Math.Max(width,height)/2));
