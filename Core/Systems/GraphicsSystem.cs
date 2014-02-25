@@ -190,6 +190,8 @@ namespace Core
 					Vector3 pos = new Vector3(model.parent.Transform.Position.X, model.parent.Transform.Position.Y, model.parent.Transform.Z);
 					
 					//Console.WriteLine( model.parent.Name+"--" + pos );
+					Vector3 center = new Vector3(model.model.BoundingSphere.X, model.model.BoundingSphere.Y, 0.0f);
+					//world *= Matrix4.Translation(center);
 					world *= Matrix4.Translation(pos) ;
 					world *= Matrix4.Scale( scale.X, scale.Y, scale.Z ) ;
 					world *= Matrix4.RotationX(FMath.Radians(90.0f));
