@@ -204,7 +204,6 @@
     <Content Include="Assets\GreyRock.mdx" />
     <Content Include="resources\Origami Kami.png" />
     <Content Include="Assets\geyser_water.png" />
-<<<<<<< OURS
     <Content Include="Levels\2.00.01 RL.oel" />
     <Content Include="Levels\2.00.02 RL.oel" />
     <Content Include="Levels\2.00.03 RL.oel" />
@@ -229,23 +228,12 @@
     <Content Include="Levels\7.00.01 BR.oel" />
     <Content Include="Levels\7.00.02 BR.oel" />
     <Content Include="Levels\8.00.01 CC.oel" />
-=======
     <Content Include="Assets\KoifishOriginal.mdx" />
     <Content Include="Assets\koifish.mdx" />
     <Content Include="Assets\RedRockB.mdx" />
     <Content Include="Assets\Pagoda.mdx" />
-    <Content Include="..\..\..\Copy\ZenBoat\Levels\Level Making Event\6.00.00.oel">
-      <Link>Levels\6.00.00.oel</Link>
-    </Content>
     <Content Include="Assets\GreyRockA.mdx" />
-    <Content Include="..\..\..\Copy\ZenBoat\Levels\Level Making Event\6.00.01 DW.oel">
-      <Link>Levels\6.00.01 DW.oel</Link>
-    </Content>
-    <Content Include="..\..\..\Copy\ZenBoat\Levels\Level Making Event\6.00.02 DW.oel">
-      <Link>Levels\6.00.02 DW.oel</Link>
-    </Content>
     <Content Include="Assets\Island.mdx" />
     <Content Include="Assets\TestLog.mdx" />
->>>>>>> THEIRS
   </ItemGroup>
 </Project>

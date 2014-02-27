@@ -42,6 +42,7 @@ namespace Core
 			program = new BasicProgram();
 			parameters = program.Parameters;
 		 	program = new BasicProgram("/Application/shaders/Basic.cgx" , null , parameters );
+			//program = new BasicProgram();
 			scene = new Scene();
 			//Timer.Init();
 			
@@ -141,6 +142,7 @@ namespace Core
 			//var basic_program_container = new BasicProgramContainer( basic_parameters );
 			//basic_program_container.Add("SIMPLE", basic_program);
 			
+			
 			if(model_layers.ContainsKey("under_water"))
 			{
 				foreach(var model in model_layers["under_water"])
@@ -148,8 +150,9 @@ namespace Core
 					Draw_Model(model);
 				}
 			}
-			
 			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view, this.camera_pos);
+			
+			
 			
 			if(model_layers.ContainsKey("front"))
 			{
@@ -158,6 +161,7 @@ namespace Core
 					Draw_Model(model);
 				}
 			}
+			
 			
 			foreach(var sprite in sprites)
 			{
@@ -202,9 +206,15 @@ namespace Core
 				Vector3 vecAmbient = new Vector3( .5f , 0.5f , .5f );
 				Vector3 vecSpecular = new Vector3( 0f , 0f , 0f );
 				model.model.SetWorldMatrix( ref world ) ;
-				program.SetUniformValue( program.FindUniform("LightDirection") , ref vecDirection );
-				program.SetUniformValue( program.FindUniform("LightAmbient") , ref vecAmbient );
-				program.SetUniformValue( program.FindUniform("LightSpecular") , ref vecSpecular );
+				//program.SetUniformValue( program.FindUniform("LightDirection") , ref vecDirection );
+				//program.SetUniformValue( program.FindUniform("LightAmbient") , ref vecAmbient );//
+				//program.SetUniformValue( program.FindUniform("LightSpecular") , ref vecSpecular );
+			
+				
+				program.Parameters.SetLightCount(1);
+				program.Parameters.SetLightDirection(0, ref vecDirection);
+				program.Parameters.SetLightAmbient(ref vecAmbient);
+				program.Parameters.SetLightSpecular(0, ref vecSpecular);
 				//model.model.BindPrograms( basic_program_container );
 			    //  draw model, animate model
 				
