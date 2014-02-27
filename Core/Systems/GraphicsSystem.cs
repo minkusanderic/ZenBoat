@@ -134,6 +134,11 @@ namespace Core
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			
+			foreach(var model in ModelComponent.model_cache.Values)
+			{
+				model.Animate( .006f ) ;
+			}
+			
 			//adjust position
 			
 			//Setup Model Shader
@@ -184,6 +189,7 @@ namespace Core
 		
 		private void Draw_Model(ModelComponent model)
 		{
+
 			if ( !model.parent.Enabled ) return;
 				if ( Math.Abs(model.parent.Transform.Position.X - camera_pos.X) > (960 + Math.Max(model.scale.X, model.scale.Y) * model.model.BoundingSphere.W)) return; // do not render if off screen
 				Matrix4 world = Matrix4.Identity ;
@@ -218,12 +224,14 @@ namespace Core
 				//model.model.BindPrograms( basic_program_container );
 			    //  draw model, animate model
 				
-				model.model.Animate( .01f ) ;
+				
+
+				
 				model.model.Update() ;
 				graphics.SetTexture(1, toon);
 
 				model.model.Draw(graphics, program) ;
-
+			
 		}
 		
 		private void Draw_Sprite(SpriteComponent sprite, Matrix4 proj, Matrix4 view)

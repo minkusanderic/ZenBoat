@@ -14,7 +14,8 @@ namespace Main
 		{
 					    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Pagoda.mdx"));
-			m.scale = new Vector3(8f , 8f, 8f);
+			m.scale = new Vector3(4f , 4f, 4f);
+			ent.Transform.Position = new Vector2( ent.Transform.Position.X - 30f , ent.Transform.Position.Y + 10f );
 			
 		}
 	}

@@ -15,9 +15,10 @@ namespace Main
 			//ent.tag("pushable");
 			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Island.mdx"));
-			
-			m.scale = new Vector3(8f, 8f, 8f);
-			
+			m.scale = new Vector3(3f, 3f, 3f);
+			RigidBody rb = new RigidBody(90, 90);
+			ent.attachComponent(rb);
+			rb.is_static=true;
 		}
 	}
 }
