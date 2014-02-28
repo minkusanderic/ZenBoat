@@ -4,13 +4,12 @@ using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
-using Main;
 
 namespace Menu
 {
-    public partial class Story3 : Panel
+    public partial class Story : Scene
     {
-        public Story3()
+        public Story()
         {
             InitializeWidget();
         }

@@ -47,7 +47,7 @@ namespace Menu
             Panel_1.AddChildLast(levelButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/Assets/title.png");
+            titleImage.Image = new ImageAsset("/Application/assets/title.png");
 
             // playButton
             playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);

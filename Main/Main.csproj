@@ -58,13 +58,7 @@
     <Compile Include="PreFabs\Endstage.cs" />
     <Compile Include="PreFabs\ball.cs" />
     <Compile Include="PreFabs\walker.cs" />
-    <Compile Include="Menus\StartMenu.cs" />
     <Compile Include="PreFabs\Drag.cs" />
-    <Compile Include="Menus\Instructions.composer.cs" />
-    <Compile Include="Menus\Instructions.cs" />
-    <Compile Include="Menus\UIStringTable.cs" />
-    <Compile Include="Menus\MenuLoader.cs" />
-    <Compile Include="Menus\StartMenu.composer.cs" />
     <Compile Include="PreFabs\Bridge.cs" />
     <Compile Include="PreFabs\Lantern.cs" />
     <Compile Include="PreFabs\Windmill.cs" />
@@ -75,14 +69,26 @@
     <Compile Include="PreFabs\MapleTreeSouth.cs" />
     <Compile Include="PreFabs\CherryBlossomNorth.cs" />
     <Compile Include="PreFabs\CherryBlossomSouth.cs" />
+    <Compile Include="PreFabs\Pagoda.cs" />
+    <Compile Include="PreFabs\Island.cs" />
+    <Compile Include="Menus\Instructions.composer.cs" />
+    <Compile Include="Menus\Instructions.cs" />
+    <Compile Include="Menus\MenuLoader.cs" />
+    <Compile Include="Menus\StartMenu.composer.cs" />
+    <Compile Include="Menus\StartMenu.cs" />
+    <Compile Include="Menus\Story.cs" />
     <Compile Include="Menus\Story1.composer.cs" />
     <Compile Include="Menus\Story1.cs" />
     <Compile Include="Menus\Story2.composer.cs" />
     <Compile Include="Menus\Story2.cs" />
     <Compile Include="Menus\Story3.composer.cs" />
     <Compile Include="Menus\Story3.cs" />
-    <Compile Include="PreFabs\Pagoda.cs" />
-    <Compile Include="PreFabs\Island.cs" />
+    <Compile Include="Menus\Story4.composer.cs" />
+    <Compile Include="Menus\Story4.cs" />
+    <Compile Include="Menus\Story5.composer.cs" />
+    <Compile Include="Menus\Story5.cs" />
+    <Compile Include="Menus\UIStringTable.cs" />
+    <Compile Include="Menus\Story.composer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -190,9 +196,6 @@
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\CherryBlossomS.mdx" />
     <Content Include="Assets\MapleTreeNorth.mdx" />
-    <Content Include="Assets\story_pg1.png" />
-    <Content Include="Assets\story_pg2.png" />
-    <Content Include="Assets\story_pg3.png" />
     <Content Include="Assets\OrigamiBoat2.mdx" />
     <Content Include="Assets\Crane02.mdx" />
     <Content Include="Assets\MapleTreeSouthLeaves.mdx" />
@@ -240,5 +243,10 @@
     <Content Include="Assets\BankStraightTxtr.mdx" />
     <Content Include="Assets\MapleMED.mdx" />
     <Content Include="Assets\ToriiMED.mdx" />
+    <Content Include="Assets\story1.png" />
+    <Content Include="Assets\story2.png" />
+    <Content Include="Assets\story3.png" />
+    <Content Include="Assets\story4.png" />
+    <Content Include="Assets\story5.png" />
   </ItemGroup>
 </Project>

@@ -13,9 +13,7 @@ namespace Main
 	{
 		public static bool isPlay = true;
 		public static bool loadInstr = false;
-		public static bool loadStory1 = false;
-		public static bool loadStory2 = false;
-		public static bool loadStory3 = false;
+		public static bool loadStory = false;
 		public static bool loadStart = false;
 		
 		public MenuLoader ()
@@ -33,10 +31,7 @@ namespace Main
 			// Create the scenes
 			var start = new Menu.StartMenu();
 			var instr = new Menu.Instructions();
-			var story1 = new Menu.Story1();
-			var story2 = new Menu.Story2();
-			var story3 = new Menu.Story3();
-			
+			var story = new Menu.Story();
 			// Set the scene for the Start menu
 			UISystem.SetScene(start, null);
 			
@@ -52,22 +47,10 @@ namespace Main
 					loadInstr = false;
 				}
 				
-				if (loadStory1)
+				if (loadStory)
 				{
-					UISystem.SetScene(story1,null);
-					loadStory1 = false;
-				}
-				
-				if (loadStory2)
-				{
-					UISystem.SetScene(story2,null);
-					loadStory2 = false;
-				}
-				
-				if (loadStory3)
-				{
-					UISystem.SetScene(story3,null);
-					loadStory3 = false;
+					UISystem.SetScene(story,null);
+					loadStory = false;
 				}
 				
 				if (loadStart)

@@ -34,6 +34,7 @@ namespace Preview
 
             // Instructions
             this.RootWidget.AddChildLast(Panel_1);
+            this.Transition = new FlipBoardTransition();
 
             // Panel_1
             Panel_1.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);

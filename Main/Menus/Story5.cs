@@ -8,11 +8,17 @@ using Main;
 
 namespace Menu
 {
-    public partial class Story3 : Panel
+    public partial class Story5 : Panel
     {
-        public Story3()
+        public Story5()
         {
             InitializeWidget();
+			playButton.ButtonAction += HandlePlayButtonButtonAction;
+        }
+
+        void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
+        {
+			MenuLoader.loadInstr = true;
         }
     }
 }

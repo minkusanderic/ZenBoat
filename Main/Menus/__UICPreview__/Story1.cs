@@ -7,7 +7,7 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Preview
 {
-    public partial class Story1 : Scene
+    public partial class Story1 : Panel
     {
         public Story1()
         {

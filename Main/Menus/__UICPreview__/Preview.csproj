@@ -31,8 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="AllStory.composer.cs" />
-    <Compile Include="AllStory.cs" />
+    <Compile Include="Instructions.composer.cs" />
+    <Compile Include="Instructions.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -42,14 +42,20 @@
     <Content Include="..\\assets\instructionsB.png" >
       <Link>assets\instructionsB.png</Link>
     </Content>
-    <Content Include="..\\assets\story_pg1.png" >
-      <Link>assets\story_pg1.png</Link>
+    <Content Include="..\\assets\story1.png" >
+      <Link>assets\story1.png</Link>
     </Content>
-    <Content Include="..\\assets\story_pg2.png" >
-      <Link>assets\story_pg2.png</Link>
+    <Content Include="..\\assets\story2.png" >
+      <Link>assets\story2.png</Link>
     </Content>
-    <Content Include="..\\assets\story_pg3.png" >
-      <Link>assets\story_pg3.png</Link>
+    <Content Include="..\\assets\story3.png" >
+      <Link>assets\story3.png</Link>
+    </Content>
+    <Content Include="..\\assets\story4.png" >
+      <Link>assets\story4.png</Link>
+    </Content>
+    <Content Include="..\\assets\story5.png" >
+      <Link>assets\story5.png</Link>
     </Content>
     <Content Include="..\\assets\title.png" >
       <Link>assets\title.png</Link>

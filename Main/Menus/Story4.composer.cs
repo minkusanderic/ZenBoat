@@ -9,7 +9,7 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Menu
 {
-    partial class Story2
+    partial class Story4
     {
         ImageBox ImageBox_1;
 
@@ -23,13 +23,13 @@ namespace Menu
             ImageBox_1 = new ImageBox();
             ImageBox_1.Name = "ImageBox_1";
 
-            // Story2
+            // Story4
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
             this.AddChildLast(ImageBox_1);
 
             // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/story2.png");
+            ImageBox_1.Image = new ImageAsset("/Application/assets/story4.png");
 
             SetWidgetLayout(orientation);
 
@@ -45,7 +45,7 @@ namespace Menu
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(59, 31);
+                    ImageBox_1.SetPosition(0, 0);
                     ImageBox_1.SetSize(200, 200);
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;

@@ -23,7 +23,7 @@ namespace Menu
 
         void HandleLevelButtonButtonAction (object sender, TouchEventArgs e)
         {
-        	MenuLoader.loadInstr = true;
+        	MenuLoader.loadStory = true;
         }
 
         void HandleQuitButtonButtonAction (object sender, TouchEventArgs e)
@@ -33,7 +33,7 @@ namespace Menu
 
         void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
         {
-        	MenuLoader.loadInstr = true;
+        	MenuLoader.loadStory = true;
         }
 		
     }

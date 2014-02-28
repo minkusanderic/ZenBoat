@@ -9,9 +9,10 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Menu
 {
-    partial class Story2
+    partial class Story5
     {
         ImageBox ImageBox_1;
+        Button playButton;
 
         private void InitializeWidget()
         {
@@ -22,14 +23,29 @@ namespace Menu
         {
             ImageBox_1 = new ImageBox();
             ImageBox_1.Name = "ImageBox_1";
+            playButton = new Button();
+            playButton.Name = "playButton";
 
-            // Story2
+            // Story5
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
             this.AddChildLast(ImageBox_1);
+            this.AddChildLast(playButton);
 
             // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/story2.png");
+            ImageBox_1.Image = new ImageAsset("/Application/assets/story5.png");
+
+            // playButton
+            playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            playButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            playButton.Style = ButtonStyle.Custom;
+            playButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             SetWidgetLayout(orientation);
 
@@ -45,10 +61,15 @@ namespace Menu
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(59, 31);
+                    ImageBox_1.SetPosition(0, 0);
                     ImageBox_1.SetSize(200, 200);
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
+
+                    playButton.SetPosition(558, 355);
+                    playButton.SetSize(214, 56);
+                    playButton.Anchors = Anchors.None;
+                    playButton.Visible = true;
 
                     break;
 
@@ -60,6 +81,11 @@ namespace Menu
                     ImageBox_1.SetSize(960, 544);
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
+
+                    playButton.SetPosition(567, 359);
+                    playButton.SetSize(214, 56);
+                    playButton.Anchors = Anchors.None;
+                    playButton.Visible = true;
 
                     break;
             }

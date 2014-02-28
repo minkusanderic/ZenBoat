@@ -7,9 +7,9 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Preview
 {
-    public partial class Story2 : Panel
+    public partial class Story5 : Panel
     {
-        public Story2()
+        public Story5()
         {
             InitializeWidget(LayoutOrientation.Horizontal);
         }
