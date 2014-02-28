@@ -142,10 +142,10 @@
     <Torii id="1" x="1768" y="272" NextLevel="1.00.03.oel" />
     <Crane id="2" x="464" y="232" />
     <Crane id="3" x="756" y="316" />
-    <Crane id="4" x="1120" y="208" />
+    <Crane id="4" x="1136" y="176" />
     <Crane id="5" x="1440" y="304" />
     <Crane id="6" x="584" y="304" />
-    <Crane id="7" x="928" y="244" />
+    <Crane id="7" x="888" y="204" />
     <Crane id="8" x="1296" y="240" />
     <Rock id="9" x="684" y="152" width="74" height="82" angle="0" />
     <Rock id="10" x="1052" y="416" width="50" height="50" angle="0" />
@@ -155,9 +155,9 @@
     <Crane id="14" x="1332" y="24" />
     <MapleTreeNorth id="20" x="700" y="12" width="70" height="70" />
     <Koi id="15" x="1220" y="356" angle="0" />
-    <Island id="16" x="956" y="140" width="120" height="120" angle="0" />
-    <Bamboo id="17" x="964" y="160" />
-    <Bamboo id="18" x="996" y="180" />
+    <Island id="16" x="980" y="184" width="120" height="120" angle="0" />
+    <Bamboo id="17" x="988" y="220" />
+    <Bamboo id="18" x="1020" y="224" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="1328" y="-52" />

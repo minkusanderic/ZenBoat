@@ -133,10 +133,10 @@ namespace Core
 			graphics.Enable( EnableMode.DepthTest ) ;
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
-			
+			//Animate models
 			foreach(var model in ModelComponent.model_cache.Values)
 			{
-				model.Animate( .006f ) ;
+					model.Animate( .006f ) ;
 			}
 			
 			//adjust position

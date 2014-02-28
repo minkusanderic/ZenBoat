@@ -232,14 +232,13 @@
     <Content Include="Assets\koifish.mdx" />
     <Content Include="Assets\RedRockB.mdx" />
     <Content Include="Assets\Pagoda.mdx" />
-<<<<<<< OURS
     <Content Include="Assets\GreyRockA.mdx" />
     <Content Include="Assets\Island.mdx" />
-=======
->>>>>>> THEIRS
     <Content Include="Assets\TestLog.mdx" />
-    <Content Include="Assets\GreyRockA.mdx" />
     <Content Include="Assets\AnimatedCrane.mdx" />
-    <Content Include="Assets\Island.mdx" />
+    <Content Include="Assets\MapleLOW.mdx" />
+    <Content Include="Assets\BankStraightTxtr.mdx" />
+    <Content Include="Assets\MapleMED.mdx" />
+    <Content Include="Assets\ToriiMED.mdx" />
   </ItemGroup>
 </Project>

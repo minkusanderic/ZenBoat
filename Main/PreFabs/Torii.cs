@@ -19,7 +19,7 @@ namespace Main
 			ent.Name = "Torii";
 			ent.tag ("torii");
 			
-			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Torii.mdx"));
+			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/ToriiMED.mdx"));
 			m.scale = new Vector3 (5.0f, 5.0f, 5.0f);
 			ent.Transform.Rotation = new Vector2(0, -1);
 			
