@@ -253,5 +253,9 @@
     <Content Include="Assets\irisbundle.mdx" />
     <Content Include="Assets\MoreColorsTulips.mdx" />
     <Content Include="Assets\LooseBlossomsC.mdx" />
+    <Content Include="Assets\shader.png" />
+    <Content Include="Assets\shader2.png" />
+    <Content Include="Assets\shader3.png" />
+    <Content Include="Assets\shader4.png" />
   </ItemGroup>
 </Project>
