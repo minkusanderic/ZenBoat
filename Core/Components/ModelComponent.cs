@@ -13,7 +13,8 @@ namespace Core
 		public Vector3 scale = new Vector3(1.0f, 1.0f, 1.0f);
 		
 		public String layer = "front";
-		public String animated = "slow";
+		public float animation_delay = 0f;
+		public float animation_speed = 1f; 
 		
 		public static Dictionary<String, BasicModel> model_cache = new Dictionary<String, BasicModel>();
 		

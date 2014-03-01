@@ -135,6 +135,9 @@ namespace Core
 	
 			//Animate models
 			
+			
+			
+			
 			foreach(var model in ModelComponent.model_cache.Values)
 			{
 					model.Animate( .006f ) ;
@@ -167,6 +170,13 @@ namespace Core
 				}
 			}
 			
+			if(model_layers.ContainsKey("trees"))
+			{
+				foreach(var model in model_layers["trees"])
+				{
+					Draw_Model(model);
+				}
+			}
 			
 			foreach(var sprite in sprites)
 			{
@@ -225,8 +235,11 @@ namespace Core
 			    //  draw model, animate model
 				
 				
-
-				
+				/*if(model.model.Motions.Length > 0)
+				{
+					model.model.SetCurrentMotion(0, model.animation_delay + time);
+					time+= 0.0001f;
+				}*/
 				model.model.Update() ;
 				graphics.SetTexture(1, toon);
 	            Console.WriteLine(model.model.Parts[0].Meshes[0].Primitives[0].Count);

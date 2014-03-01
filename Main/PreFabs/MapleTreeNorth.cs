@@ -17,6 +17,7 @@ namespace Main
 			
 			ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTreeNorthBranches.mdx"));
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTreeNorthLeaves.mdx"));
+			m.layer = "trees";
 			m2.scale = new Vector3(8f, 8f, 8f);
 			m.scale = new Vector3(8f , 8f, 8f);
 			
