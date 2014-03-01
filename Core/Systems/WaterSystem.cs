@@ -164,18 +164,24 @@ namespace Core
 				g.graphics.SetShaderProgram(water.shaderProgram);
 				
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
-				flow_map.Dispose();
+				//flow_map.Dispose();
 				//height_map.Dispose();
 			}
 		}
 		
-		//private Texture2D flow_map = null; 
+		private Texture2D flow_map = null; 
 		private Texture2D RenderFlowMap(GraphicsSystem g)
 		{
 			    float water_width = 960f + (300f * 2);
 				float water_height = 544f + (168.75f * 2);
 			    FrameBuffer off_screen = new FrameBuffer();
-				var flow_map = new Texture2D(512, 512, false, PixelFormat.Rgba, PixelBufferOption.Renderable); 
+				if ( flow_map == null )
+				{
+					flow_map = new Texture2D(512, 512, false, PixelFormat.Rgba, PixelBufferOption.Renderable);
+			    }
+				else
+				{
+				}
 				off_screen.SetColorTarget(flow_map, 0);
 				//height_map.SetPixels(0, p, PixelFormat.Rgba);
 				
@@ -200,9 +206,11 @@ namespace Core
 				//SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
 				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
 				
+			
 			foreach(var sprite in modifiers)
 			{
 				if ( !sprite.parent.Enabled ) continue;
+				if ( Math.Abs(sprite.parent.Transform.Position.X - g.camera_pos.X) > 1000) continue;
 				Matrix4 world = Matrix4.Identity ;
 				
 				
