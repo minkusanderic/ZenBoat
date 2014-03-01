@@ -20,6 +20,8 @@ namespace Core
 		public void ResetPosition()
 		{
 			this.parent.Transform.Position = originalPosition;	
+			this.parent.Transform.Z = 0.0f;
+			this.parent.Enabled = true;
 			// Load all the cranes they picked up, which lie between the current checkpoint and the next one.
 		}
 	}

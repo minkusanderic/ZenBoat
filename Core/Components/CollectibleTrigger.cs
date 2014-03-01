@@ -12,6 +12,8 @@ namespace Core
 		//SFXComponent 	sound;
 		//static SFXComponent[] 	sounds = null; //= new SFXComponent[5];
 		
+		bool is_animating = false;
+		
 		public CollectibleTrigger (int worth) : base(SceneManager.Instance.Select("boat"))
 		{
 			collectibleScore = worth;
@@ -32,8 +34,12 @@ namespace Core
 		
 		public override void onCollide(Entity target)
 		{
-			CollectibleManager.CollectItem(this.parent,  this.parent.Name , collectibleScore );
-			this.parent.Enabled = false;
+			if(!is_animating)
+			{
+				CollectibleManager.CollectItem(this.parent,  this.parent.Name , collectibleScore );
+				is_animating = true;
+			
+			//this.parent.Enabled = false;
 			//if ( sound == null )
 				//sound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") ) ;
 			int i = CollectibleManager.multiplier;
@@ -42,6 +48,19 @@ namespace Core
 			//sound = sounds[i-1];
 			//sound.SetSoundFromFile("/Application/Assets/Sound/SFX/Crane" + i + ".wav");
 			//sound.PlaySound();
+			
+			this.parent.attachComponent(new SimpleController( () => {
+				if(this.parent.Transform.Z < 600.0f)
+				{
+					this.parent.Transform.Z = this.parent.Transform.Z + 20.0f;
+				}
+				else
+				{
+					this.parent.Enabled = false;
+					this.is_animating = false;
+				}
+			}));
+			}
 		}
 	}
 }
