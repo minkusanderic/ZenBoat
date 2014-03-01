@@ -156,19 +156,27 @@
     <MapleTreeNorth id="20" x="700" y="12" width="70" height="70" />
     <Koi id="15" x="1220" y="356" angle="0" />
     <Island id="16" x="980" y="184" width="120" height="120" angle="0" />
-    <Bamboo id="17" x="988" y="220" />
-    <Bamboo id="18" x="1020" y="224" />
+    <Bamboo id="17" x="1008" y="204" />
+    <Bamboo id="18" x="996" y="172" />
+    <Pagoda id="19" x="980" y="208" width="50" height="50" angle="0" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="1328" y="-52" />
     <MapleTreeSouth id="1" x="316" y="516" width="70" height="70" />
     <Lillypad id="2" x="1216" y="436" width="50" height="40" angle="0" />
-    <Tulip id="3" x="808" y="500" />
-    <Tulip id="4" x="872" y="500" />
     <Bamboo id="5" x="640" y="516" />
     <Bamboo id="6" x="616" y="540" />
     <Bamboo id="7" x="660" y="556" />
     <Bamboo id="8" x="672" y="536" />
     <Bamboo id="9" x="624" y="520" />
+    <Tulip id="10" x="528" y="508" />
+    <Tulip id="3" x="584" y="508" />
+    <Iris id="4" x="420" y="-12" />
+    <Iris id="11" x="360" y="-12" />
+    <Iris id="12" x="308" y="-24" />
+    <Iris id="13" x="796" y="508" />
+    <Iris id="14" x="852" y="516" />
+    <Tulip id="15" x="168" y="-8" />
+    <Tulip id="16" x="112" y="-12" />
   </Art>
 </level>

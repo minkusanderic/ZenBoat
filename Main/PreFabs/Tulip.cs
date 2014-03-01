@@ -12,11 +12,11 @@ namespace Main
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			//ent.tag("pushable");
-			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Tulip.mdx"));
-			
-			m.scale = new Vector3(2.5f , 2.5f, 2.5f);
+			//ent.Transform.Rotation = new Vector2(0f, 1f);
+			//ent.Transform.SetAngle(0f);
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/MoreColorsTulips.mdx"));
+		
+			m.scale = new Vector3(2f , 2f, 2f);
 			
 		}
 	}

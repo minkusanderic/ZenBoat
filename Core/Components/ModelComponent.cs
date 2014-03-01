@@ -13,6 +13,7 @@ namespace Core
 		public Vector3 scale = new Vector3(1.0f, 1.0f, 1.0f);
 		
 		public String layer = "front";
+		public String animated = "slow";
 		
 		public static Dictionary<String, BasicModel> model_cache = new Dictionary<String, BasicModel>();
 		

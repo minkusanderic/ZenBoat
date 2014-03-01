@@ -27,8 +27,8 @@ namespace Main
 			m.layer = "under_water";
 			
 			m.scale = new Vector3(3, 3, 3);
-			m.model.Animate(0);
-			m.model.SetCurrentMotion( 0, 0.1f ) ;
+			//m.model.Animate(0);
+			//m.model.SetCurrentMotion( 0, 0.3f ) ;
 			//ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.25f) );
 			//for(int i =0; i <1000; i++)
 			//{

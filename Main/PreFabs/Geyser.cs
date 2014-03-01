@@ -21,8 +21,12 @@ namespace Main
 			int height = Convert.ToInt32(options["height"]);
 			int strength = Convert.ToInt32(options["strength"]);
 			
-			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/Geyser.png"));
-			//m.scale = new Vector2(.5f, .5f);
+			//var m = ent.attachComponent(new SpriteComponent("/Application/Assets/Geyser.png"));
+			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Geyser.mdx"));
+			m.scale = new Vector3 (50f, 50f, 50f);
+			m.layer = "under_water";
+			
+			//m.scale = new Vector2(0.5f, 0.5f);
 			RigidBody rb = new RigidBody( Math.Min(width, height)/2 );
 			ent.attachComponent(rb);
 			rb.is_static = true;

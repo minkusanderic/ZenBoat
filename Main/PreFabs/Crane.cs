@@ -21,11 +21,11 @@ namespace Main
 			ent.Transform.Rotation = new Vector2(0.5f, 1f);
 			ent.Transform.SetAngle(1f);
 			var m = ent.attachComponent(new ModelComponent("/Application/Assets/AnimatedCrane.mdx"));
-			
+			m.animated = "animated_crane";
 			m.scale = new Vector3(2f, 2f, 2f);
 			
-			m.model.Animate(Timer.DeltaTime);
-		    m.model.SetCurrentMotion( 0, 0.1f ) ;
+			//m.model.Animate(Timer.DeltaTime);
+		    //m.model.SetCurrentMotion( 0, 0.1f ) ;
 			
 			RigidBody rb = new RigidBody(75);
 			//rb.body = new PhysicsBody();

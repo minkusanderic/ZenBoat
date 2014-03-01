@@ -134,6 +134,7 @@ namespace Core
 			graphics.SetDepthFunc( DepthFuncMode.LEqual, true ) ;
 	
 			//Animate models
+			
 			foreach(var model in ModelComponent.model_cache.Values)
 			{
 					model.Animate( .006f ) ;
@@ -146,7 +147,6 @@ namespace Core
 			//var basic_program = new BasicProgram("/Application/shaders/Basic.cgx" , null , parameters );
 			//var basic_program_container = new BasicProgramContainer( basic_parameters );
 			//basic_program_container.Add("SIMPLE", basic_program);
-			
 			
 			if(model_layers.ContainsKey("under_water"))
 			{

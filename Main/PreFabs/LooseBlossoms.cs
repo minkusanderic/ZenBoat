@@ -5,19 +5,20 @@ using Sce.PlayStation.Core;
 using Core;
 namespace Main
 {
-	public class Iris
+	public class LooseBlossoms
 	{
-		public Iris ()
+		public LooseBlossoms ()
 		{
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			//ent.tag("pushable");
 			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Irisbundle.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/LooseBlossomsC.mdx"));
 			
-			m.scale = new Vector3(2 , 2, 2);
+			m.scale = new Vector3(10f , 10f, 10f);
 			
 		}
 	}
 }
+

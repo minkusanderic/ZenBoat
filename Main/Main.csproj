@@ -89,6 +89,7 @@
     <Compile Include="Menus\Story5.cs" />
     <Compile Include="Menus\UIStringTable.cs" />
     <Compile Include="Menus\Story.composer.cs" />
+    <Compile Include="PreFabs\LooseBlossoms.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -144,7 +145,6 @@
     <Content Include="resources\test.png" />
     <Content Include="Assets\smoke.png" />
     <Content Include="Assets\Arrow.png" />
-    <Content Include="Assets\ball_animated.mdx" />
     <Content Include="Assets\walker.mdx" />
     <Content Include="Assets\Geyser.png" />
     <Content Include="Assets\driftwood.mdx" />
@@ -248,5 +248,10 @@
     <Content Include="Assets\story3.png" />
     <Content Include="Assets\story4.png" />
     <Content Include="Assets\story5.png" />
+    <Content Include="Assets\TulipBunch.mdx" />
+    <Content Include="Assets\Geyser.mdx" />
+    <Content Include="Assets\irisbundle.mdx" />
+    <Content Include="Assets\MoreColorsTulips.mdx" />
+    <Content Include="Assets\LooseBlossomsC.mdx" />
   </ItemGroup>
 </Project>
