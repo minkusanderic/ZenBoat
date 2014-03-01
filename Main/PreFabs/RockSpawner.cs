@@ -70,7 +70,7 @@ namespace Main
 								{
 									if ( Vector2.Distance(
 										rock.Transform.Position , pushable.Transform.Position	)
-										< 150f )
+										< 225f )
 									{
 										RigidBody rb = pushable.FindComponent<RigidBody>();
 										/*
