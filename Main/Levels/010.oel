@@ -138,113 +138,69 @@
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Forward>
   <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="0" x="284" y="276" angle="0" />
-    <Torii id="27" x="9908" y="272" NextLevel="" />
-    <Rock id="1" x="7864" y="14" width="244" height="200" angle="0" />
-    <Rock id="2" x="8179" y="306" width="244" height="200" angle="0" />
-    <Rock id="3" x="8591" y="26" width="244" height="200" angle="0" />
-    <Crane id="4" x="9392" y="336" />
-    <Crane id="5" x="8496" y="252" />
-    <Crane id="6" x="8808" y="340" />
-    <Rock id="7" x="7864" y="14" width="244" height="200" angle="0" />
-    <Rock id="8" x="7356" y="190" width="268" height="228" angle="0" />
-    <Rock id="9" x="7356" y="190" width="268" height="228" angle="0" />
-    <Lillypad id="11" x="8096" y="484" width="50" height="40" angle="0" />
-    <Rock id="17" x="6660" y="284" width="178" height="170" angle="0" />
-    <Rock id="21" x="4284" y="260" width="98" height="98" angle="0" />
-    <Rock id="30" x="3048" y="352" width="54" height="74" angle="0" />
-    <Rock id="31" x="2976" y="416" width="50" height="50" angle="0" />
-    <Rock id="32" x="2880" y="404" width="82" height="74" angle="0" />
-    <Rock id="33" x="2904" y="336" width="50" height="50" angle="0" />
-    <Rock id="34" x="3012" y="300" width="50" height="50" angle="0" />
-    <Rock id="35" x="860" y="92" width="70" height="66" angle="0" />
-    <Rock id="39" x="1296" y="220" width="50" height="50" angle="0" />
-    <Rock id="40" x="1424" y="284" width="58" height="58" angle="0" />
-    <Rock id="41" x="1346" y="320" width="50" height="50" angle="0" />
-    <Rock id="42" x="1364" y="248" width="58" height="58" angle="0" />
-    <Rock id="43" x="2256" y="436" width="62" height="58" angle="0" />
-    <Rock id="36" x="936" y="136" width="50" height="50" angle="0" />
-    <Rock id="37" x="932" y="40" width="82" height="74" angle="0" />
-    <Rock id="38" x="852" y="32" width="50" height="50" angle="0" />
-    <Rock id="44" x="1004" y="112" width="50" height="50" angle="0" />
-    <Rock id="46" x="808" y="480" width="50" height="50" angle="0" />
-    <Rock id="47" x="944" y="456" width="82" height="74" angle="0" />
-    <Rock id="48" x="740" y="388" width="50" height="50" angle="0" />
-    <Rock id="49" x="876" y="456" width="50" height="50" angle="0" />
-    <Rock id="45" x="728" y="448" width="70" height="66" angle="0" />
-    <Rock id="50" x="728" y="448" width="70" height="66" angle="0" />
-    <Rock id="51" x="804" y="392" width="78" height="70" angle="0" />
-    <Rock id="52" x="804" y="392" width="78" height="70" angle="0" />
-    <Rock id="53" x="1252" y="344" width="78" height="78" angle="0" />
-    <Rock id="54" x="1244" y="272" width="66" height="66" angle="0" />
-    <Rock id="55" x="1168" y="316" width="58" height="58" angle="0" />
-    <Rock id="56" x="1196" y="212" width="58" height="58" angle="0" />
-    <Rock id="57" x="1996" y="52" width="62" height="62" angle="0" />
-    <Rock id="58" x="1744" y="68" width="50" height="50" angle="0" />
-    <Rock id="59" x="1780" y="120" width="70" height="62" angle="0" />
-    <Rock id="60" x="1684" y="32" width="50" height="50" angle="0" />
-    <Rock id="61" x="1816" y="12" width="114" height="106" angle="0" />
-    <Rock id="62" x="1992" y="124" width="62" height="62" angle="0" />
-    <Rock id="63" x="1928" y="160" width="54" height="50" angle="0" />
-    <Rock id="64" x="1932" y="88" width="62" height="62" angle="0" />
-    <Rock id="65" x="6488" y="344" width="178" height="170" angle="0" />
-    <Rock id="66" x="5960" y="260" width="102" height="98" angle="0" />
-    <Rock id="16" x="5704" y="52" width="142" height="138" angle="0" />
-    <Rock id="10" x="6472" y="12" width="142" height="138" angle="0" />
-    <Rock id="14" x="5420" y="376" width="142" height="138" angle="0" />
-    <Rock id="15" x="4376" y="216" width="98" height="98" angle="0" />
-    <Rock id="18" x="4284" y="152" width="98" height="98" angle="0" />
-    <Rock id="67" x="4080" y="172" width="86" height="78" angle="0" />
-    <Rock id="19" x="4080" y="172" width="86" height="78" angle="0" />
-    <Rock id="20" x="3968" y="216" width="98" height="98" angle="0" />
-    <Rock id="22" x="3968" y="216" width="98" height="98" angle="0" />
-    <Rock id="23" x="4184" y="212" width="86" height="78" angle="0" />
-    <Rock id="24" x="4184" y="212" width="86" height="78" angle="0" />
-    <Rock id="25" x="4144" y="296" width="86" height="78" angle="0" />
-    <Rock id="26" x="4144" y="296" width="86" height="78" angle="0" />
-    <Rock id="28" x="4084" y="264" width="58" height="54" angle="0" />
-    <Rock id="29" x="4084" y="264" width="58" height="54" angle="0" />
-    <Rock id="68" x="4396" y="148" width="58" height="54" angle="0" />
-    <Rock id="69" x="4396" y="148" width="58" height="54" angle="0" />
-    <Rock id="70" x="2964" y="340" width="78" height="74" angle="0" />
-    <Rock id="71" x="2400" y="388" width="54" height="74" angle="0" />
-    <Rock id="73" x="2460" y="404" width="82" height="74" angle="0" />
-    <Rock id="74" x="2256" y="372" width="50" height="50" angle="0" />
-    <Rock id="75" x="2404" y="476" width="50" height="50" angle="0" />
-    <Rock id="76" x="2324" y="336" width="78" height="74" angle="0" />
-    <Rock id="77" x="2336" y="420" width="62" height="66" angle="0" />
-    <Rock id="72" x="1832" y="204" width="82" height="74" angle="0" />
-    <Rock id="78" x="1856" y="136" width="50" height="50" angle="0" />
-    <Rock id="79" x="5852" y="100" width="98" height="98" angle="0" />
-    <Rock id="80" x="5833" y="20" width="58" height="54" angle="0" />
-    <Rock id="81" x="5833" y="20" width="58" height="54" angle="0" />
-    <Rock id="82" x="5564" y="416" width="106" height="106" angle="0" />
-    <Lilly id="83" x="5144" y="132" angle="0" />
-    <Lilly id="84" x="4628" y="64" angle="0" />
-    <Lilly id="85" x="2984" y="40" angle="0" />
-    <Lilly id="86" x="3944" y="156" angle="0" />
-    <Lilly id="87" x="2228" y="508" angle="0" />
-    <Lilly id="88" x="1848" y="428" angle="0" />
-    <Crane id="89" x="980" y="316" />
-    <Crane id="90" x="1724" y="448" />
-    <Crane id="91" x="2064" y="328" />
-    <Crane id="92" x="3432" y="364" />
-    <Crane id="93" x="4600" y="460" />
-    <Crane id="94" x="5120" y="304" />
-    <Crane id="95" x="6004" y="488" />
-    <Crane id="96" x="7228" y="72" />
-    <Lillypad id="97" x="1412" y="504" width="50" height="40" angle="0" />
-    <Lillypad id="98" x="2512" y="52" width="78" height="72" angle="0" />
-    <Lillypad id="99" x="2604" y="96" width="66" height="56" angle="0" />
-    <Lillypad id="100" x="2600" y="32" width="66" height="56" angle="0" />
-    <Lillypad id="101" x="2796" y="76" width="66" height="56" angle="0" />
-    <Lillypad id="102" x="2864" y="36" width="94" height="80" angle="0" />
-    <Lillypad id="103" x="4984" y="488" width="54" height="52" angle="0" />
-    <Lillypad id="104" x="5048" y="480" width="66" height="52" angle="0" />
-    <Lillypad id="105" x="5124" y="480" width="66" height="64" angle="0" />
-    <Lillypad id="107" x="6768" y="480" width="74" height="56" angle="0" />
-    <Lillypad id="108" x="6836" y="436" width="66" height="52" angle="0" />
-    <Lillypad id="109" x="6848" y="492" width="66" height="52" angle="0" />
+    <Boat id="0" x="164" y="104" angle="0" />
+    <Torii id="1" x="9916" y="104" NextLevel="011.oel" />
+    <Geyser id="2" x="952" y="280" width="80" height="80" strength="100" />
+    <Geyser id="3" x="1736" y="476" width="80" height="80" strength="100" />
+    <Geyser id="4" x="1720" y="56" width="80" height="80" strength="100" />
+    <Geyser id="7" x="4000" y="168" width="80" height="80" strength="100" />
+    <Whirlpool id="8" x="3724" y="432" width="80" height="80" strength="100" />
+    <Geyser id="9" x="5180" y="184" width="80" height="80" strength="100" />
+    <Rock id="10" x="4968" y="8" width="50" height="50" angle="0" />
+    <Rock id="11" x="5084" y="44" width="50" height="50" angle="0" />
+    <Rock id="12" x="5188" y="84" width="50" height="50" angle="0" />
+    <Rock id="13" x="5276" y="120" width="50" height="50" angle="0" />
+    <Rock id="14" x="5316" y="220" width="50" height="50" angle="0" />
+    <Rock id="15" x="5356" y="288" width="50" height="50" angle="0" />
+    <Rock id="16" x="4996" y="296" width="50" height="50" angle="0" />
+    <Rock id="17" x="4992" y="384" width="50" height="50" angle="0" />
+    <Rock id="18" x="5000" y="456" width="50" height="50" angle="0" />
+    <Rock id="19" x="4920" y="280" width="50" height="50" angle="0" />
+    <Rock id="20" x="4872" y="344" width="50" height="50" angle="0" />
+    <Rock id="21" x="4824" y="444" width="50" height="50" angle="0" />
+    <Rock id="22" x="4840" y="396" width="50" height="50" angle="0" />
+    <Geyser id="23" x="6364" y="92" width="80" height="80" strength="100" />
+    <Geyser id="24" x="6880" y="168" width="80" height="80" strength="100" />
+    <Whirlpool id="25" x="6528" y="460" width="80" height="80" strength="100" />
+    <Rock id="26" x="6560" y="108" width="50" height="50" angle="0" />
+    <Rock id="27" x="6680" y="148" width="50" height="50" angle="0" />
+    <Rock id="28" x="6464" y="92" width="50" height="50" angle="0" />
+    <Geyser id="29" x="7608" y="136" width="80" height="80" strength="100" />
+    <Geyser id="30" x="7916" y="20" width="80" height="80" strength="100" />
+    <Geyser id="31" x="7732" y="432" width="80" height="80" strength="100" />
+    <Geyser id="32" x="7996" y="320" width="80" height="80" strength="100" />
+    <Geyser id="33" x="8324" y="96" width="80" height="80" strength="100" />
+    <Geyser id="34" x="8356" y="420" width="80" height="80" strength="100" />
+    <Geyser id="35" x="8708" y="532" width="80" height="80" strength="100" />
+    <Geyser id="36" x="8680" y="156" width="80" height="80" strength="100" />
+    <Geyser id="37" x="8984" y="100" width="80" height="80" strength="100" />
+    <Geyser id="38" x="9008" y="452" width="80" height="80" strength="100" />
+    <Current id="39" x="7380" y="0" width="1748" height="544" angle="0" />
+    <Geyser id="5" x="2320" y="388" width="80" height="80" strength="100" />
+    <Geyser id="6" x="2700" y="56" width="80" height="80" strength="100" />
+    <Geyser id="40" x="3080" y="388" width="80" height="80" strength="100" />
+    <Crane id="41" x="1624" y="244" />
+    <Crane id="42" x="1712" y="240" />
+    <Crane id="43" x="1852" y="236" />
+    <Crane id="44" x="2432" y="188" />
+    <Crane id="45" x="2768" y="280" />
+    <Crane id="46" x="3004" y="180" />
+    <Crane id="47" x="3720" y="232" />
+    <Crane id="48" x="3844" y="260" />
+    <Crane id="49" x="4016" y="380" />
+    <Crane id="50" x="5048" y="260" />
+    <Crane id="51" x="5184" y="388" />
+    <Crane id="52" x="6480" y="204" />
+    <Crane id="53" x="6596" y="216" />
+    <Crane id="54" x="6728" y="268" />
+    <Crane id="55" x="7740" y="252" />
+    <Crane id="56" x="7948" y="196" />
+    <Crane id="57" x="8176" y="244" />
+    <Crane id="58" x="8500" y="284" />
+    <Crane id="59" x="8696" y="308" />
+    <Crane id="60" x="9004" y="264" />
+    <Endstage id="61" x="3312" y="276" NextLevel="" />
+    <Endstage id="62" x="5868" y="260" NextLevel="" />
   </Entities>
   <Art />
 </level>

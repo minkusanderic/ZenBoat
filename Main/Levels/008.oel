@@ -138,133 +138,78 @@
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Forward>
   <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="0" x="88" y="276" angle="0" />
-    <Torii id="1" x="9872" y="280" NextLevel="" />
-    <Whirlpool id="2" x="720" y="60" width="80" height="80" strength="100" />
-    <Whirlpool id="3" x="716" y="164" width="80" height="80" strength="100" />
-    <Whirlpool id="4" x="720" y="272" width="80" height="80" strength="100" />
-    <Whirlpool id="5" x="712" y="376" width="80" height="80" strength="100" />
-    <Driftwood id="7" x="368" y="268" width="100" height="30" angle="0" />
-    <Whirlpool id="6" x="712" y="488" width="80" height="80" strength="100" />
-    <Crane id="8" x="828" y="60" />
-    <Crane id="9" x="824" y="156" />
-    <Crane id="10" x="824" y="264" />
-    <Crane id="11" x="824" y="372" />
-    <Crane id="12" x="824" y="476" />
-    <Whirlpool id="14" x="1396" y="96" width="80" height="80" strength="100" />
-    <Whirlpool id="13" x="1216" y="288" width="80" height="80" strength="100" />
-    <Whirlpool id="15" x="1604" y="276" width="80" height="80" strength="100" />
-    <Whirlpool id="16" x="1412" y="480" width="80" height="80" strength="100" />
-    <Crane id="17" x="1396" y="280" />
-    <Crane id="18" x="1392" y="216" />
-    <Crane id="19" x="1396" y="344" />
-    <Crane id="20" x="1340" y="276" />
-    <Crane id="21" x="1444" y="276" />
-    <Endstage id="22" x="1824" y="264" NextLevel="" />
-    <Geyser id="23" x="2156" y="92" width="80" height="80" strength="100" />
-    <Geyser id="24" x="2172" y="452" width="80" height="80" strength="100" />
-    <Whirlpool id="25" x="2156" y="280" width="80" height="80" strength="100" />
-    <Crane id="26" x="2328" y="168" />
-    <Crane id="27" x="2392" y="216" />
-    <Crane id="28" x="2432" y="288" />
-    <Crane id="29" x="2416" y="368" />
-    <Crane id="30" x="2340" y="424" />
-    <Geyser id="31" x="2932" y="60" width="80" height="80" strength="100" />
-    <Geyser id="32" x="3280" y="480" width="80" height="80" strength="100" />
-    <Rock id="33" x="3080" y="124" width="74" height="66" angle="0" />
-    <Rock id="34" x="3128" y="176" width="50" height="50" angle="0" />
-    <Rock id="35" x="3176" y="232" width="50" height="50" angle="0" />
-    <Rock id="36" x="3228" y="272" width="54" height="50" angle="0" />
-    <Rock id="37" x="3168" y="124" width="90" height="82" angle="0" />
-    <Rock id="38" x="3220" y="200" width="50" height="50" angle="0" />
-    <Rock id="39" x="3072" y="180" width="50" height="50" angle="0" />
-    <Rock id="40" x="3172" y="288" width="66" height="62" angle="0" />
-    <Whirlpool id="41" x="3092" y="292" width="80" height="80" strength="100" />
-    <Crane id="42" x="3008" y="140" />
-    <Crane id="43" x="3052" y="96" />
-    <Crane id="44" x="3184" y="412" />
-    <Crane id="45" x="3248" y="380" />
-    <Whirlpool id="46" x="3340" y="164" width="80" height="80" strength="100" />
-    <Endstage id="47" x="3572" y="272" NextLevel="" />
-    <Crane id="48" x="4032" y="68" />
-    <Crane id="49" x="3944" y="108" />
-    <Crane id="50" x="3860" y="168" />
-    <Crane id="51" x="3816" y="260" />
-    <Crane id="52" x="3820" y="340" />
-    <Crane id="53" x="3876" y="416" />
-    <Crane id="54" x="3956" y="468" />
-    <Crane id="55" x="4068" y="496" />
-    <Crane id="56" x="4128" y="76" />
-    <Crane id="57" x="4192" y="116" />
-    <Crane id="60" x="4276" y="312" />
-    <Crane id="61" x="4252" y="376" />
-    <Crane id="62" x="4204" y="432" />
-    <Crane id="63" x="4144" y="472" />
-    <Crane id="58" x="4244" y="168" />
-    <Crane id="59" x="4288" y="236" />
-    <Crane id="64" x="4056" y="288" />
-    <Crane id="65" x="4060" y="156" />
-    <Crane id="66" x="4052" y="424" />
-    <Crane id="67" x="3908" y="276" />
-    <Crane id="68" x="4208" y="280" />
-    <Whirlpool id="69" x="4672" y="100" width="80" height="80" strength="100" />
-    <Whirlpool id="70" x="4872" y="100" width="80" height="80" strength="100" />
-    <Whirlpool id="71" x="5132" y="100" width="80" height="80" strength="100" />
-    <Whirlpool id="72" x="4668" y="432" width="80" height="80" strength="100" />
-    <Whirlpool id="73" x="4908" y="428" width="80" height="80" strength="100" />
-    <Whirlpool id="74" x="5144" y="420" width="80" height="80" strength="100" />
-    <Crane id="75" x="4416" y="276" />
-    <Crane id="76" x="4532" y="276" />
-    <Crane id="77" x="4672" y="272" />
-    <Crane id="78" x="4816" y="272" />
-    <Crane id="79" x="4952" y="268" />
-    <Crane id="80" x="5068" y="268" />
-    <Crane id="81" x="5204" y="268" />
-    <Crane id="82" x="5324" y="264" />
-    <Endstage id="83" x="5412" y="264" NextLevel="" />
-    <Rock id="84" x="5800" y="44" width="50" height="50" angle="0" />
-    <Rock id="85" x="5940" y="232" width="50" height="50" angle="0" />
-    <Rock id="86" x="6108" y="444" width="50" height="50" angle="0" />
-    <Rock id="87" x="6296" y="228" width="50" height="50" angle="0" />
-    <Rock id="88" x="6480" y="40" width="50" height="50" angle="0" />
-    <Rock id="89" x="6656" y="204" width="50" height="50" angle="0" />
-    <Rock id="90" x="6800" y="432" width="50" height="50" angle="0" />
-    <Rock id="91" x="6984" y="232" width="50" height="50" angle="0" />
-    <Rock id="92" x="7152" y="32" width="50" height="50" angle="0" />
-    <Rock id="93" x="7344" y="248" width="50" height="50" angle="0" />
-    <Rock id="94" x="7444" y="464" width="50" height="50" angle="0" />
-    <Rock id="95" x="7628" y="248" width="50" height="50" angle="0" />
-    <Rock id="96" x="7796" y="48" width="50" height="50" angle="0" />
-    <Rock id="97" x="7972" y="240" width="50" height="50" angle="0" />
-    <Rock id="98" x="8108" y="464" width="50" height="50" angle="0" />
-    <Rock id="99" x="8304" y="248" width="50" height="50" angle="0" />
-    <Rock id="100" x="8540" y="32" width="50" height="50" angle="0" />
-    <Rock id="101" x="8676" y="232" width="50" height="50" angle="0" />
-    <Rock id="102" x="8864" y="456" width="50" height="50" angle="0" />
-    <Whirlpool id="103" x="6128" y="108" width="80" height="80" strength="100" />
-    <Whirlpool id="104" x="6500" y="428" width="80" height="80" strength="100" />
-    <Whirlpool id="105" x="6840" y="88" width="80" height="80" strength="100" />
-    <Whirlpool id="106" x="7156" y="440" width="80" height="80" strength="100" />
-    <Whirlpool id="107" x="7488" y="84" width="80" height="80" strength="100" />
-    <Whirlpool id="108" x="7800" y="452" width="80" height="80" strength="100" />
-    <Whirlpool id="109" x="8176" y="92" width="80" height="80" strength="100" />
-    <Whirlpool id="110" x="8532" y="448" width="80" height="80" strength="100" />
-    <Crane id="111" x="6136" y="252" />
-    <Crane id="112" x="6504" y="240" />
-    <Crane id="113" x="6848" y="248" />
-    <Crane id="114" x="7164" y="244" />
-    <Crane id="115" x="7520" y="260" />
-    <Crane id="116" x="7812" y="256" />
-    <Crane id="117" x="8148" y="264" />
-    <Crane id="118" x="8528" y="256" />
-    <Crane id="119" x="8896" y="256" />
-    <Crane id="120" x="9020" y="204" />
-    <Crane id="121" x="9152" y="148" />
-    <Crane id="122" x="9268" y="188" />
-    <Crane id="123" x="9352" y="252" />
-    <Crane id="124" x="9468" y="312" />
-    <Crane id="125" x="9596" y="360" />
-    <Crane id="126" x="9736" y="312" />
+    <Boat id="0" x="72" y="304" angle="0" />
+    <Crane id="1" x="280" y="284" />
+    <Crane id="2" x="440" y="288" />
+    <Crane id="3" x="624" y="280" />
+    <Crane id="4" x="772" y="284" />
+    <Crane id="5" x="932" y="260" />
+    <Crane id="6" x="1060" y="188" />
+    <Crane id="7" x="1212" y="132" />
+    <Crane id="8" x="1412" y="140" />
+    <Crane id="9" x="1640" y="196" />
+    <Crane id="10" x="1860" y="292" />
+    <Crane id="11" x="2080" y="388" />
+    <Crane id="12" x="2300" y="412" />
+    <Crane id="13" x="2516" y="368" />
+    <Crane id="14" x="2684" y="276" />
+    <Crane id="15" x="2844" y="192" />
+    <Crane id="16" x="3012" y="120" />
+    <Crane id="17" x="3204" y="88" />
+    <Crane id="18" x="3416" y="112" />
+    <Crane id="19" x="3620" y="168" />
+    <Crane id="20" x="3756" y="236" />
+    <Crane id="21" x="3924" y="304" />
+    <Crane id="22" x="4056" y="368" />
+    <Crane id="23" x="4244" y="404" />
+    <Crane id="24" x="4488" y="408" />
+    <Crane id="25" x="4724" y="356" />
+    <Whirlpool id="26" x="2256" y="192" width="80" height="80" strength="100" />
+    <Whirlpool id="27" x="4348" y="212" width="80" height="80" strength="100" />
+    <Crane id="28" x="4928" y="268" />
+    <Crane id="29" x="5120" y="172" />
+    <Crane id="30" x="5312" y="128" />
+    <Crane id="31" x="5524" y="120" />
+    <Crane id="32" x="5728" y="140" />
+    <Crane id="33" x="5964" y="204" />
+    <Crane id="34" x="6112" y="280" />
+    <Crane id="35" x="6344" y="380" />
+    <Crane id="36" x="6592" y="384" />
+    <Crane id="37" x="6856" y="292" />
+    <Crane id="38" x="7084" y="192" />
+    <Crane id="39" x="7340" y="104" />
+    <Crane id="40" x="7568" y="100" />
+    <Crane id="41" x="7828" y="156" />
+    <Crane id="42" x="8080" y="260" />
+    <Crane id="43" x="8292" y="372" />
+    <Crane id="44" x="8568" y="432" />
+    <Crane id="45" x="8892" y="420" />
+    <Crane id="46" x="9160" y="344" />
+    <Crane id="47" x="9408" y="264" />
+    <Crane id="48" x="9672" y="244" />
+    <Crane id="49" x="9868" y="244" />
+    <Torii id="50" x="9952" y="232" NextLevel="009.oel" />
+    <Whirlpool id="51" x="5468" y="316" width="80" height="80" strength="100" />
+    <Whirlpool id="52" x="6452" y="212" width="80" height="80" strength="100" />
+    <Whirlpool id="53" x="7508" y="284" width="80" height="80" strength="100" />
+    <Whirlpool id="54" x="8680" y="188" width="80" height="80" strength="100" />
+    <CherryBlossomNorth id="59" x="8360" y="16" />
+    <CherryBlossomNorth id="60" x="8992" y="16" />
+    <CherryBlossomNorth id="61" x="184" y="32" />
+    <MapleTreeNorth id="62" x="2024" y="16" width="70" height="70" />
+    <MapleTreeNorth id="63" x="4304" y="28" width="70" height="70" />
+    <MapleTreeNorth id="64" x="6436" y="36" width="70" height="70" />
+    <MapleTreeNorth id="65" x="8660" y="16" width="70" height="70" />
+    <MapleTreeSouth id="55" x="1252" y="472" width="70" height="70" />
+    <MapleTreeSouth id="56" x="3156" y="472" width="70" height="70" />
+    <MapleTreeSouth id="57" x="5236" y="476" width="70" height="70" />
+    <MapleTreeSouth id="58" x="5764" y="472" width="70" height="70" />
+    <MapleTreeSouth id="66" x="9620" y="472" width="70" height="70" />
+    <Endstage id="67" x="1296" y="272" NextLevel="" />
+    <Endstage id="68" x="3180" y="272" NextLevel="" />
+    <Endstage id="69" x="4848" y="272" NextLevel="" />
+    <Endstage id="70" x="6992" y="268" NextLevel="" />
+    <Endstage id="71" x="8032" y="264" NextLevel="" />
   </Entities>
   <Art />
 </level>

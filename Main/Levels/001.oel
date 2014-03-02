@@ -139,9 +139,8 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="164" y="288" angle="0" />
-    <Torii id="1" x="812" y="284" NextLevel="1.00.02.oel" />
+    <Torii id="1" x="812" y="284" NextLevel="002.oel" />
     <Crane id="2" x="612" y="492" />
-    <Current id="3" x="412" y="60" width="324" height="136" angle="0.7853982" />
   </Entities>
   <Art>
     <MapleTreeSouth id="0" x="580" y="540" width="70" height="70" />

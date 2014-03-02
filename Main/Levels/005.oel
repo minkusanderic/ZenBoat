@@ -139,7 +139,7 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="144" y="260" angle="0" />
-    <Torii id="2" x="3860" y="256" NextLevel="1.00.05.oel" />
+    <Torii id="2" x="3860" y="256" NextLevel="006.oel" />
     <Crane id="1" x="664" y="396" />
     <Crane id="3" x="840" y="212" />
     <Crane id="4" x="984" y="364" />
@@ -164,19 +164,36 @@
     <Rock id="26" x="2392" y="200" width="50" height="50" angle="0" />
     <Rock id="27" x="2360" y="116" width="50" height="50" angle="0" />
     <Endstage id="28" x="1360" y="268" NextLevel="" />
-    <CherryBlossomNorth id="11" x="3448" y="-60" />
     <Crane id="12" x="1380" y="488" />
     <Crane id="18" x="3456" y="16" />
   </Entities>
   <Art>
-    <CherryBlossomFlatS id="0" x="1352" y="488" />
     <Lillypad id="1" x="432" y="104" width="50" height="40" angle="0" />
-    <Tulip id="2" x="732" y="-40" />
-    <Tulip id="3" x="844" y="-40" />
     <Iris id="4" x="1568" y="524" />
     <Tulip id="5" x="1844" y="516" />
     <Tulip id="7" x="2800" y="-60" />
-    <Tulip id="8" x="2688" y="512" />
+    <Tulip id="8" x="2712" y="524" />
     <Iris id="6" x="2128" y="528" />
+    <Island id="2" x="1348" y="152" width="100" height="100" angle="0" />
+    <Bamboo id="3" x="1352" y="168" />
+    <Bamboo id="9" x="1364" y="152" />
+    <Bamboo id="10" x="1372" y="168" />
+    <Iris id="13" x="2240" y="-32" />
+    <Iris id="14" x="1732" y="-32" />
+    <Tulip id="15" x="2740" y="524" />
+    <Tulip id="16" x="2684" y="524" />
+    <Tulip id="17" x="3548" y="-40" />
+    <Tulip id="18" x="3592" y="-32" />
+    <Tulip id="19" x="3632" y="-36" />
+    <Iris id="20" x="3664" y="524" />
+    <Iris id="21" x="3572" y="528" />
+    <Iris id="22" x="3620" y="528" />
+    <CherryBlossomNorth id="0" x="248" y="-40" />
+    <MapleTreeSouth id="11" x="568" y="504" width="70" height="70" />
+    <Bamboo id="12" x="1280" y="-32" />
+    <Bamboo id="23" x="1328" y="-32" />
+    <Bamboo id="24" x="1376" y="-32" />
+    <Bamboo id="25" x="1432" y="-32" />
+    <Bamboo id="26" x="1480" y="-36" />
   </Art>
 </level>

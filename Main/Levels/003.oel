@@ -139,34 +139,46 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="136" y="268" angle="0" />
-    <Whirlpool id="2" x="1088" y="148" width="80" height="80" strength="100" />
-    <Torii id="3" x="2692" y="256" NextLevel="1.00.04.oel" />
-    <Whirlpool id="4" x="1472" y="252" width="80" height="80" strength="100" />
-    <Whirlpool id="5" x="1800" y="368" width="80" height="80" strength="100" />
-    <Crane id="6" x="1828" y="472" />
-    <Whirlpool id="7" x="504" y="260" width="80" height="80" strength="100" />
-    <Crane id="8" x="1064" y="264" />
-    <Crane id="9" x="2272" y="348" />
-    <Whirlpool id="10" x="2268" y="208" width="80" height="80" strength="100" />
-    <Rock id="1" x="1264" y="136" width="50" height="50" angle="0" />
-    <Rock id="11" x="2012" y="268" width="50" height="50" angle="0" />
+    <Torii id="3" x="2692" y="256" NextLevel="004.oel" />
+    <Whirlpool id="5" x="1328" y="352" width="80" height="80" strength="100" />
+    <Crane id="6" x="1736" y="400" />
+    <Whirlpool id="7" x="624" y="272" width="80" height="80" strength="100" />
+    <Crane id="8" x="1144" y="264" />
+    <Crane id="9" x="1992" y="36" />
+    <Whirlpool id="10" x="2192" y="224" width="80" height="80" strength="100" />
+    <Rock id="1" x="952" y="48" width="50" height="50" angle="0" />
+    <Rock id="11" x="2016" y="280" width="50" height="50" angle="0" />
     <Crane id="12" x="844" y="488" />
-    <LooseBlossoms id="14" x="1804" y="28" />
-    <LooseBlossoms id="15" x="1768" y="28" />
-    <LooseBlossoms id="16" x="2164" y="24" />
-    <LooseBlossoms id="17" x="2208" y="24" />
-    <LooseBlossoms id="18" x="2180" y="-4" />
+    <LooseBlossoms id="14" x="1932" y="116" />
+    <LooseBlossoms id="15" x="1960" y="156" />
+    <LooseBlossoms id="16" x="1984" y="124" />
+    <LooseBlossoms id="17" x="2028" y="124" />
+    <LooseBlossoms id="18" x="2000" y="96" />
+    <Crane id="2" x="1320" y="192" />
+    <Crane id="4" x="1500" y="276" />
+    <Crane id="13" x="2248" y="112" />
+    <Crane id="19" x="2332" y="248" />
+    <Island id="20" x="1648" y="116" width="100" height="100" angle="0" />
+    <Bamboo id="21" x="1664" y="120" />
   </Entities>
   <Art>
-    <Iris id="0" x="220" y="528" />
-    <Iris id="1" x="308" y="528" />
-    <Iris id="2" x="392" y="528" />
-    <Tulip id="3" x="412" y="-44" />
-    <Tulip id="4" x="492" y="-44" />
     <MapleTreeSouth id="5" x="832" y="520" width="70" height="70" />
-    <Tulip id="7" x="564" y="-44" />
-    <Tulip id="8" x="1416" y="528" />
-    <Iris id="9" x="2284" y="532" />
     <CherryBlossomNorth id="6" x="1948" y="-56" />
+    <Pagoda id="0" x="148" y="-48" width="50" height="50" angle="0" />
+    <CherryBlossomNorth id="1" x="364" y="-24" />
+    <LooseBlossoms id="2" x="256" y="-24" />
+    <LooseBlossoms id="3" x="304" y="-20" />
+    <LooseBlossoms id="4" x="276" y="32" />
+    <LooseBlossoms id="7" x="480" y="20" />
+    <LooseBlossoms id="8" x="508" y="-20" />
+    <LooseBlossoms id="9" x="460" y="-28" />
+    <LooseBlossoms id="10" x="384" y="60" />
+    <Tulip id="11" x="1076" y="-40" />
+    <Iris id="12" x="1336" y="-32" />
+    <Bamboo id="13" x="2072" y="504" />
+    <Bamboo id="14" x="2028" y="512" />
+    <Bamboo id="15" x="2116" y="512" />
+    <Bamboo id="16" x="2160" y="504" />
+    <Bamboo id="17" x="2196" y="512" />
   </Art>
 </level>
