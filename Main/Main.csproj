@@ -249,7 +249,6 @@
     <Content Include="Assets\story4.png" />
     <Content Include="Assets\story5.png" />
     <Content Include="Assets\TulipBunch.mdx" />
-    <Content Include="Assets\Geyser.mdx" />
     <Content Include="Assets\irisbundle.mdx" />
     <Content Include="Assets\MoreColorsTulips.mdx" />
     <Content Include="Assets\LooseBlossomsC.mdx" />
@@ -257,5 +256,8 @@
     <Content Include="Assets\shader2.png" />
     <Content Include="Assets\shader3.png" />
     <Content Include="Assets\shader4.png" />
+    <Content Include="Assets\Geyser.mdx" />
+    <Content Include="Assets\spiral.png" />
+    <Content Include="Assets\shader5.png" />
   </ItemGroup>
 </Project>

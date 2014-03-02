@@ -21,7 +21,7 @@ namespace Main
 			int height = Convert.ToInt32(options["height"]);
 			int strength = Convert.ToInt32(options["strength"]);
 			
-			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/shader4.png"));
+			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/spiral.png"));
 
 			//m.scale = new Vector2(.5f, .5f);
 			RigidBody rb = new RigidBody( Math.Min(width, height) /10f ); // orig:/2f elli5:/4f
