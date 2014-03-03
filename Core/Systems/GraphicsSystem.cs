@@ -155,7 +155,6 @@ namespace Core
 			{
 				foreach(var model in model_layers["under_water"])
 				{
-					if ( model.parent.Name.Contains("Bank") ) continue;
 					Draw_Model(model);
 				}
 			}
