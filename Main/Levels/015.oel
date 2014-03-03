@@ -218,6 +218,43 @@
     <Endstage id="77" x="2380" y="272" NextLevel="" />
     <Endstage id="78" x="3584" y="268" NextLevel="" />
     <Endstage id="79" x="7820" y="268" NextLevel="" />
+    <Tulip id="80" x="896" y="-40" />
+    <Tulip id="81" x="2188" y="528" />
+    <Tulip id="82" x="3512" y="-36" />
+    <Tulip id="83" x="5168" y="520" />
+    <Tulip id="84" x="6604" y="-28" />
+    <Tulip id="85" x="7908" y="520" />
+    <Tulip id="86" x="9764" y="-28" />
+    <Iris id="87" x="8824" y="528" />
+    <Iris id="88" x="7972" y="-32" />
+    <Iris id="89" x="6160" y="540" />
+    <Iris id="90" x="4700" y="-28" />
+    <Iris id="91" x="2200" y="-28" />
+    <Iris id="92" x="952" y="532" />
+    <CherryBlossomNorth id="93" x="208" y="-36" />
+    <LooseBlossoms id="94" x="96" y="32" />
+    <LooseBlossoms id="95" x="176" y="100" />
+    <LooseBlossoms id="96" x="376" y="48" />
+    <LooseBlossoms id="97" x="308" y="124" />
+    <LooseBlossoms id="98" x="316" y="28" />
+    <Lillypad id="99" x="48" y="420" width="50" height="40" angle="0" />
+    <Lillypad id="100" x="144" y="448" width="50" height="40" angle="0" />
+    <Koi id="101" x="856" y="168" angle="0" />
+    <Lillypad id="102" x="1240" y="484" width="50" height="40" angle="0" />
+    <Lillypad id="103" x="2108" y="32" width="50" height="40" angle="0" />
+    <MapleTreeSouth id="104" x="1532" y="524" width="70" height="70" />
+    <Lillypad id="105" x="3156" y="48" width="50" height="40" angle="0" />
+    <MapleTreeNorth id="106" x="5784" y="-52" width="70" height="70" />
+    <MapleTreeNorth id="107" x="9340" y="-56" width="70" height="70" />
+    <MapleTreeSouth id="108" x="8288" y="496" width="70" height="70" />
+    <Lillypad id="109" x="9768" y="432" width="50" height="40" angle="0" />
+    <Lillypad id="110" x="9852" y="76" width="50" height="40" angle="0" />
+    <Lillypad id="111" x="9928" y="152" width="50" height="40" angle="0" />
+    <Koi id="112" x="9884" y="416" angle="0" />
+    <CherryBlossomNorth id="113" x="2592" y="-36" />
+    <CherryBlossomSouth id="114" x="3564" y="512" />
+    <MapleTreeNorth id="115" x="4412" y="-48" width="70" height="70" />
+    <MapleTreeSouth id="116" x="7600" y="528" width="70" height="70" />
   </Entities>
   <Art />
 </level>

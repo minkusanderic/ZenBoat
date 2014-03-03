@@ -183,5 +183,54 @@
     <Crane id="45" x="8940" y="156" />
     <Crane id="46" x="8912" y="388" />
   </Entities>
-  <Art />
+  <Art>
+    <Island id="0" x="1868" y="220" width="100" height="100" angle="0" />
+    <Pagoda id="1" x="1892" y="232" width="50" height="50" angle="0" />
+    <Bamboo id="2" x="1864" y="240" />
+    <Bamboo id="3" x="1912" y="240" />
+    <CherryBlossomNorth id="4" x="160" y="0" />
+    <Tulip id="5" x="96" y="516" />
+    <Tulip id="6" x="792" y="520" />
+    <Iris id="7" x="456" y="-32" />
+    <TulipNorth id="9" x="1484" y="-32" />
+    <TulipNorth id="10" x="2536" y="-32" />
+    <Iris id="11" x="1984" y="-36" />
+    <MapleTreeSouth id="12" x="1868" y="484" width="70" height="70" />
+    <Bamboo id="13" x="3036" y="512" />
+    <Bamboo id="14" x="3184" y="512" />
+    <Bamboo id="15" x="3360" y="512" />
+    <Bamboo id="16" x="3504" y="508" />
+    <Bamboo id="17" x="3652" y="508" />
+    <CherryBlossomNorth id="18" x="3844" y="-8" />
+    <LooseBlossoms id="19" x="3464" y="24" />
+    <LooseBlossoms id="20" x="3636" y="40" />
+    <LooseBlossoms id="21" x="3792" y="112" />
+    <LooseBlossoms id="22" x="4004" y="48" />
+    <IrisNorth id="23" x="4448" y="-24" />
+    <IrisNorth id="24" x="5232" y="-28" />
+    <TulipNorth id="25" x="4388" y="528" />
+    <TulipNorth id="26" x="4848" y="528" />
+    <TulipNorth id="27" x="5332" y="528" />
+    <Iris id="28" x="5776" y="-36" />
+    <Island id="29" x="6480" y="204" width="100" height="100" angle="0" />
+    <Bamboo id="30" x="6480" y="224" />
+    <Bamboo id="31" x="6492" y="212" />
+    <Bamboo id="32" x="6508" y="220" />
+    <MapleTreeSouth id="33" x="6752" y="476" width="70" height="70" />
+    <MapleTreeNorth id="34" x="6184" y="-16" width="70" height="70" />
+    <Tulip id="35" x="7228" y="-32" />
+    <Tulip id="36" x="7660" y="-36" />
+    <Tulip id="37" x="8020" y="-32" />
+    <Iris id="38" x="7236" y="512" />
+    <Iris id="39" x="7676" y="508" />
+    <Iris id="40" x="8080" y="508" />
+    <CherryBlossomNorth id="41" x="9492" y="0" />
+    <LooseBlossoms id="42" x="9424" y="24" />
+    <LooseBlossoms id="43" x="9284" y="60" />
+    <LooseBlossoms id="44" x="9432" y="116" />
+    <LooseBlossoms id="45" x="9372" y="456" />
+    <LooseBlossoms id="46" x="9696" y="112" />
+    <LooseBlossoms id="47" x="9712" y="464" />
+    <Koi id="8" x="2024" y="284" angle="0" />
+  </Art>
 </level>

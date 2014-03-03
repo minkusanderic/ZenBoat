@@ -226,6 +226,43 @@
     <Driftwood id="85" x="7396" y="292" width="100" height="30" angle="0" />
     <Endstage id="86" x="1064" y="272" NextLevel="" />
     <Endstage id="87" x="3036" y="272" NextLevel="" />
+    <MapleTreeSouth id="88" x="168" y="512" width="70" height="70" />
+    <Tulip id="89" x="260" y="-28" />
+    <Tulip id="90" x="1764" y="524" />
+    <Tulip id="91" x="2800" y="-24" />
+    <Tulip id="92" x="3972" y="512" />
+    <Tulip id="93" x="5884" y="-36" />
+    <Tulip id="94" x="7664" y="520" />
+    <Tulip id="95" x="8660" y="-24" />
+    <Tulip id="96" x="9672" y="516" />
+    <Iris id="97" x="9792" y="-32" />
+    <Iris id="98" x="8708" y="528" />
+    <Iris id="99" x="7596" y="-16" />
+    <Iris id="100" x="6476" y="520" />
+    <Iris id="101" x="4784" y="-24" />
+    <Iris id="102" x="2816" y="524" />
+    <Iris id="103" x="1052" y="-20" />
+    <Bamboo id="104" x="944" y="508" />
+    <Bamboo id="105" x="1000" y="508" />
+    <Bamboo id="106" x="1072" y="512" />
+    <Bamboo id="107" x="5228" y="-48" />
+    <Bamboo id="108" x="5280" y="-48" />
+    <Bamboo id="109" x="7068" y="512" />
+    <Bamboo id="110" x="7156" y="512" />
+    <Bamboo id="111" x="7116" y="528" />
+    <Island id="112" x="8868" y="208" width="100" height="100" angle="0" />
+    <Pagoda id="113" x="8892" y="228" width="50" height="50" angle="0" />
+    <Lillypad id="115" x="9884" y="72" width="50" height="40" angle="0" />
+    <Lillypad id="116" x="9884" y="440" width="50" height="40" angle="0" />
+    <Lillypad id="117" x="9744" y="460" width="50" height="40" angle="0" />
+    <Lillypad id="118" x="6292" y="72" width="50" height="40" angle="0" />
+    <Lillypad id="119" x="6284" y="464" width="50" height="40" angle="0" />
+    <Lillypad id="120" x="6404" y="472" width="50" height="40" angle="0" />
+    <CherryBlossomNorth id="121" x="1672" y="-40" />
+    <CherryBlossomNorth id="122" x="9272" y="-40" />
+    <MapleTreeSouth id="123" x="8236" y="520" width="70" height="70" />
+    <MapleTreeSouth id="124" x="4928" y="516" width="70" height="70" />
+    <Koi id="114" x="9064" y="272" angle="0" />
   </Entities>
   <Art />
 </level>

@@ -201,6 +201,53 @@
     <Crane id="60" x="9004" y="264" />
     <Endstage id="61" x="3312" y="276" NextLevel="" />
     <Endstage id="62" x="5868" y="260" NextLevel="" />
+    <MapleTreeSouth id="63" x="9560" y="516" width="70" height="70" />
+    <Iris id="64" x="9280" y="520" />
+    <Iris id="65" x="9852" y="520" />
+    <Tulip id="66" x="9540" y="-44" />
+    <Tulip id="67" x="7728" y="544" />
+    <Tulip id="68" x="6584" y="-28" />
+    <Tulip id="69" x="5588" y="524" />
+    <Tulip id="70" x="4236" y="-28" />
+    <Tulip id="71" x="2680" y="532" />
+    <Tulip id="72" x="1316" y="-28" />
+    <Tulip id="73" x="288" y="524" />
+    <Tulip id="74" x="688" y="524" />
+    <MapleTreeNorth id="75" x="508" y="-40" width="70" height="70" />
+    <Lillypad id="76" x="76" y="476" width="50" height="40" angle="0" />
+    <Lillypad id="77" x="52" y="412" width="50" height="40" angle="0" />
+    <Lillypad id="78" x="124" y="424" width="50" height="40" angle="0" />
+    <Koi id="79" x="96" y="344" angle="0" />
+    <IrisNorth id="80" x="116" y="-20" />
+    <IrisNorth id="81" x="800" y="-28" />
+    <IrisNorth id="82" x="1624" y="528" />
+    <IrisNorth id="83" x="2256" y="-24" />
+    <IrisNorth id="84" x="3400" y="532" />
+    <IrisNorth id="85" x="3420" y="-24" />
+    <IrisNorth id="86" x="4396" y="528" />
+    <IrisNorth id="87" x="5228" y="-24" />
+    <IrisNorth id="88" x="6776" y="532" />
+    <IrisNorth id="89" x="8464" y="-28" />
+    <IrisNorth id="90" x="7472" y="-32" />
+    <Bamboo id="91" x="6028" y="504" />
+    <Bamboo id="92" x="6096" y="504" />
+    <Bamboo id="93" x="6052" y="516" />
+    <Bamboo id="94" x="4568" y="-56" />
+    <Bamboo id="95" x="4620" y="-52" />
+    <Bamboo id="96" x="4684" y="-52" />
+    <Bamboo id="97" x="1968" y="516" />
+    <Bamboo id="98" x="2084" y="512" />
+    <Bamboo id="99" x="2180" y="512" />
+    <Bamboo id="100" x="972" y="504" />
+    <Bamboo id="101" x="1072" y="504" />
+    <Bamboo id="102" x="1176" y="504" />
+    <Lillypad id="103" x="3316" y="40" width="50" height="40" angle="0" />
+    <Lillypad id="104" x="4948" y="436" width="50" height="40" angle="0" />
+    <Lillypad id="105" x="5344" y="52" width="50" height="40" angle="0" />
+    <Lillypad id="107" x="9952" y="408" width="50" height="40" angle="0" />
+    <Lillypad id="108" x="9892" y="472" width="50" height="40" angle="0" />
+    <Koi id="109" x="9856" y="400" angle="0" />
+    <Koi id="106" x="5380" y="96" angle="0" />
   </Entities>
   <Art />
 </level>

@@ -171,11 +171,11 @@
     <Whirlpool id="34" x="6280" y="468" width="80" height="80" strength="100" />
     <Whirlpool id="35" x="6628" y="480" width="80" height="80" strength="100" />
     <Whirlpool id="36" x="6480" y="56" width="80" height="80" strength="100" />
-    <MapleTreeSouth id="37" x="4944" y="472" width="70" height="70" />
-    <MapleTreeSouth id="38" x="6428" y="476" width="70" height="70" />
-    <MapleTreeSouth id="39" x="9240" y="472" width="70" height="70" />
-    <MapleTreeNorth id="40" x="9232" y="0" width="70" height="70" />
-    <MapleTreeNorth id="41" x="6340" y="-4" width="70" height="70" />
+    <MapleTreeSouth id="37" x="4944" y="516" width="70" height="70" />
+    <MapleTreeSouth id="38" x="6428" y="516" width="70" height="70" />
+    <MapleTreeSouth id="39" x="9240" y="512" width="70" height="70" />
+    <MapleTreeNorth id="40" x="9232" y="-44" width="70" height="70" />
+    <MapleTreeNorth id="41" x="6340" y="-44" width="70" height="70" />
     <Current id="42" x="700" y="124" width="556" height="264" angle="0" />
     <Crane id="43" x="300" y="268" />
     <Crane id="44" x="528" y="264" />
@@ -226,6 +226,41 @@
     <Endstage id="85" x="4048" y="268" NextLevel="" />
     <Endstage id="86" x="5696" y="264" NextLevel="" />
     <Endstage id="87" x="8404" y="264" NextLevel="" />
+    <Island id="88" x="240" y="52" width="100" height="100" angle="0" />
+    <Bamboo id="89" x="236" y="72" />
+    <Bamboo id="90" x="256" y="56" />
+    <Bamboo id="91" x="280" y="68" />
+    <Fish id="92" x="1484" y="452" />
+    <MapleTreeSouth id="93" x="240" y="480" width="70" height="70" />
+    <Tulip id="94" x="84" y="-40" />
+    <Iris id="95" x="588" y="-36" />
+    <Iris id="96" x="1216" y="520" />
+    <Bamboo id="97" x="1040" y="-52" />
+    <Bamboo id="98" x="1188" y="-52" />
+    <Bamboo id="99" x="1356" y="-52" />
+    <Bamboo id="100" x="1528" y="-52" />
+    <Tulip id="101" x="2008" y="-32" />
+    <Tulip id="102" x="2384" y="524" />
+    <Tulip id="103" x="3296" y="-36" />
+    <Tulip id="104" x="3872" y="524" />
+    <Tulip id="105" x="4752" y="-36" />
+    <Tulip id="106" x="5424" y="528" />
+    <Tulip id="107" x="5696" y="-40" />
+    <Tulip id="108" x="6100" y="524" />
+    <Tulip id="109" x="6820" y="-28" />
+    <Tulip id="110" x="7140" y="524" />
+    <Tulip id="111" x="7716" y="-32" />
+    <Tulip id="112" x="8860" y="528" />
+    <Iris id="113" x="9708" y="-32" />
+    <Iris id="114" x="8288" y="-36" />
+    <Iris id="115" x="7896" y="520" />
+    <Iris id="116" x="6220" y="-36" />
+    <Iris id="117" x="5228" y="-32" />
+    <Iris id="118" x="4292" y="524" />
+    <Iris id="119" x="3908" y="-32" />
+    <Iris id="120" x="3312" y="520" />
+    <Koi id="121" x="8092" y="100" angle="0" />
+    <Koi id="122" x="8744" y="160" angle="0" />
   </Entities>
   <Art>
     <Boat id="0" x="84" y="260" angle="0" />

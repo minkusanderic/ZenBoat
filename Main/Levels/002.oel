@@ -170,13 +170,13 @@
     <Bamboo id="8" x="672" y="536" />
     <Bamboo id="9" x="624" y="520" />
     <Tulip id="3" x="516" y="520" />
+    <Iris id="4" x="520" y="-16" />
+    <Iris id="11" x="364" y="-16" />
+    <Iris id="12" x="196" y="-16" />
     <Iris id="13" x="820" y="520" />
     <Iris id="14" x="920" y="520" />
-    <TulipNorth id="10" x="100" y="-20" />
-    <IrisNorth id="12" x="196" y="-20" />
-    <TulipNorth id="15" x="280" y="-24" />
-    <IrisNorth id="11" x="372" y="-24" />
-    <TulipNorth id="16" x="464" y="-28" />
-    <IrisNorth id="4" x="540" y="-24" />
+    <Tulip id="15" x="280" y="-16" />
+    <Tulip id="16" x="112" y="-12" />
+    <Tulip id="17" x="440" y="-16" />
   </Art>
 </level>

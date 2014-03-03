@@ -217,6 +217,7 @@
     <Whirlpool id="73" x="876" y="252" width="80" height="80" strength="100" />
     <Crane id="76" x="6888" y="24" />
     <Crane id="78" x="1580" y="32" />
+    <Koi id="79" x="7064" y="92" angle="0" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="1564" y="-60" />
@@ -242,8 +243,8 @@
     <Bamboo id="38" x="2488" y="-60" />
     <Bamboo id="39" x="2552" y="-60" />
     <Iris id="43" x="2084" y="528" />
-    <MapleTreeNorth id="45" x="3128" y="488" width="70" height="70" />
-    <MapleTreeSouth id="46" x="3084" y="-36" width="70" height="70" />
+    <MapleTreeNorth id="45" x="3128" y="524" width="70" height="70" />
+    <MapleTreeSouth id="46" x="3084" y="-52" width="70" height="70" />
     <Tulip id="47" x="3736" y="-28" />
     <Tulip id="51" x="4036" y="-32" />
     <Tulip id="52" x="3680" y="516" />
@@ -252,7 +253,6 @@
     <Iris id="57" x="4604" y="-36" />
     <Iris id="58" x="5080" y="-40" />
     <Tulip id="59" x="5172" y="-36" />
-    <Fish id="60" x="4508" y="220" />
     <Bamboo id="1" x="2312" y="-72" />
     <Bamboo id="2" x="2524" y="-72" />
     <LooseBlossoms id="3" x="6724" y="48" />
@@ -263,5 +263,6 @@
     <LooseBlossoms id="12" x="7060" y="128" />
     <LooseBlossoms id="14" x="6988" y="76" />
     <MapleTreeSouth id="15" x="5244" y="480" width="70" height="70" />
+    <Koi id="17" x="4540" y="204" angle="0" />
   </Art>
 </level>
