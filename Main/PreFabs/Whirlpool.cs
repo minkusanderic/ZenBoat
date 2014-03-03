@@ -21,7 +21,10 @@ namespace Main
 			int height = Convert.ToInt32(options["height"]);
 			int strength = Convert.ToInt32(options["strength"]);
 			
-			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/spiral.png"));
+			//var m = ent.attachComponent(new SpriteComponent("/Application/Assets/shader2.png"));
+			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/whirlpool_animated.mdx"));
+			m.scale = new Vector3 (100f, 100f, 100f);
+			m.layer = "under_water";
 
 			//m.scale = new Vector2(.5f, .5f);
 			RigidBody rb = new RigidBody( Math.Min(width, height) /10f ); // orig:/2f elli5:/4f

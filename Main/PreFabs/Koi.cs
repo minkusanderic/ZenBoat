@@ -37,6 +37,7 @@ namespace Main
 				//ent.FindComponent<RigidBody>().applyForce(new Vector2(10.0f, 10.0f));
 			//} 
 			
+			
 		}
 	}
 }

@@ -225,7 +225,6 @@
     <Content Include="Assets\shader2.png" />
     <Content Include="Assets\shader3.png" />
     <Content Include="Assets\shader4.png" />
-    <Content Include="Assets\Geyser.mdx" />
     <Content Include="Assets\spiral.png" />
     <Content Include="Assets\shader5.png" />
     <Content Include="Levels\001.oel" />
@@ -244,5 +243,8 @@
     <Content Include="Levels\014.oel" />
     <Content Include="Levels\015.oel" />
     <Content Include="Levels\016.oel" />
+    <Content Include="Assets\Geyser.mdx" />
+    <Content Include="Assets\whirlpool.mdx" />
+    <Content Include="Assets\whirlpool_animated.mdx" />
   </ItemGroup>
 </Project>

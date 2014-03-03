@@ -23,7 +23,7 @@ namespace Main
 			
 			//var m = ent.attachComponent(new SpriteComponent("/Application/Assets/Geyser.png"));
 			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Geyser.mdx"));
-			m.scale = new Vector3 (50f, 50f, 50f);
+			m.scale = new Vector3 (100f, 100f, 100f);
 			m.layer = "under_water";
 			
 			//m.scale = new Vector2(0.5f, 0.5f);
