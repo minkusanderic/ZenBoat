@@ -126,7 +126,7 @@ namespace Core
 		/// <param name='val'>
 		/// Value.
 		/// </param>
-		public static void SetString( string key , string val )
+		public static void SaveString( string key , string val )
 		{
 			strings[key] = val;	// ok to override
 			
@@ -140,6 +140,7 @@ namespace Core
 			new_string.AppendChild( new_val );
 			
 			xml_doc.FirstChild.FirstChild.AppendChild( new_string );
+			saveGame(); // todo or not to do this is the question
 		}
 
 		/// <summary>

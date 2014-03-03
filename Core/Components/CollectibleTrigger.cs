@@ -48,7 +48,7 @@ namespace Core
 			//sound = sounds[i-1];
 			//sound.SetSoundFromFile("/Application/Assets/Sound/SFX/Crane" + i + ".wav");
 			//sound.PlaySound();
-			
+			SaveGameManager.SaveString("GotCrane" , SceneManager.Instance.GetCurrentLevelName() + this.parent.GetID() ); 
 			this.parent.attachComponent(new SimpleController( () => {
 				if(this.parent.Transform.Z < 600.0f)
 				{

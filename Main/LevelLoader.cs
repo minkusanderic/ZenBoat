@@ -25,6 +25,9 @@ namespace Main
 		public static bool isLevelSelected = false;
 		public static String selected_filename = "";
 		public static String searchPath = "/Application/Levels/";
+		
+
+		
 		public static void HandleButton(object sender, TouchEventArgs e)
 			{
 				isLevelSelected = true;
@@ -95,13 +98,14 @@ namespace Main
 			
 			}
 			//graphics.Dispose();
-			
+			SceneManager.Instance.SetCurrentLevelName( selected_filename );
 			Load (selected_filename);
 			isLevelSelected = false;
 		}
 		
 		public static void Load(String filename)
 		{
+			SceneManager.Instance.SetCurrentLevelName( filename );
 			CollectibleManager.ClearStageScore();
 			int[,] down = new int[60,34];
 			int[,] up = new int[60,34];
@@ -188,6 +192,8 @@ namespace Main
 							int x = Convert.ToInt32(options["x"]);
 							int y = 544 - Convert.ToInt32(options["y"]);
 							var ent = SceneManager.Instance.createEntity(reader["id"]);
+							ent.SetID( reader["id"] );
+						   	//Console.WriteLine("readerID: " + reader["id"] );
 							ent.Transform.Position = new Sce.PlayStation.Core.Vector2(x,y);
 							if(options.ContainsKey("angle"))
 								ent.Transform.SetAngle(Convert.ToSingle(options["angle"]));

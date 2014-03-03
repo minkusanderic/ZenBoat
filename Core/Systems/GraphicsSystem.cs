@@ -242,7 +242,7 @@ namespace Core
 				}*/
 				model.model.Update() ;
 				graphics.SetTexture(1, toon);
-	            Console.WriteLine(model.model.Parts[0].Meshes[0].Primitives[0].Count);
+	            //Console.WriteLine(model.model.Parts[0].Meshes[0].Primitives[0].Count);
 				model.model.Draw(graphics, program) ;
 			
 		}

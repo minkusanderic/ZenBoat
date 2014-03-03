@@ -12,6 +12,15 @@ namespace Core
 		
 		public List<Entity> entities = new List<Entity>();
 		
+		private string currentLevelName = "";
+		public string GetCurrentLevelName()
+		{
+			return currentLevelName;	
+		}
+		public void SetCurrentLevelName( string name )
+		{
+			currentLevelName = name;	
+		}
 		private SceneManager ()
 		{
 			systems = new Dictionary<Type, CoreSystem>();

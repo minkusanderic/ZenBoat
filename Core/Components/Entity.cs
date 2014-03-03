@@ -13,6 +13,7 @@ namespace Core
 		public String Name
 		{get;set;}
 		
+		private string ID;
 		public bool Enabled = true;	// by default an Entity is Enabled
 		
 		private HashSet<String> tags = new HashSet<String>();
@@ -90,7 +91,14 @@ namespace Core
 			*/
 		}
 	
-		
+		public void SetID( string _id )
+		{
+			ID = _id;
+		}
+		public string GetID()
+		{
+			return ID;
+		}
 		public Transform Transform
 		{get;set;}
 	}
