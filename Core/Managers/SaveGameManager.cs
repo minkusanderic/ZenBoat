@@ -43,6 +43,8 @@ namespace Core
 		
 		private static string save_game_file_path = @"/Documents/saveGame.xml";
 		private static Dictionary<string , string> strings;
+		private static List<string> cranes_to_save = new List<string>();
+		//private static List<string> strings;
 		public 	static List<Entity> toRespawn;
 		
 		/// <summary>
@@ -62,7 +64,7 @@ namespace Core
 		public static bool init()
 		{
 			_init = true;
-			strings = new Dictionary<string, string>();
+			strings = new Dictionary< string , string >();
 			toRespawn = new List<Entity>();
 			const string DATA = 
 				"<SaveGame>" +
@@ -89,13 +91,21 @@ namespace Core
 						foreach( XmlNode node in str.ChildNodes )
 						{
 							if ( node.Name == "Key" )
+							{
+								//if ( node.InnerText != "GotCrane" ) continue;
 								key = node.InnerText;
+							}
 							else 
 								val = node.InnerText;
 						}
 						//Console.WriteLine("K:" + key + "\tV:" + val);
 						if ( key != "" && val != "" )
-							strings.Add(key , val);	
+						{
+							if ( key == "GotCrane" ) // this is in the XML doc for the saveGame (saveGame.xml)
+							{
+								cranes_to_save.Add( val );
+							}
+						}
 					}
 				}	
 			}
@@ -114,7 +124,7 @@ namespace Core
 		/// </param>
 		public static bool ContainsSaveString( string key )
 		{
-			return strings.ContainsKey(key);	
+			return false; //strings.con(key);	
 		}
 		
 		/// <summary>

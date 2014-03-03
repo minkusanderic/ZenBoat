@@ -14,7 +14,7 @@ namespace Main
 		{
 			//ent.tag("pushable");
 			//use MapleNb for colored leaves or MapleNa for sticklike tree	
-			
+			ent.tag("tree");
 			ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTreeNorthBranches.mdx"));
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTreeNorthLeaves.mdx"));
 			m.layer = "trees";

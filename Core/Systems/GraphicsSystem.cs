@@ -155,17 +155,20 @@ namespace Core
 			{
 				foreach(var model in model_layers["under_water"])
 				{
+					if ( model.parent.Name.Contains("Bank") ) continue;
 					Draw_Model(model);
 				}
 			}
+
 			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view, this.camera_pos);
 			
-			
+
 			
 			if(model_layers.ContainsKey("front"))
 			{
 				foreach(var model in model_layers["front"])
 				{
+					//if ( model.parent.HasTag("tree") ) continue; 
 					Draw_Model(model);
 				}
 			}
@@ -193,7 +196,7 @@ namespace Core
 			graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
 			UISystem.Render();
-			graphics.SwapBuffers() ;
+			graphics.SwapBuffers();
 			//Timer.EndFrame();
 		}
 		

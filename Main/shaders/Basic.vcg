@@ -39,6 +39,7 @@ void main(
 	out float3 v_Normal		: TEXCOORD4
 )
 {
+	
 	float4 position ;
 	position.xyz = a_Position.xyz * VertexOffsets[ 0 ].w + VertexOffsets[ 0 ].xyz ;
 	position.w = 1.0 ;
@@ -46,6 +47,7 @@ void main(
 	float4x4 M = WorldMatrix[ (int)a_Indices.x ] ;
 	float4 P = mul( position, M ) * a_Weight.x ;
 	float3 N = ( mul( float4( a_Normal, 0.0 ), M ) ).xyz * a_Weight.x ;
+	
 	if ( VertexWeightCount > 1 ) {
 		M = WorldMatrix[ (int)a_Indices[ 1 ] ] ;
 		P += mul( position, M ) * a_Weight.y ;
@@ -61,6 +63,7 @@ void main(
 			}
 		}
 	}
+	
 	N = normalize( N ) ;
 
 	v_Position = mul( P, ViewProjection ) ;
@@ -70,6 +73,7 @@ void main(
 	float3 diffuse = float3( 0.0 ) ;
 	float3 specular = float3( 0.0 ) ;
 	float3 ambient = float3( 1.0 ) ;
+	
 	if ( EnableLighting ) {
 		ambient = LightAmbient ;
 		if ( LightCount > 0 ) {
@@ -104,7 +108,7 @@ void main(
 			}
 		}
 	}
-
+	
 	v_Color.xyz = MaterialDiffuse * diffuse + MaterialAmbient * ambient ;
 	v_Color.w = MaterialFactor.x ;
 	v_Color2 = MaterialSpecular * specular + MaterialEmission;
@@ -112,4 +116,5 @@ void main(
 	
 	v_Normal	= N;
 	v_Eye		= EyePosition - P.xyz;
+	
 }

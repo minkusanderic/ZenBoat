@@ -17,7 +17,7 @@ namespace Main
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/TulipBunch2.mdx"));
 		
 			m.scale = new Vector3(2.5f , 2.5f, 2.5f);
-			
+			ent.tag("tree");
 		}
 	}
 }

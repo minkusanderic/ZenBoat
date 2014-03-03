@@ -17,7 +17,7 @@ namespace Main
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/CherryBlossomN.mdx"));
 			m.layer = "trees";
 			m.scale = new Vector3(8f, 8f, 8f);
-			
+			ent.tag("tree");
 		}
 	}
 }

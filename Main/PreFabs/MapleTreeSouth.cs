@@ -18,10 +18,12 @@ namespace Main
 			//ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTreeSouthBranches.mdx"));
 			
 			ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/Assets/MapleMED.mdx"));
+
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTreeSouthLeaves.mdx"));
 			m.layer = "trees";
 			m.scale = new Vector3(8f , 8f, 8f);
-			m2.scale = new Vector3(8f, 8f, 8f);
+			//m2.scale = new Vector3(8f, 8f, 8f);
+			ent.tag("tree");
 		}
 	}
 }

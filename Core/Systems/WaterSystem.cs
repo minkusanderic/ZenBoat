@@ -121,6 +121,7 @@ namespace Core
 					}
 					
 				}
+				
 				for(int i = 0; i < v.Length; i++)
 					{
 						if(v[i].Z < 2.0f){
@@ -156,6 +157,7 @@ namespace Core
 				if(time > 1.0f)
 					time = 0.0f;
 				//g.graphics.SetTexture(0, height_map);
+				
 				g.graphics.SetTexture(0, stars);
 				g.graphics.SetTexture(1, normal_map);
 				g.graphics.SetTexture(2, flow_map);
