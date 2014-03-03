@@ -16,14 +16,14 @@ namespace Menu
         {
             InitializeWidget();
 			playButton.ButtonAction += HandlePlayButtonButtonAction;
-			levelButton.ButtonAction += HandleLevelButtonButtonAction;
+			creditButton.ButtonAction += HandleCreditButtonButtonAction;
 			quitButton.ButtonAction += HandleQuitButtonButtonAction;
 			
         }
 
-        void HandleLevelButtonButtonAction (object sender, TouchEventArgs e)
+        void HandleCreditButtonButtonAction (object sender, TouchEventArgs e)
         {
-        	MenuLoader.loadStory = true;
+			MenuLoader.loadCredit = true;
         }
 
         void HandleQuitButtonButtonAction (object sender, TouchEventArgs e)

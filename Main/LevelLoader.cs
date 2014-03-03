@@ -99,7 +99,7 @@ namespace Main
 			}
 			//graphics.Dispose();
 			SceneManager.Instance.SetCurrentLevelName( selected_filename );
-			Load (selected_filename);
+			Load (selected_filename)	;
 			isLevelSelected = false;
 		}
 		

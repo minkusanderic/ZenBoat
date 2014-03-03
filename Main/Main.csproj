@@ -92,6 +92,8 @@
     <Compile Include="PreFabs\LooseBlossoms.cs" />
     <Compile Include="PreFabs\IrisNorth.cs" />
     <Compile Include="PreFabs\TulipNorth.cs" />
+    <Compile Include="Menus\Credits.composer.cs" />
+    <Compile Include="Menus\Credits.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -186,7 +188,6 @@
     <Content Include="Assets\Iris.mdx" />
     <Content Include="Assets\Tulip.mdx" />
     <Content Include="Assets\instructions.png" />
-    <Content Include="Assets\title.png" />
     <Content Include="Assets\Bamboo3.mdx" />
     <Content Include="Assets\CherryBlossomN.mdx" />
     <Content Include="Assets\CherryBlossomS.mdx" />
@@ -250,5 +251,7 @@
     <Content Include="Assets\RotatedIrisBundle.mdx" />
     <Content Include="Assets\RotatedTulipBunch2.mdx" />
     <Content Include="Assets\TulipBunch2.mdx" />
+    <Content Include="Assets\credits.png" />
+    <Content Include="Assets\title1.png" />
   </ItemGroup>
 </Project>

@@ -33,7 +33,7 @@
                 <Effect>None</Effect>
                 <OwnerNode z:Ref="i4" />
                 <VariableName>titleImage</VariableName>
-                <Image>title.png</Image>
+                <Image>title1.png</Image>
                 <NinePatchMargin xmlns:d9p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
                   <d9p1:ButtomRowHeight>0</d9p1:ButtomRowHeight>
                   <d9p1:LeftColumnWidth>0</d9p1:LeftColumnWidth>
@@ -276,7 +276,7 @@
               <Property i:type="ButtonProperty">
                 <Effect>None</Effect>
                 <OwnerNode z:Ref="i7" />
-                <VariableName>levelButton</VariableName>
+                <VariableName>creditButton</VariableName>
                 <BackgroundButtonImage xmlns:d9p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
                   <d9p1:BackgroundDisablelImage i:nil="true" />
                   <d9p1:BackgroundNormalImage i:nil="true" />
@@ -815,9 +815,57 @@
               <Nodes />
               <LayoutProperty>
                 <LayoutProperty>
-                  <X>716</X>
-                  <Y>463</Y>
-                  <Width>214</Width>
+                  <X>0</X>
+                  <Y>-6</Y>
+                  <Width>960</Width>
+                  <Height>550</Height>
+                  <Visible>true</Visible>
+                  <Anchors>None</Anchors>
+                </LayoutProperty>
+                <LayoutProperty>
+                  <X>192.435173041494</X>
+                  <Y>64.90820102137269</Y>
+                  <Width>200</Width>
+                  <Height>200</Height>
+                  <Visible>true</Visible>
+                  <Anchors>None</Anchors>
+                </LayoutProperty>
+              </LayoutProperty>
+              <Property i:type="ImageBoxProperty">
+                <Effect>None</Effect>
+                <OwnerNode z:Ref="i15" />
+                <VariableName>ImageBox_1</VariableName>
+                <Image>credits.png</Image>
+                <NinePatchMargin xmlns:d9p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
+                  <d9p1:ButtomRowHeight>0</d9p1:ButtomRowHeight>
+                  <d9p1:LeftColumnWidth>0</d9p1:LeftColumnWidth>
+                  <d9p1:RightColumnWidth>0</d9p1:RightColumnWidth>
+                  <d9p1:TopRowHeight>0</d9p1:TopRowHeight>
+                </NinePatchMargin>
+                <ScaleType>Stretch</ScaleType>
+              </Property>
+              <IsRoot>false</IsRoot>
+              <PivotPos>LeftTop</PivotPos>
+              <WidgetType>ImageBox</WidgetType>
+              <ID>2076833542</ID>
+              <ZIndex>2</ZIndex>
+              <LayoutAssistInfo>
+                <SnapGuidesList>
+                  <ArrayOfSnapGuide />
+                  <ArrayOfSnapGuide />
+                </SnapGuidesList>
+              </LayoutAssistInfo>
+              <IsHideInLayout>false</IsHideInLayout>
+              <IsLockInLayout>false</IsLockInLayout>
+            </UICNode>
+            <UICNode z:Id="i16" i:type="ObjectTreeNode">
+              <Parent z:Ref="i14" />
+              <Nodes />
+              <LayoutProperty>
+                <LayoutProperty>
+                  <X>641.78135901337316</X>
+                  <Y>415.99159073128362</Y>
+                  <Width>155</Width>
                   <Height>56</Height>
                   <Visible>true</Visible>
                   <Anchors>None</Anchors>
@@ -833,10 +881,14 @@
               </LayoutProperty>
               <Property i:type="ButtonProperty">
                 <Effect>None</Effect>
-                <OwnerNode z:Ref="i15" />
+                <OwnerNode z:Ref="i16" />
                 <VariableName>continueButton</VariableName>
-                <BackgroundButtonImage xmlns:d9p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData" i:nil="true" />
-                <BackgroundType>Default</BackgroundType>
+                <BackgroundButtonImage xmlns:d9p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
+                  <d9p1:BackgroundDisablelImage i:nil="true" />
+                  <d9p1:BackgroundNormalImage i:nil="true" />
+                  <d9p1:BackgroundPressImage i:nil="true" />
+                </BackgroundButtonImage>
+                <BackgroundType>Custom</BackgroundType>
                 <ButtonImage></ButtonImage>
                 <ButtonType>TextButton</ButtonType>
                 <FilterColor xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -856,7 +908,7 @@
                   <d9p1:RightColumnWidth>42</d9p1:RightColumnWidth>
                   <d9p1:TopRowHeight>27</d9p1:TopRowHeight>
                 </NinePatchMargin>
-                <Text>Continue</Text>
+                <Text></Text>
                 <TextAlpha>100</TextAlpha>
                 <TextColor xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
                   <d9p1:A>255</d9p1:A>
@@ -894,7 +946,7 @@
               <PivotPos>LeftTop</PivotPos>
               <WidgetType>Button</WidgetType>
               <ID>1123212274</ID>
-              <ZIndex>2</ZIndex>
+              <ZIndex>3</ZIndex>
               <LayoutAssistInfo>
                 <SnapGuidesList>
                   <ArrayOfSnapGuide />
@@ -1006,11 +1058,11 @@
       <IsHideInLayout>false</IsHideInLayout>
       <IsLockInLayout>false</IsLockInLayout>
     </UICNode>
-    <UICNode z:Id="i16" i:type="ObjectTreeNode">
+    <UICNode z:Id="i17" i:type="ObjectTreeNode">
       <Parent z:Ref="i1" />
       <Nodes>
-        <UICNode z:Id="i17" i:type="ObjectTreeNode">
-          <Parent z:Ref="i16" />
+        <UICNode z:Id="i18" i:type="ObjectTreeNode">
+          <Parent z:Ref="i17" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1032,7 +1084,7 @@
           </LayoutProperty>
           <Property i:type="ImageBoxProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i17" />
+            <OwnerNode z:Ref="i18" />
             <VariableName>ImageBox_1</VariableName>
             <Image>story1.png</Image>
             <NinePatchMargin xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
@@ -1078,7 +1130,7 @@
       </LayoutProperty>
       <Property i:type="PanelProperty">
         <Effect>None</Effect>
-        <OwnerNode z:Ref="i16" />
+        <OwnerNode z:Ref="i17" />
         <VariableName>Story1</VariableName>
         <BackgroundAlpha>100</BackgroundAlpha>
         <BackgroundColor xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -1102,16 +1154,16 @@
           <ArrayOfSnapGuide />
           <ArrayOfSnapGuide />
         </SnapGuidesList>
-        <OwnerNode z:Ref="i16" />
+        <OwnerNode z:Ref="i17" />
       </LayoutAssistInfo>
       <IsHideInLayout>false</IsHideInLayout>
       <IsLockInLayout>false</IsLockInLayout>
     </UICNode>
-    <UICNode z:Id="i18" i:type="ObjectTreeNode">
+    <UICNode z:Id="i19" i:type="ObjectTreeNode">
       <Parent z:Ref="i1" />
       <Nodes>
-        <UICNode z:Id="i19" i:type="ObjectTreeNode">
-          <Parent z:Ref="i18" />
+        <UICNode z:Id="i20" i:type="ObjectTreeNode">
+          <Parent z:Ref="i19" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1133,7 +1185,7 @@
           </LayoutProperty>
           <Property i:type="ImageBoxProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i19" />
+            <OwnerNode z:Ref="i20" />
             <VariableName>ImageBox_1</VariableName>
             <Image>story2.png</Image>
             <NinePatchMargin xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
@@ -1179,7 +1231,7 @@
       </LayoutProperty>
       <Property i:type="PanelProperty">
         <Effect>None</Effect>
-        <OwnerNode z:Ref="i18" />
+        <OwnerNode z:Ref="i19" />
         <VariableName>Story2</VariableName>
         <BackgroundAlpha>100</BackgroundAlpha>
         <BackgroundColor xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -1203,16 +1255,16 @@
           <ArrayOfSnapGuide />
           <ArrayOfSnapGuide />
         </SnapGuidesList>
-        <OwnerNode z:Ref="i18" />
+        <OwnerNode z:Ref="i19" />
       </LayoutAssistInfo>
       <IsHideInLayout>false</IsHideInLayout>
       <IsLockInLayout>false</IsLockInLayout>
     </UICNode>
-    <UICNode z:Id="i20" i:type="ObjectTreeNode">
+    <UICNode z:Id="i21" i:type="ObjectTreeNode">
       <Parent z:Ref="i1" />
       <Nodes>
-        <UICNode z:Id="i21" i:type="ObjectTreeNode">
-          <Parent z:Ref="i20" />
+        <UICNode z:Id="i22" i:type="ObjectTreeNode">
+          <Parent z:Ref="i21" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1234,7 +1286,7 @@
           </LayoutProperty>
           <Property i:type="ImageBoxProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i21" />
+            <OwnerNode z:Ref="i22" />
             <VariableName>ImageBox_1</VariableName>
             <Image>story3.png</Image>
             <NinePatchMargin xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
@@ -1280,7 +1332,7 @@
       </LayoutProperty>
       <Property i:type="PanelProperty">
         <Effect>None</Effect>
-        <OwnerNode z:Ref="i20" />
+        <OwnerNode z:Ref="i21" />
         <VariableName>Story3</VariableName>
         <BackgroundAlpha>100</BackgroundAlpha>
         <BackgroundColor xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -1304,16 +1356,16 @@
           <ArrayOfSnapGuide />
           <ArrayOfSnapGuide />
         </SnapGuidesList>
-        <OwnerNode z:Ref="i20" />
+        <OwnerNode z:Ref="i21" />
       </LayoutAssistInfo>
       <IsHideInLayout>false</IsHideInLayout>
       <IsLockInLayout>false</IsLockInLayout>
     </UICNode>
-    <UICNode z:Id="i22" i:type="ObjectTreeNode">
+    <UICNode z:Id="i23" i:type="ObjectTreeNode">
       <Parent z:Ref="i1" />
       <Nodes>
-        <UICNode z:Id="i23" i:type="ObjectTreeNode">
-          <Parent z:Ref="i22" />
+        <UICNode z:Id="i24" i:type="ObjectTreeNode">
+          <Parent z:Ref="i23" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1335,7 +1387,7 @@
           </LayoutProperty>
           <Property i:type="ImageBoxProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i23" />
+            <OwnerNode z:Ref="i24" />
             <VariableName>ImageBox_1</VariableName>
             <Image>story4.png</Image>
             <NinePatchMargin xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
@@ -1381,7 +1433,7 @@
       </LayoutProperty>
       <Property i:type="PanelProperty">
         <Effect>None</Effect>
-        <OwnerNode z:Ref="i22" />
+        <OwnerNode z:Ref="i23" />
         <VariableName>Story4</VariableName>
         <BackgroundAlpha>100</BackgroundAlpha>
         <BackgroundColor xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -1405,16 +1457,16 @@
           <ArrayOfSnapGuide />
           <ArrayOfSnapGuide />
         </SnapGuidesList>
-        <OwnerNode z:Ref="i22" />
+        <OwnerNode z:Ref="i23" />
       </LayoutAssistInfo>
       <IsHideInLayout>false</IsHideInLayout>
       <IsLockInLayout>false</IsLockInLayout>
     </UICNode>
-    <UICNode z:Id="i24" i:type="ObjectTreeNode">
+    <UICNode z:Id="i25" i:type="ObjectTreeNode">
       <Parent z:Ref="i1" />
       <Nodes>
-        <UICNode z:Id="i25" i:type="ObjectTreeNode">
-          <Parent z:Ref="i24" />
+        <UICNode z:Id="i26" i:type="ObjectTreeNode">
+          <Parent z:Ref="i25" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1436,7 +1488,7 @@
           </LayoutProperty>
           <Property i:type="ImageBoxProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i25" />
+            <OwnerNode z:Ref="i26" />
             <VariableName>ImageBox_1</VariableName>
             <Image>story5.png</Image>
             <NinePatchMargin xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
@@ -1461,8 +1513,8 @@
           <IsHideInLayout>false</IsHideInLayout>
           <IsLockInLayout>false</IsLockInLayout>
         </UICNode>
-        <UICNode z:Id="i26" i:type="ObjectTreeNode">
-          <Parent z:Ref="i24" />
+        <UICNode z:Id="i27" i:type="ObjectTreeNode">
+          <Parent z:Ref="i25" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1484,7 +1536,7 @@
           </LayoutProperty>
           <Property i:type="ButtonProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i26" />
+            <OwnerNode z:Ref="i27" />
             <VariableName>playButton</VariableName>
             <BackgroundButtonImage xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
               <d7p1:BackgroundDisablelImage i:nil="true" />
@@ -1580,7 +1632,7 @@
       </LayoutProperty>
       <Property i:type="PanelProperty">
         <Effect>None</Effect>
-        <OwnerNode z:Ref="i24" />
+        <OwnerNode z:Ref="i25" />
         <VariableName>Story5</VariableName>
         <BackgroundAlpha>100</BackgroundAlpha>
         <BackgroundColor xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -1604,16 +1656,16 @@
           <ArrayOfSnapGuide />
           <ArrayOfSnapGuide />
         </SnapGuidesList>
-        <OwnerNode z:Ref="i24" />
+        <OwnerNode z:Ref="i25" />
       </LayoutAssistInfo>
       <IsHideInLayout>false</IsHideInLayout>
       <IsLockInLayout>false</IsLockInLayout>
     </UICNode>
-    <UICNode z:Id="i27" i:type="ObjectTreeNode">
+    <UICNode z:Id="i28" i:type="ObjectTreeNode">
       <Parent z:Ref="i1" />
       <Nodes>
-        <UICNode z:Id="i28" i:type="ObjectTreeNode">
-          <Parent z:Ref="i27" />
+        <UICNode z:Id="i29" i:type="ObjectTreeNode">
+          <Parent z:Ref="i28" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1635,7 +1687,7 @@
           </LayoutProperty>
           <Property i:type="PanelProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i28" />
+            <OwnerNode z:Ref="i29" />
             <VariableName>contentPanel</VariableName>
             <BackgroundAlpha>100</BackgroundAlpha>
             <BackgroundColor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -1663,8 +1715,8 @@
           <IsHideInLayout>false</IsHideInLayout>
           <IsLockInLayout>false</IsLockInLayout>
         </UICNode>
-        <UICNode z:Id="i29" i:type="ObjectTreeNode">
-          <Parent z:Ref="i27" />
+        <UICNode z:Id="i30" i:type="ObjectTreeNode">
+          <Parent z:Ref="i28" />
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
@@ -1686,14 +1738,14 @@
           </LayoutProperty>
           <Property i:type="PagePanelProperty">
             <Effect>None</Effect>
-            <OwnerNode z:Ref="i29" />
+            <OwnerNode z:Ref="i30" />
             <VariableName>PagePanel_1</VariableName>
             <Panels>
-              <ObjectTreeNode z:Ref="i16" />
-              <ObjectTreeNode z:Ref="i18" />
-              <ObjectTreeNode z:Ref="i20" />
-              <ObjectTreeNode z:Ref="i22" />
-              <ObjectTreeNode z:Ref="i24" />
+              <ObjectTreeNode z:Ref="i17" />
+              <ObjectTreeNode z:Ref="i19" />
+              <ObjectTreeNode z:Ref="i21" />
+              <ObjectTreeNode z:Ref="i23" />
+              <ObjectTreeNode z:Ref="i25" />
             </Panels>
           </Property>
           <IsRoot>false</IsRoot>
@@ -1731,7 +1783,7 @@
       </LayoutProperty>
       <Property i:type="SceneProperty">
         <Effect>None</Effect>
-        <OwnerNode z:Ref="i27" />
+        <OwnerNode z:Ref="i28" />
         <VariableName>Story</VariableName>
         <BackgroundAlpha>0</BackgroundAlpha>
         <BackgroundColor xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
@@ -1758,7 +1810,7 @@
           <ArrayOfSnapGuide />
           <ArrayOfSnapGuide />
         </SnapGuidesList>
-        <OwnerNode z:Ref="i27" />
+        <OwnerNode z:Ref="i28" />
       </LayoutAssistInfo>
       <IsHideInLayout>false</IsHideInLayout>
       <IsLockInLayout>false</IsLockInLayout>

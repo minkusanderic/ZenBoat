@@ -4,6 +4,7 @@ using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
+using Main;
 
 namespace Menu
 {
@@ -12,6 +13,12 @@ namespace Menu
         public Credits()
         {
             InitializeWidget();
+			continueButton.ButtonAction += HandleContinueButtonButtonAction;
+        }
+
+        void HandleContinueButtonButtonAction (object sender, TouchEventArgs e)
+        {
+			MenuLoader.loadStart = true;
         }
     }
 }

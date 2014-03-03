@@ -15,7 +15,7 @@ namespace Menu
         ImageBox titleImage;
         Button playButton;
         Button quitButton;
-        Button levelButton;
+        Button creditButton;
 
         private void InitializeWidget()
         {
@@ -32,8 +32,8 @@ namespace Menu
             playButton.Name = "playButton";
             quitButton = new Button();
             quitButton.Name = "quitButton";
-            levelButton = new Button();
-            levelButton.Name = "levelButton";
+            creditButton = new Button();
+            creditButton.Name = "creditButton";
 
             // StartMenu
             this.RootWidget.AddChildLast(Panel_1);
@@ -44,10 +44,10 @@ namespace Menu
             Panel_1.AddChildLast(titleImage);
             Panel_1.AddChildLast(playButton);
             Panel_1.AddChildLast(quitButton);
-            Panel_1.AddChildLast(levelButton);
+            Panel_1.AddChildLast(creditButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/assets/title.png");
+            titleImage.Image = new ImageAsset("/Application/Assets/title1.png");
 
             // playButton
             playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -73,11 +73,11 @@ namespace Menu
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
             };
 
-            // levelButton
-            levelButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            levelButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            levelButton.Style = ButtonStyle.Custom;
-            levelButton.CustomImage = new CustomButtonImageSettings()
+            // creditButton
+            creditButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            creditButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            creditButton.Style = ButtonStyle.Custom;
+            creditButton.CustomImage = new CustomButtonImageSettings()
             {
                 BackgroundNormalImage = null,
                 BackgroundPressedImage = null,
@@ -119,10 +119,10 @@ namespace Menu
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
 
-                    levelButton.SetPosition(495, 365);
-                    levelButton.SetSize(214, 56);
-                    levelButton.Anchors = Anchors.None;
-                    levelButton.Visible = true;
+                    creditButton.SetPosition(495, 365);
+                    creditButton.SetSize(214, 56);
+                    creditButton.Anchors = Anchors.None;
+                    creditButton.Visible = true;
 
                     break;
 
@@ -150,10 +150,10 @@ namespace Menu
                     quitButton.Anchors = Anchors.None;
                     quitButton.Visible = true;
 
-                    levelButton.SetPosition(109, 345);
-                    levelButton.SetSize(214, 56);
-                    levelButton.Anchors = Anchors.None;
-                    levelButton.Visible = true;
+                    creditButton.SetPosition(109, 345);
+                    creditButton.SetSize(214, 56);
+                    creditButton.Anchors = Anchors.None;
+                    creditButton.Visible = true;
 
                     break;
             }

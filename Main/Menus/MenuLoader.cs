@@ -15,6 +15,7 @@ namespace Main
 		public static bool loadInstr = false;
 		public static bool loadStory = false;
 		public static bool loadStart = false;
+		public static bool loadCredit = false;
 		
 		public MenuLoader ()
 		{
@@ -32,6 +33,9 @@ namespace Main
 			var start = new Menu.StartMenu();
 			var instr = new Menu.Instructions();
 			var story = new Menu.Story();
+			var credit = new Menu.Credits();
+			
+			
 			// Set the scene for the Start menu
 			UISystem.SetScene(start, null);
 			
@@ -58,6 +62,13 @@ namespace Main
 					UISystem.SetScene(start,null);
 					loadStart = false;
 				}
+				
+				if (loadCredit)
+				{
+					UISystem.SetScene(credit,null);
+					loadCredit = false;
+				}
+				
 				UISystem.Render();
 				graphics.SwapBuffers();
 				SystemEvents.CheckEvents();
