@@ -31,11 +31,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="Instructions.composer.cs" />
-    <Compile Include="Instructions.cs" />
+    <Compile Include="__DummyScene.cs" />
+    <Compile Include="Pause.composer.cs" />
+    <Compile Include="Pause.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\\assets\credits.png" >
+      <Link>assets\credits.png</Link>
+    </Content>
     <Content Include="..\\assets\instructions.png" >
       <Link>assets\instructions.png</Link>
     </Content>
@@ -59,6 +63,9 @@
     </Content>
     <Content Include="..\\assets\title.png" >
       <Link>assets\title.png</Link>
+    </Content>
+    <Content Include="..\\assets\title1.png" >
+      <Link>assets\title1.png</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>

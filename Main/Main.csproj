@@ -94,6 +94,8 @@
     <Compile Include="PreFabs\TulipNorth.cs" />
     <Compile Include="Menus\Credits.composer.cs" />
     <Compile Include="Menus\Credits.cs" />
+    <Compile Include="Menus\Pause.composer.cs" />
+    <Compile Include="Menus\Pause.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
