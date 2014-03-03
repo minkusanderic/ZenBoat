@@ -5,16 +5,16 @@ using Sce.PlayStation.Core;
 using Core;
 namespace Main
 {
-	public class Tulip
+	public class TulipNorth
 	{
-		public Tulip ()
+		public TulipNorth ()
 		{
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			//ent.Transform.Rotation = new Vector2(0f, 1f);
 			//ent.Transform.SetAngle(0f);
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/TulipBunch2.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/RotatedTulipBunch2.mdx"));
 		
 			m.scale = new Vector3(2.5f , 2.5f, 2.5f);
 			

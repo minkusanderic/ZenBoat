@@ -90,6 +90,8 @@
     <Compile Include="Menus\UIStringTable.cs" />
     <Compile Include="Menus\Story.composer.cs" />
     <Compile Include="PreFabs\LooseBlossoms.cs" />
+    <Compile Include="PreFabs\IrisNorth.cs" />
+    <Compile Include="PreFabs\TulipNorth.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -217,7 +219,6 @@
     <Content Include="Assets\story3.png" />
     <Content Include="Assets\story4.png" />
     <Content Include="Assets\story5.png" />
-    <Content Include="Assets\TulipBunch.mdx" />
     <Content Include="Assets\irisbundle.mdx" />
     <Content Include="Assets\MoreColorsTulips.mdx" />
     <Content Include="Assets\LooseBlossomsC.mdx" />
@@ -246,5 +247,8 @@
     <Content Include="Assets\Geyser.mdx" />
     <Content Include="Assets\whirlpool.mdx" />
     <Content Include="Assets\whirlpool_animated.mdx" />
+    <Content Include="Assets\RotatedIrisBundle.mdx" />
+    <Content Include="Assets\RotatedTulipBunch2.mdx" />
+    <Content Include="Assets\TulipBunch2.mdx" />
   </ItemGroup>
 </Project>
