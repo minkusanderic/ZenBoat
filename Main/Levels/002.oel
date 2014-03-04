@@ -164,7 +164,6 @@
     <TulipNorth id="23" x="376" y="-56" />
     <TulipNorth id="24" x="440" y="-44" />
     <TulipNorth id="25" x="320" y="-40" />
-    <Pagoda id="26" x="160" y="364" width="50" height="50" angle="0" />
   </Entities>
   <Art />
 </level>
