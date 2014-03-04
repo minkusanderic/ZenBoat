@@ -10,14 +10,20 @@ namespace Main
 		public LooseBlossoms ()
 		{
 		}
+		//static Entity entity;
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
-			//ent.tag("pushable");
-			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
+			
+			//entity = ent;
+			//ent.tag("looseblossom", "pushable");
+						    
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/LooseBlossomsC.mdx"));
 			
 			m.scale = new Vector3(10f , 10f, 10f);
 			
+			//RigidBody rb = new RigidBody(10, 10);
+			//ent.attachComponent(rb);
+			//ent.attachComponent( new Respawner( ent.Transform.Position ) );
 		}
 	}
 }

@@ -165,7 +165,7 @@
     <MapleTreeSouth id="5" x="832" y="520" width="70" height="70" />
     <CherryBlossomNorth id="6" x="1948" y="-56" />
     <Pagoda id="0" x="148" y="-48" width="50" height="50" angle="0" />
-    <CherryBlossomNorth id="1" x="364" y="-24" />
+    <CherryBlossomNorth id="1" x="364" y="-56" />
     <LooseBlossoms id="2" x="256" y="-24" />
     <LooseBlossoms id="3" x="304" y="-20" />
     <LooseBlossoms id="4" x="276" y="32" />

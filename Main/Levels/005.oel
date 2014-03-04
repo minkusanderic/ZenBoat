@@ -189,11 +189,14 @@
     <Iris id="21" x="3572" y="528" />
     <Iris id="22" x="3620" y="528" />
     <CherryBlossomNorth id="0" x="248" y="-40" />
-    <MapleTreeSouth id="11" x="568" y="504" width="70" height="70" />
+    <MapleTreeSouth id="11" x="568" y="524" width="70" height="70" />
     <Bamboo id="12" x="1280" y="-32" />
     <Bamboo id="23" x="1328" y="-32" />
     <Bamboo id="24" x="1376" y="-32" />
     <Bamboo id="25" x="1432" y="-32" />
     <Bamboo id="26" x="1480" y="-36" />
+    <Bamboo id="27" x="2416" y="524" />
+    <Bamboo id="28" x="2384" y="524" />
+    <Bamboo id="29" x="2352" y="528" />
   </Art>
 </level>

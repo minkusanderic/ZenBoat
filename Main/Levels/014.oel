@@ -220,11 +220,11 @@
     <Crane id="88" x="7720" y="396" />
     <Rock id="92" x="7300" y="180" width="50" height="50" angle="0" />
     <Rock id="93" x="7488" y="224" width="50" height="50" angle="0" />
-    <Endstage id="87" x="1688" y="268" NextLevel="" />
+    <Endstage id="87" x="1688" y="292" NextLevel="" />
     <Endstage id="89" x="4936" y="272" NextLevel="" />
     <Endstage id="90" x="6584" y="272" NextLevel="" />
     <Rock id="35" x="4528" y="380" width="90" height="86" angle="0" />
-    <CherryBlossomNorth id="10" x="388" y="-40" />
+    <CherryBlossomNorth id="10" x="392" y="-56" />
     <Tulip id="22" x="1220" y="-44" />
     <Tulip id="24" x="2004" y="528" />
     <Tulip id="33" x="3260" y="-36" />
@@ -244,21 +244,27 @@
     <Iris id="103" x="312" y="524" />
     <Lillypad id="104" x="9880" y="80" width="50" height="40" angle="0" />
     <Lillypad id="105" x="6592" y="56" width="50" height="40" angle="0" />
-    <Lillypad id="106" x="1700" y="468" width="50" height="40" angle="0" />
-    <CherryBlossomSouth id="107" x="2920" y="520" />
+    <Lillypad id="106" x="1692" y="428" width="50" height="40" angle="0" />
+    <CherryBlossomSouth id="107" x="2916" y="580" />
     <LooseBlossoms id="108" x="3064" y="496" />
     <LooseBlossoms id="109" x="2820" y="492" />
-    <Bamboo id="110" x="2240" y="-64" />
-    <Bamboo id="111" x="2160" y="-64" />
-    <Bamboo id="112" x="2328" y="-64" />
-    <Bamboo id="113" x="2288" y="-104" />
-    <Bamboo id="114" x="2200" y="-104" />
-    <MapleTreeNorth id="115" x="4904" y="-52" width="70" height="70" />
-    <MapleTreeSouth id="116" x="6544" y="524" width="70" height="70" />
+    <Bamboo id="110" x="2244" y="-28" />
+    <Bamboo id="111" x="2164" y="-28" />
+    <Bamboo id="112" x="2332" y="-28" />
+    <MapleTreeNorth id="115" x="4900" y="-16" width="70" height="70" />
+    <MapleTreeSouth id="116" x="6544" y="528" width="70" height="70" />
     <Bamboo id="117" x="8072" y="512" />
     <Bamboo id="118" x="8140" y="520" />
     <Bamboo id="119" x="8248" y="-56" />
     <Bamboo id="120" x="8300" y="-40" />
+    <Bamboo id="121" x="1640" y="-24" />
+    <Bamboo id="122" x="1684" y="-32" />
+    <Bamboo id="123" x="1724" y="-16" />
+    <Bamboo id="114" x="2208" y="-16" />
+    <Bamboo id="113" x="2292" y="-44" />
+    <Rock id="124" x="8640" y="192" width="50" height="50" angle="0" />
+    <Rock id="125" x="8680" y="272" width="50" height="50" angle="0" />
+    <Crane id="126" x="8840" y="264" />
   </Entities>
   <Art />
 </level>

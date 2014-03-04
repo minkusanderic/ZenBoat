@@ -194,13 +194,13 @@
     <Whirlpool id="53" x="7508" y="284" width="80" height="80" strength="100" />
     <Whirlpool id="54" x="8680" y="188" width="80" height="80" strength="100" />
     <CherryBlossomNorth id="59" x="8144" y="-40" />
-    <CherryBlossomNorth id="60" x="9312" y="-28" />
-    <CherryBlossomNorth id="61" x="184" y="-8" />
-    <MapleTreeNorth id="62" x="2028" y="-32" width="70" height="70" />
-    <MapleTreeNorth id="63" x="4308" y="-40" width="70" height="70" />
-    <MapleTreeNorth id="64" x="6440" y="-40" width="70" height="70" />
-    <MapleTreeSouth id="55" x="1252" y="520" width="70" height="70" />
-    <MapleTreeSouth id="56" x="3152" y="524" width="70" height="70" />
+    <CherryBlossomNorth id="60" x="9312" y="-48" />
+    <CherryBlossomNorth id="61" x="184" y="-60" />
+    <MapleTreeNorth id="62" x="2028" y="-24" width="70" height="70" />
+    <MapleTreeNorth id="63" x="4308" y="-32" width="70" height="70" />
+    <MapleTreeNorth id="64" x="6440" y="-32" width="70" height="70" />
+    <MapleTreeSouth id="55" x="1252" y="524" width="70" height="70" />
+    <MapleTreeSouth id="56" x="3152" y="532" width="70" height="70" />
     <MapleTreeSouth id="57" x="4924" y="528" width="70" height="70" />
     <MapleTreeSouth id="58" x="5764" y="528" width="70" height="70" />
     <MapleTreeSouth id="66" x="9620" y="524" width="70" height="70" />
@@ -222,16 +222,16 @@
     <Iris id="9" x="3880" y="516" />
     <Tulip id="10" x="3528" y="-20" />
     <Iris id="11" x="1648" y="-24" />
-    <Tulip id="12" x="2912" y="528" />
-    <Tulip id="13" x="2776" y="524" />
+    <Tulip id="12" x="2904" y="508" />
+    <Tulip id="13" x="2776" y="512" />
     <Iris id="14" x="1452" y="-20" />
     <Iris id="15" x="276" y="532" />
     <Iris id="16" x="828" y="528" />
     <Tulip id="17" x="520" y="-20" />
     <Tulip id="18" x="716" y="-20" />
     <LooseBlossoms id="19" x="132" y="24" />
-    <LooseBlossoms id="20" x="320" y="52" />
-    <LooseBlossoms id="21" x="208" y="116" />
+    <LooseBlossoms id="20" x="436" y="64" />
+    <LooseBlossoms id="21" x="256" y="156" />
     <LooseBlossoms id="22" x="68" y="148" />
     <Bamboo id="23" x="6412" y="500" />
     <Bamboo id="24" x="6484" y="508" />

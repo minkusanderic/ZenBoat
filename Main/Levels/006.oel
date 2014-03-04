@@ -215,13 +215,11 @@
     <Pagoda id="0" x="9392" y="328" width="50" height="50" angle="0" />
     <Bamboo id="1" x="9364" y="336" />
     <Bamboo id="2" x="9408" y="336" />
-    <Fish id="3" x="68" y="480" />
-    <Fish id="4" x="128" y="436" />
     <Iris id="5" x="148" y="-32" />
     <Tulip id="6" x="572" y="-36" />
     <Tulip id="7" x="780" y="-40" />
     <Iris id="8" x="292" y="-36" />
-    <CherryBlossomNorth id="9" x="1216" y="-8" />
+    <CherryBlossomNorth id="9" x="1216" y="-32" />
     <Bamboo id="10" x="1336" y="500" />
     <Bamboo id="11" x="1360" y="516" />
     <Bamboo id="12" x="1388" y="504" />
@@ -247,16 +245,17 @@
     <Tulip id="32" x="5004" y="516" />
     <Tulip id="33" x="5536" y="524" />
     <Tulip id="34" x="6136" y="524" />
-    <MapleTreeSouth id="35" x="7300" y="488" width="70" height="70" />
-    <CherryBlossomNorth id="36" x="4688" y="-12" />
+    <MapleTreeSouth id="35" x="7300" y="528" width="70" height="70" />
+    <CherryBlossomNorth id="36" x="4688" y="-40" />
     <Bamboo id="37" x="7804" y="516" />
     <Bamboo id="38" x="8036" y="520" />
     <Bamboo id="39" x="8288" y="520" />
     <Bamboo id="40" x="8524" y="524" />
     <Bamboo id="41" x="8820" y="532" />
-    <CherryBlossomNorth id="42" x="8204" y="-12" />
+    <CherryBlossomNorth id="42" x="8204" y="-48" />
     <TulipNorth id="43" x="8508" y="-28" />
     <TulipNorth id="44" x="9084" y="-36" />
     <TulipNorth id="45" x="7508" y="-28" />
+    <CherryBlossomSouth id="3" x="4000" y="520" />
   </Art>
 </level>

@@ -156,8 +156,8 @@
   </Entities>
   <Art>
     <Pagoda id="0" x="3024" y="216" width="50" height="50" angle="0" />
-    <CherryBlossomNorth id="1" x="1644" y="-20" />
-    <MapleTreeSouth id="2" x="132" y="476" width="70" height="70" />
+    <CherryBlossomNorth id="1" x="1644" y="-28" />
+    <MapleTreeSouth id="2" x="132" y="516" width="70" height="70" />
     <Tulip id="3" x="112" y="-44" />
     <Tulip id="4" x="384" y="-48" />
     <Tulip id="5" x="716" y="-52" />
@@ -167,7 +167,6 @@
     <Bamboo id="9" x="1032" y="508" />
     <Bamboo id="10" x="1500" y="512" />
     <Bamboo id="11" x="1584" y="512" />
-    <Fish id="13" x="3052" y="328" />
     <Tulip id="14" x="1936" y="-28" />
     <Iris id="15" x="2264" y="-32" />
     <Iris id="16" x="1888" y="528" />

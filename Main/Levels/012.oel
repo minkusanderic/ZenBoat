@@ -226,7 +226,7 @@
     <Driftwood id="85" x="7396" y="292" width="100" height="30" angle="0" />
     <Endstage id="86" x="1064" y="272" NextLevel="" />
     <Endstage id="87" x="3036" y="272" NextLevel="" />
-    <MapleTreeSouth id="88" x="168" y="512" width="70" height="70" />
+    <MapleTreeSouth id="88" x="164" y="524" width="70" height="70" />
     <Tulip id="89" x="260" y="-28" />
     <Tulip id="90" x="1764" y="524" />
     <Tulip id="91" x="2800" y="-24" />
@@ -253,15 +253,15 @@
     <Island id="112" x="8868" y="208" width="100" height="100" angle="0" />
     <Pagoda id="113" x="8892" y="228" width="50" height="50" angle="0" />
     <Lillypad id="115" x="9884" y="72" width="50" height="40" angle="0" />
-    <Lillypad id="116" x="9884" y="440" width="50" height="40" angle="0" />
-    <Lillypad id="117" x="9744" y="460" width="50" height="40" angle="0" />
+    <Lillypad id="116" x="9872" y="400" width="50" height="40" angle="0" />
+    <Lillypad id="117" x="9732" y="420" width="50" height="40" angle="0" />
     <Lillypad id="118" x="6292" y="72" width="50" height="40" angle="0" />
-    <Lillypad id="119" x="6284" y="464" width="50" height="40" angle="0" />
-    <Lillypad id="120" x="6404" y="472" width="50" height="40" angle="0" />
+    <Lillypad id="119" x="6284" y="428" width="50" height="40" angle="0" />
+    <Lillypad id="120" x="6404" y="436" width="50" height="40" angle="0" />
     <CherryBlossomNorth id="121" x="1672" y="-40" />
     <CherryBlossomNorth id="122" x="9272" y="-40" />
-    <MapleTreeSouth id="123" x="8236" y="520" width="70" height="70" />
-    <MapleTreeSouth id="124" x="4928" y="516" width="70" height="70" />
+    <MapleTreeSouth id="123" x="8236" y="524" width="70" height="70" />
+    <MapleTreeSouth id="124" x="4928" y="524" width="70" height="70" />
     <Koi id="114" x="9064" y="272" angle="0" />
   </Entities>
   <Art />

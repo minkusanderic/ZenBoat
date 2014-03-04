@@ -144,7 +144,6 @@
     <Content Include="Assets\LondonsSong.mp3" />
     <Content Include="Assets\Crane01.mdx" />
     <Content Include="Assets\FloatingLantern01.mdx" />
-    <Content Include="Assets\Torii.mdx" />
     <Content Include="Assets\Torii2.mdx" />
     <Content Include="Assets\whirlpool.png" />
     <Content Include="Assets\Log.mdx" />
@@ -188,7 +187,6 @@
     <Content Include="Assets\lilypad2.mdx" />
     <Content Include="Assets\Log2.mdx" />
     <Content Include="Assets\Iris.mdx" />
-    <Content Include="Assets\Tulip.mdx" />
     <Content Include="Assets\instructions.png" />
     <Content Include="Assets\Bamboo3.mdx" />
     <Content Include="Assets\CherryBlossomN.mdx" />
@@ -205,7 +203,6 @@
     <Content Include="Assets\GreyRock.mdx" />
     <Content Include="resources\Origami Kami.png" />
     <Content Include="Assets\geyser_water.png" />
-    <Content Include="Assets\KoifishOriginal.mdx" />
     <Content Include="Assets\koifish.mdx" />
     <Content Include="Assets\RedRockB.mdx" />
     <Content Include="Assets\Pagoda.mdx" />
@@ -223,7 +220,6 @@
     <Content Include="Assets\story4.png" />
     <Content Include="Assets\story5.png" />
     <Content Include="Assets\irisbundle.mdx" />
-    <Content Include="Assets\MoreColorsTulips.mdx" />
     <Content Include="Assets\LooseBlossomsC.mdx" />
     <Content Include="Assets\shader.png" />
     <Content Include="Assets\shader2.png" />

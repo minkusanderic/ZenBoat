@@ -22,7 +22,7 @@ namespace Main
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/MapleTreeSouthLeaves.mdx"));
 			m.layer = "trees";
 			m.scale = new Vector3(8f , 8f, 8f);
-			//m2.scale = new Vector3(8f, 8f, 8f);
+			m2.scale = new Vector3(8f, 8f, 8f);
 			ent.tag("tree");
 		}
 	}

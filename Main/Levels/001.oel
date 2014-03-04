@@ -140,16 +140,16 @@
   <Entities>
     <Boat id="0" x="164" y="288" angle="0" />
     <Torii id="1" x="812" y="284" NextLevel="002.oel" />
-    <Crane id="2" x="612" y="492" />
+    <Crane id="2" x="612" y="484" />
   </Entities>
   <Art>
     <MapleTreeSouth id="0" x="580" y="540" width="70" height="70" />
-    <Fish id="1" x="108" y="396" />
-    <CherryBlossomNorth id="2" x="140" y="-4" />
+    <CherryBlossomNorth id="2" x="140" y="-56" />
     <LooseBlossoms id="3" x="80" y="32" />
     <LooseBlossoms id="4" x="104" y="64" />
     <LooseBlossoms id="5" x="40" y="64" />
     <LooseBlossoms id="6" x="248" y="28" />
     <LooseBlossoms id="7" x="308" y="32" />
+    <Koi id="1" x="168" y="408" angle="0" />
   </Art>
 </level>

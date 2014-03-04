@@ -138,45 +138,33 @@
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Forward>
   <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="0" x="136" y="288" angle="0" />
-    <Torii id="1" x="1768" y="272" NextLevel="003.oel" />
-    <Crane id="2" x="464" y="232" />
-    <Crane id="3" x="756" y="316" />
-    <Crane id="4" x="1208" y="148" />
-    <Crane id="5" x="1508" y="332" />
-    <Crane id="6" x="584" y="304" />
-    <Crane id="7" x="876" y="192" />
-    <Crane id="8" x="1348" y="244" />
-    <Rock id="9" x="652" y="140" width="74" height="82" angle="0" />
-    <Rock id="10" x="1100" y="436" width="50" height="50" angle="0" />
-    <Rock id="11" x="1048" y="360" width="66" height="62" angle="0.2617994" />
-    <Rock id="12" x="1132" y="356" width="50" height="50" angle="0" />
-    <Crane id="13" x="356" y="492" />
-    <Crane id="14" x="1332" y="24" />
-    <MapleTreeNorth id="20" x="700" y="12" width="70" height="70" />
-    <Koi id="15" x="1300" y="356" angle="0" />
-    <Island id="16" x="968" y="140" width="120" height="120" angle="0" />
-    <Bamboo id="17" x="996" y="160" />
-    <Bamboo id="18" x="996" y="172" />
-    <Pagoda id="19" x="968" y="164" width="50" height="50" angle="0" />
+    <Boat id="0" x="128" y="292" angle="0" />
+    <Torii id="1" x="1804" y="256" NextLevel="" />
+    <Island id="2" x="992" y="144" width="100" height="100" angle="0" />
+    <Bamboo id="3" x="1016" y="148" />
+    <Bamboo id="4" x="1008" y="140" />
+    <Pagoda id="5" x="992" y="168" width="50" height="50" angle="0" />
+    <MapleTreeSouth id="6" x="392" y="516" width="70" height="70" />
+    <MapleTreeNorth id="7" x="820" y="-36" width="70" height="70" />
+    <Rock id="8" x="668" y="108" width="86" height="98" angle="0" />
+    <Rock id="9" x="1192" y="352" width="50" height="50" angle="0" />
+    <Rock id="10" x="1108" y="396" width="78" height="66" angle="0" />
+    <Rock id="11" x="1212" y="424" width="50" height="50" angle="0" />
+    <Koi id="12" x="1368" y="360" angle="0" />
+    <Crane id="13" x="368" y="188" />
+    <Crane id="14" x="528" y="304" />
+    <Crane id="15" x="780" y="336" />
+    <Crane id="16" x="916" y="256" />
+    <Crane id="17" x="416" y="476" />
+    <Crane id="18" x="1352" y="36" />
+    <Crane id="19" x="1204" y="132" />
+    <Crane id="20" x="1408" y="188" />
+    <Crane id="21" x="1600" y="328" />
+    <CherryBlossomNorth id="22" x="1336" y="-56" />
+    <TulipNorth id="23" x="376" y="-56" />
+    <TulipNorth id="24" x="440" y="-44" />
+    <TulipNorth id="25" x="320" y="-40" />
+    <Pagoda id="26" x="160" y="364" width="50" height="50" angle="0" />
   </Entities>
-  <Art>
-    <CherryBlossomNorth id="0" x="1328" y="-52" />
-    <MapleTreeSouth id="1" x="316" y="516" width="70" height="70" />
-    <Lillypad id="2" x="1656" y="544" width="50" height="40" angle="0" />
-    <Bamboo id="5" x="640" y="516" />
-    <Bamboo id="6" x="616" y="540" />
-    <Bamboo id="7" x="660" y="556" />
-    <Bamboo id="8" x="672" y="536" />
-    <Bamboo id="9" x="624" y="520" />
-    <Tulip id="3" x="516" y="520" />
-    <Iris id="4" x="520" y="-16" />
-    <Iris id="11" x="364" y="-16" />
-    <Iris id="12" x="196" y="-16" />
-    <Iris id="13" x="820" y="520" />
-    <Iris id="14" x="920" y="520" />
-    <Tulip id="15" x="280" y="-16" />
-    <Tulip id="16" x="112" y="-12" />
-    <Tulip id="17" x="440" y="-16" />
-  </Art>
+  <Art />
 </level>

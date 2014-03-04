@@ -215,22 +215,23 @@
     <Lillypad id="37" x="64" y="424" width="50" height="40" angle="0" />
     <Lillypad id="75" x="152" y="472" width="50" height="40" angle="0" />
     <Lillypad id="76" x="104" y="56" width="50" height="40" angle="0" />
-    <Lillypad id="77" x="2096" y="492" width="50" height="40" angle="0" />
+    <Lillypad id="77" x="2096" y="444" width="50" height="40" angle="0" />
     <Lillypad id="78" x="3480" y="76" width="50" height="40" angle="0" />
     <Lillypad id="79" x="3576" y="96" width="50" height="40" angle="0" />
     <Lillypad id="80" x="5460" y="56" width="50" height="40" angle="0" />
     <Lillypad id="81" x="7152" y="60" width="50" height="40" angle="0" />
     <Lillypad id="82" x="7180" y="472" width="50" height="40" angle="0" />
     <Lillypad id="83" x="7188" y="124" width="50" height="40" angle="0" />
+    <Lillypad id="84" x="2184" y="420" width="50" height="40" angle="0" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="364" y="-48" />
     <Tulip id="2" x="912" y="-52" />
     <Tulip id="3" x="1492" y="520" />
-    <Iris id="4" x="2284" y="-48" />
-    <Iris id="5" x="2392" y="-48" />
-    <Iris id="6" x="2488" y="-48" />
-    <Iris id="7" x="2580" y="-48" />
+    <Iris id="4" x="2280" y="-36" />
+    <Iris id="5" x="2388" y="-36" />
+    <Iris id="6" x="2484" y="-36" />
+    <Iris id="7" x="2576" y="-36" />
     <CherryBlossomNorth id="8" x="3696" y="-64" />
     <Tulip id="12" x="4972" y="-40" />
     <Tulip id="13" x="5204" y="-40" />
@@ -244,13 +245,13 @@
     <Bamboo id="10" x="2096" y="60" />
     <Bamboo id="11" x="2096" y="72" />
     <Bamboo id="19" x="2144" y="68" />
-    <MapleTreeSouth id="20" x="1716" y="520" width="70" height="70" />
+    <MapleTreeSouth id="20" x="1712" y="536" width="70" height="70" />
     <Bamboo id="21" x="3064" y="504" />
     <Bamboo id="22" x="3116" y="504" />
     <Bamboo id="23" x="3092" y="504" />
     <Bamboo id="24" x="3080" y="508" />
     <Bamboo id="25" x="3108" y="512" />
-    <MapleTreeSouth id="26" x="5520" y="524" width="70" height="70" />
+    <MapleTreeSouth id="26" x="5516" y="532" width="70" height="70" />
     <CherryBlossomNorth id="27" x="6840" y="-44" />
   </Art>
 </level>
