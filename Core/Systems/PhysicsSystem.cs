@@ -91,7 +91,7 @@ namespace Core
 				body.body.Rotation = Vector2.Angle(Vector2.UnitX, body.parent.Transform.Rotation);
 			}
 			
-			physics.SimDt = Timer.DeltaTime;
+			//physics.SimDt = Timer.DeltaTime;
 			physics.Simulate();
 #if !DEBUG
 			physics.Simulate(); //Uncomment if running on PS Vita
