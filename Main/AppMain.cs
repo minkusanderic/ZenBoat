@@ -17,16 +17,14 @@ namespace Main
 	
 		public static void Main (string[] args)
 		{
+			
+			
 			Timer.Init();
+			
+			
 			SaveGameManager.init();
 			
-			MenuLoader.Load();
-			
-			//LevelLoader.BootStrap();
-			LevelLoader.Load("/Application/Levels/001.oel");
-			CollectibleManager.Init();
-			
-			
+						
 			/// NOTE: any entites created here will not be created again when a new level is loaded after the first level, but they will be destroy!
 			/// For any entities that need to be created each level, make them in the Boat prefab, since every level is gaurenteed to have a boat
 			var background_music = SceneManager.Instance.createEntity("BG_Music");
@@ -35,11 +33,13 @@ namespace Main
 			bgmc.loop(true);
 			
 			var soundeffect_music = SceneManager.Instance.createEntity("SFX_Music");
+			CollectibleManager.Init();
+			while ( true )
+			{
+			MenuLoader.Load();
+			//LevelLoader.BootStrap();
+			LevelLoader.Load("/Application/Levels/001.oel");
 			//soundeffect_music.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
-			
-			
-			
-			
 			SceneManager.Instance.currentState = GameState.RUNNING;
 			//BasicEmitter be = new BasicEmitter();
 			while(true)
@@ -48,13 +48,17 @@ namespace Main
 				bool game_end = SceneManager.Instance.Update();
 				//while(Timer.ElapsedMilliseconds < (1/30.0f)*100.0f){}
 				Timer.EndFrame();
-				Console.WriteLine("FPS: " + Timer.AverageFrameRate);
+				//Console.WriteLine("FPS: " + Timer.AverageFrameRate);
 				//be.Update();
 				if(!game_end)
 				{
 					//if the level is over, then load the bootstrapper again
-					LevelLoader.BootStrap();	
+					//LevelLoader.BootStrap();	
+						SceneManager.Instance.DestroyAll();
+						SceneManager.Instance.Update();
+					break;
 				}
+			}
 			}
 			
 		}

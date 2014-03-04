@@ -33,6 +33,13 @@ namespace Main
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
+														Console.WriteLine ( SceneManager.Instance.GetCurrentLevelName() );
+														if ( SceneManager.Instance.GetCurrentLevelName() == "/Application/Levels/016.oel" )
+														{
+															// do something cos the game is over
+															// go to credits/menu
+															SceneManager.Instance.currentState = GameState.STOPPED;
+														}
 														Console.WriteLine ("You've reached the Torii Gate - Level Over!");		
 														//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/Assets/Sound/SFX/LevelEnd.wav" ) );
 														//sound.PlaySound();

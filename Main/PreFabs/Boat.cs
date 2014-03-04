@@ -105,11 +105,11 @@ namespace Main
 			var multi = SceneManager.Instance.createEntity("multi");
 			multi.Transform.Position.X = 832.0f;
 			multi.Transform.Position.Y = 1.0f;
-			var multiLabel = multi.attachComponent(new LabelComponent("Muliplier: x"));
+			//var multiLabel = multi.attachComponent(new LabelComponent("Muliplier: x"));
 			
 			multi.attachComponent(new SimpleController(
 					() => {
-						multiLabel.label.Text = "Muliplier: x" + CollectibleManager.multiplier;
+						//multiLabel.label.Text = "Muliplier: x" + CollectibleManager.multiplier;
 						//label.label.Text = "Count: " + CollectibleManager.m_iScore;
 			}));
 			

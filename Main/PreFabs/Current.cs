@@ -61,7 +61,7 @@ namespace Main
 			SimpleTrigger trigger = new SimpleTrigger( SceneManager.Instance.Select("pushable"),
 			                                          (t) =>
 			{
-				Console.WriteLine("TRIGGER");
+				//Console.WriteLine("TRIGGER");
 				Entity pushable = t;
 				pushable.FindComponent<RigidBody>().applyForce(200*new Vector2((float)Math.Cos(angle),-(float)Math.Sin(angle)));
 				

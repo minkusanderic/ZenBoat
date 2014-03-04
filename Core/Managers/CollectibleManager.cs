@@ -62,30 +62,28 @@ namespace Core
 				touched = false;
 				//multiplier = 1;
 			}
-			stageScore += ( worth * multiplier++ );	// take the crane value
+			stageScore += ( worth );	// take the crane value
 			PrintScore();
 			
-			if ( multiplier > maxMultiplier )
-				multiplier = maxMultiplier;
-			SaveGameManager.toRespawn.Add( ent );
+			//SaveGameManager.toRespawn.Add( ent );
 		
 		}
 		
 		public static void SetLevelScore()
 		{
-			levelScore += stageScore;
-			stageScore = 0;
+			//levelScore += stageScore;
+			//stageScore = 0;
 		}
 		/// <summary>
 		/// Clears the stage score which is inbetween each checkpoint
 		/// </summary>
 		public static void ClearStageScore()
 		{
-			stageScore = 0; // because you died and need to respawn the cranes
+			//stageScore = 0; // because you died and need to respawn the cranes
 		}
 		public static void PrintScore()
 		{
-			Console.WriteLine("Level Score: " + levelScore + "\tStage Score: " + stageScore);	
+			Console.WriteLine("Score: " + stageScore);	
 		}
 	}
 }
