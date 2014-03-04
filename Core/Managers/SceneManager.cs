@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Environment;
 
+public enum GameState {PAUSED, RUNNING, STOPPED};
+
 namespace Core
 {
 	public class SceneManager
 	{
 		
 		public List<Entity> entities = new List<Entity>();
+		public GameState currentState = GameState.STOPPED;
 		
 		private string currentLevelName = "";
 		public string GetCurrentLevelName()
@@ -77,13 +80,25 @@ namespace Core
 				return false;
 			}
 			
-			systems[typeof(TouchSystem)].Update();
-			systems[typeof(ControllerSystem)].Update();
-			systems[typeof(PhysicsSystem)].Update();
-			systems[typeof(WaterSystem)].Update();
-			systems[typeof(GraphicsSystem)].Update();
-			systems[typeof(ParticleSystem)].Update();
-			return true;
+			switch (this.currentState)
+			{
+			case GameState.RUNNING:
+				systems[typeof(TouchSystem)].Update();
+				systems[typeof(ControllerSystem)].Update();
+				systems[typeof(PhysicsSystem)].Update();
+				systems[typeof(WaterSystem)].Update();
+				systems[typeof(GraphicsSystem)].Update();
+				systems[typeof(ParticleSystem)].Update();
+				return true;
+			case GameState.PAUSED:
+				systems[typeof(GraphicsSystem)].Update();
+				return true;
+			case GameState.STOPPED:
+				return false;
+			default:
+				return false;
+			}
+			return false;
 		}
 		
 	public Dictionary<Type, CoreSystem> systems;

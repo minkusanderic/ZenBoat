@@ -13,6 +13,13 @@ namespace Menu
             : base(null, null)
         {
             InitializeWidget();
+			continueButton.ButtonAction += HandleContinueButtonButtonAction;
+        }
+
+        void HandleContinueButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	Core.SceneManager.Instance.currentState = GameState.RUNNING;
+			this.Hide();
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Main
 			
 			
 			
-			
+			SceneManager.Instance.currentState = GameState.RUNNING;
 			//BasicEmitter be = new BasicEmitter();
 			while(true)
 			{

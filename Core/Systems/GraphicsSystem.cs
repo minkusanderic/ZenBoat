@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Sce.PlayStation.Core.Graphics;
 using Sce.PlayStation.Core.Imaging;
+using Sce.PlayStation.Core.Input;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Environment ;
 using Sce.PlayStation.HighLevel.Model ;
@@ -88,7 +89,7 @@ namespace Core
 		
 		public override void Update() // Render here
 		{	
-			UISystem.SetScene(scene, null);
+			//UISystem.SetScene(scene, null);
 			//Timer.StartFrame();
 			this.camera_pos = UpdateCameraPosition();
 			cameraLastPosition = this.camera_pos;
@@ -191,9 +192,10 @@ namespace Core
 //			
 			
 			((ParticleSystem)SceneManager.Instance.getSystem(typeof(ParticleSystem))).Render(this, proj, view);
-			graphics.Disable( EnableMode.CullFace ) ;
-			graphics.Disable( EnableMode.DepthTest ) ;
+			//graphics.Disable( EnableMode.CullFace ) ;
+			//graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
+			UISystem.Update(Touch.GetData(0)); 
 			UISystem.Render();
 			graphics.SwapBuffers();
 			//Timer.EndFrame();
