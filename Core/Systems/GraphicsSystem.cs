@@ -123,6 +123,7 @@ namespace Core
 			parameters.SetFogRange( -1.0f, 10000.0f );
 			parameters.SetFogColor( ref fogColor );
 	
+			Profiler.Begin("Render Scene");
 			graphics.SetViewport( 0, 0, graphics.Screen.Width, graphics.Screen.Height ) ;
 			graphics.SetClearColor( 0.0f, 0.5f, 1.0f, 0.0f ) ;
 			graphics.Clear() ;
@@ -159,9 +160,10 @@ namespace Core
 					Draw_Model(model);
 				}
 			}
-
-			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view, this.camera_pos);
 			
+			Profiler.Begin("Render Water");
+			((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).Render(this, proj, view, this.camera_pos);
+			Profiler.End();
 
 			
 			if(model_layers.ContainsKey("front"))
@@ -195,9 +197,14 @@ namespace Core
 			//graphics.Disable( EnableMode.CullFace ) ;
 			//graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
+			Profiler.Begin("Update UI");
 			UISystem.Update(Touch.GetData(0)); 
 			UISystem.Render();
+			Profiler.End();
+			Profiler.End();
+			Profiler.Begin("Swap Buffers");
 			graphics.SwapBuffers();
+			Profiler.End();
 			//Timer.EndFrame();
 		}
 		

@@ -93,6 +93,7 @@
     <Compile Include="Components\LabelComponent.cs" />
     <Compile Include="Components\CurrentModifier.cs" />
     <Compile Include="Utils\Globals.cs" />
+    <Compile Include="Utils\Profiler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />

@@ -56,7 +56,11 @@ namespace Main
 					
 				case AppState.GAME:
 					Core.Timer.StartFrame();
+					Core.Profiler.StartFrame();
+					Core.Profiler.Begin("Update");
 					bool game_end = SceneManager.Instance.Update();	
+					Core.Profiler.End();
+					Core.Profiler.EndFrame();
 					Core.Timer.EndFrame();
 					if(!game_end)
 					{

@@ -83,12 +83,24 @@ namespace Core
 			switch (this.currentState)
 			{
 			case GameState.RUNNING:
+				Profiler.Begin("Touch System");
 				systems[typeof(TouchSystem)].Update();
+				Profiler.End();
+				Profiler.Begin("Controller System");
 				systems[typeof(ControllerSystem)].Update();
+				Profiler.End();
+				Profiler.Begin("Physics System");
 				systems[typeof(PhysicsSystem)].Update();
+				Profiler.End();
+				Profiler.Begin("Water System");
 				systems[typeof(WaterSystem)].Update();
+				Profiler.End();
+				Profiler.Begin("Graphics System");
 				systems[typeof(GraphicsSystem)].Update();
+				Profiler.End();
+				Profiler.Begin("Particle System");
 				systems[typeof(ParticleSystem)].Update();
+				Profiler.End();
 				return true;
 			case GameState.PAUSED:
 				systems[typeof(GraphicsSystem)].Update();
