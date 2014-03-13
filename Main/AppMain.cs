@@ -7,58 +7,70 @@ using Sce.PlayStation.HighLevel.Model;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.Core.Input;
 
+using System.Threading;
+
 using Core;
 
 namespace Main
 {
+	public enum AppState { INITIALIZE, MENU, LOADING, GAME};
+	
+	
+		
 	public class AppMain
 	{
 		public static bool isStart = false;
 	
+		public static AppState current_state;
+		
 		public static void Main (string[] args)
-		{
-			
-			
-			Timer.Init();
-			
-			
-			SaveGameManager.init();
-			
-						
-			/// NOTE: any entites created here will not be created again when a new level is loaded after the first level, but they will be destroy!
-			/// For any entities that need to be created each level, make them in the Boat prefab, since every level is gaurenteed to have a boat
-			var background_music = SceneManager.Instance.createEntity("BG_Music");
-			BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/Sound/gameBackground.mp3") );
-			bgmc.setVolume(1f);
-			bgmc.loop(true);
-			
-			var soundeffect_music = SceneManager.Instance.createEntity("SFX_Music");
-			CollectibleManager.Init();
-			while ( true )
+		{			
+			current_state = AppState.INITIALIZE;
+			while (true)
 			{
-			MenuLoader.Load();
-			//LevelLoader.BootStrap();
-			LevelLoader.Load("/Application/Levels/001.oel");
-			//soundeffect_music.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
-			SceneManager.Instance.currentState = GameState.RUNNING;
-			//BasicEmitter be = new BasicEmitter();
-			while(true)
-			{
-				Timer.StartFrame();
-				bool game_end = SceneManager.Instance.Update();
-				//while(Timer.ElapsedMilliseconds < (1/30.0f)*100.0f){}
-				Timer.EndFrame();
-				//Console.WriteLine("FPS: " + Timer.AverageFrameRate);
-				//be.Update();
-				if(!game_end)
+				//Depending on which state the application is in, do different stuff. 
+				switch(current_state)
 				{
-					//if the level is over, then load the bootstrapper again
-					//LevelLoader.BootStrap();	
+				case AppState.INITIALIZE:
+					Core.Timer.Init();
+					SaveGameManager.init();
+					CollectibleManager.Init();
+					current_state = AppState.MENU;
+					break;
+					
+				case AppState.MENU:
+					var background_music = SceneManager.Instance.createEntity("BG_Music");
+					BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/Sound/gameBackground.mp3") );
+					bgmc.setVolume(1f);
+					bgmc.loop(true);
+					
+					MenuLoader.Load(); //Will block until the player picks the play button
+					current_state = AppState.LOADING;
+					break;
+					
+				case AppState.LOADING:					
+					LevelLoader.Load(Globals.staring_level);
+					SceneManager.Instance.currentState = GameState.RUNNING;
+					current_state = AppState.GAME;
+					break;
+					
+				case AppState.GAME:
+					Core.Timer.StartFrame();
+					bool game_end = SceneManager.Instance.Update();	
+					Core.Timer.EndFrame();
+					if(!game_end)
+					{
+						//if the level is over, then load the bootstrapper again	
 						SceneManager.Instance.DestroyAll();
 						SceneManager.Instance.Update();
+						current_state = AppState.MENU;
+					}
+					break;
+					
+				default:
+					Console.WriteLine("What are you doing here! Get back to Work!");
 					break;
 				}
-			}
 			}
 			
 		}
