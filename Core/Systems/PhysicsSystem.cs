@@ -92,7 +92,7 @@ namespace Core
 			}
 			
 			//physics.SimDt = Timer.DeltaTime;
-			physics.SimDt = 1.0f / Globals.frame_per_second;
+			physics.SimDt = 1.0f / Globals.frames_per_second;
 			physics.Simulate();
 			foreach(var body in this.bodies)
 			{
