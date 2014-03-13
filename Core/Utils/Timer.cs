@@ -56,9 +56,8 @@ namespace Core
 	{
 		prevEndTick = stopwatch.ElapsedTicks ;
 		
-		while((stopwatch.ElapsedMilliseconds - start_frame) < ((1.0f/Globals.frame_per_second) * 1000.0f))
+		while((stopwatch.ElapsedMilliseconds - start_frame) < ((1.0f/Globals.frames_per_second) * 1000.0f))
 		{
-				Console.WriteLine("Blocking!");
 			//block until we get our desired frame rate
 		}
 	}
