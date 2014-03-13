@@ -50,7 +50,7 @@ namespace Core
 			UISystem.Initialize(graphics);
 			UISystem.SetScene(scene, null);
 		
-			toon = new Texture2D("/Application/Assets/toon.png", false);
+			toon = new Texture2D("/Application/Assets/toon.png", Globals.use_mipmaps);
 			
 			//model = new BasicModel(	"/Application/resources/Cube.mdx" , 0); 	
 		}
