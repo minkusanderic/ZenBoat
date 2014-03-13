@@ -28,6 +28,7 @@ namespace Core
 		public static void StartFrame()
 		{
 			var currStartTick = stopwatch.ElapsedTicks ;
+			start_frame = stopwatch.ElapsedMilliseconds;
 			FrameCount ++ ;
 			if ( FrameCount != 0 ) {
 				DeltaTime = (float)( currStartTick - prevStartTick ) / (float)Stopwatch.Frequency ;
@@ -54,6 +55,12 @@ namespace Core
 	public static void EndFrame()
 	{
 		prevEndTick = stopwatch.ElapsedTicks ;
+		
+		while((stopwatch.ElapsedMilliseconds - start_frame) < ((1.0f/Globals.frame_per_second) * 1000.0f))
+		{
+				Console.WriteLine("Blocking!");
+			//block until we get our desired frame rate
+		}
 	}
 
 	//  Stopwatch properties
@@ -93,6 +100,8 @@ namespace Core
 	static long averageTimerStart ;
 	static int averageTimerFrame ;
 	static float averageTimerTime ;
+		
+	static long start_frame;
 }
 
 } // end Timer

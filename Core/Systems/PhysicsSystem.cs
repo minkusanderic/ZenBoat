@@ -92,10 +92,8 @@ namespace Core
 			}
 			
 			//physics.SimDt = Timer.DeltaTime;
+			physics.SimDt = 1.0f / Globals.frame_per_second;
 			physics.Simulate();
-#if !DEBUG
-			physics.Simulate(); //Uncomment if running on PS Vita
-#endif
 			foreach(var body in this.bodies)
 			{
 				if ( !body.parent.Enabled ) continue;
