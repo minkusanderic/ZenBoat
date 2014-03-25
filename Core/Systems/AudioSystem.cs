@@ -24,13 +24,22 @@ namespace Core
 			Whirlpool,
 			WaterDrop
 		};
+		string fileLastPlayed;
 		public void PlaySound(string file_name)
 		{
 			sound = null;
 			if ( player != null ) player.Stop();
-			sound = new Sound(file_name);
-			player = sound.CreatePlayer();
-			player.Play();
+			if ( file_name == fileLastPlayed )
+			{
+				player.Play();
+			}
+			else
+			{	
+				fileLastPlayed = file_name;
+				sound = new Sound(file_name);
+				player = sound.CreatePlayer();
+				player.Play();
+			}
 		}
 		public override void attachComponent (IComponent comp)
 		{

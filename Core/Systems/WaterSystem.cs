@@ -85,7 +85,9 @@ namespace Core
 							
 				Matrix4 world = Matrix4.Identity ;
 				
+				Profiler.Begin("Rendering Flow Map");
 				var flow_map = RenderFlowMap(g);
+				Profiler.End();
 				
 				
 				
@@ -106,6 +108,7 @@ namespace Core
 				//program.Parameters.SetWorldMatrix(0, ref world);
 			
 				
+				Profiler.Begin("Setting Radials");
 				foreach(var rad in this.radials)
 				{
 					Vector3 radial_vec = new Vector3(rad.parent.Transform.Position.X, rad.parent.Transform.Position.Y, rad.time);
@@ -121,6 +124,7 @@ namespace Core
 					}
 					
 				}
+				Profiler.End();
 				
 				for(int i = 0; i < v.Length; i++)
 					{
@@ -158,33 +162,53 @@ namespace Core
 					time = 0.0f;
 				//g.graphics.SetTexture(0, height_map);
 				
+				Profiler.Begin("Setting Textures");
 				g.graphics.SetTexture(0, stars);
 				g.graphics.SetTexture(1, normal_map);
 				g.graphics.SetTexture(2, flow_map);
+				Profiler.End();
 				
+				Profiler.Begin("Setting Buffers");
 				g.graphics.SetVertexBuffer(0, water.vb);
 				g.graphics.SetShaderProgram(water.shaderProgram);
+				Profiler.End();
 				
+				Profiler.Begin("Drawing Water");
 				g.graphics.DrawArrays(DrawMode.Triangles, 0, water.vb.IndexCount);
+				Profiler.End();
 				//flow_map.Dispose();
 				//height_map.Dispose();
 			}
 		}
 		
 		private Texture2D flow_map = null; 
+		private FrameBuffer off_screen = null;
 		private Texture2D RenderFlowMap(GraphicsSystem g)
 		{
 			    float water_width = 960f + (300f * 2);
 				float water_height = 544f + (168.75f * 2);
-			    FrameBuffer off_screen = new FrameBuffer();
+			
+				
+			 	
+				
+			
 				if ( flow_map == null )
 				{
+					Profiler.Begin("Creating Framebuffer");
+					off_screen = new FrameBuffer();
+					Profiler.End();
+					Profiler.Begin("Create Off Screen Texture");
 					flow_map = new Texture2D(512, 512, false, PixelFormat.Rgba, PixelBufferOption.Renderable);
+					Profiler.End();
+				
+					Profiler.Begin("Setting Color Target");
+					off_screen.SetColorTarget(flow_map, 0);
+					Profiler.End();
 			    }
 				else
 				{
 				}
-				off_screen.SetColorTarget(flow_map, 0);
+				
 				//height_map.SetPixels(0, p, PixelFormat.Rgba);
 				
 				//var cel_shading = new Texture2D(new byte[] {}, false);
@@ -195,7 +219,7 @@ namespace Core
 			Matrix4 view = Matrix4.LookAt(  new Vector3(g.camera_pos.X, 544/2, 3.0f),
 											new Vector3(g.camera_eye.X, 544/2, 0.0f),
 											new Vector3( 0.0f, 1.0f, 0.0f ) ) ;
-			
+			Profiler.Begin("Setting Viewport");
 				off_screen.SetDepthTarget(null);
 				
 				g.graphics.SetFrameBuffer(off_screen);
@@ -207,10 +231,11 @@ namespace Core
 				//Sample.SampleDraw.FillCircle(0xFFFFFFFF, 100, 100, 1000);
 				//SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
 				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
-				
+			Profiler.End();
 			
 			foreach(var sprite in modifiers)
 			{
+				Profiler.Begin("Render Water Modifier");
 				if ( !sprite.parent.Enabled ) continue;
 				if ( Math.Abs(sprite.parent.Transform.Position.X - g.camera_pos.X) > 1000) continue;
 				Matrix4 world = Matrix4.Identity ;
@@ -236,15 +261,19 @@ namespace Core
 				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
 				g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
-				
+				Profiler.End();
 			}
 			
 
 			
 ///				
-				off_screen.Dispose();
+				Profiler.Begin("Disposing Frame Buffer");
+				//off_screen.Dispose();
+				
+			
 				g.graphics.SetFrameBuffer(null);
 			
+			Profiler.End();
 			g.graphics.SetViewport( 0, 0, g.graphics.Screen.Width, g.graphics.Screen.Height ) ;
 			return flow_map;
 		}

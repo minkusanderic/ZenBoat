@@ -44,6 +44,7 @@ namespace Core
 				//sound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") ) ;
 			int i = CollectibleManager.multiplier;
 			if ( i < 1 || i > 5 ) i = 1;	// some crappy error checking..
+				
 			((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/Sound/SFX/Crane" + i + ".wav");
 			//sound = sounds[i-1];
 			//sound.SetSoundFromFile("/Application/Assets/Sound/SFX/Crane" + i + ".wav");

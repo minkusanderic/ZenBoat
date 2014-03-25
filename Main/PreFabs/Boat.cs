@@ -133,8 +133,7 @@ namespace Main
 					() => {
 						if ((GamePad.GetData(0).Buttons & GamePadButtons.Cross) != 0)
 					{
-							SceneManager.Instance.DestroyAll();
-							LevelLoader.Load(LevelLoader.selected_filename);
+							SceneManager.Instance.currentState = GameState.STOPPED;
 					}
 				}));
 			

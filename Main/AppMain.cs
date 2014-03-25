@@ -36,13 +36,16 @@ namespace Main
 					SaveGameManager.init();
 					CollectibleManager.Init();
 					current_state = AppState.MENU;
-					break;
 					
-				case AppState.MENU:
 					var background_music = SceneManager.Instance.createEntity("BG_Music");
 					BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/Sound/gameBackground.mp3") );
 					bgmc.setVolume(1f);
 					bgmc.loop(true);
+					
+					break;
+					
+				case AppState.MENU:
+					
 					
 					MenuLoader.Load(); //Will block until the player picks the play button
 					current_state = AppState.LOADING;
@@ -62,6 +65,8 @@ namespace Main
 					Core.Profiler.End();
 					Core.Profiler.EndFrame();
 					Core.Timer.EndFrame();
+					
+					Console.WriteLine("FPS:" + Core.Timer.AverageFrameRate.ToString());
 					if(!game_end)
 					{
 						//if the level is over, then load the bootstrapper again	
