@@ -13,10 +13,7 @@ void main(
 		   	
 			float4 out Color	: COLOR	
 			)
-{
-	//v_Normal.y = -v_Normal.y;
-	float3 blue = float3(0.0f, 0.0f, 1.0f);
-	
+{	
 	float2 swirl = tex2D(flow_Texture, float2(1.0f,1.0f) - v_TexCoord).xy * 2.0f - 1.0f;
 	
 	float2 sampleNorm1 = v_TexCoord.xy + swirl * time;
@@ -34,17 +31,11 @@ void main(
 	
 	float3 finalNorm = normalize(v_Normal + lerpNorm);
 	float4 tmpColor = tex2D( s_Texture,v_TexCoord + finalNorm.xy);
-	//tmpColor.xy *= float2(.7f, .7f);
 	tmpColor.w = .7f;
 	Color = tmpColor;
 	
-	Color.xyz = floor( 10 * (pow(Color.xyz, 1+length(swirl.xy))))/10;
+	Color.xyz = floor( 10 * (pow(Color.xyz, 1+length(swirl.xy))))* .1;
 	
-	Color.xyz += v_Position_Tex.z/20;
-	//Color.xyz = Color.xyz * pow(max(0, dot(v_Normal, normalize(-v_Eye + float3(0.0f, 0.0f, 1.0f)))), 10.0f);
-	//Color = float4(0,0,0,1);
-	//Color.xyz = v_Color.xyz;
-	//Color = float4(v_Normal.x/2 + .5, v_Normal.y/2 + .5, 0, 1.0f);
-	//Color = v_Color;
-	//Color = tex2D(flow_Texture, float2(1,1) - v_TexCoord);
+	Color.xyz += v_Position_Tex.z * .05;
+	
 }

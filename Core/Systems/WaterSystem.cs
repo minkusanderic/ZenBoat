@@ -75,7 +75,7 @@ namespace Core
 		//private Texture2D height_map = new Texture2D("/Application/resources/test.png", false);
 		private Texture2D normal_map = new Texture2D("/Application/Assets/water_normal.png", false);
 		//private Texture2D swirl_map = new Texture2D("/Application/Assets/vectorswirl.png", false);
-		private Vector3[] v = new Vector3[30];
+		private Vector3[] v = new Vector3[5];
 		private int circular_buffer_index = 0;
 		public void Render(GraphicsSystem g, Matrix4 proj, Matrix4 view, Vector3 Eye)
 		{
@@ -109,30 +109,22 @@ namespace Core
 			
 				
 				Profiler.Begin("Setting Radials");
-				foreach(var rad in this.radials)
+				for(int i = 0; i < v.Length; i++)
 				{
+					v[i] = new Vector3(0.0f, 0.0f, 1000.0f);
+				}
+				for(int i = 0; i < this.radials.Count && i < 5; i++)
+				{
+					var rad = this.radials[this.radials.Count - 1 - i]; //only deal with the most recent radials. ignore the rest
+					
 					Vector3 radial_vec = new Vector3(rad.parent.Transform.Position.X, rad.parent.Transform.Position.Y, rad.time);
-					//water.shaderProgram.SetUniformValue(water.shaderProgram.FindUniform("Radial"),
-					//                                    ref radial_vec);
-					rad.time += 30.0f;
-					v[circular_buffer_index] = radial_vec;
-					v[circular_buffer_index].Z = 1000.0f;
-					circular_buffer_index++;
-					if(circular_buffer_index >= v.Length)
-					{
-						circular_buffer_index = 0;
-					}
+					rad.time += rad.speed;
+					v[i] = radial_vec;
 					
 				}
 				Profiler.End();
 				
-				for(int i = 0; i < v.Length; i++)
-					{
-						if(v[i].Z < 2.0f){
-							v[i].Z = 0.0f;}
-						else{
-							v[i].Z -= 6.0f;}
-					}
+			
 
 				water.shaderProgram.SetAttributeBinding(0, "a_Position");
 				water.shaderProgram.SetAttributeBinding(1, "a_TexCoord");

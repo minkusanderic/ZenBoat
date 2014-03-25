@@ -89,7 +89,7 @@ namespace Main
 									}
 								}
 							} 
-							rock.attachComponent( new SuicideController( 20 ) );
+							rock.attachComponent( new SuicideController( 200 ) );
 							//((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/WaterDrop.wav");	
 							//if ( splashSound == null )//
 								//splashSound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
