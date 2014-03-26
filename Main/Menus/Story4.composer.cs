@@ -29,7 +29,7 @@ namespace Menu
             this.AddChildLast(ImageBox_1);
 
             // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/Assets/story4.png");
+            ImageBox_1.Image = new ImageAsset("/Application/assets/story4.png");
 
             SetWidgetLayout(orientation);
 

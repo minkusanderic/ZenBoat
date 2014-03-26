@@ -17,7 +17,7 @@ namespace Menu
             InitializeWidget();
 			playButton.ButtonAction += HandlePlayButtonButtonAction;
 			creditButton.ButtonAction += HandleCreditButtonButtonAction;
-			quitButton.ButtonAction += HandleQuitButtonButtonAction;
+			quitButton.ButtonAction += HandleStoreButtonButtonAction;
 			
         }
 
@@ -35,6 +35,12 @@ namespace Menu
         {
         	MenuLoader.loadStory = true;
         }
+		
+		void HandleStoreButtonButtonAction(object sender, TouchEventArgs e)
+		{
+			MenuLoader.loadStore = true;	
+		}
+		
 		
     }
 }

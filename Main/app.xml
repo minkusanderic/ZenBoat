@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application project_name="origamikamitest" version="1.00" runtime_version="1.21" sdk_version="1.21.00" default_locale="en-US">
+<application project_name="origamikamitest" version="1.00" runtime_version="1.21" sdk_version="1.21.01" default_locale="en-US">
   <name>
     <localized_item locale="en-US" value="Origami Kami Test" />
   </name>
@@ -13,7 +13,7 @@
     <rating type="PEGIEX" value="3" age="3" code="3355" />
     <rating type="SELF" value="3" age="3" />
   </rating_list>
-  <images icon_128x128="..\..\..\Downloads\Crane_Icon2_128.png" icon_256x256="..\..\..\Downloads\Crane_Icon2_256.png" icon_512x512="..\..\..\Downloads\Crane_Icon2.png" splash_854x480="Origami Kami2.png" />
+  <images />
   <genre_list>
     <genre value="Games:Casual" />
     <genre value="Games:Puzzle" />
@@ -22,9 +22,40 @@
     <name value="Eric Hurst" />
   </developer>
   <website href="http://www.origamikami.com" />
-  <copyright author="Copyright 2014 Origami Kami" text="..\OKcopyright.txt" />
+  <copyright author="" />
   <purchase>
-    <product_list />
+    <product_list>
+      <product label="BLBOAT" type="normal">
+        <name>
+          <localized_item locale="en-US" value="A wattery blue boat" />
+        </name>
+      </product>
+      <product label="GNBOAT" type="normal">
+        <name>
+          <localized_item locale="en-US" value="A forest green boat" />
+        </name>
+      </product>
+      <product label="YLBOAT" type="normal">
+        <name>
+          <localized_item locale="en-US" value="A sunny yellow boat" />
+        </name>
+      </product>
+      <product label="ORBOAT" type="normal">
+        <name>
+          <localized_item locale="en-US" value="An orange boat" />
+        </name>
+      </product>
+      <product label="BKBOAT" type="normal">
+        <name>
+          <localized_item locale="en-US" value="Is THIS the VIKING DEATH BOAT!?" />
+        </name>
+      </product>
+      <product label="WTBOAT" type="normal">
+        <name>
+          <localized_item locale="en-US" value="A pure white boat" />
+        </name>
+      </product>
+    </product_list>
   </purchase>
   <runtime_config>
     <memory managed_heap_size="32768" resource_heap_size="65536" />

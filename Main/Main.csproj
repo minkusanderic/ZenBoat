@@ -96,6 +96,12 @@
     <Compile Include="Menus\Credits.cs" />
     <Compile Include="Menus\Pause.composer.cs" />
     <Compile Include="Menus\Pause.cs" />
+    <Compile Include="Menus\Store.composer.cs" />
+    <Compile Include="Menus\Store.cs" />
+    <Compile Include="Menus\StoreItem.composer.cs" />
+    <Compile Include="Menus\StoreItem.cs" />
+    <Compile Include="Menus\StoreMessage.composer.cs" />
+    <Compile Include="Menus\StoreMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
