@@ -21,7 +21,7 @@ namespace Main
 			ent.Name = "EndStage";
 			ent.tag ("endstage");
 			
-			//var m = ent.attachComponent (new SpriteComponent ("/Application/Assets/Untitled.png"));
+			//var m = ent.attachComponent (new SpriteComponent ("/Application/assets/Untitled.png"));
 			//m.scale = new Vector2 (5.0f, 5.0f);
 			
 			RigidBody rb = new RigidBody (1f, 272f);
@@ -49,7 +49,7 @@ namespace Main
 																rb.is_static = true;
 																ent.attachComponent( rb );
 																SFXComponent sound = ent.attachComponent( 
-						                                         new SFXComponent("/Application/Assets/Sound/SFX/LevelCheckpoint.wav") );
+						                                         new SFXComponent("/Application/assets/Sound/SFX/LevelCheckpoint.wav") );
 																sound.PlaySound();
 															}
 															// clears the list of things that need to be respawned

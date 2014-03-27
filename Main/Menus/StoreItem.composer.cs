@@ -135,7 +135,7 @@ namespace Menu
                     Label_3.Anchors = Anchors.None;
                     Label_3.Visible = true;
 
-                    Label_4.SetPosition(746, 24);
+                    Label_4.SetPosition(747, 24);
                     Label_4.SetSize(113, 36);
                     Label_4.Anchors = Anchors.None;
                     Label_4.Visible = true;

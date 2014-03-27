@@ -21,8 +21,8 @@ namespace Main
 			int height = Convert.ToInt32(options["height"]);
 			int strength = Convert.ToInt32(options["strength"]);
 			
-			//var m = ent.attachComponent(new SpriteComponent("/Application/Assets/Geyser.png"));
-			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Geyser.mdx"));
+			//var m = ent.attachComponent(new SpriteComponent("/Application/assets/Geyser.png"));
+			var m = ent.attachComponent (new ModelComponent ("/Application/assets/Geyser.mdx"));
 			m.scale = new Vector3 (100f, 100f, 100f);
 			m.layer = "under_water";
 			
@@ -31,7 +31,7 @@ namespace Main
 			ent.attachComponent(rb);
 			rb.is_static = true;
 			
-			ent.attachComponent(new CurrentModifier("/Application/Assets/geyser_water.png")).scale = new Vector2(2f, 2f);
+			ent.attachComponent(new CurrentModifier("/Application/assets/geyser_water.png")).scale = new Vector2(2f, 2f);
 			
 			ent.attachComponent(new Core.SimpleController(() => {
 				List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("pushable").ToList();

@@ -19,7 +19,7 @@ namespace Main
 			ent.Name = "Torii";
 			ent.tag ("torii");
 			
-			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/ToriiMED.mdx"));
+			var m = ent.attachComponent (new ModelComponent ("/Application/assets/ToriiMED.mdx"));
 			m.scale = new Vector3 (5.0f, 5.0f, 5.0f);
 			ent.Transform.Rotation = new Vector2(0, -1);
 			
@@ -29,7 +29,7 @@ namespace Main
 			
 			ent.attachComponent (rb);
 			var targets = SceneManager.Instance.Select("boat");
-			//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/Assets/Sound/SFX/LevelEnd.wav" ) );
+			//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/assets/Sound/SFX/LevelEnd.wav" ) );
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
@@ -41,9 +41,9 @@ namespace Main
 															SceneManager.Instance.currentState = GameState.STOPPED;
 														}
 														Console.WriteLine ("You've reached the Torii Gate - Level Over!");		
-														//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/Assets/Sound/SFX/LevelEnd.wav" ) );
+														//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/assets/Sound/SFX/LevelEnd.wav" ) );
 														//sound.PlaySound();
-														((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/Sound/SFX/LevelEnd.wav");	
+														((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/assets/Sound/SFX/LevelEnd.wav");	
 														Respawner r = t.FindComponent<Respawner> ();
 														if (r != null) {
 															RigidBody rib = t.FindComponent<RigidBody> ();

@@ -14,7 +14,7 @@ namespace Main
 		{
 			//ent.Transform.Rotation = new Vector2(0f, 1f);
 			//ent.Transform.SetAngle(0f);
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/RotatedTulipBunch2.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/RotatedTulipBunch2.mdx"));
 		
 			m.scale = new Vector3(2.5f , 2.5f, 2.5f);
 			

@@ -17,7 +17,7 @@ namespace Main
 			//entity = ent;
 			//ent.tag("looseblossom", "pushable");
 						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/LooseBlossomsC.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/LooseBlossomsC.mdx"));
 			
 			m.scale = new Vector3(10f , 10f, 10f);
 			

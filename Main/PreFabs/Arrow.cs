@@ -18,7 +18,7 @@ namespace Main
 			
 			int width = Convert.ToInt32(options["width"]);
 			int height = Convert.ToInt32(options["height"]);
-			SpriteComponent m = ent.attachComponent(new SpriteComponent("/Application/Assets/Arrow.png"));
+			SpriteComponent m = ent.attachComponent(new SpriteComponent("/Application/assets/Arrow.png"));
 			m.scale = new Vector2(width * .003f, height * .005f);
 		}
 	}

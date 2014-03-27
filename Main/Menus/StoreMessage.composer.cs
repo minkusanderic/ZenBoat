@@ -76,12 +76,12 @@ namespace Menu
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    Label_1.SetPosition(78, 42);
+                    Label_1.SetPosition(69, 42);
                     Label_1.SetSize(822, 370);
                     Label_1.Anchors = Anchors.None;
                     Label_1.Visible = true;
 
-                    Button_1.SetPosition(382, 435);
+                    Button_1.SetPosition(373, 435);
                     Button_1.SetSize(214, 56);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;

@@ -15,32 +15,33 @@ namespace Menu
         public StartMenu()
         {
             InitializeWidget();
+			
 			playButton.ButtonAction += HandlePlayButtonButtonAction;
+			levelButton.ButtonAction += HandleLevelButtonButtonAction;
+			storeButton.ButtonAction += HandleStoreButtonButtonAction;
 			creditButton.ButtonAction += HandleCreditButtonButtonAction;
-			quitButton.ButtonAction += HandleStoreButtonButtonAction;
 			
         }
-
-        void HandleCreditButtonButtonAction (object sender, TouchEventArgs e)
-        {
-			MenuLoader.loadCredit = true;
-        }
-
-        void HandleQuitButtonButtonAction (object sender, TouchEventArgs e)
-        {
-        	Environment.Exit(0);
-        }
-
-        void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
+		
+		void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
         {
         	MenuLoader.loadStory = true;
         }
 		
+        void HandleLevelButtonButtonAction (object sender, TouchEventArgs e)
+        {
+			//MenuLoader.loadLevel = true;
+        } 
+
 		void HandleStoreButtonButtonAction(object sender, TouchEventArgs e)
 		{
 			MenuLoader.loadStore = true;	
 		}
 		
+		void HandleCreditButtonButtonAction (object sender, TouchEventArgs e)
+        {
+			MenuLoader.loadCredit = true;
+        }
 		
     }
 }

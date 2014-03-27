@@ -21,7 +21,7 @@ namespace Main
 			ent.tag("boat", "pushable");
 			entity = ent;
 						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/OrigamiBoat2.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/OrigamiBoat2.mdx"));
 			m.scale = new Vector3(.5f, .5f, .5f);
 			m.model.Materials[0].Emission = new Vector3( 0f , 0f , 0f);
 			//m.model.Materials[0].Ambient = new Vector3( 1f , .5f , 5f );
@@ -57,7 +57,7 @@ namespace Main
 			{
 				var bank = SceneManager.Instance.createEntity("Bank" + i.ToString());
 				bank.Transform.Position = new Vector2(((3220*i)+1610), 544/2 + 100);
-				bank.attachComponent(new ModelComponent("/Application/Assets/BankStraightTxtr.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
+				bank.attachComponent(new ModelComponent("/Application/assets/BankStraightTxtr.mdx")).scale = new Vector3(2.0f, 1.3f, 1.0f);
 				ModelComponent bank_model = bank.FindComponent<ModelComponent>();
 				bank_model.scale.Y *= 1.2f;
 				bank_model.scale.X *= 1.2f;

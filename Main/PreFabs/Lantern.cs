@@ -17,7 +17,7 @@ namespace Main
 			entity = ent;
 			ent.tag("lantern", "pushable");
 						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Lantern.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/Lantern.mdx"));
 			
 			m.scale = new Vector3(.5f	, .5f, .5f);
 			/*var body = ent.attachComponent(new RigidBody(10f, 10f));
