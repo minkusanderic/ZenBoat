@@ -13,7 +13,7 @@ namespace Main
 		
 		class RockSpawnerLogic : Core.Controller
 		{
-			float force = 75f; // orig:50f elli5:200f
+			float force = 2000f; // orig:50f elli5:200f
 			bool touchDown = false;
 			TouchController touchController;
 			//SFXComponent splashSound;
@@ -85,7 +85,7 @@ namespace Main
 										//else
 										rb.applyForce( force*new Vector2(	
 										               rb.parent.Transform.Position.X - rock.Transform.Position.X , 
-										               rb.parent.Transform.Position.Y - rock.Transform.Position.Y) );
+										               rb.parent.Transform.Position.Y - rock.Transform.Position.Y).Normalize() );
 									}
 								}
 							} 
