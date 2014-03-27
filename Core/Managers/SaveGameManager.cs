@@ -42,6 +42,7 @@ namespace Core
 		private static XmlDocument xml_doc;
 		
 		private static string save_game_file_path = @"/Documents/saveGame.xml";
+		private static string save_game_temp_path = @"/Documents/tempGame.xml";
 		private static Dictionary<string , string> strings;
 		private static List<string> cranes_to_save = new List<string>();
 		//private static List<string> strings;
@@ -72,13 +73,20 @@ namespace Core
 				"\n\r\t</Strings>" +
 				"</SaveGame>";
 			
+			if(File.Exists(save_game_temp_path))
+			{
+				//Recover from a previously corrupted state when the temp file is not moved over
+				File.Move(save_game_temp_path, save_game_file_path);
+				File.Delete(save_game_temp_path);
+			}
 			FileStream fs = File.Open(save_game_file_path	,FileMode.OpenOrCreate);
 			xml_doc = new XmlDocument();
 			bool fileExists  = fs.Length != 0;
 			if ( !fileExists )
 			{
 				xml_doc.LoadXml( DATA );
-				xml_doc.Save(save_game_file_path);
+				saveGame();
+				//xml_doc.Save(save_game_file_path);
 			}
 			else
 			{
@@ -163,7 +171,15 @@ namespace Core
 		{
 			if ( _init )
 			{
-				xml_doc.Save( save_game_file_path );
+				try{
+					xml_doc.Save( save_game_temp_path ); // Need to save to temp file first per PSM guidelines
+					File.Move(save_game_temp_path, save_game_file_path);
+					File.Delete(save_game_temp_path);
+				}catch (IOException e)
+				{
+					Console.WriteLine("Not enough space to write the save file");
+					return false;
+				}
 				return true;
 			}
 			return false;
