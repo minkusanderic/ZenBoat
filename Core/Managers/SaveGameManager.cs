@@ -76,6 +76,8 @@ namespace Core
 			if(File.Exists(save_game_temp_path))
 			{
 				//Recover from a previously corrupted state when the temp file is not moved over
+				if(File.Exists(save_game_file_path))
+						File.Delete(save_game_file_path);
 				File.Move(save_game_temp_path, save_game_file_path);
 				File.Delete(save_game_temp_path);
 			}
