@@ -224,10 +224,10 @@ namespace Core
 				//SampleDraw.DrawText("Touch Sample", 0xffffffff, 0, 0);
 				//this.drawCircle(g.graphics, 100.0f, 100.0f, 1000.0f, 1000.5f);
 			Profiler.End();
-			
+			Profiler.Begin("Render Water Modifier");
 			foreach(var sprite in modifiers)
 			{
-				Profiler.Begin("Render Water Modifier");
+				
 				if ( !sprite.parent.Enabled ) continue;
 				if ( Math.Abs(sprite.parent.Transform.Position.X - g.camera_pos.X) > 1000) continue;
 				Matrix4 world = Matrix4.Identity ;
@@ -253,9 +253,9 @@ namespace Core
 				sprite.shaderProgram.SetUniformValue(0, ref world_view_proj);	
 			
 				g.graphics.DrawArrays(DrawMode.TriangleStrip, 0, 4);
-				Profiler.End();
+				
 			}
-			
+			Profiler.End();
 
 			
 ///				
