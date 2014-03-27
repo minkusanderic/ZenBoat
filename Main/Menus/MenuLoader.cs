@@ -26,7 +26,6 @@ namespace Main
 		public static void Load ( )
 		{
 			// Set up the graphics system
-			//GraphicsContext graphics = new GraphicsContext();
 			GraphicsContext graphics = ((GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem))).graphics;
 			// Initialize the UI Toolkit
 			UISystem.Initialize(graphics);
@@ -90,8 +89,6 @@ namespace Main
 			}
 			UISystem.SetScene(null,null);
 			isPlay = true;
-			//UISystem.Terminate();
-			//graphics.Dispose();
 		}
 	}
 }

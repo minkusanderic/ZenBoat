@@ -7,12 +7,12 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
 
-namespace Preview
+namespace Menu
 {
-    partial class Story
+    partial class Loading
     {
         Panel contentPanel;
-        PagePanel PagePanel_1;
+        Label Label_1;
 
         private void InitializeWidget()
         {
@@ -23,23 +23,22 @@ namespace Preview
         {
             contentPanel = new Panel();
             contentPanel.Name = "contentPanel";
-            PagePanel_1 = new PagePanel();
-            PagePanel_1.Name = "PagePanel_1";
+            Label_1 = new Label();
+            Label_1.Name = "Label_1";
 
-            // Story
+            // Loading
             this.RootWidget.AddChildLast(contentPanel);
-            this.RootWidget.AddChildLast(PagePanel_1);
+            this.RootWidget.AddChildLast(Label_1);
 
             // contentPanel
-            contentPanel.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
+            contentPanel.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             contentPanel.Clip = true;
 
-            // PagePanel_1
-            PagePanel_1.AddPage(new Story1());
-            PagePanel_1.AddPage(new Story2());
-            PagePanel_1.AddPage(new Story3());
-            PagePanel_1.AddPage(new Story4());
-            PagePanel_1.AddPage(new Story5());
+            // Label_1
+            Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            Label_1.Font = new UIFont(FontAlias.System, 72, FontStyle.Regular);
+            Label_1.LineBreak = LineBreak.Character;
+            Label_1.HorizontalAlignment = HorizontalAlignment.Center;
 
             SetWidgetLayout(orientation);
 
@@ -55,15 +54,15 @@ namespace Preview
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    contentPanel.SetPosition(47, 80);
+                    contentPanel.SetPosition(360, 245);
                     contentPanel.SetSize(100, 100);
                     contentPanel.Anchors = Anchors.None;
                     contentPanel.Visible = true;
 
-                    PagePanel_1.SetPosition(0, 0);
-                    PagePanel_1.SetSize(100, 50);
-                    PagePanel_1.Anchors = Anchors.None;
-                    PagePanel_1.Visible = true;
+                    Label_1.SetPosition(265, 204);
+                    Label_1.SetSize(214, 36);
+                    Label_1.Anchors = Anchors.None;
+                    Label_1.Visible = true;
 
                     break;
 
@@ -72,14 +71,14 @@ namespace Preview
                     this.DesignHeight = 544;
 
                     contentPanel.SetPosition(0, 0);
-                    contentPanel.SetSize(958, 542);
+                    contentPanel.SetSize(960, 544);
                     contentPanel.Anchors = Anchors.None;
                     contentPanel.Visible = true;
 
-                    PagePanel_1.SetPosition(0, 0);
-                    PagePanel_1.SetSize(960, 544);
-                    PagePanel_1.Anchors = Anchors.None;
-                    PagePanel_1.Visible = true;
+                    Label_1.SetPosition(321, 238);
+                    Label_1.SetSize(318, 67);
+                    Label_1.Anchors = Anchors.None;
+                    Label_1.Visible = true;
 
                     break;
             }
@@ -88,6 +87,7 @@ namespace Preview
 
         public void UpdateLanguage()
         {
+            Label_1.Text = "LOADING";
         }
 
         private void onShowing(object sender, EventArgs e)

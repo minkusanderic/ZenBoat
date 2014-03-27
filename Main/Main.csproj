@@ -102,6 +102,8 @@
     <Compile Include="Menus\StoreItem.cs" />
     <Compile Include="Menus\StoreMessage.composer.cs" />
     <Compile Include="Menus\StoreMessage.cs" />
+    <Compile Include="Menus\Loading.composer.cs" />
+    <Compile Include="Menus\Loading.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

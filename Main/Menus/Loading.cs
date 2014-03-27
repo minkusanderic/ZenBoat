@@ -4,14 +4,15 @@ using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
+using Main;
 
-namespace Preview
+namespace Menu
 {
-    public partial class Story2 : Panel
+    public partial class Loading : Scene
     {
-        public Story2()
+        public Loading()
         {
-            InitializeWidget(LayoutOrientation.Horizontal);
+            InitializeWidget();
         }
     }
 }

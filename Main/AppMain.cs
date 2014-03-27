@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using Sce.PlayStation;
 using Sce.PlayStation.Core;
 using Sce.PlayStation.HighLevel.Model;
+using Sce.PlayStation.HighLevel.UI;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.Core.Input;
+using Sce.PlayStation.Core.Graphics;
 
 using System.Threading;
 
@@ -51,13 +53,19 @@ namespace Main
 					current_state = AppState.LOADING;
 					break;
 					
-				case AppState.LOADING:					
+				case AppState.LOADING:
+					var loading = new Menu.Loading();
+					GraphicsContext graphics = ((GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem))).graphics;
+					UISystem.SetScene(loading,null);
+					UISystem.Render();
+					graphics.SwapBuffers();
 					LevelLoader.Load(Globals.staring_level);
 					SceneManager.Instance.currentState = GameState.RUNNING;
 					current_state = AppState.GAME;
 					break;
 					
 				case AppState.GAME:
+					UISystem.SetScene(null,null);
 					Core.Timer.StartFrame();
 					Core.Profiler.StartFrame();
 					Core.Profiler.Begin("Update");
