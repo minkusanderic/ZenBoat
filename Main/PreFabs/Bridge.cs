@@ -21,7 +21,7 @@ namespace Main
 			ent.Name = "Bridge";
 			ent.tag ("bridge");
 			
-			var m = ent.attachComponent (new ModelComponent ("/Application/Assets/Bridge.mdx"));
+		
 			m.scale = new Vector3 (20.0f, 50.0f, 20.0f);
 			ent.Transform.Rotation = new Vector2(0, -1);
 			
