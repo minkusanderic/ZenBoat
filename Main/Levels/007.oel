@@ -162,7 +162,6 @@
     <Crane id="18" x="8100" y="240" />
     <Crane id="19" x="8116" y="268" />
     <Crane id="24" x="8140" y="236" />
-    <Torii id="27" x="9880" y="272" NextLevel="008.oel" />
     <Crane id="28" x="4504" y="248" />
     <Crane id="29" x="4672" y="236" />
     <Crane id="30" x="4824" y="256" />
@@ -182,6 +181,7 @@
     <Rock id="44" x="8788" y="316" width="78" height="78" angle="0" />
     <Crane id="45" x="8940" y="156" />
     <Crane id="46" x="8912" y="388" />
+    <Bridge id="5" x="9924" y="192" NextLevel="008.oel" />
   </Entities>
   <Art>
     <Island id="0" x="1868" y="220" width="100" height="100" angle="0" />

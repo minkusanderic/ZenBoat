@@ -139,7 +139,6 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="72" y="260" angle="0" />
-    <Torii id="1" x="9908" y="276" NextLevel="007.oel" />
     <Rock id="2" x="288" y="4" width="130" height="130" angle="0" />
     <Rock id="3" x="356" y="104" width="130" height="130" angle="0" />
     <Rock id="4" x="420" y="208" width="130" height="130" angle="0" />
@@ -210,6 +209,7 @@
     <Crane id="48" x="8768" y="276" />
     <Crane id="49" x="9404" y="232" />
     <Island id="50" x="9364" y="316" width="100" height="100" angle="0" />
+    <Bridge id="1" x="9928" y="184" NextLevel="007.oel" />
   </Entities>
   <Art>
     <Pagoda id="0" x="9392" y="328" width="50" height="50" angle="0" />

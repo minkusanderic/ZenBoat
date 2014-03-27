@@ -139,7 +139,6 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="136" y="268" angle="0" />
-    <Torii id="3" x="2692" y="256" NextLevel="004.oel" />
     <Whirlpool id="5" x="1328" y="352" width="80" height="80" strength="100" />
     <Crane id="6" x="1736" y="400" />
     <Whirlpool id="7" x="624" y="272" width="80" height="80" strength="100" />
@@ -160,6 +159,7 @@
     <Crane id="19" x="2332" y="248" />
     <Island id="20" x="1648" y="116" width="100" height="100" angle="0" />
     <Bamboo id="21" x="1664" y="120" />
+    <Bridge id="3" x="2764" y="196" NextLevel="004.oel" />
   </Entities>
   <Art>
     <MapleTreeSouth id="5" x="832" y="520" width="70" height="70" />

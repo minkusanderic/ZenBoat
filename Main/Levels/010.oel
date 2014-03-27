@@ -139,7 +139,6 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="164" y="104" angle="0" />
-    <Torii id="1" x="9916" y="104" NextLevel="011.oel" />
     <Geyser id="2" x="952" y="280" width="80" height="80" strength="100" />
     <Geyser id="3" x="1736" y="476" width="80" height="80" strength="100" />
     <Geyser id="4" x="1720" y="56" width="80" height="80" strength="100" />
@@ -256,6 +255,7 @@
     <CherryBlossomSouth id="111" x="4140" y="536" />
     <CherryBlossomNorth id="112" x="5840" y="-56" />
     <Rock id="113" x="9192" y="-16" width="114" height="98" angle="0.7853982" />
+    <Bridge id="1" x="9924" y="188" NextLevel="011.oel" />
   </Entities>
   <Art />
 </level>

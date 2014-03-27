@@ -139,7 +139,6 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="144" y="260" angle="0" />
-    <Torii id="2" x="3860" y="256" NextLevel="006.oel" />
     <Crane id="1" x="664" y="396" />
     <Crane id="3" x="840" y="212" />
     <Crane id="4" x="984" y="364" />
@@ -166,6 +165,7 @@
     <Endstage id="28" x="1360" y="268" NextLevel="" />
     <Crane id="12" x="1380" y="488" />
     <Crane id="18" x="3456" y="16" />
+    <Bridge id="2" x="3928" y="184" NextLevel="006.oel" />
   </Entities>
   <Art>
     <Lillypad id="1" x="432" y="104" width="50" height="40" angle="0" />

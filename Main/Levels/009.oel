@@ -272,10 +272,10 @@
     <Lillypad id="131" x="1580" y="436" width="50" height="40" angle="0" />
     <Lillypad id="132" x="3056" y="88" width="50" height="40" angle="0" />
     <Lillypad id="133" x="2964" y="132" width="50" height="40" angle="2.879793" />
+    <Bridge id="134" x="9924" y="188" NextLevel="010.oel" />
   </Entities>
   <Art>
     <Boat id="0" x="84" y="260" angle="0" />
-    <Torii id="1" x="9848" y="252" NextLevel="010.oel" />
     <Crane id="2" x="7592" y="296" />
   </Art>
 </level>

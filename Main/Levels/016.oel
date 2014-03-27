@@ -204,7 +204,6 @@
     <Crane id="80" x="6884" y="468" />
     <Crane id="81" x="6720" y="48" />
     <Endstage id="82" x="3400" y="272" NextLevel="" />
-    <Torii id="86" x="7120" y="124" NextLevel="001.oel" />
     <Crane id="87" x="1208" y="264" />
     <Whirlpool id="4" x="1372" y="120" width="80" height="80" strength="100" />
     <Crane id="7" x="1500" y="140" />
@@ -233,6 +232,7 @@
     <LooseBlossoms id="84" x="216" y="368" />
     <Lillypad id="48" x="7016" y="340" width="50" height="40" angle="0" />
     <Koi id="94" x="7084" y="360" angle="0" />
+    <Bridge id="86" x="7172" y="192" NextLevel="001.oel" />
   </Entities>
   <Art>
     <Boat id="0" x="160" y="272" angle="0" />

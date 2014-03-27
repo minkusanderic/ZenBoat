@@ -144,7 +144,6 @@
     <Crane id="4" x="780" y="316" />
     <Crane id="5" x="1068" y="312" />
     <Whirlpool id="1" x="776" y="172" width="80" height="80" strength="100" />
-    <Torii id="6" x="7052" y="400" NextLevel="014.oel" />
     <Whirlpool id="7" x="1356" y="352" width="80" height="80" strength="100" />
     <Whirlpool id="8" x="1636" y="356" width="80" height="80" strength="100" />
     <Geyser id="9" x="1504" y="104" width="80" height="80" strength="100" />
@@ -223,6 +222,7 @@
     <Lillypad id="82" x="7180" y="472" width="50" height="40" angle="0" />
     <Lillypad id="83" x="7188" y="124" width="50" height="40" angle="0" />
     <Lillypad id="84" x="2184" y="420" width="50" height="40" angle="0" />
+    <Bridge id="6" x="7176" y="188" NextLevel="014.oel" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="364" y="-48" />

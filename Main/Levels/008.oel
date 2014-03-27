@@ -188,7 +188,6 @@
     <Crane id="47" x="9408" y="264" />
     <Crane id="48" x="9672" y="244" />
     <Crane id="49" x="9868" y="244" />
-    <Torii id="50" x="9952" y="232" NextLevel="009.oel" />
     <Whirlpool id="51" x="5468" y="316" width="80" height="80" strength="100" />
     <Whirlpool id="52" x="6452" y="212" width="80" height="80" strength="100" />
     <Whirlpool id="53" x="7508" y="284" width="80" height="80" strength="100" />
@@ -209,6 +208,7 @@
     <Endstage id="69" x="4848" y="272" NextLevel="" />
     <Endstage id="70" x="6992" y="268" NextLevel="" />
     <Endstage id="71" x="8032" y="264" NextLevel="" />
+    <Bridge id="50" x="9924" y="192" NextLevel="009.oel" />
   </Entities>
   <Art>
     <Iris id="0" x="7272" y="-32" />

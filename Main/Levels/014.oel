@@ -139,7 +139,6 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="1" x="392" y="428" angle="0" />
-    <Torii id="0" x="9888" y="408" NextLevel="015.oel" />
     <Current id="2" x="676" y="-28" width="876" height="724" angle="1.570796" />
     <Whirlpool id="3" x="948" y="488" width="80" height="80" strength="100" />
     <Whirlpool id="4" x="1244" y="484" width="80" height="80" strength="100" />
@@ -265,6 +264,7 @@
     <Rock id="124" x="8640" y="192" width="50" height="50" angle="0" />
     <Rock id="125" x="8680" y="272" width="50" height="50" angle="0" />
     <Crane id="126" x="8840" y="264" />
+    <Bridge id="0" x="9928" y="204" NextLevel="015.oel" />
   </Entities>
   <Art />
 </level>

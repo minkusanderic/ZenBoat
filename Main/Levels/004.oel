@@ -140,7 +140,6 @@
   <Entities>
     <Geyser id="0" x="656" y="264" width="80" height="80" strength="100" />
     <Boat id="1" x="152" y="268" angle="0" />
-    <Torii id="2" x="3700" y="256" NextLevel="005.oel" />
     <Geyser id="3" x="1344" y="448" width="80" height="80" strength="100" />
     <Geyser id="4" x="1344" y="52" width="80" height="80" strength="100" />
     <Crane id="5" x="1340" y="328" />
@@ -153,6 +152,7 @@
     <Bamboo id="14" x="3024" y="204" />
     <Crane id="12" x="2752" y="364" />
     <Crane id="13" x="3392" y="248" />
+    <Bridge id="2" x="3764" y="196" NextLevel="005.oel" />
   </Entities>
   <Art>
     <Pagoda id="0" x="3024" y="216" width="50" height="50" angle="0" />

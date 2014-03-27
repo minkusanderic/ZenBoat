@@ -141,7 +141,6 @@
     <Boat id="1" x="116" y="248" angle="0" />
     <Rock id="2" x="356" y="384" width="50" height="50" angle="0" />
     <Rock id="3" x="724" y="152" width="50" height="50" angle="0" />
-    <Torii id="0" x="9908" y="252" NextLevel="016.oel" />
     <Whirlpool id="4" x="1380" y="160" width="80" height="80" strength="100" />
     <Whirlpool id="5" x="2064" y="416" width="80" height="80" strength="100" />
     <Whirlpool id="6" x="2720" y="132" width="80" height="80" strength="100" />
@@ -255,6 +254,7 @@
     <TulipNorth id="80" x="964" y="-32" />
     <Iris id="95" x="912" y="-32" />
     <MapleTreeSouth id="98" x="5776" y="528" width="70" height="70" />
+    <Bridge id="0" x="9924" y="196" NextLevel="016.oel" />
   </Entities>
   <Art />
 </level>
