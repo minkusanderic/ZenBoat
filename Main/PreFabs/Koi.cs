@@ -17,7 +17,7 @@ namespace Main
 			entity = ent;
 			ent.tag("koi");
 			
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/koifish.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/koifish.mdx"));
 			
 			//ent.Name = "Koi";
 			//ent.tag("koi");

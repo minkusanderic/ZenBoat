@@ -14,7 +14,7 @@ namespace Main
 		{
 			//ent.tag("pushable");
 						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/ball_animated.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/ball_animated.mdx"));
 			
 			m.scale = new Vector3(500	, 500, 500);
 			m.model.Animate(0);

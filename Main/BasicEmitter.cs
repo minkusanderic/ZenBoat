@@ -19,7 +19,7 @@ namespace Main
 		public BasicEmitter ()
 		{
 			rand = new Random();
-			SpriteComponent sc = new SpriteComponent( "/Application/Assets/smoke.png" );
+			SpriteComponent sc = new SpriteComponent( "/Application/assets/smoke.png" );
 			ParticleSystem ps = (ParticleSystem) SceneManager.Instance.getSystem(typeof( ParticleSystem) );
 			int life = 100; 
 			
@@ -43,7 +43,7 @@ namespace Main
 			float rX =  ((float)rand.NextDouble() - 0.5f )/2;
 			float rY =  ((float)rand.NextDouble() - 0.5f )/2;
 			float rZ = ((float)rand.NextDouble() - 0.5f )/2;
-			//SpriteComponent sc = new SpriteComponent( "/Application/Assets/Whirpoolsmall.png" );
+			//SpriteComponent sc = new SpriteComponent( "/Application/assets/Whirpoolsmall.png" );
 			Particle part = new Particle( new Vector3(0f , 0f ,0f) , 
 			                             new Vector3( rX , rY , rZ ) , 10000 , sc );
 			//program = ((GraphicsSystem) (SceneManager.Instance.getSystem( typeof(GraphicsSystem) ))).program;

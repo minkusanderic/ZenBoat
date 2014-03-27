@@ -38,7 +38,7 @@ namespace Main
 					current_state = AppState.MENU;
 					
 					var background_music = SceneManager.Instance.createEntity("BG_Music");
-					BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/Assets/Sound/gameBackground.mp3") );
+					BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/assets/Sound/gameBackground.mp3") );
 					bgmc.setVolume(1f);
 					bgmc.loop(true);
 					

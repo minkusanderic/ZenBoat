@@ -21,7 +21,7 @@ namespace Main
 			{
 				Console.WriteLine("Making RockSpawner");
 				touchController = tc;
-				//splashSound = new SFXComponent("/Application/Assets/WaterDrop.wav");
+				//splashSound = new SFXComponent("/Application/assets/WaterDrop.wav");
 				//this.parent.attachComponent( splashSound );
 			}
 			bool b = true;
@@ -90,9 +90,9 @@ namespace Main
 								}
 							} 
 							rock.attachComponent( new SuicideController( 200 ) );
-							//((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/WaterDrop.wav");	
+							//((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/assets/WaterDrop.wav");	
 							//if ( splashSound == null )//
-								//splashSound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") );
+								//splashSound = this.parent.attachComponent( new SFXComponent("/Application/assets/WaterDrop.wav") );
 							//if ( !splashSound.IsPlaying() )
 							//splashSound.PlaySound();
 							// sounds 

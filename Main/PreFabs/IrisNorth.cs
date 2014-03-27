@@ -14,7 +14,7 @@ namespace Main
 		{
 			//ent.tag("pushable");
 			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/RotatedIrisBundle.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/RotatedIrisBundle.mdx"));
 			
 			m.scale = new Vector3(2 , 2, 2);
 			

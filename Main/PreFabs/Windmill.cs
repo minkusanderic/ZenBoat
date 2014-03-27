@@ -14,7 +14,7 @@ namespace Main
 		{
 			//ent.tag("pushable");
 						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/Windmill.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/Windmill.mdx"));
 			
 			m.scale = new Vector3(10 , 10, 10);
 			

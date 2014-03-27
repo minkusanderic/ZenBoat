@@ -21,8 +21,8 @@ namespace Main
 			int height = Convert.ToInt32(options["height"]);
 			int strength = Convert.ToInt32(options["strength"]);
 			
-			var m = ent.attachComponent(new SpriteComponent("/Application/Assets/shader2.png"));
-			//var m = ent.attachComponent (new ModelComponent ("/Application/Assets/whirlpool_animated.mdx"));
+			var m = ent.attachComponent(new SpriteComponent("/Application/assets/shader2.png"));
+			//var m = ent.attachComponent (new ModelComponent ("/Application/assets/whirlpool_animated.mdx"));
 			//m.scale = new Vector3 (100f, 100f, 100f);
 			
 			//m.layer = "under_water";
@@ -32,7 +32,7 @@ namespace Main
 			ent.attachComponent(rb);
 			rb.is_static = true;
 			
-			ent.attachComponent(new CurrentModifier("/Application/Assets/vectorswirl.png")).scale = new Vector2(2f, 2f);
+			ent.attachComponent(new CurrentModifier("/Application/assets/vectorswirl.png")).scale = new Vector2(2f, 2f);
 			
 			ent.attachComponent(new Core.SimpleController(() => {
 				List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("pushable").ToList();
@@ -64,10 +64,10 @@ namespace Main
 																CollectibleManager.PrintScore();
 							/*
 																SFXComponent sound = ent.attachComponent( 
-							                                           new SFXComponent("/Application/Assets/Sound/SFX/BoatDeath.wav") );
+							                                           new SFXComponent("/Application/assets/Sound/SFX/BoatDeath.wav") );
 																sound.PlaySound();
 							*/
-																((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/Sound/SFX/BoatDeath.wav");
+																((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/assets/Sound/SFX/BoatDeath.wav");
 															}
 															if ( r.parent.HasTag("driftwood") )
 															{

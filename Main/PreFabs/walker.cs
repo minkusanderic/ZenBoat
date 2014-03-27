@@ -14,7 +14,7 @@ namespace Main
 		{
 			//ent.tag("pushable");
 						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/Assets/walker.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/walker.mdx"));
 			
 			m.scale = new Vector3(10, 10, 10);
 			m.model.Animate(0);
