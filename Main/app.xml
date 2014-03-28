@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application project_name="origamikamitest" version="1.00" runtime_version="1.21" sdk_version="1.21.01" default_locale="en-US">
+<application project_name="origamikami" version="1.00" runtime_version="1.21" sdk_version="1.21.00" default_locale="en-US">
   <name>
-    <localized_item locale="en-US" value="Origami Kami Test" />
+    <localized_item locale="en-US" value="Origami Kami" />
   </name>
   <short_name>
     <localized_item locale="en-US" value="Origami Kami" />
@@ -13,7 +13,7 @@
     <rating type="PEGIEX" value="3" age="3" code="3355" />
     <rating type="SELF" value="3" age="3" />
   </rating_list>
-  <images />
+  <images icon_128x128="Icons\Crane_Icon2_128.png" icon_256x256="Icons\Crane_Icon2_256.png" icon_512x512="Icons\Crane_Icon2.png" splash_854x480="Icons\Origami Kami2.png" />
   <genre_list>
     <genre value="Games:Casual" />
     <genre value="Games:Puzzle" />
@@ -22,37 +22,12 @@
     <name value="Eric Hurst" />
   </developer>
   <website href="http://www.origamikami.com" />
-  <copyright author="" />
+  <copyright author="Copyright 2014" text="Copyright.txt" />
   <purchase>
     <product_list>
-      <product label="BLBOAT" type="normal">
+      <product label="CRANES" type="normal">
         <name>
-          <localized_item locale="en-US" value="A wattery blue boat" />
-        </name>
-      </product>
-      <product label="GNBOAT" type="normal">
-        <name>
-          <localized_item locale="en-US" value="A forest green boat" />
-        </name>
-      </product>
-      <product label="YLBOAT" type="normal">
-        <name>
-          <localized_item locale="en-US" value="A sunny yellow boat" />
-        </name>
-      </product>
-      <product label="ORBOAT" type="normal">
-        <name>
-          <localized_item locale="en-US" value="An orange boat" />
-        </name>
-      </product>
-      <product label="BKBOAT" type="normal">
-        <name>
-          <localized_item locale="en-US" value="Is THIS the VIKING DEATH BOAT!?" />
-        </name>
-      </product>
-      <product label="WTBOAT" type="normal">
-        <name>
-          <localized_item locale="en-US" value="A pure white boat" />
+          <localized_item locale="en-US" value="500 Cranes" />
         </name>
       </product>
     </product_list>
@@ -63,7 +38,6 @@
     <camera max_capture_resolution="800x600" />
   </runtime_config>
   <feature_list>
-    <feature value="GamePad" />
     <feature value="Touch" />
   </feature_list>
   <psn_service_list />
