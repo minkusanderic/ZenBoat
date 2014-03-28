@@ -58,7 +58,6 @@ namespace Main
 															SceneManager.Instance.DestroyAll ();
 															Globals.current_level = "/Application/Levels/" + options["NextLevel"];
 															AppMain.current_state = AppState.LOADING;
-															//LevelLoader.Load("/Application/Levels/" + options["NextLevel"]);
 														}
 														}
 													)	
