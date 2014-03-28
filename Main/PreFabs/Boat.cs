@@ -22,7 +22,7 @@ namespace Main
 			ent.tag("boat", "pushable");
 			entity = ent;
 			
-			String chosenBoat = SaveGameManager.GetValueFromKey("ChosenBoat");
+			String chosenBoat = SaveGameManager.GetValueFromKey(Globals.chosenBoat);
 			if ( chosenBoat == null || chosenBoat == "" ) chosenBoat = "RedBoat"; 
 			
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/" + chosenBoat + ".mdx"));
