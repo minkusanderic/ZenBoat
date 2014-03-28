@@ -228,6 +228,13 @@ namespace Core
 			toRespawn.Clear();
 			CollectibleManager.ClearStageScore();
 		}
+		
+		public static string GetValueFromKey( string key )
+		{
+			if ( strings.ContainsKey( key ) )
+				return  strings[key];	
+			else return null;
+		}
 	}
 }
 

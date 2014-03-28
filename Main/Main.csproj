@@ -259,5 +259,11 @@
     <Content Include="assets\TulipBunch2.mdx" />
     <Content Include="assets\credits.png" />
     <Content Include="assets\title.png" />
+    <Content Include="assets\BlueBoat.mdx" />
+    <Content Include="assets\GreenBoat.mdx" />
+    <Content Include="assets\PurpleBoat.mdx" />
+    <Content Include="assets\RedBoat.mdx" />
+    <Content Include="assets\TealBoat.mdx" />
+    <Content Include="assets\YellowBoat.mdx" />
   </ItemGroup>
 </Project>

@@ -17,11 +17,15 @@ namespace Main
 		private static Entity entity;
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
+			
 			ent.Name = "Boat";
 			ent.tag("boat", "pushable");
 			entity = ent;
-						    
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/OrigamiBoat2.mdx"));
+			
+			String chosenBoat = SaveGameManager.GetValueFromKey("ChosenBoat");
+			if ( chosenBoat == null || chosenBoat == "" ) chosenBoat = "RedBoat"; 
+			
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/" + chosenBoat + ".mdx"));
 			m.scale = new Vector3(.5f, .5f, .5f);
 			m.model.Materials[0].Emission = new Vector3( 0f , 0f , 0f);
 			//m.model.Materials[0].Ambient = new Vector3( 1f , .5f , 5f );
