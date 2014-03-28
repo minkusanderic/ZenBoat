@@ -56,7 +56,9 @@ namespace Main
 														if(options.ContainsKey("NextLevel") && (options["NextLevel"] != ""))
 														{
 															SceneManager.Instance.DestroyAll ();
-															LevelLoader.Load("/Application/Levels/" + options["NextLevel"]);
+															Globals.current_level = "/Application/Levels/" + options["NextLevel"];
+															AppMain.current_state = AppState.LOADING;
+															//LevelLoader.Load("/Application/Levels/" + options["NextLevel"]);
 														}
 														}
 													)	

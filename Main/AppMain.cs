@@ -59,7 +59,7 @@ namespace Main
 					UISystem.SetScene(loading,null);
 					UISystem.Render();
 					graphics.SwapBuffers();
-					LevelLoader.Load(Globals.staring_level);
+					LevelLoader.Load(Globals.current_level);
 					SceneManager.Instance.currentState = GameState.RUNNING;
 					current_state = AppState.GAME;
 					break;
