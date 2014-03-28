@@ -113,29 +113,29 @@ namespace Main
 						//label.label.Text = "Count: " + CollectibleManager.m_iScore;
 			}));
 			
-			SceneManager.Instance.createEntity("ReturnToBoot")
-				.attachComponent(new SimpleController(
-					() => {
-						if ((GamePad.GetData(0).Buttons & GamePadButtons.Start) != 0)
-					{
-							SceneManager.Instance.currentState = GameState.PAUSED;
-							var graphics = (GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem));
-							
-							var pause = new Menu.Pause();
-							pause.Show();
-							//SceneManager.Instance.DestroyAll();
-							//LevelLoader.BootStrap()
-					}
-				}));
-			
-			SceneManager.Instance.createEntity("Reset")
-				.attachComponent(new SimpleController(
-					() => {
-						if ((GamePad.GetData(0).Buttons & GamePadButtons.Cross) != 0)
-					{
-							SceneManager.Instance.currentState = GameState.STOPPED;
-					}
-				}));
+//			SceneManager.Instance.createEntity("ReturnToBoot")
+//				.attachComponent(new SimpleController(
+//					() => {
+//						if ((GamePad.GetData(0).Buttons & GamePadButtons.Start) != 0)
+//					{
+//							SceneManager.Instance.currentState = GameState.PAUSED;
+//							var graphics = (GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem));
+//							
+//							var pause = new Menu.Pause();
+//							pause.Show();
+//							//SceneManager.Instance.DestroyAll();
+//							//LevelLoader.BootStrap()
+//					}
+//				}));
+//			
+//			SceneManager.Instance.createEntity("Reset")
+//				.attachComponent(new SimpleController(
+//					() => {
+//						if ((GamePad.GetData(0).Buttons & GamePadButtons.Cross) != 0)
+//					{
+//							SceneManager.Instance.currentState = GameState.STOPPED;
+//					}
+//				}));
 			
 		}
 		

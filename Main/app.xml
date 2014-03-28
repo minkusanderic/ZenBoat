@@ -25,9 +25,24 @@
   <copyright author="Copyright 2014" text="Copyright.txt" />
   <purchase>
     <product_list>
-      <product label="CRANES" type="normal">
+      <product label="CRANES" type="consumable">
         <name>
           <localized_item locale="en-US" value="500 Cranes" />
+        </name>
+      </product>
+      <product label="PIRATE" type="normal">
+        <name>
+          <localized_item locale="en-US" value="Pirate Boat" />
+        </name>
+      </product>
+      <product label="VIKING" type="normal">
+        <name>
+          <localized_item locale="en-US" value="Viking Death Boat" />
+        </name>
+      </product>
+      <product label="RBDUCK" type="normal">
+        <name>
+          <localized_item locale="en-US" value="Rubber Ducky" />
         </name>
       </product>
     </product_list>
