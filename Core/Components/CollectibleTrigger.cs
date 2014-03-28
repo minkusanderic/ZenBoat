@@ -21,14 +21,14 @@ namespace Core
 			if ( sounds == null )
 			{
 				sounds = new SFXComponent[5];
-				sounds[0] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 1 + ".wav");
-				sounds[1] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 2 + ".wav");
-				sounds[2] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 3 + ".wav");
-				sounds[3] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 4 + ".wav");
-				sounds[4] = new SFXComponent("/Application/Assets/Sound/SFX/Crane" + 5 + ".wav");
+				sounds[0] = new SFXComponent("/Application/assets/Sound/SFX/Crane" + 1 + ".wav");
+				sounds[1] = new SFXComponent("/Application/assets/Sound/SFX/Crane" + 2 + ".wav");
+				sounds[2] = new SFXComponent("/Application/assets/Sound/SFX/Crane" + 3 + ".wav");
+				sounds[3] = new SFXComponent("/Application/assets/Sound/SFX/Crane" + 4 + ".wav");
+				sounds[4] = new SFXComponent("/Application/assets/Sound/SFX/Crane" + 5 + ".wav");
 			}
 			*/
-			//= sound.SetSoundFromFile("/Application/Assets/Sound/SFX/Crane" + i + ".wav");
+			//= sound.SetSoundFromFile("/Application/assets/Sound/SFX/Crane" + i + ".wav");
 			
 		}
 		
@@ -41,13 +41,13 @@ namespace Core
 			
 			//this.parent.Enabled = false;
 			//if ( sound == null )
-				//sound = this.parent.attachComponent( new SFXComponent("/Application/Assets/WaterDrop.wav") ) ;
+				//sound = this.parent.attachComponent( new SFXComponent("/Application/assets/WaterDrop.wav") ) ;
 			int i = CollectibleManager.multiplier;
 			if ( i < 1 || i > 5 ) i = 1;	// some crappy error checking..
 				
-			((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/Assets/Sound/SFX/Crane" + i + ".wav");
+			((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/assets/Sound/SFX/Crane" + i + ".wav");
 			//sound = sounds[i-1];
-			//sound.SetSoundFromFile("/Application/Assets/Sound/SFX/Crane" + i + ".wav");
+			//sound.SetSoundFromFile("/Application/assets/Sound/SFX/Crane" + i + ".wav");
 			//sound.PlaySound();
 			SaveGameManager.SaveString("GotCrane" , SceneManager.Instance.GetCurrentLevelName() + this.parent.GetID() ); 
 			this.parent.attachComponent(new SimpleController( () => {
