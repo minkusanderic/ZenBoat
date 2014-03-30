@@ -74,7 +74,7 @@ namespace Main
 					Core.Profiler.EndFrame();
 					Core.Timer.EndFrame();
 					
-					Console.WriteLine("FPS:" + Core.Timer.AverageFrameRate.ToString());
+					//Console.WriteLine("FPS:" + Core.Timer.AverageFrameRate.ToString());
 					if(!game_end)
 					{
 						//if the level is over, then load the bootstrapper again	

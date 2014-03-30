@@ -140,7 +140,8 @@
   <Entities>
     <Boat id="0" x="164" y="288" angle="0" />
     <Crane id="2" x="612" y="484" />
-    <Bridge id="1" x="788" y="204" NextLevel="002.oel" />
+    <Bridge id="1" x="880" y="204" NextLevel="002.oel" />
+    <FlowerBush id="3" x="568" y="-36" />
   </Entities>
   <Art>
     <MapleTreeSouth id="0" x="580" y="540" width="70" height="70" />

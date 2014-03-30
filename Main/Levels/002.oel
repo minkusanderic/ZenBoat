@@ -164,6 +164,9 @@
     <TulipNorth id="24" x="440" y="-44" />
     <TulipNorth id="25" x="320" y="-40" />
     <Bridge id="1" x="1800" y="200" NextLevel="003.oel" />
+    <Koi id="28" x="868" y="412" angle="0" />
+    <Crane5 id="26" x="1108" y="292" />
+    <Crane10 id="27" x="1240" y="244" />
   </Entities>
   <Art />
 </level>

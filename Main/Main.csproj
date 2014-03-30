@@ -104,6 +104,12 @@
     <Compile Include="Menus\StoreMessage.cs" />
     <Compile Include="Menus\Loading.composer.cs" />
     <Compile Include="Menus\Loading.cs" />
+    <Compile Include="PreFabs\FlowerBush.cs" />
+    <Compile Include="PreFabs\BlackKoi.cs" />
+    <Compile Include="PreFabs\GoldenKoi.cs" />
+    <Compile Include="PreFabs\Crane5.cs" />
+    <Compile Include="PreFabs\Crane10.cs" />
+    <Compile Include="PreFabs\Crane250.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -265,5 +271,8 @@
     <Content Include="assets\RedBoat.mdx" />
     <Content Include="assets\TealBoat.mdx" />
     <Content Include="assets\YellowBoat.mdx" />
+    <Content Include="assets\FlowerBush.mdx" />
+    <Content Include="assets\BlackKoi.mdx" />
+    <Content Include="assets\GoldenKoi.mdx" />
   </ItemGroup>
 </Project>
