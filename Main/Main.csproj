@@ -274,5 +274,6 @@
     <Content Include="assets\FlowerBush.mdx" />
     <Content Include="assets\BlackKoi.mdx" />
     <Content Include="assets\GoldenKoi.mdx" />
+    <Content Include="assets\Whirlpool2.mdx" />
   </ItemGroup>
 </Project>
