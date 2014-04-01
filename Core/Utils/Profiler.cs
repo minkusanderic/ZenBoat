@@ -12,22 +12,17 @@ namespace Core
 		public List<ProfileNode> children = new List<ProfileNode>();
 		public long start;
 		public long end;
+		public long total_time;
 		
 		public String name;
 		[Conditional("DEBUG")]
 		public void print_stats(long ticks, int level)
 		{
-			long used_ticks = ticks;
 			String prepend = new String('-', level);
-			Console.WriteLine(prepend + this.name + ": " + ((end-start)*100/ticks).ToString() + "%");
+			Console.WriteLine(prepend + this.name + ": " + ((total_time)*100/ticks).ToString() + "%");
 			foreach(var node in children)
 			{
-				node.print_stats(end-start, level + 1);
-				used_ticks -= node.end-node.start;
-			}
-			if((used_ticks > 0) && (children.Count > 0))
-			{
-				Console.WriteLine(prepend + '-' + "Other :" + (used_ticks * 100 / ticks).ToString() + "%");
+				node.print_stats(ticks, level + 1);
 			}
 		}
 	}
@@ -38,7 +33,7 @@ namespace Core
 		public static Stack<ProfileNode> start_times = new Stack<ProfileNode>();
 		public static Stopwatch stopwatch = new Stopwatch();
 		
-		public static ProfileNode root_node;
+		public static ProfileNode root_node = new ProfileNode();
 		public Profiler ()
 		{
 		}
@@ -47,7 +42,7 @@ namespace Core
 		{
 			stopwatch.Reset();
 			stopwatch.Start();
-			root_node = new ProfileNode();
+			//root_node = new ProfileNode();
 			root_node.name = "Root";
 			root_node.start = stopwatch.ElapsedTicks;
 			start_times.Push(root_node);
@@ -60,7 +55,18 @@ namespace Core
 			var temp_node = new ProfileNode();
 			temp_node.name = section;
 			temp_node.start = stopwatch.ElapsedTicks;
+			foreach(var node in start_times.Peek().children)
+			{
+				if(node.name == temp_node.name)
+				{
+					node.start = stopwatch.ElapsedTicks;	
+					start_times.Push(node);
+					return;
+				}
+			}
+			start_times.Peek().children.Add(temp_node);
 			start_times.Push(temp_node);
+			
 		}
 		
 		[Conditional("DEBUG")]
@@ -68,7 +74,8 @@ namespace Core
 		{
 			var temp_node = start_times.Pop();
 			temp_node.end = stopwatch.ElapsedTicks;
-			start_times.Peek().children.Add(temp_node);
+			temp_node.total_time += temp_node.end - temp_node.start;
+			//start_times.Peek().children.Add(temp_node);
 		}
 		
 		[Conditional("DEBUG")]
@@ -81,8 +88,8 @@ namespace Core
 			}
 			stopwatch.Stop();
 			root_node.end = stopwatch.ElapsedTicks;
-			
-			root_node.print_stats(root_node.end - root_node.start, 1);
+			root_node.total_time += root_node.end - root_node.start;
+			root_node.print_stats(root_node.total_time, 1);
 		}
 	}
 }
