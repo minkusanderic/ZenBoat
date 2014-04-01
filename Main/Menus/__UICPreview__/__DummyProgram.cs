@@ -25,7 +25,7 @@ namespace Preview
             graphics = new GraphicsContext(960,544,PixelFormat.Rgba,PixelFormat.Depth16,MultiSampleMode.None);
             UISystem.Initialize(graphics);
 
-            __DummyScene scene = new __DummyScene();
+            Levels scene = new Levels();
             SetupListNum(scene.RootWidget);
             scene.SetWidgetLayout(LayoutOrientation.Horizontal);
             UISystem.SetScene(scene);

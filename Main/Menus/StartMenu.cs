@@ -30,7 +30,7 @@ namespace Menu
 		
         void HandleLevelButtonButtonAction (object sender, TouchEventArgs e)
         {
-			//MenuLoader.loadLevel = true;
+			MenuLoader.loadLevel = true;
         } 
 
 		void HandleStoreButtonButtonAction(object sender, TouchEventArgs e)

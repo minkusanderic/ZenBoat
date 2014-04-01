@@ -14,7 +14,8 @@ namespace Preview
         Panel Panel_1;
         ImageBox titleImage;
         Button playButton;
-        Button quitButton;
+        Button levelButton;
+        Button storeButton;
         Button creditButton;
 
         private void InitializeWidget()
@@ -30,8 +31,10 @@ namespace Preview
             titleImage.Name = "titleImage";
             playButton = new Button();
             playButton.Name = "playButton";
-            quitButton = new Button();
-            quitButton.Name = "quitButton";
+            levelButton = new Button();
+            levelButton.Name = "levelButton";
+            storeButton = new Button();
+            storeButton.Name = "storeButton";
             creditButton = new Button();
             creditButton.Name = "creditButton";
 
@@ -43,11 +46,12 @@ namespace Preview
             Panel_1.Clip = true;
             Panel_1.AddChildLast(titleImage);
             Panel_1.AddChildLast(playButton);
-            Panel_1.AddChildLast(quitButton);
+            Panel_1.AddChildLast(levelButton);
+            Panel_1.AddChildLast(storeButton);
             Panel_1.AddChildLast(creditButton);
 
             // titleImage
-            titleImage.Image = new ImageAsset("/Application/assets/title1.png");
+            titleImage.Image = new ImageAsset("/Application/assets/title.png");
 
             // playButton
             playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -61,11 +65,23 @@ namespace Preview
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
             };
 
-            // quitButton
-            quitButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            quitButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            quitButton.Style = ButtonStyle.Custom;
-            quitButton.CustomImage = new CustomButtonImageSettings()
+            // levelButton
+            levelButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            levelButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            levelButton.Style = ButtonStyle.Custom;
+            levelButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
+
+            // storeButton
+            storeButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            storeButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            storeButton.Style = ButtonStyle.Custom;
+            storeButton.CustomImage = new CustomButtonImageSettings()
             {
                 BackgroundNormalImage = null,
                 BackgroundPressedImage = null,
@@ -114,10 +130,15 @@ namespace Preview
                     playButton.Anchors = Anchors.None;
                     playButton.Visible = true;
 
-                    quitButton.SetPosition(373, 421);
-                    quitButton.SetSize(214, 56);
-                    quitButton.Anchors = Anchors.None;
-                    quitButton.Visible = true;
+                    levelButton.SetPosition(337, 172);
+                    levelButton.SetSize(214, 56);
+                    levelButton.Anchors = Anchors.None;
+                    levelButton.Visible = true;
+
+                    storeButton.SetPosition(363, 217);
+                    storeButton.SetSize(214, 56);
+                    storeButton.Anchors = Anchors.None;
+                    storeButton.Visible = true;
 
                     creditButton.SetPosition(495, 365);
                     creditButton.SetSize(214, 56);
@@ -140,18 +161,23 @@ namespace Preview
                     titleImage.Anchors = Anchors.None;
                     titleImage.Visible = true;
 
-                    playButton.SetPosition(109, 278);
-                    playButton.SetSize(214, 56);
+                    playButton.SetPosition(63, 302);
+                    playButton.SetSize(147, 84);
                     playButton.Anchors = Anchors.None;
                     playButton.Visible = true;
 
-                    quitButton.SetPosition(109, 407);
-                    quitButton.SetSize(214, 56);
-                    quitButton.Anchors = Anchors.None;
-                    quitButton.Visible = true;
+                    levelButton.SetPosition(210, 302);
+                    levelButton.SetSize(168, 84);
+                    levelButton.Anchors = Anchors.None;
+                    levelButton.Visible = true;
 
-                    creditButton.SetPosition(109, 345);
-                    creditButton.SetSize(214, 56);
+                    storeButton.SetPosition(63, 386);
+                    storeButton.SetSize(134, 77);
+                    storeButton.Anchors = Anchors.None;
+                    storeButton.Visible = true;
+
+                    creditButton.SetPosition(197, 386);
+                    creditButton.SetSize(181, 77);
                     creditButton.Anchors = Anchors.None;
                     creditButton.Visible = true;
 

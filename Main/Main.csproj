@@ -104,12 +104,25 @@
     <Compile Include="Menus\StoreMessage.cs" />
     <Compile Include="Menus\Loading.composer.cs" />
     <Compile Include="Menus\Loading.cs" />
+<<<<<<< OURS
     <Compile Include="PreFabs\FlowerBush.cs" />
     <Compile Include="PreFabs\BlackKoi.cs" />
     <Compile Include="PreFabs\GoldenKoi.cs" />
     <Compile Include="PreFabs\Crane5.cs" />
     <Compile Include="PreFabs\Crane10.cs" />
     <Compile Include="PreFabs\Crane250.cs" />
+=======
+    <Compile Include="Menus\Level01.composer.cs" />
+    <Compile Include="Menus\Level01.cs" />
+    <Compile Include="Menus\Level02.composer.cs" />
+    <Compile Include="Menus\Level02.cs" />
+    <Compile Include="Menus\Level03.composer.cs" />
+    <Compile Include="Menus\Level03.cs" />
+    <Compile Include="Menus\Level04.composer.cs" />
+    <Compile Include="Menus\Level04.cs" />
+    <Compile Include="Menus\Levels.composer.cs" />
+    <Compile Include="Menus\Levels.cs" />
+>>>>>>> THEIRS
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

@@ -82,7 +82,7 @@ namespace Preview
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
 
-                    pauseLabel.SetPosition(352, 128);
+                    pauseLabel.SetPosition(352, 138);
                     pauseLabel.SetSize(255, 97);
                     pauseLabel.Anchors = Anchors.None;
                     pauseLabel.Visible = true;

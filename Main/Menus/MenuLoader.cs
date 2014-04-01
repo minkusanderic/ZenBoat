@@ -15,7 +15,7 @@ namespace Main
 		public static bool loadInstr = false;
 		public static bool loadStory = false;
 		public static bool loadStart = false;
-		//public static bool loadLevel = false;
+		public static bool loadLevel = false;
 		public static bool loadCredit = false;
 		public static bool loadStore = false;
 		
@@ -34,7 +34,7 @@ namespace Main
 			var start = new Menu.StartMenu();
 			var instr = new Menu.Instructions();
 			var story = new Menu.Story();
-			//var level = new Menu.Level();
+			var level = new Menu.Levels();
 			var credit = new Menu.Credits();
 			var store = new Menu.Store();
 			
@@ -65,11 +65,11 @@ namespace Main
 					loadStart = false;
 				}
 				
-//				if (loadLevel)
-//				{
-//					UISystem.SetScene(start,null);
-//					loadLevel = false;
-//				}
+				if (loadLevel)
+				{
+					UISystem.SetScene(level,null);
+					loadLevel = false;
+				}
 				
 				if (loadCredit)
 				{
