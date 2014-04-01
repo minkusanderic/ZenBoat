@@ -18,8 +18,8 @@ namespace Core
 		[Conditional("DEBUG")]
 		public void print_stats(long ticks, int level)
 		{
-			String prepend = new String('-', level);
-			Console.WriteLine(prepend + this.name + ": " + ((total_time)*100/ticks).ToString() + "%");
+			String prepend = new String(' ', level);
+			Console.WriteLine(prepend + "|-" + this.name + ": " + ((total_time)*100/ticks).ToString() + "%");
 			foreach(var node in children)
 			{
 				node.print_stats(ticks, level + 1);
