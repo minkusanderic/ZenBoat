@@ -146,11 +146,11 @@
   <Art>
     <MapleTreeSouth id="0" x="580" y="540" width="70" height="70" />
     <CherryBlossomNorth id="2" x="140" y="-56" />
-    <LooseBlossoms id="3" x="80" y="32" />
-    <LooseBlossoms id="4" x="104" y="64" />
-    <LooseBlossoms id="5" x="40" y="64" />
-    <LooseBlossoms id="6" x="248" y="28" />
-    <LooseBlossoms id="7" x="308" y="32" />
+    <LooseBlossoms id="3" x="124" y="52" />
+    <LooseBlossoms id="4" x="148" y="84" />
+    <LooseBlossoms id="5" x="84" y="84" />
+    <LooseBlossoms id="6" x="128" y="116" />
+    <LooseBlossoms id="7" x="188" y="120" />
     <Koi id="1" x="168" y="408" angle="0" />
   </Art>
 </level>

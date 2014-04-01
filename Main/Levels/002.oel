@@ -156,17 +156,17 @@
     <Crane id="16" x="916" y="256" />
     <Crane id="17" x="416" y="476" />
     <Crane id="18" x="1352" y="36" />
-    <Crane id="19" x="1204" y="132" />
+    <Crane id="19" x="1248" y="224" />
     <Crane id="20" x="1408" y="188" />
     <Crane id="21" x="1600" y="328" />
     <CherryBlossomNorth id="22" x="1336" y="-56" />
-    <TulipNorth id="23" x="376" y="-56" />
-    <TulipNorth id="24" x="440" y="-44" />
-    <TulipNorth id="25" x="320" y="-40" />
+    <TulipNorth id="23" x="344" y="-32" />
+    <TulipNorth id="24" x="476" y="-32" />
+    <TulipNorth id="25" x="204" y="-32" />
     <Bridge id="1" x="1800" y="200" NextLevel="003.oel" />
     <Koi id="28" x="868" y="412" angle="0" />
     <Crane5 id="26" x="1108" y="292" />
-    <Crane10 id="27" x="1240" y="244" />
+    <Crane10 id="27" x="1188" y="124" />
   </Entities>
   <Art />
 </level>
