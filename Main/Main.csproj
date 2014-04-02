@@ -119,6 +119,7 @@
     <Compile Include="Menus\Levels.composer.cs" />
     <Compile Include="Menus\Levels.cs" />
     <Compile Include="Menus\Level01.composer.cs" />
+    <Compile Include="PreFabs\BridgeDeco.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
