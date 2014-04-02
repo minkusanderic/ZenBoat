@@ -20,9 +20,9 @@ namespace Main
 			
 			ent.Transform.Rotation = new Vector2(0.5f, 1f);
 			ent.Transform.SetAngle(1f);
-			var m = ent.attachComponent(new ModelComponent("/Application/assets/CraneGreen.mdx"));
+			var m = ent.attachComponent(new ModelComponent("/Application/assets/Peach.mdx"));
 
-			m.scale = new Vector3(1f, 1f, 1f);
+			m.scale = new Vector3(2f, 2f, 2f);
 			
 			//m.model.Animate(Timer.DeltaTime);
 		    //m.model.SetCurrentMotion( 0, 0.1f ) ;

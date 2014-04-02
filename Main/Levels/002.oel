@@ -168,6 +168,7 @@
     <Crane5 id="26" x="1108" y="292" />
     <Crane10 id="27" x="1188" y="124" />
     <BridgeDeco id="29" x="0" y="208" />
+    <Crane250 id="30" x="1640" y="196" />
   </Entities>
   <Art />
 </level>

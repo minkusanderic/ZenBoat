@@ -287,5 +287,9 @@
     <Content Include="assets\GoldenKoi.mdx" />
     <Content Include="assets\Whirlpool2.mdx" />
     <Content Include="assets\star.jpg" />
+    <Content Include="assets\Cream.mdx" />
+    <Content Include="assets\Peach.mdx" />
+    <Content Include="assets\Rainbow.mdx" />
+    <Content Include="assets\Whirlpool3.mdx" />
   </ItemGroup>
 </Project>
