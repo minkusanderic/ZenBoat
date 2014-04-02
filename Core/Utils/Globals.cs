@@ -14,6 +14,9 @@ namespace Core
 		public static String current_level = "/Application/Levels/001.oel";
 
 		public static String chosenBoat = "";
+		public static String craneTotalForLevelPrefix = "TotalCranes";
+		public static String completedLevelPrefix = "Completed";
+		public static String true_ = "true";
 	}
 }
 

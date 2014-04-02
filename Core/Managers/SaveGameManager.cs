@@ -114,6 +114,8 @@ namespace Core
 							if ( key == "GotCrane" ) // this is in the XML doc for the saveGame (saveGame.xml)
 							{
 								cranes_to_save.Add( val );
+							}else{
+								strings[key] = val;	
 							}
 						}
 					}
@@ -121,6 +123,12 @@ namespace Core
 			}
 			fs.Close();	 
 			return _init;
+		}
+		
+		public static List<string> GetCranes()
+		{
+			Console.WriteLine("In Get Cranes");
+			return cranes_to_save;
 		}
 		
 		/// <summary>
@@ -231,6 +239,7 @@ namespace Core
 		
 		public static string GetValueFromKey( string key )
 		{
+			if ( !_init) init();
 			if ( strings.ContainsKey( key ) )
 				return  strings[key];	
 			else return null;

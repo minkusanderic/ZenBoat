@@ -120,6 +120,7 @@
     <Compile Include="Menus\Levels.cs" />
     <Compile Include="Menus\Level01.composer.cs" />
     <Compile Include="PreFabs\BridgeDeco.cs" />
+    <Compile Include="Menus\LevelUIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -285,5 +286,6 @@
     <Content Include="assets\BlackKoi.mdx" />
     <Content Include="assets\GoldenKoi.mdx" />
     <Content Include="assets\Whirlpool2.mdx" />
+    <Content Include="assets\star.jpg" />
   </ItemGroup>
 </Project>

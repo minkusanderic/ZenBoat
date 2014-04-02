@@ -11,10 +11,22 @@ namespace Menu
 {
     partial class Level02
     {
-        Button Button_5;
-        Button Button_6;
-        Button Button_7;
-        Button Button_8;
+        Button Button_1;
+        Button Button_2;
+        Button Button_3;
+        Button Button_4;
+        ImageBox ImageBox_4_2;
+        ImageBox ImageBox_4_3;
+        ImageBox ImageBox_4_1;
+        ImageBox ImageBox_3_2;
+        ImageBox ImageBox_3_3;
+        ImageBox ImageBox_2_1;
+        ImageBox ImageBox_2_2;
+        ImageBox ImageBox_2_3;
+        ImageBox ImageBox_3_1;
+        ImageBox ImageBox_1_1;
+        ImageBox ImageBox_1_2;
+        ImageBox ImageBox_1_3;
 
         private void InitializeWidget()
         {
@@ -23,38 +35,110 @@ namespace Menu
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            Button_5 = new Button();
-            Button_5.Name = "Button_5";
-            Button_6 = new Button();
-            Button_6.Name = "Button_6";
-            Button_7 = new Button();
-            Button_7.Name = "Button_7";
-            Button_8 = new Button();
-            Button_8.Name = "Button_8";
+            Button_1 = new Button();
+            Button_1.Name = "Button_1";
+            Button_2 = new Button();
+            Button_2.Name = "Button_2";
+            Button_3 = new Button();
+            Button_3.Name = "Button_3";
+            Button_4 = new Button();
+            Button_4.Name = "Button_4";
+            ImageBox_4_2 = new ImageBox();
+            ImageBox_4_2.Name = "ImageBox_4_2";
+            ImageBox_4_3 = new ImageBox();
+            ImageBox_4_3.Name = "ImageBox_4_3";
+            ImageBox_4_1 = new ImageBox();
+            ImageBox_4_1.Name = "ImageBox_4_1";
+            ImageBox_3_2 = new ImageBox();
+            ImageBox_3_2.Name = "ImageBox_3_2";
+            ImageBox_3_3 = new ImageBox();
+            ImageBox_3_3.Name = "ImageBox_3_3";
+            ImageBox_2_1 = new ImageBox();
+            ImageBox_2_1.Name = "ImageBox_2_1";
+            ImageBox_2_2 = new ImageBox();
+            ImageBox_2_2.Name = "ImageBox_2_2";
+            ImageBox_2_3 = new ImageBox();
+            ImageBox_2_3.Name = "ImageBox_2_3";
+            ImageBox_3_1 = new ImageBox();
+            ImageBox_3_1.Name = "ImageBox_3_1";
+            ImageBox_1_1 = new ImageBox();
+            ImageBox_1_1.Name = "ImageBox_1_1";
+            ImageBox_1_2 = new ImageBox();
+            ImageBox_1_2.Name = "ImageBox_1_2";
+            ImageBox_1_3 = new ImageBox();
+            ImageBox_1_3.Name = "ImageBox_1_3";
 
             // Level02
             this.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             this.Clip = true;
-            this.AddChildLast(Button_5);
-            this.AddChildLast(Button_6);
-            this.AddChildLast(Button_7);
-            this.AddChildLast(Button_8);
+            this.AddChildLast(Button_1);
+            this.AddChildLast(Button_2);
+            this.AddChildLast(Button_3);
+            this.AddChildLast(Button_4);
+            this.AddChildLast(ImageBox_4_2);
+            this.AddChildLast(ImageBox_4_3);
+            this.AddChildLast(ImageBox_4_1);
+            this.AddChildLast(ImageBox_3_2);
+            this.AddChildLast(ImageBox_3_3);
+            this.AddChildLast(ImageBox_2_1);
+            this.AddChildLast(ImageBox_2_2);
+            this.AddChildLast(ImageBox_2_3);
+            this.AddChildLast(ImageBox_3_1);
+            this.AddChildLast(ImageBox_1_1);
+            this.AddChildLast(ImageBox_1_2);
+            this.AddChildLast(ImageBox_1_3);
 
-            // Button_5
-            Button_5.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_5.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // Button_1
+            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
-            // Button_6
-            Button_6.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_6.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // Button_2
+            Button_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
-            // Button_7
-            Button_7.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_7.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // Button_3
+            Button_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_3.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
-            // Button_8
-            Button_8.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_8.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // Button_4
+            Button_4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_4.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+
+            // ImageBox_4_2
+            ImageBox_4_2.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_4_3
+            ImageBox_4_3.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_4_1
+            ImageBox_4_1.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_3_2
+            ImageBox_3_2.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_3_3
+            ImageBox_3_3.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_2_1
+            ImageBox_2_1.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_2_2
+            ImageBox_2_2.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_2_3
+            ImageBox_2_3.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_3_1
+            ImageBox_3_1.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_1_1
+            ImageBox_1_1.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_1_2
+            ImageBox_1_2.Image = new ImageAsset("/Application/assets/star.jpg");
+
+            // ImageBox_1_3
+            ImageBox_1_3.Image = new ImageAsset("/Application/assets/star.jpg");
 
             SetWidgetLayout(orientation);
 
@@ -70,25 +154,85 @@ namespace Menu
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    Button_5.SetPosition(97, 82);
-                    Button_5.SetSize(214, 56);
-                    Button_5.Anchors = Anchors.None;
-                    Button_5.Visible = true;
+                    Button_1.SetPosition(97, 82);
+                    Button_1.SetSize(214, 56);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
 
-                    Button_6.SetPosition(97, 82);
-                    Button_6.SetSize(214, 56);
-                    Button_6.Anchors = Anchors.None;
-                    Button_6.Visible = true;
+                    Button_2.SetPosition(97, 82);
+                    Button_2.SetSize(214, 56);
+                    Button_2.Anchors = Anchors.None;
+                    Button_2.Visible = true;
 
-                    Button_7.SetPosition(97, 82);
-                    Button_7.SetSize(214, 56);
-                    Button_7.Anchors = Anchors.None;
-                    Button_7.Visible = true;
+                    Button_3.SetPosition(97, 82);
+                    Button_3.SetSize(214, 56);
+                    Button_3.Anchors = Anchors.None;
+                    Button_3.Visible = true;
 
-                    Button_8.SetPosition(97, 82);
-                    Button_8.SetSize(214, 56);
-                    Button_8.Anchors = Anchors.None;
-                    Button_8.Visible = true;
+                    Button_4.SetPosition(97, 82);
+                    Button_4.SetSize(214, 56);
+                    Button_4.Anchors = Anchors.None;
+                    Button_4.Visible = true;
+
+                    ImageBox_4_2.SetPosition(260, -56);
+                    ImageBox_4_2.SetSize(200, 200);
+                    ImageBox_4_2.Anchors = Anchors.None;
+                    ImageBox_4_2.Visible = true;
+
+                    ImageBox_4_3.SetPosition(260, -56);
+                    ImageBox_4_3.SetSize(200, 200);
+                    ImageBox_4_3.Anchors = Anchors.None;
+                    ImageBox_4_3.Visible = true;
+
+                    ImageBox_4_1.SetPosition(260, -56);
+                    ImageBox_4_1.SetSize(200, 200);
+                    ImageBox_4_1.Anchors = Anchors.None;
+                    ImageBox_4_1.Visible = true;
+
+                    ImageBox_3_2.SetPosition(260, -56);
+                    ImageBox_3_2.SetSize(200, 200);
+                    ImageBox_3_2.Anchors = Anchors.None;
+                    ImageBox_3_2.Visible = true;
+
+                    ImageBox_3_3.SetPosition(260, -56);
+                    ImageBox_3_3.SetSize(200, 200);
+                    ImageBox_3_3.Anchors = Anchors.None;
+                    ImageBox_3_3.Visible = true;
+
+                    ImageBox_2_1.SetPosition(260, -56);
+                    ImageBox_2_1.SetSize(200, 200);
+                    ImageBox_2_1.Anchors = Anchors.None;
+                    ImageBox_2_1.Visible = true;
+
+                    ImageBox_2_2.SetPosition(260, -56);
+                    ImageBox_2_2.SetSize(200, 200);
+                    ImageBox_2_2.Anchors = Anchors.None;
+                    ImageBox_2_2.Visible = true;
+
+                    ImageBox_2_3.SetPosition(260, -56);
+                    ImageBox_2_3.SetSize(200, 200);
+                    ImageBox_2_3.Anchors = Anchors.None;
+                    ImageBox_2_3.Visible = true;
+
+                    ImageBox_3_1.SetPosition(260, -56);
+                    ImageBox_3_1.SetSize(200, 200);
+                    ImageBox_3_1.Anchors = Anchors.None;
+                    ImageBox_3_1.Visible = true;
+
+                    ImageBox_1_1.SetPosition(260, -56);
+                    ImageBox_1_1.SetSize(200, 200);
+                    ImageBox_1_1.Anchors = Anchors.None;
+                    ImageBox_1_1.Visible = true;
+
+                    ImageBox_1_2.SetPosition(260, -56);
+                    ImageBox_1_2.SetSize(200, 200);
+                    ImageBox_1_2.Anchors = Anchors.None;
+                    ImageBox_1_2.Visible = true;
+
+                    ImageBox_1_3.SetPosition(260, -56);
+                    ImageBox_1_3.SetSize(200, 200);
+                    ImageBox_1_3.Anchors = Anchors.None;
+                    ImageBox_1_3.Visible = true;
 
                     break;
 
@@ -96,25 +240,85 @@ namespace Menu
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    Button_5.SetPosition(22, 25);
-                    Button_5.SetSize(400, 200);
-                    Button_5.Anchors = Anchors.None;
-                    Button_5.Visible = true;
+                    Button_1.SetPosition(22, 25);
+                    Button_1.SetSize(400, 200);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
 
-                    Button_6.SetPosition(523, 25);
-                    Button_6.SetSize(400, 200);
-                    Button_6.Anchors = Anchors.None;
-                    Button_6.Visible = true;
+                    Button_2.SetPosition(523, 25);
+                    Button_2.SetSize(400, 200);
+                    Button_2.Anchors = Anchors.None;
+                    Button_2.Visible = true;
 
-                    Button_7.SetPosition(22, 290);
-                    Button_7.SetSize(400, 200);
-                    Button_7.Anchors = Anchors.None;
-                    Button_7.Visible = true;
+                    Button_3.SetPosition(22, 290);
+                    Button_3.SetSize(400, 200);
+                    Button_3.Anchors = Anchors.None;
+                    Button_3.Visible = true;
 
-                    Button_8.SetPosition(523, 290);
-                    Button_8.SetSize(400, 200);
-                    Button_8.Anchors = Anchors.None;
-                    Button_8.Visible = true;
+                    Button_4.SetPosition(523, 290);
+                    Button_4.SetSize(400, 200);
+                    Button_4.Anchors = Anchors.None;
+                    Button_4.Visible = true;
+
+                    ImageBox_4_2.SetPosition(829, 438);
+                    ImageBox_4_2.SetSize(37, 34);
+                    ImageBox_4_2.Anchors = Anchors.None;
+                    ImageBox_4_2.Visible = true;
+
+                    ImageBox_4_3.SetPosition(866, 438);
+                    ImageBox_4_3.SetSize(37, 34);
+                    ImageBox_4_3.Anchors = Anchors.None;
+                    ImageBox_4_3.Visible = true;
+
+                    ImageBox_4_1.SetPosition(796, 438);
+                    ImageBox_4_1.SetSize(37, 34);
+                    ImageBox_4_1.Anchors = Anchors.None;
+                    ImageBox_4_1.Visible = true;
+
+                    ImageBox_3_2.SetPosition(83, 438);
+                    ImageBox_3_2.SetSize(37, 34);
+                    ImageBox_3_2.Anchors = Anchors.None;
+                    ImageBox_3_2.Visible = true;
+
+                    ImageBox_3_3.SetPosition(116, 438);
+                    ImageBox_3_3.SetSize(37, 34);
+                    ImageBox_3_3.Anchors = Anchors.None;
+                    ImageBox_3_3.Visible = true;
+
+                    ImageBox_2_1.SetPosition(796, 50);
+                    ImageBox_2_1.SetSize(37, 34);
+                    ImageBox_2_1.Anchors = Anchors.None;
+                    ImageBox_2_1.Visible = true;
+
+                    ImageBox_2_2.SetPosition(831, 50);
+                    ImageBox_2_2.SetSize(37, 34);
+                    ImageBox_2_2.Anchors = Anchors.None;
+                    ImageBox_2_2.Visible = true;
+
+                    ImageBox_2_3.SetPosition(866, 50);
+                    ImageBox_2_3.SetSize(37, 34);
+                    ImageBox_2_3.Anchors = Anchors.None;
+                    ImageBox_2_3.Visible = true;
+
+                    ImageBox_3_1.SetPosition(46, 438);
+                    ImageBox_3_1.SetSize(37, 34);
+                    ImageBox_3_1.Anchors = Anchors.None;
+                    ImageBox_3_1.Visible = true;
+
+                    ImageBox_1_1.SetPosition(46, 50);
+                    ImageBox_1_1.SetSize(37, 34);
+                    ImageBox_1_1.Anchors = Anchors.None;
+                    ImageBox_1_1.Visible = true;
+
+                    ImageBox_1_2.SetPosition(79, 50);
+                    ImageBox_1_2.SetSize(37, 34);
+                    ImageBox_1_2.Anchors = Anchors.None;
+                    ImageBox_1_2.Visible = true;
+
+                    ImageBox_1_3.SetPosition(116, 50);
+                    ImageBox_1_3.SetSize(37, 34);
+                    ImageBox_1_3.Anchors = Anchors.None;
+                    ImageBox_1_3.Visible = true;
 
                     break;
             }
@@ -123,13 +327,13 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            Button_5.Text = "5";
+            Button_1.Text = "005";
 
-            Button_6.Text = "6";
+            Button_2.Text = "006";
 
-            Button_7.Text = "7";
+            Button_3.Text = "007";
 
-            Button_8.Text = "8";
+            Button_4.Text = "008";
         }
 
         public void InitializeDefaultEffect()

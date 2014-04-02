@@ -164,6 +164,14 @@ namespace Main
 				}
 				}
 				((WaterSystem)SceneManager.Instance.getSystem(typeof(WaterSystem))).SetCurrentData(down, up, left, right);
+				// for the Level Select Screens-> cache out the number of cranes TOTAL on this level.
+				int crane_count = 0;
+				foreach( Entity e in SceneManager.Instance.FindEntitiesByTag("crane") )
+				{
+					crane_count ++;
+				}
+				  
+				SaveGameManager.SaveString( Globals.craneTotalForLevelPrefix + filename , crane_count.ToString() );
 			}
 		} 
 		

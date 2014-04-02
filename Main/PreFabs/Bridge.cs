@@ -43,7 +43,8 @@ namespace Main
 															SceneManager.Instance.currentState = GameState.STOPPED;
 															return;
 														}
-														Console.WriteLine ("You've reached the Torii Gate - Level Over!");		
+														Console.WriteLine ("You've reached the Torii Gate - Level Over!");	
+														SaveGameManager.SaveString( Globals.completedLevelPrefix + Globals.current_level , Globals.true_ );
 														//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/assets/Sound/SFX/LevelEnd.wav" ) );
 														//sound.PlaySound();
 														((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/assets/Sound/SFX/LevelEnd.wav");	

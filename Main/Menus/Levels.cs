@@ -5,7 +5,7 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
 using Main;
-
+using Core;
 namespace Menu
 {
     public partial class Levels : Scene
