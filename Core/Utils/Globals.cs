@@ -17,6 +17,8 @@ namespace Core
 		public static String craneTotalForLevelPrefix = "TotalCranes";
 		public static String completedLevelPrefix = "Completed";
 		public static String true_ = "true";
+		
+		public static float Max_Speed_Of_Boat = 500.0f;
 	}
 }
 

@@ -39,7 +39,14 @@ namespace Main
 			ent.attachComponent( new RigidBody(m.model.BoundingSphere.W *.25f) );
 			ent.attachComponent( new FrictionController(.05f) );
 			ent.attachComponent( new SimpleController(() => {
-			ent.FindComponent<RigidBody>().applyForce(new Vector2(10.0f, 0.0f));
+				var rb = ent.FindComponent<RigidBody>();
+				rb.applyForce(new Vector2(10.0f, 0.0f));
+				if(rb.Velocity.Length() > Globals.Max_Speed_Of_Boat)
+				{
+					//limit the boat's speed to a certain velocity
+					rb.Velocity = rb.Velocity * (Globals.Max_Speed_Of_Boat/rb.Velocity.Length());
+				}
+			
 			}));
 			//ent.attachComponent( new RadialSplash());
 			
