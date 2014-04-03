@@ -16,12 +16,16 @@ namespace Menu
 			Label_1.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 35, FontStyle.Bold);
 			Button_1.TextFont = new UIFont("/Application/Menus/Zen_Sketch.ttf", 35, FontStyle.Bold);
 			Button_1.ButtonAction += HandleButton_1ButtonAction;
+			
         }
-
+		
+		protected override void OnUpdate(float elapsedTime)
+		{
+			Label_1.Text = CollectibleManager.stageScore.ToString();
+		}
         void HandleButton_1ButtonAction (object sender, TouchEventArgs e)
         {
         	SceneManager.Instance.currentState = GameState.STOPPED;
-			Console.WriteLine("GO BACK WILLIE");
         }
     }
 }
