@@ -62,10 +62,11 @@ namespace Main
 					LevelLoader.Load(Globals.current_level);
 					SceneManager.Instance.currentState = GameState.RUNNING;
 					current_state = AppState.GAME;
+					UISystem.SetScene(new Menu.HUD());
 					break;
 					
 				case AppState.GAME:
-					UISystem.SetScene(null,null);
+					
 					Core.Timer.StartFrame();
 					Core.Profiler.StartFrame();
 					Core.Profiler.Begin("Update");

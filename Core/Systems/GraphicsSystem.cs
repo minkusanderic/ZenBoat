@@ -198,7 +198,11 @@ namespace Core
 			//graphics.Disable( EnableMode.DepthTest ) ;
 			//SampleDraw.DrawText( "BasicModel Sample", 0xffffffff, 0, 0 ) ;
 			Profiler.Begin("Update UI");
-			UISystem.Update(Touch.GetData(0)); 
+			
+			TouchSystem ts = ((TouchSystem)SceneManager.Instance.getSystem(typeof(TouchSystem)));
+			SystemEvents.CheckEvents();
+			UISystem.Update(ts.getTouchData()); 
+			
 			UISystem.Render();
 			Profiler.End();
 			Profiler.End();

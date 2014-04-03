@@ -121,6 +121,8 @@
     <Compile Include="Menus\Level01.composer.cs" />
     <Compile Include="PreFabs\BridgeDeco.cs" />
     <Compile Include="Menus\LevelUIManager.cs" />
+    <Compile Include="Menus\HUD.composer.cs" />
+    <Compile Include="Menus\HUD.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
