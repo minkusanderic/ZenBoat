@@ -293,5 +293,6 @@
     <Content Include="assets\Peach.mdx" />
     <Content Include="assets\Rainbow.mdx" />
     <Content Include="assets\Whirlpool3.mdx" />
+    <Content Include="Menus\Zen_Sketch.ttf" />
   </ItemGroup>
 </Project>

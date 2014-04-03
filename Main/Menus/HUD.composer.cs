@@ -39,7 +39,7 @@ namespace Menu
             Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             // Label_1
-            Label_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             Label_1.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
             Label_1.LineBreak = LineBreak.Character;
 
