@@ -124,9 +124,8 @@
     <Compile Include="PreFabs\Crane1.cs" />
     <Compile Include="PreFabs\IrisSouth.cs" />
     <Compile Include="PreFabs\TulipSouth.cs" />
-  
   </ItemGroup>
-    <ItemGroup>
+  <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
     <ShaderProgram Include="shaders\Simple.vcg" />
     <ShaderProgram Include="shaders\Sprite.fcg" />
@@ -292,7 +291,6 @@
     <Content Include="assets\star.jpg" />
     <Content Include="assets\Cream.mdx" />
     <Content Include="assets\Peach.mdx" />
-    <Content Include="assets\Rainbow.mdx" />
     <Content Include="assets\Whirlpool3.mdx" />
     <Content Include="Menus\Zen_Sketch.ttf" />
     <Content Include="assets\GrassSingleBlade1.mdx" />
@@ -306,5 +304,8 @@
     <Content Include="assets\GrassBundle3.mdx" />
     <Content Include="assets\GrassBundle4.mdx" />
     <Content Include="assets\Bridge.mdx" />
-    </ItemGroup>
+    <Content Include="assets\Pink.mdx" />
+    <Content Include="assets\Gold.mdx" />
+    <Content Include="assets\Rainbow.mdx" />
+  </ItemGroup>
 </Project>

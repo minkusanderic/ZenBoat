@@ -20,7 +20,7 @@ namespace Main
 			
 			ent.Transform.Rotation = new Vector2(0.5f, 1f);
 			ent.Transform.SetAngle(1f);
-			var m = ent.attachComponent(new ModelComponent("/Application/assets/Cream.mdx"));
+			var m = ent.attachComponent(new ModelComponent("/Application/assets/Pink.mdx"));
 
 			m.scale = new Vector3(2f, 2f, 2f);
 			
