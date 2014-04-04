@@ -14,6 +14,7 @@ namespace Main
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			ent.tag("grass");
+			
 			Random random = new Random();
 			/*ent.attachComponent(new Core.SimpleController(() => {
 				List<Entity> targets = SceneManager.Instance.FindEntitiesByTag("grass").ToList();
