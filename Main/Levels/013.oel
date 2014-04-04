@@ -141,56 +141,24 @@
     <Boat id="0" x="152" y="256" angle="0" />
     <Whirlpool id="2" x="1064" y="168" width="80" height="80" strength="100" />
     <Geyser id="3" x="920" y="440" width="80" height="80" strength="100" />
-    <Crane id="4" x="780" y="316" />
-    <Crane id="5" x="1068" y="312" />
     <Whirlpool id="1" x="776" y="172" width="80" height="80" strength="100" />
     <Whirlpool id="7" x="1356" y="352" width="80" height="80" strength="100" />
     <Whirlpool id="8" x="1636" y="356" width="80" height="80" strength="100" />
     <Geyser id="9" x="1504" y="104" width="80" height="80" strength="100" />
-    <Crane id="10" x="1364" y="196" />
-    <Crane id="11" x="1640" y="196" />
-    <Endstage id="12" x="1948" y="276" NextLevel="" />
     <Rock id="13" x="2400" y="236" width="50" height="50" angle="0" />
-    <Crane id="14" x="2564" y="280" />
-    <Crane id="15" x="2276" y="280" />
     <Whirlpool id="16" x="2420" y="376" width="80" height="80" strength="100" />
     <Whirlpool id="18" x="3060" y="224" width="80" height="80" strength="100" />
-    <Crane id="19" x="3416" y="404" />
-    <Crane id="20" x="2964" y="156" />
-    <Crane id="22" x="3188" y="280" />
-    <Endstage id="23" x="2768" y="268" NextLevel="" />
     <Whirlpool id="17" x="3304" y="340" width="80" height="80" strength="100" />
     <Geyser id="27" x="4364" y="144" width="80" height="80" strength="100" />
     <Geyser id="25" x="4004" y="264" width="80" height="80" strength="100" />
-    <Crane id="24" x="4204" y="392" />
-    <Crane id="31" x="4212" y="164" />
-    <Crane id="28" x="4152" y="272" />
     <Rock id="32" x="4208" y="244" width="50" height="50" angle="0" />
-    <Crane id="33" x="3992" y="432" />
     <Geyser id="26" x="4376" y="420" width="80" height="80" strength="100" />
-    <Endstage id="29" x="3620" y="268" NextLevel="" />
-    <Endstage id="34" x="4592" y="268" NextLevel="" />
-    <Crane id="38" x="4904" y="92" />
-    <Crane id="39" x="5180" y="200" />
-    <Crane id="40" x="5116" y="436" />
-    <Crane id="41" x="4868" y="348" />
-    <Endstage id="42" x="5416" y="268" NextLevel="" />
     <Driftwood id="43" x="5948" y="356" width="100" height="30" angle="0" />
     <Whirlpool id="44" x="6212" y="68" width="80" height="80" strength="100" />
     <Rock id="46" x="6248" y="104" width="50" height="50" angle="0" />
     <Rock id="47" x="6276" y="156" width="50" height="50" angle="0" />
     <Rock id="48" x="6304" y="100" width="50" height="50" angle="0" />
     <Rock id="51" x="6360" y="104" width="50" height="50" angle="0" />
-    <Crane id="52" x="6288" y="68" />
-    <Crane id="53" x="6316" y="68" />
-    <Crane id="54" x="6360" y="76" />
-    <Crane id="55" x="6400" y="56" />
-    <Crane id="56" x="6348" y="40" />
-    <Crane id="57" x="6312" y="36" />
-    <Crane id="58" x="6352" y="56" />
-    <Crane id="59" x="6340" y="80" />
-    <Crane id="60" x="6372" y="32" />
-    <Crane id="61" x="6316" y="56" />
     <Rock id="62" x="6420" y="104" width="50" height="50" angle="0" />
     <Rock id="63" x="6424" y="48" width="50" height="50" angle="0" />
     <Rock id="64" x="6388" y="152" width="50" height="50" angle="0" />
@@ -198,11 +166,6 @@
     <Geyser id="45" x="6520" y="132" width="80" height="80" strength="100" />
     <Geyser id="49" x="6524" y="136" width="80" height="80" strength="100" />
     <Whirlpool id="50" x="5920" y="64" width="80" height="80" strength="100" />
-    <Crane id="65" x="376" y="56" />
-    <Crane id="21" x="1916" y="492" />
-    <Crane id="67" x="3728" y="28" />
-    <Tulip id="68" x="3892" y="524" />
-    <Iris id="69" x="4324" y="524" />
     <Bamboo id="70" x="4844" y="508" />
     <Bamboo id="71" x="5024" y="508" />
     <Bamboo id="72" x="5064" y="508" />
@@ -222,24 +185,41 @@
     <Lillypad id="82" x="7180" y="472" width="50" height="40" angle="0" />
     <Lillypad id="83" x="7188" y="124" width="50" height="40" angle="0" />
     <Lillypad id="84" x="2184" y="420" width="50" height="40" angle="0" />
-    <Bridge id="6" x="7176" y="188" NextLevel="014.oel" />
+    <BridgeStart id="4" x="0" y="232" />
+    <BridgeEnd id="5" x="7176" y="240" NextLevel="014.oel" />
+    <Torii id="6" x="2612" y="260" NextLevel="" />
+    <Crane1 id="10" x="904" y="68" />
+    <Crane1 id="11" x="1232" y="240" />
+    <Crane1 id="12" x="1504" y="376" />
+    <Crane1 id="14" x="1652" y="72" />
+    <Crane1 id="15" x="2116" y="392" />
+    <Crane1 id="19" x="2536" y="380" />
+    <Crane1 id="20" x="3160" y="280" />
+    <Crane1 id="21" x="4168" y="164" />
+    <Crane1 id="22" x="4296" y="192" />
+    <Crane1 id="23" x="4336" y="324" />
+    <Crane1 id="24" x="4244" y="400" />
+    <Crane1 id="28" x="4116" y="368" />
+    <Crane1 id="29" x="4096" y="248" />
+    <Crane1 id="31" x="5124" y="200" />
+    <Crane1 id="33" x="5108" y="236" />
+    <Crane1 id="34" x="5152" y="232" />
+    <Crane5 id="38" x="5548" y="524" />
+    <Crane10 id="39" x="6392" y="60" />
+    <Crane1 id="40" x="6376" y="20" />
+    <Crane1 id="41" x="6352" y="36" />
+    <Crane1 id="42" x="6316" y="24" />
+    <Crane1 id="52" x="6312" y="56" />
+    <Crane1 id="53" x="6344" y="64" />
+    <Crane1 id="54" x="6308" y="84" />
+    <Crane1 id="55" x="6872" y="20" />
+    <Bamboo id="56" x="6652" y="516" />
+    <Bamboo id="57" x="6716" y="516" />
+    <Bamboo id="58" x="6612" y="520" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="364" y="-48" />
-    <Tulip id="2" x="912" y="-52" />
-    <Tulip id="3" x="1492" y="520" />
-    <Iris id="4" x="2280" y="-36" />
-    <Iris id="5" x="2388" y="-36" />
-    <Iris id="6" x="2484" y="-36" />
-    <Iris id="7" x="2576" y="-36" />
     <CherryBlossomNorth id="8" x="3696" y="-64" />
-    <Tulip id="12" x="4972" y="-40" />
-    <Tulip id="13" x="5204" y="-40" />
-    <Tulip id="14" x="6056" y="-48" />
-    <Iris id="15" x="6548" y="528" />
-    <Iris id="16" x="6708" y="528" />
-    <Iris id="17" x="6628" y="528" />
-    <Iris id="18" x="6772" y="528" />
     <Island id="1" x="2100" y="48" width="100" height="100" angle="0" />
     <Pagoda id="9" x="2120" y="56" width="50" height="50" angle="0" />
     <Bamboo id="10" x="2096" y="60" />

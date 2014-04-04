@@ -223,24 +223,7 @@
     <Driftwood id="83" x="7652" y="452" width="100" height="30" angle="0" />
     <Driftwood id="84" x="7460" y="464" width="100" height="30" angle="0" />
     <Driftwood id="85" x="7396" y="292" width="100" height="30" angle="0" />
-    <Endstage id="86" x="1064" y="272" NextLevel="" />
-    <Endstage id="87" x="3036" y="272" NextLevel="" />
     <MapleTreeSouth id="88" x="164" y="524" width="70" height="70" />
-    <Tulip id="89" x="260" y="-28" />
-    <Tulip id="90" x="1764" y="524" />
-    <Tulip id="91" x="2800" y="-24" />
-    <Tulip id="92" x="3972" y="512" />
-    <Tulip id="93" x="5884" y="-36" />
-    <Tulip id="94" x="7664" y="520" />
-    <Tulip id="95" x="8660" y="-24" />
-    <Tulip id="96" x="9672" y="516" />
-    <Iris id="97" x="9792" y="-32" />
-    <Iris id="98" x="8708" y="528" />
-    <Iris id="99" x="7596" y="-16" />
-    <Iris id="100" x="6476" y="520" />
-    <Iris id="101" x="4784" y="-24" />
-    <Iris id="102" x="2816" y="524" />
-    <Iris id="103" x="1052" y="-20" />
     <Bamboo id="104" x="944" y="508" />
     <Bamboo id="105" x="1000" y="508" />
     <Bamboo id="106" x="1072" y="512" />
@@ -262,7 +245,13 @@
     <MapleTreeSouth id="123" x="8236" y="524" width="70" height="70" />
     <MapleTreeSouth id="124" x="4928" y="524" width="70" height="70" />
     <Koi id="114" x="9064" y="272" angle="0" />
-    <Bridge id="1" x="9924" y="192" NextLevel="013.oel" />
+    <BridgeStart id="1" x="0" y="224" />
+    <BridgeEnd id="86" x="9920" y="228" NextLevel="013.oel" />
+    <Crane1 id="87" x="1700" y="24" />
+    <Crane1 id="89" x="4892" y="56" />
+    <Crane1 id="90" x="5304" y="440" />
+    <Crane1 id="91" x="5552" y="68" />
+    <Crane10 id="92" x="8788" y="276" />
   </Entities>
   <Art />
 </level>

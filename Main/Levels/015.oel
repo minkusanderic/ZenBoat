@@ -149,54 +149,11 @@
     <Whirlpool id="9" x="4240" y="404" width="80" height="80" strength="100" />
     <Current id="10" x="4356" y="372" width="1296" height="216" angle="-0.2617994" />
     <Geyser id="11" x="5472" y="52" width="80" height="80" strength="100" />
-    <Crane id="12" x="516" y="264" />
-    <Crane id="13" x="768" y="332" />
-    <Crane id="14" x="1128" y="324" />
-    <Crane id="15" x="1548" y="280" />
-    <Crane id="16" x="1908" y="184" />
-    <Crane id="17" x="2268" y="232" />
-    <Crane id="18" x="2548" y="312" />
-    <Crane id="19" x="2844" y="340" />
-    <Crane id="20" x="3212" y="256" />
-    <Crane id="21" x="3556" y="200" />
-    <Crane id="22" x="3824" y="312" />
-    <Crane id="23" x="4136" y="228" />
-    <Crane id="25" x="4804" y="384" />
-    <Crane id="26" x="5356" y="284" />
-    <Crane id="27" x="5604" y="224" />
-    <Crane id="28" x="5996" y="132" />
-    <Crane id="29" x="5104" y="332" />
-    <Crane id="24" x="4428" y="244" />
-    <Crane id="30" x="4576" y="328" />
     <Current id="31" x="5948" y="76" width="1668" height="156" angle="0.2617994" />
     <Current id="32" x="5880" y="188" width="1356" height="156" angle="0.2617994" />
-    <Crane id="34" x="6008" y="220" />
-    <Crane id="35" x="6192" y="268" />
-    <Crane id="36" x="6336" y="336" />
-    <Crane id="37" x="6500" y="352" />
-    <Crane id="38" x="6660" y="412" />
-    <Crane id="39" x="6896" y="448" />
-    <Crane id="40" x="7024" y="488" />
-    <Crane id="41" x="7468" y="400" />
-    <Crane id="42" x="7244" y="336" />
-    <Crane id="43" x="6980" y="268" />
-    <Crane id="44" x="6716" y="188" />
-    <Crane id="45" x="6488" y="124" />
-    <Crane id="46" x="6252" y="68" />
-    <Crane id="47" x="6880" y="24" />
-    <Crane id="48" x="7124" y="92" />
-    <Crane id="49" x="7320" y="140" />
-    <Crane id="50" x="7484" y="188" />
-    <Crane id="51" x="7608" y="208" />
     <Whirlpool id="52" x="8176" y="156" width="80" height="80" strength="100" />
     <Whirlpool id="53" x="8628" y="432" width="80" height="80" strength="100" />
     <Whirlpool id="54" x="9192" y="208" width="80" height="80" strength="100" />
-    <Crane id="55" x="8032" y="340" />
-    <Crane id="56" x="8388" y="272" />
-    <Crane id="57" x="8756" y="268" />
-    <Crane id="58" x="9092" y="368" />
-    <Crane id="59" x="9460" y="352" />
-    <Crane id="60" x="9684" y="280" />
     <Rock id="61" x="1672" y="436" width="50" height="50" angle="0" />
     <Rock id="62" x="1680" y="56" width="50" height="50" angle="0" />
     <Rock id="63" x="2324" y="40" width="50" height="50" angle="0" />
@@ -213,22 +170,6 @@
     <Rock id="74" x="8548" y="480" width="50" height="50" angle="0" />
     <Rock id="75" x="9056" y="472" width="50" height="50" angle="0" />
     <Rock id="76" x="8792" y="44" width="50" height="50" angle="0" />
-    <Endstage id="33" x="972" y="264" NextLevel="" />
-    <Endstage id="77" x="2380" y="272" NextLevel="" />
-    <Endstage id="78" x="3584" y="268" NextLevel="" />
-    <Endstage id="79" x="7820" y="268" NextLevel="" />
-    <Tulip id="81" x="2188" y="528" />
-    <Tulip id="82" x="3512" y="-36" />
-    <Tulip id="83" x="5168" y="520" />
-    <Tulip id="84" x="6604" y="-28" />
-    <Tulip id="85" x="7908" y="520" />
-    <Tulip id="86" x="9764" y="-28" />
-    <Iris id="87" x="8824" y="528" />
-    <Iris id="88" x="7972" y="-32" />
-    <Iris id="89" x="6160" y="540" />
-    <Iris id="90" x="4700" y="-28" />
-    <Iris id="91" x="2200" y="-28" />
-    <Iris id="92" x="952" y="532" />
     <CherryBlossomNorth id="93" x="208" y="-56" />
     <LooseBlossoms id="94" x="96" y="32" />
     <LooseBlossoms id="96" x="376" y="48" />
@@ -252,9 +193,22 @@
     <MapleTreeNorth id="115" x="4412" y="-28" width="70" height="70" />
     <MapleTreeSouth id="116" x="7600" y="528" width="70" height="70" />
     <TulipNorth id="80" x="964" y="-32" />
-    <Iris id="95" x="912" y="-32" />
     <MapleTreeSouth id="98" x="5776" y="528" width="70" height="70" />
-    <Bridge id="0" x="9924" y="196" NextLevel="016.oel" />
+    <BridgeStart id="0" x="4" y="212" />
+    <TulipSouth id="12" x="584" y="520" />
+    <Crane1 id="13" x="508" y="380" />
+    <Crane1 id="14" x="1704" y="372" />
+    <Crane1 id="15" x="2456" y="108" />
+    <Crane1 id="16" x="3072" y="428" />
+    <Crane1 id="17" x="3932" y="424" />
+    <Crane1 id="18" x="4808" y="384" />
+    <Crane1 id="19" x="5292" y="208" />
+    <Crane1 id="20" x="6064" y="304" />
+    <Crane1 id="21" x="6876" y="464" />
+    <Crane10 id="22" x="7628" y="508" />
+    <Crane5 id="23" x="8652" y="492" />
+    <Crane1 id="24" x="9352" y="232" />
+    <BridgeEnd id="25" x="9928" y="232" NextLevel="016.oel" />
   </Entities>
   <Art />
 </level>

@@ -5,9 +5,9 @@ using Sce.PlayStation.Core;
 using Core;
 namespace Main
 {
-	public class Tulip
+	public class TulipSouth
 	{
-		public Tulip ()
+		public TulipSouth ()
 		{
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)

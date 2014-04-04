@@ -178,45 +178,12 @@
     <Geyser id="5" x="2320" y="388" width="80" height="80" strength="100" />
     <Geyser id="6" x="2700" y="56" width="80" height="80" strength="100" />
     <Geyser id="40" x="3080" y="388" width="80" height="80" strength="100" />
-    <Crane id="41" x="1624" y="244" />
-    <Crane id="42" x="1712" y="240" />
-    <Crane id="43" x="1852" y="236" />
-    <Crane id="44" x="2432" y="188" />
-    <Crane id="45" x="2768" y="280" />
-    <Crane id="46" x="3004" y="180" />
-    <Crane id="47" x="3720" y="232" />
-    <Crane id="48" x="3844" y="260" />
-    <Crane id="49" x="4016" y="380" />
-    <Crane id="50" x="5048" y="260" />
-    <Crane id="51" x="5184" y="388" />
-    <Crane id="52" x="6480" y="204" />
-    <Crane id="53" x="6596" y="216" />
-    <Crane id="54" x="6728" y="268" />
-    <Crane id="55" x="7740" y="252" />
-    <Crane id="56" x="7948" y="196" />
-    <Crane id="57" x="8176" y="244" />
-    <Crane id="58" x="8500" y="284" />
-    <Crane id="59" x="8696" y="308" />
-    <Crane id="60" x="9004" y="264" />
-    <Endstage id="61" x="3312" y="276" NextLevel="" />
-    <Endstage id="62" x="5868" y="260" NextLevel="" />
     <MapleTreeSouth id="63" x="9560" y="516" width="70" height="70" />
-    <Iris id="64" x="9280" y="520" />
-    <Iris id="65" x="9852" y="520" />
-    <Tulip id="66" x="9540" y="-44" />
-    <Tulip id="67" x="7728" y="544" />
-    <Tulip id="68" x="6584" y="-28" />
-    <Tulip id="69" x="5588" y="524" />
-    <Tulip id="70" x="4236" y="-28" />
-    <Tulip id="71" x="2680" y="532" />
-    <Tulip id="73" x="288" y="524" />
-    <Tulip id="74" x="688" y="524" />
     <MapleTreeNorth id="75" x="504" y="-20" width="70" height="70" />
     <Lillypad id="76" x="96" y="364" width="50" height="40" angle="0" />
     <Lillypad id="77" x="52" y="412" width="50" height="40" angle="0" />
     <Lillypad id="78" x="124" y="424" width="50" height="40" angle="0" />
     <Koi id="79" x="132" y="360" angle="0" />
-    <IrisNorth id="80" x="116" y="-20" />
     <IrisNorth id="81" x="800" y="-28" />
     <IrisNorth id="82" x="1624" y="528" />
     <IrisNorth id="83" x="2256" y="-24" />
@@ -251,11 +218,43 @@
     <Bamboo id="116" x="1384" y="-32" />
     <Bamboo id="117" x="1124" y="-32" />
     <Bamboo id="118" x="1032" y="504" />
-    <Iris id="110" x="1296" y="-12" />
     <CherryBlossomSouth id="111" x="4140" y="536" />
     <CherryBlossomNorth id="112" x="5840" y="-56" />
     <Rock id="113" x="9192" y="-16" width="114" height="98" angle="0.7853982" />
-    <Bridge id="1" x="9924" y="188" NextLevel="011.oel" />
+    <BridgeEnd id="1" x="9924" y="244" NextLevel="011.oel" />
+    <Crane1 id="41" x="7832" y="148" />
+    <Crane1 id="42" x="8184" y="308" />
+    <Crane1 id="43" x="7972" y="472" />
+    <Crane1 id="44" x="8528" y="96" />
+    <Crane1 id="45" x="8544" y="432" />
+    <Crane1 id="46" x="8776" y="308" />
+    <Crane1 id="47" x="9092" y="76" />
+    <Crane1 id="48" x="9112" y="460" />
+    <IrisSouth id="49" x="8256" y="540" />
+    <IrisNorth id="50" x="9640" y="-24" />
+    <IrisSouth id="51" x="7340" y="532" />
+    <Crane1 id="52" x="7260" y="204" />
+    <Crane1 id="53" x="7296" y="236" />
+    <Crane1 id="54" x="7244" y="248" />
+    <Crane1 id="55" x="6660" y="428" />
+    <Crane1 id="56" x="6700" y="424" />
+    <Crane1 id="57" x="6684" y="464" />
+    <Crane1 id="58" x="6208" y="68" />
+    <Crane1 id="59" x="6188" y="116" />
+    <Crane1 id="60" x="6240" y="104" />
+    <Crane5 id="62" x="6684" y="68" />
+    <Crane1 id="64" x="5136" y="404" />
+    <Crane1 id="65" x="5104" y="432" />
+    <Crane1 id="66" x="5160" y="444" />
+    <Crane1 id="67" x="5448" y="52" />
+    <Crane10 id="68" x="3836" y="456" />
+    <Crane1 id="69" x="2692" y="176" />
+    <Crane1 id="70" x="2440" y="376" />
+    <Crane1 id="71" x="2976" y="388" />
+    <Crane1 id="73" x="1816" y="84" />
+    <Crane1 id="74" x="1832" y="420" />
+    <Crane1 id="110" x="1060" y="268" />
+    <BridgeStart id="114" x="4" y="232" />
   </Entities>
   <Art />
 </level>

@@ -145,88 +145,57 @@
     <Rock id="5" x="884" y="408" width="130" height="130" angle="0" />
     <Rock id="6" x="836" y="288" width="130" height="130" angle="0" />
     <Rock id="7" x="788" y="168" width="130" height="130" angle="0" />
-    <Crane id="8" x="624" y="192" />
-    <Crane id="9" x="656" y="252" />
-    <Crane id="10" x="696" y="324" />
     <Whirlpool id="11" x="1516" y="248" width="80" height="80" strength="100" />
-    <Crane id="12" x="1516" y="92" />
-    <Crane id="13" x="1524" y="452" />
     <Whirlpool id="14" x="2128" y="76" width="80" height="80" strength="100" />
     <Whirlpool id="15" x="2136" y="448" width="80" height="80" strength="100" />
-    <Crane id="16" x="2120" y="208" />
-    <Crane id="17" x="2124" y="296" />
-    <Crane id="18" x="2048" y="244" />
-    <Crane id="19" x="2184" y="248" />
-    <Endstage id="20" x="2328" y="272" NextLevel="" />
     <Rock id="21" x="2600" y="96" width="90" height="82" angle="0" />
     <Rock id="22" x="2676" y="404" width="90" height="82" angle="0" />
     <Rock id="23" x="2896" y="128" width="90" height="82" angle="0" />
     <Rock id="24" x="3220" y="56" width="90" height="82" angle="0" />
     <Rock id="25" x="3012" y="348" width="90" height="82" angle="0" />
     <Rock id="26" x="3316" y="412" width="90" height="82" angle="0" />
-    <Crane id="27" x="2640" y="44" />
-    <Crane id="28" x="2820" y="488" />
-    <Crane id="30" x="2936" y="60" />
-    <Crane id="31" x="3104" y="476" />
-    <Crane id="32" x="3344" y="80" />
-    <Crane id="33" x="3440" y="484" />
-    <Crane id="34" x="2676" y="276" />
-    <Crane id="35" x="3252" y="252" />
     <Geyser id="38" x="4112" y="160" width="80" height="80" strength="100" />
-    <Crane id="39" x="4104" y="56" />
     <Geyser id="40" x="4492" y="380" width="80" height="80" strength="100" />
-    <Crane id="41" x="4488" y="476" />
-    <Endstage id="42" x="4716" y="272" NextLevel="" />
     <Geyser id="51" x="5692" y="240" width="80" height="80" strength="100" />
-    <Crane id="55" x="5296" y="232" />
-    <Crane id="56" x="5404" y="232" />
-    <Crane id="57" x="5500" y="228" />
-    <Crane id="66" x="5816" y="232" />
-    <Crane id="67" x="5888" y="232" />
-    <Crane id="68" x="5952" y="232" />
-    <Crane id="69" x="7896" y="952" />
     <Whirlpool id="70" x="6580" y="244" width="80" height="80" strength="100" />
     <Whirlpool id="71" x="7096" y="244" width="80" height="80" strength="100" />
-    <Crane id="73" x="6832" y="120" />
-    <Crane id="74" x="6832" y="200" />
-    <Crane id="75" x="6832" y="284" />
-    <Crane id="76" x="6832" y="364" />
-    <Crane id="77" x="6832" y="452" />
-    <Endstage id="72" x="7324" y="276" NextLevel="" />
-    <Crane id="100" x="9008" y="216" />
-    <Crane id="102" x="9168" y="108" />
-    <Crane id="104" x="9372" y="72" />
-    <Crane id="106" x="9544" y="168" />
-    <Crane id="108" x="9596" y="352" />
-    <Crane id="110" x="9512" y="480" />
-    <Crane id="112" x="9332" y="492" />
-    <Crane id="114" x="9236" y="360" />
-    <Crane id="43" x="7444" y="328" />
-    <Crane id="44" x="7692" y="124" />
-    <Crane id="45" x="7880" y="308" />
-    <Crane id="46" x="8216" y="460" />
-    <Crane id="47" x="8428" y="284" />
-    <Crane id="48" x="8768" y="276" />
-    <Crane id="49" x="9404" y="232" />
     <Island id="50" x="9364" y="316" width="100" height="100" angle="0" />
-    <Bridge id="1" x="9928" y="184" NextLevel="007.oel" />
+    <BridgeStart id="1" x="-4" y="232" />
+    <BridgeEnd id="8" x="9916" y="236" NextLevel="007.oel" />
+    <Crane1 id="9" x="612" y="108" />
+    <Crane1 id="10" x="1116" y="420" />
+    <Crane1 id="12" x="1360" y="412" />
+    <Crane1 id="13" x="1644" y="388" />
+    <Crane1 id="16" x="1808" y="288" />
+    <Crane1 id="17" x="1984" y="216" />
+    <Crane1 id="18" x="2164" y="236" />
+    <Crane1 id="19" x="2368" y="300" />
+    <Crane5 id="20" x="2716" y="48" />
+    <Crane5 id="27" x="2836" y="428" />
+    <Crane5 id="28" x="3052" y="80" />
+    <Crane5 id="29" x="3200" y="412" />
+    <Crane5 id="30" x="3396" y="52" />
+    <Crane5 id="31" x="3500" y="448" />
+    <Crane10 id="32" x="3808" y="260" />
+    <Crane1 id="33" x="4276" y="252" />
+    <Crane1 id="34" x="4724" y="52" />
+    <Crane1 id="35" x="5868" y="228" />
+    <Crane1 id="36" x="6844" y="252" />
+    <Crane1 id="37" x="7304" y="252" />
+    <Crane1 id="39" x="7664" y="356" />
+    <Crane1 id="41" x="8032" y="320" />
+    <Crane1 id="42" x="8504" y="164" />
+    <Crane1 id="43" x="8988" y="132" />
+    <Crane1 id="44" x="9552" y="296" />
   </Entities>
   <Art>
     <Pagoda id="0" x="9392" y="328" width="50" height="50" angle="0" />
     <Bamboo id="1" x="9364" y="336" />
     <Bamboo id="2" x="9408" y="336" />
-    <Iris id="5" x="148" y="-32" />
-    <Tulip id="6" x="572" y="-36" />
-    <Tulip id="7" x="780" y="-40" />
-    <Iris id="8" x="292" y="-36" />
     <CherryBlossomNorth id="9" x="1216" y="-32" />
     <Bamboo id="10" x="1336" y="500" />
     <Bamboo id="11" x="1360" y="516" />
     <Bamboo id="12" x="1388" y="504" />
-    <Tulip id="13" x="1748" y="524" />
-    <Iris id="14" x="2312" y="532" />
-    <Iris id="15" x="1768" y="-32" />
-    <Tulip id="16" x="2328" y="-20" />
     <Island id="17" x="3644" y="204" width="100" height="100" angle="0" />
     <Bamboo id="18" x="2748" y="512" />
     <Bamboo id="19" x="2852" y="512" />
@@ -235,16 +204,9 @@
     <Bamboo id="22" x="3252" y="512" />
     <TulipNorth id="23" x="2748" y="-36" />
     <TulipNorth id="24" x="3264" y="-44" />
-    <Iris id="25" x="2988" y="-36" />
     <Pagoda id="26" x="3668" y="224" width="50" height="50" angle="0" />
     <TulipNorth id="27" x="4040" y="-36" />
     <TulipNorth id="28" x="4324" y="532" />
-    <Iris id="29" x="4988" y="-32" />
-    <Iris id="30" x="5528" y="-36" />
-    <Iris id="31" x="6152" y="-40" />
-    <Tulip id="32" x="5004" y="516" />
-    <Tulip id="33" x="5536" y="524" />
-    <Tulip id="34" x="6136" y="524" />
     <MapleTreeSouth id="35" x="7300" y="528" width="70" height="70" />
     <CherryBlossomNorth id="36" x="4688" y="-40" />
     <Bamboo id="37" x="7804" y="516" />

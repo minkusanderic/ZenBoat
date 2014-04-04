@@ -140,31 +140,33 @@
   <Entities>
     <Boat id="0" x="136" y="268" angle="0" />
     <Whirlpool id="5" x="1328" y="352" width="80" height="80" strength="100" />
-    <Crane id="6" x="1736" y="400" />
     <Whirlpool id="7" x="624" y="272" width="80" height="80" strength="100" />
-    <Crane id="8" x="1144" y="264" />
-    <Crane id="9" x="1992" y="36" />
     <Whirlpool id="10" x="2192" y="224" width="80" height="80" strength="100" />
     <Rock id="1" x="952" y="48" width="50" height="50" angle="0" />
     <Rock id="11" x="2016" y="280" width="50" height="50" angle="0" />
-    <Crane id="12" x="844" y="488" />
     <LooseBlossoms id="14" x="1932" y="116" />
     <LooseBlossoms id="15" x="1960" y="156" />
     <LooseBlossoms id="16" x="1984" y="124" />
     <LooseBlossoms id="17" x="2028" y="124" />
     <LooseBlossoms id="18" x="2000" y="96" />
-    <Crane id="2" x="1320" y="192" />
-    <Crane id="4" x="1500" y="276" />
-    <Crane id="13" x="2248" y="112" />
-    <Crane id="19" x="2332" y="248" />
     <Island id="20" x="1648" y="116" width="100" height="100" angle="0" />
     <Bamboo id="21" x="1664" y="120" />
-    <Bridge id="3" x="2764" y="196" NextLevel="004.oel" />
+    <BridgeStart id="2" x="0" y="244" />
+    <BridgeEnd id="3" x="2764" y="236" NextLevel="004.oel" />
+    <Crane1 id="4" x="772" y="260" />
+    <Crane1 id="6" x="1100" y="68" />
+    <Crane1 id="8" x="1588" y="220" />
+    <Crane1 id="9" x="1768" y="300" />
+    <Crane1 id="12" x="1928" y="304" />
+    <Crane5 id="13" x="1976" y="20" />
+    <Crane10 id="19" x="2328" y="220" />
+    <Crane1 id="22" x="2580" y="168" />
+    <Crane1 id="23" x="2684" y="268" />
+    <Crane1 id="24" x="1296" y="468" />
   </Entities>
   <Art>
     <MapleTreeSouth id="5" x="832" y="520" width="70" height="70" />
     <CherryBlossomNorth id="6" x="1948" y="-56" />
-    <Pagoda id="0" x="120" y="-8" width="50" height="50" angle="0" />
     <CherryBlossomNorth id="1" x="364" y="-56" />
     <LooseBlossoms id="2" x="256" y="-24" />
     <LooseBlossoms id="3" x="304" y="-20" />
@@ -173,17 +175,11 @@
     <LooseBlossoms id="8" x="508" y="-20" />
     <LooseBlossoms id="9" x="460" y="-28" />
     <LooseBlossoms id="10" x="384" y="60" />
-    <Tulip id="11" x="1076" y="-40" />
     <Bamboo id="13" x="2028" y="508" />
     <Bamboo id="14" x="1964" y="508" />
     <Bamboo id="15" x="2100" y="508" />
     <Bamboo id="16" x="2168" y="508" />
     <Bamboo id="17" x="2232" y="508" />
-    <Tulip id="12" x="1156" y="-40" />
-    <Tulip id="18" x="1112" y="-16" />
-    <Tulip id="19" x="1200" y="-16" />
-    <Tulip id="20" x="1196" y="-56" />
-    <Tulip id="21" x="1120" y="-64" />
-    <Tulip id="22" x="1160" y="-88" />
+    <Pagoda id="0" x="200" y="-8" width="50" height="50" angle="0" />
   </Art>
 </level>

@@ -139,55 +139,8 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="72" y="304" angle="0" />
-    <Crane id="1" x="280" y="284" />
-    <Crane id="2" x="440" y="288" />
-    <Crane id="3" x="624" y="280" />
-    <Crane id="4" x="772" y="284" />
-    <Crane id="5" x="932" y="260" />
-    <Crane id="6" x="1060" y="188" />
-    <Crane id="7" x="1212" y="132" />
-    <Crane id="8" x="1412" y="140" />
-    <Crane id="9" x="1640" y="196" />
-    <Crane id="10" x="1860" y="292" />
-    <Crane id="11" x="2080" y="388" />
-    <Crane id="12" x="2300" y="412" />
-    <Crane id="13" x="2516" y="368" />
-    <Crane id="14" x="2684" y="276" />
-    <Crane id="15" x="2844" y="192" />
-    <Crane id="16" x="3012" y="120" />
-    <Crane id="17" x="3204" y="88" />
-    <Crane id="18" x="3416" y="112" />
-    <Crane id="19" x="3620" y="168" />
-    <Crane id="20" x="3756" y="236" />
-    <Crane id="21" x="3924" y="304" />
-    <Crane id="22" x="4056" y="368" />
-    <Crane id="23" x="4244" y="404" />
-    <Crane id="24" x="4488" y="408" />
-    <Crane id="25" x="4724" y="356" />
     <Whirlpool id="26" x="2256" y="192" width="80" height="80" strength="100" />
     <Whirlpool id="27" x="4348" y="212" width="80" height="80" strength="100" />
-    <Crane id="28" x="4928" y="268" />
-    <Crane id="29" x="5120" y="172" />
-    <Crane id="30" x="5312" y="128" />
-    <Crane id="31" x="5524" y="120" />
-    <Crane id="32" x="5728" y="140" />
-    <Crane id="33" x="5964" y="204" />
-    <Crane id="34" x="6112" y="280" />
-    <Crane id="35" x="6344" y="380" />
-    <Crane id="36" x="6592" y="384" />
-    <Crane id="37" x="6856" y="292" />
-    <Crane id="38" x="7084" y="192" />
-    <Crane id="39" x="7340" y="104" />
-    <Crane id="40" x="7568" y="100" />
-    <Crane id="41" x="7828" y="156" />
-    <Crane id="42" x="8080" y="260" />
-    <Crane id="43" x="8292" y="372" />
-    <Crane id="44" x="8568" y="432" />
-    <Crane id="45" x="8892" y="420" />
-    <Crane id="46" x="9160" y="344" />
-    <Crane id="47" x="9408" y="264" />
-    <Crane id="48" x="9672" y="244" />
-    <Crane id="49" x="9868" y="244" />
     <Whirlpool id="51" x="5468" y="316" width="80" height="80" strength="100" />
     <Whirlpool id="52" x="6452" y="212" width="80" height="80" strength="100" />
     <Whirlpool id="53" x="7508" y="284" width="80" height="80" strength="100" />
@@ -203,32 +156,44 @@
     <MapleTreeSouth id="57" x="4924" y="528" width="70" height="70" />
     <MapleTreeSouth id="58" x="5764" y="528" width="70" height="70" />
     <MapleTreeSouth id="66" x="9620" y="524" width="70" height="70" />
-    <Endstage id="67" x="1296" y="272" NextLevel="" />
-    <Endstage id="68" x="3180" y="272" NextLevel="" />
-    <Endstage id="69" x="4848" y="272" NextLevel="" />
-    <Endstage id="70" x="6992" y="268" NextLevel="" />
-    <Endstage id="71" x="8032" y="264" NextLevel="" />
-    <Bridge id="50" x="9924" y="192" NextLevel="009.oel" />
+    <BridgeStart id="1" x="-12" y="248" />
+    <BridgeEnd id="2" x="9928" y="244" NextLevel="009.oel" />
+    <Crane1 id="3" x="392" y="400" />
+    <Crane1 id="4" x="744" y="452" />
+    <Crane1 id="5" x="1036" y="284" />
+    <Crane1 id="6" x="1384" y="52" />
+    <Crane1 id="7" x="1648" y="180" />
+    <Crane1 id="8" x="1916" y="372" />
+    <Crane1 id="9" x="2224" y="440" />
+    <Crane1 id="10" x="2568" y="296" />
+    <Crane1 id="11" x="2952" y="108" />
+    <Crane5 id="12" x="2216" y="72" />
+    <Crane1 id="13" x="3204" y="192" />
+    <Crane1 id="14" x="3512" y="436" />
+    <Crane1 id="15" x="3940" y="380" />
+    <Crane1 id="16" x="4472" y="308" />
+    <Crane1 id="17" x="4788" y="364" />
+    <Crane1 id="18" x="4956" y="480" />
+    <Crane10 id="19" x="4332" y="32" />
+    <Crane1 id="20" x="5460" y="460" />
+    <Crane1 id="21" x="5676" y="228" />
+    <Crane1 id="22" x="6028" y="44" />
+    <Crane1 id="23" x="6476" y="36" />
+    <Crane1 id="24" x="6872" y="260" />
+    <Crane1 id="25" x="7520" y="460" />
+    <Crane1 id="28" x="8172" y="36" />
+    <Crane1 id="29" x="8632" y="388" />
+    <Crane1 id="30" x="9180" y="292" />
+    <Crane10 id="31" x="9352" y="28" />
+    <Crane5 id="32" x="9652" y="500" />
+    <Bamboo id="33" x="8560" y="524" />
+    <Bamboo id="34" x="8640" y="528" />
+    <Bamboo id="35" x="8736" y="520" />
+    <Bamboo id="36" x="7472" y="-12" />
+    <Bamboo id="37" x="7428" y="0" />
+    <Bamboo id="38" x="7364" y="-4" />
   </Entities>
   <Art>
-    <Iris id="0" x="7272" y="-32" />
-    <Iris id="1" x="7768" y="-40" />
-    <Iris id="2" x="7220" y="528" />
-    <Tulip id="4" x="8396" y="516" />
-    <Tulip id="5" x="8704" y="516" />
-    <Tulip id="6" x="9028" y="520" />
-    <Tulip id="7" x="5240" y="-32" />
-    <Iris id="8" x="5764" y="-32" />
-    <Iris id="9" x="3880" y="516" />
-    <Tulip id="10" x="3528" y="-20" />
-    <Iris id="11" x="1648" y="-24" />
-    <Tulip id="12" x="2904" y="508" />
-    <Tulip id="13" x="2776" y="512" />
-    <Iris id="14" x="1452" y="-20" />
-    <Iris id="15" x="276" y="532" />
-    <Iris id="16" x="828" y="528" />
-    <Tulip id="17" x="520" y="-20" />
-    <Tulip id="18" x="716" y="-20" />
     <LooseBlossoms id="19" x="132" y="24" />
     <LooseBlossoms id="20" x="436" y="64" />
     <LooseBlossoms id="21" x="256" y="156" />
@@ -236,6 +201,5 @@
     <Bamboo id="23" x="6412" y="500" />
     <Bamboo id="24" x="6484" y="508" />
     <Bamboo id="25" x="6564" y="508" />
-    <Iris id="3" x="8024" y="532" />
   </Art>
 </level>

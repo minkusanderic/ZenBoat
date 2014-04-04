@@ -23,12 +23,12 @@ namespace Main
 			m.scale = new Vector3 (5.0f, 5.0f, 5.0f);
 			ent.Transform.Rotation = new Vector2(0, -1);
 			
-			RigidBody rb = new RigidBody (60);
+			RigidBody rb = new RigidBody (35);
 			rb.body = new PhysicsBody ();
 			rb.is_static = true;
 			
 			ent.attachComponent (rb);
-			var targets = SceneManager.Instance.Select("boat");
+			/*var targets = SceneManager.Instance.Select("boat");
 			//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/assets/Sound/SFX/LevelEnd.wav" ) );
 			//ent.attachComponent (new ToriiGateTrigger (targets));
 			ent.attachComponent (new SimpleTrigger (targets,
@@ -58,7 +58,7 @@ namespace Main
 														}
 														}
 													)	
-			                    );
+			                    ); */
 		}
 	}
 }

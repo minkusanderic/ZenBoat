@@ -7,9 +7,9 @@ using Sce.PlayStation.HighLevel.Physics2D;
 using System.Linq;
 namespace Main
 {
-	public class Bridge
+	public class BridgeEnd
 	{
-		public Bridge ()
+		public BridgeEnd ()
 		{
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
@@ -22,7 +22,7 @@ namespace Main
 			ent.tag ("bridge");
 			
 		
-			m.scale = new Vector3 (20.0f, 50.0f, 20.0f);
+			m.scale = new Vector3 (25.0f, 28.0f, 30.0f);
 			ent.Transform.Rotation = new Vector2(0, -1);
 			
 			RigidBody rb = new RigidBody (544f,25f );

@@ -5,9 +5,9 @@ using Sce.PlayStation.Core;
 using Core;
 namespace Main
 {
-	public class Iris
+	public class IrisSouth
 	{
-		public Iris ()
+		public IrisSouth ()
 		{
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)

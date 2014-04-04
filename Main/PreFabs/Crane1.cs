@@ -6,10 +6,10 @@ using Sce.PlayStation.HighLevel.Physics2D;
 
 namespace Main
 {
-	public class Crane
+	public class Crane1
 	{
 		static int craneScore = 1;		// this is the basic value of a 'regular' crane
-		public Crane (int worth = 1)	// defaults to 1
+		public Crane1 (int worth = 1)	// defaults to 1
 		{
 			craneScore = worth;
 		}

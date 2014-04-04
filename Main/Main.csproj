@@ -46,7 +46,6 @@
     <Compile Include="PreFabs\Whirlpool.cs" />
     <Compile Include="PreFabs\rect.cs" />
     <Compile Include="PreFabs\Current.cs" />
-    <Compile Include="PreFabs\Crane.cs" />
     <Compile Include="PreFabs\Lillypad.cs" />
     <Compile Include="PreFabs\Lotus.cs" />
     <Compile Include="PreFabs\Torii.cs" />
@@ -59,11 +58,8 @@
     <Compile Include="PreFabs\ball.cs" />
     <Compile Include="PreFabs\walker.cs" />
     <Compile Include="PreFabs\Drag.cs" />
-    <Compile Include="PreFabs\Bridge.cs" />
     <Compile Include="PreFabs\Lantern.cs" />
     <Compile Include="PreFabs\Windmill.cs" />
-    <Compile Include="PreFabs\Iris.cs" />
-    <Compile Include="PreFabs\Tulip.cs" />
     <Compile Include="PreFabs\Bamboo.cs" />
     <Compile Include="PreFabs\MapleTreeNorth.cs" />
     <Compile Include="PreFabs\MapleTreeSouth.cs" />
@@ -119,12 +115,18 @@
     <Compile Include="Menus\Levels.composer.cs" />
     <Compile Include="Menus\Levels.cs" />
     <Compile Include="Menus\Level01.composer.cs" />
-    <Compile Include="PreFabs\BridgeDeco.cs" />
     <Compile Include="Menus\LevelUIManager.cs" />
     <Compile Include="Menus\HUD.composer.cs" />
     <Compile Include="Menus\HUD.cs" />
+    <Compile Include="PreFabs\Grass.cs" />
+    <Compile Include="PreFabs\BridgeStart.cs" />
+    <Compile Include="PreFabs\BridgeEnd.cs" />
+    <Compile Include="PreFabs\Crane1.cs" />
+    <Compile Include="PreFabs\IrisSouth.cs" />
+    <Compile Include="PreFabs\TulipSouth.cs" />
+  
   </ItemGroup>
-  <ItemGroup>
+    <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
     <ShaderProgram Include="shaders\Simple.vcg" />
     <ShaderProgram Include="shaders\Sprite.fcg" />
@@ -206,7 +208,6 @@
     <Content Include="assets\lilypad.mdx" />
     <Content Include="assets\toon.png" />
     <Content Include="assets\SimpleBank02.mdx" />
-    <Content Include="assets\Bridge.mdx" />
     <Content Include="assets\Windmill.mdx" />
     <Content Include="assets\Lantern.mdx" />
     <Content Include="assets\CraneOrange.mdx" />
@@ -294,5 +295,16 @@
     <Content Include="assets\Rainbow.mdx" />
     <Content Include="assets\Whirlpool3.mdx" />
     <Content Include="Menus\Zen_Sketch.ttf" />
-  </ItemGroup>
+    <Content Include="assets\GrassSingleBlade1.mdx" />
+    <Content Include="assets\GrassSingleBlade2.mdx" />
+    <Content Include="assets\GrassDoubleBlade1.mdx" />
+    <Content Include="assets\GrassDoubleBlade2.mdx" />
+    <Content Include="assets\GrassDoubleBlade3.mdx" />
+    <Content Include="assets\GrassDoubleBlade4.mdx" />
+    <Content Include="assets\GrassBundle1.mdx" />
+    <Content Include="assets\GrassBundle2.mdx" />
+    <Content Include="assets\GrassBundle3.mdx" />
+    <Content Include="assets\GrassBundle4.mdx" />
+    <Content Include="assets\Bridge.mdx" />
+    </ItemGroup>
 </Project>
