@@ -22,7 +22,7 @@ namespace Main
 			int strength = Convert.ToInt32(options["strength"]);
 			
 			//var m = ent.attachComponent(new SpriteComponent("/Application/assets/shader2.png"));
-			var m = ent.attachComponent (new ModelComponent ("/Application/assets/whirlpool3.mdx"));
+			var m = ent.attachComponent (new ModelComponent ("/Application/assets/whirlpool4.mdx"));
 			m.scale = new Vector3 (100f, 100f, 100f);
 			
 			m.layer = "under_water";

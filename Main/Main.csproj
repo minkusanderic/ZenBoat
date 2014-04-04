@@ -307,5 +307,6 @@
     <Content Include="assets\Pink.mdx" />
     <Content Include="assets\Gold.mdx" />
     <Content Include="assets\Rainbow.mdx" />
+    <Content Include="assets\Whirlpool4.mdx" />
   </ItemGroup>
 </Project>
