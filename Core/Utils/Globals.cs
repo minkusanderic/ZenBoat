@@ -27,7 +27,9 @@ namespace Core
 			                                        36, 
 			                                        Sce.PlayStation.Core.Imaging.FontStyle.Bold);
 		
-		public static Dictionary<String, String> boats = new Dictionary<String, String>();
+
+		
+	
 	}
 }
 

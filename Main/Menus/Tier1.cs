@@ -15,26 +15,59 @@ namespace Menu
         {
             InitializeWidget();
 			
+			SaveGameManager.SaveString("crane_count", "700");
+			SaveGameManager.SaveString("black", "600");
+			SaveGameManager.SaveString("pink", "300");
+			
 			button1.ButtonAction += HandleButton1ButtonAction;
+			button2.ButtonAction += HandleButton2ButtonAction;
         }
 
-        void HandleButton1ButtonAction (object sender, TouchEventArgs e)
+        void HandleButton2ButtonAction (object sender, TouchEventArgs e)
         {
-			String boat = "black";
+        	ProcessBoat("pink");
+        }
+		void HandleButton1ButtonAction (object sender, TouchEventArgs e)
+		{
+			ProcessBoat("black");
+		}
+        void ProcessBoat(String boat)
+        {
 			int boat_value;
-			if(!int.TryParse(Globals.boats[boat], out boat_value))
+			int crane_count;
+			
+			if(!int.TryParse(SaveGameManager.GetValueFromKey("crane_count"), out crane_count))
+			{
+				Console.WriteLine("Could not convert crane value");
+			}
+			
+			if(!int.TryParse(SaveGameManager.GetValueFromKey(boat), out boat_value))
 			{
 				Console.WriteLine("Could not convert boat value");
 			}
 			//Case 1: I have the boat, and I want to select
-			if(Globals.boats[boat] == "0")
+			if(SaveGameManager.GetValueFromKey(boat) == "0")
 			{
-				Globals.chosenBoat = boat;	
+				Globals.chosenBoat = boat;
+				Console.WriteLine("Selected Boat");
 			}
 			
 			//Case 2: I don't have the boat, I want to buy it and I have enough cranes
-			
+			else if(boat_value < crane_count)
+			{
+				SaveGameManager.SaveString(boat, "0");
+				crane_count -= boat_value;
+				SaveGameManager.SaveString("crane_count", crane_count.ToString());
+				Console.WriteLine("Buying Boat");
+				Globals.chosenBoat = boat;
+				Console.WriteLine("Selected Boat");
+			}
 			//Case 3: I don't have the boat, I want to buy it but I don't have enough cranes
+			else
+			{
+				var the_world_is_not_enough = new Menu.NotEnoughMessage();
+				the_world_is_not_enough.Show();
+			}
         }
     }
 }
