@@ -2111,7 +2111,7 @@
           <Property i:type="ButtonProperty">
             <Effect>None</Effect>
             <OwnerNode z:Ref="i35" />
-            <VariableName>Button_1</VariableName>
+            <VariableName>restartButton</VariableName>
             <BackgroundButtonImage xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData" i:nil="true" />
             <BackgroundType>Default</BackgroundType>
             <ButtonImage></ButtonImage>
@@ -2205,7 +2205,7 @@
           <Property i:type="ButtonProperty">
             <Effect>None</Effect>
             <OwnerNode z:Ref="i36" />
-            <VariableName>Button_2</VariableName>
+            <VariableName>levelButton</VariableName>
             <BackgroundButtonImage xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData" i:nil="true" />
             <BackgroundType>Default</BackgroundType>
             <ButtonImage></ButtonImage>
@@ -2299,7 +2299,7 @@
           <Property i:type="ButtonProperty">
             <Effect>None</Effect>
             <OwnerNode z:Ref="i37" />
-            <VariableName>Button_3</VariableName>
+            <VariableName>mainmenuButton</VariableName>
             <BackgroundButtonImage xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData" i:nil="true" />
             <BackgroundType>Default</BackgroundType>
             <ButtonImage></ButtonImage>
@@ -8193,10 +8193,10 @@
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
-              <X>0</X>
+              <X>64.460548000318</X>
               <Y>0</Y>
-              <Width>214</Width>
-              <Height>56</Height>
+              <Width>63</Width>
+              <Height>63</Height>
               <Visible>true</Visible>
               <Anchors>None</Anchors>
             </LayoutProperty>
@@ -8213,10 +8213,14 @@
             <Effect>None</Effect>
             <OwnerNode z:Ref="i132" />
             <VariableName>Button_1</VariableName>
-            <BackgroundButtonImage xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData" i:nil="true" />
-            <BackgroundType>Default</BackgroundType>
-            <ButtonImage></ButtonImage>
-            <ButtonType>TextButton</ButtonType>
+            <BackgroundButtonImage xmlns:d7p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
+              <d7p1:BackgroundDisablelImage i:nil="true" />
+              <d7p1:BackgroundNormalImage i:nil="true" />
+              <d7p1:BackgroundPressImage i:nil="true" />
+            </BackgroundButtonImage>
+            <BackgroundType>Custom</BackgroundType>
+            <ButtonImage>Pause.png</ButtonImage>
+            <ButtonType>ImageButton</ButtonType>
             <FilterColor xmlns:d7p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
               <d7p1:A>255</d7p1:A>
               <d7p1:B>255</d7p1:B>

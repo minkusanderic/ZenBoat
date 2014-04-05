@@ -313,5 +313,6 @@
     <Content Include="Levels\005.oel" />
     <Content Include="Levels\020.oel" />
     <Content Include="Levels\001.oel" />
+    <Content Include="assets\Pause.png" />
   </ItemGroup>
 </Project>
