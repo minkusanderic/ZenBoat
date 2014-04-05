@@ -337,85 +337,85 @@ namespace Preview
                     break;
 
                 default:
-                    this.SetSize(960, 420);
+                    this.SetSize(622, 420);
                     this.Anchors = Anchors.None;
 
-                    button1.SetPosition(172, 69);
+                    button1.SetPosition(3, 62);
                     button1.SetSize(155, 111);
                     button1.Anchors = Anchors.None;
                     button1.Visible = true;
 
-                    button2.SetPosition(327, 69);
+                    button2.SetPosition(158, 62);
                     button2.SetSize(155, 111);
                     button2.Anchors = Anchors.None;
                     button2.Visible = true;
 
-                    button3.SetPosition(486, 70);
+                    button3.SetPosition(317, 63);
                     button3.SetSize(155, 111);
                     button3.Anchors = Anchors.None;
                     button3.Visible = true;
 
-                    button4.SetPosition(632, 69);
+                    button4.SetPosition(463, 62);
                     button4.SetSize(155, 111);
                     button4.Anchors = Anchors.None;
                     button4.Visible = true;
 
-                    button5.SetPosition(172, 225);
+                    button5.SetPosition(3, 218);
                     button5.SetSize(155, 111);
                     button5.Anchors = Anchors.None;
                     button5.Visible = true;
 
-                    button6.SetPosition(327, 225);
+                    button6.SetPosition(158, 218);
                     button6.SetSize(155, 111);
                     button6.Anchors = Anchors.None;
                     button6.Visible = true;
 
-                    button7.SetPosition(486, 225);
+                    button7.SetPosition(317, 218);
                     button7.SetSize(155, 111);
                     button7.Anchors = Anchors.None;
                     button7.Visible = true;
 
-                    button8.SetPosition(632, 225);
+                    button8.SetPosition(463, 218);
                     button8.SetSize(155, 111);
                     button8.Anchors = Anchors.None;
                     button8.Visible = true;
 
-                    label1.SetPosition(204, 180);
+                    label1.SetPosition(35, 173);
                     label1.SetSize(90, 28);
                     label1.Anchors = Anchors.None;
                     label1.Visible = true;
 
-                    label2.SetPosition(359, 180);
+                    label2.SetPosition(190, 173);
                     label2.SetSize(90, 28);
                     label2.Anchors = Anchors.None;
                     label2.Visible = true;
 
-                    label3.SetPosition(518, 180);
+                    label3.SetPosition(349, 173);
                     label3.SetSize(90, 28);
                     label3.Anchors = Anchors.None;
                     label3.Visible = true;
 
-                    label4.SetPosition(665, 180);
+                    label4.SetPosition(496, 173);
                     label4.SetSize(90, 28);
                     label4.Anchors = Anchors.None;
                     label4.Visible = true;
 
-                    label5.SetPosition(204, 336);
+                    label5.SetPosition(35, 329);
                     label5.SetSize(90, 28);
                     label5.Anchors = Anchors.None;
                     label5.Visible = true;
 
-                    label6.SetPosition(359, 336);
+                    label6.SetPosition(190, 329);
                     label6.SetSize(90, 28);
                     label6.Anchors = Anchors.None;
                     label6.Visible = true;
 
-                    label7.SetPosition(518, 336);
+                    label7.SetPosition(349, 329);
                     label7.SetSize(90, 28);
                     label7.Anchors = Anchors.None;
                     label7.Visible = true;
 
-                    label8.SetPosition(665, 336);
+                    label8.SetPosition(496, 329);
                     label8.SetSize(90, 28);
                     label8.Anchors = Anchors.None;
                     label8.Visible = true;

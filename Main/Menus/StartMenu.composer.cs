@@ -17,8 +17,6 @@ namespace Menu
         Button levelButton;
         Button storeButton;
         Button creditButton;
-        Button Button_2;
-        Button Button_1;
 
         private void InitializeWidget()
         {
@@ -39,10 +37,6 @@ namespace Menu
             storeButton.Name = "storeButton";
             creditButton = new Button();
             creditButton.Name = "creditButton";
-            Button_2 = new Button();
-            Button_2.Name = "Button_2";
-            Button_1 = new Button();
-            Button_1.Name = "Button_1";
 
             // StartMenu
             this.RootWidget.AddChildLast(Panel_1);
@@ -55,8 +49,6 @@ namespace Menu
             Panel_1.AddChildLast(levelButton);
             Panel_1.AddChildLast(storeButton);
             Panel_1.AddChildLast(creditButton);
-            Panel_1.AddChildLast(Button_2);
-            Panel_1.AddChildLast(Button_1);
 
             // titleImage
             titleImage.Image = new ImageAsset("/Application/assets/title.png");
@@ -67,7 +59,7 @@ namespace Menu
             playButton.Style = ButtonStyle.Custom;
             playButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = null,
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign144.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
@@ -79,7 +71,7 @@ namespace Menu
             levelButton.Style = ButtonStyle.Custom;
             levelButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = null,
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign144.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
@@ -91,7 +83,7 @@ namespace Menu
             storeButton.Style = ButtonStyle.Custom;
             storeButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = null,
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign144.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
@@ -103,19 +95,11 @@ namespace Menu
             creditButton.Style = ButtonStyle.Custom;
             creditButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = null,
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign144.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
             };
-
-            // Button_2
-            Button_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-
-            // Button_1
-            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
 
@@ -161,16 +145,6 @@ namespace Menu
                     creditButton.Anchors = Anchors.None;
                     creditButton.Visible = true;
 
-                    Button_2.SetPosition(206, 304);
-                    Button_2.SetSize(214, 56);
-                    Button_2.Anchors = Anchors.None;
-                    Button_2.Visible = true;
-
-                    Button_1.SetPosition(206, 304);
-                    Button_1.SetSize(214, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
-
                     break;
 
                 default:
@@ -187,35 +161,25 @@ namespace Menu
                     titleImage.Anchors = Anchors.None;
                     titleImage.Visible = true;
 
-                    playButton.SetPosition(20, 120);
-                    playButton.SetSize(214, 56);
+                    playButton.SetPosition(63, 306);
+                    playButton.SetSize(144, 66);
                     playButton.Anchors = Anchors.None;
                     playButton.Visible = true;
 
-                    levelButton.SetPosition(266, 70);
-                    levelButton.SetSize(214, 56);
+                    levelButton.SetPosition(220, 306);
+                    levelButton.SetSize(144, 66);
                     levelButton.Anchors = Anchors.None;
                     levelButton.Visible = true;
 
-                    storeButton.SetPosition(63, 386);
-                    storeButton.SetSize(134, 77);
+                    storeButton.SetPosition(63, 393);
+                    storeButton.SetSize(144, 66);
                     storeButton.Anchors = Anchors.None;
                     storeButton.Visible = true;
 
-                    creditButton.SetPosition(197, 386);
-                    creditButton.SetSize(181, 77);
+                    creditButton.SetPosition(220, 393);
+                    creditButton.SetSize(144, 66);
                     creditButton.Anchors = Anchors.None;
                     creditButton.Visible = true;
-
-                    Button_2.SetPosition(216, 311);
-                    Button_2.SetSize(144, 56);
-                    Button_2.Anchors = Anchors.None;
-                    Button_2.Visible = true;
-
-                    Button_1.SetPosition(63, 311);
-                    Button_1.SetSize(144, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
 
                     break;
             }
@@ -224,9 +188,13 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            Button_2.Text = "Button";
+            playButton.Text = "Play";
 
-            Button_1.Text = "Button";
+            levelButton.Text = "Levels";
+
+            storeButton.Text = "Store";
+
+            creditButton.Text = "Credits";
         }
 
         private void onShowing(object sender, EventArgs e)

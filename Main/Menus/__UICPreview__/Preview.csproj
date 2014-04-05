@@ -44,11 +44,20 @@
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\\assets\Argyle.png" >
+      <Link>assets\Argyle.png</Link>
+    </Content>
     <Content Include="..\\assets\Black.png" >
       <Link>assets\Black.png</Link>
     </Content>
+    <Content Include="..\\assets\BlackDot.png" >
+      <Link>assets\BlackDot.png</Link>
+    </Content>
     <Content Include="..\\assets\Blue.png" >
       <Link>assets\Blue.png</Link>
+    </Content>
+    <Content Include="..\\assets\Checker.png" >
+      <Link>assets\Checker.png</Link>
     </Content>
     <Content Include="..\\assets\Crane_Icon2.png" >
       <Link>assets\Crane_Icon2.png</Link>
@@ -68,8 +77,41 @@
     <Content Include="..\\assets\instructionsB.png" >
       <Link>assets\instructionsB.png</Link>
     </Content>
+    <Content Include="..\\assets\OrgA.png" >
+      <Link>assets\OrgA.png</Link>
+    </Content>
+    <Content Include="..\\assets\OrgB.png" >
+      <Link>assets\OrgB.png</Link>
+    </Content>
+    <Content Include="..\\assets\OrgC.png" >
+      <Link>assets\OrgC.png</Link>
+    </Content>
+    <Content Include="..\\assets\OrgD.png" >
+      <Link>assets\OrgD.png</Link>
+    </Content>
+    <Content Include="..\\assets\OrgE.png" >
+      <Link>assets\OrgE.png</Link>
+    </Content>
+    <Content Include="..\\assets\OrgF.png" >
+      <Link>assets\OrgF.png</Link>
+    </Content>
+    <Content Include="..\\assets\Pause.png" >
+      <Link>assets\Pause.png</Link>
+    </Content>
     <Content Include="..\\assets\Pink.png" >
       <Link>assets\Pink.png</Link>
+    </Content>
+    <Content Include="..\\assets\PinkDot.png" >
+      <Link>assets\PinkDot.png</Link>
+    </Content>
+    <Content Include="..\\assets\Plaid.png" >
+      <Link>assets\Plaid.png</Link>
+    </Content>
+    <Content Include="..\\assets\Rainbow.png" >
+      <Link>assets\Rainbow.png</Link>
+    </Content>
+    <Content Include="..\\assets\RainbowDot.png" >
+      <Link>assets\RainbowDot.png</Link>
     </Content>
     <Content Include="..\\assets\Red.png" >
       <Link>assets\Red.png</Link>

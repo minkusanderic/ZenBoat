@@ -365,5 +365,18 @@
     <Content Include="assets\Teal.png" />
     <Content Include="assets\White.png" />
     <Content Include="assets\Yellow.png" />
+    <Content Include="assets\Argyle.png" />
+    <Content Include="assets\BlackDot.png" />
+    <Content Include="assets\Checker.png" />
+    <Content Include="assets\OrgA.png" />
+    <Content Include="assets\OrgB.png" />
+    <Content Include="assets\OrgC.png" />
+    <Content Include="assets\OrgD.png" />
+    <Content Include="assets\OrgE.png" />
+    <Content Include="assets\OrgF.png" />
+    <Content Include="assets\PinkDot.png" />
+    <Content Include="assets\Plaid.png" />
+    <Content Include="assets\Rainbow.png" />
+    <Content Include="assets\RainbowDot.png" />
   </ItemGroup>
 </Project>
