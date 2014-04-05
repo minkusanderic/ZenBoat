@@ -20,6 +20,7 @@ namespace Menu
 
             Label_1.Text = text;
             Show();
+			this.Result = DialogResult.Cancel;
         }
 
         //  Constructor ( with exception, close handler )
