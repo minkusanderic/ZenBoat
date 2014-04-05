@@ -12,7 +12,7 @@ namespace Menu
     {
         public Level01()
         {
-            InitializeWidget();
+			InitializeWidget();
 			Button_1.ButtonAction += HandleButton_1ButtonAction;
 			Button_2.ButtonAction += HandleButton_2ButtonAction;
 			Button_3.ButtonAction += HandleButton_3ButtonAction;
@@ -28,45 +28,48 @@ namespace Menu
 			
 			//Console.WriteLine(  Globals.unlockedLevelPrefix + LevelLoader.searchPath + Button_2.Text + ".oel" );
 			if ( SaveGameManager.GetValueFromKey( 
-			      Globals.unlockedLevelPrefix + LevelLoader.searchPath + Button_2.Text + ".oel" ) != "unlocked" )
+			      Globals.unlockedLevelPrefix + LevelLoader.searchPath + LevelLabel_2 .Text + ".oel" ) != "unlocked" )
 			{
+				Button_2.Alpha = .5f;
 				Button_2.Enabled = false;	
 			}else { Button_2.Enabled = true; }
 			
 			if ( SaveGameManager.GetValueFromKey( 
-			      Globals.unlockedLevelPrefix + LevelLoader.searchPath + Button_3.Text + ".oel" ) != "unlocked" )
+			      Globals.unlockedLevelPrefix + LevelLoader.searchPath + LevelLabel_3.Text + ".oel" ) != "unlocked" )
 			{
+				Button_3.Alpha = .5f;
 				Button_3.Enabled = false;	
 			}else { Button_3.Enabled = true; }
 			
 			if ( SaveGameManager.GetValueFromKey( 
-			      Globals.unlockedLevelPrefix + LevelLoader.searchPath + Button_4.Text + ".oel" ) != "unlocked" )
+			      Globals.unlockedLevelPrefix + LevelLoader.searchPath + LevelLabel_4.Text + ".oel" ) != "unlocked" )
 			{
+				Button_4.Alpha = .5f;
 				Button_4.Enabled = false;	
 			}else { Button_4.Enabled = true; }
         }
 
         void HandleButton_4ButtonAction (object sender, TouchEventArgs e)
         {
-        	Globals.current_level = LevelLoader.searchPath + Button_4.Text + ".oel";
+        	Globals.current_level = LevelLoader.searchPath + LevelLabel_4.Text + ".oel";
 			MenuLoader.isPlay = false;
         }
 
         void HandleButton_3ButtonAction (object sender, TouchEventArgs e)
         {
-        	Globals.current_level = LevelLoader.searchPath + Button_3.Text + ".oel";
+        	Globals.current_level = LevelLoader.searchPath + LevelLabel_3.Text + ".oel";
 			MenuLoader.isPlay = false;
         }
 
         void HandleButton_2ButtonAction (object sender, TouchEventArgs e)
         {
-        	Globals.current_level = LevelLoader.searchPath + Button_2.Text + ".oel";
+        	Globals.current_level = LevelLoader.searchPath + LevelLabel_2.Text + ".oel";
 			MenuLoader.isPlay = false;
         }
 
         void HandleButton_1ButtonAction (object sender, TouchEventArgs e)
         {
-			Globals.current_level = LevelLoader.searchPath + Button_1.Text + ".oel";
+			Globals.current_level = LevelLoader.searchPath + LevelLabel_1.Text + ".oel";
 			MenuLoader.isPlay = false;
         }		
     }

@@ -56,17 +56,22 @@ namespace Core
 		}
 		public static void FilterStars(ImageBox image_box1 , ImageBox image_box2 , ImageBox image_box3 , int number_of_stars )
 		{
+			ImageAsset fullStar = new ImageAsset("/Application/assets/FullStar.png" , true);
+			ImageAsset emptyStar = new ImageAsset("/Application/assets/EmptyStar.png" , true);
+			image_box1.Image = fullStar;
+			image_box2.Image = fullStar;
+			image_box3.Image = fullStar;
 			if ( number_of_stars < 3 )
 			{
-				image_box3.Visible = false;
+				image_box3.Image = emptyStar;
 			}
 			if ( number_of_stars < 2 )
 			{
-				image_box2.Visible = false;
+				image_box2.Image = emptyStar;
 			}
 			if ( number_of_stars < 1 )
 			{
-				image_box1.Visible = false;
+				image_box1.Image = emptyStar;
 			}	
 		}
 	}

@@ -152,6 +152,10 @@
     <Compile Include="PreFabs\MTYellowOrangeSouth.cs" />
     <Compile Include="PreFabs\MTYGreenYellowNorth.cs" />
     <Compile Include="PreFabs\MTGreenYellowSouth.cs" />
+    <Compile Include="Menus\Level06.cs" />
+    <Compile Include="Menus\Level05.composer.cs" />
+    <Compile Include="Menus\Level05.cs" />
+    <Compile Include="Menus\Level06.composer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -183,6 +187,7 @@
     <Folder Include="assets\" />
     <Folder Include="assets\Sound\" />
     <Folder Include="assets\Sound\SFX\" />
+    <Folder Include="assets\Level Previews\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Cube.mdx" />
@@ -378,5 +383,27 @@
     <Content Include="assets\RainbowDot.png" />
     <Content Include="assets\Pink.mdx" />
     <Content Include="assets\Rainbow.mdx" />
+    <Content Include="assets\FullStar.png" />
+    <Content Include="assets\EmptyStar.png" />
+    <Content Include="assets\Level Previews\001.jpg" />
+    <Content Include="assets\Level Previews\002.jpg" />
+    <Content Include="assets\Level Previews\003.jpg" />
+    <Content Include="assets\Level Previews\004.jpg" />
+    <Content Include="assets\Level Previews\005.jpg" />
+    <Content Include="assets\Level Previews\006.jpg" />
+    <Content Include="assets\Level Previews\007.jpg" />
+    <Content Include="assets\Level Previews\008.jpg" />
+    <Content Include="assets\Level Previews\009.jpg" />
+    <Content Include="assets\Level Previews\010.jpg" />
+    <Content Include="assets\Level Previews\011.jpg" />
+    <Content Include="assets\Level Previews\012.jpg" />
+    <Content Include="assets\Level Previews\013.jpg" />
+    <Content Include="assets\Level Previews\014.jpg" />
+    <Content Include="assets\Level Previews\015.jpg" />
+    <Content Include="assets\Level Previews\016.jpg" />
+    <Content Include="assets\Level Previews\017.jpg" />
+    <Content Include="assets\Level Previews\018.jpg" />
+    <Content Include="assets\Level Previews\019.jpg" />
+    <Content Include="assets\Level Previews\020.jpg" />
   </ItemGroup>
 </Project>
