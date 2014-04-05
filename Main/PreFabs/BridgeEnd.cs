@@ -45,6 +45,20 @@ namespace Main
 														}
 														Console.WriteLine ("You've reached the Torii Gate - Level Over!");	
 														SaveGameManager.SaveString( Globals.completedLevelPrefix + Globals.current_level , Globals.true_ );
+				// calc max cranes to curretn cranes
+				int current_max_crane_count = 0;
+				String current_max_crane_count_string = SaveGameManager.GetValueFromKey( Globals.craneTotalForLevelPrefix + Globals.current_level );
+				int.TryParse( current_max_crane_count_string , out current_max_crane_count );
+				Console.WriteLine( "current_max_crane_count{0}\tcurrentcranecnt{1}" , current_max_crane_count , Globals.currentCraneCountOnLevel );
+				if ( Globals.currentCraneCountOnLevel >= current_max_crane_count )
+				{
+					SaveGameManager.SaveString( Globals.craneTotalForLevelPrefix + Globals.current_level, Globals.currentCraneCountOnLevel.ToString() );
+					Console.WriteLine( "Saved new" );
+				}
+				Globals.currentCraneCountOnLevel = 0;
+				
+				// unlock new Level.
+				
 														//SFXComponent sound = ent.attachComponent( new SFXComponent("/Application/assets/Sound/SFX/LevelEnd.wav" ) );
 														//sound.PlaySound();
 														((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/assets/Sound/SFX/LevelEnd.wav");	

@@ -171,7 +171,8 @@ namespace Main
 					crane_count ++;
 				}
 				  
-				//SaveGameManager.SaveString( Globals.craneTotalForLevelPrefix + filename , crane_count.ToString() );
+				SaveGameManager.SaveString( Globals.craneTotalForLevelPrefix + filename , crane_count.ToString() );
+				Globals.currentCraneCountOnLevel = 0;
 			}
 		} 
 		
