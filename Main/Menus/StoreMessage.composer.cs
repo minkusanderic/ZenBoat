@@ -13,6 +13,7 @@ namespace Menu
     {
         Label Label_1;
         Button Button_1;
+        Button cancelButton;
 
         private void InitializeWidget()
         {
@@ -25,10 +26,13 @@ namespace Menu
             Label_1.Name = "Label_1";
             Button_1 = new Button();
             Button_1.Name = "Button_1";
+            cancelButton = new Button();
+            cancelButton.Name = "cancelButton";
 
             // StoreMessage
             this.AddChildLast(Label_1);
             this.AddChildLast(Button_1);
+            this.AddChildLast(cancelButton);
             this.ShowEffect = new BunjeeJumpEffect()
             {
             };
@@ -36,13 +40,17 @@ namespace Menu
 
             // Label_1
             Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
-            Label_1.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Label_1.Font = new UIFont(FontAlias.System, 72, FontStyle.Regular);
             Label_1.LineBreak = LineBreak.Character;
             Label_1.HorizontalAlignment = HorizontalAlignment.Center;
 
             // Button_1
             Button_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+
+            // cancelButton
+            cancelButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            cancelButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
 
@@ -69,6 +77,11 @@ namespace Menu
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;
 
+                    cancelButton.SetPosition(586, 440);
+                    cancelButton.SetSize(214, 56);
+                    cancelButton.Anchors = Anchors.None;
+                    cancelButton.Visible = true;
+
                     break;
 
                 default:
@@ -81,10 +94,15 @@ namespace Menu
                     Label_1.Anchors = Anchors.None;
                     Label_1.Visible = true;
 
-                    Button_1.SetPosition(373, 435);
+                    Button_1.SetPosition(140, 440);
                     Button_1.SetSize(214, 56);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;
+
+                    cancelButton.SetPosition(586, 440);
+                    cancelButton.SetSize(214, 56);
+                    cancelButton.Anchors = Anchors.None;
+                    cancelButton.Visible = true;
 
                     break;
             }
@@ -93,7 +111,11 @@ namespace Menu
 
         public void UpdateLanguage()
         {
+            Label_1.Text = "Do you want to buy this boat?";
+
             Button_1.Text = "OK";
+
+            cancelButton.Text = "Cancel";
         }
 
         private void onShowing(object sender, EventArgs e)
