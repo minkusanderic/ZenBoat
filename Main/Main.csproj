@@ -336,9 +336,7 @@
     <Content Include="Levels\004.oel" />
     <Content Include="Levels\005.oel" />
     <Content Include="Levels\001.oel" />
-
     <Content Include="assets\Pause.png" />
-
     <Content Include="assets\Pink2.mdx" />
     <Content Include="assets\GreenN.mdx" />
     <Content Include="assets\OrangeN.mdx" />
@@ -354,6 +352,18 @@
     <Content Include="assets\RedS.mdx" />
     <Content Include="assets\YellowGreenS.mdx" />
     <Content Include="assets\YellowS.mdx" />
-
+    <Content Include="assets\grassBack.png" />
+    <Content Include="assets\Black.png" />
+    <Content Include="assets\Blue.png" />
+    <Content Include="assets\Crane_Icon2.png" />
+    <Content Include="assets\Green.png" />
+    <Content Include="assets\Pink.png" />
+    <Content Include="assets\Red.png" />
+    <Content Include="assets\scroll.png" />
+    <Content Include="assets\sign144.png" />
+    <Content Include="assets\sign214.png" />
+    <Content Include="assets\Teal.png" />
+    <Content Include="assets\White.png" />
+    <Content Include="assets\Yellow.png" />
   </ItemGroup>
 </Project>

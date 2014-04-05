@@ -32,12 +32,12 @@ namespace Menu
         {
             InitializeWidget();
 			
-            PurchaseButton.ButtonAction += OnPurchase;
+           // PurchaseButton.ButtonAction += OnPurchase;
 			BackButton.ButtonAction += OnClose;
 
-            ListPanel_1.SetListItemCreator(OnCreateItem);
-            ListPanel_1.SetListItemUpdater(OnUpdateItem);
-            ListPanel_1.Sections = new ListSectionCollection { new ListSection("Section", 0) };
+           // ListPanel_1.SetListItemCreator(OnCreateItem);
+           // ListPanel_1.SetListItemUpdater(OnUpdateItem);
+           // ListPanel_1.Sections = new ListSectionCollection { new ListSection("Section", 0) };//
 
             if (onPurchased != null) Purchased = onPurchased;
             //if (onConsumed != null) Consumed = onConsumed;
@@ -54,12 +54,12 @@ namespace Menu
         public void SetItemCount(int count)
         {
 			Console.WriteLine("Count: " + count);
-            var listSection = ListPanel_1.Sections[0];
-            if (listSection.ItemCount != count) listSection.ItemCount = count;
+           // var listSection = ListPanel_1.Sections[0];//
+           // if (listSection.ItemCount != count) listSection.ItemCount = count;
         }
         public void UpdateItems()
         {
-            ListPanel_1.UpdateItems();
+           // ListPanel_1.UpdateItems();
             SwitchButtons();
         }
 
@@ -225,7 +225,7 @@ namespace Menu
                     consumable = product.IsTicketValid && (product.ConsumableTicketCount > 0);
                 }
             }
-            PurchaseButton.Enabled = purchaseable;
+            //PurchaseButton.Enabled = purchaseable;
             //Button_2.Enabled = consumable;
         }
 

@@ -24,7 +24,7 @@ namespace Menu
 			
 			continueButton.ButtonAction += HandleContinueButtonButtonAction;
 			//restartButton.ButtonAction += HandleRestartButtonButtonAction;
-			levelButton.ButtonAction += HandleLevelButtonButtonAction;
+			//levelButton.ButtonAction += HandleLevelButtonButtonAction;
 			//mainmenuButton.ButtonAction += HandleMainmenuButtonButtonAction;
 			
         }
