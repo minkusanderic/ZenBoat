@@ -163,6 +163,10 @@
     <Crane1 id="22" x="2580" y="168" />
     <Crane1 id="23" x="2684" y="268" />
     <Crane1 id="24" x="1296" y="468" />
+    <Grass id="27" x="768" y="-32" />
+    <Grass id="28" x="660" y="-32" />
+    <Grass id="29" x="824" y="-32" />
+    <Grass id="25" x="716" y="-28" />
   </Entities>
   <Art>
     <MapleTreeSouth id="5" x="832" y="520" width="70" height="70" />

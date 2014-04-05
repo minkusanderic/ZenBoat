@@ -141,11 +141,6 @@
     <Boat id="0" x="164" y="288" angle="0" />
     <BridgeEnd id="1" x="884" y="232" NextLevel="002.oel" />
     <Crane1 id="2" x="612" y="472" />
-    <Grass id="3" x="236" y="0" />
-    <Grass id="4" x="308" y="8" />
-    <Grass id="5" x="360" y="0" />
-    <Grass id="6" x="448" y="0" />
-    <Grass id="7" x="532" y="0" />
   </Entities>
   <Art>
     <MapleTreeSouth id="0" x="580" y="540" width="70" height="70" />

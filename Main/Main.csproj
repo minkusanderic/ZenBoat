@@ -100,8 +100,6 @@
     <Compile Include="Menus\StoreMessage.cs" />
     <Compile Include="Menus\Loading.composer.cs" />
     <Compile Include="Menus\Loading.cs" />
-    <Compile Include="PreFabs\BlackKoi.cs" />
-    <Compile Include="PreFabs\GoldenKoi.cs" />
     <Compile Include="PreFabs\Crane5.cs" />
     <Compile Include="PreFabs\Crane10.cs" />
     <Compile Include="PreFabs\Crane250.cs" />
@@ -124,6 +122,8 @@
     <Compile Include="PreFabs\Crane1.cs" />
     <Compile Include="PreFabs\IrisSouth.cs" />
     <Compile Include="PreFabs\TulipSouth.cs" />
+    <Compile Include="PreFabs\KoiGolden.cs" />
+    <Compile Include="PreFabs\KoiBlack.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

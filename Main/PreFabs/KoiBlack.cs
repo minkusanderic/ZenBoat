@@ -5,19 +5,19 @@ using Sce.PlayStation.Core;
 using Core;
 namespace Main
 {
-	public class GoldenKoi
+	public class KoiBlack
 	{
-		public GoldenKoi ()
+		public KoiBlack ()
 		{
 		}
 		static Entity entity;
 		public static void create(Entity ent, Dictionary<String, String> options)
 		{
 			
-			entity = ent;
-			ent.tag("koi");
+			//entity = ent;
+			//ent.tag("koi");
 			
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/GoldenKoi.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/BlackKoi.mdx"));
 			
 			//ent.Name = "Koi";
 			//ent.tag("koi");
