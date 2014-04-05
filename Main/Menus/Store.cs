@@ -40,13 +40,114 @@ namespace Menu
            // ListPanel_1.Sections = new ListSectionCollection { new ListSection("Section", 0) };//
 
             if (onPurchased != null) Purchased = onPurchased;
-            //if (onConsumed != null) Consumed = onConsumed;
+            if (onConsumed != null) Consumed = onConsumed;
 			InitializeDialog();
+			
+			Button_1.ButtonAction += HandleButton_1ButtonAction;
+			Button_2.ButtonAction += HandleButton_1ButtonAction;
+			Button_3.ButtonAction += HandleButton_1ButtonAction;
+			Button_4.ButtonAction += HandleButton_1ButtonAction;
+			Button_5.ButtonAction += HandleButton_1ButtonAction;
+			Button_6.ButtonAction += HandleButton_1ButtonAction;
+			
+			Purchased += Handle_Purchase;
+			//Consumed += Handle_Consume;
             
         }
+				
+		void Handle_Purchase(InAppPurchaseProduct product)
+		{
+			Console.WriteLine("Handling Product " + product.Label);
+			Console.WriteLine("Num of Packs: " + product.ConsumableTicketCount);
+			ProductConsume(product);
+			
+			switch(product.Label)
+			{
+			case "CRANE1":
+				increment_crane_count(1000);
+				break;
+			case "CRANE2":
+				increment_crane_count(3000);
+				break;
+			case "CRANE3":
+				increment_crane_count(5000);
+				break;
+			case "CRANE4":
+				increment_crane_count(10000);
+				break;
+			case "CRANE5":
+				increment_crane_count(20000);
+				break;
+			case "CRANE6":
+				increment_crane_count(50000);
+				break;
+			}
+			//increment crane count
+		}
 		
+		void increment_crane_count(int num)
+		{
+			if(Core.SaveGameManager.GetValueFromKey("crane_value") == null)
+			{
+				Core.SaveGameManager.SaveString("crane_value", "0");
+			}
+			int cc;
+			if(!int.TryParse(Core.SaveGameManager.GetValueFromKey("crane_value"), out cc))
+			{
+				Console.WriteLine("ERROR in geting crane value");
+			}
+			Core.SaveGameManager.SaveString("crane_value", (cc + num).ToString());
+		}
+		void Handle_Consume(InAppPurchaseProduct product, int count)
+		{
+			Console.WriteLine("Handling Consume " + product.Label);
+			Console.WriteLine("Increment Crane Count");
+		}
+
+        void HandleButton_1ButtonAction (object sender, TouchEventArgs e)
+        {
+			if(sender.Equals(Button_1))
+			{
+				Console.WriteLine("BUTTON 1");
+				selectedItem = 0;
+			}
+			
+			if(sender.Equals(Button_2))
+			{
+				Console.WriteLine("BUTTON 2");
+				selectedItem = 1;
+			}
+			if(sender.Equals(Button_3))
+			{
+				Console.WriteLine("BUTTON 3");
+				selectedItem = 2;
+			}
+			if(sender.Equals(Button_4))
+			{
+				Console.WriteLine("BUTTON 4");
+				selectedItem = 3;
+			}
+			if(sender.Equals(Button_5))
+			{
+				Console.WriteLine("BUTTON 5");
+				selectedItem = 4;
+			}
+			if(sender.Equals(Button_6))
+			{
+				Console.WriteLine("BUTTON 6");
+				selectedItem = 5;
+				
+			}
+			ProductPurchase(dialog.ProductList[selectedItem]);
+        	//ProductPurchase(dialog.
+			//dialog.Consume("CRANES");
+        }
 		
-		
+		 protected override void OnUpdate(float elapsedTime)
+        {
+            base.OnUpdate(elapsedTime);
+			UpdateDialog();
+        }
 		///
 		
 		//  Public methods
@@ -65,11 +166,7 @@ namespace Menu
 
         //  Override events
 
-        protected override void OnUpdate(float elapsedTime)
-        {
-            base.OnUpdate(elapsedTime);
-            UpdateDialog();
-        }
+       
         protected override void OnShown()
         {
             base.OnShown();
@@ -143,6 +240,41 @@ namespace Menu
         }
 
         //  Button events
+		public void ProductPurchase(InAppPurchaseProduct product)
+        {
+            try {
+                if (selectedItem < 0) return;
+                CheckActionStart(InAppPurchaseCommand.Purchase);
+                dialog.Purchase(product.Label);
+                dialogSequence = DialogSequence.Action;
+                dialogIsBusy = true;
+            } catch (Exception exception) {
+                new StoreMessage(exception);
+            }
+        }
+		
+        public void ProductConsume(InAppPurchaseProduct product)
+        {
+            try {
+                if (selectedItem < 0) return;
+                CheckActionStart(InAppPurchaseCommand.Consume);
+                dialog.Consume(product.Label);
+                dialogSequence = DialogSequence.Action;
+                dialogIsBusy = true;
+            } catch (Exception exception) {
+                new StoreMessage(exception);
+            }
+        }
+		/// <summary>
+		/// Raises the purchase event.
+		/// </summary>
+		/// <param name='sender'>
+		/// Sender.
+		/// </param>
+		/// <param name='e'>
+		/// E.
+		/// </param>
+		/// 
 
         public void OnPurchase(object sender, EventArgs e)
         {
@@ -156,6 +288,7 @@ namespace Menu
                 new StoreMessage(exception);
             }
         }
+		
         public void OnConsume(object sender, EventArgs e)
         {
             try {
@@ -244,7 +377,7 @@ namespace Menu
             var command = actionCommand;
             actionCommand = InAppPurchaseCommand.None;
             if (command == InAppPurchaseCommand.None) return;
-
+			
             var product = dialog.ProductList[actionLabel];
             bool consumable = (product.TicketType == InAppPurchaseTicketType.Consumable);
             int count1 = !actionTicketIsOK ? 0 : (!consumable ? 1 : actionTicketCount);
@@ -252,6 +385,7 @@ namespace Menu
             bool purchasing = (command == InAppPurchaseCommand.Purchase);
             int count = purchasing ? (count2 - count1): (count1 - count2);
             if (count > 0) {
+				Console.WriteLine(count);
                 if (purchasing && Purchased != null) Purchased(product);
                 if (!purchasing && Consumed != null) Consumed(product, count);
             }

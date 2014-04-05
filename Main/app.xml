@@ -25,24 +25,34 @@
   <copyright author="Copyright 2014" text="Copyright.txt" />
   <purchase>
     <product_list>
-      <product label="CRANES" type="consumable">
+      <product label="CRANE1" type="consumable">
         <name>
-          <localized_item locale="en-US" value="500 Cranes" />
+          <localized_item locale="en-US" value="1,000 Cranes" />
         </name>
       </product>
-      <product label="PIRATE" type="normal">
+      <product label="CRANE2" type="consumable">
         <name>
-          <localized_item locale="en-US" value="Pirate Boat" />
+          <localized_item locale="en-US" value="3,000 Cranes" />
         </name>
       </product>
-      <product label="VIKING" type="normal">
+      <product label="CRANE3" type="consumable">
         <name>
-          <localized_item locale="en-US" value="Viking Death Boat" />
+          <localized_item locale="en-US" value="5,000 Cranes" />
         </name>
       </product>
-      <product label="RBDUCK" type="normal">
+      <product label="CRANE4" type="consumable">
         <name>
-          <localized_item locale="en-US" value="Rubber Ducky" />
+          <localized_item locale="en-US" value="10,000 Cranes" />
+        </name>
+      </product>
+      <product label="CRANE5" type="consumable">
+        <name>
+          <localized_item locale="en-US" value="20,000 Cranes" />
+        </name>
+      </product>
+      <product label="CRANE6" type="consumable">
+        <name>
+          <localized_item locale="en-US" value="50,000 Cranes" />
         </name>
       </product>
     </product_list>
