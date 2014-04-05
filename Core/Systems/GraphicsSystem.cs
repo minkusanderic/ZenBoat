@@ -155,7 +155,7 @@ namespace Core
 			{
 				float animation_speed = 0.006f;
 				if( model.Name.Contains("whirlpool") )
-					animation_speed *= 100f;
+					animation_speed *= 50f;
 				model.Animate( animation_speed );
 			}
 			
