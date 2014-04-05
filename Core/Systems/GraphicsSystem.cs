@@ -139,10 +139,24 @@ namespace Core
 			
 			
 			
-			
-			foreach(var model in ModelComponent.model_cache.Values)
+//			HashSet<BasicModel> animated_models = new HashSet<BasicModel>();
+//			foreach(var layer in model_layers.Values)
+//			{
+//				foreach( var model in layer )
+//				{
+//					if( !animated_models.Contains( model.model ) )
+//					{
+//						model.model.Animate( model.animation_speed * 0.006f ) ;
+//						animated_models.Add( model.model );
+//					}
+//				}
+//			}
+			foreach( var model in ModelComponent.model_cache.Values )
 			{
-					model.Animate( .006f ) ;
+				float animation_speed = 0.006f;
+				if( model.Name.Contains("whirlpool") )
+					animation_speed *= 100f;
+				model.Animate( animation_speed );
 			}
 			
 			//adjust position

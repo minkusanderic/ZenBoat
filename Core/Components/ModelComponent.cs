@@ -27,6 +27,7 @@ namespace Core
 			else{
 				model_cache[file_name] = new BasicModel( file_name , 0 ); // use index here
 				model = model_cache[file_name];
+				model.Name = file_name;
 				foreach(var texture in model.Textures){
 					Console.WriteLine("Loading Texture: " + texture.FileName + " (" + texture.Texture.Height * texture.Texture.Width * 4 + " bytes)");		
 				}
