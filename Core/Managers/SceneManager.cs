@@ -103,6 +103,7 @@ namespace Core
 				Profiler.End();
 				return true;
 			case GameState.PAUSED:
+				systems[typeof(TouchSystem)].Update();
 				systems[typeof(GraphicsSystem)].Update();
 				return true;
 			case GameState.STOPPED:

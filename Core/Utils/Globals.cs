@@ -19,6 +19,11 @@ namespace Core
 		public static String true_ = "true";
 		
 		public static float Max_Speed_Of_Boat = 500.0f;
+		
+		public static Sce.PlayStation.HighLevel.UI.UIFont medium_font = 
+			new Sce.PlayStation.HighLevel.UI.UIFont("/Application/Menus/Zen_Sketch.ttf", 
+			                                        36, 
+			                                        Sce.PlayStation.Core.Imaging.FontStyle.Bold);
 	}
 }
 

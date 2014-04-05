@@ -104,7 +104,7 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            Button_1.Text = "Back";
+            Button_1.Text = "Pause";
 
             Label_1.Text = "Cranes:";
         }
