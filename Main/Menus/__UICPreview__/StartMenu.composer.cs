@@ -17,6 +17,8 @@ namespace Preview
         Button levelButton;
         Button storeButton;
         Button creditButton;
+        Button Button_2;
+        Button Button_1;
 
         private void InitializeWidget()
         {
@@ -37,6 +39,10 @@ namespace Preview
             storeButton.Name = "storeButton";
             creditButton = new Button();
             creditButton.Name = "creditButton";
+            Button_2 = new Button();
+            Button_2.Name = "Button_2";
+            Button_1 = new Button();
+            Button_1.Name = "Button_1";
 
             // StartMenu
             this.RootWidget.AddChildLast(Panel_1);
@@ -49,6 +55,8 @@ namespace Preview
             Panel_1.AddChildLast(levelButton);
             Panel_1.AddChildLast(storeButton);
             Panel_1.AddChildLast(creditButton);
+            Panel_1.AddChildLast(Button_2);
+            Panel_1.AddChildLast(Button_1);
 
             // titleImage
             titleImage.Image = new ImageAsset("/Application/assets/title.png");
@@ -101,6 +109,14 @@ namespace Preview
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
             };
 
+            // Button_2
+            Button_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+
+            // Button_1
+            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+
             SetWidgetLayout(orientation);
 
             UpdateLanguage();
@@ -145,6 +161,16 @@ namespace Preview
                     creditButton.Anchors = Anchors.None;
                     creditButton.Visible = true;
 
+                    Button_2.SetPosition(206, 304);
+                    Button_2.SetSize(214, 56);
+                    Button_2.Anchors = Anchors.None;
+                    Button_2.Visible = true;
+
+                    Button_1.SetPosition(206, 304);
+                    Button_1.SetSize(214, 56);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
+
                     break;
 
                 default:
@@ -161,13 +187,13 @@ namespace Preview
                     titleImage.Anchors = Anchors.None;
                     titleImage.Visible = true;
 
-                    playButton.SetPosition(63, 302);
-                    playButton.SetSize(147, 84);
+                    playButton.SetPosition(20, 120);
+                    playButton.SetSize(214, 56);
                     playButton.Anchors = Anchors.None;
                     playButton.Visible = true;
 
-                    levelButton.SetPosition(210, 302);
-                    levelButton.SetSize(168, 84);
+                    levelButton.SetPosition(266, 70);
+                    levelButton.SetSize(214, 56);
                     levelButton.Anchors = Anchors.None;
                     levelButton.Visible = true;
 
@@ -181,6 +207,16 @@ namespace Preview
                     creditButton.Anchors = Anchors.None;
                     creditButton.Visible = true;
 
+                    Button_2.SetPosition(216, 311);
+                    Button_2.SetSize(144, 56);
+                    Button_2.Anchors = Anchors.None;
+                    Button_2.Visible = true;
+
+                    Button_1.SetPosition(63, 311);
+                    Button_1.SetSize(144, 56);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
+
                     break;
             }
             _currentLayoutOrientation = orientation;
@@ -188,6 +224,9 @@ namespace Preview
 
         public void UpdateLanguage()
         {
+            Button_2.Text = "Button";
+
+            Button_1.Text = "Button";
         }
 
         private void onShowing(object sender, EventArgs e)

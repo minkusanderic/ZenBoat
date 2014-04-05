@@ -47,25 +47,25 @@ namespace Menu
             CheckBox_1.Style = CheckBoxStyle.RadioButton;
 
             // Label_1
-            Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            Label_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Label_1.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
             Label_1.LineBreak = LineBreak.Character;
             Label_1.HorizontalAlignment = HorizontalAlignment.Center;
 
             // Label_2
-            Label_2.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            Label_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Label_2.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
             Label_2.LineBreak = LineBreak.Character;
 
             // Label_3
-            Label_3.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            Label_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Label_3.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
             Label_3.TextTrimming = TextTrimming.Character;
             Label_3.LineBreak = LineBreak.Character;
             Label_3.HorizontalAlignment = HorizontalAlignment.Right;
 
             // Label_4
-            Label_4.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            Label_4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Label_4.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
             Label_4.LineBreak = LineBreak.Character;
             Label_4.HorizontalAlignment = HorizontalAlignment.Right;
@@ -147,6 +147,13 @@ namespace Menu
 
         public void UpdateLanguage()
         {
+            Label_1.Text = "1";
+
+            Label_2.Text = "Label_2";
+
+            Label_3.Text = "Label_3";
+
+            Label_4.Text = "Label_4";
         }
 
         public void InitializeDefaultEffect()

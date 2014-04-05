@@ -69,7 +69,7 @@ namespace Preview
             label8.Name = "label8";
 
             // Tier1
-            this.BackgroundColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            this.BackgroundColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 0f / 255f);
             this.Clip = true;
             this.AddChildLast(button1);
             this.AddChildLast(button2);
@@ -91,82 +91,154 @@ namespace Preview
             // button1
             button1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button1.Style = ButtonStyle.Custom;
+            button1.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Black.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // button2
             button2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button2.Style = ButtonStyle.Custom;
+            button2.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Blue.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // button3
             button3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button3.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button3.Style = ButtonStyle.Custom;
+            button3.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Green.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // button4
             button4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button4.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button4.Style = ButtonStyle.Custom;
+            button4.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Pink.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // button5
             button5.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button5.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button5.Style = ButtonStyle.Custom;
+            button5.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Red.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // button6
             button6.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button6.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button6.Style = ButtonStyle.Custom;
+            button6.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Teal.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // button7
             button7.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button7.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button7.Style = ButtonStyle.Custom;
+            button7.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/White.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // button8
             button8.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             button8.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            button8.Style = ButtonStyle.Custom;
+            button8.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Yellow.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
+            };
 
             // label1
             label1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label1.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label1.LineBreak = LineBreak.Character;
             label1.HorizontalAlignment = HorizontalAlignment.Center;
+            label1.VerticalAlignment = VerticalAlignment.Top;
 
             // label2
             label2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label2.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label2.LineBreak = LineBreak.Character;
             label2.HorizontalAlignment = HorizontalAlignment.Center;
+            label2.VerticalAlignment = VerticalAlignment.Top;
 
             // label3
             label3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label3.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label3.LineBreak = LineBreak.Character;
             label3.HorizontalAlignment = HorizontalAlignment.Center;
+            label3.VerticalAlignment = VerticalAlignment.Top;
 
             // label4
             label4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label4.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label4.LineBreak = LineBreak.Character;
             label4.HorizontalAlignment = HorizontalAlignment.Center;
+            label4.VerticalAlignment = VerticalAlignment.Top;
 
             // label5
             label5.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label5.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label5.LineBreak = LineBreak.Character;
             label5.HorizontalAlignment = HorizontalAlignment.Center;
+            label5.VerticalAlignment = VerticalAlignment.Top;
 
             // label6
             label6.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label6.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label6.LineBreak = LineBreak.Character;
             label6.HorizontalAlignment = HorizontalAlignment.Center;
+            label6.VerticalAlignment = VerticalAlignment.Top;
 
             // label7
             label7.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label7.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label7.LineBreak = LineBreak.Character;
             label7.HorizontalAlignment = HorizontalAlignment.Center;
+            label7.VerticalAlignment = VerticalAlignment.Top;
 
             // label8
             label8.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label8.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label8.LineBreak = LineBreak.Character;
             label8.HorizontalAlignment = HorizontalAlignment.Center;
+            label8.VerticalAlignment = VerticalAlignment.Top;
 
             SetWidgetLayout(orientation);
 
@@ -268,83 +340,83 @@ namespace Preview
                     this.SetSize(960, 420);
                     this.Anchors = Anchors.None;
 
-                    button1.SetPosition(173, 67);
-                    button1.SetSize(84, 84);
+                    button1.SetPosition(172, 69);
+                    button1.SetSize(155, 111);
                     button1.Anchors = Anchors.None;
                     button1.Visible = true;
 
-                    button2.SetPosition(345, 67);
-                    button2.SetSize(84, 84);
+                    button2.SetPosition(327, 69);
+                    button2.SetSize(155, 111);
                     button2.Anchors = Anchors.None;
                     button2.Visible = true;
 
-                    button3.SetPosition(523, 67);
-                    button3.SetSize(84, 84);
+                    button3.SetPosition(486, 70);
+                    button3.SetSize(155, 111);
                     button3.Anchors = Anchors.None;
                     button3.Visible = true;
 
-                    button4.SetPosition(702, 67);
-                    button4.SetSize(84, 84);
+                    button4.SetPosition(632, 69);
+                    button4.SetSize(155, 111);
                     button4.Anchors = Anchors.None;
                     button4.Visible = true;
 
-                    button5.SetPosition(173, 249);
-                    button5.SetSize(84, 84);
+                    button5.SetPosition(172, 225);
+                    button5.SetSize(155, 111);
                     button5.Anchors = Anchors.None;
                     button5.Visible = true;
 
-                    button6.SetPosition(338, 249);
-                    button6.SetSize(84, 84);
+                    button6.SetPosition(327, 225);
+                    button6.SetSize(155, 111);
                     button6.Anchors = Anchors.None;
                     button6.Visible = true;
 
-                    button7.SetPosition(510, 249);
-                    button7.SetSize(84, 84);
+                    button7.SetPosition(486, 225);
+                    button7.SetSize(155, 111);
                     button7.Anchors = Anchors.None;
                     button7.Visible = true;
 
-                    button8.SetPosition(699, 249);
-                    button8.SetSize(84, 84);
+                    button8.SetPosition(632, 225);
+                    button8.SetSize(155, 111);
                     button8.Anchors = Anchors.None;
                     button8.Visible = true;
 
-                    label1.SetPosition(170, 151);
-                    label1.SetSize(90, 19);
+                    label1.SetPosition(204, 180);
+                    label1.SetSize(90, 28);
                     label1.Anchors = Anchors.None;
                     label1.Visible = true;
 
-                    label2.SetPosition(341, 151);
-                    label2.SetSize(90, 19);
+                    label2.SetPosition(359, 180);
+                    label2.SetSize(90, 28);
                     label2.Anchors = Anchors.None;
                     label2.Visible = true;
 
-                    label3.SetPosition(520, 151);
-                    label3.SetSize(90, 19);
+                    label3.SetPosition(518, 180);
+                    label3.SetSize(90, 28);
                     label3.Anchors = Anchors.None;
                     label3.Visible = true;
 
-                    label4.SetPosition(699, 151);
-                    label4.SetSize(90, 19);
+                    label4.SetPosition(665, 180);
+                    label4.SetSize(90, 28);
                     label4.Anchors = Anchors.None;
                     label4.Visible = true;
 
-                    label5.SetPosition(170, 333);
-                    label5.SetSize(90, 19);
+                    label5.SetPosition(204, 336);
+                    label5.SetSize(90, 28);
                     label5.Anchors = Anchors.None;
                     label5.Visible = true;
 
-                    label6.SetPosition(335, 333);
-                    label6.SetSize(90, 19);
+                    label6.SetPosition(359, 336);
+                    label6.SetSize(90, 28);
                     label6.Anchors = Anchors.None;
                     label6.Visible = true;
 
-                    label7.SetPosition(507, 333);
-                    label7.SetSize(90, 19);
+                    label7.SetPosition(518, 336);
+                    label7.SetSize(90, 28);
                     label7.Anchors = Anchors.None;
                     label7.Visible = true;
 
-                    label8.SetPosition(696, 333);
-                    label8.SetSize(90, 19);
+                    label8.SetPosition(665, 336);
+                    label8.SetSize(90, 28);
                     label8.Anchors = Anchors.None;
                     label8.Visible = true;
 
@@ -355,37 +427,21 @@ namespace Preview
 
         public void UpdateLanguage()
         {
-            button1.Text = "Button";
+            label1.Text = "500";
 
-            button2.Text = "Button";
+            label2.Text = "500";
 
-            button3.Text = "Button";
+            label3.Text = "500";
 
-            button4.Text = "Button";
+            label4.Text = "500";
 
-            button5.Text = "Button";
+            label5.Text = "500";
 
-            button6.Text = "Button";
+            label6.Text = "500";
 
-            button7.Text = "Button";
+            label7.Text = "500";
 
-            button8.Text = "Button";
-
-            label1.Text = "label";
-
-            label2.Text = "label";
-
-            label3.Text = "label";
-
-            label4.Text = "label";
-
-            label5.Text = "label";
-
-            label6.Text = "label";
-
-            label7.Text = "label";
-
-            label8.Text = "label";
+            label8.Text = "500";
         }
 
         public void InitializeDefaultEffect()

@@ -31,20 +31,57 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="__DummyScene.cs" />
-    <Compile Include="NotEnoughMessage.composer.cs" />
-    <Compile Include="NotEnoughMessage.cs" />
+    <Compile Include="Select.composer.cs" />
+    <Compile Include="Select.cs" />
+    <Compile Include="Tier1.composer.cs" />
+    <Compile Include="Tier1.cs" />
+    <Compile Include="Tier2.composer.cs" />
+    <Compile Include="Tier2.cs" />
+    <Compile Include="Tier3.composer.cs" />
+    <Compile Include="Tier3.cs" />
+    <Compile Include="Tier4.composer.cs" />
+    <Compile Include="Tier4.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\\assets\Black.png" >
+      <Link>assets\Black.png</Link>
+    </Content>
+    <Content Include="..\\assets\Blue.png" >
+      <Link>assets\Blue.png</Link>
+    </Content>
+    <Content Include="..\\assets\Crane_Icon2.png" >
+      <Link>assets\Crane_Icon2.png</Link>
+    </Content>
     <Content Include="..\\assets\credits.png" >
       <Link>assets\credits.png</Link>
+    </Content>
+    <Content Include="..\\assets\grassBack.png" >
+      <Link>assets\grassBack.png</Link>
+    </Content>
+    <Content Include="..\\assets\Green.png" >
+      <Link>assets\Green.png</Link>
     </Content>
     <Content Include="..\\assets\instructions.png" >
       <Link>assets\instructions.png</Link>
     </Content>
     <Content Include="..\\assets\instructionsB.png" >
       <Link>assets\instructionsB.png</Link>
+    </Content>
+    <Content Include="..\\assets\Pink.png" >
+      <Link>assets\Pink.png</Link>
+    </Content>
+    <Content Include="..\\assets\Red.png" >
+      <Link>assets\Red.png</Link>
+    </Content>
+    <Content Include="..\\assets\scroll.png" >
+      <Link>assets\scroll.png</Link>
+    </Content>
+    <Content Include="..\\assets\sign144.png" >
+      <Link>assets\sign144.png</Link>
+    </Content>
+    <Content Include="..\\assets\sign214.png" >
+      <Link>assets\sign214.png</Link>
     </Content>
     <Content Include="..\\assets\story1.png" >
       <Link>assets\story1.png</Link>
@@ -61,8 +98,17 @@
     <Content Include="..\\assets\story5.png" >
       <Link>assets\story5.png</Link>
     </Content>
+    <Content Include="..\\assets\Teal.png" >
+      <Link>assets\Teal.png</Link>
+    </Content>
     <Content Include="..\\assets\title.png" >
       <Link>assets\title.png</Link>
+    </Content>
+    <Content Include="..\\assets\White.png" >
+      <Link>assets\White.png</Link>
+    </Content>
+    <Content Include="..\\assets\Yellow.png" >
+      <Link>assets\Yellow.png</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>

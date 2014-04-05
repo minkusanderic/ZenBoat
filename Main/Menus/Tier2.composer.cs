@@ -57,7 +57,7 @@ namespace Menu
             label6.Name = "label6";
 
             // Tier2
-            this.BackgroundColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            this.BackgroundColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 0f / 255f);
             this.Clip = true;
             this.AddChildLast(button1);
             this.AddChildLast(button2);
