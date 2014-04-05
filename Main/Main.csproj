@@ -146,12 +146,12 @@
     <Compile Include="PreFabs\MTRedOrangeNorth.cs" />
     <Compile Include="PreFabs\MTRedOrangeSouth.cs" />
     <Compile Include="PreFabs\MTRedSouth.cs" />
-    <Compile Include="PreFabs\MTYellowGreenNorth.cs" />
-    <Compile Include="PreFabs\MTYellowGreenSouth.cs" />
     <Compile Include="PreFabs\MTYellowNorth.cs" />
     <Compile Include="PreFabs\MTYellowSouth.cs" />
     <Compile Include="PreFabs\MTYellowOrangeNorth.cs" />
     <Compile Include="PreFabs\MTYellowOrangeSouth.cs" />
+    <Compile Include="PreFabs\MTYGreenYellowNorth.cs" />
+    <Compile Include="PreFabs\MTGreenYellowSouth.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -363,7 +363,6 @@
     <Content Include="assets\Teal.png" />
     <Content Include="assets\White.png" />
     <Content Include="assets\Yellow.png" />
-   
     <Content Include="assets\Pink.mdx" />
     <Content Include="assets\Rainbow.mdx" />
   </ItemGroup>

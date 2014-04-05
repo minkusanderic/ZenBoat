@@ -5,9 +5,9 @@ using Sce.PlayStation.Core;
 using Core;
 namespace Main
 {
-	public class MTYellowGreenNorth
+	public class MTGreenYellowSouth
 	{
-		public MTYellowGreenNorth ()
+		public MTGreenYellowSouth ()
 		{
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)
@@ -15,8 +15,8 @@ namespace Main
 			//ent.tag("pushable");
 			//use MapleNb for colored leaves or MapleNa for sticklike tree	
 			ent.tag("tree");
-			ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/assets/MapleTreeNorthBranches.mdx"));
-			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/YellowGreenN.mdx"));
+			ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/assets/MapleTreeSouthBranches.mdx"));
+			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/YellowGreenS.mdx"));
 			m.layer = "trees";
 			m2.scale = new Vector3(8f, 8f, 8f);
 			m.scale = new Vector3(8f , 8f, 8f);
