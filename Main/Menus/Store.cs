@@ -11,7 +11,7 @@ namespace Menu
     public partial class Store : Scene
     {
 		
-        private InAppPurchaseDialog dialog;
+        private static InAppPurchaseDialog dialog = new InAppPurchaseDialog();
         private bool dialogIsBusy;
         private int selectedItem;
 
@@ -81,7 +81,8 @@ namespace Menu
 
         private void InitializeDialog()
         {
-            dialog = new InAppPurchaseDialog();
+			
+            //dialog = new InAppPurchaseDialog();
             dialogSequence = DialogSequence.Stop;
             dialogIsBusy = false;
             selectedItem = 0;
