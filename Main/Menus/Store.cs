@@ -171,7 +171,7 @@ namespace Menu
         public void OnClose(object sender, EventArgs e)
         {
             UISystem.PopScene();
-			MenuLoader.loadStart = true;
+			MenuLoader.loadSelect = true;
         }
 
         //  Item events

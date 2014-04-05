@@ -35,7 +35,7 @@ namespace Menu
 
 		void HandleStoreButtonButtonAction(object sender, TouchEventArgs e)
 		{
-			MenuLoader.loadStore = true;	
+			MenuLoader.loadSelect = true;	
 		}
 		
 		void HandleCreditButtonButtonAction (object sender, TouchEventArgs e)

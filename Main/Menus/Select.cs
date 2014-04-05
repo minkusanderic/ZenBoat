@@ -16,7 +16,18 @@ namespace Menu
             InitializeWidget();
 			backButton.ButtonAction += HandleBackButtonButtonAction;
 			
-		
+			craneCount.Font = Core.Globals.medium_font;
+			String cc = Core.SaveGameManager.GetValueFromKey("crane_value");
+			craneCount.Text = (cc != null) ? cc : "0";
+			
+			buyButton.ButtonAction += HandleBuyButtonButtonAction;
+			
+        }
+
+        void HandleBuyButtonButtonAction (object sender, TouchEventArgs e)
+        {
+        	UISystem.PopScene();
+			MenuLoader.loadStore = true;
         }
 
         void HandleBackButtonButtonAction (object sender, TouchEventArgs e)

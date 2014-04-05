@@ -18,6 +18,7 @@ namespace Menu
 			SaveGameManager.SaveString("black", "600");
 			SaveGameManager.SaveString("pink", "300");
 			
+			
 			button1.ButtonAction += HandleButton1ButtonAction;
 			button2.ButtonAction += HandleButton2ButtonAction;
         }
@@ -38,6 +39,7 @@ namespace Menu
 			if(!int.TryParse(SaveGameManager.GetValueFromKey("crane_value"), out crane_count))
 			{
 				Console.WriteLine("Could not convert crane value");
+				crane_count = 0;
 			}
 			
 			if(!int.TryParse(SaveGameManager.GetValueFromKey(boat), out boat_value))

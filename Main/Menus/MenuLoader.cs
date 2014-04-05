@@ -18,6 +18,7 @@ namespace Main
 		public static bool loadLevel = false;
 		public static bool loadCredit = false;
 		public static bool loadStore = false;
+		public static bool loadSelect = false;
 		
 		public MenuLoader ()
 		{
@@ -36,7 +37,8 @@ namespace Main
 			var story = new Menu.Story();
 			var level = new Menu.Levels();
 			var credit = new Menu.Credits();
-			var store = new Menu.Select();
+			var store = new Menu.Store();
+			var select_menu = new Menu.Select();
 			// Set the scene for the Start menu
 			UISystem.SetScene(start, null);
 			
@@ -80,6 +82,12 @@ namespace Main
 				{
 					UISystem.SetScene(store,null);
 					loadStore = false;
+				}
+				
+				if(loadSelect)
+				{
+					UISystem.SetScene(select_menu,null);
+					loadSelect = false;
 				}
 				
 				UISystem.Render();
