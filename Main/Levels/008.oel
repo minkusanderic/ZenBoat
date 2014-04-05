@@ -148,14 +148,6 @@
     <CherryBlossomNorth id="59" x="8144" y="-40" />
     <CherryBlossomNorth id="60" x="9312" y="-48" />
     <CherryBlossomNorth id="61" x="536" y="-52" />
-    <MapleTreeNorth id="62" x="2028" y="-24" width="70" height="70" />
-    <MapleTreeNorth id="63" x="4308" y="-32" width="70" height="70" />
-    <MapleTreeNorth id="64" x="6440" y="-32" width="70" height="70" />
-    <MapleTreeSouth id="55" x="1252" y="524" width="70" height="70" />
-    <MapleTreeSouth id="56" x="3152" y="532" width="70" height="70" />
-    <MapleTreeSouth id="57" x="4924" y="528" width="70" height="70" />
-    <MapleTreeSouth id="58" x="5764" y="528" width="70" height="70" />
-    <MapleTreeSouth id="66" x="9620" y="524" width="70" height="70" />
     <BridgeStart id="1" x="200" y="244" />
     <BridgeEnd id="2" x="9928" y="244" NextLevel="009.oel" />
     <Crane1 id="3" x="656" y="376" />
@@ -167,7 +159,7 @@
     <Crane1 id="9" x="2224" y="440" />
     <Crane1 id="10" x="2568" y="296" />
     <Crane1 id="11" x="2952" y="108" />
-    <Crane5 id="12" x="2216" y="72" />
+    <Crane5 id="12" x="2208" y="48" />
     <Crane1 id="13" x="3204" y="192" />
     <Crane1 id="14" x="3512" y="436" />
     <Crane1 id="15" x="3940" y="380" />
@@ -189,9 +181,17 @@
     <Bamboo id="33" x="8560" y="524" />
     <Bamboo id="34" x="8640" y="528" />
     <Bamboo id="35" x="8736" y="520" />
-    <Bamboo id="36" x="7472" y="-12" />
-    <Bamboo id="37" x="7428" y="0" />
-    <Bamboo id="38" x="7364" y="-4" />
+    <Bamboo id="36" x="7472" y="-44" />
+    <Bamboo id="37" x="7428" y="-32" />
+    <Bamboo id="38" x="7364" y="-36" />
+    <MTYellowSouth id="39" x="1212" y="520" />
+    <MTYellowNorth id="40" x="2172" y="-40" />
+    <MTYellowSouth id="41" x="3044" y="508" />
+    <MTYellowNorth id="42" x="4304" y="-52" />
+    <MTYellowSouth id="43" x="4932" y="508" />
+    <MTYellowSouth id="44" x="5704" y="508" />
+    <MTYellowNorth id="45" x="6448" y="-56" />
+    <MTYellowSouth id="46" x="9620" y="512" />
   </Entities>
   <Art>
     <LooseBlossoms id="19" x="540" y="104" />
