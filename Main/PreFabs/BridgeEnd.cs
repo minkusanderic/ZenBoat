@@ -52,7 +52,7 @@ namespace Main
 				Console.WriteLine( "current_max_crane_count{0}\tcurrentcranecnt{1}" , current_max_crane_count , Globals.currentCraneCountOnLevel );
 				if ( Globals.currentCraneCountOnLevel >= current_max_crane_count )
 				{
-					SaveGameManager.SaveString( Globals.craneTotalForLevelPrefix + Globals.current_level, Globals.currentCraneCountOnLevel.ToString() );
+					SaveGameManager.SaveString( Globals.craneMaxForLevelPrefix + Globals.current_level, Globals.currentCraneCountOnLevel.ToString() );
 					Console.WriteLine( "Saved new" );
 				}
 				Globals.currentCraneCountOnLevel = 0;
@@ -73,6 +73,7 @@ namespace Main
 														{
 															SceneManager.Instance.DestroyAll ();
 															Globals.current_level = "/Application/Levels/" + options["NextLevel"];
+															SaveGameManager.SaveString(Globals.unlockedLevelPrefix + Globals.current_level , "unlocked" );
 															AppMain.current_state = AppState.LOADING;
 														}
 														}
