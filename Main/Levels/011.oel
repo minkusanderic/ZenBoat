@@ -184,7 +184,7 @@
     <Lillypad id="80" x="2092" y="104" width="50" height="40" angle="3.141593" />
     <Endstage id="1" x="992" y="276" NextLevel="" />
     <BridgeStart id="2" x="4" y="232" />
-    <BridgeEnd id="7" x="7176" y="244" NextLevel="" />
+    <BridgeEnd id="7" x="7176" y="244" NextLevel="012.oel" />
     <LooseBlossoms id="11" x="5840" y="64" />
     <LooseBlossoms id="12" x="6060" y="164" />
     <LooseBlossoms id="13" x="6240" y="56" />
