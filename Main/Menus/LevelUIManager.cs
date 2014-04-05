@@ -26,31 +26,26 @@ namespace Core
 		}
 		public static int GetStars( string level_name )
 		{
-			
 			string completed_level = SaveGameManager.GetValueFromKey(Globals.completedLevelPrefix + level_name);
-			if ( completed_level != Globals.true_) return 0;
+			if ( completed_level != Globals.true_) return 0; // you have not completed the lvl so how can you have any stars!?
 			int star_count = 0;
 			// return how many stars the player has gotten on the level
-			int cranes_got = 0;
-			String total_cranes_got_string = SaveGameManager.GetValueFromKey( Globals.craneTotalForLevelPrefix + level_name );
 			
-			int total_crane_count = 0; /* for the level */
+			String total_cranes_got_string = SaveGameManager.GetValueFromKey( Globals.craneTotalForLevelPrefix + level_name );
+			String max_crances_got_string  = SaveGameManager.GetValueFromKey( Globals.craneMaxForLevelPrefix + level_name );
+			int total_crane_count= 0;
+			int max_crane_count= 0; /* for the level */
 			if ( total_cranes_got_string != null )
 			{
 				int.TryParse( total_cranes_got_string , out total_crane_count  );
 			}
-			if ( total_crane_count == 0 ) return 0; // it is possible that the player has not visited the level being viewed on the level select (the level is locked)
-			if ( SaveGameManager.GetCranes() != null )
-			foreach ( string s in SaveGameManager.GetCranes() )
+			if ( max_crances_got_string != null )
 			{
-				if ( s.Contains( level_name ) )
-				{
-					Console.WriteLine("In Get Stars3");
-					cranes_got ++;
-				}
+				int.TryParse( max_crances_got_string , out max_crane_count  );
 			}
-			Console.WriteLine("Cranes got: " + cranes_got);
-			float c_got = (float)cranes_got;
+			if ( total_crane_count == 0 ) return 0; // it is possible that the player has not visited the level being viewed on the level select (the level is locked)
+			
+			float c_got = (float)max_crane_count;
 			float tot = (float)total_crane_count;
 			float ratio = c_got/tot;
 			if ( ratio == 1 ) return 3;
