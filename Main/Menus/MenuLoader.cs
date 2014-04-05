@@ -37,7 +37,6 @@ namespace Main
 			var level = new Menu.Levels();
 			var credit = new Menu.Credits();
 			var store = new Menu.Select();
-			
 			// Set the scene for the Start menu
 			UISystem.SetScene(start, null);
 			
