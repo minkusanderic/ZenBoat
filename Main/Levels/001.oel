@@ -139,11 +139,10 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="0" x="164" y="288" angle="0" />
-    <BridgeEnd id="1" x="884" y="232" NextLevel="002.oel" />
-    <Crane1 id="2" x="612" y="472" />
+    <BridgeEnd id="1" x="784" y="228" NextLevel="002.oel" />
+    <Crane1 id="2" x="492" y="472" />
   </Entities>
   <Art>
-    <MapleTreeSouth id="0" x="580" y="540" width="70" height="70" />
     <CherryBlossomNorth id="2" x="140" y="-56" />
     <LooseBlossoms id="3" x="124" y="52" />
     <LooseBlossoms id="4" x="148" y="84" />
@@ -151,5 +150,8 @@
     <LooseBlossoms id="6" x="128" y="116" />
     <LooseBlossoms id="7" x="188" y="120" />
     <Koi id="1" x="168" y="408" angle="0" />
+    <LooseBlossoms id="8" x="156" y="160" />
+    <LooseBlossoms id="9" x="100" y="164" />
+    <MTGreenSouth id="0" x="460" y="520" />
   </Art>
 </level>

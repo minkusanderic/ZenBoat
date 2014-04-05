@@ -27,7 +27,9 @@ namespace Main
 		
 		public static void Main (string[] args)
 		{			
+			
 			current_state = AppState.INITIALIZE;
+			
 			while (true)
 			{
 				//Depending on which state the application is in, do different stuff. 
@@ -43,6 +45,20 @@ namespace Main
 					BackgroundMusicComponent bgmc = background_music.attachComponent( new BackgroundMusicComponent("/Application/assets/Sound/gameBackground.mp3") );
 					bgmc.setVolume(1f);
 					bgmc.loop(true);
+					
+					SaveGameManager.SaveString( Globals.unlockedLevelPrefix + LevelLoader.searchPath + "015.oel" , "unlocked" );
+					
+					for (int i = 1; i < 21; i++)
+					{
+						if (i < 10)
+						{
+							SaveGameManager.SaveString( Globals.unlockedLevelPrefix + LevelLoader.searchPath + "00" + i + ".oel" , "unlocked" );	
+						}
+						else
+						{
+							SaveGameManager.SaveString( Globals.unlockedLevelPrefix + LevelLoader.searchPath + "0" + i + ".oel" , "unlocked" );	
+						}
+					}
 					
 					break;
 					
@@ -90,6 +106,7 @@ namespace Main
 					break;
 				}
 			}
+			
 			
 		}
 

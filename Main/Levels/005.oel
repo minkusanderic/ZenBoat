@@ -138,56 +138,48 @@
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Forward>
   <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="0" x="144" y="260" angle="0" />
-    <Geyser id="5" x="1096" y="400" width="80" height="80" strength="100" />
-    <Geyser id="6" x="1024" y="176" width="80" height="80" strength="100" />
-    <Rock id="7" x="776" y="280" width="50" height="50" angle="0" />
-    <Rock id="8" x="836" y="308" width="50" height="50" angle="0" />
-    <Geyser id="10" x="1868" y="96" width="80" height="80" strength="100" />
-    <Whirlpool id="13" x="1740" y="340" width="80" height="80" strength="100" />
-    <Whirlpool id="14" x="1984" y="332" width="80" height="80" strength="100" />
+    <Boat id="0" x="236" y="276" angle="0" />
+    <Geyser id="5" x="1172" y="400" width="80" height="80" strength="100" />
+    <Geyser id="6" x="988" y="144" width="80" height="80" strength="100" />
+    <Rock id="7" x="812" y="248" width="74" height="74" angle="0" />
+    <Geyser id="10" x="1988" y="108" width="80" height="80" strength="100" />
+    <Whirlpool id="13" x="1808" y="348" width="80" height="80" strength="100" />
+    <Whirlpool id="14" x="2156" y="340" width="80" height="80" strength="100" />
     <Geyser id="9" x="2676" y="80" width="80" height="80" strength="100" />
     <Geyser id="19" x="2948" y="80" width="80" height="80" strength="100" />
-    <Rock id="23" x="3248" y="248" width="50" height="50" angle="0" />
-    <Rock id="24" x="3204" y="196" width="50" height="50" angle="0" />
-    <Rock id="25" x="3272" y="188" width="50" height="50" angle="0" />
-    <Rock id="26" x="2392" y="200" width="50" height="50" angle="0" />
-    <Rock id="27" x="2360" y="116" width="50" height="50" angle="0" />
-    <BridgeStart id="1" x="0" y="236" />
+    <Rock id="26" x="2376" y="152" width="74" height="74" angle="0" />
+    <BridgeStart id="1" x="200" y="240" />
     <BridgeEnd id="2" x="3912" y="236" NextLevel="006.oel" />
     <Crane1 id="3" x="568" y="432" />
     <Crane1 id="4" x="1028" y="280" />
     <Crane1 id="11" x="1212" y="228" />
-    <Crane1 id="15" x="1852" y="452" />
-    <Crane1 id="16" x="1844" y="176" />
-    <Crane1 id="17" x="2168" y="316" />
-    <Crane1 id="18" x="2344" y="312" />
-    <Crane1 id="20" x="2516" y="300" />
-    <Crane1 id="21" x="2488" y="64" />
+    <Crane1 id="15" x="1932" y="284" />
+    <Crane1 id="20" x="2544" y="264" />
     <Crane5 id="22" x="2824" y="64" />
-    <Crane1 id="29" x="3092" y="56" />
-    <Crane10 id="12" x="1856" y="320" />
-    <Crane1 id="30" x="3100" y="256" />
+    <Crane1 id="29" x="3180" y="68" />
+    <Crane10 id="12" x="2052" y="420" />
     <Crane1 id="31" x="3392" y="248" />
-    <Crane1 id="32" x="3608" y="140" />
-    <Crane1 id="33" x="3720" y="352" />
+    <Crane1 id="33" x="3628" y="492" />
     <CherryBlossomSouth id="34" x="3596" y="544" />
+    <Rock id="25" x="3196" y="200" width="102" height="94" angle="0" />
+    <Crane1 id="32" x="3676" y="188" />
+    <Crane1 id="18" x="2344" y="312" />
   </Entities>
   <Art>
-    <Lillypad id="1" x="432" y="104" width="50" height="40" angle="0" />
-    <Island id="2" x="1348" y="152" width="100" height="100" angle="0" />
-    <Bamboo id="3" x="1352" y="168" />
-    <Bamboo id="9" x="1364" y="152" />
-    <Bamboo id="10" x="1372" y="168" />
-    <CherryBlossomNorth id="0" x="248" y="-40" />
-    <MapleTreeSouth id="11" x="568" y="524" width="70" height="70" />
-    <Bamboo id="12" x="1280" y="-32" />
-    <Bamboo id="23" x="1328" y="-32" />
-    <Bamboo id="24" x="1376" y="-32" />
-    <Bamboo id="25" x="1432" y="-32" />
-    <Bamboo id="26" x="1480" y="-36" />
+    <Lillypad id="1" x="540" y="40" width="50" height="40" angle="0" />
+    <Island id="2" x="1428" y="92" width="100" height="100" angle="0" />
+    <CherryBlossomNorth id="0" x="552" y="-44" />
+    <Bamboo id="12" x="1224" y="-32" />
+    <Bamboo id="23" x="1324" y="-32" />
+    <Bamboo id="24" x="1420" y="-32" />
+    <Bamboo id="25" x="1508" y="-32" />
+    <Bamboo id="26" x="1588" y="-32" />
     <Bamboo id="27" x="2416" y="524" />
     <Bamboo id="28" x="2384" y="524" />
     <Bamboo id="29" x="2352" y="528" />
+    <Bamboo id="3" x="1432" y="104" />
+    <Crane1 id="4" x="544" y="36" />
+    <MTGreenYellowSouth id="5" x="580" y="508" />
+    <MTGreenYellowSouth id="6" x="3036" y="528" />
   </Art>
 </level>
