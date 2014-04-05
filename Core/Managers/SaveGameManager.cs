@@ -156,7 +156,6 @@ namespace Core
 		/// </param>
 		public static void SaveString( string key , string val )
 		{
-			SaveGameManager.GetValueFromKey("crane_count");
 			strings[key] = val;	// ok to override
 			/*
 			XmlNode new_string = xml_doc.CreateNode( XmlNodeType.Element , "String" , "" );
