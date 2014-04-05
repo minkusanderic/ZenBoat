@@ -107,6 +107,8 @@ namespace Core
 				systems[typeof(GraphicsSystem)].Update();
 				return true;
 			case GameState.STOPPED:
+				DestroyAll();
+				Update();
 				return false;
 			default:
 				return false;

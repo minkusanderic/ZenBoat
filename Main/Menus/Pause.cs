@@ -24,13 +24,15 @@ namespace Menu
 			
 			continueButton.ButtonAction += HandleContinueButtonButtonAction;
 			//restartButton.ButtonAction += HandleRestartButtonButtonAction;
-			//levelButton.ButtonAction += HandleLevelButtonButtonAction;
+			levelButton.ButtonAction += HandleLevelButtonButtonAction;
 			//mainmenuButton.ButtonAction += HandleMainmenuButtonButtonAction;
 			
         }
 
         void HandleMainmenuButtonButtonAction (object sender, TouchEventArgs e)
         {
+			Core.SceneManager.Instance.DestroyAll();
+			Core.SceneManager.Instance.Update();
         	Core.SceneManager.Instance.currentState = GameState.STOPPED;
         }
 
@@ -41,7 +43,11 @@ namespace Menu
 		
 		 void HandleLevelButtonButtonAction (object sender, TouchEventArgs e)
         {
-			
+			Core.SceneManager.Instance.DestroyAll();
+			Core.SceneManager.Instance.Update();
+        	Core.SceneManager.Instance.currentState = GameState.STOPPED;
+			Main.AppMain.current_state = Main.AppState.MENU;
+			Main.MenuLoader.loadLevel = true;
         }
         void HandleContinueButtonButtonAction (object sender, TouchEventArgs e)
         {
