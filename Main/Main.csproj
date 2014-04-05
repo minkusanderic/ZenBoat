@@ -382,7 +382,6 @@
     <Content Include="Levels\018.oel" />
     <Content Include="Levels\019.oel" />
     <Content Include="Levels\020.oel" />
-=======
     <Content Include="assets\BoatBlack.mdx" />
     <Content Include="assets\BoatBlue.mdx" />
     <Content Include="assets\BoatGreen.mdx" />
@@ -404,5 +403,6 @@
     <Content Include="assets\BoatPat5.mdx" />
     <Content Include="assets\BoatPat6.mdx" />
     <Content Include="assets\BoatPat7.mdx" />
-  </ItemGroup>
+ 
+ </ItemGroup>
 </Project>
