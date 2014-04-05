@@ -138,13 +138,11 @@
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Forward>
   <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="0" x="120" y="164" angle="0" />
-    <Whirlpool id="2" x="704" y="424" width="80" height="80" strength="100" />
-    <Whirlpool id="3" x="692" y="116" width="80" height="80" strength="100" />
-    <Driftwood id="4" x="460" y="244" width="100" height="30" angle="0" />
+    <Boat id="0" x="256" y="300" angle="0" />
+    <Whirlpool id="2" x="1144" y="428" width="80" height="80" strength="100" />
+    <Whirlpool id="3" x="1132" y="120" width="80" height="80" strength="100" />
+    <Driftwood id="4" x="752" y="280" width="100" height="30" angle="0" />
     <Rock id="5" x="1404" y="260" width="50" height="50" angle="0" />
-    <Rock id="6" x="1500" y="264" width="50" height="50" angle="0" />
-    <Rock id="7" x="1652" y="272" width="50" height="50" angle="0" />
     <Rock id="8" x="1788" y="268" width="50" height="50" angle="0" />
     <Rock id="9" x="1920" y="280" width="50" height="50" angle="0" />
     <Rock id="10" x="2024" y="276" width="50" height="50" angle="0" />
@@ -156,7 +154,6 @@
     <Rock id="13" x="1408" y="324" width="50" height="50" angle="0" />
     <Rock id="14" x="1420" y="432" width="50" height="50" angle="0" />
     <Rock id="18" x="1420" y="380" width="50" height="50" angle="0" />
-    <Rock id="19" x="1424" y="476" width="50" height="50" angle="0" />
     <Rock id="20" x="2096" y="288" width="50" height="50" angle="0" />
     <Rock id="22" x="2320" y="352" width="50" height="50" angle="0" />
     <Rock id="23" x="2312" y="168" width="50" height="50" angle="0" />
@@ -223,10 +220,9 @@
     <Driftwood id="83" x="7652" y="452" width="100" height="30" angle="0" />
     <Driftwood id="84" x="7460" y="464" width="100" height="30" angle="0" />
     <Driftwood id="85" x="7396" y="292" width="100" height="30" angle="0" />
-    <MapleTreeSouth id="88" x="164" y="524" width="70" height="70" />
-    <Bamboo id="104" x="944" y="508" />
-    <Bamboo id="105" x="1000" y="508" />
-    <Bamboo id="106" x="1072" y="512" />
+    <Bamboo id="104" x="1356" y="516" />
+    <Bamboo id="105" x="1412" y="516" />
+    <Bamboo id="106" x="1484" y="520" />
     <Bamboo id="107" x="5228" y="-48" />
     <Bamboo id="108" x="5280" y="-48" />
     <Bamboo id="109" x="7068" y="512" />
@@ -234,24 +230,31 @@
     <Bamboo id="111" x="7116" y="528" />
     <Island id="112" x="8868" y="208" width="100" height="100" angle="0" />
     <Pagoda id="113" x="8892" y="228" width="50" height="50" angle="0" />
-    <Lillypad id="115" x="9884" y="72" width="50" height="40" angle="0" />
-    <Lillypad id="116" x="9872" y="400" width="50" height="40" angle="0" />
-    <Lillypad id="117" x="9732" y="420" width="50" height="40" angle="0" />
+    <Lillypad id="116" x="9116" y="408" width="50" height="40" angle="0" />
     <Lillypad id="118" x="6292" y="72" width="50" height="40" angle="0" />
     <Lillypad id="119" x="6284" y="428" width="50" height="40" angle="0" />
     <Lillypad id="120" x="6404" y="436" width="50" height="40" angle="0" />
     <CherryBlossomNorth id="121" x="1672" y="-40" />
     <CherryBlossomNorth id="122" x="9272" y="-40" />
-    <MapleTreeSouth id="123" x="8236" y="524" width="70" height="70" />
-    <MapleTreeSouth id="124" x="4928" y="524" width="70" height="70" />
     <Koi id="114" x="9064" y="272" angle="0" />
-    <BridgeStart id="1" x="0" y="224" />
+    <BridgeStart id="1" x="224" y="256" />
     <BridgeEnd id="86" x="9920" y="228" NextLevel="013.oel" />
     <Crane1 id="87" x="1700" y="24" />
     <Crane1 id="89" x="4892" y="56" />
     <Crane1 id="90" x="5304" y="440" />
     <Crane1 id="91" x="5552" y="68" />
     <Crane10 id="92" x="8788" y="276" />
+    <MTYellowOrangeSouth id="88" x="608" y="520" />
+    <MTYellowOrangeSouth id="6" x="5064" y="528" />
+    <MTYellowOrangeSouth id="7" x="8392" y="528" />
+    <Crane1 id="19" x="9528" y="280" />
+    <Crane1 id="93" x="8520" y="200" />
   </Entities>
-  <Art />
+  <Art>
+    <Island id="0" x="2892" y="180" width="100" height="100" angle="0" />
+    <Lantern id="1" x="2756" y="352" />
+    <TulipNorth id="2" x="8588" y="-28" />
+    <Grass id="3" x="8564" y="-16" />
+    <Grass id="4" x="8616" y="-16" />
+  </Art>
 </level>

@@ -192,6 +192,12 @@
     <MTYellowSouth id="44" x="5704" y="508" />
     <MTYellowNorth id="45" x="6448" y="-56" />
     <MTYellowSouth id="46" x="9620" y="512" />
+    <Rock id="48" x="4936" y="60" width="98" height="94" angle="0" />
+    <TulipSouth id="49" x="7068" y="532" />
+    <Grass id="50" x="7040" y="536" />
+    <Grass id="55" x="7112" y="544" />
+    <Rock id="56" x="8088" y="264" width="170" height="158" angle="0" />
+    <Whirlpool id="47" x="3608" y="216" width="80" height="80" strength="100" />
   </Entities>
   <Art>
     <LooseBlossoms id="19" x="540" y="104" />
