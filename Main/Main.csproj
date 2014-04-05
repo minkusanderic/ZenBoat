@@ -336,10 +336,9 @@
     <Content Include="Levels\004.oel" />
     <Content Include="Levels\005.oel" />
     <Content Include="Levels\001.oel" />
-<<<<<<< HEAD
-=======
+
     <Content Include="assets\Pause.png" />
->>>>>>> aade663d0b65be60c8c91b063e109182f93f1646
+
     <Content Include="assets\Pink2.mdx" />
     <Content Include="assets\GreenN.mdx" />
     <Content Include="assets\OrangeN.mdx" />
@@ -355,9 +354,6 @@
     <Content Include="assets\RedS.mdx" />
     <Content Include="assets\YellowGreenS.mdx" />
     <Content Include="assets\YellowS.mdx" />
-<<<<<<< HEAD
+
   </ItemGroup>
-=======
-    </ItemGroup>
->>>>>>> aade663d0b65be60c8c91b063e109182f93f1646
 </Project>
