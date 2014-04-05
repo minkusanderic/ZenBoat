@@ -23,7 +23,7 @@ namespace Main
 			entity = ent;
 			
 			String chosenBoat = SaveGameManager.GetValueFromKey(Globals.chosenBoat);
-			if ( chosenBoat == null || chosenBoat == "" ) chosenBoat = "RedBoat"; 
+			if ( chosenBoat == null || chosenBoat == "" ) chosenBoat = "BoatRed"; 
 			
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/" + chosenBoat + ".mdx"));
 			m.scale = new Vector3(.5f, .5f, .5f);

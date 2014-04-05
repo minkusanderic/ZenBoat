@@ -382,5 +382,27 @@
     <Content Include="Levels\018.oel" />
     <Content Include="Levels\019.oel" />
     <Content Include="Levels\020.oel" />
+=======
+    <Content Include="assets\BoatBlack.mdx" />
+    <Content Include="assets\BoatBlue.mdx" />
+    <Content Include="assets\BoatGreen.mdx" />
+    <Content Include="assets\BoatPurple.mdx" />
+    <Content Include="assets\BoatRed.mdx" />
+    <Content Include="assets\BoatTeal.mdx" />
+    <Content Include="assets\BoatWhite.mdx" />
+    <Content Include="assets\BoatYellow.mdx" />
+    <Content Include="assets\BoatOrg1.mdx" />
+    <Content Include="assets\BoatOrg2.mdx" />
+    <Content Include="assets\BoatOrg3.mdx" />
+    <Content Include="assets\BoatOrg4.mdx" />
+    <Content Include="assets\BoatOrg5.mdx" />
+    <Content Include="assets\BoatOrg6.mdx" />
+    <Content Include="assets\BoatPat1.mdx" />
+    <Content Include="assets\BoatPat2.mdx" />
+    <Content Include="assets\BoatPat3.mdx" />
+    <Content Include="assets\BoatPat4.mdx" />
+    <Content Include="assets\BoatPat5.mdx" />
+    <Content Include="assets\BoatPat6.mdx" />
+    <Content Include="assets\BoatPat7.mdx" />
   </ItemGroup>
 </Project>
