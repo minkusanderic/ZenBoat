@@ -6,6 +6,7 @@ using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
+using Core;
 
 namespace Menu
 {
@@ -104,6 +105,7 @@ namespace Menu
 
         private void onShown(object sender, EventArgs e)
         {
+			((AudioSystem)(SceneManager.Instance.getSystem(typeof(AudioSystem)))).PlaySound("/Application/assets/pageSwipe.wav");
             switch (_currentLayoutOrientation)
             {
                 case LayoutOrientation.Vertical:

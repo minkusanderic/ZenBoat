@@ -22,7 +22,8 @@ namespace Core
 			Torii,
 			Crane,
 			Whirlpool,
-			WaterDrop
+			WaterDrop,
+			Swipe
 		};
 		string fileLastPlayed;
 		public void PlaySound(string file_name)

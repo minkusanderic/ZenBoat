@@ -167,11 +167,6 @@
     <Content Include="resources\Water.mdx" />
     <Content Include="resources\test.png" />
     <Content Include="resources\Origami Kami.png" />
-    <Content Include="Levels\001.oel" />
-    <Content Include="Levels\002.oel" />
-    <Content Include="Levels\003.oel" />
-    <Content Include="Levels\004.oel" />
-    <Content Include="Levels\005.oel" />
     <Content Include="Levels\006.oel" />
     <Content Include="Levels\007.oel" />
     <Content Include="Levels\008.oel" />
@@ -308,5 +303,15 @@
     <Content Include="assets\Gold.mdx" />
     <Content Include="assets\Rainbow.mdx" />
     <Content Include="assets\Whirlpool4.mdx" />
+    <Content Include="assets\pageSwipe.wav" />
+    <Content Include="Levels\017.oel" />
+    <Content Include="Levels\018.oel" />
+    <Content Include="Levels\019.oel" />
+    <Content Include="Levels\002.oel" />
+    <Content Include="Levels\003.oel" />
+    <Content Include="Levels\004.oel" />
+    <Content Include="Levels\005.oel" />
+    <Content Include="Levels\020.oel" />
+    <Content Include="Levels\001.oel" />
   </ItemGroup>
 </Project>

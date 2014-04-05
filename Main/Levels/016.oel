@@ -229,7 +229,7 @@
     <Crane1 id="91" x="6280" y="128" />
     <Crane1 id="92" x="6328" y="460" />
     <Crane1 id="93" x="6636" y="220" />
-    <BridgeEnd id="95" x="7176" y="232" NextLevel="" />
+    <BridgeEnd id="95" x="7176" y="232" NextLevel="017.oel" />
   </Entities>
   <Art>
     <Boat id="0" x="160" y="272" angle="0" />
