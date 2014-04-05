@@ -18,14 +18,14 @@ namespace Menu
 			pauseLabel.Font = Core.Globals.medium_font;
 			
 			continueButton.TextFont = Core.Globals.medium_font;
-			restartButton.TextFont = Core.Globals.medium_font;
-			levelButton.TextFont = Core.Globals.medium_font;
-			mainmenuButton.TextFont = Core.Globals.medium_font;
+			//restartButton.TextFont = Core.Globals.medium_font;
+			//levelButton.TextFont = Core.Globals.medium_font;
+			//mainmenuButton.TextFont = Core.Globals.medium_font;
 			
 			continueButton.ButtonAction += HandleContinueButtonButtonAction;
-			restartButton.ButtonAction += HandleRestartButtonButtonAction;
-			levelButton.ButtonAction += HandleLevelButtonButtonAction;
-			mainmenuButton.ButtonAction += HandleMainmenuButtonButtonAction;
+			//restartButton.ButtonAction += HandleRestartButtonButtonAction;
+			//levelButton.ButtonAction += HandleLevelButtonButtonAction;
+			//mainmenuButton.ButtonAction += HandleMainmenuButtonButtonAction;
 			
         }
 

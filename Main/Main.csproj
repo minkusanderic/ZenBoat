@@ -124,6 +124,18 @@
     <Compile Include="PreFabs\TulipSouth.cs" />
     <Compile Include="PreFabs\KoiGolden.cs" />
     <Compile Include="PreFabs\KoiBlack.cs" />
+    <Compile Include="Menus\Tier1.composer.cs" />
+    <Compile Include="Menus\Tier1.cs" />
+    <Compile Include="Menus\Tier2.composer.cs" />
+    <Compile Include="Menus\Tier2.cs" />
+    <Compile Include="Menus\Tier3.composer.cs" />
+    <Compile Include="Menus\Tier3.cs" />
+    <Compile Include="Menus\Tier4.composer.cs" />
+    <Compile Include="Menus\Tier4.cs" />
+    <Compile Include="Menus\Select.composer.cs" />
+    <Compile Include="Menus\Select.cs" />
+    <Compile Include="Menus\NotEnoughMessage.composer.cs" />
+    <Compile Include="Menus\NotEnoughMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

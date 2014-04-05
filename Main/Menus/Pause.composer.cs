@@ -13,9 +13,9 @@ namespace Menu
     {
         Button continueButton;
         Label pauseLabel;
-        Button Button_1;
-        Button Button_2;
-        Button Button_3;
+        Button restartButton;
+        Button levelButton;
+        Button mainmenuButton;
 
         private void InitializeWidget()
         {
@@ -28,20 +28,20 @@ namespace Menu
             continueButton.Name = "continueButton";
             pauseLabel = new Label();
             pauseLabel.Name = "pauseLabel";
-            Button_1 = new Button();
-            Button_1.Name = "Button_1";
-            Button_2 = new Button();
-            Button_2.Name = "Button_2";
-            Button_3 = new Button();
-            Button_3.Name = "Button_3";
+            restartButton = new Button();
+            restartButton.Name = "restartButton";
+            levelButton = new Button();
+            levelButton.Name = "levelButton";
+            mainmenuButton = new Button();
+            mainmenuButton.Name = "mainmenuButton";
 
             // Pause
             this.BackgroundFilterColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 191f / 255f);
             this.AddChildLast(continueButton);
             this.AddChildLast(pauseLabel);
-            this.AddChildLast(Button_1);
-            this.AddChildLast(Button_2);
-            this.AddChildLast(Button_3);
+            this.AddChildLast(restartButton);
+            this.AddChildLast(levelButton);
+            this.AddChildLast(mainmenuButton);
             this.ShowEffect = new FadeInEffect()
             {
             };
@@ -57,17 +57,17 @@ namespace Menu
             pauseLabel.LineBreak = LineBreak.Character;
             pauseLabel.HorizontalAlignment = HorizontalAlignment.Center;
 
-            // Button_1
-            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // restartButton
+            restartButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            restartButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
-            // Button_2
-            Button_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // levelButton
+            levelButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            levelButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
-            // Button_3
-            Button_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_3.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // mainmenuButton
+            mainmenuButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            mainmenuButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
 
@@ -94,20 +94,20 @@ namespace Menu
                     pauseLabel.Anchors = Anchors.None;
                     pauseLabel.Visible = true;
 
-                    Button_1.SetPosition(128, 138);
-                    Button_1.SetSize(214, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
+                    restartButton.SetPosition(128, 138);
+                    restartButton.SetSize(214, 56);
+                    restartButton.Anchors = Anchors.None;
+                    restartButton.Visible = true;
 
-                    Button_2.SetPosition(128, 138);
-                    Button_2.SetSize(214, 56);
-                    Button_2.Anchors = Anchors.None;
-                    Button_2.Visible = true;
+                    levelButton.SetPosition(128, 138);
+                    levelButton.SetSize(214, 56);
+                    levelButton.Anchors = Anchors.None;
+                    levelButton.Visible = true;
 
-                    Button_3.SetPosition(128, 138);
-                    Button_3.SetSize(214, 56);
-                    Button_3.Anchors = Anchors.None;
-                    Button_3.Visible = true;
+                    mainmenuButton.SetPosition(128, 138);
+                    mainmenuButton.SetSize(214, 56);
+                    mainmenuButton.Anchors = Anchors.None;
+                    mainmenuButton.Visible = true;
 
                     break;
 
@@ -126,20 +126,20 @@ namespace Menu
                     pauseLabel.Anchors = Anchors.None;
                     pauseLabel.Visible = true;
 
-                    Button_1.SetPosition(143, 257);
-                    Button_1.SetSize(214, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
+                    restartButton.SetPosition(143, 257);
+                    restartButton.SetSize(214, 56);
+                    restartButton.Anchors = Anchors.None;
+                    restartButton.Visible = true;
 
-                    Button_2.SetPosition(143, 330);
-                    Button_2.SetSize(214, 56);
-                    Button_2.Anchors = Anchors.None;
-                    Button_2.Visible = true;
+                    levelButton.SetPosition(143, 330);
+                    levelButton.SetSize(214, 56);
+                    levelButton.Anchors = Anchors.None;
+                    levelButton.Visible = true;
 
-                    Button_3.SetPosition(143, 403);
-                    Button_3.SetSize(214, 56);
-                    Button_3.Anchors = Anchors.None;
-                    Button_3.Visible = true;
+                    mainmenuButton.SetPosition(143, 403);
+                    mainmenuButton.SetSize(214, 56);
+                    mainmenuButton.Anchors = Anchors.None;
+                    mainmenuButton.Visible = true;
 
                     break;
             }
@@ -152,11 +152,11 @@ namespace Menu
 
             pauseLabel.Text = "Paused";
 
-            Button_1.Text = "Restart";
+            restartButton.Text = "Restart";
 
-            Button_2.Text = "Level Select";
+            levelButton.Text = "Level Select";
 
-            Button_3.Text = "Main Menu";
+            mainmenuButton.Text = "Main Menu";
         }
 
         private void onShowing(object sender, EventArgs e)
