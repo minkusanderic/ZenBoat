@@ -124,6 +124,34 @@
     <Compile Include="PreFabs\TulipSouth.cs" />
     <Compile Include="PreFabs\KoiGolden.cs" />
     <Compile Include="PreFabs\KoiBlack.cs" />
+    <Compile Include="Menus\Tier1.composer.cs" />
+    <Compile Include="Menus\Tier1.cs" />
+    <Compile Include="Menus\Tier2.composer.cs" />
+    <Compile Include="Menus\Tier2.cs" />
+    <Compile Include="Menus\Tier3.composer.cs" />
+    <Compile Include="Menus\Tier3.cs" />
+    <Compile Include="Menus\Tier4.composer.cs" />
+    <Compile Include="Menus\Tier4.cs" />
+    <Compile Include="Menus\Select.composer.cs" />
+    <Compile Include="Menus\Select.cs" />
+    <Compile Include="Menus\NotEnoughMessage.composer.cs" />
+    <Compile Include="Menus\NotEnoughMessage.cs" />
+    <Compile Include="PreFabs\MTBranchNorth.cs" />
+    <Compile Include="PreFabs\MTBranchSouth.cs" />
+    <Compile Include="PreFabs\MTGreenNorth.cs" />
+    <Compile Include="PreFabs\MTGreenSouth.cs" />
+    <Compile Include="PreFabs\MTOrangeNorth.cs" />
+    <Compile Include="PreFabs\MTOrangeSouth.cs" />
+    <Compile Include="PreFabs\MTRedNorth.cs" />
+    <Compile Include="PreFabs\MTRedOrangeNorth.cs" />
+    <Compile Include="PreFabs\MTRedOrangeSouth.cs" />
+    <Compile Include="PreFabs\MTRedSouth.cs" />
+    <Compile Include="PreFabs\MTYellowGreenNorth.cs" />
+    <Compile Include="PreFabs\MTYellowGreenSouth.cs" />
+    <Compile Include="PreFabs\MTYellowNorth.cs" />
+    <Compile Include="PreFabs\MTYellowSouth.cs" />
+    <Compile Include="PreFabs\MTYellowOrangeNorth.cs" />
+    <Compile Include="PreFabs\MTYellowOrangeSouth.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -303,15 +331,29 @@
     <Content Include="assets\Gold.mdx" />
     <Content Include="assets\Rainbow.mdx" />
     <Content Include="assets\Whirlpool4.mdx" />
-    <Content Include="assets\pageSwipe.wav" />
-    <Content Include="Levels\017.oel" />
-    <Content Include="Levels\018.oel" />
-    <Content Include="Levels\019.oel" />
     <Content Include="Levels\002.oel" />
     <Content Include="Levels\003.oel" />
     <Content Include="Levels\004.oel" />
     <Content Include="Levels\005.oel" />
-    <Content Include="Levels\020.oel" />
     <Content Include="Levels\001.oel" />
+
+    <Content Include="assets\Pause.png" />
+
+    <Content Include="assets\Pink2.mdx" />
+    <Content Include="assets\GreenN.mdx" />
+    <Content Include="assets\OrangeN.mdx" />
+    <Content Include="assets\OrangeYellowN.mdx" />
+    <Content Include="assets\RedN.mdx" />
+    <Content Include="assets\RedOrangeN.mdx" />
+    <Content Include="assets\YellowGreenN.mdx" />
+    <Content Include="assets\YellowN.mdx" />
+    <Content Include="assets\GreenS.mdx" />
+    <Content Include="assets\OrangeS.mdx" />
+    <Content Include="assets\OrangeYellowS.mdx" />
+    <Content Include="assets\RedOrangeS.mdx" />
+    <Content Include="assets\RedS.mdx" />
+    <Content Include="assets\YellowGreenS.mdx" />
+    <Content Include="assets\YellowS.mdx" />
+
   </ItemGroup>
 </Project>

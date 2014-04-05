@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Core
 {
@@ -24,6 +26,10 @@ namespace Core
 			new Sce.PlayStation.HighLevel.UI.UIFont("/Application/Menus/Zen_Sketch.ttf", 
 			                                        36, 
 			                                        Sce.PlayStation.Core.Imaging.FontStyle.Bold);
+		
+
+		
+	
 	}
 }
 

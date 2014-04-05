@@ -36,7 +36,7 @@ namespace Core
 		{
 			if(!is_animating)
 			{
-				CollectibleManager.CollectItem(this.parent,  this.parent.Name , collectibleScore );
+				//CollectibleManager.CollectItem(this.parent,  this.parent.Name , collectibleScore );
 				is_animating = true;
 			
 			//this.parent.Enabled = false;
@@ -49,7 +49,13 @@ namespace Core
 			//sound = sounds[i-1];
 			//sound.SetSoundFromFile("/Application/assets/Sound/SFX/Crane" + i + ".wav");
 			//sound.PlaySound();
-			SaveGameManager.SaveString("GotCrane" , SceneManager.Instance.GetCurrentLevelName() + this.parent.GetID() ); 
+			int crane_score;
+			int.TryParse(SaveGameManager.GetValueFromKey( "crane_value" ) , out crane_score );
+			crane_score += collectibleScore;
+			Console.WriteLine("Crane Score: " + crane_score);
+			SaveGameManager.SaveString("crane_value" , crane_score.ToString() );
+			          
+			//SaveGameManager.SaveString("GotCrane" , SceneManager.Instance.GetCurrentLevelName() + this.parent.GetID() ); 
 			this.parent.attachComponent(new SimpleController( () => {
 				if(this.parent.Transform.Z < 600.0f)
 				{

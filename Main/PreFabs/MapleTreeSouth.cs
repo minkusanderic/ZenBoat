@@ -17,6 +17,7 @@ namespace Main
 			//use MapleNb for colored leaves or MapleNa for sticklike tree			    
 			//ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/assets/MapleTreeSouthBranches.mdx"));
 			
+			//RED, ORANGE, YELLOW Maple Tree
 			ModelComponent m2 = ent.attachComponent(new ModelComponent("/Application/assets/MapleMED.mdx"));
 
 			ModelComponent m = ent.attachComponent(new ModelComponent("/Application/assets/MapleTreeSouthLeaves.mdx"));

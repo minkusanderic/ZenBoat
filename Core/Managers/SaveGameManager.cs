@@ -162,12 +162,42 @@ namespace Core
 			XmlNode new_key = xml_doc.CreateNode( XmlNodeType.Element , "Key" , "" );
 			XmlNode new_val = xml_doc.CreateNode( XmlNodeType.Element , "Value" , "" );
 			
+			XmlNode parent_node = null;
+			
+			if ( xml_doc != null && xml_doc.FirstChild != null && xml_doc.FirstChild.FirstChild != null 
+			    && xml_doc.FirstChild.FirstChild != null && xml_doc.FirstChild.FirstChild.FirstChild != null
+			    && xml_doc.FirstChild.FirstChild.FirstChild.ChildNodes != null ) // uber hack
+			{
+				
+				foreach( XmlNode node in xml_doc.FirstChild.FirstChild.FirstChild.ChildNodes )
+				{
+					if ( node.Name == "Key" )
+					{
+						Console.WriteLine("name: " + node.InnerText);
+						if ( node.InnerText == key )
+						{
+							parent_node = node.ParentNode;
+							foreach( XmlNode child in parent_node.ChildNodes )
+							{
+								if ( child.Name == "Value" )
+								{
+									child.InnerText = val;	
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			
 			new_key.InnerText = key;
 			new_val.InnerText = val;
 			new_string.AppendChild( new_key );
 			new_string.AppendChild( new_val );
-			
-			xml_doc.FirstChild.FirstChild.AppendChild( new_string );
+			if ( parent_node == null )
+				xml_doc.FirstChild.FirstChild.AppendChild( new_string );
+			else 
+				//xml_doc.FirstChild.FirstChild.ReplaceChild( parent_node , new_string );
 			saveGame(); // todo or not to do this is the question
 		}
 
