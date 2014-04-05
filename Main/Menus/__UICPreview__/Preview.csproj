@@ -31,16 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="Levels.composer.cs" />
-    <Compile Include="Levels.cs" />
-    <Compile Include="Level01.composer.cs" />
-    <Compile Include="Level01.cs" />
-    <Compile Include="Level02.composer.cs" />
-    <Compile Include="Level02.cs" />
-    <Compile Include="Level03.composer.cs" />
-    <Compile Include="Level03.cs" />
-    <Compile Include="Level04.composer.cs" />
-    <Compile Include="Level04.cs" />
+    <Compile Include="__DummyScene.cs" />
+    <Compile Include="NotEnoughMessage.composer.cs" />
+    <Compile Include="NotEnoughMessage.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,9 +60,6 @@
     </Content>
     <Content Include="..\\assets\story5.png" >
       <Link>assets\story5.png</Link>
-    </Content>
-    <Content Include="..\\assets\Thumbs.db" >
-      <Link>assets\Thumbs.db</Link>
     </Content>
     <Content Include="..\\assets\title.png" >
       <Link>assets\title.png</Link>

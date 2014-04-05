@@ -9,10 +9,10 @@ using Sce.PlayStation.HighLevel.UI;
 
 namespace Menu
 {
-    partial class StoreMessage
+    partial class NotEnoughMessage
     {
         Label Label_1;
-        Button Button_1;
+        Button okButton;
         Button cancelButton;
 
         private void InitializeWidget()
@@ -24,14 +24,14 @@ namespace Menu
         {
             Label_1 = new Label();
             Label_1.Name = "Label_1";
-            Button_1 = new Button();
-            Button_1.Name = "Button_1";
+            okButton = new Button();
+            okButton.Name = "okButton";
             cancelButton = new Button();
             cancelButton.Name = "cancelButton";
 
-            // StoreMessage
+            // NotEnoughMessage
             this.AddChildLast(Label_1);
-            this.AddChildLast(Button_1);
+            this.AddChildLast(okButton);
             this.AddChildLast(cancelButton);
             this.ShowEffect = new BunjeeJumpEffect()
             {
@@ -44,9 +44,9 @@ namespace Menu
             Label_1.LineBreak = LineBreak.Character;
             Label_1.HorizontalAlignment = HorizontalAlignment.Center;
 
-            // Button_1
-            Button_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
-            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            // okButton
+            okButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            okButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             // cancelButton
             cancelButton.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
@@ -72,12 +72,12 @@ namespace Menu
                     Label_1.Anchors = Anchors.None;
                     Label_1.Visible = true;
 
-                    Button_1.SetPosition(330, 470);
-                    Button_1.SetSize(214, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
+                    okButton.SetPosition(140, 440);
+                    okButton.SetSize(214, 56);
+                    okButton.Anchors = Anchors.None;
+                    okButton.Visible = true;
 
-                    cancelButton.SetPosition(586, 440);
+                    cancelButton.SetPosition(606, 440);
                     cancelButton.SetSize(214, 56);
                     cancelButton.Anchors = Anchors.None;
                     cancelButton.Visible = true;
@@ -89,17 +89,17 @@ namespace Menu
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    Label_1.SetPosition(69, 42);
+                    Label_1.SetPosition(69, 52);
                     Label_1.SetSize(822, 370);
                     Label_1.Anchors = Anchors.None;
                     Label_1.Visible = true;
 
-                    Button_1.SetPosition(140, 440);
-                    Button_1.SetSize(214, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
+                    okButton.SetPosition(140, 440);
+                    okButton.SetSize(214, 56);
+                    okButton.Anchors = Anchors.None;
+                    okButton.Visible = true;
 
-                    cancelButton.SetPosition(586, 440);
+                    cancelButton.SetPosition(606, 440);
                     cancelButton.SetSize(214, 56);
                     cancelButton.Anchors = Anchors.None;
                     cancelButton.Visible = true;
@@ -111,9 +111,9 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            Label_1.Text = "Do you want to buy this boat?";
+            Label_1.Text = "Would you like to buy more cranes?";
 
-            Button_1.Text = "OK";
+            okButton.Text = "OK";
 
             cancelButton.Text = "Cancel";
         }

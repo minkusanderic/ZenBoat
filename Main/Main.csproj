@@ -124,6 +124,18 @@
     <Compile Include="PreFabs\TulipSouth.cs" />
     <Compile Include="PreFabs\KoiGolden.cs" />
     <Compile Include="PreFabs\KoiBlack.cs" />
+    <Compile Include="Menus\Tier1.composer.cs" />
+    <Compile Include="Menus\Tier1.cs" />
+    <Compile Include="Menus\Tier2.composer.cs" />
+    <Compile Include="Menus\Tier2.cs" />
+    <Compile Include="Menus\Tier3.composer.cs" />
+    <Compile Include="Menus\Tier3.cs" />
+    <Compile Include="Menus\Tier4.composer.cs" />
+    <Compile Include="Menus\Tier4.cs" />
+    <Compile Include="Menus\Select.composer.cs" />
+    <Compile Include="Menus\Select.cs" />
+    <Compile Include="Menus\NotEnoughMessage.composer.cs" />
+    <Compile Include="Menus\NotEnoughMessage.cs" />
     <Compile Include="PreFabs\MTBranchNorth.cs" />
     <Compile Include="PreFabs\MTBranchSouth.cs" />
     <Compile Include="PreFabs\MTGreenNorth.cs" />
@@ -324,6 +336,10 @@
     <Content Include="Levels\004.oel" />
     <Content Include="Levels\005.oel" />
     <Content Include="Levels\001.oel" />
+<<<<<<< HEAD
+=======
+    <Content Include="assets\Pause.png" />
+>>>>>>> aade663d0b65be60c8c91b063e109182f93f1646
     <Content Include="assets\Pink2.mdx" />
     <Content Include="assets\GreenN.mdx" />
     <Content Include="assets\OrangeN.mdx" />
@@ -339,5 +355,9 @@
     <Content Include="assets\RedS.mdx" />
     <Content Include="assets\YellowGreenS.mdx" />
     <Content Include="assets\YellowS.mdx" />
+<<<<<<< HEAD
   </ItemGroup>
+=======
+    </ItemGroup>
+>>>>>>> aade663d0b65be60c8c91b063e109182f93f1646
 </Project>

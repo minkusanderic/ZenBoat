@@ -35,8 +35,15 @@ namespace Menu
             this.RootWidget.AddChildLast(ImageBox_1);
 
             // Button_1
-            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_1.IconImage = new ImageAsset("/Application/assets/Pause.png");
+            Button_1.Style = ButtonStyle.Custom;
+            Button_1.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             // Label_1
             Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
@@ -82,8 +89,8 @@ namespace Menu
                     this.DesignWidth = 960;
                     this.DesignHeight = 544;
 
-                    Button_1.SetPosition(0, 0);
-                    Button_1.SetSize(214, 56);
+                    Button_1.SetPosition(64, 0);
+                    Button_1.SetSize(63, 63);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;
 
@@ -104,8 +111,6 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            Button_1.Text = "Back";
-
             Label_1.Text = "Cranes:";
         }
 

@@ -13,8 +13,8 @@ namespace Menu
         public HUD()
         {
             InitializeWidget();
-			Label_1.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 35, FontStyle.Bold);
-			Button_1.TextFont = new UIFont("/Application/Menus/Zen_Sketch.ttf", 35, FontStyle.Bold);
+			Label_1.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 36, FontStyle.Bold);
+			Button_1.TextFont = new UIFont("/Application/Menus/Zen_Sketch.ttf", 36, FontStyle.Bold);
 			Button_1.ButtonAction += HandleButton_1ButtonAction;
 			
         }
@@ -25,7 +25,9 @@ namespace Menu
 		}
         void HandleButton_1ButtonAction (object sender, TouchEventArgs e)
         {
-        	SceneManager.Instance.currentState = GameState.STOPPED;
+			SceneManager.Instance.currentState = GameState.PAUSED;
+        	var pause_menu = new Menu.Pause();
+			pause_menu.Show();
         }
     }
 }
