@@ -5,9 +5,9 @@ using Sce.PlayStation.Core;
 using Core;
 namespace Main
 {
-	public class MTYellowGreenNorth
+	public class MTGreenYellowNorth
 	{
-		public MTYellowGreenNorth ()
+		public MTGreenYellowNorth ()
 		{
 		}
 		public static void create(Entity ent, Dictionary<String, String> options)

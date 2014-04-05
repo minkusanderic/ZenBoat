@@ -146,12 +146,12 @@
     <Compile Include="PreFabs\MTRedOrangeNorth.cs" />
     <Compile Include="PreFabs\MTRedOrangeSouth.cs" />
     <Compile Include="PreFabs\MTRedSouth.cs" />
-    <Compile Include="PreFabs\MTYellowGreenNorth.cs" />
-    <Compile Include="PreFabs\MTYellowGreenSouth.cs" />
     <Compile Include="PreFabs\MTYellowNorth.cs" />
     <Compile Include="PreFabs\MTYellowSouth.cs" />
     <Compile Include="PreFabs\MTYellowOrangeNorth.cs" />
     <Compile Include="PreFabs\MTYellowOrangeSouth.cs" />
+    <Compile Include="PreFabs\MTYGreenYellowNorth.cs" />
+    <Compile Include="PreFabs\MTGreenYellowSouth.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -327,9 +327,7 @@
     <Content Include="assets\GrassBundle3.mdx" />
     <Content Include="assets\GrassBundle4.mdx" />
     <Content Include="assets\Bridge.mdx" />
-    <Content Include="assets\Pink.mdx" />
     <Content Include="assets\Gold.mdx" />
-    <Content Include="assets\Rainbow.mdx" />
     <Content Include="assets\Whirlpool4.mdx" />
     <Content Include="Levels\002.oel" />
     <Content Include="Levels\003.oel" />
@@ -378,5 +376,7 @@
     <Content Include="assets\Plaid.png" />
     <Content Include="assets\Rainbow.png" />
     <Content Include="assets\RainbowDot.png" />
+    <Content Include="assets\Pink.mdx" />
+    <Content Include="assets\Rainbow.mdx" />
   </ItemGroup>
 </Project>

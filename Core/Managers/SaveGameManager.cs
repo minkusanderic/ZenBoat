@@ -58,7 +58,11 @@ namespace Core
 		{
 			return _init;
 		}
-		
+		const string DATA = 
+				"<SaveGame>" +
+				"\n\r\t<Strings>" +
+				"\n\r\t</Strings>" +
+				"</SaveGame>";
 		/// <summary>
 		/// Init this instance.
 		/// </summary>
@@ -67,11 +71,7 @@ namespace Core
 			_init = true;
 			strings = new Dictionary< string , string >();
 			toRespawn = new List<Entity>();
-			const string DATA = 
-				"<SaveGame>" +
-				"\n\r\t<Strings>" +
-				"\n\r\t</Strings>" +
-				"</SaveGame>";
+
 			
 			if(File.Exists(save_game_temp_path))
 			{
@@ -157,7 +157,7 @@ namespace Core
 		public static void SaveString( string key , string val )
 		{
 			strings[key] = val;	// ok to override
-			
+			/*
 			XmlNode new_string = xml_doc.CreateNode( XmlNodeType.Element , "String" , "" );
 			XmlNode new_key = xml_doc.CreateNode( XmlNodeType.Element , "Key" , "" );
 			XmlNode new_val = xml_doc.CreateNode( XmlNodeType.Element , "Value" , "" );
@@ -197,6 +197,7 @@ namespace Core
 			if ( parent_node == null )
 				xml_doc.FirstChild.FirstChild.AppendChild( new_string );
 			else 
+				*/
 				//xml_doc.FirstChild.FirstChild.ReplaceChild( parent_node , new_string );
 			saveGame(); // todo or not to do this is the question
 		}
@@ -212,6 +213,19 @@ namespace Core
 			if ( _init )
 			{
 				try{
+					xml_doc.LoadXml ( DATA );
+					foreach( KeyValuePair<string, string> entry in strings )
+					{
+						XmlNode new_string	= xml_doc.CreateNode( XmlNodeType.Element , "String", "" );
+						XmlNode new_key 	= xml_doc.CreateNode( XmlNodeType.Element , "Key" 	, "" );	
+						XmlNode new_val 	= xml_doc.CreateNode( XmlNodeType.Element , "Value" , "" );
+						
+						new_key.InnerText = entry.Key;
+						new_val.InnerText = entry.Value;
+						new_string.AppendChild( new_key );
+						new_string.AppendChild( new_val );
+						xml_doc.FirstChild.FirstChild.AppendChild( new_string );
+					}
 					xml_doc.Save( save_game_temp_path ); // Need to save to temp file first per PSM guidelines
 					File.Move(save_game_temp_path, save_game_file_path);
 					File.Delete(save_game_temp_path);

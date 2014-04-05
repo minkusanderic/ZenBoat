@@ -21,15 +21,13 @@ namespace Core
 		public static String true_ = "true";
 		
 		public static float Max_Speed_Of_Boat = 500.0f;
-		
+		public static int currentCraneCountOnLevel = 0;
 		public static Sce.PlayStation.HighLevel.UI.UIFont medium_font = 
 			new Sce.PlayStation.HighLevel.UI.UIFont("/Application/Menus/Zen_Sketch.ttf", 
 			                                        36, 
 			                                        Sce.PlayStation.Core.Imaging.FontStyle.Bold);
 		
-
-		
-	
+		public static Dictionary<String, String> boats = new Dictionary<String, String>();
 	}
 }
 

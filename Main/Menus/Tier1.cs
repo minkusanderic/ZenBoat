@@ -15,7 +15,6 @@ namespace Menu
         {
             InitializeWidget();
 			
-			SaveGameManager.SaveString("crane_count", "700");
 			SaveGameManager.SaveString("black", "600");
 			SaveGameManager.SaveString("pink", "300");
 			
@@ -36,7 +35,7 @@ namespace Menu
 			int boat_value;
 			int crane_count;
 			
-			if(!int.TryParse(SaveGameManager.GetValueFromKey("crane_count"), out crane_count))
+			if(!int.TryParse(SaveGameManager.GetValueFromKey("crane_value"), out crane_count))
 			{
 				Console.WriteLine("Could not convert crane value");
 			}
@@ -60,7 +59,7 @@ namespace Menu
 					if(e.Result == DialogResult.Ok){
 					SaveGameManager.SaveString(boat, "0");
 					crane_count -= boat_value;
-					SaveGameManager.SaveString("crane_count", crane_count.ToString());
+					SaveGameManager.SaveString("crane_value", crane_count.ToString());
 					Console.WriteLine("Buying Boat");
 					Globals.chosenBoat = boat;
 					Console.WriteLine("Selected Boat");	

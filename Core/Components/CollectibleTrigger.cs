@@ -54,7 +54,7 @@ namespace Core
 			crane_score += collectibleScore;
 			Console.WriteLine("Crane Score: " + crane_score);
 			SaveGameManager.SaveString("crane_value" , crane_score.ToString() );
-			          
+			Globals.currentCraneCountOnLevel++;
 			//SaveGameManager.SaveString("GotCrane" , SceneManager.Instance.GetCurrentLevelName() + this.parent.GetID() ); 
 			this.parent.attachComponent(new SimpleController( () => {
 				if(this.parent.Transform.Z < 600.0f)
