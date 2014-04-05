@@ -13,6 +13,9 @@ namespace Preview
     {
         Button continueButton;
         Label pauseLabel;
+        Button Button_1;
+        Button Button_2;
+        Button Button_3;
 
         private void InitializeWidget()
         {
@@ -25,11 +28,20 @@ namespace Preview
             continueButton.Name = "continueButton";
             pauseLabel = new Label();
             pauseLabel.Name = "pauseLabel";
+            Button_1 = new Button();
+            Button_1.Name = "Button_1";
+            Button_2 = new Button();
+            Button_2.Name = "Button_2";
+            Button_3 = new Button();
+            Button_3.Name = "Button_3";
 
             // Pause
             this.BackgroundFilterColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 191f / 255f);
             this.AddChildLast(continueButton);
             this.AddChildLast(pauseLabel);
+            this.AddChildLast(Button_1);
+            this.AddChildLast(Button_2);
+            this.AddChildLast(Button_3);
             this.ShowEffect = new FadeInEffect()
             {
             };
@@ -44,6 +56,18 @@ namespace Preview
             pauseLabel.Font = new UIFont(FontAlias.System, 72, FontStyle.Regular);
             pauseLabel.LineBreak = LineBreak.Character;
             pauseLabel.HorizontalAlignment = HorizontalAlignment.Center;
+
+            // Button_1
+            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+
+            // Button_2
+            Button_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+
+            // Button_3
+            Button_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Button_3.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
 
             SetWidgetLayout(orientation);
 
@@ -70,22 +94,52 @@ namespace Preview
                     pauseLabel.Anchors = Anchors.None;
                     pauseLabel.Visible = true;
 
+                    Button_1.SetPosition(128, 138);
+                    Button_1.SetSize(214, 56);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
+
+                    Button_2.SetPosition(128, 138);
+                    Button_2.SetSize(214, 56);
+                    Button_2.Anchors = Anchors.None;
+                    Button_2.Visible = true;
+
+                    Button_3.SetPosition(128, 138);
+                    Button_3.SetSize(214, 56);
+                    Button_3.Anchors = Anchors.None;
+                    Button_3.Visible = true;
+
                     break;
 
                 default:
                     this.SetPosition(0, 0);
-                    this.SetSize(960, 544);
+                    this.SetSize(500, 500);
                     this.Anchors = Anchors.None;
 
-                    continueButton.SetPosition(372, 354);
+                    continueButton.SetPosition(143, 183);
                     continueButton.SetSize(214, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
 
-                    pauseLabel.SetPosition(352, 138);
+                    pauseLabel.SetPosition(122, 40);
                     pauseLabel.SetSize(255, 97);
                     pauseLabel.Anchors = Anchors.None;
                     pauseLabel.Visible = true;
+
+                    Button_1.SetPosition(143, 257);
+                    Button_1.SetSize(214, 56);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
+
+                    Button_2.SetPosition(143, 330);
+                    Button_2.SetSize(214, 56);
+                    Button_2.Anchors = Anchors.None;
+                    Button_2.Visible = true;
+
+                    Button_3.SetPosition(143, 403);
+                    Button_3.SetSize(214, 56);
+                    Button_3.Anchors = Anchors.None;
+                    Button_3.Visible = true;
 
                     break;
             }
@@ -97,6 +151,12 @@ namespace Preview
             continueButton.Text = "Continue";
 
             pauseLabel.Text = "Paused";
+
+            Button_1.Text = "Restart";
+
+            Button_2.Text = "Level Select";
+
+            Button_3.Text = "Main Menu";
         }
 
         private void onShowing(object sender, EventArgs e)
