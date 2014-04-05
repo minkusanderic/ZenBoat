@@ -142,7 +142,7 @@
     <Island id="2" x="992" y="144" width="100" height="100" angle="0" />
     <Bamboo id="3" x="1016" y="148" />
     <Bamboo id="4" x="1008" y="140" />
-    <Pagoda id="5" x="992" y="168" width="50" height="50" angle="0" />
+    <Pagoda id="5" x="1004" y="168" width="50" height="50" angle="0" />
     <Rock id="8" x="668" y="108" width="86" height="98" angle="0" />
     <Rock id="9" x="1192" y="352" width="50" height="50" angle="0" />
     <Rock id="10" x="1108" y="396" width="78" height="66" angle="0" />
@@ -170,12 +170,12 @@
     <Grass id="32" x="504" y="-32" />
     <Grass id="33" x="532" y="-44" />
     <Grass id="34" x="564" y="-28" />
-    <Grass id="35" x="636" y="-52" />
+    <Grass id="35" x="636" y="-28" />
     <Grass id="36" x="700" y="-36" />
     <TulipSouth id="20" x="872" y="520" />
     <MTGreenSouth id="6" x="464" y="524" />
   </Entities>
   <Art>
-    <MTGreenNorth id="0" x="928" y="-64" />
+    <MTGreenNorth id="0" x="928" y="-44" />
   </Art>
 </level>

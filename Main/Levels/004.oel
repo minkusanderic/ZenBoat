@@ -182,7 +182,6 @@
   <Art>
     <Pagoda id="0" x="3024" y="216" width="50" height="50" angle="0" />
     <CherryBlossomNorth id="1" x="1644" y="-28" />
-    <MapleTreeSouth id="2" x="444" y="520" width="70" height="70" />
     <Bamboo id="8" x="976" y="508" />
     <Bamboo id="9" x="1032" y="508" />
     <Bamboo id="10" x="1500" y="512" />
@@ -194,5 +193,8 @@
     <Bamboo id="27" x="3400" y="512" />
     <Bamboo id="28" x="3476" y="512" />
     <Koi id="12" x="1776" y="428" angle="0" />
+    <MTGreenYellowSouth id="3" x="436" y="520" />
+    <MTGreenYellowNorth id="2" x="3028" y="-52" />
+    <MTGreenYellowSouth id="4" x="2504" y="536" />
   </Art>
 </level>
