@@ -327,9 +327,7 @@
     <Content Include="assets\GrassBundle3.mdx" />
     <Content Include="assets\GrassBundle4.mdx" />
     <Content Include="assets\Bridge.mdx" />
-    <Content Include="assets\Pink.mdx" />
     <Content Include="assets\Gold.mdx" />
-    <Content Include="assets\Rainbow.mdx" />
     <Content Include="assets\Whirlpool4.mdx" />
     <Content Include="Levels\002.oel" />
     <Content Include="Levels\003.oel" />
@@ -352,6 +350,7 @@
     <Content Include="assets\RedS.mdx" />
     <Content Include="assets\YellowGreenS.mdx" />
     <Content Include="assets\YellowS.mdx" />
+<<<<<<< OURS
     <Content Include="assets\grassBack.png" />
     <Content Include="assets\Black.png" />
     <Content Include="assets\Blue.png" />
@@ -365,5 +364,7 @@
     <Content Include="assets\Teal.png" />
     <Content Include="assets\White.png" />
     <Content Include="assets\Yellow.png" />
+    <Content Include="assets\Pink.mdx" />
+    <Content Include="assets\Rainbow.mdx" />
   </ItemGroup>
 </Project>
