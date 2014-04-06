@@ -19,7 +19,7 @@ namespace Menu
 			make_boat("BoatBlue", 500);
 			make_boat("BoatGreen", 500);
 			make_boat("BoatPurple", 500);
-			make_boat("BoatRed", 500);
+			make_boat("BoatRed", 0);
 			make_boat("BoatTeal", 500);
 			make_boat("BoatWhite", 500);
 			make_boat("BoatYellow", 500);			
