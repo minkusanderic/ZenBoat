@@ -142,7 +142,7 @@ namespace Preview
             BackButton.Style = ButtonStyle.Custom;
             BackButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/back144.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
@@ -463,8 +463,8 @@ namespace Preview
                     scroll.Anchors = Anchors.None;
                     scroll.Visible = true;
 
-                    BackButton.SetPosition(373, 473);
-                    BackButton.SetSize(214, 56);
+                    BackButton.SetPosition(405, 473);
+                    BackButton.SetSize(144, 56);
                     BackButton.Anchors = Anchors.None;
                     BackButton.Visible = true;
 
@@ -595,8 +595,6 @@ namespace Preview
 
         public void UpdateLanguage()
         {
-            BackButton.Text = "Back";
-
             Label_1.Text = "x 1,000";
 
             Label_2.Text = "X 3,000";
@@ -608,18 +606,6 @@ namespace Preview
             Label_5.Text = "X 20,000";
 
             Label_6.Text = "X 5,000";
-
-            Label_7.Text = "$1.00";
-
-            Label_8.Text = "$2.50";
-
-            Label_9.Text = "$25.00";
-
-            Label_10.Text = "$7.50";
-
-            Label_11.Text = "$12.50";
-
-            Label_12.Text = "$4.00";
 
             Button_1.Text = "Buy";
 

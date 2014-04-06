@@ -42,11 +42,12 @@ namespace Preview
             ImageBox_1.Image = new ImageAsset("/Application/assets/credits.png");
 
             // continueButton
-            continueButton.IconImage = new ImageAsset("/Application/assets/back214.png");
+            continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
             continueButton.Style = ButtonStyle.Custom;
             continueButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = null,
+                BackgroundNormalImage = new ImageAsset("/Application/assets/back144.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
@@ -97,8 +98,8 @@ namespace Preview
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
 
-                    continueButton.SetPosition(653, 412);
-                    continueButton.SetSize(155, 56);
+                    continueButton.SetPosition(408, 488);
+                    continueButton.SetSize(144, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
 

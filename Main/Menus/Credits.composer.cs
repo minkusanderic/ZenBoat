@@ -98,7 +98,7 @@ namespace Menu
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
 
-                    continueButton.SetPosition(667, 410);
+                    continueButton.SetPosition(408, 488);
                     continueButton.SetSize(144, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;

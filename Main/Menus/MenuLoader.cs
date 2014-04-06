@@ -12,7 +12,6 @@ namespace Main
 	public class MenuLoader
 	{
 		public static bool isPlay = true;
-		public static bool loadInstr = false;
 		public static bool loadStory = false;
 		public static bool loadStart = false;
 		public static bool loadLevel = false;
@@ -49,7 +48,6 @@ namespace Main
 			//show_splash_screen();
 			// Create the scenes
 			var start = new Menu.StartMenu();
-			var instr = new Menu.Instructions();
 			var story = new Menu.Story();
 			var level = new Menu.Levels();
 			var credit = new Menu.Credits();
@@ -64,12 +62,6 @@ namespace Main
 			while (isPlay) {
 				graphics.Clear();
 				UISystem.Update(Touch.GetData(0));
-				 
-				if (loadInstr)
-				{
-					UISystem.SetScene(instr,null);
-					loadInstr = false;
-				}
 				
 				if (loadStory)
 				{
