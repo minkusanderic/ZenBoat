@@ -458,9 +458,6 @@
     <Content Include="assets\end\stry10.png" />
     <Content Include="assets\end\stry11.png" />
     <Content Include="assets\end\stry12.png" />
-    <Content Include="assets\end\stry7.png" />
-    <Content Include="assets\end\stry8.png" />
-    <Content Include="assets\end\stry9.png" />
     <Content Include="assets\open\stry1.png" />
     <Content Include="assets\open\stry2.png" />
     <Content Include="assets\open\stry3.png" />
@@ -469,5 +466,8 @@
     <Content Include="assets\open\stry6.png" />
     <Content Include="assets\score.png" />
     <Content Include="assets\duckie.PNG" />
+    <Content Include="assets\end\stry07.png" />
+    <Content Include="assets\end\stry08.png" />
+    <Content Include="assets\end\stry09.png" />
   </ItemGroup>
 </Project>
