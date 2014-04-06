@@ -3021,7 +3021,7 @@
           <LayoutProperty>
             <LayoutProperty>
               <X>430</X>
-              <Y>390</Y>
+              <Y>210</Y>
               <Width>110</Width>
               <Height>36</Height>
               <Visible>true</Visible>
@@ -3252,7 +3252,7 @@
           <LayoutProperty>
             <LayoutProperty>
               <X>430</X>
-              <Y>210</Y>
+              <Y>390</Y>
               <Width>110</Width>
               <Height>36</Height>
               <Visible>true</Visible>
