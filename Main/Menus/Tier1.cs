@@ -106,32 +106,26 @@ namespace Menu
 			}
 			if(sender.Equals(button3))
 			{
-				//label3.Visible = false;
 				ProcessBoat("BoatGreen");
 			}
 			if(sender.Equals(button4))
 			{
-				//label4.Visible = false;
 				ProcessBoat("BoatPurple");
 			}
 			if(sender.Equals(button5))
 			{
-				//label5.Visible = false;
 				ProcessBoat("BoatRed");
 			}
 			if(sender.Equals(button6))
 			{
-				//label6.Visible = false;
 				ProcessBoat("BoatTeal");
 			}
 			if(sender.Equals(button7))
 			{
-				//label7.Visible = false;
 				ProcessBoat("BoatWhite");
 			}
 			if(sender.Equals(button8))
 			{
-				//label8.Visible = false;
 				ProcessBoat("BoatYellow");
 			}
 			

@@ -23,6 +23,15 @@ namespace Menu
 			
 			label1.Font = Globals.medium_font;
 			label2.Font = Globals.medium_font;
+			
+			if(SaveGameManager.GetValueFromKey("BoatPirate") == "0")
+			{
+				label1.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatDuckie") == "0")
+			{
+				label2.Visible = false;
+			}
         }
 		
 		private void make_boat(String boat,int price)
@@ -79,6 +88,14 @@ namespace Menu
 					Console.WriteLine("Buying Boat");
 					Globals.chosenBoat = boat;
 					Console.WriteLine("Selected Boat");	
+						if(SaveGameManager.GetValueFromKey("BoatPirate") == "0")
+						{
+							label1.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatDuckie") == "0")
+						{
+							label2.Visible = false;
+						}
 					}
 				});
 			}

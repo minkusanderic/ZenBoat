@@ -35,6 +35,31 @@ namespace Menu
 			label4.Font = Globals.medium_font;
 			label5.Font = Globals.medium_font;
 			label6.Font = Globals.medium_font;
+			
+			if(SaveGameManager.GetValueFromKey("BoatOrg1") == "0")
+			{
+				label1.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatOrg2") == "0")
+			{
+				label2.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatOrg3") == "0")
+			{
+				label3.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatOrg4") == "0")
+			{
+				label4.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatOrg5") == "0")
+			{
+				label5.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatOrg6") == "0")
+			{
+				label6.Visible = false;
+			}
         }
 		
 		private void make_boat(String boat,int price)
@@ -69,6 +94,7 @@ namespace Menu
 			}
 			if(sender.Equals(button6))
 			{
+				Console.WriteLine("why you YesNoLayout work?");
 				ProcessBoat("BoatOrg6");
 			}
         }
@@ -107,6 +133,30 @@ namespace Menu
 					Console.WriteLine("Buying Boat");
 					Globals.chosenBoat = boat;
 					Console.WriteLine("Selected Boat");	
+						if(SaveGameManager.GetValueFromKey("BoatOrg1") == "0")
+						{
+							label1.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatOrg2") == "0")
+						{
+							label2.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatOrg3") == "0")
+						{
+							label3.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatOrg4") == "0")
+						{
+							label4.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatOrg5") == "0")
+						{
+							label5.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatOrg6") == "0")
+						{
+							label6.Visible = false;
+						}
 					}
 				});
 			}

@@ -38,6 +38,31 @@ namespace Menu
 			label5.Font = Globals.medium_font;
 			label6.Font = Globals.medium_font;
 			label7.Font = Globals.medium_font;
+			
+			if(SaveGameManager.GetValueFromKey("BoatPat1") == "0")
+			{
+				label1.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatPat2") == "0")
+			{
+				label2.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatPat3") == "0")
+			{
+				label3.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatPat4") == "0")
+			{
+				label4.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatPat5") == "0")
+			{
+				label5.Visible = false;
+			}
+			if(SaveGameManager.GetValueFromKey("BoatPat6") == "0")
+			{
+				label6.Visible = false;
+			}
         }
 		
 		private void make_boat(String boat,int price)
@@ -114,6 +139,30 @@ namespace Menu
 					Console.WriteLine("Buying Boat");
 					Globals.chosenBoat = boat;
 					Console.WriteLine("Selected Boat");	
+						if(SaveGameManager.GetValueFromKey("BoatPat1") == "0")
+						{
+							label1.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatPat2") == "0")
+						{
+							label2.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatPat3") == "0")
+						{
+							label3.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatPat4") == "0")
+						{
+							label4.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatPat5") == "0")
+						{
+							label5.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatPat6") == "0")
+						{
+							label6.Visible = false;
+						}
 					}
 				});
 			}
