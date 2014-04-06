@@ -61,12 +61,13 @@ namespace Menu
 			Label_4.Font = Globals.medium_font;
 			Label_5.Font = Globals.medium_font;
 			Label_6.Font = Globals.medium_font;
-			Label_7.Font = Globals.medium_font;
-			Label_8.Font = Globals.medium_font;
-			Label_9.Font = Globals.medium_font;
-			Label_10.Font = Globals.medium_font;
-			Label_11.Font = Globals.medium_font;
-			Label_12.Font = Globals.medium_font;
+			//We need updated fonts with the '$'
+			//Label_7.Font = Globals.medium_font;
+			//Label_8.Font = Globals.medium_font;
+			//Label_9.Font = Globals.medium_font;
+			//Label_10.Font = Globals.medium_font;
+			//Label_11.Font = Globals.medium_font;
+			//Label_12.Font = Globals.medium_font;
 			
 			BackButton.TextFont = Globals.medium_font;
 			Button_1.TextFont = Globals.medium_font;
@@ -177,15 +178,25 @@ namespace Menu
 		{
 			if(dialog.IsProductInfoComplete)
 			{
-				Label_7.Text = dialog.ProductList[0].Price;
-				Label_8.Text = dialog.ProductList[1].Price;
-				Label_9.Text = dialog.ProductList[2].Price;
-				Label_10.Text = dialog.ProductList[3].Price;
-				Label_11.Text = dialog.ProductList[4].Price;
-				Label_12.Text = dialog.ProductList[5].Price;				
+				Label_7.Text = find_price("CRANE1");
+				Label_8.Text = find_price("CRANE2");
+				Label_9.Text = find_price("CRANE3");
+				Label_10.Text = find_price("CRANE4");
+				Label_11.Text = find_price("CRANE5");
+				Label_12.Text = find_price("CRANE6");				
 			}
 		}
-
+		String find_price(String id)
+		{
+			foreach(var p in dialog.ProductList)
+			{
+				if(p.Label == id)
+				{
+					return p.Price;
+				}
+			}
+			return "";
+		}
 		//  Public methods
 
         public void SetItemCount(int count)
