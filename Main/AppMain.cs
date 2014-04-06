@@ -46,8 +46,6 @@ namespace Main
 					bgmc.setVolume(1f);
 					bgmc.loop(true);
 					
-					SaveGameManager.SaveString( Globals.unlockedLevelPrefix + LevelLoader.searchPath + "015.oel" , "unlocked" );
-					
 
 					
 					break;
