@@ -21,6 +21,12 @@ namespace Menu
 			storeButton.ButtonAction += HandleStoreButtonButtonAction;
 			creditButton.ButtonAction += HandleCreditButtonButtonAction;
 			
+			playButton.TextFont = Core.Globals.medium_font;
+			levelButton.TextFont = Core.Globals.medium_font;
+			storeButton.TextFont = Core.Globals.medium_font;
+			creditButton.TextFont = Core.Globals.medium_font;
+			
+			
         }
 		
 		void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)

@@ -30,6 +30,14 @@ namespace Menu
 			button5.ButtonAction += HandleButtonAction;
 			button6.ButtonAction += HandleButtonAction;
 			button7.ButtonAction += HandleButtonAction;
+			
+			label1.Font = Globals.small_font;
+			label2.Font = Globals.small_font;
+			label3.Font = Globals.small_font;
+			label4.Font = Globals.small_font;
+			label5.Font = Globals.small_font;
+			label6.Font = Globals.small_font;
+			label7.Font = Globals.small_font;
         }
 		
 		private void make_boat(String boat,int price)

@@ -22,6 +22,9 @@ namespace Menu
 			
 			buyButton.ButtonAction += HandleBuyButtonButtonAction;
 			
+			buyButton.TextFont = Core.Globals.medium_font;
+			backButton.TextFont = Core.Globals.medium_font;
+			
         }
 
         void HandleBuyButtonButtonAction (object sender, TouchEventArgs e)
