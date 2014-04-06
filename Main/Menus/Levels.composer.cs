@@ -58,7 +58,7 @@ namespace Menu
             backButton.Style = ButtonStyle.Custom;
             backButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/back214.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
@@ -150,7 +150,6 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            backButton.Text = "Back";
         }
 
         private void onShowing(object sender, EventArgs e)

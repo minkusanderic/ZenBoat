@@ -1823,8 +1823,8 @@
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
-              <X>118</X>
-              <Y>183.97671187949376</Y>
+              <X>93</X>
+              <Y>157.62157169257864</Y>
               <Width>214</Width>
               <Height>56</Height>
               <Visible>true</Visible>
@@ -1921,8 +1921,8 @@
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
-              <X>97.5</X>
-              <Y>40.204958726072348</Y>
+              <X>72.5</X>
+              <Y>13.849818539156544</Y>
               <Width>255</Width>
               <Height>97</Height>
               <Visible>true</Visible>
@@ -1998,8 +1998,8 @@
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
-              <X>118</X>
-              <Y>257.24948834430506</Y>
+              <X>93</X>
+              <Y>230.89434815738994</Y>
               <Width>214</Width>
               <Height>56</Height>
               <Visible>true</Visible>
@@ -2096,8 +2096,8 @@
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
-              <X>118</X>
-              <Y>330.52226480911543</Y>
+              <X>93</X>
+              <Y>304.16712462220033</Y>
               <Width>214</Width>
               <Height>56</Height>
               <Visible>true</Visible>
@@ -2194,8 +2194,8 @@
           <Nodes />
           <LayoutProperty>
             <LayoutProperty>
-              <X>118</X>
-              <Y>403.79504127392772</Y>
+              <X>93</X>
+              <Y>377.43990108701263</Y>
               <Width>214</Width>
               <Height>56</Height>
               <Visible>true</Visible>
@@ -2292,8 +2292,8 @@
         <LayoutProperty>
           <X>0</X>
           <Y>0</Y>
-          <Width>450</Width>
-          <Height>500</Height>
+          <Width>400</Width>
+          <Height>450</Height>
           <Visible>true</Visible>
           <Anchors>None</Anchors>
         </LayoutProperty>
@@ -5054,7 +5054,7 @@
                 <VariableName>backButton</VariableName>
                 <BackgroundButtonImage xmlns:d9p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
                   <d9p1:BackgroundDisablelImage i:nil="true" />
-                  <d9p1:BackgroundNormalImage>sign214.png</d9p1:BackgroundNormalImage>
+                  <d9p1:BackgroundNormalImage>back214.png</d9p1:BackgroundNormalImage>
                   <d9p1:BackgroundPressImage i:nil="true" />
                 </BackgroundButtonImage>
                 <BackgroundType>Custom</BackgroundType>
@@ -5077,7 +5077,7 @@
                   <d9p1:RightColumnWidth>42</d9p1:RightColumnWidth>
                   <d9p1:TopRowHeight>27</d9p1:TopRowHeight>
                 </NinePatchMargin>
-                <Text>Back</Text>
+                <Text></Text>
                 <TextAlpha>100</TextAlpha>
                 <TextColor xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
                   <d9p1:A>255</d9p1:A>

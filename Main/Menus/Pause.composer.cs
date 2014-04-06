@@ -149,30 +149,30 @@ namespace Menu
 
                 default:
                     this.SetPosition(0, 0);
-                    this.SetSize(450, 500);
+                    this.SetSize(400, 450);
                     this.Anchors = Anchors.None;
 
-                    continueButton.SetPosition(118, 183);
+                    continueButton.SetPosition(93, 157);
                     continueButton.SetSize(214, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
 
-                    pauseLabel.SetPosition(97, 40);
+                    pauseLabel.SetPosition(72, 13);
                     pauseLabel.SetSize(255, 97);
                     pauseLabel.Anchors = Anchors.None;
                     pauseLabel.Visible = true;
 
-                    Button_1.SetPosition(118, 257);
+                    Button_1.SetPosition(93, 230);
                     Button_1.SetSize(214, 56);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;
 
-                    Button_2.SetPosition(118, 330);
+                    Button_2.SetPosition(93, 304);
                     Button_2.SetSize(214, 56);
                     Button_2.Anchors = Anchors.None;
                     Button_2.Visible = true;
 
-                    Button_3.SetPosition(118, 403);
+                    Button_3.SetPosition(93, 377);
                     Button_3.SetSize(214, 56);
                     Button_3.Anchors = Anchors.None;
                     Button_3.Visible = true;
