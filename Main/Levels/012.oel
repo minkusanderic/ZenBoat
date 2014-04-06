@@ -142,28 +142,27 @@
     <Whirlpool id="2" x="1144" y="428" width="80" height="80" strength="100" />
     <Whirlpool id="3" x="1132" y="120" width="80" height="80" strength="100" />
     <Driftwood id="4" x="752" y="280" width="100" height="30" angle="0" />
-    <Rock id="5" x="1404" y="260" width="50" height="50" angle="0" />
-    <Rock id="8" x="1788" y="268" width="50" height="50" angle="0" />
-    <Rock id="9" x="1920" y="280" width="50" height="50" angle="0" />
-    <Rock id="10" x="2024" y="276" width="50" height="50" angle="0" />
+    <Rock id="5" x="1404" y="272" width="50" height="50" angle="0" />
+    <Rock id="8" x="1780" y="276" width="50" height="50" angle="0" />
+    <Rock id="9" x="1924" y="284" width="50" height="50" angle="0" />
+    <Rock id="10" x="1996" y="284" width="50" height="50" angle="0" />
     <Rock id="11" x="2320" y="28" width="50" height="50" angle="0" />
     <Rock id="12" x="2332" y="104" width="50" height="50" angle="0" />
     <Rock id="15" x="2328" y="408" width="50" height="50" angle="0" />
     <Rock id="16" x="2336" y="492" width="50" height="50" angle="0" />
     <Whirlpool id="17" x="2300" y="296" width="80" height="80" strength="100" />
-    <Rock id="13" x="1408" y="324" width="50" height="50" angle="0" />
-    <Rock id="14" x="1420" y="432" width="50" height="50" angle="0" />
-    <Rock id="18" x="1420" y="380" width="50" height="50" angle="0" />
-    <Rock id="20" x="2096" y="288" width="50" height="50" angle="0" />
+    <Rock id="13" x="1408" y="336" width="50" height="50" angle="0" />
+    <Rock id="14" x="1420" y="444" width="50" height="50" angle="0" />
+    <Rock id="18" x="1420" y="392" width="50" height="50" angle="0" />
+    <Rock id="20" x="2068" y="280" width="50" height="50" angle="0" />
     <Rock id="22" x="2320" y="352" width="50" height="50" angle="0" />
     <Rock id="23" x="2312" y="168" width="50" height="50" angle="0" />
     <Driftwood id="21" x="1604" y="436" width="100" height="30" angle="0" />
-    <Rock id="24" x="1580" y="280" width="50" height="50" angle="0" />
-    <Rock id="25" x="1652" y="288" width="50" height="50" angle="0" />
-    <Rock id="26" x="1744" y="292" width="50" height="50" angle="0" />
-    <Rock id="27" x="1876" y="300" width="50" height="50" angle="0" />
+    <Rock id="24" x="1552" y="272" width="50" height="50" angle="0" />
+    <Rock id="25" x="1624" y="280" width="50" height="50" angle="0" />
+    <Rock id="26" x="1708" y="284" width="50" height="50" angle="0" />
+    <Rock id="27" x="1848" y="292" width="50" height="50" angle="0" />
     <Rock id="28" x="1476" y="272" width="50" height="50" angle="0" />
-    <Rock id="29" x="2000" y="296" width="50" height="50" angle="0" />
     <Rock id="30" x="3468" y="208" width="50" height="50" angle="0" />
     <Rock id="31" x="3476" y="284" width="50" height="50" angle="0" />
     <Rock id="32" x="3472" y="452" width="50" height="50" angle="0" />
@@ -176,23 +175,13 @@
     <Rock id="39" x="3664" y="120" width="50" height="50" angle="0" />
     <Driftwood id="40" x="3596" y="68" width="100" height="30" angle="0" />
     <Whirlpool id="41" x="3588" y="428" width="80" height="80" strength="100" />
-    <Driftwood id="42" x="4548" y="56" width="100" height="30" angle="0" />
-    <Driftwood id="43" x="4616" y="204" width="100" height="30" angle="0" />
     <Driftwood id="44" x="4648" y="372" width="100" height="30" angle="0" />
-    <Driftwood id="45" x="4856" y="436" width="100" height="30" angle="0" />
     <Driftwood id="46" x="5056" y="292" width="100" height="30" angle="0" />
     <Driftwood id="47" x="4856" y="140" width="100" height="30" angle="0" />
-    <Driftwood id="48" x="4868" y="276" width="100" height="30" angle="0" />
-    <Driftwood id="49" x="4752" y="44" width="100" height="30" angle="0" />
-    <Driftwood id="50" x="5292" y="92" width="100" height="30" angle="0" />
     <Driftwood id="51" x="5364" y="368" width="100" height="30" angle="0" />
-    <Driftwood id="52" x="5160" y="424" width="100" height="30" angle="0" />
-    <Driftwood id="53" x="5008" y="52" width="100" height="30" angle="0" />
     <Driftwood id="54" x="5772" y="256" width="100" height="30" angle="0" />
     <Driftwood id="55" x="5240" y="212" width="100" height="30" angle="0" />
-    <Driftwood id="56" x="5656" y="476" width="100" height="30" angle="0" />
     <Driftwood id="57" x="5528" y="276" width="100" height="30" angle="0" />
-    <Driftwood id="58" x="5432" y="80" width="100" height="30" angle="0" />
     <Rock id="59" x="7172" y="196" width="110" height="102" angle="0" />
     <Rock id="60" x="7172" y="288" width="110" height="102" angle="0" />
     <Rock id="61" x="7192" y="388" width="110" height="102" angle="0" />
@@ -203,15 +192,8 @@
     <Rock id="66" x="8012" y="244" width="110" height="102" angle="0" />
     <Rock id="67" x="8008" y="320" width="110" height="102" angle="0" />
     <Rock id="68" x="7180" y="124" width="110" height="102" angle="0" />
-    <Rock id="69" x="7528" y="220" width="110" height="102" angle="0" />
-    <Rock id="70" x="7612" y="180" width="110" height="102" angle="0" />
-    <Rock id="71" x="7684" y="228" width="110" height="102" angle="0" />
-    <Rock id="72" x="7568" y="280" width="110" height="102" angle="0" />
-    <Rock id="73" x="7644" y="284" width="110" height="102" angle="0" />
+    <Rock id="70" x="7592" y="184" width="170" height="154" angle="0" />
     <Current id="74" x="7288" y="0" width="760" height="208" angle="0" />
-    <Current id="75" x="7580" y="208" width="760" height="208" angle="1.570796" />
-    <Current id="76" x="7304" y="332" width="760" height="208" angle="3.141593" />
-    <Current id="77" x="7036" y="140" width="760" height="208" angle="-1.570796" />
     <Driftwood id="78" x="7432" y="64" width="100" height="30" angle="0" />
     <Driftwood id="79" x="7692" y="56" width="100" height="30" angle="0" />
     <Driftwood id="80" x="7920" y="112" width="100" height="30" angle="0" />
@@ -231,10 +213,8 @@
     <Island id="112" x="8868" y="208" width="100" height="100" angle="0" />
     <Pagoda id="113" x="8892" y="228" width="50" height="50" angle="0" />
     <Lillypad id="116" x="9116" y="408" width="50" height="40" angle="0" />
-    <Lillypad id="118" x="6300" y="348" width="50" height="40" angle="0" />
     <CherryBlossomNorth id="121" x="1672" y="-40" />
     <CherryBlossomNorth id="122" x="9272" y="-40" />
-    <Koi id="114" x="9064" y="272" angle="0" />
     <BridgeStart id="1" x="176" y="256" />
     <BridgeEnd id="86" x="9920" y="228" NextLevel="013.oel" />
     <Crane1 id="87" x="1700" y="24" />
@@ -256,6 +236,9 @@
     <Crane1 id="100" x="3148" y="208" />
     <Crane1 id="101" x="4952" y="396" />
     <Crane1 id="102" x="5144" y="224" />
+    <Current id="76" x="7304" y="332" width="760" height="208" angle="3.141593" />
+    <Current id="75" x="7580" y="208" width="760" height="208" angle="1.570796" />
+    <Current id="77" x="7036" y="140" width="760" height="208" angle="-1.570796" />
   </Entities>
   <Art>
     <Island id="0" x="2892" y="180" width="100" height="100" angle="0" />
