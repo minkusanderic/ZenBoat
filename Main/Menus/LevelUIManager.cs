@@ -49,8 +49,8 @@ namespace Core
 			float tot = (float)total_crane_count;
 			float ratio = c_got/tot;
 			if ( ratio == 1 ) return 3;
-			if ( ratio > .33) return 2;
-			if ( ratio <=.33) return 1;
+			if ( ratio > .2) return 2;
+			if ( ratio <=.2) return 1;
 			else return 0;
 			return star_count;
 		}

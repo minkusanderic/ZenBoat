@@ -367,6 +367,7 @@
     <Content Include="assets\RainbowDot.png" />
     <Content Include="assets\Pink.mdx" />
     <Content Include="assets\Rainbow.mdx" />
+<<<<<<< OURS
     <Content Include="assets\FullStar.png" />
     <Content Include="assets\EmptyStar.png" />
     <Content Include="assets\Level Previews\001.jpg" />
@@ -390,6 +391,8 @@
     <Content Include="assets\Level Previews\019.jpg" />
     <Content Include="assets\Level Previews\020.jpg" />
     <Content Include="Levels\001.oel" />
+=======
+>>>>>>> THEIRS
     <Content Include="Levels\002.oel" />
     <Content Include="Levels\003.oel" />
     <Content Include="Levels\004.oel" />
@@ -409,6 +412,7 @@
     <Content Include="Levels\018.oel" />
     <Content Include="Levels\019.oel" />
     <Content Include="Levels\020.oel" />
+<<<<<<< OURS
     <Content Include="assets\BoatBlack.mdx" />
     <Content Include="assets\BoatBlue.mdx" />
     <Content Include="assets\BoatGreen.mdx" />
@@ -430,5 +434,13 @@
     <Content Include="assets\BoatPat5.mdx" />
     <Content Include="assets\BoatPat6.mdx" />
     <Content Include="assets\BoatPat7.mdx" />
+=======
+    <Content Include="Levels\021.oel" />
+    <Content Include="Levels\022.oel" />
+    <Content Include="Levels\023.oel" />
+    <Content Include="Levels\024.oel" />
+    <Content Include="Levels\025.oel" />
+    <Content Include="Levels\001.oel" />
+>>>>>>> THEIRS
   </ItemGroup>
 </Project>
