@@ -435,5 +435,6 @@
     <Content Include="Levels\023.oel" />
     <Content Include="Levels\024.oel" />
     <Content Include="Levels\025.oel" />
+    <Content Include="assets\BoatPirate.mdx" />
   </ItemGroup>
 </Project>
