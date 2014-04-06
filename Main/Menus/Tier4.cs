@@ -16,10 +16,13 @@ namespace Menu
             InitializeWidget();
 			
 			make_boat("BoatPirate", 10000);
+			make_boat("BoatDuckie", 10000);
 			
 			button1.ButtonAction += HandleButtonAction;
+			button2.ButtonAction += HandleButtonAction;
 			
 			label1.Font = Globals.medium_font;
+			label2.Font = Globals.medium_font;
         }
 		
 		private void make_boat(String boat,int price)
@@ -35,6 +38,10 @@ namespace Menu
 			if(sender.Equals(button1))
 			{
 				ProcessBoat("BoatPirate");
+			}
+			if(sender.Equals(button2))
+			{
+				ProcessBoat("BoatDuckie");
 			}
         }
 		

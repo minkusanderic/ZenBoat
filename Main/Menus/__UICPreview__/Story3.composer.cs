@@ -11,7 +11,7 @@ namespace Preview
 {
     partial class Story3
     {
-        ImageBox ImageBox_1;
+        ImageBox story3;
 
         private void InitializeWidget()
         {
@@ -20,16 +20,16 @@ namespace Preview
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            ImageBox_1 = new ImageBox();
-            ImageBox_1.Name = "ImageBox_1";
+            story3 = new ImageBox();
+            story3.Name = "story3";
 
             // Story3
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
-            this.AddChildLast(ImageBox_1);
+            this.AddChildLast(story3);
 
-            // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/story3.png");
+            // story3
+            story3.Image = new ImageAsset("/Application/assets/open/stry3.png");
 
             SetWidgetLayout(orientation);
 
@@ -45,10 +45,10 @@ namespace Preview
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(0, 0);
-                    ImageBox_1.SetSize(200, 200);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story3.SetPosition(0, 0);
+                    story3.SetSize(200, 200);
+                    story3.Anchors = Anchors.None;
+                    story3.Visible = true;
 
                     break;
 
@@ -56,10 +56,10 @@ namespace Preview
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(0, 0);
-                    ImageBox_1.SetSize(960, 544);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story3.SetPosition(0, 0);
+                    story3.SetSize(960, 544);
+                    story3.Anchors = Anchors.None;
+                    story3.Visible = true;
 
                     break;
             }

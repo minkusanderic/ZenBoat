@@ -7,11 +7,11 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
 
-namespace Preview
+namespace Menu
 {
-    partial class Story2
+    partial class Ending
     {
-        ImageBox story2;
+        PagePanel PagePanel_1;
 
         private void InitializeWidget()
         {
@@ -20,16 +20,19 @@ namespace Preview
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            story2 = new ImageBox();
-            story2.Name = "story2";
+            PagePanel_1 = new PagePanel();
+            PagePanel_1.Name = "PagePanel_1";
 
-            // Story2
-            this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
-            this.Clip = true;
-            this.AddChildLast(story2);
+            // Ending
+            this.RootWidget.AddChildLast(PagePanel_1);
 
-            // story2
-            story2.Image = new ImageAsset("/Application/assets/open/stry2.png");
+            // PagePanel_1
+            PagePanel_1.AddPage(new End1());
+            PagePanel_1.AddPage(new End2());
+            PagePanel_1.AddPage(new End3());
+            PagePanel_1.AddPage(new End4());
+            PagePanel_1.AddPage(new End5());
+            PagePanel_1.AddPage(new End6());
 
             SetWidgetLayout(orientation);
 
@@ -42,24 +45,24 @@ namespace Preview
             switch (orientation)
             {
                 case LayoutOrientation.Vertical:
-                    this.SetSize(544, 960);
-                    this.Anchors = Anchors.None;
+                    this.DesignWidth = 544;
+                    this.DesignHeight = 960;
 
-                    story2.SetPosition(59, 31);
-                    story2.SetSize(200, 200);
-                    story2.Anchors = Anchors.None;
-                    story2.Visible = true;
+                    PagePanel_1.SetPosition(340, 230);
+                    PagePanel_1.SetSize(100, 50);
+                    PagePanel_1.Anchors = Anchors.None;
+                    PagePanel_1.Visible = true;
 
                     break;
 
                 default:
-                    this.SetSize(960, 544);
-                    this.Anchors = Anchors.None;
+                    this.DesignWidth = 960;
+                    this.DesignHeight = 544;
 
-                    story2.SetPosition(0, 0);
-                    story2.SetSize(960, 544);
-                    story2.Anchors = Anchors.None;
-                    story2.Visible = true;
+                    PagePanel_1.SetPosition(0, 0);
+                    PagePanel_1.SetSize(960, 544);
+                    PagePanel_1.Anchors = Anchors.None;
+                    PagePanel_1.Visible = true;
 
                     break;
             }
@@ -70,7 +73,7 @@ namespace Preview
         {
         }
 
-        public void InitializeDefaultEffect()
+        private void onShowing(object sender, EventArgs e)
         {
             switch (_currentLayoutOrientation)
             {
@@ -82,7 +85,7 @@ namespace Preview
             }
         }
 
-        public void StartDefaultEffect()
+        private void onShown(object sender, EventArgs e)
         {
             switch (_currentLayoutOrientation)
             {

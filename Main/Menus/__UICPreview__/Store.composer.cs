@@ -498,32 +498,32 @@ namespace Preview
                     Label_6.Anchors = Anchors.None;
                     Label_6.Visible = true;
 
-                    Label_7.SetPosition(420, 90);
+                    Label_7.SetPosition(430, 90);
                     Label_7.SetSize(110, 36);
                     Label_7.Anchors = Anchors.None;
                     Label_7.Visible = true;
 
-                    Label_8.SetPosition(420, 150);
+                    Label_8.SetPosition(430, 150);
                     Label_8.SetSize(110, 36);
                     Label_8.Anchors = Anchors.None;
                     Label_8.Visible = true;
 
-                    Label_9.SetPosition(420, 390);
+                    Label_9.SetPosition(430, 390);
                     Label_9.SetSize(110, 36);
                     Label_9.Anchors = Anchors.None;
                     Label_9.Visible = true;
 
-                    Label_10.SetPosition(420, 270);
+                    Label_10.SetPosition(430, 270);
                     Label_10.SetSize(110, 36);
                     Label_10.Anchors = Anchors.None;
                     Label_10.Visible = true;
 
-                    Label_11.SetPosition(420, 330);
+                    Label_11.SetPosition(430, 330);
                     Label_11.SetSize(110, 36);
                     Label_11.Anchors = Anchors.None;
                     Label_11.Visible = true;
 
-                    Label_12.SetPosition(420, 210);
+                    Label_12.SetPosition(430, 210);
                     Label_12.SetSize(110, 36);
                     Label_12.Anchors = Anchors.None;
                     Label_12.Visible = true;
@@ -597,7 +597,7 @@ namespace Preview
         {
             BackButton.Text = "Back";
 
-            Label_1.Text = "X 1,000";
+            Label_1.Text = "x 1,000";
 
             Label_2.Text = "X 3,000";
 

@@ -158,6 +158,20 @@
     <Compile Include="Menus\Level06.composer.cs" />
     <Compile Include="Menus\Level07.composer.cs" />
     <Compile Include="Menus\Level07.cs" />
+    <Compile Include="Menus\End1.composer.cs" />
+    <Compile Include="Menus\End1.cs" />
+    <Compile Include="Menus\End2.composer.cs" />
+    <Compile Include="Menus\End2.cs" />
+    <Compile Include="Menus\End3.composer.cs" />
+    <Compile Include="Menus\End3.cs" />
+    <Compile Include="Menus\End4.composer.cs" />
+    <Compile Include="Menus\End4.cs" />
+    <Compile Include="Menus\End5.composer.cs" />
+    <Compile Include="Menus\End5.cs" />
+    <Compile Include="Menus\End6.composer.cs" />
+    <Compile Include="Menus\End6.cs" />
+    <Compile Include="Menus\Ending.composer.cs" />
+    <Compile Include="Menus\Ending.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -441,8 +455,6 @@
     <Content Include="assets\BoatPirate.mdx" />
     <Content Include="assets\pirate.png" />
     <Content Include="assets\BoatDuckie.mdx" />
-    <Content Include="assets\BoatPirate.mdx" />
-    <Content Include="assets\pirate.png" />
     <Content Include="assets\end\stry10.png" />
     <Content Include="assets\end\stry11.png" />
     <Content Include="assets\end\stry12.png" />
@@ -455,5 +467,7 @@
     <Content Include="assets\open\stry4.png" />
     <Content Include="assets\open\stry5.png" />
     <Content Include="assets\open\stry6.png" />
+    <Content Include="assets\duckie.PNG" />
+    <Content Include="assets\score.png" />
   </ItemGroup>
 </Project>

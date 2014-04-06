@@ -31,8 +31,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="Store.composer.cs" />
-    <Compile Include="Store.cs" />
+    <Compile Include="Ending.composer.cs" />
+    <Compile Include="Ending.cs" />
+    <Compile Include="End1.composer.cs" />
+    <Compile Include="End1.cs" />
+    <Compile Include="End2.composer.cs" />
+    <Compile Include="End2.cs" />
+    <Compile Include="End3.composer.cs" />
+    <Compile Include="End3.cs" />
+    <Compile Include="End4.composer.cs" />
+    <Compile Include="End4.cs" />
+    <Compile Include="End5.composer.cs" />
+    <Compile Include="End5.cs" />
+    <Compile Include="End6.composer.cs" />
+    <Compile Include="End6.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +83,9 @@
     </Content>
     <Content Include="..\\assets\credits.png" >
       <Link>assets\credits.png</Link>
+    </Content>
+    <Content Include="..\\assets\duckie.PNG" >
+      <Link>assets\duckie.PNG</Link>
     </Content>
     <Content Include="..\\assets\EmptyStar.png" >
       <Link>assets\EmptyStar.png</Link>
@@ -141,21 +156,6 @@
     <Content Include="..\\assets\sign214.png" >
       <Link>assets\sign214.png</Link>
     </Content>
-    <Content Include="..\\assets\story1.png" >
-      <Link>assets\story1.png</Link>
-    </Content>
-    <Content Include="..\\assets\story2.png" >
-      <Link>assets\story2.png</Link>
-    </Content>
-    <Content Include="..\\assets\story3.png" >
-      <Link>assets\story3.png</Link>
-    </Content>
-    <Content Include="..\\assets\story4.png" >
-      <Link>assets\story4.png</Link>
-    </Content>
-    <Content Include="..\\assets\story5.png" >
-      <Link>assets\story5.png</Link>
-    </Content>
     <Content Include="..\\assets\Teal.png" >
       <Link>assets\Teal.png</Link>
     </Content>
@@ -167,6 +167,27 @@
     </Content>
     <Content Include="..\\assets\Yellow.png" >
       <Link>assets\Yellow.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\endFull.png" >
+      <Link>assets\end\endFull.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\stry07.png" >
+      <Link>assets\end\stry07.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\stry08.png" >
+      <Link>assets\end\stry08.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\stry09.png" >
+      <Link>assets\end\stry09.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\stry10.png" >
+      <Link>assets\end\stry10.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\stry11.png" >
+      <Link>assets\end\stry11.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\stry12.png" >
+      <Link>assets\end\stry12.png</Link>
     </Content>
     <Content Include="..\\assets\Level Previews\001.jpg" >
       <Link>assets\Level Previews\001.jpg</Link>
@@ -227,6 +248,27 @@
     </Content>
     <Content Include="..\\assets\Level Previews\020.jpg" >
       <Link>assets\Level Previews\020.jpg</Link>
+    </Content>
+    <Content Include="..\\assets\open\openFull.png" >
+      <Link>assets\open\openFull.png</Link>
+    </Content>
+    <Content Include="..\\assets\open\stry1.png" >
+      <Link>assets\open\stry1.png</Link>
+    </Content>
+    <Content Include="..\\assets\open\stry2.png" >
+      <Link>assets\open\stry2.png</Link>
+    </Content>
+    <Content Include="..\\assets\open\stry3.png" >
+      <Link>assets\open\stry3.png</Link>
+    </Content>
+    <Content Include="..\\assets\open\stry4.png" >
+      <Link>assets\open\stry4.png</Link>
+    </Content>
+    <Content Include="..\\assets\open\stry5.png" >
+      <Link>assets\open\stry5.png</Link>
+    </Content>
+    <Content Include="..\\assets\open\stry6.png" >
+      <Link>assets\open\stry6.png</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>

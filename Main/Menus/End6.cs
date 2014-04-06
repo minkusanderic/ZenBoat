@@ -4,23 +4,21 @@ using Sce.PlayStation.Core;
 using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
-using Main;
-using Core;
+
 namespace Menu
 {
-    public partial class Levels : Scene
+    public partial class End6 : Panel
     {
-        public Levels()
+        public End6()
         {
             InitializeWidget();
-			backButton.ButtonAction += HandleBackButtonButtonAction;
 			
-			backButton.TextFont = Globals.medium_font;
+			continueButton.ButtonAction += HandleContinueButtonButtonAction;
         }
 
-        void HandleBackButtonButtonAction (object sender, TouchEventArgs e)
+        void HandleContinueButtonButtonAction (object sender, TouchEventArgs e)
         {
-			MenuLoader.loadStart = true;
+			
         }
     }
 }

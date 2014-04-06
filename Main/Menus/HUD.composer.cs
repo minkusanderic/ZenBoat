@@ -11,8 +11,8 @@ namespace Menu
 {
     partial class HUD
     {
-        Label Label_1;
         ImageBox ImageBox_1;
+        Label Label_1;
         Button Button_1;
 
         private void InitializeWidget()
@@ -22,25 +22,25 @@ namespace Menu
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            Label_1 = new Label();
-            Label_1.Name = "Label_1";
             ImageBox_1 = new ImageBox();
             ImageBox_1.Name = "ImageBox_1";
+            Label_1 = new Label();
+            Label_1.Name = "Label_1";
             Button_1 = new Button();
             Button_1.Name = "Button_1";
 
             // HUD
-            this.RootWidget.AddChildLast(Label_1);
             this.RootWidget.AddChildLast(ImageBox_1);
+            this.RootWidget.AddChildLast(Label_1);
             this.RootWidget.AddChildLast(Button_1);
+
+            // ImageBox_1
+            ImageBox_1.Image = new ImageAsset("/Application/assets/score.png");
 
             // Label_1
             Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             Label_1.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
             Label_1.LineBreak = LineBreak.Character;
-
-            // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/Crane_Icon2.png");
 
             // Button_1
             Button_1.IconImage = new ImageAsset("/Application/assets/Pause.png");
@@ -67,15 +67,15 @@ namespace Menu
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    Label_1.SetPosition(746, 0);
-                    Label_1.SetSize(214, 36);
-                    Label_1.Anchors = Anchors.None;
-                    Label_1.Visible = true;
-
                     ImageBox_1.SetPosition(546, 0);
                     ImageBox_1.SetSize(200, 200);
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
+
+                    Label_1.SetPosition(746, 0);
+                    Label_1.SetSize(214, 36);
+                    Label_1.Anchors = Anchors.None;
+                    Label_1.Visible = true;
 
                     Button_1.SetPosition(733, 46);
                     Button_1.SetSize(214, 56);
@@ -88,15 +88,15 @@ namespace Menu
                     this.DesignWidth = 960;
                     this.DesignHeight = 544;
 
+                    ImageBox_1.SetPosition(6, -5);
+                    ImageBox_1.SetSize(240, 99);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
                     Label_1.SetPosition(82, 26);
                     Label_1.SetSize(214, 36);
                     Label_1.Anchors = Anchors.None;
                     Label_1.Visible = true;
-
-                    ImageBox_1.SetPosition(21, 20);
-                    ImageBox_1.SetSize(50, 49);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
 
                     Button_1.SetPosition(842, 0);
                     Button_1.SetSize(100, 88);

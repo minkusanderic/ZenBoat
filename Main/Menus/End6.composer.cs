@@ -7,12 +7,12 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
 
-namespace Preview
+namespace Menu
 {
-    partial class Story5
+    partial class End6
     {
-        ImageBox story5;
-        Button playButton;
+        ImageBox ImageBox_1;
+        Button continueButton;
 
         private void InitializeWidget()
         {
@@ -21,25 +21,25 @@ namespace Preview
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            story5 = new ImageBox();
-            story5.Name = "story5";
-            playButton = new Button();
-            playButton.Name = "playButton";
+            ImageBox_1 = new ImageBox();
+            ImageBox_1.Name = "ImageBox_1";
+            continueButton = new Button();
+            continueButton.Name = "continueButton";
 
-            // Story5
+            // End6
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
-            this.AddChildLast(story5);
-            this.AddChildLast(playButton);
+            this.AddChildLast(ImageBox_1);
+            this.AddChildLast(continueButton);
 
-            // story5
-            story5.Image = new ImageAsset("/Application/assets/open/stry5.png");
+            // ImageBox_1
+            ImageBox_1.Image = new ImageAsset("/Application/assets/end/stry12.png");
 
-            // playButton
-            playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            playButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            playButton.Style = ButtonStyle.Custom;
-            playButton.CustomImage = new CustomButtonImageSettings()
+            // continueButton
+            continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            continueButton.Style = ButtonStyle.Custom;
+            continueButton.CustomImage = new CustomButtonImageSettings()
             {
                 BackgroundNormalImage = null,
                 BackgroundPressedImage = null,
@@ -61,15 +61,15 @@ namespace Preview
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    story5.SetPosition(0, 0);
-                    story5.SetSize(200, 200);
-                    story5.Anchors = Anchors.None;
-                    story5.Visible = true;
+                    ImageBox_1.SetPosition(0, 0);
+                    ImageBox_1.SetSize(200, 200);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
 
-                    playButton.SetPosition(558, 355);
-                    playButton.SetSize(214, 56);
-                    playButton.Anchors = Anchors.None;
-                    playButton.Visible = true;
+                    continueButton.SetPosition(652, 104);
+                    continueButton.SetSize(214, 56);
+                    continueButton.Anchors = Anchors.None;
+                    continueButton.Visible = true;
 
                     break;
 
@@ -77,15 +77,15 @@ namespace Preview
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    story5.SetPosition(0, 0);
-                    story5.SetSize(960, 544);
-                    story5.Anchors = Anchors.None;
-                    story5.Visible = true;
+                    ImageBox_1.SetPosition(0, 0);
+                    ImageBox_1.SetSize(960, 544);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
 
-                    playButton.SetPosition(667, 349);
-                    playButton.SetSize(160, 77);
-                    playButton.Anchors = Anchors.None;
-                    playButton.Visible = true;
+                    continueButton.SetPosition(681, 100);
+                    continueButton.SetSize(159, 76);
+                    continueButton.Anchors = Anchors.None;
+                    continueButton.Visible = true;
 
                     break;
             }
