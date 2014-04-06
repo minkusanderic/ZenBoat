@@ -58,7 +58,7 @@
     </product_list>
   </purchase>
   <runtime_config>
-    <memory managed_heap_size="32768" resource_heap_size="65536" />
+    <memory managed_heap_size="22768" resource_heap_size="75536" />
     <display max_screen_size="1280x800" />
     <camera max_capture_resolution="800x600" />
   </runtime_config>
