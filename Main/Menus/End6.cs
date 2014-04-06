@@ -18,8 +18,6 @@ namespace Menu
 
         void HandleContinueButtonButtonAction (object sender, TouchEventArgs e)
         {
-			UISystem.PopScene();
-			Main.MenuLoader.loadSelect = true;
 			
         }
     }

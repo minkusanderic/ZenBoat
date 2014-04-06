@@ -31,20 +31,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="Ending.composer.cs" />
-    <Compile Include="Ending.cs" />
-    <Compile Include="End1.composer.cs" />
-    <Compile Include="End1.cs" />
-    <Compile Include="End2.composer.cs" />
-    <Compile Include="End2.cs" />
-    <Compile Include="End3.composer.cs" />
-    <Compile Include="End3.cs" />
-    <Compile Include="End4.composer.cs" />
-    <Compile Include="End4.cs" />
-    <Compile Include="End5.composer.cs" />
-    <Compile Include="End5.cs" />
-    <Compile Include="End6.composer.cs" />
-    <Compile Include="End6.cs" />
+    <Compile Include="Select.composer.cs" />
+    <Compile Include="Select.cs" />
+    <Compile Include="Tier1.composer.cs" />
+    <Compile Include="Tier1.cs" />
+    <Compile Include="Tier2.composer.cs" />
+    <Compile Include="Tier2.cs" />
+    <Compile Include="Tier3.composer.cs" />
+    <Compile Include="Tier3.cs" />
+    <Compile Include="Tier4.composer.cs" />
+    <Compile Include="Tier4.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +143,9 @@
     <Content Include="..\\assets\Red.png" >
       <Link>assets\Red.png</Link>
     </Content>
+    <Content Include="..\\assets\score.png" >
+      <Link>assets\score.png</Link>
+    </Content>
     <Content Include="..\\assets\scroll.png" >
       <Link>assets\scroll.png</Link>
     </Content>
@@ -170,6 +169,9 @@
     </Content>
     <Content Include="..\\assets\end\endFull.png" >
       <Link>assets\end\endFull.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\score.png" >
+      <Link>assets\end\score.png</Link>
     </Content>
     <Content Include="..\\assets\end\stry07.png" >
       <Link>assets\end\stry07.png</Link>
