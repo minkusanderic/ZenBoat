@@ -22,11 +22,7 @@ namespace Menu
 			make_boat("BoatRed", 500);
 			make_boat("BoatTeal", 500);
 			make_boat("BoatWhite", 500);
-			make_boat("BoatYellow", 500);
-			
-			SaveGameManager.SaveString("black", "600");
-			SaveGameManager.SaveString("pink", "300");
-			
+			make_boat("BoatYellow", 500);			
 			
 			button1.ButtonAction += HandleButton1ButtonAction;
 			button2.ButtonAction += HandleButton1ButtonAction;
@@ -83,6 +79,7 @@ namespace Menu
 			}
 			
 		}
+		
         void ProcessBoat(String boat)
         {
 			int boat_value;

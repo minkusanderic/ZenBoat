@@ -21,6 +21,19 @@ namespace Menu
             Label_1.Text = text;
             Show();
 			this.Result = DialogResult.Cancel;
+			
+			Button_1.ButtonAction += HandleButton_1ButtonAction;
+			cancelButton.ButtonAction += HandleCancelButtonButtonAction;
+        }
+
+        void HandleButton_1ButtonAction (object sender, TouchEventArgs e)
+        {
+			this.Hide();			
+        }
+
+        void HandleCancelButtonButtonAction (object sender, TouchEventArgs e)
+        {
+			this.Hide();
         }
 
         //  Constructor ( with exception, close handler )
