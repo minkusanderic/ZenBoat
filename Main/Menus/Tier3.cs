@@ -39,6 +39,14 @@ namespace Menu
 			label6.Font = Globals.medium_font;
 			label7.Font = Globals.medium_font;
 			
+			ImageBox_1.Visible = false;
+			ImageBox_2.Visible = false;
+			ImageBox_3.Visible = false;
+			ImageBox_4.Visible = false;
+			ImageBox_5.Visible = false;
+			ImageBox_6.Visible = false;
+			ImageBox_7.Visible = false;
+			
 			if(SaveGameManager.GetValueFromKey("BoatPat1") == "0")
 			{
 				label1.Visible = false;
@@ -78,30 +86,79 @@ namespace Menu
 			if(sender.Equals(button1))
 			{
 				ProcessBoat("BoatPat1");
+				ImageBox_1.Visible = true;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
 			}
 			if(sender.Equals(button2))
 			{
 				ProcessBoat("BoatPat2");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = true;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
 			}
 			if(sender.Equals(button3))
 			{
 				ProcessBoat("BoatPat3");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = true;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
 			}
 			if(sender.Equals(button4))
 			{
 				ProcessBoat("BoatPat4");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = true;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
 			}
 			if(sender.Equals(button5))
 			{
 				ProcessBoat("BoatPat5");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = true;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
 			}
 			if(sender.Equals(button6))
 			{
 				ProcessBoat("BoatPat6");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = true;
+				ImageBox_7.Visible = false;
 			}
 			if(sender.Equals(button7))
 			{
 				ProcessBoat("BoatPat7");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = true;
 			}
         }
 		

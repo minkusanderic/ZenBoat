@@ -36,6 +36,13 @@ namespace Menu
 			label5.Font = Globals.medium_font;
 			label6.Font = Globals.medium_font;
 			
+			ImageBox_1.Visible = false;
+			ImageBox_2.Visible = false;
+			ImageBox_3.Visible = false;
+			ImageBox_4.Visible = false;
+			ImageBox_5.Visible = false;
+			ImageBox_6.Visible = false;
+			
 			if(SaveGameManager.GetValueFromKey("BoatOrg1") == "0")
 			{
 				label1.Visible = false;
@@ -75,27 +82,62 @@ namespace Menu
 			if(sender.Equals(button1))
 			{
 				ProcessBoat("BoatOrg1");
+				ImageBox_1.Visible = true;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
 			}
 			if(sender.Equals(button2))
 			{
 				ProcessBoat("BoatOrg2");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = true;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
 			}
 			if(sender.Equals(button3))
 			{
 				ProcessBoat("BoatOrg3");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = true;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
 			}
 			if(sender.Equals(button4))
 			{
 				ProcessBoat("BoatOrg4");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = true;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
 			}
 			if(sender.Equals(button5))
 			{
 				ProcessBoat("BoatOrg5");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = true;
+				ImageBox_6.Visible = false;
 			}
 			if(sender.Equals(button6))
 			{
-				Console.WriteLine("why you YesNoLayout work?");
 				ProcessBoat("BoatOrg6");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = true;
 			}
         }
 		

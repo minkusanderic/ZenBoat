@@ -472,5 +472,6 @@
     <Content Include="assets\credits.png" />
     <Content Include="assets\back144.png" />
     <Content Include="assets\back214.png" />
+    <Content Include="assets\Pat2.mdx" />
   </ItemGroup>
 </Project>

@@ -24,6 +24,9 @@ namespace Menu
 			label1.Font = Globals.medium_font;
 			label2.Font = Globals.medium_font;
 			
+			ImageBox_1.Visible = false;
+			ImageBox_2.Visible = false;
+			
 			if(SaveGameManager.GetValueFromKey("BoatPirate") == "0")
 			{
 				label1.Visible = false;
@@ -47,10 +50,14 @@ namespace Menu
 			if(sender.Equals(button1))
 			{
 				ProcessBoat("BoatPirate");
+				ImageBox_1.Visible = true;
+				ImageBox_2.Visible = false;
 			}
 			if(sender.Equals(button2))
 			{
 				ProcessBoat("BoatDuckie");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = true;
 			}
         }
 		

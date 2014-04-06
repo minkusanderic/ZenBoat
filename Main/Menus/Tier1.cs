@@ -42,6 +42,15 @@ namespace Menu
 			label7.Font = Globals.medium_font;
 			label8.Font = Globals.medium_font;
 			
+			ImageBox_1.Visible = false;
+			ImageBox_2.Visible = false;
+			ImageBox_3.Visible = false;
+			ImageBox_4.Visible = false;
+			ImageBox_5.Visible = false;
+			ImageBox_6.Visible = false;
+			ImageBox_7.Visible = false;
+			ImageBox_8.Visible = false;
+			
 			if(SaveGameManager.GetValueFromKey("BoatBlack") == "0")
 			{
 				label1.Visible = false;
@@ -96,37 +105,99 @@ namespace Menu
 		{
 			if(sender.Equals(button1))
 			{
-				//label1.Visible = false;
 				ProcessBoat("BoatBlack");
+				ImageBox_1.Visible = true;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
+				ImageBox_8.Visible = false; 
 			}
 			if(sender.Equals(button2))
 			{
-				//label2.Visible = false;
 				ProcessBoat("BoatBlue");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = true;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
+				ImageBox_8.Visible = false;
 			}
 			if(sender.Equals(button3))
 			{
 				ProcessBoat("BoatGreen");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = true;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
+				ImageBox_8.Visible = false;
 			}
 			if(sender.Equals(button4))
 			{
 				ProcessBoat("BoatPurple");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = true;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
+				ImageBox_8.Visible = false;
 			}
 			if(sender.Equals(button5))
 			{
 				ProcessBoat("BoatRed");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = true;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
+				ImageBox_8.Visible = false;
 			}
 			if(sender.Equals(button6))
 			{
 				ProcessBoat("BoatTeal");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = true;
+				ImageBox_7.Visible = false;
+				ImageBox_8.Visible = false;
 			}
 			if(sender.Equals(button7))
 			{
 				ProcessBoat("BoatWhite");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = true;
+				ImageBox_8.Visible = false;
 			}
 			if(sender.Equals(button8))
 			{
 				ProcessBoat("BoatYellow");
+				ImageBox_1.Visible = false;
+				ImageBox_2.Visible = false;
+				ImageBox_3.Visible = false;
+				ImageBox_4.Visible = false;
+				ImageBox_5.Visible = false;
+				ImageBox_6.Visible = false;
+				ImageBox_7.Visible = false;
+				ImageBox_8.Visible = true;
 			}
 			
 		}
@@ -168,42 +239,34 @@ namespace Menu
 						if(SaveGameManager.GetValueFromKey("BoatBlack") == "0")
 						{
 							label1.Visible = false;
-							Console.WriteLine("bought bla Boat");
 						}
 						if(SaveGameManager.GetValueFromKey("BoatBlue") == "0")
 						{
 							label2.Visible = false;
-							Console.WriteLine("bought blu Boat");
 						}
 						if(SaveGameManager.GetValueFromKey("BoatGreen") == "0")
 						{
 							label3.Visible = false;
-							Console.WriteLine("bought gre Boat");
 						}
 						if(SaveGameManager.GetValueFromKey("BoatPurple") == "0")
 						{
 							label4.Visible = false;
-							Console.WriteLine("bought pur Boat");
 						}
 						if(SaveGameManager.GetValueFromKey("BoatRed") == "0")
 						{
 							label5.Visible = false;
-							Console.WriteLine("bought rd Boat");
 						}
 						if(SaveGameManager.GetValueFromKey("BoatTeal") == "0")
 						{
 							label6.Visible = false;
-							Console.WriteLine("bought tea Boat");
 						}
 						if(SaveGameManager.GetValueFromKey("BoatWhite") == "0")
 						{
 							label7.Visible = false;
-							Console.WriteLine("bought whi Boat");
 						}
 						if(SaveGameManager.GetValueFromKey("BoatYellow") == "0")
 						{
 							label8.Visible = false;
-							Console.WriteLine("bought yel Boat");
 						}
 					}
 				});
