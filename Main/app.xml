@@ -4,7 +4,7 @@
     <localized_item locale="en-US" value="Origami Kami" />
   </name>
   <short_name>
-    <localized_item locale="en-US" value="Origami Kami" />
+    <localized_item locale="en-US" value="OK" />
   </short_name>
   <parental_control lock_level="2" />
   <rating_list highest_age_limit="3" has_online_features="false">
