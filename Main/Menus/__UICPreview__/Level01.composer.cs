@@ -69,7 +69,7 @@ namespace Preview
             ImageBox_4_2.Name = "ImageBox_4_2";
 
             // Level01
-            this.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            this.BackgroundColor = new UIColor(92f / 255f, 92f / 255f, 92f / 255f, 255f / 255f);
             this.Clip = true;
             this.AddChildLast(Button_1);
             this.AddChildLast(Button_2);
@@ -89,29 +89,25 @@ namespace Preview
             this.AddChildLast(ImageBox_4_2);
 
             // Button_1
-            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/001.jpg");
 
             // Button_2
-            Button_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/002.jpg");
 
             // Button_3
-            Button_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_3.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/003.jpg");
 
             // Button_4
-            Button_4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_4.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/004.jpg");
 
             // ImageBox_1_2
-            ImageBox_1_2.Image = new ImageAsset("/Application/assets/star.jpg");
+            ImageBox_1_2.Image = new ImageAsset("/Application/assets/FullStar.png");
 
             // ImageBox_1_1
             ImageBox_1_1.Image = new ImageAsset("/Application/assets/star.jpg");
 
             // ImageBox_1_3
-            ImageBox_1_3.Image = new ImageAsset("/Application/assets/star.jpg");
+            ImageBox_1_3.Image = new ImageAsset("/Application/assets/FullStar.png");
 
             // ImageBox_3_3
             ImageBox_3_3.Image = new ImageAsset("/Application/assets/star.jpg");
@@ -237,85 +233,85 @@ namespace Preview
                     break;
 
                 default:
-                    this.SetSize(960, 544);
+                    this.SetSize(700, 400);
                     this.Anchors = Anchors.None;
 
-                    Button_1.SetPosition(22, 25);
-                    Button_1.SetSize(400, 200);
+                    Button_1.SetPosition(0, 0);
+                    Button_1.SetSize(334, 174);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;
 
-                    Button_2.SetPosition(523, 25);
-                    Button_2.SetSize(400, 200);
+                    Button_2.SetPosition(366, 0);
+                    Button_2.SetSize(334, 174);
                     Button_2.Anchors = Anchors.None;
                     Button_2.Visible = true;
 
-                    Button_3.SetPosition(22, 290);
-                    Button_3.SetSize(400, 200);
+                    Button_3.SetPosition(0, 226);
+                    Button_3.SetSize(334, 174);
                     Button_3.Anchors = Anchors.None;
                     Button_3.Visible = true;
 
-                    Button_4.SetPosition(523, 290);
-                    Button_4.SetSize(400, 200);
+                    Button_4.SetPosition(366, 226);
+                    Button_4.SetSize(334, 174);
                     Button_4.Anchors = Anchors.None;
                     Button_4.Visible = true;
 
-                    ImageBox_1_2.SetPosition(77, 46);
+                    ImageBox_1_2.SetPosition(45, 9);
                     ImageBox_1_2.SetSize(37, 34);
                     ImageBox_1_2.Anchors = Anchors.None;
                     ImageBox_1_2.Visible = true;
 
-                    ImageBox_1_1.SetPosition(44, 46);
+                    ImageBox_1_1.SetPosition(12, 9);
                     ImageBox_1_1.SetSize(37, 34);
                     ImageBox_1_1.Anchors = Anchors.None;
                     ImageBox_1_1.Visible = true;
 
-                    ImageBox_1_3.SetPosition(114, 46);
+                    ImageBox_1_3.SetPosition(82, 9);
                     ImageBox_1_3.SetSize(37, 34);
                     ImageBox_1_3.Anchors = Anchors.None;
                     ImageBox_1_3.Visible = true;
 
-                    ImageBox_3_3.SetPosition(114, 434);
+                    ImageBox_3_3.SetPosition(82, 355);
                     ImageBox_3_3.SetSize(37, 34);
                     ImageBox_3_3.Anchors = Anchors.None;
                     ImageBox_3_3.Visible = true;
 
-                    ImageBox_3_1.SetPosition(44, 434);
+                    ImageBox_3_1.SetPosition(12, 355);
                     ImageBox_3_1.SetSize(37, 34);
                     ImageBox_3_1.Anchors = Anchors.None;
                     ImageBox_3_1.Visible = true;
 
-                    ImageBox_3_2.SetPosition(81, 434);
+                    ImageBox_3_2.SetPosition(49, 355);
                     ImageBox_3_2.SetSize(37, 34);
                     ImageBox_3_2.Anchors = Anchors.None;
                     ImageBox_3_2.Visible = true;
 
-                    ImageBox_2_3.SetPosition(864, 46);
+                    ImageBox_2_3.SetPosition(653, 9);
                     ImageBox_2_3.SetSize(37, 34);
                     ImageBox_2_3.Anchors = Anchors.None;
                     ImageBox_2_3.Visible = true;
 
-                    ImageBox_2_1.SetPosition(794, 46);
+                    ImageBox_2_1.SetPosition(583, 9);
                     ImageBox_2_1.SetSize(37, 34);
                     ImageBox_2_1.Anchors = Anchors.None;
                     ImageBox_2_1.Visible = true;
 
-                    ImageBox_2_2.SetPosition(829, 46);
+                    ImageBox_2_2.SetPosition(618, 9);
                     ImageBox_2_2.SetSize(37, 34);
                     ImageBox_2_2.Anchors = Anchors.None;
                     ImageBox_2_2.Visible = true;
 
-                    ImageBox_4_3.SetPosition(864, 434);
+                    ImageBox_4_3.SetPosition(653, 355);
                     ImageBox_4_3.SetSize(37, 34);
                     ImageBox_4_3.Anchors = Anchors.None;
                     ImageBox_4_3.Visible = true;
 
-                    ImageBox_4_1.SetPosition(794, 434);
+                    ImageBox_4_1.SetPosition(583, 355);
                     ImageBox_4_1.SetSize(37, 34);
                     ImageBox_4_1.Anchors = Anchors.None;
                     ImageBox_4_1.Visible = true;
 
-                    ImageBox_4_2.SetPosition(827, 434);
+                    ImageBox_4_2.SetPosition(616, 355);
                     ImageBox_4_2.SetSize(37, 34);
                     ImageBox_4_2.Anchors = Anchors.None;
                     ImageBox_4_2.Visible = true;
@@ -327,13 +323,6 @@ namespace Preview
 
         public void UpdateLanguage()
         {
-            Button_1.Text = "001";
-
-            Button_2.Text = "002";
-
-            Button_3.Text = "003";
-
-            Button_4.Text = "004";
         }
 
         public void InitializeDefaultEffect()

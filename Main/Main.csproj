@@ -389,7 +389,6 @@
     <Content Include="assets\Level Previews\018.jpg" />
     <Content Include="assets\Level Previews\019.jpg" />
     <Content Include="assets\Level Previews\020.jpg" />
-    <Content Include="assets\Rainbow.mdx" />
     <Content Include="Levels\001.oel" />
     <Content Include="Levels\002.oel" />
     <Content Include="Levels\003.oel" />
@@ -431,6 +430,5 @@
     <Content Include="assets\BoatPat5.mdx" />
     <Content Include="assets\BoatPat6.mdx" />
     <Content Include="assets\BoatPat7.mdx" />
- 
- </ItemGroup>
+  </ItemGroup>
 </Project>

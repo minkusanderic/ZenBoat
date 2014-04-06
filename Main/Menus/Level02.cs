@@ -17,10 +17,10 @@ namespace Menu
 			Button_2.ButtonAction += HandleButton_2ButtonAction;
 			Button_3.ButtonAction += HandleButton_3ButtonAction;
 			Button_4.ButtonAction += HandleButton_4ButtonAction;
-			int l1 = LevelUIManager.GetStars(LevelLoader.searchPath + Button_1.Text + ".oel");
-			int l2 = LevelUIManager.GetStars(LevelLoader.searchPath + Button_2.Text + ".oel");
-			int l3 = LevelUIManager.GetStars(LevelLoader.searchPath + Button_3.Text + ".oel");
-			int l4 = LevelUIManager.GetStars(LevelLoader.searchPath + Button_4.Text + ".oel");
+			int l1 = LevelUIManager.GetStars(LevelLoader.searchPath + LevelLabel_1.Text + ".oel");
+			int l2 = LevelUIManager.GetStars(LevelLoader.searchPath + LevelLabel_2.Text + ".oel");
+			int l3 = LevelUIManager.GetStars(LevelLoader.searchPath + LevelLabel_3.Text + ".oel");
+			int l4 = LevelUIManager.GetStars(LevelLoader.searchPath + LevelLabel_4.Text + ".oel");
 			LevelUIManager.FilterStars( ImageBox_1_1 , ImageBox_1_2 , ImageBox_1_3 , l1 );
 			LevelUIManager.FilterStars( ImageBox_2_1 , ImageBox_2_2 , ImageBox_2_3 , l2 );
 			LevelUIManager.FilterStars( ImageBox_3_1 , ImageBox_3_2 , ImageBox_3_3 , l3 );
