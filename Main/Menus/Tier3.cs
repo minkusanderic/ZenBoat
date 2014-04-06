@@ -5,6 +5,8 @@ using Sce.PlayStation.Core.Imaging;
 using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.HighLevel.UI;
 
+using Core;
+
 namespace Menu
 {
     public partial class Tier3 : Panel

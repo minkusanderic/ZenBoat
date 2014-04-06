@@ -35,5 +35,11 @@ namespace Menu
         	UISystem.PopScene();
 			MenuLoader.loadStart = true;
         }
+		protected override void OnUpdate (float elapsedTime)
+		{
+			base.OnUpdate (elapsedTime);
+			String cc = Core.SaveGameManager.GetValueFromKey("crane_value");
+			craneCount.Text = (cc != null) ? cc : "0";
+		}
     }
 }

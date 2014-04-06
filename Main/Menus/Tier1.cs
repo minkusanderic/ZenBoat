@@ -15,21 +15,73 @@ namespace Menu
         {
             InitializeWidget();
 			
+			make_boat("BoatBlack", 500);
+			make_boat("BoatBlue", 500);
+			make_boat("BoatGreen", 500);
+			make_boat("BoatPurple", 500);
+			make_boat("BoatRed", 500);
+			make_boat("BoatTeal", 500);
+			make_boat("BoatWhite", 500);
+			make_boat("BoatYellow", 500);
+			
 			SaveGameManager.SaveString("black", "600");
 			SaveGameManager.SaveString("pink", "300");
 			
 			
 			button1.ButtonAction += HandleButton1ButtonAction;
-			button2.ButtonAction += HandleButton2ButtonAction;
+			button2.ButtonAction += HandleButton1ButtonAction;
+			button3.ButtonAction += HandleButton1ButtonAction;
+			button4.ButtonAction += HandleButton1ButtonAction;
+			button5.ButtonAction += HandleButton1ButtonAction;
+			button6.ButtonAction += HandleButton1ButtonAction;
+			button7.ButtonAction += HandleButton1ButtonAction;
+			button8.ButtonAction += HandleButton1ButtonAction;
+			
         }
-
-        void HandleButton2ButtonAction (object sender, TouchEventArgs e)
-        {
-        	ProcessBoat("pink");
-        }
+		
+		private void make_boat(String boat,int price)
+		{
+			if(SaveGameManager.GetValueFromKey(boat) == null)
+			{
+				SaveGameManager.SaveString(boat, price.ToString());
+			}
+		}
+		
 		void HandleButton1ButtonAction (object sender, TouchEventArgs e)
 		{
-			ProcessBoat("black");
+			if(sender.Equals(button1))
+			{
+				ProcessBoat("BoatBlack");
+			}
+			if(sender.Equals(button2))
+			{
+				ProcessBoat("BoatBlue");
+			}
+			if(sender.Equals(button3))
+			{
+				ProcessBoat("BoatGreen");
+			}
+			if(sender.Equals(button4))
+			{
+				ProcessBoat("BoatPurple");
+			}
+			if(sender.Equals(button5))
+			{
+				ProcessBoat("BoatRed");
+			}
+			if(sender.Equals(button6))
+			{
+				ProcessBoat("BoatTeal");
+			}
+			if(sender.Equals(button7))
+			{
+				ProcessBoat("BoatWhite");
+			}
+			if(sender.Equals(button8))
+			{
+				ProcessBoat("BoatYellow");
+			}
+			
 		}
         void ProcessBoat(String boat)
         {
@@ -58,14 +110,14 @@ namespace Menu
 			{
 				var why_dont_you_just_buy_the_boat = new Menu.StoreMessage("Would you like to buy this boat?",
 				                                                           (sender, e) => {
-					if(e.Result == DialogResult.Ok){
+					//if(e.Result == DialogResult.Ok){
 					SaveGameManager.SaveString(boat, "0");
 					crane_count -= boat_value;
 					SaveGameManager.SaveString("crane_value", crane_count.ToString());
 					Console.WriteLine("Buying Boat");
 					Globals.chosenBoat = boat;
 					Console.WriteLine("Selected Boat");	
-					}
+					//}
 				});
 			}
 			//Case 3: I don't have the boat, I want to buy it but I don't have enough cranes
