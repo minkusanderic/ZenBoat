@@ -11,7 +11,7 @@ namespace Menu
 {
     partial class Story2
     {
-        ImageBox ImageBox_1;
+        ImageBox story2;
 
         private void InitializeWidget()
         {
@@ -20,16 +20,16 @@ namespace Menu
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            ImageBox_1 = new ImageBox();
-            ImageBox_1.Name = "ImageBox_1";
+            story2 = new ImageBox();
+            story2.Name = "story2";
 
             // Story2
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
-            this.AddChildLast(ImageBox_1);
+            this.AddChildLast(story2);
 
-            // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/story2.png");
+            // story2
+            story2.Image = new ImageAsset("/Application/assets/open/stry2.png");
 
             SetWidgetLayout(orientation);
 
@@ -45,10 +45,10 @@ namespace Menu
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(59, 31);
-                    ImageBox_1.SetSize(200, 200);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story2.SetPosition(59, 31);
+                    story2.SetSize(200, 200);
+                    story2.Anchors = Anchors.None;
+                    story2.Visible = true;
 
                     break;
 
@@ -56,10 +56,10 @@ namespace Menu
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(0, 0);
-                    ImageBox_1.SetSize(960, 544);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story2.SetPosition(0, 0);
+                    story2.SetSize(960, 544);
+                    story2.Anchors = Anchors.None;
+                    story2.Visible = true;
 
                     break;
             }

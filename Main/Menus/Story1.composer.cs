@@ -11,7 +11,7 @@ namespace Menu
 {
     partial class Story1
     {
-        ImageBox ImageBox_1;
+        ImageBox story1;
 
         private void InitializeWidget()
         {
@@ -20,16 +20,16 @@ namespace Menu
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            ImageBox_1 = new ImageBox();
-            ImageBox_1.Name = "ImageBox_1";
+            story1 = new ImageBox();
+            story1.Name = "story1";
 
             // Story1
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
-            this.AddChildLast(ImageBox_1);
+            this.AddChildLast(story1);
 
-            // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/story1.png");
+            // story1
+            story1.Image = new ImageAsset("/Application/assets/open/stry1.png");
 
             SetWidgetLayout(orientation);
 
@@ -45,10 +45,10 @@ namespace Menu
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(368, 103);
-                    ImageBox_1.SetSize(200, 200);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story1.SetPosition(368, 103);
+                    story1.SetSize(200, 200);
+                    story1.Anchors = Anchors.None;
+                    story1.Visible = true;
 
                     break;
 
@@ -56,10 +56,10 @@ namespace Menu
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(0, 0);
-                    ImageBox_1.SetSize(960, 544);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story1.SetPosition(0, 0);
+                    story1.SetSize(960, 544);
+                    story1.Anchors = Anchors.None;
+                    story1.Visible = true;
 
                     break;
             }

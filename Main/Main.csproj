@@ -190,6 +190,8 @@
     <Folder Include="assets\Sound\" />
     <Folder Include="assets\Sound\SFX\" />
     <Folder Include="assets\Level Previews\" />
+    <Folder Include="assets\end\" />
+    <Folder Include="assets\open\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Cube.mdx" />
@@ -250,7 +252,6 @@
     <Content Include="assets\lilypad2.mdx" />
     <Content Include="assets\Log2.mdx" />
     <Content Include="assets\Iris.mdx" />
-    <Content Include="assets\instructions.png" />
     <Content Include="assets\Bamboo3.mdx" />
     <Content Include="assets\CherryBlossomN.mdx" />
     <Content Include="assets\CherryBlossomS.mdx" />
@@ -276,11 +277,6 @@
     <Content Include="assets\BankStraightTxtr.mdx" />
     <Content Include="assets\MapleMED.mdx" />
     <Content Include="assets\ToriiMED.mdx" />
-    <Content Include="assets\story1.png" />
-    <Content Include="assets\story2.png" />
-    <Content Include="assets\story3.png" />
-    <Content Include="assets\story4.png" />
-    <Content Include="assets\story5.png" />
     <Content Include="assets\irisbundle.mdx" />
     <Content Include="assets\LooseBlossomsC.mdx" />
     <Content Include="assets\shader.png" />
@@ -445,5 +441,19 @@
     <Content Include="assets\BoatPirate.mdx" />
     <Content Include="assets\pirate.png" />
     <Content Include="assets\BoatDuckie.mdx" />
+    <Content Include="assets\BoatPirate.mdx" />
+    <Content Include="assets\pirate.png" />
+    <Content Include="assets\end\stry10.png" />
+    <Content Include="assets\end\stry11.png" />
+    <Content Include="assets\end\stry12.png" />
+    <Content Include="assets\end\stry7.png" />
+    <Content Include="assets\end\stry8.png" />
+    <Content Include="assets\end\stry9.png" />
+    <Content Include="assets\open\stry1.png" />
+    <Content Include="assets\open\stry2.png" />
+    <Content Include="assets\open\stry3.png" />
+    <Content Include="assets\open\stry4.png" />
+    <Content Include="assets\open\stry5.png" />
+    <Content Include="assets\open\stry6.png" />
   </ItemGroup>
 </Project>

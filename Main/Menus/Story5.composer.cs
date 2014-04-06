@@ -11,7 +11,7 @@ namespace Menu
 {
     partial class Story5
     {
-        ImageBox ImageBox_1;
+        ImageBox story5;
         Button playButton;
 
         private void InitializeWidget()
@@ -21,19 +21,19 @@ namespace Menu
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            ImageBox_1 = new ImageBox();
-            ImageBox_1.Name = "ImageBox_1";
+            story5 = new ImageBox();
+            story5.Name = "story5";
             playButton = new Button();
             playButton.Name = "playButton";
 
             // Story5
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
-            this.AddChildLast(ImageBox_1);
+            this.AddChildLast(story5);
             this.AddChildLast(playButton);
 
-            // ImageBox_1
-            ImageBox_1.Image = new ImageAsset("/Application/assets/story5.png");
+            // story5
+            story5.Image = new ImageAsset("/Application/assets/open/stry5.png");
 
             // playButton
             playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -61,10 +61,10 @@ namespace Menu
                     this.SetSize(544, 960);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(0, 0);
-                    ImageBox_1.SetSize(200, 200);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story5.SetPosition(0, 0);
+                    story5.SetSize(200, 200);
+                    story5.Anchors = Anchors.None;
+                    story5.Visible = true;
 
                     playButton.SetPosition(558, 355);
                     playButton.SetSize(214, 56);
@@ -77,13 +77,13 @@ namespace Menu
                     this.SetSize(960, 544);
                     this.Anchors = Anchors.None;
 
-                    ImageBox_1.SetPosition(0, 0);
-                    ImageBox_1.SetSize(960, 544);
-                    ImageBox_1.Anchors = Anchors.None;
-                    ImageBox_1.Visible = true;
+                    story5.SetPosition(0, 0);
+                    story5.SetSize(960, 544);
+                    story5.Anchors = Anchors.None;
+                    story5.Visible = true;
 
-                    playButton.SetPosition(567, 359);
-                    playButton.SetSize(214, 56);
+                    playButton.SetPosition(667, 349);
+                    playButton.SetSize(160, 77);
                     playButton.Anchors = Anchors.None;
                     playButton.Visible = true;
 
