@@ -21,7 +21,7 @@ namespace Menu
 		
 		protected override void OnUpdate(float elapsedTime)
 		{
-			Label_1.Text = CollectibleManager.stageScore.ToString();
+			Label_1.Text = SaveGameManager.GetValueFromKey("crane_value");
 		}
         void HandleButton_1ButtonAction (object sender, TouchEventArgs e)
         {

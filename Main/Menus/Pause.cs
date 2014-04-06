@@ -23,6 +23,9 @@ namespace Menu
 			//mainmenuButton.TextFont = Core.Globals.medium_font;
 			
 			continueButton.ButtonAction += HandleContinueButtonButtonAction;
+			Button_1.ButtonAction += HandleRestartButtonButtonAction;
+			Button_2.ButtonAction += HandleLevelButtonButtonAction;
+			Button_3.ButtonAction += HandleMainmenuButtonButtonAction;
 			//restartButton.ButtonAction += HandleRestartButtonButtonAction;
 			//levelButton.ButtonAction += HandleLevelButtonButtonAction;
 			//mainmenuButton.ButtonAction += HandleMainmenuButtonButtonAction;
@@ -38,7 +41,10 @@ namespace Menu
 
         void HandleRestartButtonButtonAction (object sender, TouchEventArgs e)
         {
-			
+			Core.SceneManager.Instance.DestroyAll();
+			Core.SceneManager.Instance.Update();
+        	Main.AppMain.current_state = Main.AppState.LOADING;
+			this.Hide();
         }
 		
 		 void HandleLevelButtonButtonAction (object sender, TouchEventArgs e)
