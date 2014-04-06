@@ -121,16 +121,16 @@ namespace Menu
             this.AddChildLast(LevelLabel_4);
 
             // Button_1
-            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/001.jpg");
+            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/013.jpg");
 
             // Button_2
-            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/002.jpg");
+            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/014.jpg");
 
             // Button_3
-            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/003.jpg");
+            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/015.jpg");
 
             // Button_4
-            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/004.jpg");
+            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/016.jpg");
 
             // ImageBox_1_2
             ImageBox_1_2.Image = new ImageAsset("/Application/assets/FullStar.png");

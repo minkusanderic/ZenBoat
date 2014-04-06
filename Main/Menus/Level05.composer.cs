@@ -93,7 +93,7 @@ namespace Menu
             LevelLabel_4.Name = "LevelLabel_4";
 
             // Level05
-            this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
+            this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 0f / 255f);
             this.Clip = true;
             this.AddChildLast(Button_1);
             this.AddChildLast(Button_2);
@@ -121,16 +121,16 @@ namespace Menu
             this.AddChildLast(LevelLabel_4);
 
             // Button_1
-            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/001.jpg");
+            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/017.jpg");
 
             // Button_2
-            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/002.jpg");
+            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/018.jpg");
 
             // Button_3
-            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/003.jpg");
+            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/019.jpg");
 
             // Button_4
-            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/004.jpg");
+            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/020.jpg");
 
             // ImageBox_1_2
             ImageBox_1_2.Image = new ImageAsset("/Application/assets/FullStar.png");
