@@ -193,12 +193,9 @@
     <IrisSouth id="54" x="9464" y="548" />
     <IrisSouth id="55" x="9292" y="544" />
     <BridgeEnd id="14" x="9848" y="268" NextLevel="008.oel" />
-<<<<<<< OURS
-=======
     <Crane5 id="37" x="8680" y="28" />
     <Crane1 id="56" x="9384" y="284" />
     <Crane1 id="57" x="9616" y="316" />
->>>>>>> THEIRS
   </Entities>
   <Art>
     <Pagoda id="1" x="1892" y="232" width="50" height="50" angle="0" />
