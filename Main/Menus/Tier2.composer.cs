@@ -11,6 +11,12 @@ namespace Menu
 {
     partial class Tier2
     {
+        ImageBox ImageBox_1;
+        ImageBox ImageBox_2;
+        ImageBox ImageBox_3;
+        ImageBox ImageBox_4;
+        ImageBox ImageBox_5;
+        ImageBox ImageBox_6;
         Button button1;
         Button button2;
         Button button3;
@@ -31,6 +37,18 @@ namespace Menu
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
+            ImageBox_1 = new ImageBox();
+            ImageBox_1.Name = "ImageBox_1";
+            ImageBox_2 = new ImageBox();
+            ImageBox_2.Name = "ImageBox_2";
+            ImageBox_3 = new ImageBox();
+            ImageBox_3.Name = "ImageBox_3";
+            ImageBox_4 = new ImageBox();
+            ImageBox_4.Name = "ImageBox_4";
+            ImageBox_5 = new ImageBox();
+            ImageBox_5.Name = "ImageBox_5";
+            ImageBox_6 = new ImageBox();
+            ImageBox_6.Name = "ImageBox_6";
             button1 = new Button();
             button1.Name = "button1";
             button2 = new Button();
@@ -59,6 +77,12 @@ namespace Menu
             // Tier2
             this.BackgroundColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 0f / 255f);
             this.Clip = true;
+            this.AddChildLast(ImageBox_1);
+            this.AddChildLast(ImageBox_2);
+            this.AddChildLast(ImageBox_3);
+            this.AddChildLast(ImageBox_4);
+            this.AddChildLast(ImageBox_5);
+            this.AddChildLast(ImageBox_6);
             this.AddChildLast(button1);
             this.AddChildLast(button2);
             this.AddChildLast(button3);
@@ -71,6 +95,24 @@ namespace Menu
             this.AddChildLast(label4);
             this.AddChildLast(label5);
             this.AddChildLast(label6);
+
+            // ImageBox_1
+            ImageBox_1.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_2
+            ImageBox_2.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_3
+            ImageBox_3.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_4
+            ImageBox_4.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_5
+            ImageBox_5.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_6
+            ImageBox_6.Image = new ImageAsset("/Application/assets/halo.png");
 
             // button1
             button1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -200,6 +242,36 @@ namespace Menu
                     this.SetSize(420, 960);
                     this.Anchors = Anchors.None;
 
+                    ImageBox_1.SetPosition(3, 53);
+                    ImageBox_1.SetSize(200, 200);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    ImageBox_2.SetPosition(3, 53);
+                    ImageBox_2.SetSize(200, 200);
+                    ImageBox_2.Anchors = Anchors.None;
+                    ImageBox_2.Visible = true;
+
+                    ImageBox_3.SetPosition(3, 53);
+                    ImageBox_3.SetSize(200, 200);
+                    ImageBox_3.Anchors = Anchors.None;
+                    ImageBox_3.Visible = true;
+
+                    ImageBox_4.SetPosition(3, 53);
+                    ImageBox_4.SetSize(200, 200);
+                    ImageBox_4.Anchors = Anchors.None;
+                    ImageBox_4.Visible = true;
+
+                    ImageBox_5.SetPosition(3, 53);
+                    ImageBox_5.SetSize(200, 200);
+                    ImageBox_5.Anchors = Anchors.None;
+                    ImageBox_5.Visible = true;
+
+                    ImageBox_6.SetPosition(3, 53);
+                    ImageBox_6.SetSize(200, 200);
+                    ImageBox_6.Anchors = Anchors.None;
+                    ImageBox_6.Visible = true;
+
                     button1.SetPosition(395, 205);
                     button1.SetSize(214, 56);
                     button1.Anchors = Anchors.None;
@@ -265,6 +337,36 @@ namespace Menu
                 default:
                     this.SetSize(622, 420);
                     this.Anchors = Anchors.None;
+
+                    ImageBox_1.SetPosition(71, 71);
+                    ImageBox_1.SetSize(155, 94);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    ImageBox_2.SetPosition(227, 71);
+                    ImageBox_2.SetSize(155, 94);
+                    ImageBox_2.Anchors = Anchors.None;
+                    ImageBox_2.Visible = true;
+
+                    ImageBox_3.SetPosition(382, 71);
+                    ImageBox_3.SetSize(155, 94);
+                    ImageBox_3.Anchors = Anchors.None;
+                    ImageBox_3.Visible = true;
+
+                    ImageBox_4.SetPosition(71, 224);
+                    ImageBox_4.SetSize(155, 94);
+                    ImageBox_4.Anchors = Anchors.None;
+                    ImageBox_4.Visible = true;
+
+                    ImageBox_5.SetPosition(227, 224);
+                    ImageBox_5.SetSize(155, 94);
+                    ImageBox_5.Anchors = Anchors.None;
+                    ImageBox_5.Visible = true;
+
+                    ImageBox_6.SetPosition(382, 224);
+                    ImageBox_6.SetSize(155, 94);
+                    ImageBox_6.Anchors = Anchors.None;
+                    ImageBox_6.Visible = true;
 
                     button1.SetPosition(71, 62);
                     button1.SetSize(155, 111);

@@ -36,6 +36,10 @@ namespace Menu
             Button_3.Name = "Button_3";
 
             // Pause
+            this.BackgroundStyle = DialogBackgroundStyle.Custom;
+            this.CustomBackgroundImage = new ImageAsset("/Application/assets/grassBack.png");
+            this.CustomBackgroundNinePatchMargin = new NinePatchMargin(34, 34, 34, 34);
+            this.CustomBackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 0f / 255f);
             this.BackgroundFilterColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 191f / 255f);
             this.AddChildLast(continueButton);
             this.AddChildLast(pauseLabel);
@@ -50,6 +54,14 @@ namespace Menu
             // continueButton
             continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            continueButton.Style = ButtonStyle.Custom;
+            continueButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             // pauseLabel
             pauseLabel.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -60,14 +72,38 @@ namespace Menu
             // Button_1
             Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_1.Style = ButtonStyle.Custom;
+            Button_1.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             // Button_2
             Button_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Button_2.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_2.Style = ButtonStyle.Custom;
+            Button_2.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             // Button_3
             Button_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             Button_3.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Button_3.Style = ButtonStyle.Custom;
+            Button_3.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             SetWidgetLayout(orientation);
 
@@ -113,30 +149,30 @@ namespace Menu
 
                 default:
                     this.SetPosition(0, 0);
-                    this.SetSize(500, 500);
+                    this.SetSize(450, 500);
                     this.Anchors = Anchors.None;
 
-                    continueButton.SetPosition(143, 183);
+                    continueButton.SetPosition(118, 183);
                     continueButton.SetSize(214, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
 
-                    pauseLabel.SetPosition(122, 40);
+                    pauseLabel.SetPosition(97, 40);
                     pauseLabel.SetSize(255, 97);
                     pauseLabel.Anchors = Anchors.None;
                     pauseLabel.Visible = true;
 
-                    Button_1.SetPosition(143, 257);
+                    Button_1.SetPosition(118, 257);
                     Button_1.SetSize(214, 56);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;
 
-                    Button_2.SetPosition(143, 330);
+                    Button_2.SetPosition(118, 330);
                     Button_2.SetSize(214, 56);
                     Button_2.Anchors = Anchors.None;
                     Button_2.Visible = true;
 
-                    Button_3.SetPosition(143, 403);
+                    Button_3.SetPosition(118, 403);
                     Button_3.SetSize(214, 56);
                     Button_3.Anchors = Anchors.None;
                     Button_3.Visible = true;

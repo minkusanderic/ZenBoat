@@ -13,11 +13,11 @@ namespace Menu
     {
         ImageBox grass;
         ImageBox scroll;
-        ImageBox craneImage;
-        Label craneCount;
         Button buyButton;
         Button backButton;
         PagePanel PagePanel_1;
+        ImageBox ImageBox_1;
+        Label craneCount;
 
         private void InitializeWidget()
         {
@@ -30,40 +30,31 @@ namespace Menu
             grass.Name = "grass";
             scroll = new ImageBox();
             scroll.Name = "scroll";
-            craneImage = new ImageBox();
-            craneImage.Name = "craneImage";
-            craneCount = new Label();
-            craneCount.Name = "craneCount";
             buyButton = new Button();
             buyButton.Name = "buyButton";
             backButton = new Button();
             backButton.Name = "backButton";
             PagePanel_1 = new PagePanel();
             PagePanel_1.Name = "PagePanel_1";
+            ImageBox_1 = new ImageBox();
+            ImageBox_1.Name = "ImageBox_1";
+            craneCount = new Label();
+            craneCount.Name = "craneCount";
 
             // Select
             this.RootWidget.AddChildLast(grass);
             this.RootWidget.AddChildLast(scroll);
-            this.RootWidget.AddChildLast(craneImage);
-            this.RootWidget.AddChildLast(craneCount);
             this.RootWidget.AddChildLast(buyButton);
             this.RootWidget.AddChildLast(backButton);
             this.RootWidget.AddChildLast(PagePanel_1);
+            this.RootWidget.AddChildLast(ImageBox_1);
+            this.RootWidget.AddChildLast(craneCount);
 
             // grass
             grass.Image = new ImageAsset("/Application/assets/grassBack.png");
 
             // scroll
             scroll.Image = new ImageAsset("/Application/assets/scroll.png");
-
-            // craneImage
-            craneImage.Image = new ImageAsset("/Application/assets/Crane_Icon2.png");
-
-            // craneCount
-            craneCount.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            craneCount.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            craneCount.LineBreak = LineBreak.Character;
-            craneCount.HorizontalAlignment = HorizontalAlignment.Center;
 
             // buyButton
             buyButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -83,7 +74,7 @@ namespace Menu
             backButton.Style = ButtonStyle.Custom;
             backButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/back214.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -94,6 +85,14 @@ namespace Menu
             PagePanel_1.AddPage(new Tier2());
             PagePanel_1.AddPage(new Tier3());
             PagePanel_1.AddPage(new Tier4());
+
+            // ImageBox_1
+            ImageBox_1.Image = new ImageAsset("/Application/assets/score.png");
+
+            // craneCount
+            craneCount.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
+            craneCount.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            craneCount.LineBreak = LineBreak.Character;
 
             SetWidgetLayout(orientation);
 
@@ -119,16 +118,6 @@ namespace Menu
                     scroll.Anchors = Anchors.None;
                     scroll.Visible = true;
 
-                    craneImage.SetPosition(608, -77);
-                    craneImage.SetSize(200, 200);
-                    craneImage.Anchors = Anchors.None;
-                    craneImage.Visible = true;
-
-                    craneCount.SetPosition(746, 0);
-                    craneCount.SetSize(214, 36);
-                    craneCount.Anchors = Anchors.None;
-                    craneCount.Visible = true;
-
                     buyButton.SetPosition(439, 0);
                     buyButton.SetSize(214, 56);
                     buyButton.Anchors = Anchors.None;
@@ -143,6 +132,16 @@ namespace Menu
                     PagePanel_1.SetSize(100, 50);
                     PagePanel_1.Anchors = Anchors.None;
                     PagePanel_1.Visible = true;
+
+                    ImageBox_1.SetPosition(546, 0);
+                    ImageBox_1.SetSize(200, 200);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    craneCount.SetPosition(746, 0);
+                    craneCount.SetSize(214, 36);
+                    craneCount.Anchors = Anchors.None;
+                    craneCount.Visible = true;
 
                     break;
 
@@ -160,16 +159,6 @@ namespace Menu
                     scroll.Anchors = Anchors.None;
                     scroll.Visible = true;
 
-                    craneImage.SetPosition(390, 0);
-                    craneImage.SetSize(44, 36);
-                    craneImage.Anchors = Anchors.None;
-                    craneImage.Visible = true;
-
-                    craneCount.SetPosition(436, 0);
-                    craneCount.SetSize(134, 36);
-                    craneCount.Anchors = Anchors.None;
-                    craneCount.Visible = true;
-
                     buyButton.SetPosition(719, 480);
                     buyButton.SetSize(214, 56);
                     buyButton.Anchors = Anchors.None;
@@ -185,6 +174,16 @@ namespace Menu
                     PagePanel_1.Anchors = Anchors.None;
                     PagePanel_1.Visible = true;
 
+                    ImageBox_1.SetPosition(6, -5);
+                    ImageBox_1.SetSize(240, 99);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    craneCount.SetPosition(82, 26);
+                    craneCount.SetSize(214, 36);
+                    craneCount.Anchors = Anchors.None;
+                    craneCount.Visible = true;
+
                     break;
             }
             _currentLayoutOrientation = orientation;
@@ -192,11 +191,9 @@ namespace Menu
 
         public void UpdateLanguage()
         {
-            craneCount.Text = "584";
-
             buyButton.Text = "Buy Cranes";
 
-            backButton.Text = "Back";
+            craneCount.Text = "Cranes:";
         }
 
         private void onShowing(object sender, EventArgs e)

@@ -11,16 +11,23 @@ namespace Menu
 {
     partial class Tier3
     {
+        ImageBox ImageBox_1;
+        ImageBox ImageBox_2;
+        ImageBox ImageBox_3;
+        ImageBox ImageBox_4;
+        ImageBox ImageBox_5;
+        ImageBox ImageBox_6;
+        ImageBox ImageBox_7;
         Button button1;
         Button button2;
         Button button3;
-        Label label1;
-        Label label2;
-        Label label3;
         Button button4;
         Button button5;
         Button button6;
         Button button7;
+        Label label1;
+        Label label2;
+        Label label3;
         Label label4;
         Label label5;
         Label label6;
@@ -33,18 +40,26 @@ namespace Menu
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
+            ImageBox_1 = new ImageBox();
+            ImageBox_1.Name = "ImageBox_1";
+            ImageBox_2 = new ImageBox();
+            ImageBox_2.Name = "ImageBox_2";
+            ImageBox_3 = new ImageBox();
+            ImageBox_3.Name = "ImageBox_3";
+            ImageBox_4 = new ImageBox();
+            ImageBox_4.Name = "ImageBox_4";
+            ImageBox_5 = new ImageBox();
+            ImageBox_5.Name = "ImageBox_5";
+            ImageBox_6 = new ImageBox();
+            ImageBox_6.Name = "ImageBox_6";
+            ImageBox_7 = new ImageBox();
+            ImageBox_7.Name = "ImageBox_7";
             button1 = new Button();
             button1.Name = "button1";
             button2 = new Button();
             button2.Name = "button2";
             button3 = new Button();
             button3.Name = "button3";
-            label1 = new Label();
-            label1.Name = "label1";
-            label2 = new Label();
-            label2.Name = "label2";
-            label3 = new Label();
-            label3.Name = "label3";
             button4 = new Button();
             button4.Name = "button4";
             button5 = new Button();
@@ -53,6 +68,12 @@ namespace Menu
             button6.Name = "button6";
             button7 = new Button();
             button7.Name = "button7";
+            label1 = new Label();
+            label1.Name = "label1";
+            label2 = new Label();
+            label2.Name = "label2";
+            label3 = new Label();
+            label3.Name = "label3";
             label4 = new Label();
             label4.Name = "label4";
             label5 = new Label();
@@ -65,20 +86,48 @@ namespace Menu
             // Tier3
             this.BackgroundColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 0f / 255f);
             this.Clip = true;
+            this.AddChildLast(ImageBox_1);
+            this.AddChildLast(ImageBox_2);
+            this.AddChildLast(ImageBox_3);
+            this.AddChildLast(ImageBox_4);
+            this.AddChildLast(ImageBox_5);
+            this.AddChildLast(ImageBox_6);
+            this.AddChildLast(ImageBox_7);
             this.AddChildLast(button1);
             this.AddChildLast(button2);
             this.AddChildLast(button3);
-            this.AddChildLast(label1);
-            this.AddChildLast(label2);
-            this.AddChildLast(label3);
             this.AddChildLast(button4);
             this.AddChildLast(button5);
             this.AddChildLast(button6);
             this.AddChildLast(button7);
+            this.AddChildLast(label1);
+            this.AddChildLast(label2);
+            this.AddChildLast(label3);
             this.AddChildLast(label4);
             this.AddChildLast(label5);
             this.AddChildLast(label6);
             this.AddChildLast(label7);
+
+            // ImageBox_1
+            ImageBox_1.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_2
+            ImageBox_2.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_3
+            ImageBox_3.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_4
+            ImageBox_4.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_5
+            ImageBox_5.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_6
+            ImageBox_6.Image = new ImageAsset("/Application/assets/halo.png");
+
+            // ImageBox_7
+            ImageBox_7.Image = new ImageAsset("/Application/assets/halo.png");
 
             // button1
             button1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -115,27 +164,6 @@ namespace Menu
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
             };
-
-            // label1
-            label1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            label1.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
-            label1.LineBreak = LineBreak.Character;
-            label1.HorizontalAlignment = HorizontalAlignment.Center;
-            label1.VerticalAlignment = VerticalAlignment.Top;
-
-            // label2
-            label2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            label2.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
-            label2.LineBreak = LineBreak.Character;
-            label2.HorizontalAlignment = HorizontalAlignment.Center;
-            label2.VerticalAlignment = VerticalAlignment.Top;
-
-            // label3
-            label3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            label3.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
-            label3.LineBreak = LineBreak.Character;
-            label3.HorizontalAlignment = HorizontalAlignment.Center;
-            label3.VerticalAlignment = VerticalAlignment.Top;
 
             // button4
             button4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
@@ -185,6 +213,27 @@ namespace Menu
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
             };
 
+            // label1
+            label1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label1.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
+            label1.LineBreak = LineBreak.Character;
+            label1.HorizontalAlignment = HorizontalAlignment.Center;
+            label1.VerticalAlignment = VerticalAlignment.Top;
+
+            // label2
+            label2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label2.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
+            label2.LineBreak = LineBreak.Character;
+            label2.HorizontalAlignment = HorizontalAlignment.Center;
+            label2.VerticalAlignment = VerticalAlignment.Top;
+
+            // label3
+            label3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label3.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
+            label3.LineBreak = LineBreak.Character;
+            label3.HorizontalAlignment = HorizontalAlignment.Center;
+            label3.VerticalAlignment = VerticalAlignment.Top;
+
             // label4
             label4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             label4.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
@@ -227,6 +276,41 @@ namespace Menu
                     this.SetSize(420, 960);
                     this.Anchors = Anchors.None;
 
+                    ImageBox_1.SetPosition(3, 53);
+                    ImageBox_1.SetSize(200, 200);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    ImageBox_2.SetPosition(3, 53);
+                    ImageBox_2.SetSize(200, 200);
+                    ImageBox_2.Anchors = Anchors.None;
+                    ImageBox_2.Visible = true;
+
+                    ImageBox_3.SetPosition(3, 53);
+                    ImageBox_3.SetSize(200, 200);
+                    ImageBox_3.Anchors = Anchors.None;
+                    ImageBox_3.Visible = true;
+
+                    ImageBox_4.SetPosition(3, 53);
+                    ImageBox_4.SetSize(200, 200);
+                    ImageBox_4.Anchors = Anchors.None;
+                    ImageBox_4.Visible = true;
+
+                    ImageBox_5.SetPosition(3, 53);
+                    ImageBox_5.SetSize(200, 200);
+                    ImageBox_5.Anchors = Anchors.None;
+                    ImageBox_5.Visible = true;
+
+                    ImageBox_6.SetPosition(3, 53);
+                    ImageBox_6.SetSize(200, 200);
+                    ImageBox_6.Anchors = Anchors.None;
+                    ImageBox_6.Visible = true;
+
+                    ImageBox_7.SetPosition(3, 53);
+                    ImageBox_7.SetSize(200, 200);
+                    ImageBox_7.Anchors = Anchors.None;
+                    ImageBox_7.Visible = true;
+
                     button1.SetPosition(395, 205);
                     button1.SetSize(214, 56);
                     button1.Anchors = Anchors.None;
@@ -241,21 +325,6 @@ namespace Menu
                     button3.SetSize(214, 56);
                     button3.Anchors = Anchors.None;
                     button3.Visible = true;
-
-                    label1.SetPosition(678, 80);
-                    label1.SetSize(214, 36);
-                    label1.Anchors = Anchors.None;
-                    label1.Visible = true;
-
-                    label2.SetPosition(678, 80);
-                    label2.SetSize(214, 36);
-                    label2.Anchors = Anchors.None;
-                    label2.Visible = true;
-
-                    label3.SetPosition(678, 80);
-                    label3.SetSize(214, 36);
-                    label3.Anchors = Anchors.None;
-                    label3.Visible = true;
 
                     button4.SetPosition(395, 205);
                     button4.SetSize(214, 56);
@@ -276,6 +345,21 @@ namespace Menu
                     button7.SetSize(214, 56);
                     button7.Anchors = Anchors.None;
                     button7.Visible = true;
+
+                    label1.SetPosition(678, 80);
+                    label1.SetSize(214, 36);
+                    label1.Anchors = Anchors.None;
+                    label1.Visible = true;
+
+                    label2.SetPosition(678, 80);
+                    label2.SetSize(214, 36);
+                    label2.Anchors = Anchors.None;
+                    label2.Visible = true;
+
+                    label3.SetPosition(678, 80);
+                    label3.SetSize(214, 36);
+                    label3.Anchors = Anchors.None;
+                    label3.Visible = true;
 
                     label4.SetPosition(678, 80);
                     label4.SetSize(214, 36);
@@ -303,6 +387,41 @@ namespace Menu
                     this.SetSize(622, 420);
                     this.Anchors = Anchors.None;
 
+                    ImageBox_1.SetPosition(70, 70);
+                    ImageBox_1.SetSize(155, 94);
+                    ImageBox_1.Anchors = Anchors.None;
+                    ImageBox_1.Visible = true;
+
+                    ImageBox_2.SetPosition(225, 69);
+                    ImageBox_2.SetSize(155, 94);
+                    ImageBox_2.Anchors = Anchors.None;
+                    ImageBox_2.Visible = true;
+
+                    ImageBox_3.SetPosition(380, 69);
+                    ImageBox_3.SetSize(155, 94);
+                    ImageBox_3.Anchors = Anchors.None;
+                    ImageBox_3.Visible = true;
+
+                    ImageBox_4.SetPosition(3, 226);
+                    ImageBox_4.SetSize(155, 94);
+                    ImageBox_4.Anchors = Anchors.None;
+                    ImageBox_4.Visible = true;
+
+                    ImageBox_5.SetPosition(158, 226);
+                    ImageBox_5.SetSize(155, 94);
+                    ImageBox_5.Anchors = Anchors.None;
+                    ImageBox_5.Visible = true;
+
+                    ImageBox_6.SetPosition(310, 226);
+                    ImageBox_6.SetSize(155, 94);
+                    ImageBox_6.Anchors = Anchors.None;
+                    ImageBox_6.Visible = true;
+
+                    ImageBox_7.SetPosition(463, 226);
+                    ImageBox_7.SetSize(155, 94);
+                    ImageBox_7.Anchors = Anchors.None;
+                    ImageBox_7.Visible = true;
+
                     button1.SetPosition(70, 61);
                     button1.SetSize(155, 111);
                     button1.Anchors = Anchors.None;
@@ -317,21 +436,6 @@ namespace Menu
                     button3.SetSize(155, 111);
                     button3.Anchors = Anchors.None;
                     button3.Visible = true;
-
-                    label1.SetPosition(102, 172);
-                    label1.SetSize(90, 28);
-                    label1.Anchors = Anchors.None;
-                    label1.Visible = true;
-
-                    label2.SetPosition(257, 172);
-                    label2.SetSize(90, 28);
-                    label2.Anchors = Anchors.None;
-                    label2.Visible = true;
-
-                    label3.SetPosition(412, 172);
-                    label3.SetSize(90, 28);
-                    label3.Anchors = Anchors.None;
-                    label3.Visible = true;
 
                     button4.SetPosition(3, 218);
                     button4.SetSize(155, 111);
@@ -352,6 +456,21 @@ namespace Menu
                     button7.SetSize(155, 111);
                     button7.Anchors = Anchors.None;
                     button7.Visible = true;
+
+                    label1.SetPosition(102, 172);
+                    label1.SetSize(90, 28);
+                    label1.Anchors = Anchors.None;
+                    label1.Visible = true;
+
+                    label2.SetPosition(257, 172);
+                    label2.SetSize(90, 28);
+                    label2.Anchors = Anchors.None;
+                    label2.Visible = true;
+
+                    label3.SetPosition(412, 172);
+                    label3.SetSize(90, 28);
+                    label3.Anchors = Anchors.None;
+                    label3.Visible = true;
 
                     label4.SetPosition(35, 329);
                     label4.SetSize(90, 28);

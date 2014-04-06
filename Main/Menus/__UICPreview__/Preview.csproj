@@ -62,6 +62,12 @@
     <Content Include="..\\assets\Argyle.png" >
       <Link>assets\Argyle.png</Link>
     </Content>
+    <Content Include="..\\assets\back144.png" >
+      <Link>assets\back144.png</Link>
+    </Content>
+    <Content Include="..\\assets\back214.png" >
+      <Link>assets\back214.png</Link>
+    </Content>
     <Content Include="..\\assets\Black.png" >
       <Link>assets\Black.png</Link>
     </Content>
@@ -94,6 +100,9 @@
     </Content>
     <Content Include="..\\assets\Green.png" >
       <Link>assets\Green.png</Link>
+    </Content>
+    <Content Include="..\\assets\halo.png" >
+      <Link>assets\halo.png</Link>
     </Content>
     <Content Include="..\\assets\instructions.png" >
       <Link>assets\instructions.png</Link>

@@ -493,7 +493,7 @@ namespace Menu
 
             LevelLabel_3.Text = "015";
 
-            LevelLabel_4.Text = "16";
+            LevelLabel_4.Text = "016";
         }
 
         public void InitializeDefaultEffect()
