@@ -15,7 +15,12 @@ namespace Menu
             InitializeWidget();
 			continueButton.ButtonAction += HandleContinueButtonButtonAction;
 			
-			pauseLabel.Font = Core.Globals.medium_font;
+			pauseLabel.Font = Core.Globals.big_font;
+			Button_1.TextFont = Core.Globals.medium_font;
+			Button_2.TextFont = Core.Globals.medium_font;
+			Button_3.TextFont = Core.Globals.medium_font;
+			
+			
 			
 			continueButton.TextFont = Core.Globals.medium_font;
 			//restartButton.TextFont = Core.Globals.medium_font;
