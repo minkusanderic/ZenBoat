@@ -38,7 +38,7 @@ namespace Preview
             button1.Style = ButtonStyle.Custom;
             button1.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier4/pirate.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/pirate.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),

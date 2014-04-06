@@ -78,7 +78,7 @@ namespace Preview
             button1.Style = ButtonStyle.Custom;
             button1.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier2/OrgA.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/OrgA.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -90,7 +90,7 @@ namespace Preview
             button2.Style = ButtonStyle.Custom;
             button2.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier2/OrgB.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/OrgB.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -102,7 +102,7 @@ namespace Preview
             button3.Style = ButtonStyle.Custom;
             button3.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier2/OrgC.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/OrgC.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -114,7 +114,7 @@ namespace Preview
             button4.Style = ButtonStyle.Custom;
             button4.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier2/OrgD.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/OrgD.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -126,7 +126,7 @@ namespace Preview
             button5.Style = ButtonStyle.Custom;
             button5.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier2/OrgE.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/OrgE.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -138,7 +138,7 @@ namespace Preview
             button6.Style = ButtonStyle.Custom;
             button6.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier2/OrgF.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/OrgF.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),

@@ -6,6 +6,8 @@ using Sce.PlayStation.Core.Environment;
 using Sce.PlayStation.Core.Services;
 using Sce.PlayStation.HighLevel.UI;
 using Main;
+using Core;
+
 namespace Menu
 {
     public partial class Store : Scene
@@ -52,6 +54,27 @@ namespace Menu
 			
 			Purchased += Handle_Purchase;
 			//Consumed += Handle_Consume;
+			
+			Label_1.Font = Globals.medium_font;
+			Label_2.Font = Globals.medium_font;
+			Label_3.Font = Globals.medium_font;
+			Label_4.Font = Globals.medium_font;
+			Label_5.Font = Globals.medium_font;
+			Label_6.Font = Globals.medium_font;
+			Label_7.Font = Globals.medium_font;
+			Label_8.Font = Globals.medium_font;
+			Label_9.Font = Globals.medium_font;
+			Label_10.Font = Globals.medium_font;
+			Label_11.Font = Globals.medium_font;
+			Label_12.Font = Globals.medium_font;
+			
+			BackButton.TextFont = Globals.medium_font;
+			Button_1.TextFont = Globals.medium_font;
+			Button_2.TextFont = Globals.medium_font;
+			Button_3.TextFont = Globals.medium_font;
+			Button_4.TextFont = Globals.medium_font;
+			Button_5.TextFont = Globals.medium_font;
+			Button_6.TextFont = Globals.medium_font;
             
         }
 				
