@@ -48,17 +48,7 @@ namespace Main
 					
 					SaveGameManager.SaveString( Globals.unlockedLevelPrefix + LevelLoader.searchPath + "015.oel" , "unlocked" );
 					
-					for (int i = 1; i < 21; i++)
-					{
-						if (i < 10)
-						{
-							SaveGameManager.SaveString( Globals.unlockedLevelPrefix + LevelLoader.searchPath + "00" + i + ".oel" , "unlocked" );	
-						}
-						else
-						{
-							SaveGameManager.SaveString( Globals.unlockedLevelPrefix + LevelLoader.searchPath + "0" + i + ".oel" , "unlocked" );	
-						}
-					}
+
 					
 					break;
 					

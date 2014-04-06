@@ -47,9 +47,12 @@ namespace Main
 														SaveGameManager.SaveString( Globals.completedLevelPrefix + Globals.current_level , Globals.true_ );
 				// calc max cranes to curretn cranes
 				int current_max_crane_count = 0;
+				if ( !SaveGameManager.ContainsSaveString(Globals.craneTotalForLevelPrefix + Globals.current_level) );
+				{
+					SaveGameManager.SaveString( Globals.craneMaxForLevelPrefix + Globals.current_level, Globals.currentCraneCountOnLevel.ToString() );	
+				}
 				String current_max_crane_count_string = SaveGameManager.GetValueFromKey( Globals.craneTotalForLevelPrefix + Globals.current_level );
 				int.TryParse( current_max_crane_count_string , out current_max_crane_count );
-				Console.WriteLine( "current_max_crane_count{0}\tcurrentcranecnt{1}" , current_max_crane_count , Globals.currentCraneCountOnLevel );
 				if ( Globals.currentCraneCountOnLevel >= current_max_crane_count )
 				{
 					SaveGameManager.SaveString( Globals.craneMaxForLevelPrefix + Globals.current_level, Globals.currentCraneCountOnLevel.ToString() );
