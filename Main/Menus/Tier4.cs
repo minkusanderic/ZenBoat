@@ -18,6 +18,8 @@ namespace Menu
 			make_boat("BoatPirate", 10000);
 			
 			button1.ButtonAction += HandleButtonAction;
+			
+			label1.Font = Globals.medium_font;
         }
 		
 		private void make_boat(String boat,int price)

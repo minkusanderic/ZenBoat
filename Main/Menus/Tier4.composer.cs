@@ -86,8 +86,8 @@ namespace Menu
                     button1.Anchors = Anchors.None;
                     button1.Visible = true;
 
-                    label1.SetPosition(265, 251);
-                    label1.SetSize(90, 28);
+                    label1.SetPosition(260, 251);
+                    label1.SetSize(102, 28);
                     label1.Anchors = Anchors.None;
                     label1.Visible = true;
 

@@ -20243,9 +20243,9 @@
                     <Nodes />
                     <LayoutProperty>
                       <LayoutProperty>
-                        <X>265.5</X>
+                        <X>260</X>
                         <Y>251.5</Y>
-                        <Width>90</Width>
+                        <Width>102</Width>
                         <Height>28</Height>
                         <Visible>true</Visible>
                         <Anchors>None</Anchors>

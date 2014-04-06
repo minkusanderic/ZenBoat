@@ -33,14 +33,14 @@ namespace Menu
 			button7.ButtonAction += HandleButton1ButtonAction;
 			button8.ButtonAction += HandleButton1ButtonAction;
 			
-			label1.Font = Globals.small_font;
-			label2.Font = Globals.small_font;
-			label3.Font = Globals.small_font;
-			label4.Font = Globals.small_font;
-			label5.Font = Globals.small_font;
-			label6.Font = Globals.small_font;
-			label7.Font = Globals.small_font;
-			label8.Font = Globals.small_font;
+			label1.Font = Globals.medium_font;
+			label2.Font = Globals.medium_font;
+			label3.Font = Globals.medium_font;
+			label4.Font = Globals.medium_font;
+			label5.Font = Globals.medium_font;
+			label6.Font = Globals.medium_font;
+			label7.Font = Globals.medium_font;
+			label8.Font = Globals.medium_font;
 			
 			
         }
