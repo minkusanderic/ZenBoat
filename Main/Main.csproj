@@ -306,7 +306,6 @@
     <Content Include="assets\RotatedTulipBunch2.mdx" />
     <Content Include="assets\TulipBunch2.mdx" />
     <Content Include="assets\credits.png" />
-    <Content Include="assets\title.png" />
     <Content Include="assets\BlueBoat.mdx" />
     <Content Include="assets\GreenBoat.mdx" />
     <Content Include="assets\PurpleBoat.mdx" />
@@ -469,5 +468,7 @@
     <Content Include="assets\end\stry07.png" />
     <Content Include="assets\end\stry08.png" />
     <Content Include="assets\end\stry09.png" />
+    <Content Include="assets\halo.png" />
+    <Content Include="assets\title.png" />
   </ItemGroup>
 </Project>
