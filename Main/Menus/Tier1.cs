@@ -101,6 +101,20 @@ namespace Menu
 			}
 		}
 		
+		protected override void OnUpdate (float elapsedTime)
+		{
+			base.OnUpdate (elapsedTime);
+			ImageBox_1.Visible = (Globals.chosenBoat == "BoatBlack");
+			ImageBox_2.Visible = (Globals.chosenBoat == "BoatBlue");
+			ImageBox_3.Visible = (Globals.chosenBoat == "BoatGreen");
+			ImageBox_4.Visible = (Globals.chosenBoat == "BoatPurple");
+			ImageBox_5.Visible = (Globals.chosenBoat == "BoatRed");
+			ImageBox_6.Visible = (Globals.chosenBoat == "BoatTeal");
+			ImageBox_7.Visible = (Globals.chosenBoat == "BoatWhite");
+			ImageBox_8.Visible = (Globals.chosenBoat == "BoatYellow");
+			
+		}
+		
 		void HandleButton1ButtonAction (object sender, TouchEventArgs e)
 		{
 			if(sender.Equals(button1))

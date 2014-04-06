@@ -76,7 +76,17 @@ namespace Menu
 				SaveGameManager.SaveString(boat, price.ToString());
 			}
 		}
-		
+		protected override void OnUpdate (float elapsedTime)
+		{
+			base.OnUpdate (elapsedTime);
+			ImageBox_1.Visible = (Globals.chosenBoat == "BoatOrg1");
+			ImageBox_2.Visible = (Globals.chosenBoat == "BoatOrg2");
+			ImageBox_3.Visible = (Globals.chosenBoat == "BoatOrg3");
+			ImageBox_4.Visible = (Globals.chosenBoat == "BoatOrg4");
+			ImageBox_5.Visible = (Globals.chosenBoat == "BoatOrg5");
+			ImageBox_6.Visible = (Globals.chosenBoat == "BoatOrg6");
+			
+		}
 		void HandleButtonAction (object sender, TouchEventArgs e)
         {
 			if(sender.Equals(button1))

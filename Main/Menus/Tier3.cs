@@ -71,6 +71,10 @@ namespace Menu
 			{
 				label6.Visible = false;
 			}
+			if(SaveGameManager.GetValueFromKey("BoatPat7") == "0")
+			{
+				label7.Visible = false;
+			}
         }
 		
 		private void make_boat(String boat,int price)
@@ -79,6 +83,19 @@ namespace Menu
 			{
 				SaveGameManager.SaveString(boat, price.ToString());
 			}
+		}
+		
+		protected override void OnUpdate (float elapsedTime)
+		{
+			base.OnUpdate (elapsedTime);
+			ImageBox_1.Visible = (Globals.chosenBoat == "BoatPat1");
+			ImageBox_2.Visible = (Globals.chosenBoat == "BoatPat2");
+			ImageBox_3.Visible = (Globals.chosenBoat == "BoatPat3");
+			ImageBox_4.Visible = (Globals.chosenBoat == "BoatPat4");
+			ImageBox_5.Visible = (Globals.chosenBoat == "BoatPat5");
+			ImageBox_6.Visible = (Globals.chosenBoat == "BoatPat6");
+			ImageBox_7.Visible = (Globals.chosenBoat == "BoatPat7");
+			
 		}
 		
         void HandleButtonAction (object sender, TouchEventArgs e)
@@ -219,6 +236,10 @@ namespace Menu
 						if(SaveGameManager.GetValueFromKey("BoatPat6") == "0")
 						{
 							label6.Visible = false;
+						}
+						if(SaveGameManager.GetValueFromKey("BoatPat7") == "0")
+						{
+							label7.Visible = false;
 						}
 					}
 				});

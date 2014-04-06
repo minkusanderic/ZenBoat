@@ -36,6 +36,14 @@ namespace Menu
 				label2.Visible = false;
 			}
         }
+		protected override void OnUpdate (float elapsedTime)
+		{
+			base.OnUpdate (elapsedTime);
+			ImageBox_1.Visible = (Globals.chosenBoat == "BoatPirate");
+			ImageBox_2.Visible = (Globals.chosenBoat == "BoatDuckie");
+
+			
+		}
 		
 		private void make_boat(String boat,int price)
 		{
