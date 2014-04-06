@@ -32,9 +32,7 @@ namespace Main
 			ent.Transform.Position += new Vector2(width/2, -height/2);
 			//ent.Transform.Position = new Vector2(x,544-y) + Vector2.Rotate(new Vector2(width/2, 0), (float)-angle) - Vector2.Rotate(new Vector2(0, height/2), (float)-angle);
 			//ent.Transform.Rotation = new Vector2( (float)Math.Cos(angle) , -(float)Math.Sin( angle ) );
-			SpriteComponent sc = new SpriteComponent("/Application/assets/Arrow.png");
-			sc.scale.X = width/250f;
-			sc.scale.Y = height/250f;
+			
 			//CurrentModifier current_mod = new CurrentModifier("/Application/assets/Current.png");
 			//current_mod.scale.X = width/50;//Math.Cos(width)*;
 			//current_mod.scale.Y = height/50;
