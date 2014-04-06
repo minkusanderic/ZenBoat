@@ -24,13 +24,28 @@ namespace Main
 		{
 		}
 		
+		private void show_splash_screen(GraphicsContext graphics)
+		{
+			graphics.SetViewport(0, 0, graphics.Screen.Width, graphics.Screen.Height);
+			// Initialize the UI Toolkit
+			UISystem.Initialize(graphics);
+			UISystem.SetScene(new Menu.Loading());
+			graphics.SetClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+			graphics.Clear();
+			SystemEvents.CheckEvents();
+			UISystem.Update(Touch.GetData(0));
+			UISystem.Render();
+			graphics.SwapBuffers();
+			SystemEvents.CheckEvents();
+			graphics.SwapBuffers();
+		}
+		
 		public static void Load ( )
 		{
 			// Set up the graphics system
 			GraphicsContext graphics = ((GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem))).graphics;
-			// Initialize the UI Toolkit
-			UISystem.Initialize(graphics);
 			
+			//show_splash_screen();
 			// Create the scenes
 			var start = new Menu.StartMenu();
 			var instr = new Menu.Instructions();
