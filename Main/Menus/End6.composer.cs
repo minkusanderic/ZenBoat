@@ -41,7 +41,7 @@ namespace Menu
             continueButton.Style = ButtonStyle.Custom;
             continueButton.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = null,
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign144.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
@@ -82,7 +82,7 @@ namespace Menu
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
 
-                    continueButton.SetPosition(681, 100);
+                    continueButton.SetPosition(688, 100);
                     continueButton.SetSize(159, 76);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;
@@ -94,6 +94,7 @@ namespace Menu
 
         public void UpdateLanguage()
         {
+            continueButton.Text = "Continue";
         }
 
         public void InitializeDefaultEffect()

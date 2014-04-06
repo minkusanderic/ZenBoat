@@ -202,7 +202,7 @@ namespace Menu
 			}
 			
 			//Case 2: I don't have the boat, I want to buy it and I have enough cranes
-			else if(boat_value < crane_count)
+			else if(boat_value <= crane_count)
 			{
 				var why_dont_you_just_buy_the_boat = new Menu.StoreMessage("Would you like to buy this boat?",
 				                                                           (sender, e) => {

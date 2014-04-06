@@ -22411,7 +22411,7 @@
                     <Nodes />
                     <LayoutProperty>
                       <LayoutProperty>
-                        <X>681</X>
+                        <X>688.06068654224623</X>
                         <Y>100</Y>
                         <Width>159</Width>
                         <Height>76</Height>
@@ -22433,7 +22433,7 @@
                       <VariableName>continueButton</VariableName>
                       <BackgroundButtonImage xmlns:d12p1="http://schemas.datacontract.org/2004/07/UIComposer.ModelData">
                         <d12p1:BackgroundDisablelImage i:nil="true" />
-                        <d12p1:BackgroundNormalImage i:nil="true" />
+                        <d12p1:BackgroundNormalImage>sign144.png</d12p1:BackgroundNormalImage>
                         <d12p1:BackgroundPressImage i:nil="true" />
                       </BackgroundButtonImage>
                       <BackgroundType>Custom</BackgroundType>
@@ -22456,7 +22456,7 @@
                         <d12p1:RightColumnWidth>42</d12p1:RightColumnWidth>
                         <d12p1:TopRowHeight>27</d12p1:TopRowHeight>
                       </NinePatchMargin>
-                      <Text></Text>
+                      <Text>Continue</Text>
                       <TextAlpha>100</TextAlpha>
                       <TextColor xmlns:d12p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
                         <d12p1:A>255</d12p1:A>
