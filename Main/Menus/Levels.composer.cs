@@ -63,6 +63,7 @@ namespace Menu
             PagePanel_1.AddPage(new Level04());
             PagePanel_1.AddPage(new Level05());
             PagePanel_1.AddPage(new Level06());
+            PagePanel_1.AddPage(new Level07());
 
             SetWidgetLayout(orientation);
 

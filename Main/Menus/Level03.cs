@@ -25,6 +25,11 @@ namespace Menu
 			LevelUIManager.FilterStars( ImageBox_2_1 , ImageBox_2_2 , ImageBox_2_3 , l2 );
 			LevelUIManager.FilterStars( ImageBox_3_1 , ImageBox_3_2 , ImageBox_3_3 , l3 );
 			LevelUIManager.FilterStars( ImageBox_4_1 , ImageBox_4_2 , ImageBox_4_3 , l4 );
+			
+						Label_1.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 36, FontStyle.Bold);
+			Label_2.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 36, FontStyle.Bold);
+			Label_3.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 36, FontStyle.Bold);
+			Label_4.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 36, FontStyle.Bold);
 			if ( SaveGameManager.GetValueFromKey( 
 			      Globals.unlockedLevelPrefix + LevelLoader.searchPath + LevelLabel_1.Text + ".oel" ) != "unlocked" )
 			{

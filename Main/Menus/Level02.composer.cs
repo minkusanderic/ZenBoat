@@ -121,16 +121,16 @@ namespace Menu
             this.AddChildLast(LevelLabel_4);
 
             // Button_1
-            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/001.jpg");
+            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/005.jpg");
 
             // Button_2
-            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/002.jpg");
+            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/006.jpg");
 
             // Button_3
-            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/003.jpg");
+            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/007.jpg");
 
             // Button_4
-            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/004.jpg");
+            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/008.jpg");
 
             // ImageBox_1_2
             ImageBox_1_2.Image = new ImageAsset("/Application/assets/FullStar.png");
@@ -352,7 +352,7 @@ namespace Menu
                     this.SetSize(700, 400);
                     this.Anchors = Anchors.None;
 
-                    Button_1.SetPosition(8, 11);
+                    Button_1.SetPosition(10, 11);
                     Button_1.SetSize(334, 174);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;

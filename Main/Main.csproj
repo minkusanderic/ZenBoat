@@ -156,6 +156,8 @@
     <Compile Include="Menus\Level05.composer.cs" />
     <Compile Include="Menus\Level05.cs" />
     <Compile Include="Menus\Level06.composer.cs" />
+    <Compile Include="Menus\Level07.composer.cs" />
+    <Compile Include="Menus\Level07.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />
@@ -430,5 +432,16 @@
     <Content Include="assets\BoatPat5.mdx" />
     <Content Include="assets\BoatPat6.mdx" />
     <Content Include="assets\BoatPat7.mdx" />
+    <Content Include="Levels\021.oel" />
+    <Content Include="Levels\022.oel" />
+    <Content Include="Levels\023.oel" />
+    <Content Include="Levels\024.oel" />
+    <Content Include="Levels\025.oel" />
+    <Content Include="assets\021.jpg" />
+    <Content Include="assets\022.jpg" />
+    <Content Include="assets\023.jpg" />
+    <Content Include="assets\024.jpg" />
+    <Content Include="assets\025.jpg" />
+    <Content Include="assets\BoatPirate.mdx" />
   </ItemGroup>
 </Project>
