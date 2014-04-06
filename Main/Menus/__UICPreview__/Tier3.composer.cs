@@ -86,7 +86,7 @@ namespace Preview
             button1.Style = ButtonStyle.Custom;
             button1.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Argyle.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier3/Argyle.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -98,7 +98,7 @@ namespace Preview
             button2.Style = ButtonStyle.Custom;
             button2.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/BlackDot.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier3/BlackDot.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -110,7 +110,7 @@ namespace Preview
             button3.Style = ButtonStyle.Custom;
             button3.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Checker.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier3/Checker.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -143,7 +143,7 @@ namespace Preview
             button4.Style = ButtonStyle.Custom;
             button4.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/PinkDot.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier3/PinkDot.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -155,7 +155,7 @@ namespace Preview
             button5.Style = ButtonStyle.Custom;
             button5.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Plaid.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier3/Plaid.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -167,7 +167,7 @@ namespace Preview
             button6.Style = ButtonStyle.Custom;
             button6.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/Rainbow.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier3/Rainbow.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -179,7 +179,7 @@ namespace Preview
             button7.Style = ButtonStyle.Custom;
             button7.CustomImage = new CustomButtonImageSettings()
             {
-                BackgroundNormalImage = new ImageAsset("/Application/assets/RainbowDot.png"),
+                BackgroundNormalImage = new ImageAsset("/Application/assets/Tier3/RainbowDot.png"),
                 BackgroundPressedImage = null,
                 BackgroundDisabledImage = null,
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
@@ -343,7 +343,7 @@ namespace Preview
                     button5.Anchors = Anchors.None;
                     button5.Visible = true;
 
-                    button6.SetPosition(317, 218);
+                    button6.SetPosition(310, 218);
                     button6.SetSize(155, 111);
                     button6.Anchors = Anchors.None;
                     button6.Visible = true;
@@ -363,7 +363,7 @@ namespace Preview
                     label5.Anchors = Anchors.None;
                     label5.Visible = true;
 
-                    label6.SetPosition(348, 329);
+                    label6.SetPosition(341, 329);
                     label6.SetSize(90, 28);
                     label6.Anchors = Anchors.None;
                     label6.Visible = true;
@@ -392,7 +392,7 @@ namespace Preview
 
             label6.Text = "5,000";
 
-            label7.Text = "500";
+            label7.Text = "5,000";
         }
 
         public void InitializeDefaultEffect()

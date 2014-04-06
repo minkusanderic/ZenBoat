@@ -15,12 +15,9 @@ namespace Menu
         {
             InitializeWidget();
 			
+			make_boat("BoatPirate", 10000);
+			
 			button1.ButtonAction += HandleButtonAction;
-			button2.ButtonAction += HandleButtonAction;
-			button3.ButtonAction += HandleButtonAction;
-			button4.ButtonAction += HandleButtonAction;
-			button5.ButtonAction += HandleButtonAction;
-			button6.ButtonAction += HandleButtonAction;
         }
 		
 		private void make_boat(String boat,int price)
@@ -33,7 +30,10 @@ namespace Menu
 
         void HandleButtonAction (object sender, TouchEventArgs e)
         {
-			
+			if(sender.Equals(button1))
+			{
+				ProcessBoat("BoatPirate");
+			}
         }
 		
 		void ProcessBoat(String boat)

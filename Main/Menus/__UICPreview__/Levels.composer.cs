@@ -55,12 +55,23 @@ namespace Preview
             // backButton
             backButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
             backButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            backButton.Style = ButtonStyle.Custom;
+            backButton.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = new ImageAsset("/Application/assets/sign214.png"),
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             // PagePanel_1
             PagePanel_1.AddPage(new Level01());
             PagePanel_1.AddPage(new Level02());
             PagePanel_1.AddPage(new Level03());
             PagePanel_1.AddPage(new Level04());
+            PagePanel_1.AddPage(new Level05());
+            PagePanel_1.AddPage(new Level06());
+            PagePanel_1.AddPage(new Level07());
 
             SetWidgetLayout(orientation);
 

@@ -6,6 +6,5 @@ File name: '/Application/assets/star.jpg'
   at Sce.PlayStation.HighLevel.UI.ImageAsset..ctor (System.String filename) [0x00000] in <filename unknown>:0 
   at Preview.Level01.InitializeWidget (LayoutOrientation orientation) [0x00000] in <filename unknown>:0 
   at Preview.Level01..ctor () [0x00000] in <filename unknown>:0 
-  at Preview.Levels.InitializeWidget (LayoutOrientation orientation) [0x00000] in <filename unknown>:0 
-  at Preview.Levels..ctor () [0x00000] in <filename unknown>:0 
+  at Preview.__DummyScene..ctor () [0x00000] in <filename unknown>:0 
   at Preview.__DummyProgram.Main (System.String[] args) [0x00000] in <filename unknown>:0 

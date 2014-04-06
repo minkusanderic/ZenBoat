@@ -31,33 +31,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="Levels.composer.cs" />
-    <Compile Include="Levels.cs" />
-    <Compile Include="Level01.composer.cs" />
-    <Compile Include="Level01.cs" />
-    <Compile Include="Level02.composer.cs" />
-    <Compile Include="Level02.cs" />
+    <Compile Include="__DummyScene.cs" />
     <Compile Include="Level03.composer.cs" />
     <Compile Include="Level03.cs" />
-    <Compile Include="Level04.composer.cs" />
-    <Compile Include="Level04.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\\assets\Argyle.png" >
-      <Link>assets\Argyle.png</Link>
+    <Content Include="..\\assets\021.jpg" >
+      <Link>assets\021.jpg</Link>
     </Content>
-    <Content Include="..\\assets\Black.png" >
-      <Link>assets\Black.png</Link>
+    <Content Include="..\\assets\022.jpg" >
+      <Link>assets\022.jpg</Link>
     </Content>
-    <Content Include="..\\assets\BlackDot.png" >
-      <Link>assets\BlackDot.png</Link>
+    <Content Include="..\\assets\023.jpg" >
+      <Link>assets\023.jpg</Link>
     </Content>
-    <Content Include="..\\assets\Blue.png" >
-      <Link>assets\Blue.png</Link>
+    <Content Include="..\\assets\024.jpg" >
+      <Link>assets\024.jpg</Link>
     </Content>
-    <Content Include="..\\assets\Checker.png" >
-      <Link>assets\Checker.png</Link>
+    <Content Include="..\\assets\025.jpg" >
+      <Link>assets\025.jpg</Link>
     </Content>
     <Content Include="..\\assets\Crane_Icon2.png" >
       <Link>assets\Crane_Icon2.png</Link>
@@ -74,53 +67,14 @@
     <Content Include="..\\assets\grassBack.png" >
       <Link>assets\grassBack.png</Link>
     </Content>
-    <Content Include="..\\assets\Green.png" >
-      <Link>assets\Green.png</Link>
-    </Content>
     <Content Include="..\\assets\instructions.png" >
       <Link>assets\instructions.png</Link>
     </Content>
     <Content Include="..\\assets\instructionsB.png" >
       <Link>assets\instructionsB.png</Link>
     </Content>
-    <Content Include="..\\assets\OrgA.png" >
-      <Link>assets\OrgA.png</Link>
-    </Content>
-    <Content Include="..\\assets\OrgB.png" >
-      <Link>assets\OrgB.png</Link>
-    </Content>
-    <Content Include="..\\assets\OrgC.png" >
-      <Link>assets\OrgC.png</Link>
-    </Content>
-    <Content Include="..\\assets\OrgD.png" >
-      <Link>assets\OrgD.png</Link>
-    </Content>
-    <Content Include="..\\assets\OrgE.png" >
-      <Link>assets\OrgE.png</Link>
-    </Content>
-    <Content Include="..\\assets\OrgF.png" >
-      <Link>assets\OrgF.png</Link>
-    </Content>
     <Content Include="..\\assets\Pause.png" >
       <Link>assets\Pause.png</Link>
-    </Content>
-    <Content Include="..\\assets\Pink.png" >
-      <Link>assets\Pink.png</Link>
-    </Content>
-    <Content Include="..\\assets\PinkDot.png" >
-      <Link>assets\PinkDot.png</Link>
-    </Content>
-    <Content Include="..\\assets\Plaid.png" >
-      <Link>assets\Plaid.png</Link>
-    </Content>
-    <Content Include="..\\assets\Rainbow.png" >
-      <Link>assets\Rainbow.png</Link>
-    </Content>
-    <Content Include="..\\assets\RainbowDot.png" >
-      <Link>assets\RainbowDot.png</Link>
-    </Content>
-    <Content Include="..\\assets\Red.png" >
-      <Link>assets\Red.png</Link>
     </Content>
     <Content Include="..\\assets\scroll.png" >
       <Link>assets\scroll.png</Link>
@@ -146,17 +100,8 @@
     <Content Include="..\\assets\story5.png" >
       <Link>assets\story5.png</Link>
     </Content>
-    <Content Include="..\\assets\Teal.png" >
-      <Link>assets\Teal.png</Link>
-    </Content>
     <Content Include="..\\assets\title.png" >
       <Link>assets\title.png</Link>
-    </Content>
-    <Content Include="..\\assets\White.png" >
-      <Link>assets\White.png</Link>
-    </Content>
-    <Content Include="..\\assets\Yellow.png" >
-      <Link>assets\Yellow.png</Link>
     </Content>
     <Content Include="..\\assets\Level Previews\001.jpg" >
       <Link>assets\Level Previews\001.jpg</Link>
@@ -217,6 +162,72 @@
     </Content>
     <Content Include="..\\assets\Level Previews\020.jpg" >
       <Link>assets\Level Previews\020.jpg</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\Black.png" >
+      <Link>assets\Tier1\Black.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\Blue.png" >
+      <Link>assets\Tier1\Blue.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\Green.png" >
+      <Link>assets\Tier1\Green.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\Pink.png" >
+      <Link>assets\Tier1\Pink.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\Red.png" >
+      <Link>assets\Tier1\Red.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\Teal.png" >
+      <Link>assets\Tier1\Teal.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\White.png" >
+      <Link>assets\Tier1\White.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier1\Yellow.png" >
+      <Link>assets\Tier1\Yellow.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier2\OrgA.png" >
+      <Link>assets\Tier2\OrgA.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier2\OrgB.png" >
+      <Link>assets\Tier2\OrgB.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier2\OrgC.png" >
+      <Link>assets\Tier2\OrgC.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier2\OrgD.png" >
+      <Link>assets\Tier2\OrgD.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier2\OrgE.png" >
+      <Link>assets\Tier2\OrgE.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier2\OrgF.png" >
+      <Link>assets\Tier2\OrgF.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier3\Argyle.png" >
+      <Link>assets\Tier3\Argyle.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier3\BlackDot.png" >
+      <Link>assets\Tier3\BlackDot.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier3\Checker.png" >
+      <Link>assets\Tier3\Checker.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier3\PinkDot.png" >
+      <Link>assets\Tier3\PinkDot.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier3\Plaid.png" >
+      <Link>assets\Tier3\Plaid.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier3\Rainbow.png" >
+      <Link>assets\Tier3\Rainbow.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier3\RainbowDot.png" >
+      <Link>assets\Tier3\RainbowDot.png</Link>
+    </Content>
+    <Content Include="..\\assets\Tier4\pirate.png" >
+      <Link>assets\Tier4\pirate.png</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>

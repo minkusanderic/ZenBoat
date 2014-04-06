@@ -350,7 +350,7 @@ namespace Menu
                     button2.Anchors = Anchors.None;
                     button2.Visible = true;
 
-                    button3.SetPosition(317, 63);
+                    button3.SetPosition(310, 63);
                     button3.SetSize(155, 111);
                     button3.Anchors = Anchors.None;
                     button3.Visible = true;
@@ -370,7 +370,7 @@ namespace Menu
                     button6.Anchors = Anchors.None;
                     button6.Visible = true;
 
-                    button7.SetPosition(317, 218);
+                    button7.SetPosition(310, 217);
                     button7.SetSize(155, 111);
                     button7.Anchors = Anchors.None;
                     button7.Visible = true;
@@ -390,7 +390,7 @@ namespace Menu
                     label2.Anchors = Anchors.None;
                     label2.Visible = true;
 
-                    label3.SetPosition(349, 173);
+                    label3.SetPosition(343, 173);
                     label3.SetSize(90, 28);
                     label3.Anchors = Anchors.None;
                     label3.Visible = true;
@@ -410,7 +410,7 @@ namespace Menu
                     label6.Anchors = Anchors.None;
                     label6.Visible = true;
 
-                    label7.SetPosition(349, 329);
+                    label7.SetPosition(343, 328);
                     label7.SetSize(90, 28);
                     label7.Anchors = Anchors.None;
                     label7.Visible = true;

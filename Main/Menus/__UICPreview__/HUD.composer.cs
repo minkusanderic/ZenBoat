@@ -11,9 +11,9 @@ namespace Preview
 {
     partial class HUD
     {
-        Button Button_1;
         Label Label_1;
         ImageBox ImageBox_1;
+        Button Button_1;
 
         private void InitializeWidget()
         {
@@ -22,21 +22,17 @@ namespace Preview
 
         private void InitializeWidget(LayoutOrientation orientation)
         {
-            Button_1 = new Button();
-            Button_1.Name = "Button_1";
             Label_1 = new Label();
             Label_1.Name = "Label_1";
             ImageBox_1 = new ImageBox();
             ImageBox_1.Name = "ImageBox_1";
+            Button_1 = new Button();
+            Button_1.Name = "Button_1";
 
             // HUD
-            this.RootWidget.AddChildLast(Button_1);
             this.RootWidget.AddChildLast(Label_1);
             this.RootWidget.AddChildLast(ImageBox_1);
-
-            // Button_1
-            Button_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            Button_1.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            this.RootWidget.AddChildLast(Button_1);
 
             // Label_1
             Label_1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
@@ -44,8 +40,18 @@ namespace Preview
             Label_1.LineBreak = LineBreak.Character;
 
             // ImageBox_1
-            ImageBox_1.Image = null;
-            ImageBox_1.ImageScaleType = ImageScaleType.Center;
+            ImageBox_1.Image = new ImageAsset("/Application/assets/Crane_Icon2.png");
+
+            // Button_1
+            Button_1.IconImage = new ImageAsset("/Application/assets/Pause.png");
+            Button_1.Style = ButtonStyle.Custom;
+            Button_1.CustomImage = new CustomButtonImageSettings()
+            {
+                BackgroundNormalImage = null,
+                BackgroundPressedImage = null,
+                BackgroundDisabledImage = null,
+                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
+            };
 
             SetWidgetLayout(orientation);
 
@@ -61,11 +67,6 @@ namespace Preview
                     this.DesignWidth = 544;
                     this.DesignHeight = 960;
 
-                    Button_1.SetPosition(0, 0);
-                    Button_1.SetSize(214, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
-
                     Label_1.SetPosition(746, 0);
                     Label_1.SetSize(214, 36);
                     Label_1.Anchors = Anchors.None;
@@ -76,26 +77,31 @@ namespace Preview
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
 
+                    Button_1.SetPosition(733, 46);
+                    Button_1.SetSize(214, 56);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
+
                     break;
 
                 default:
                     this.DesignWidth = 960;
                     this.DesignHeight = 544;
 
-                    Button_1.SetPosition(0, 0);
-                    Button_1.SetSize(214, 56);
-                    Button_1.Anchors = Anchors.None;
-                    Button_1.Visible = true;
-
-                    Label_1.SetPosition(746, 0);
+                    Label_1.SetPosition(82, 26);
                     Label_1.SetSize(214, 36);
                     Label_1.Anchors = Anchors.None;
                     Label_1.Visible = true;
 
-                    ImageBox_1.SetPosition(702, 0);
-                    ImageBox_1.SetSize(43, 36);
+                    ImageBox_1.SetPosition(21, 20);
+                    ImageBox_1.SetSize(50, 49);
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
+
+                    Button_1.SetPosition(842, 0);
+                    Button_1.SetSize(100, 88);
+                    Button_1.Anchors = Anchors.None;
+                    Button_1.Visible = true;
 
                     break;
             }
@@ -104,8 +110,6 @@ namespace Preview
 
         public void UpdateLanguage()
         {
-            Button_1.Text = "Pause";
-
             Label_1.Text = "Cranes:";
         }
 

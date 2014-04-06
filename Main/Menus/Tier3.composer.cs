@@ -343,7 +343,7 @@ namespace Menu
                     button5.Anchors = Anchors.None;
                     button5.Visible = true;
 
-                    button6.SetPosition(317, 218);
+                    button6.SetPosition(310, 218);
                     button6.SetSize(155, 111);
                     button6.Anchors = Anchors.None;
                     button6.Visible = true;
@@ -363,7 +363,7 @@ namespace Menu
                     label5.Anchors = Anchors.None;
                     label5.Visible = true;
 
-                    label6.SetPosition(348, 329);
+                    label6.SetPosition(341, 329);
                     label6.SetSize(90, 28);
                     label6.Anchors = Anchors.None;
                     label6.Visible = true;
@@ -392,7 +392,7 @@ namespace Menu
 
             label6.Text = "5,000";
 
-            label7.Text = "500";
+            label7.Text = "5,000";
         }
 
         public void InitializeDefaultEffect()

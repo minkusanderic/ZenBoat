@@ -27,6 +27,14 @@ namespace Preview
         ImageBox ImageBox_4_3;
         ImageBox ImageBox_4_1;
         ImageBox ImageBox_4_2;
+        Label Label_1;
+        Label Label_2;
+        Label Label_3;
+        Label Label_4;
+        Label LevelLabel_1;
+        Label LevelLabel_2;
+        Label LevelLabel_3;
+        Label LevelLabel_4;
 
         private void InitializeWidget()
         {
@@ -67,9 +75,25 @@ namespace Preview
             ImageBox_4_1.Name = "ImageBox_4_1";
             ImageBox_4_2 = new ImageBox();
             ImageBox_4_2.Name = "ImageBox_4_2";
+            Label_1 = new Label();
+            Label_1.Name = "Label_1";
+            Label_2 = new Label();
+            Label_2.Name = "Label_2";
+            Label_3 = new Label();
+            Label_3.Name = "Label_3";
+            Label_4 = new Label();
+            Label_4.Name = "Label_4";
+            LevelLabel_1 = new Label();
+            LevelLabel_1.Name = "LevelLabel_1";
+            LevelLabel_2 = new Label();
+            LevelLabel_2.Name = "LevelLabel_2";
+            LevelLabel_3 = new Label();
+            LevelLabel_3.Name = "LevelLabel_3";
+            LevelLabel_4 = new Label();
+            LevelLabel_4.Name = "LevelLabel_4";
 
             // Level03
-            this.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            this.BackgroundColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 0f / 255f);
             this.Clip = true;
             this.AddChildLast(Button_1);
             this.AddChildLast(Button_2);
@@ -87,18 +111,26 @@ namespace Preview
             this.AddChildLast(ImageBox_4_3);
             this.AddChildLast(ImageBox_4_1);
             this.AddChildLast(ImageBox_4_2);
+            this.AddChildLast(Label_1);
+            this.AddChildLast(Label_2);
+            this.AddChildLast(Label_3);
+            this.AddChildLast(Label_4);
+            this.AddChildLast(LevelLabel_1);
+            this.AddChildLast(LevelLabel_2);
+            this.AddChildLast(LevelLabel_3);
+            this.AddChildLast(LevelLabel_4);
 
             // Button_1
-            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/001.jpg");
+            Button_1.IconImage = new ImageAsset("/Application/assets/Level Previews/009.jpg");
 
             // Button_2
-            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/002.jpg");
+            Button_2.IconImage = new ImageAsset("/Application/assets/Level Previews/010.jpg");
 
             // Button_3
-            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/003.jpg");
+            Button_3.IconImage = new ImageAsset("/Application/assets/Level Previews/011.jpg");
 
             // Button_4
-            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/004.jpg");
+            Button_4.IconImage = new ImageAsset("/Application/assets/Level Previews/012.jpg");
 
             // ImageBox_1_2
             ImageBox_1_2.Image = new ImageAsset("/Application/assets/FullStar.png");
@@ -135,6 +167,50 @@ namespace Preview
 
             // ImageBox_4_2
             ImageBox_4_2.Image = null;
+
+            // Label_1
+            Label_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Label_1.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Label_1.LineBreak = LineBreak.Character;
+            Label_1.HorizontalAlignment = HorizontalAlignment.Center;
+
+            // Label_2
+            Label_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Label_2.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Label_2.LineBreak = LineBreak.Character;
+            Label_2.HorizontalAlignment = HorizontalAlignment.Center;
+
+            // Label_3
+            Label_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Label_3.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Label_3.LineBreak = LineBreak.Character;
+            Label_3.HorizontalAlignment = HorizontalAlignment.Center;
+
+            // Label_4
+            Label_4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            Label_4.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            Label_4.LineBreak = LineBreak.Character;
+            Label_4.HorizontalAlignment = HorizontalAlignment.Center;
+
+            // LevelLabel_1
+            LevelLabel_1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            LevelLabel_1.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            LevelLabel_1.LineBreak = LineBreak.Character;
+
+            // LevelLabel_2
+            LevelLabel_2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            LevelLabel_2.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            LevelLabel_2.LineBreak = LineBreak.Character;
+
+            // LevelLabel_3
+            LevelLabel_3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            LevelLabel_3.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            LevelLabel_3.LineBreak = LineBreak.Character;
+
+            // LevelLabel_4
+            LevelLabel_4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            LevelLabel_4.Font = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            LevelLabel_4.LineBreak = LineBreak.Character;
 
             SetWidgetLayout(orientation);
 
@@ -230,91 +306,171 @@ namespace Preview
                     ImageBox_4_2.Anchors = Anchors.None;
                     ImageBox_4_2.Visible = true;
 
+                    Label_1.SetPosition(37, 56);
+                    Label_1.SetSize(214, 36);
+                    Label_1.Anchors = Anchors.None;
+                    Label_1.Visible = true;
+
+                    Label_2.SetPosition(37, 56);
+                    Label_2.SetSize(214, 36);
+                    Label_2.Anchors = Anchors.None;
+                    Label_2.Visible = true;
+
+                    Label_3.SetPosition(37, 56);
+                    Label_3.SetSize(214, 36);
+                    Label_3.Anchors = Anchors.None;
+                    Label_3.Visible = true;
+
+                    Label_4.SetPosition(37, 56);
+                    Label_4.SetSize(214, 36);
+                    Label_4.Anchors = Anchors.None;
+                    Label_4.Visible = true;
+
+                    LevelLabel_1.SetPosition(53, 456);
+                    LevelLabel_1.SetSize(214, 36);
+                    LevelLabel_1.Anchors = Anchors.None;
+                    LevelLabel_1.Visible = true;
+
+                    LevelLabel_2.SetPosition(397, 456);
+                    LevelLabel_2.SetSize(214, 36);
+                    LevelLabel_2.Anchors = Anchors.None;
+                    LevelLabel_2.Visible = true;
+
+                    LevelLabel_3.SetPosition(46, 543);
+                    LevelLabel_3.SetSize(214, 36);
+                    LevelLabel_3.Anchors = Anchors.None;
+                    LevelLabel_3.Visible = true;
+
+                    LevelLabel_4.SetPosition(397, 543);
+                    LevelLabel_4.SetSize(214, 36);
+                    LevelLabel_4.Anchors = Anchors.None;
+                    LevelLabel_4.Visible = true;
+
                     break;
 
                 default:
                     this.SetSize(700, 400);
                     this.Anchors = Anchors.None;
 
-                    Button_1.SetPosition(0, 0);
+                    Button_1.SetPosition(8, 9);
                     Button_1.SetSize(334, 174);
                     Button_1.Anchors = Anchors.None;
                     Button_1.Visible = true;
 
-                    Button_2.SetPosition(366, 0);
+                    Button_2.SetPosition(357, 9);
                     Button_2.SetSize(334, 174);
                     Button_2.Anchors = Anchors.None;
                     Button_2.Visible = true;
 
-                    Button_3.SetPosition(0, 226);
+                    Button_3.SetPosition(8, 216);
                     Button_3.SetSize(334, 174);
                     Button_3.Anchors = Anchors.None;
                     Button_3.Visible = true;
 
-                    Button_4.SetPosition(366, 226);
+                    Button_4.SetPosition(357, 216);
                     Button_4.SetSize(334, 174);
                     Button_4.Anchors = Anchors.None;
                     Button_4.Visible = true;
 
-                    ImageBox_1_2.SetPosition(45, 9);
+                    ImageBox_1_2.SetPosition(53, 18);
                     ImageBox_1_2.SetSize(37, 34);
                     ImageBox_1_2.Anchors = Anchors.None;
                     ImageBox_1_2.Visible = true;
 
-                    ImageBox_1_1.SetPosition(12, 9);
+                    ImageBox_1_1.SetPosition(20, 18);
                     ImageBox_1_1.SetSize(37, 34);
                     ImageBox_1_1.Anchors = Anchors.None;
                     ImageBox_1_1.Visible = true;
 
-                    ImageBox_1_3.SetPosition(82, 9);
+                    ImageBox_1_3.SetPosition(90, 18);
                     ImageBox_1_3.SetSize(37, 34);
                     ImageBox_1_3.Anchors = Anchors.None;
                     ImageBox_1_3.Visible = true;
 
-                    ImageBox_3_3.SetPosition(82, 355);
+                    ImageBox_3_3.SetPosition(90, 345);
                     ImageBox_3_3.SetSize(37, 34);
                     ImageBox_3_3.Anchors = Anchors.None;
                     ImageBox_3_3.Visible = true;
 
-                    ImageBox_3_1.SetPosition(12, 355);
+                    ImageBox_3_1.SetPosition(20, 345);
                     ImageBox_3_1.SetSize(37, 34);
                     ImageBox_3_1.Anchors = Anchors.None;
                     ImageBox_3_1.Visible = true;
 
-                    ImageBox_3_2.SetPosition(49, 355);
+                    ImageBox_3_2.SetPosition(57, 345);
                     ImageBox_3_2.SetSize(37, 34);
                     ImageBox_3_2.Anchors = Anchors.None;
                     ImageBox_3_2.Visible = true;
 
-                    ImageBox_2_3.SetPosition(653, 9);
+                    ImageBox_2_3.SetPosition(644, 18);
                     ImageBox_2_3.SetSize(37, 34);
                     ImageBox_2_3.Anchors = Anchors.None;
                     ImageBox_2_3.Visible = true;
 
-                    ImageBox_2_1.SetPosition(583, 9);
+                    ImageBox_2_1.SetPosition(574, 18);
                     ImageBox_2_1.SetSize(37, 34);
                     ImageBox_2_1.Anchors = Anchors.None;
                     ImageBox_2_1.Visible = true;
 
-                    ImageBox_2_2.SetPosition(618, 9);
+                    ImageBox_2_2.SetPosition(609, 18);
                     ImageBox_2_2.SetSize(37, 34);
                     ImageBox_2_2.Anchors = Anchors.None;
                     ImageBox_2_2.Visible = true;
 
-                    ImageBox_4_3.SetPosition(653, 355);
+                    ImageBox_4_3.SetPosition(644, 345);
                     ImageBox_4_3.SetSize(37, 34);
                     ImageBox_4_3.Anchors = Anchors.None;
                     ImageBox_4_3.Visible = true;
 
-                    ImageBox_4_1.SetPosition(583, 355);
+                    ImageBox_4_1.SetPosition(574, 345);
                     ImageBox_4_1.SetSize(37, 34);
                     ImageBox_4_1.Anchors = Anchors.None;
                     ImageBox_4_1.Visible = true;
 
-                    ImageBox_4_2.SetPosition(616, 355);
+                    ImageBox_4_2.SetPosition(607, 345);
                     ImageBox_4_2.SetSize(37, 34);
                     ImageBox_4_2.Anchors = Anchors.None;
                     ImageBox_4_2.Visible = true;
+
+                    Label_1.SetPosition(81, 82);
+                    Label_1.SetSize(214, 36);
+                    Label_1.Anchors = Anchors.None;
+                    Label_1.Visible = true;
+
+                    Label_2.SetPosition(430, 82);
+                    Label_2.SetSize(214, 36);
+                    Label_2.Anchors = Anchors.None;
+                    Label_2.Visible = true;
+
+                    Label_3.SetPosition(81, 291);
+                    Label_3.SetSize(214, 36);
+                    Label_3.Anchors = Anchors.None;
+                    Label_3.Visible = true;
+
+                    Label_4.SetPosition(430, 291);
+                    Label_4.SetSize(214, 36);
+                    Label_4.Anchors = Anchors.None;
+                    Label_4.Visible = true;
+
+                    LevelLabel_1.SetPosition(83, 486);
+                    LevelLabel_1.SetSize(214, 36);
+                    LevelLabel_1.Anchors = Anchors.None;
+                    LevelLabel_1.Visible = true;
+
+                    LevelLabel_2.SetPosition(427, 486);
+                    LevelLabel_2.SetSize(214, 36);
+                    LevelLabel_2.Anchors = Anchors.None;
+                    LevelLabel_2.Visible = true;
+
+                    LevelLabel_3.SetPosition(76, 573);
+                    LevelLabel_3.SetSize(214, 36);
+                    LevelLabel_3.Anchors = Anchors.None;
+                    LevelLabel_3.Visible = true;
+
+                    LevelLabel_4.SetPosition(427, 573);
+                    LevelLabel_4.SetSize(214, 36);
+                    LevelLabel_4.Anchors = Anchors.None;
+                    LevelLabel_4.Visible = true;
 
                     break;
             }
@@ -323,6 +479,21 @@ namespace Preview
 
         public void UpdateLanguage()
         {
+            Label_1.Text = "Level 9";
+
+            Label_2.Text = "Level 10";
+
+            Label_3.Text = "Level 11";
+
+            Label_4.Text = "Level 12";
+
+            LevelLabel_1.Text = "009";
+
+            LevelLabel_2.Text = "010";
+
+            LevelLabel_3.Text = "011";
+
+            LevelLabel_4.Text = "012";
         }
 
         public void InitializeDefaultEffect()
