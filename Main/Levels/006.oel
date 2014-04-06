@@ -160,7 +160,7 @@
     <Whirlpool id="70" x="6580" y="244" width="80" height="80" strength="100" />
     <Whirlpool id="71" x="7096" y="244" width="80" height="80" strength="100" />
     <Island id="50" x="9364" y="316" width="100" height="100" angle="0" />
-    <BridgeStart id="1" x="220" y="244" />
+    <BridgeStart id="1" x="180" y="244" />
     <BridgeEnd id="8" x="9916" y="236" NextLevel="007.oel" />
     <Crane1 id="9" x="1024" y="108" />
     <Crane1 id="13" x="1644" y="388" />
@@ -169,11 +169,7 @@
     <Crane1 id="18" x="2164" y="236" />
     <Crane1 id="19" x="2368" y="300" />
     <Crane5 id="20" x="2716" y="48" />
-    <Crane5 id="27" x="2836" y="428" />
-    <Crane5 id="28" x="3052" y="80" />
     <Crane5 id="29" x="3200" y="412" />
-    <Crane5 id="30" x="3396" y="52" />
-    <Crane5 id="31" x="3500" y="448" />
     <Crane10 id="32" x="3808" y="260" />
     <Crane1 id="33" x="4276" y="252" />
     <Crane1 id="34" x="4724" y="52" />
@@ -187,6 +183,9 @@
     <Crane1 id="44" x="9552" y="296" />
     <Crane10 id="10" x="8700" y="340" />
     <Lantern id="45" x="8708" y="416" />
+    <Crane1 id="12" x="2840" y="440" />
+    <Crane1 id="27" x="3072" y="92" />
+    <Crane1 id="28" x="3384" y="52" />
   </Entities>
   <Art>
     <Pagoda id="0" x="9392" y="328" width="50" height="50" angle="0" />

@@ -148,7 +148,7 @@
     <Geyser id="9" x="2676" y="80" width="80" height="80" strength="100" />
     <Geyser id="19" x="2948" y="80" width="80" height="80" strength="100" />
     <Rock id="26" x="2376" y="152" width="74" height="74" angle="0" />
-    <BridgeStart id="1" x="200" y="240" />
+    <BridgeStart id="1" x="160" y="240" />
     <BridgeEnd id="2" x="3912" y="236" NextLevel="006.oel" />
     <Crane1 id="3" x="568" y="432" />
     <Crane1 id="4" x="1028" y="280" />
@@ -164,6 +164,7 @@
     <Rock id="25" x="3196" y="200" width="102" height="94" angle="0" />
     <Crane1 id="32" x="3676" y="188" />
     <Crane1 id="18" x="2344" y="312" />
+    <Crane10 id="8" x="3072" y="508" />
   </Entities>
   <Art>
     <Lillypad id="1" x="540" y="40" width="50" height="40" angle="0" />

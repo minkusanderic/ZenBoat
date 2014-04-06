@@ -182,8 +182,8 @@
     <Lillypad id="81" x="6824" y="116" width="50" height="40" angle="0" />
     <Lillypad id="83" x="6468" y="396" width="50" height="40" angle="0" />
     <Lillypad id="84" x="2184" y="420" width="50" height="40" angle="0" />
-    <BridgeStart id="4" x="236" y="244" />
-    <BridgeEnd id="5" x="7176" y="240" NextLevel="014.oel" />
+    <BridgeStart id="4" x="196" y="244" />
+    <BridgeEnd id="5" x="7148" y="240" NextLevel="014.oel" />
     <Torii id="6" x="2612" y="260" NextLevel="" />
     <Crane1 id="10" x="904" y="68" />
     <Crane1 id="11" x="1232" y="240" />

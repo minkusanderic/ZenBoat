@@ -157,7 +157,7 @@
     <Crane10 id="27" x="1188" y="124" />
     <TulipSouth id="1" x="736" y="520" />
     <TulipSouth id="13" x="1020" y="520" />
-    <BridgeStart id="16" x="184" y="228" />
+    <BridgeStart id="16" x="148" y="228" />
     <BridgeEnd id="17" x="1708" y="244" NextLevel="003.oel" />
     <Crane1 id="14" x="944" y="252" />
     <Crane1 id="15" x="844" y="312" />

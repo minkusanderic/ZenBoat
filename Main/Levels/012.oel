@@ -235,7 +235,7 @@
     <CherryBlossomNorth id="121" x="1672" y="-40" />
     <CherryBlossomNorth id="122" x="9272" y="-40" />
     <Koi id="114" x="9064" y="272" angle="0" />
-    <BridgeStart id="1" x="224" y="256" />
+    <BridgeStart id="1" x="176" y="256" />
     <BridgeEnd id="86" x="9920" y="228" NextLevel="013.oel" />
     <Crane1 id="87" x="1700" y="24" />
     <Crane1 id="89" x="4892" y="56" />
@@ -246,10 +246,16 @@
     <MTYellowOrangeSouth id="6" x="5064" y="528" />
     <MTYellowOrangeSouth id="7" x="8392" y="528" />
     <Crane1 id="19" x="9528" y="280" />
-    <Crane1 id="93" x="8520" y="200" />
+    <Crane1 id="93" x="8588" y="364" />
     <Koi id="94" x="6040" y="152" angle="0" />
     <Lantern id="95" x="7900" y="344" />
     <Lantern id="96" x="7380" y="160" />
+    <Crane5 id="97" x="8424" y="524" />
+    <Crane1 id="98" x="3020" y="360" />
+    <Crane1 id="99" x="3116" y="276" />
+    <Crane1 id="100" x="3148" y="208" />
+    <Crane1 id="101" x="4952" y="396" />
+    <Crane1 id="102" x="5144" y="224" />
   </Entities>
   <Art>
     <Island id="0" x="2892" y="180" width="100" height="100" angle="0" />

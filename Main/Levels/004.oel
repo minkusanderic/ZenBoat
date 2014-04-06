@@ -146,7 +146,7 @@
     <Geyser id="8" x="2028" y="140" width="80" height="80" strength="100" />
     <Island id="11" x="2996" y="196" width="100" height="100" angle="0" />
     <Bamboo id="14" x="3024" y="204" />
-    <BridgeStart id="2" x="192" y="244" />
+    <BridgeStart id="2" x="152" y="244" />
     <BridgeEnd id="5" x="3724" y="240" NextLevel="005.oel" />
     <Crane1 id="9" x="844" y="236" />
     <Crane1 id="10" x="704" y="424" />
@@ -178,6 +178,7 @@
     <IrisSouth id="37" x="2000" y="532" />
     <IrisSouth id="38" x="2096" y="532" />
     <IrisSouth id="39" x="2180" y="532" />
+    <Crane10 id="40" x="2468" y="356" />
   </Entities>
   <Art>
     <Pagoda id="0" x="3024" y="216" width="50" height="50" angle="0" />

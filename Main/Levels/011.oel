@@ -182,7 +182,7 @@
     <Whirlpool id="73" x="1176" y="244" width="80" height="80" strength="100" />
     <Koi id="79" x="7064" y="92" angle="0" />
     <Lillypad id="80" x="2092" y="104" width="50" height="40" angle="3.141593" />
-    <BridgeStart id="2" x="236" y="260" />
+    <BridgeStart id="2" x="192" y="260" />
     <BridgeEnd id="7" x="7176" y="244" NextLevel="012.oel" />
     <LooseBlossoms id="11" x="5840" y="64" />
     <LooseBlossoms id="12" x="6060" y="164" />
@@ -212,6 +212,7 @@
     <Crane1 id="68" x="6892" y="24" />
     <Torii id="9" x="6096" y="80" NextLevel="" />
     <MTYellowOrangeSouth id="1" x="1812" y="512" />
+    <Crane10 id="69" x="5204" y="504" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="0" x="1564" y="-60" />

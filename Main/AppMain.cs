@@ -46,8 +46,6 @@ namespace Main
 					bgmc.setVolume(1f);
 					bgmc.loop(true);
 					
-
-					
 					break;
 					
 				case AppState.MENU:

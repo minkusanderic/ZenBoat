@@ -201,7 +201,7 @@
     <Crane1 id="61" x="6604" y="348" />
     <Crane1 id="62" x="6860" y="344" />
     <Crane1 id="63" x="6732" y="404" />
-    <BridgeEnd id="64" x="9948" y="236" NextLevel="" />
+    <BridgeEnd id="64" x="9888" y="228" NextLevel="023.oel" />
     <Current id="65" x="7328" y="236" width="2612" height="84" angle="0" />
     <Crane1 id="66" x="7388" y="272" />
     <Crane1 id="67" x="7492" y="272" />
@@ -230,12 +230,9 @@
   </Entities>
   <Art>
     <CherryBlossomNorth id="1" x="520" y="-16" />
-    <LooseBlossoms id="2" x="308" y="76" />
+    <LooseBlossoms id="2" x="664" y="136" />
     <LooseBlossoms id="3" x="720" y="72" />
     <LooseBlossoms id="4" x="536" y="152" />
-    <Bamboo id="5" x="108" y="512" />
-    <Bamboo id="6" x="172" y="512" />
-    <Bamboo id="7" x="140" y="520" />
     <Bamboo id="8" x="728" y="512" />
     <Bamboo id="9" x="792" y="512" />
     <Bamboo id="10" x="760" y="520" />
@@ -244,7 +241,6 @@
     <IrisNorth id="20" x="4856" y="-24" />
     <IrisNorth id="21" x="3232" y="-28" />
     <IrisNorth id="22" x="1288" y="-32" />
-    <TulipNorth id="23" x="156" y="-28" />
     <TulipNorth id="24" x="2392" y="-36" />
     <TulipNorth id="25" x="4020" y="-32" />
     <TulipNorth id="26" x="5580" y="-32" />
@@ -304,7 +300,7 @@
     <Grass id="13" x="300" y="536" />
     <Grass id="14" x="596" y="536" />
     <TulipNorth id="15" x="852" y="-32" />
-    <BridgeStart id="16" x="-20" y="236" />
+    <BridgeStart id="16" x="192" y="272" />
     <TulipSouth id="17" x="1212" y="520" />
     <TulipSouth id="29" x="1316" y="524" />
     <TulipSouth id="30" x="1420" y="520" />
@@ -361,5 +357,12 @@
     <Grass id="129" x="3404" y="536" />
     <Grass id="130" x="3628" y="536" />
     <Grass id="131" x="3844" y="532" />
+    <MTRedNorth id="5" x="1056" y="-56" />
+    <MTRedNorth id="6" x="3564" y="-56" />
+    <MTRedSouth id="7" x="5172" y="520" />
+    <MTRedNorth id="23" x="5232" y="-48" />
+    <MTRedNorth id="132" x="6972" y="-60" />
+    <MTRedNorth id="133" x="8980" y="-60" />
+    <MTRedSouth id="134" x="8476" y="524" />
   </Art>
 </level>

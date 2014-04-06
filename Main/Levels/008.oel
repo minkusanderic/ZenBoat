@@ -148,7 +148,7 @@
     <CherryBlossomNorth id="59" x="8144" y="-40" />
     <CherryBlossomNorth id="60" x="9312" y="-48" />
     <CherryBlossomNorth id="61" x="536" y="-52" />
-    <BridgeStart id="1" x="200" y="244" />
+    <BridgeStart id="1" x="160" y="244" />
     <BridgeEnd id="2" x="9928" y="244" NextLevel="009.oel" />
     <Crane1 id="3" x="656" y="376" />
     <Crane1 id="4" x="904" y="324" />
@@ -176,8 +176,6 @@
     <Crane1 id="28" x="8172" y="36" />
     <Crane1 id="29" x="8632" y="388" />
     <Crane1 id="30" x="9180" y="292" />
-    <Crane10 id="31" x="9352" y="28" />
-    <Crane5 id="32" x="9652" y="500" />
     <Bamboo id="33" x="8560" y="524" />
     <Bamboo id="34" x="8640" y="528" />
     <Bamboo id="35" x="8736" y="520" />
@@ -198,6 +196,8 @@
     <Grass id="55" x="7112" y="544" />
     <Rock id="56" x="8088" y="264" width="170" height="158" angle="0" />
     <Whirlpool id="47" x="3608" y="216" width="80" height="80" strength="100" />
+    <Crane1 id="31" x="9344" y="28" />
+    <Crane1 id="32" x="9648" y="488" />
   </Entities>
   <Art>
     <LooseBlossoms id="19" x="540" y="104" />

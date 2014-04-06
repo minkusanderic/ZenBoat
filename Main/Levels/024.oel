@@ -139,7 +139,7 @@
   <BankGrid exportMode="Rectangles" />
   <Entities>
     <Boat id="1" x="280" y="308" angle="0" />
-    <BridgeEnd id="0" x="9956" y="240" NextLevel="" />
+    <BridgeEnd id="0" x="9872" y="240" NextLevel="025.oel" />
     <Rock id="2" x="1024" y="260" width="50" height="50" angle="0" />
     <Rock id="3" x="1072" y="232" width="50" height="50" angle="0" />
     <Rock id="4" x="1132" y="232" width="50" height="50" angle="0" />
@@ -152,7 +152,6 @@
     <Rock id="11" x="1704" y="232" width="50" height="50" angle="0" />
     <Rock id="12" x="1748" y="188" width="50" height="50" angle="0" />
     <Rock id="13" x="1752" y="132" width="50" height="50" angle="0" />
-    <Crane10 id="14" x="1108" y="320" />
     <Crane10 id="15" x="1696" y="184" />
     <Whirlpool id="30" x="644" y="292" width="80" height="80" strength="100" />
     <Whirlpool id="31" x="1700" y="392" width="80" height="80" strength="100" />
@@ -197,16 +196,6 @@
     <Rock id="80" x="6244" y="228" width="102" height="90" angle="0" />
     <Rock id="81" x="6356" y="228" width="102" height="90" angle="0" />
     <Whirlpool id="82" x="5060" y="276" width="80" height="80" strength="100" />
-    <Crane10 id="83" x="4544" y="168" />
-    <Crane10 id="84" x="4608" y="168" />
-    <Crane10 id="85" x="4684" y="168" />
-    <Crane10 id="86" x="4756" y="168" />
-    <Crane10 id="87" x="4836" y="168" />
-    <Crane10 id="88" x="5320" y="388" />
-    <Crane10 id="89" x="5384" y="388" />
-    <Crane10 id="90" x="5460" y="388" />
-    <Crane10 id="91" x="5532" y="388" />
-    <Crane10 id="92" x="5612" y="388" />
     <Whirlpool id="93" x="7480" y="140" width="80" height="80" strength="100" />
     <Whirlpool id="94" x="7484" y="280" width="80" height="80" strength="100" />
     <Whirlpool id="95" x="7488" y="424" width="80" height="80" strength="100" />
@@ -216,24 +205,29 @@
     <Whirlpool id="103" x="9180" y="268" width="80" height="80" strength="100" />
     <Crane5 id="104" x="8452" y="264" />
     <Crane5 id="105" x="8952" y="264" />
-    <Crane1 id="108" x="9472" y="264" />
-    <Crane1 id="109" x="9588" y="260" />
-    <Crane1 id="110" x="9700" y="260" />
+    <Crane1 id="108" x="9432" y="264" />
+    <Crane1 id="109" x="9548" y="260" />
+    <Crane1 id="110" x="9660" y="260" />
     <Whirlpool id="71" x="6020" y="280" width="80" height="80" strength="100" />
     <Whirlpool id="40" x="4100" y="276" width="80" height="80" strength="100" />
     <Current id="16" x="2112" y="244" width="1376" height="80" angle="0" />
     <Crane1 id="17" x="2272" y="276" />
     <Crane1 id="18" x="2800" y="284" />
     <Crane1 id="19" x="3320" y="284" />
+    <Crane5 id="14" x="1112" y="316" />
+    <Crane1 id="20" x="4584" y="180" />
+    <Crane1 id="21" x="4696" y="176" />
+    <Crane1 id="22" x="4800" y="164" />
+    <Crane1 id="23" x="4920" y="168" />
+    <Crane1 id="24" x="5392" y="384" />
+    <Crane1 id="25" x="5616" y="380" />
+    <Crane1 id="26" x="5824" y="372" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="1" x="520" y="-16" />
-    <LooseBlossoms id="2" x="308" y="76" />
+    <LooseBlossoms id="2" x="608" y="76" />
     <LooseBlossoms id="3" x="720" y="72" />
     <LooseBlossoms id="4" x="536" y="152" />
-    <Bamboo id="5" x="108" y="512" />
-    <Bamboo id="6" x="172" y="512" />
-    <Bamboo id="7" x="140" y="520" />
     <Bamboo id="8" x="728" y="512" />
     <Bamboo id="9" x="792" y="512" />
     <Bamboo id="10" x="760" y="520" />
@@ -242,12 +236,10 @@
     <IrisNorth id="20" x="4856" y="-24" />
     <IrisNorth id="21" x="3232" y="-28" />
     <IrisNorth id="22" x="1288" y="-32" />
-    <TulipNorth id="23" x="156" y="-28" />
     <TulipNorth id="24" x="2392" y="-36" />
     <TulipNorth id="25" x="4020" y="-32" />
     <TulipNorth id="26" x="5580" y="-32" />
     <TulipNorth id="27" x="7296" y="-28" />
-    <TulipNorth id="28" x="9820" y="-28" />
     <Bamboo id="34" x="1768" y="512" />
     <Bamboo id="35" x="1832" y="512" />
     <Bamboo id="36" x="1800" y="520" />
@@ -266,9 +258,9 @@
     <Bamboo id="49" x="8220" y="512" />
     <Bamboo id="50" x="8284" y="512" />
     <Bamboo id="51" x="8252" y="520" />
-    <Bamboo id="52" x="9344" y="512" />
-    <Bamboo id="53" x="9408" y="512" />
-    <Bamboo id="54" x="9376" y="520" />
+    <Bamboo id="52" x="9264" y="516" />
+    <Bamboo id="53" x="9328" y="516" />
+    <Bamboo id="54" x="9296" y="524" />
     <Bamboo id="56" x="8152" y="-52" />
     <Bamboo id="55" x="8096" y="-48" />
     <Bamboo id="57" x="8124" y="-44" />
@@ -287,9 +279,9 @@
     <CherryBlossomSouth id="75" x="5624" y="536" />
     <LooseBlossoms id="76" x="5528" y="444" />
     <LooseBlossoms id="77" x="5784" y="436" />
-    <CherryBlossomSouth id="78" x="9616" y="532" />
-    <LooseBlossoms id="79" x="9524" y="404" />
-    <LooseBlossoms id="80" x="9700" y="408" />
+    <CherryBlossomSouth id="78" x="9536" y="536" />
+    <LooseBlossoms id="79" x="9444" y="408" />
+    <LooseBlossoms id="80" x="9620" y="412" />
     <CherryBlossomNorth id="81" x="7724" y="-8" />
     <LooseBlossoms id="82" x="7648" y="28" />
     <LooseBlossoms id="83" x="7852" y="52" />
@@ -302,7 +294,7 @@
     <Grass id="13" x="300" y="536" />
     <Grass id="14" x="596" y="536" />
     <TulipNorth id="15" x="852" y="-32" />
-    <BridgeStart id="16" x="-20" y="236" />
+    <BridgeStart id="16" x="188" y="256" />
     <TulipSouth id="17" x="1212" y="520" />
     <TulipSouth id="29" x="1316" y="524" />
     <TulipSouth id="30" x="1420" y="520" />
@@ -331,7 +323,6 @@
     <Grass id="101" x="9392" y="-24" />
     <Grass id="102" x="9556" y="-24" />
     <Grass id="103" x="9736" y="-24" />
-    <Grass id="104" x="9908" y="-24" />
     <IrisSouth id="105" x="8740" y="532" />
     <IrisSouth id="106" x="8928" y="532" />
     <Grass id="107" x="8620" y="536" />
@@ -359,5 +350,12 @@
     <Grass id="129" x="3404" y="536" />
     <Grass id="130" x="3628" y="536" />
     <Grass id="131" x="3844" y="532" />
+    <MTBranchNorth id="5" x="1024" y="-32" />
+    <MTBranchNorth id="6" x="2088" y="-32" />
+    <MTBranchSouth id="7" x="2256" y="524" />
+    <MTBranchNorth id="23" x="3572" y="-36" />
+    <MTBranchNorth id="132" x="5224" y="-32" />
+    <MTBranchNorth id="133" x="6852" y="-36" />
+    <MTBranchNorth id="134" x="8988" y="-32" />
   </Art>
 </level>

@@ -155,7 +155,7 @@
     <Whirlpool id="34" x="4404" y="376" width="80" height="80" strength="100" />
     <Geyser id="35" x="4008" y="120" width="80" height="80" strength="100" />
     <Geyser id="37" x="4768" y="284" width="80" height="80" strength="100" />
-    <Rock id="42" x="4772" y="68" width="50" height="50" angle="0" />
+    <Rock id="42" x="4772" y="80" width="50" height="50" angle="0" />
     <Rock id="43" x="2976" y="396" width="50" height="50" angle="0" />
     <Rock id="44" x="3524" y="80" width="50" height="50" angle="0" />
     <Rock id="45" x="3580" y="104" width="50" height="50" angle="0" />
@@ -174,33 +174,29 @@
     <Rock id="68" x="5628" y="464" width="50" height="50" angle="0" />
     <Geyser id="70" x="5764" y="252" width="80" height="80" strength="100" />
     <Geyser id="71" x="5256" y="80" width="80" height="80" strength="100" />
-    <Whirlpool id="72" x="6192" y="400" width="80" height="80" strength="100" />
     <Whirlpool id="73" x="6216" y="416" width="80" height="80" strength="100" />
-    <Whirlpool id="74" x="6396" y="116" width="80" height="80" strength="100" />
     <Whirlpool id="75" x="6424" y="140" width="80" height="80" strength="100" />
-    <Whirlpool id="78" x="6712" y="324" width="80" height="80" strength="100" />
-    <Whirlpool id="79" x="6732" y="336" width="80" height="80" strength="100" />
     <Whirlpool id="4" x="1372" y="120" width="80" height="80" strength="100" />
     <Lillypad id="8" x="1660" y="404" width="50" height="40" angle="0" />
     <Rock id="89" x="3952" y="440" width="50" height="50" angle="0" />
     <Whirlpool id="14" x="2496" y="288" width="80" height="80" strength="100" />
     <Driftwood id="49" x="4872" y="440" width="100" height="30" angle="0" />
-    <Geyser id="0" x="504" y="444" width="80" height="80" strength="100" />
-    <Lillypad id="1" x="124" y="48" width="50" height="40" angle="0" />
-    <Lillypad id="2" x="200" y="84" width="50" height="40" angle="0" />
+    <Geyser id="0" x="580" y="444" width="80" height="80" strength="100" />
+    <Lillypad id="1" x="536" y="60" width="50" height="40" angle="0" />
+    <Lillypad id="2" x="612" y="96" width="50" height="40" angle="0" />
     <Koi id="15" x="1792" y="388" angle="0" />
     <Lillypad id="18" x="4392" y="44" width="50" height="40" angle="0" />
-    <Lillypad id="19" x="7144" y="360" width="50" height="40" angle="3.141593" />
-    <Lillypad id="20" x="7064" y="428" width="50" height="40" angle="0" />
-    <CherryBlossomSouth id="21" x="164" y="540" />
-    <LooseBlossoms id="69" x="344" y="392" />
-    <LooseBlossoms id="84" x="216" y="368" />
-    <Lillypad id="48" x="7016" y="340" width="50" height="40" angle="0" />
-    <Koi id="94" x="7084" y="360" angle="0" />
-    <BridgeStart id="7" x="4" y="236" />
-    <Crane1 id="13" x="592" y="420" />
-    <Crane1 id="24" x="576" y="456" />
-    <Crane1 id="25" x="636" y="448" />
+    <Lillypad id="19" x="6964" y="140" width="50" height="40" angle="3.141593" />
+    <Lillypad id="20" x="6884" y="208" width="50" height="40" angle="0" />
+    <CherryBlossomSouth id="21" x="648" y="508" />
+    <LooseBlossoms id="69" x="828" y="360" />
+    <LooseBlossoms id="84" x="700" y="336" />
+    <Lillypad id="48" x="6836" y="120" width="50" height="40" angle="0" />
+    <Koi id="94" x="6904" y="140" angle="0" />
+    <BridgeStart id="7" x="176" y="268" />
+    <Crane1 id="13" x="668" y="420" />
+    <Crane1 id="24" x="652" y="456" />
+    <Crane1 id="25" x="712" y="448" />
     <Crane1 id="27" x="1260" y="412" />
     <Crane1 id="28" x="1228" y="452" />
     <Crane1 id="29" x="1288" y="460" />
@@ -229,10 +225,11 @@
     <Crane1 id="91" x="6280" y="128" />
     <Crane1 id="92" x="6328" y="460" />
     <Crane1 id="93" x="6636" y="220" />
-    <BridgeEnd id="95" x="7176" y="232" NextLevel="017.oel" />
+    <BridgeEnd id="36" x="7160" y="240" NextLevel="017.oel" />
+    <Whirlpool id="79" x="6732" y="336" width="80" height="80" strength="100" />
   </Entities>
   <Art>
-    <Boat id="0" x="160" y="272" angle="0" />
+    <Boat id="0" x="256" y="312" angle="0" />
     <CherryBlossomNorth id="2" x="6732" y="-64" />
     <Bamboo id="37" x="1944" y="500" />
     <Bamboo id="38" x="1992" y="500" />
@@ -246,10 +243,15 @@
     <Bamboo id="46" x="6380" y="504" />
     <Bamboo id="47" x="6416" y="496" />
     <Bamboo id="48" x="6448" y="504" />
-    <MapleTreeSouth id="49" x="5920" y="532" width="70" height="70" />
-    <Koi id="50" x="148" y="120" angle="0" />
-    <MapleTreeSouth id="52" x="4476" y="536" width="70" height="70" />
+    <Koi id="50" x="512" y="124" angle="0" />
     <CherryBlossomSouth id="1" x="3360" y="556" />
     <LooseBlossoms id="28" x="3456" y="448" />
+    <TulipNorth id="5" x="880" y="-32" />
+    <Grass id="6" x="856" y="-16" />
+    <Grass id="7" x="912" y="-16" />
+    <Pagoda id="8" x="1980" y="-56" width="50" height="50" angle="0" />
+    <MTRedOrangeNorth id="9" x="3552" y="-60" />
+    <MTRedOrangeSouth id="3" x="4384" y="508" />
+    <MTRedOrangeSouth id="4" x="5900" y="508" />
   </Art>
 </level>

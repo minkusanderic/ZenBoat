@@ -248,7 +248,7 @@
     <Crane1 id="73" x="1816" y="84" />
     <Crane1 id="74" x="1832" y="420" />
     <Crane1 id="110" x="1060" y="268" />
-    <BridgeStart id="114" x="200" y="248" />
+    <BridgeStart id="114" x="160" y="248" />
     <MTYellowOrangeNorth id="61" x="720" y="-40" />
     <MTYellowOrangeSouth id="75" x="5684" y="516" />
     <MTYellowOrangeSouth id="63" x="9592" y="496" />

@@ -151,7 +151,7 @@
     <LooseBlossoms id="18" x="2000" y="96" />
     <Island id="20" x="1648" y="116" width="100" height="100" angle="0" />
     <Bamboo id="21" x="1664" y="120" />
-    <BridgeStart id="2" x="200" y="240" />
+    <BridgeStart id="2" x="160" y="240" />
     <BridgeEnd id="3" x="2764" y="236" NextLevel="004.oel" />
     <Crane1 id="4" x="900" y="256" />
     <Crane1 id="6" x="1100" y="68" />
@@ -166,6 +166,8 @@
     <Grass id="28" x="856" y="-32" />
     <Grass id="29" x="1020" y="-32" />
     <Grass id="25" x="912" y="-28" />
+    <Crane5 id="22" x="1412" y="28" />
+    <Crane10 id="26" x="828" y="512" />
   </Entities>
   <Art>
     <CherryBlossomNorth id="6" x="1948" y="-56" />

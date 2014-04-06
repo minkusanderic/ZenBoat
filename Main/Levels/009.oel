@@ -194,7 +194,7 @@
     <Lillypad id="131" x="1820" y="428" width="50" height="40" angle="0" />
     <Lillypad id="132" x="3296" y="80" width="50" height="40" angle="0" />
     <Lillypad id="133" x="3204" y="124" width="50" height="40" angle="2.879793" />
-    <BridgeStart id="27" x="232" y="232" />
+    <BridgeStart id="27" x="192" y="232" />
     <BridgeEnd id="28" x="9924" y="256" NextLevel="010.oel" />
     <IrisSouth id="43" x="8424" y="548" />
     <IrisSouth id="44" x="8580" y="544" />
@@ -224,6 +224,8 @@
     <Rock id="32" x="6364" y="392" width="206" height="214" angle="0" />
     <MTYellowSouth id="38" x="9232" y="520" />
     <MTYellowNorth id="39" x="9204" y="-28" />
+    <Crane5 id="40" x="8736" y="60" />
+    <Crane5 id="48" x="6356" y="44" />
   </Entities>
   <Art>
     <Boat id="0" x="268" y="268" angle="0" />
