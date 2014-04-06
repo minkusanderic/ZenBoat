@@ -145,7 +145,7 @@
     <Rock id="6" x="1152" y="420" width="62" height="58" angle="0" />
     <Driftwood id="8" x="696" y="268" width="100" height="30" angle="0" />
     <Whirlpool id="10" x="1576" y="268" width="80" height="80" strength="100" />
-    <Rock id="14" x="1504" y="104" width="50" height="50" angle="0" />
+    <Rock id="14" x="1532" y="100" width="50" height="50" angle="0" />
     <Rock id="15" x="1456" y="52" width="50" height="50" angle="0" />
     <Whirlpool id="16" x="2404" y="348" width="80" height="80" strength="100" />
     <Whirlpool id="17" x="2600" y="188" width="80" height="80" strength="100" />

@@ -155,7 +155,7 @@
     <Rock id="26" x="8140" y="172" width="206" height="178" angle="0" />
     <Crane10 id="26" x="9132" y="308" />
     <BridgeStart id="0" x="184" y="252" />
-    <BridgeEnd id="2" x="9828" y="204" NextLevel="019.oel" />
+    <BridgeEnd id="2" x="9832" y="232" NextLevel="019.oel" />
     <Crane1 id="3" x="7444" y="468" />
     <Crane1 id="4" x="5540" y="312" />
     <Crane1 id="5" x="5196" y="156" />

@@ -162,12 +162,10 @@
     <Rock id="46" x="3520" y="132" width="50" height="50" angle="0" />
     <Rock id="47" x="3576" y="48" width="50" height="50" angle="0" />
     <Rock id="50" x="5212" y="480" width="50" height="50" angle="0" />
-    <Rock id="51" x="5272" y="400" width="50" height="50" angle="0" />
-    <Rock id="52" x="5328" y="312" width="50" height="50" angle="0" />
     <Rock id="53" x="5352" y="208" width="50" height="50" angle="0" />
     <Whirlpool id="62" x="5476" y="300" width="80" height="80" strength="100" />
     <Rock id="63" x="5276" y="252" width="50" height="50" angle="0" />
-    <Rock id="64" x="5240" y="332" width="50" height="50" angle="0" />
+    <Rock id="64" x="5196" y="300" width="90" height="82" angle="0" />
     <Rock id="65" x="5200" y="412" width="50" height="50" angle="0" />
     <Whirlpool id="66" x="5552" y="420" width="80" height="80" strength="100" />
     <Rock id="67" x="5540" y="300" width="50" height="50" angle="0" />
@@ -188,7 +186,7 @@
     <Lillypad id="18" x="4392" y="44" width="50" height="40" angle="0" />
     <Lillypad id="19" x="6964" y="140" width="50" height="40" angle="3.141593" />
     <Lillypad id="20" x="6884" y="208" width="50" height="40" angle="0" />
-    <CherryBlossomSouth id="21" x="648" y="508" />
+    <CherryBlossomSouth id="21" x="648" y="524" />
     <LooseBlossoms id="69" x="828" y="360" />
     <LooseBlossoms id="84" x="700" y="336" />
     <Lillypad id="48" x="6836" y="120" width="50" height="40" angle="0" />

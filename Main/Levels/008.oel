@@ -149,7 +149,7 @@
     <CherryBlossomNorth id="60" x="9312" y="-48" />
     <CherryBlossomNorth id="61" x="536" y="-52" />
     <BridgeStart id="1" x="160" y="244" />
-    <BridgeEnd id="2" x="9928" y="244" NextLevel="009.oel" />
+    <BridgeEnd id="2" x="9888" y="244" NextLevel="009.oel" />
     <Crane1 id="3" x="656" y="376" />
     <Crane1 id="4" x="904" y="324" />
     <Crane1 id="5" x="1104" y="232" />
