@@ -138,9 +138,9 @@
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</Forward>
   <BankGrid exportMode="Rectangles" />
   <Entities>
-    <Boat id="1" x="116" y="248" angle="0" />
-    <Rock id="2" x="356" y="384" width="50" height="50" angle="0" />
-    <Rock id="3" x="724" y="152" width="50" height="50" angle="0" />
+    <Boat id="1" x="200" y="276" angle="0" />
+    <Rock id="2" x="772" y="380" width="50" height="50" angle="0" />
+    <Rock id="3" x="860" y="136" width="50" height="50" angle="0" />
     <Whirlpool id="4" x="1380" y="160" width="80" height="80" strength="100" />
     <Whirlpool id="5" x="2064" y="416" width="80" height="80" strength="100" />
     <Whirlpool id="6" x="2720" y="132" width="80" height="80" strength="100" />
@@ -170,16 +170,14 @@
     <Rock id="74" x="8548" y="480" width="50" height="50" angle="0" />
     <Rock id="75" x="9056" y="472" width="50" height="50" angle="0" />
     <Rock id="76" x="8792" y="44" width="50" height="50" angle="0" />
-    <CherryBlossomNorth id="93" x="208" y="-56" />
-    <LooseBlossoms id="94" x="96" y="32" />
-    <LooseBlossoms id="96" x="376" y="48" />
-    <LooseBlossoms id="97" x="308" y="124" />
-    <Lillypad id="99" x="88" y="384" width="50" height="40" angle="0" />
-    <Lillypad id="100" x="196" y="420" width="50" height="40" angle="0" />
-    <Koi id="101" x="856" y="168" angle="0" />
+    <CherryBlossomNorth id="93" x="460" y="-44" />
+    <LooseBlossoms id="94" x="368" y="40" />
+    <LooseBlossoms id="96" x="648" y="56" />
+    <LooseBlossoms id="97" x="580" y="132" />
+    <Lillypad id="99" x="656" y="360" width="50" height="40" angle="0" />
+    <Koi id="101" x="992" y="152" angle="0" />
     <Lillypad id="102" x="1260" y="400" width="50" height="40" angle="0" />
     <Lillypad id="103" x="2108" y="32" width="50" height="40" angle="0" />
-    <MapleTreeSouth id="104" x="1532" y="536" width="70" height="70" />
     <Lillypad id="105" x="3156" y="48" width="50" height="40" angle="0" />
     <MapleTreeNorth id="106" x="5784" y="-28" width="70" height="70" />
     <MapleTreeNorth id="107" x="9340" y="-28" width="70" height="70" />
@@ -194,9 +192,9 @@
     <MapleTreeSouth id="116" x="7600" y="528" width="70" height="70" />
     <TulipNorth id="80" x="964" y="-32" />
     <MapleTreeSouth id="98" x="5776" y="528" width="70" height="70" />
-    <BridgeStart id="0" x="4" y="212" />
-    <TulipSouth id="12" x="584" y="520" />
-    <Crane1 id="13" x="508" y="380" />
+    <BridgeStart id="0" x="176" y="252" />
+    <TulipSouth id="12" x="1000" y="516" />
+    <Crane1 id="13" x="924" y="376" />
     <Crane1 id="14" x="1704" y="372" />
     <Crane1 id="15" x="2456" y="108" />
     <Crane1 id="16" x="3072" y="428" />
@@ -209,6 +207,7 @@
     <Crane5 id="23" x="8652" y="492" />
     <Crane1 id="24" x="9352" y="232" />
     <BridgeEnd id="25" x="9928" y="232" NextLevel="016.oel" />
+    <MTOrangeSouth id="26" x="1392" y="516" />
   </Entities>
   <Art />
 </level>
