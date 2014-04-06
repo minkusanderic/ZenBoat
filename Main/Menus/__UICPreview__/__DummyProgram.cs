@@ -25,7 +25,7 @@ namespace Preview
             graphics = new GraphicsContext(960,544,PixelFormat.Rgba,PixelFormat.Depth16,MultiSampleMode.None);
             UISystem.Initialize(graphics);
 
-            Select scene = new Select();
+            Story scene = new Story();
             SetupListNum(scene.RootWidget);
             scene.SetWidgetLayout(LayoutOrientation.Horizontal);
             UISystem.SetScene(scene);

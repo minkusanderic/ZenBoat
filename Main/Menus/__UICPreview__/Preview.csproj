@@ -31,16 +31,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="Select.composer.cs" />
-    <Compile Include="Select.cs" />
-    <Compile Include="Tier1.composer.cs" />
-    <Compile Include="Tier1.cs" />
-    <Compile Include="Tier2.composer.cs" />
-    <Compile Include="Tier2.cs" />
-    <Compile Include="Tier3.composer.cs" />
-    <Compile Include="Tier3.cs" />
-    <Compile Include="Tier4.composer.cs" />
-    <Compile Include="Tier4.cs" />
+    <Compile Include="Story.composer.cs" />
+    <Compile Include="Story.cs" />
+    <Compile Include="Story1.composer.cs" />
+    <Compile Include="Story1.cs" />
+    <Compile Include="Story2.composer.cs" />
+    <Compile Include="Story2.cs" />
+    <Compile Include="Story3.composer.cs" />
+    <Compile Include="Story3.cs" />
+    <Compile Include="Story4.composer.cs" />
+    <Compile Include="Story4.cs" />
+    <Compile Include="Story5.composer.cs" />
+    <Compile Include="Story5.cs" />
+    <Compile Include="Story6.composer.cs" />
+    <Compile Include="Story6.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,12 +108,6 @@
     <Content Include="..\\assets\halo.png" >
       <Link>assets\halo.png</Link>
     </Content>
-    <Content Include="..\\assets\instructions.png" >
-      <Link>assets\instructions.png</Link>
-    </Content>
-    <Content Include="..\\assets\instructionsB.png" >
-      <Link>assets\instructionsB.png</Link>
-    </Content>
     <Content Include="..\\assets\OrgA.png" >
       <Link>assets\OrgA.png</Link>
     </Content>
@@ -167,6 +165,9 @@
     <Content Include="..\\assets\Teal.png" >
       <Link>assets\Teal.png</Link>
     </Content>
+    <Content Include="..\\assets\Thumbs.db" >
+      <Link>assets\Thumbs.db</Link>
+    </Content>
     <Content Include="..\\assets\title.png" >
       <Link>assets\title.png</Link>
     </Content>
@@ -199,6 +200,9 @@
     </Content>
     <Content Include="..\\assets\end\stry12.png" >
       <Link>assets\end\stry12.png</Link>
+    </Content>
+    <Content Include="..\\assets\end\Thumbs.db" >
+      <Link>assets\end\Thumbs.db</Link>
     </Content>
     <Content Include="..\\assets\Level Previews\001.jpg" >
       <Link>assets\Level Previews\001.jpg</Link>
@@ -260,6 +264,9 @@
     <Content Include="..\\assets\Level Previews\020.jpg" >
       <Link>assets\Level Previews\020.jpg</Link>
     </Content>
+    <Content Include="..\\assets\Level Previews\Thumbs.db" >
+      <Link>assets\Level Previews\Thumbs.db</Link>
+    </Content>
     <Content Include="..\\assets\open\openFull.png" >
       <Link>assets\open\openFull.png</Link>
     </Content>
@@ -280,6 +287,9 @@
     </Content>
     <Content Include="..\\assets\open\stry6.png" >
       <Link>assets\open\stry6.png</Link>
+    </Content>
+    <Content Include="..\\assets\open\Thumbs.db" >
+      <Link>assets\open\Thumbs.db</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>

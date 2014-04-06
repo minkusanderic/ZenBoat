@@ -67,8 +67,6 @@
     <Compile Include="PreFabs\CherryBlossomSouth.cs" />
     <Compile Include="PreFabs\Pagoda.cs" />
     <Compile Include="PreFabs\Island.cs" />
-    <Compile Include="Menus\Instructions.composer.cs" />
-    <Compile Include="Menus\Instructions.cs" />
     <Compile Include="Menus\MenuLoader.cs" />
     <Compile Include="Menus\StartMenu.composer.cs" />
     <Compile Include="Menus\StartMenu.cs" />
@@ -172,6 +170,8 @@
     <Compile Include="Menus\End6.cs" />
     <Compile Include="Menus\Ending.composer.cs" />
     <Compile Include="Menus\Ending.cs" />
+    <Compile Include="Menus\Story6.composer.cs" />
+    <Compile Include="Menus\Story6.cs" />
   </ItemGroup>
   <ItemGroup>
     <ShaderProgram Include="shaders\Simple.fcg" />

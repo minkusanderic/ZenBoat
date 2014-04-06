@@ -13,12 +13,7 @@ namespace Menu
         public Story5()
         {
             InitializeWidget();
-			playButton.ButtonAction += HandlePlayButtonButtonAction;
         }
-
-        void HandlePlayButtonButtonAction (object sender, TouchEventArgs e)
-        {
-			MenuLoader.loadInstr = true;
-        }
-    }
+		
+	}
 }

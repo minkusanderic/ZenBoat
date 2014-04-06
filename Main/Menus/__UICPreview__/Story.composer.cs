@@ -40,6 +40,7 @@ namespace Preview
             PagePanel_1.AddPage(new Story3());
             PagePanel_1.AddPage(new Story4());
             PagePanel_1.AddPage(new Story5());
+            PagePanel_1.AddPage(new Story6());
 
             SetWidgetLayout(orientation);
 
