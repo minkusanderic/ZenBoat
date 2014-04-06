@@ -62,12 +62,12 @@ namespace Menu
 			Label_5.Font = Globals.medium_font;
 			Label_6.Font = Globals.medium_font;
 			//We need updated fonts with the '$'
-			//Label_7.Font = Globals.medium_font;
-			//Label_8.Font = Globals.medium_font;
-			//Label_9.Font = Globals.medium_font;
-			//Label_10.Font = Globals.medium_font;
-			//Label_11.Font = Globals.medium_font;
-			//Label_12.Font = Globals.medium_font;
+			Label_7.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 32, FontStyle.Regular);
+			Label_8.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 32, FontStyle.Regular);
+			Label_9.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 32, FontStyle.Regular);
+			Label_10.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 32, FontStyle.Regular);
+			Label_11.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 32, FontStyle.Regular);
+			Label_12.Font = new UIFont("/Application/Menus/Zen_Sketch.ttf", 32, FontStyle.Regular);
 			
 			BackButton.TextFont = Globals.medium_font;
 			Button_1.TextFont = Globals.medium_font;

@@ -24,7 +24,7 @@ namespace Main
 		{
 		}
 		
-		private void show_splash_screen(GraphicsContext graphics)
+		private static void show_splash_screen(GraphicsContext graphics)
 		{
 			graphics.SetViewport(0, 0, graphics.Screen.Width, graphics.Screen.Height);
 			// Initialize the UI Toolkit
@@ -45,7 +45,7 @@ namespace Main
 			// Set up the graphics system
 			GraphicsContext graphics = ((GraphicsSystem)SceneManager.Instance.getSystem(typeof(GraphicsSystem))).graphics;
 			
-			//show_splash_screen();
+			show_splash_screen(graphics);
 			// Create the scenes
 			var start = new Menu.StartMenu();
 			var story = new Menu.Story();
