@@ -15,12 +15,12 @@ namespace Menu
             InitializeWidget();
         
 
-            Button_1.ButtonAction += (sender, e)=>{ Hide(); };
+            //Button_1.ButtonAction += (sender, e)=>{ Hide(); };
             if (onClose != null) Hiding += onClose;
 
             Label_1.Text = text;
             Show();
-			this.Result = DialogResult.Cancel;
+			//this.Result = DialogResult.Cancel;
 			
 			Button_1.ButtonAction += HandleButton_1ButtonAction;
 			cancelButton.ButtonAction += HandleCancelButtonButtonAction;
@@ -28,11 +28,13 @@ namespace Menu
 
         void HandleButton_1ButtonAction (object sender, TouchEventArgs e)
         {
+			this.Result = DialogResult.Ok;
 			this.Hide();			
         }
 
         void HandleCancelButtonButtonAction (object sender, TouchEventArgs e)
         {
+			this.Result = DialogResult.Cancel;
 			this.Hide();
         }
 

@@ -117,14 +117,14 @@ namespace Menu
 			{
 				var why_dont_you_just_buy_the_boat = new Menu.StoreMessage("Would you like to buy this boat?",
 				                                                           (sender, e) => {
-					//if(e.Result == DialogResult.Ok){
+					if(e.Result == DialogResult.Ok){
 					SaveGameManager.SaveString(boat, "0");
 					crane_count -= boat_value;
 					SaveGameManager.SaveString("crane_value", crane_count.ToString());
 					Console.WriteLine("Buying Boat");
 					Globals.chosenBoat = boat;
 					Console.WriteLine("Selected Boat");	
-					//}
+					}
 				});
 			}
 			//Case 3: I don't have the boat, I want to buy it but I don't have enough cranes

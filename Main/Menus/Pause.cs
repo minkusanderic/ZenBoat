@@ -42,6 +42,7 @@ namespace Menu
 			Core.SceneManager.Instance.DestroyAll();
 			Core.SceneManager.Instance.Update();
         	Core.SceneManager.Instance.currentState = GameState.STOPPED;
+			this.Hide();
         }
 
         void HandleRestartButtonButtonAction (object sender, TouchEventArgs e)
@@ -59,6 +60,7 @@ namespace Menu
         	Core.SceneManager.Instance.currentState = GameState.STOPPED;
 			Main.AppMain.current_state = Main.AppState.MENU;
 			Main.MenuLoader.loadLevel = true;
+			this.Hide();
         }
         void HandleContinueButtonButtonAction (object sender, TouchEventArgs e)
         {
