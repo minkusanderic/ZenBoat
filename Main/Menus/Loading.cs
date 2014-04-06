@@ -13,6 +13,8 @@ namespace Menu
         public Loading()
         {
             InitializeWidget();
+			
+			Label_1.Font = Core.Globals.big_font;
         }
     }
 }
