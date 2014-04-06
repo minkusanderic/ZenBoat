@@ -863,8 +863,8 @@
               <Nodes />
               <LayoutProperty>
                 <LayoutProperty>
-                  <X>641.78135901337316</X>
-                  <Y>415.99159073128362</Y>
+                  <X>653.5074394613531</X>
+                  <Y>412.08289724862345</Y>
                   <Width>155</Width>
                   <Height>56</Height>
                   <Visible>true</Visible>
@@ -889,8 +889,8 @@
                   <d9p1:BackgroundPressImage i:nil="true" />
                 </BackgroundButtonImage>
                 <BackgroundType>Custom</BackgroundType>
-                <ButtonImage></ButtonImage>
-                <ButtonType>TextButton</ButtonType>
+                <ButtonImage>back214.png</ButtonImage>
+                <ButtonType>ImageButton</ButtonType>
                 <FilterColor xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
                   <d9p1:A>255</d9p1:A>
                   <d9p1:B>255</d9p1:B>
@@ -908,7 +908,7 @@
                   <d9p1:RightColumnWidth>42</d9p1:RightColumnWidth>
                   <d9p1:TopRowHeight>27</d9p1:TopRowHeight>
                 </NinePatchMargin>
-                <Text></Text>
+                <Text>Continue</Text>
                 <TextAlpha>100</TextAlpha>
                 <TextColor xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Windows.Media">
                   <d9p1:A>255</d9p1:A>
