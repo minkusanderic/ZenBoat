@@ -46,9 +46,18 @@ namespace Main
 														}
 														Console.WriteLine ("You've reached the Torii Gate - Level Over!");	
 														SaveGameManager.SaveString( Globals.completedLevelPrefix + Globals.current_level , Globals.true_ );
+				
+				int remaining_crane_count = 0;
+				foreach( Entity e in SceneManager.Instance.FindEntitiesByTag("crane") )
+				{
+					remaining_crane_count ++;
+				}
+				Console.WriteLine("found " + remaining_crane_count.ToString() + "remaining on this level");
+				SaveGameManager.SaveString( Globals.craneTotalForLevelPrefix + Globals.current_level , remaining_crane_count.ToString() );
+				
 				// calc max cranes to curretn cranes
 				int current_max_crane_count = 0;
-				if ( !SaveGameManager.ContainsSaveString(Globals.craneTotalForLevelPrefix + Globals.current_level) );
+				if ( !SaveGameManager.ContainsSaveString(Globals.craneTotalForLevelPrefix + Globals.current_level) )
 				{
 					SaveGameManager.SaveString( Globals.craneMaxForLevelPrefix + Globals.current_level, Globals.currentCraneCountOnLevel.ToString() );	
 				}
@@ -76,6 +85,7 @@ namespace Main
 														if(options.ContainsKey("NextLevel") && (options["NextLevel"] != ""))
 														{
 															SceneManager.Instance.DestroyAll ();
+															//SceneManager.Instance.Update();
 															Globals.current_level = "/Application/Levels/" + options["NextLevel"];
 															SaveGameManager.SaveString(Globals.unlockedLevelPrefix + Globals.current_level , "unlocked" );
 															AppMain.current_state = AppState.LOADING;
