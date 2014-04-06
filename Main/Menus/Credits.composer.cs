@@ -42,8 +42,7 @@ namespace Menu
             ImageBox_1.Image = new ImageAsset("/Application/assets/credits.png");
 
             // continueButton
-            continueButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            continueButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
+            continueButton.IconImage = new ImageAsset("/Application/assets/back214.png");
             continueButton.Style = ButtonStyle.Custom;
             continueButton.CustomImage = new CustomButtonImageSettings()
             {
@@ -98,7 +97,7 @@ namespace Menu
                     ImageBox_1.Anchors = Anchors.None;
                     ImageBox_1.Visible = true;
 
-                    continueButton.SetPosition(641, 415);
+                    continueButton.SetPosition(653, 412);
                     continueButton.SetSize(155, 56);
                     continueButton.Anchors = Anchors.None;
                     continueButton.Visible = true;

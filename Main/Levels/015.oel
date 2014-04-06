@@ -198,7 +198,7 @@
     <Crane10 id="22" x="7628" y="508" />
     <Crane5 id="23" x="8652" y="492" />
     <Crane1 id="24" x="9352" y="232" />
-    <BridgeEnd id="25" x="9912" y="192" NextLevel="016.oel" />
+    <BridgeEnd id="25" x="9912" y="244" NextLevel="016.oel" />
     <MTOrangeSouth id="26" x="1392" y="516" />
     <MTOrangeNorth id="27" x="4316" y="-52" />
     <MTOrangeNorth id="28" x="5736" y="-56" />

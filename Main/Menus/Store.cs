@@ -170,25 +170,9 @@ namespace Menu
         {
             base.OnUpdate(elapsedTime);
 			UpdateDialog();
-			update_labels();
-			
         }
 		///
 		
-		private void update_labels()
-		{
-			if(dialog.IsProductInfoComplete)
-			{
-				Label_7.Text = dialog.ProductList[0].Price;
-				Label_8.Text = dialog.ProductList[1].Price;
-				Label_9.Text = dialog.ProductList[2].Price;
-				Label_10.Text = dialog.ProductList[3].Price;
-				Label_11.Text = dialog.ProductList[4].Price;
-				Label_12.Text = dialog.ProductList[5].Price;
-				
-				
-			}
-		}
 		//  Public methods
 
         public void SetItemCount(int count)

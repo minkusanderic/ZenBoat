@@ -305,8 +305,6 @@
     <Content Include="assets\RotatedIrisBundle.mdx" />
     <Content Include="assets\RotatedTulipBunch2.mdx" />
     <Content Include="assets\TulipBunch2.mdx" />
-    <Content Include="assets\credits.png" />
-    <Content Include="assets\title.png" />
     <Content Include="assets\BlueBoat.mdx" />
     <Content Include="assets\GreenBoat.mdx" />
     <Content Include="assets\PurpleBoat.mdx" />
@@ -416,7 +414,6 @@
     <Content Include="Levels\013.oel" />
     <Content Include="Levels\014.oel" />
     <Content Include="Levels\015.oel" />
-    <Content Include="Levels\016.oel" />
     <Content Include="Levels\017.oel" />
     <Content Include="Levels\018.oel" />
     <Content Include="Levels\019.oel" />
@@ -469,5 +466,11 @@
     <Content Include="assets\end\stry07.png" />
     <Content Include="assets\end\stry08.png" />
     <Content Include="assets\end\stry09.png" />
+    <Content Include="assets\halo.png" />
+    <Content Include="assets\title.png" />
+    <Content Include="Levels\016.oel" />
+    <Content Include="assets\credits.png" />
+    <Content Include="assets\back144.png" />
+    <Content Include="assets\back214.png" />
   </ItemGroup>
 </Project>
