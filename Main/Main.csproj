@@ -444,5 +444,6 @@
     <Content Include="assets\025.jpg" />
     <Content Include="assets\BoatPirate.mdx" />
     <Content Include="assets\pirate.png" />
+    <Content Include="assets\BoatDuckie.mdx" />
   </ItemGroup>
 </Project>
