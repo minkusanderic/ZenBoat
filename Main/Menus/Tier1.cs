@@ -42,7 +42,46 @@ namespace Menu
 			label7.Font = Globals.medium_font;
 			label8.Font = Globals.medium_font;
 			
-			
+			if(SaveGameManager.GetValueFromKey("BoatBlack") == "0")
+			{
+				label1.Visible = false;
+				Console.WriteLine("bought bla Boat");
+			}
+			if(SaveGameManager.GetValueFromKey("BoatBlue") == "0")
+			{
+				label2.Visible = false;
+				Console.WriteLine("bought blu Boat");
+			}
+			if(SaveGameManager.GetValueFromKey("BoatGreen") == "0")
+			{
+				label3.Visible = false;
+				Console.WriteLine("bought gre Boat");
+			}
+			if(SaveGameManager.GetValueFromKey("BoatPurple") == "0")
+			{
+				label4.Visible = false;
+				Console.WriteLine("bought pur Boat");
+			}
+			if(SaveGameManager.GetValueFromKey("BoatRed") == "0")
+			{
+				label5.Visible = false;
+				Console.WriteLine("bought rd Boat");
+			}
+			if(SaveGameManager.GetValueFromKey("BoatTeal") == "0")
+			{
+				label6.Visible = false;
+				Console.WriteLine("bought tea Boat");
+			}
+			if(SaveGameManager.GetValueFromKey("BoatWhite") == "0")
+			{
+				label7.Visible = false;
+				Console.WriteLine("bought whi Boat");
+			}
+			if(SaveGameManager.GetValueFromKey("BoatYellow") == "0")
+			{
+				label8.Visible = false;
+				Console.WriteLine("bought yel Boat");
+			}
         }
 		
 		private void make_boat(String boat,int price)
@@ -57,34 +96,42 @@ namespace Menu
 		{
 			if(sender.Equals(button1))
 			{
+				label1.Visible = false;
 				ProcessBoat("BoatBlack");
 			}
 			if(sender.Equals(button2))
 			{
+				label2.Visible = false;
 				ProcessBoat("BoatBlue");
 			}
 			if(sender.Equals(button3))
 			{
+				label3.Visible = false;
 				ProcessBoat("BoatGreen");
 			}
 			if(sender.Equals(button4))
 			{
+				label4.Visible = false;
 				ProcessBoat("BoatPurple");
 			}
 			if(sender.Equals(button5))
 			{
+				label5.Visible = false;
 				ProcessBoat("BoatRed");
 			}
 			if(sender.Equals(button6))
 			{
+				label6.Visible = false;
 				ProcessBoat("BoatTeal");
 			}
 			if(sender.Equals(button7))
 			{
+				label7.Visible = false;
 				ProcessBoat("BoatWhite");
 			}
 			if(sender.Equals(button8))
 			{
+				label8.Visible = false;
 				ProcessBoat("BoatYellow");
 			}
 			

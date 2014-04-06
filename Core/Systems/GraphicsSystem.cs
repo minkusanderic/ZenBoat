@@ -154,7 +154,7 @@ namespace Core
 			foreach( var model in ModelComponent.model_cache.Values )
 			{
 				float animation_speed = 0.006f;
-				if( model.Name.Contains("whirlpool") )
+				if( model.Name.Contains("Whirlpool") )
 					animation_speed *= 50f;
 				model.Animate( animation_speed );
 			}
