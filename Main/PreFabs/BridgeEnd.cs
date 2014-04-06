@@ -36,10 +36,11 @@ namespace Main
 			ent.attachComponent (new SimpleTrigger (targets,
 			                                       	(t) => {
 														Console.WriteLine ( SceneManager.Instance.GetCurrentLevelName() );
-														if ( Globals.current_level == "/Application/Levels/016.oel" )
+														if ( Globals.current_level == "/Application/Levels/025.oel" )
 														{
 															// do something cos the game is over
 															// go to credits/menu
+															MenuLoader.loadEnd = true;
 															SceneManager.Instance.currentState = GameState.STOPPED;
 															return;
 														}

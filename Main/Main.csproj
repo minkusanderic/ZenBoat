@@ -469,5 +469,8 @@
     <Content Include="assets\open\stry6.png" />
     <Content Include="assets\duckie.PNG" />
     <Content Include="assets\score.png" />
+    <Content Include="assets\end\stry07.png" />
+    <Content Include="assets\end\stry08.png" />
+    <Content Include="assets\end\stry09.png" />
   </ItemGroup>
 </Project>
