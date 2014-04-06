@@ -12,7 +12,6 @@ namespace Menu
     {
         public Level01()
         {
-			SaveGameManager.SaveString(Globals.unlockedLevelPrefix
 			InitializeWidget();
 			Button_1.ButtonAction += HandleButton_1ButtonAction;
 			Button_2.ButtonAction += HandleButton_2ButtonAction;
