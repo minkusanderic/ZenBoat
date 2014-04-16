@@ -148,7 +148,7 @@
     <MTRedOrangeNorth id="114" x="1416" y="-52" />
     <MTRedNorth id="115" x="1512" y="-48" />
     <MTBranchNorth id="124" x="1604" y="-48" />
-    <BridgeEnd id="2" x="1872" y="192" NextLevel="001.oel" />
+    <BridgeEnd id="2" x="1908" y="240" NextLevel="001.oel" />
     <MTGreenSouth id="3" x="944" y="508" />
     <MTGreenYellowSouth id="4" x="1040" y="512" />
     <MTYellowSouth id="5" x="1136" y="508" />
@@ -188,7 +188,7 @@
     <Crane1 id="44" x="1564" y="244" />
     <Crane1 id="45" x="1436" y="456" />
     <Crane1 id="46" x="1228" y="204" />
-    <Crane10 id="48" x="1700" y="248" />
+    <Crane10 id="48" x="1748" y="248" />
     <Crane5 id="29" x="1312" y="124" />
     <Crane1 id="30" x="1228" y="360" />
     <Whirlpool id="19" x="632" y="284" width="80" height="80" strength="100" />
