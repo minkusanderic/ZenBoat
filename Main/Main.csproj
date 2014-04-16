@@ -299,7 +299,6 @@
     <Content Include="assets\shader4.png" />
     <Content Include="assets\spiral.png" />
     <Content Include="assets\shader5.png" />
-    <Content Include="assets\Geyser.mdx" />
     <Content Include="assets\whirlpool.mdx" />
     <Content Include="assets\whirlpool_animated.mdx" />
     <Content Include="assets\RotatedIrisBundle.mdx" />
@@ -473,5 +472,6 @@
     <Content Include="assets\BoatOrg4.mdx" />
     <Content Include="assets\BoatOrg5.mdx" />
     <Content Include="assets\BoatOrg6.mdx" />
+    <Content Include="assets\Geyser.mdx" />
   </ItemGroup>
 </Project>
