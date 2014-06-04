@@ -31,20 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="__DummyProgram.cs" />
-    <Compile Include="Story.composer.cs" />
-    <Compile Include="Story.cs" />
-    <Compile Include="Story1.composer.cs" />
-    <Compile Include="Story1.cs" />
-    <Compile Include="Story2.composer.cs" />
-    <Compile Include="Story2.cs" />
-    <Compile Include="Story3.composer.cs" />
-    <Compile Include="Story3.cs" />
-    <Compile Include="Story4.composer.cs" />
-    <Compile Include="Story4.cs" />
-    <Compile Include="Story5.composer.cs" />
-    <Compile Include="Story5.cs" />
-    <Compile Include="Story6.composer.cs" />
-    <Compile Include="Story6.cs" />
+    <Compile Include="__DummyScene.cs" />
+    <Compile Include="Tier1.composer.cs" />
+    <Compile Include="Tier1.cs" />
     <Compile Include="UIStringTable.cs" />
   </ItemGroup>
   <ItemGroup>

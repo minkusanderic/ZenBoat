@@ -15,6 +15,8 @@ namespace Menu
         ImageBox ImageBox_2;
         Button button1;
         Button button2;
+        ImageBox ImageBox_9;
+        ImageBox ImageBox_3;
         Label label1;
         Label label2;
 
@@ -33,6 +35,10 @@ namespace Menu
             button1.Name = "button1";
             button2 = new Button();
             button2.Name = "button2";
+            ImageBox_9 = new ImageBox();
+            ImageBox_9.Name = "ImageBox_9";
+            ImageBox_3 = new ImageBox();
+            ImageBox_3.Name = "ImageBox_3";
             label1 = new Label();
             label1.Name = "label1";
             label2 = new Label();
@@ -45,6 +51,8 @@ namespace Menu
             this.AddChildLast(ImageBox_2);
             this.AddChildLast(button1);
             this.AddChildLast(button2);
+            this.AddChildLast(ImageBox_9);
+            this.AddChildLast(ImageBox_3);
             this.AddChildLast(label1);
             this.AddChildLast(label2);
 
@@ -78,15 +86,21 @@ namespace Menu
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
             };
 
+            // ImageBox_9
+            ImageBox_9.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_3
+            ImageBox_3.Image = new ImageAsset("/Application/assets/score.png");
+
             // label1
-            label1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label1.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label1.LineBreak = LineBreak.Character;
             label1.HorizontalAlignment = HorizontalAlignment.Center;
             label1.VerticalAlignment = VerticalAlignment.Top;
 
             // label2
-            label2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label2.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label2.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label2.LineBreak = LineBreak.Character;
             label2.HorizontalAlignment = HorizontalAlignment.Center;
@@ -126,6 +140,16 @@ namespace Menu
                     button2.Anchors = Anchors.None;
                     button2.Visible = true;
 
+                    ImageBox_9.SetPosition(546, 0);
+                    ImageBox_9.SetSize(200, 200);
+                    ImageBox_9.Anchors = Anchors.None;
+                    ImageBox_9.Visible = true;
+
+                    ImageBox_3.SetPosition(546, 0);
+                    ImageBox_3.SetSize(200, 200);
+                    ImageBox_3.Anchors = Anchors.None;
+                    ImageBox_3.Visible = true;
+
                     label1.SetPosition(678, 80);
                     label1.SetSize(214, 36);
                     label1.Anchors = Anchors.None;
@@ -161,6 +185,16 @@ namespace Menu
                     button2.SetSize(155, 111);
                     button2.Anchors = Anchors.None;
                     button2.Visible = true;
+
+                    ImageBox_9.SetPosition(150, 232);
+                    ImageBox_9.SetSize(142, 57);
+                    ImageBox_9.Anchors = Anchors.None;
+                    ImageBox_9.Visible = true;
+
+                    ImageBox_3.SetPosition(337, 232);
+                    ImageBox_3.SetSize(142, 57);
+                    ImageBox_3.Anchors = Anchors.None;
+                    ImageBox_3.Visible = true;
 
                     label1.SetPosition(167, 251);
                     label1.SetSize(102, 28);

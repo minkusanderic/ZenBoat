@@ -22,10 +22,10 @@ namespace Preview
 
         static void Main(string[] args)
         { 
-            graphics = new GraphicsContext(960,544,PixelFormat.Rgba,PixelFormat.Depth16,MultiSampleMode.None);
+            graphics = new GraphicsContext(622,420,PixelFormat.Rgba,PixelFormat.Depth16,MultiSampleMode.None);
             UISystem.Initialize(graphics);
 
-            Story scene = new Story();
+            __DummyScene scene = new __DummyScene();
             SetupListNum(scene.RootWidget);
             scene.SetWidgetLayout(LayoutOrientation.Horizontal);
             UISystem.SetScene(scene);

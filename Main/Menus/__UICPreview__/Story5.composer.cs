@@ -12,7 +12,6 @@ namespace Preview
     partial class Story5
     {
         ImageBox story5;
-        Button playButton;
 
         private void InitializeWidget()
         {
@@ -23,29 +22,14 @@ namespace Preview
         {
             story5 = new ImageBox();
             story5.Name = "story5";
-            playButton = new Button();
-            playButton.Name = "playButton";
 
             // Story5
             this.BackgroundColor = new UIColor(153f / 255f, 153f / 255f, 153f / 255f, 255f / 255f);
             this.Clip = true;
             this.AddChildLast(story5);
-            this.AddChildLast(playButton);
 
             // story5
             story5.Image = new ImageAsset("/Application/assets/open/stry5.png");
-
-            // playButton
-            playButton.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
-            playButton.TextFont = new UIFont(FontAlias.System, 25, FontStyle.Regular);
-            playButton.Style = ButtonStyle.Custom;
-            playButton.CustomImage = new CustomButtonImageSettings()
-            {
-                BackgroundNormalImage = null,
-                BackgroundPressedImage = null,
-                BackgroundDisabledImage = null,
-                BackgroundNinePatchMargin = new NinePatchMargin(42, 27, 42, 27),
-            };
 
             SetWidgetLayout(orientation);
 
@@ -66,11 +50,6 @@ namespace Preview
                     story5.Anchors = Anchors.None;
                     story5.Visible = true;
 
-                    playButton.SetPosition(558, 355);
-                    playButton.SetSize(214, 56);
-                    playButton.Anchors = Anchors.None;
-                    playButton.Visible = true;
-
                     break;
 
                 default:
@@ -81,11 +60,6 @@ namespace Preview
                     story5.SetSize(960, 544);
                     story5.Anchors = Anchors.None;
                     story5.Visible = true;
-
-                    playButton.SetPosition(667, 349);
-                    playButton.SetSize(160, 77);
-                    playButton.Anchors = Anchors.None;
-                    playButton.Visible = true;
 
                     break;
             }

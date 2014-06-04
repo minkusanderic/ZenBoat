@@ -27,6 +27,14 @@ namespace Preview
         Button button6;
         Button button7;
         Button button8;
+        ImageBox ImageBox_9;
+        ImageBox ImageBox_10;
+        ImageBox ImageBox_11;
+        ImageBox ImageBox_12;
+        ImageBox ImageBox_13;
+        ImageBox ImageBox_14;
+        ImageBox ImageBox_15;
+        ImageBox ImageBox_16;
         Label label1;
         Label label2;
         Label label3;
@@ -75,6 +83,22 @@ namespace Preview
             button7.Name = "button7";
             button8 = new Button();
             button8.Name = "button8";
+            ImageBox_9 = new ImageBox();
+            ImageBox_9.Name = "ImageBox_9";
+            ImageBox_10 = new ImageBox();
+            ImageBox_10.Name = "ImageBox_10";
+            ImageBox_11 = new ImageBox();
+            ImageBox_11.Name = "ImageBox_11";
+            ImageBox_12 = new ImageBox();
+            ImageBox_12.Name = "ImageBox_12";
+            ImageBox_13 = new ImageBox();
+            ImageBox_13.Name = "ImageBox_13";
+            ImageBox_14 = new ImageBox();
+            ImageBox_14.Name = "ImageBox_14";
+            ImageBox_15 = new ImageBox();
+            ImageBox_15.Name = "ImageBox_15";
+            ImageBox_16 = new ImageBox();
+            ImageBox_16.Name = "ImageBox_16";
             label1 = new Label();
             label1.Name = "label1";
             label2 = new Label();
@@ -111,6 +135,14 @@ namespace Preview
             this.AddChildLast(button6);
             this.AddChildLast(button7);
             this.AddChildLast(button8);
+            this.AddChildLast(ImageBox_9);
+            this.AddChildLast(ImageBox_10);
+            this.AddChildLast(ImageBox_11);
+            this.AddChildLast(ImageBox_12);
+            this.AddChildLast(ImageBox_13);
+            this.AddChildLast(ImageBox_14);
+            this.AddChildLast(ImageBox_15);
+            this.AddChildLast(ImageBox_16);
             this.AddChildLast(label1);
             this.AddChildLast(label2);
             this.AddChildLast(label3);
@@ -240,57 +272,81 @@ namespace Preview
                 BackgroundNinePatchMargin = new NinePatchMargin(0, 0, 0, 0),
             };
 
+            // ImageBox_9
+            ImageBox_9.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_10
+            ImageBox_10.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_11
+            ImageBox_11.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_12
+            ImageBox_12.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_13
+            ImageBox_13.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_14
+            ImageBox_14.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_15
+            ImageBox_15.Image = new ImageAsset("/Application/assets/score.png");
+
+            // ImageBox_16
+            ImageBox_16.Image = new ImageAsset("/Application/assets/score.png");
+
             // label1
-            label1.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label1.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label1.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label1.LineBreak = LineBreak.Character;
             label1.HorizontalAlignment = HorizontalAlignment.Center;
             label1.VerticalAlignment = VerticalAlignment.Top;
 
             // label2
-            label2.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label2.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label2.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label2.LineBreak = LineBreak.Character;
             label2.HorizontalAlignment = HorizontalAlignment.Center;
             label2.VerticalAlignment = VerticalAlignment.Top;
 
             // label3
-            label3.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label3.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label3.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label3.LineBreak = LineBreak.Character;
             label3.HorizontalAlignment = HorizontalAlignment.Center;
             label3.VerticalAlignment = VerticalAlignment.Top;
 
             // label4
-            label4.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label4.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label4.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label4.LineBreak = LineBreak.Character;
             label4.HorizontalAlignment = HorizontalAlignment.Center;
             label4.VerticalAlignment = VerticalAlignment.Top;
 
             // label5
-            label5.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label5.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label5.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label5.LineBreak = LineBreak.Character;
             label5.HorizontalAlignment = HorizontalAlignment.Center;
             label5.VerticalAlignment = VerticalAlignment.Top;
 
             // label6
-            label6.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label6.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label6.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label6.LineBreak = LineBreak.Character;
             label6.HorizontalAlignment = HorizontalAlignment.Center;
             label6.VerticalAlignment = VerticalAlignment.Top;
 
             // label7
-            label7.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label7.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label7.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label7.LineBreak = LineBreak.Character;
             label7.HorizontalAlignment = HorizontalAlignment.Center;
             label7.VerticalAlignment = VerticalAlignment.Top;
 
             // label8
-            label8.TextColor = new UIColor(0f / 255f, 0f / 255f, 0f / 255f, 255f / 255f);
+            label8.TextColor = new UIColor(255f / 255f, 255f / 255f, 255f / 255f, 255f / 255f);
             label8.Font = new UIFont(FontAlias.System, 17, FontStyle.Regular);
             label8.LineBreak = LineBreak.Character;
             label8.HorizontalAlignment = HorizontalAlignment.Center;
@@ -389,6 +445,46 @@ namespace Preview
                     button8.SetSize(214, 56);
                     button8.Anchors = Anchors.None;
                     button8.Visible = true;
+
+                    ImageBox_9.SetPosition(546, 0);
+                    ImageBox_9.SetSize(200, 200);
+                    ImageBox_9.Anchors = Anchors.None;
+                    ImageBox_9.Visible = true;
+
+                    ImageBox_10.SetPosition(546, 0);
+                    ImageBox_10.SetSize(200, 200);
+                    ImageBox_10.Anchors = Anchors.None;
+                    ImageBox_10.Visible = true;
+
+                    ImageBox_11.SetPosition(546, 0);
+                    ImageBox_11.SetSize(200, 200);
+                    ImageBox_11.Anchors = Anchors.None;
+                    ImageBox_11.Visible = true;
+
+                    ImageBox_12.SetPosition(546, 0);
+                    ImageBox_12.SetSize(200, 200);
+                    ImageBox_12.Anchors = Anchors.None;
+                    ImageBox_12.Visible = true;
+
+                    ImageBox_13.SetPosition(546, 0);
+                    ImageBox_13.SetSize(200, 200);
+                    ImageBox_13.Anchors = Anchors.None;
+                    ImageBox_13.Visible = true;
+
+                    ImageBox_14.SetPosition(546, 0);
+                    ImageBox_14.SetSize(200, 200);
+                    ImageBox_14.Anchors = Anchors.None;
+                    ImageBox_14.Visible = true;
+
+                    ImageBox_15.SetPosition(546, 0);
+                    ImageBox_15.SetSize(200, 200);
+                    ImageBox_15.Anchors = Anchors.None;
+                    ImageBox_15.Visible = true;
+
+                    ImageBox_16.SetPosition(546, 0);
+                    ImageBox_16.SetSize(200, 200);
+                    ImageBox_16.Anchors = Anchors.None;
+                    ImageBox_16.Visible = true;
 
                     label1.SetPosition(678, 80);
                     label1.SetSize(214, 36);
@@ -515,6 +611,46 @@ namespace Preview
                     button8.SetSize(155, 111);
                     button8.Anchors = Anchors.None;
                     button8.Visible = true;
+
+                    ImageBox_9.SetPosition(16, 157);
+                    ImageBox_9.SetSize(142, 57);
+                    ImageBox_9.Anchors = Anchors.None;
+                    ImageBox_9.Visible = true;
+
+                    ImageBox_10.SetPosition(172, 156);
+                    ImageBox_10.SetSize(142, 57);
+                    ImageBox_10.Anchors = Anchors.None;
+                    ImageBox_10.Visible = true;
+
+                    ImageBox_11.SetPosition(324, 155);
+                    ImageBox_11.SetSize(142, 57);
+                    ImageBox_11.Anchors = Anchors.None;
+                    ImageBox_11.Visible = true;
+
+                    ImageBox_12.SetPosition(480, 156);
+                    ImageBox_12.SetSize(142, 57);
+                    ImageBox_12.Anchors = Anchors.None;
+                    ImageBox_12.Visible = true;
+
+                    ImageBox_13.SetPosition(19, 312);
+                    ImageBox_13.SetSize(142, 57);
+                    ImageBox_13.Anchors = Anchors.None;
+                    ImageBox_13.Visible = true;
+
+                    ImageBox_14.SetPosition(174, 312);
+                    ImageBox_14.SetSize(142, 57);
+                    ImageBox_14.Anchors = Anchors.None;
+                    ImageBox_14.Visible = true;
+
+                    ImageBox_15.SetPosition(325, 312);
+                    ImageBox_15.SetSize(142, 57);
+                    ImageBox_15.Anchors = Anchors.None;
+                    ImageBox_15.Visible = true;
+
+                    ImageBox_16.SetPosition(480, 313);
+                    ImageBox_16.SetSize(142, 57);
+                    ImageBox_16.Anchors = Anchors.None;
+                    ImageBox_16.Visible = true;
 
                     label1.SetPosition(35, 173);
                     label1.SetSize(90, 28);

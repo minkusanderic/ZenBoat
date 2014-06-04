@@ -508,7 +508,7 @@ namespace Preview
                     Label_8.Anchors = Anchors.None;
                     Label_8.Visible = true;
 
-                    Label_9.SetPosition(430, 390);
+                    Label_9.SetPosition(430, 210);
                     Label_9.SetSize(110, 36);
                     Label_9.Anchors = Anchors.None;
                     Label_9.Visible = true;
@@ -523,7 +523,7 @@ namespace Preview
                     Label_11.Anchors = Anchors.None;
                     Label_11.Visible = true;
 
-                    Label_12.SetPosition(430, 210);
+                    Label_12.SetPosition(430, 390);
                     Label_12.SetSize(110, 36);
                     Label_12.Anchors = Anchors.None;
                     Label_12.Visible = true;

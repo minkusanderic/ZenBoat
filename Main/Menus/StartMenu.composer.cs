@@ -194,7 +194,7 @@ namespace Menu
 
             storeButton.Text = "Store";
 
-            creditButton.Text = "Credits";
+            creditButton.Text = "Boats";
         }
 
         private void onShowing(object sender, EventArgs e)
